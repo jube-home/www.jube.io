@@ -100,4 +100,3 @@ gained familiarity with Jube through the core implementation training:
 
 Please email support@jube.io to inquire about available dates and request a detailed proposal, including customization
 options.
-
