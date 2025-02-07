@@ -3,19 +3,30 @@ layout: page
 title: Training
 permalink: /training/
 ---
-The Jube user profile is technically proficient in reading, building and running code.
 
-Jube currently makes a single commercial offer in the form of a training program that focuses on achieving proficiency
-in the effective implementation and utilization of
-Jube. Training returns a significant acceleration in the implementation of Jube in an organisation, while assuring its
-success.
+Jube offers a comprehensive training program designed to ensure participants gain proficiency in implementing and
+managing Jube effectively.
 
-The schedule covers a duration of three days, with the length of each day ranging from 6 to 8 hours, depending on the undertaking of Elective Modules. Elective Modules cover in-depth training in advanced administrative concepts using dedicated training servers.  Elective Modules are targeted at technical participants whom are likely to assume overall system administrative responsibility of an implementation of Jube.
+# Program Outcomes
 
-Day 1:
+By the end of the training, participants will:
+
+* Confidently implement and manage Jube within their organization.
+* Optimize Jube for performance, scalability, and security.
+* Accelerate Jube adoption through hands-on experience and best practices.
+* For Developers; Troubleshoot and debug the system effectively.
+
+# Three Days of Core Jube Training
+
+The schedule covers a duration of three days, with the length of each day ranging from 6 to 8 hours, depending on the
+undertaking of Elective Modules. Elective Modules cover in-depth training in advanced administrative concepts using
+dedicated training servers. Elective Modules are targeted at technical participants whom are likely to assume overall
+system administrative responsibility of an implementation of Jube, but does not necessitate being a developr:
+
+**Day 1**:
 
 * Introduction.
-* User Interface.
+* User Interface Concepts.
 * HTTP Messaging.
 * Models and Payload.
 * Inline Functions.
@@ -27,7 +38,7 @@ Day 1:
 * Elective: Environment Variables.
 * Elective: Installation and Log Configuration.
 
-Day 2:
+**Day 2**:
 
 * Suppression.
 * Sanctions Fuzzy Matching.
@@ -41,7 +52,7 @@ Day 2:
 * Elective: Performance Counters.
 * Elective: AMQP.
 
-Day 3:
+**Day 3**:
 
 * SQL database discovery.
 * Performance Monitoring.
@@ -52,4 +63,35 @@ Day 3:
 * Elective: Archive Bottleneck Analysis.
 * Elective: Multi-Tenancy.
 
-Delivered at client site or venue, globally. Fee of USD 3600, excluding travel and expenses. For further details, including the detailed training plan, kindly contact [support@jube.io](mailto:support@jube.io).
+# One Day of Optional Developer Training
+
+For organizations with a team of developers, an additional training day is available to familiarize them with the Jube
+codebase for business continuity purposes. This developer training provides a comprehensive overview of software
+patterns, frameworks, and coding standards, followed by hands-on code stepping and debugging to give a holistic
+understanding of the system's inner workings. It is assumed that developers attending this session will have already
+gained familiarity with Jube through the Core Training:
+
+**Day 4**:
+
+* Software Patterns.
+* C# Solution and Project Overview.
+* Nuget and other Dependencies.
+* Stepping and Debugging the .Net Hosting Environment, Dependency Injection and Migrations.
+* Stepping and Debugging the User Interface Frontend; JQuery, SignalR, Components and Endpoint Dependencies.
+* Stepping and Debugging the User Interface Backend; Models, Views, Controllers and Authentication.
+* Stepping and Debugging background services in authentication, including SignalR.
+* The detailed transaction flow and algorithms conceptually.
+* Stepping and Debugging the transaction flow.
+* Stepping and Debugging other unauthenticated controllers' invocation.
+* Stepping Exhaustive Model Training.
+
+# Fees & Delivery
+
+* Training is conducted on-site or at a venue globally.
+* Three-Day Core Jube Training: USD 3,600
+* Four-Day Core Jube Training and Developer Training: USD 4,400
+* Travel and expenses are billed separately and covered in advance.
+
+# Request a Proposal
+Please email training@jube.io to inquire about available dates and request a detailed proposal, including customization options.
+
