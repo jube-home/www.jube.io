@@ -11,23 +11,13 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Install Jube'
-      url: 'https://github.com/jube-home/jube'
-    - title: 'Read Documentation'
-      url: 'https://jube-home.github.io/jube/'
-    - title: 'Get Training'
+    - title: 'Training'
       url: '/training/'
 
 #-------------------------------
-# Author Settings
-author:
-  author__name: Information about the author of Jube
-  author__bio: Richard Churchman, a seasoned Cloud Architect and Software Developer, is the author, caretaker, and advocate behind Jube. With expertise in implementing high throughput real-time transaction and event monitoring systems, Richard operates at the intersection of Software Engineering, Data Engineering, and Machine Learning.
-  author__avatar: '/images/Jube.png'
 
 social:
 - {icon: "ion-logo-github", link: "https://github.com/jube-home/jube"}
-- {icon: "ion-logo-twitter", link: "https://twitter.com/JubeHome"}
 
 # Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
 # Other icons can be found at https://ionicons.com/v4/
