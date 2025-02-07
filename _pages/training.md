@@ -89,7 +89,7 @@ gained familiarity with Jube through the core implementation training:
 
 * Implementation Training is conducted on-site or at a venue globally.
 * Three-Day Core Jube Implementation Training: USD 3,600
-* Four-Day Core Jube Implementation Training and Developer Implementation Training: USD 4,400
+* Four-Day Core Jube Implementation Training and Developer Implementation Training: USD 4,800
 * Travel and expenses are billed separately and covered in advance.
 
 # Request a Proposal
