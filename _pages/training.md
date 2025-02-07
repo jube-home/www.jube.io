@@ -1,25 +1,25 @@
 ---
 layout: page
-title: Training
-permalink: /training/
+title: Implementation
+permalink: /implementation/
 ---
 
-Jube offers a comprehensive training program designed to ensure participants gain proficiency in implementing and
+Jube offers a comprehensive implementation training program designed to ensure participants gain proficiency in implementing and
 managing Jube effectively.
 
 # Program Outcomes
 
-By the end of the training, participants will:
+By the end of the implementation training, participants will:
 
 * Confidently implement and manage Jube within their organization.
 * Optimize Jube for performance, scalability, and security.
 * Accelerate Jube adoption through hands-on experience and best practices.
 * For Developers; Troubleshoot and debug the system effectively.
 
-# Three Days of Core Jube Training
+# Three Days of Core Jube Implementation Training
 
 The schedule covers a duration of three days, with the length of each day ranging from 6 to 8 hours, depending on the
-undertaking of Elective Modules. Elective Modules cover in-depth training in advanced administrative concepts using
+undertaking of Elective Modules. Elective Modules cover in-depth implementation training in advanced administrative concepts using
 dedicated training servers. Elective Modules are targeted at technical participants whom are likely to assume overall
 system administrative responsibility of an implementation of Jube, but does not necessitate being a developr:
 
@@ -65,11 +65,11 @@ system administrative responsibility of an implementation of Jube, but does not 
 
 # One Day of Optional Developer Training
 
-For organizations with a team of developers, an additional training day is available to familiarize them with the Jube
-codebase for business continuity purposes. This developer training provides a comprehensive overview of software
+For organizations with a team of developers, an additional implementation training day is available to familiarize them with the Jube
+codebase for business continuity purposes. This developer implementation training provides a comprehensive overview of software
 patterns, frameworks, and coding standards, followed by hands-on code stepping and debugging to give a holistic
 understanding of the system's inner workings. It is assumed that developers attending this session will have already
-gained familiarity with Jube through the Core Training:
+gained familiarity with Jube through the core implementation training:
 
 **Day 4**:
 
@@ -87,11 +87,11 @@ gained familiarity with Jube through the Core Training:
 
 # Fees & Delivery
 
-* Training is conducted on-site or at a venue globally.
-* Three-Day Core Jube Training: USD 3,600
-* Four-Day Core Jube Training and Developer Training: USD 4,400
+* Implementation Training is conducted on-site or at a venue globally.
+* Three-Day Core Jube Implementation Training: USD 3,600
+* Four-Day Core Jube Implementation Training and Developer Implementation Training: USD 4,400
 * Travel and expenses are billed separately and covered in advance.
 
 # Request a Proposal
-Please email training@jube.io to inquire about available dates and request a detailed proposal, including customization options.
+Please email implimentation@jube.io to inquire about available dates and request a detailed proposal, including customization options.
 
