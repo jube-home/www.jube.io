@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Implementation
-permalink: /implementation/
+title: Implementation Training
+permalink: /training/
 ---
 
 Jube offers a comprehensive implementation training program designed to ensure participants gain proficiency in implementing and
