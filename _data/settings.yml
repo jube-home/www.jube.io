@@ -30,22 +30,12 @@ hero:
   hero__image: '/images/Jube.png'
 
 #-------------------------------
-# Projects Settings
-projects__settings:
-  projects__title: Features
-  projects__description: Everything to ensure effective real-time transaction and event monitoring.
-
-#-------------------------------
 # Footer Navigation Settings
 footer_menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Install Jube'
-      url: 'https://github.com/jube-home/jube'
-    - title: 'Read Documentation'
-      url: 'https://jube-home.github.io/jube/'
-    - title: 'Get Training'
+    - title: 'Training'
       url: '/training/'
 
 #-------------------------------
