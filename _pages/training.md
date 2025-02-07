@@ -4,7 +4,7 @@ title: Implementation Training
 permalink: /training/
 ---
 
-Jube offers extensive documentation that, when followed carefully, leads to successful implementation. To further
+Jube offers extensive [documentation](https://jube-home.github.io/jube/) that, when followed carefully, leads to successful implementation. To further
 accelerate and ensure positive outcomes, a comprehensive training program is available. This program is designed to help
 participants develop the skills needed to effectively implement and manage Jube with confidence.
 
