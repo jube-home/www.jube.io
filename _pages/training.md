@@ -93,5 +93,5 @@ gained familiarity with Jube through the core implementation training:
 * Travel and expenses are billed separately and covered in advance.
 
 # Request a Proposal
-Please email implimentation@jube.io to inquire about available dates and request a detailed proposal, including customization options.
+Please email support@jube.io to inquire about available dates and request a detailed proposal, including customization options.
 
