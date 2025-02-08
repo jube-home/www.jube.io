@@ -4,8 +4,15 @@ title: Implementation Training
 permalink: /training/
 ---
 
-Jube offers extensive [documentation](https://jube-home.github.io/jube/) that, when followed carefully, leads to successful implementation. To further
-accelerate and ensure positive outcomes, a comprehensive training program is available. This program is designed to help
+Jube offers comprehensive [documentation](https://jube-home.github.io/jube/) to help users with successful
+implementation. Additionally, key documentation and select knowledge base articles are integrated into Jooby, Jube’s
+AI-powered chatbot, accessible via the chat icon in the bottom right corner of each page. Jooby is designed for quickly
+retrieving general information about Jube’s implementation and practical use. To support
+self-service learning, users can explore both the documentation and Jooby alongside the Sandbox environment, which is
+accessible from the navigation menu on every page.
+
+To further accelerate and ensure positive outcomes, a comprehensive training program is available. This program is
+designed to help
 participants develop the skills needed to effectively implement and manage Jube with confidence.
 
 # Program Outcomes
