@@ -13,6 +13,8 @@ menu__settings:
       url: '/'
     - title: 'Implementation Training'
       url: '/training/'
+    - title: 'Play in Sandbox'
+      url: 'https://sandbox.jube.io/'
 
 #-------------------------------
 # Hero Settings
