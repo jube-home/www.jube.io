@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Implementation Training
+title: Training
 permalink: /training/
 ---
 
