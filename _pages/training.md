@@ -6,9 +6,9 @@ permalink: /training/
 
 # Jube Training Overview
 
-Jube provides comprehensive documentation and resources to ensure successful implementation. Key documentation and select knowledge base articles are integrated into **Jooby**, Jube’s AI-powered chatbot, accessible via the chat icon on the bottom right of every page. Jooby is designed to quickly retrieve general information about Jube’s implementation and practical use. For self-service learning, users can explore the documentation, Jooby, and the **Sandbox environment**, accessible from the navigation menu on every page.
+For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/), interact with Jooby, Jube’s AI-powered chatbot, or utilize the [sandbox](https://sandbox.jube.io) environment, all accessible from the navigation menu on every page.
 
-To further support users, Jube offers a **comprehensive training program** designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube.
+To further support users, Jube offers a comprehensive training program designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube.
 
 ---
 
@@ -114,8 +114,8 @@ For organizations with developer teams, an **additional day** is available to fa
 
 ## Fees & Delivery
 
-- **Three-Day Core Implementation Training**: USD 3,600
-- **Four-Day Core + Developer Training**: USD 4,800
+- Three-Day Core Implementation Training: USD 3,600
+- Four-Day Core + Developer Training: USD 4,800
 - Training is conducted on-site or at a global venue.
 - Travel and expenses are billed separately and must be covered in advance.
 
