@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jube Training
+title: Training
 permalink: /training/
 ---
 

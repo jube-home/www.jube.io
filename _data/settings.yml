@@ -16,7 +16,7 @@ menu__settings:
         - url: '/training'
           title: 'Training'
         - url: '/support'
-          title: 'Lean Support'
+          title: 'Support'
     - title: 'Learn'
       submenu:
         - title: 'Docs'
