@@ -15,7 +15,7 @@ the specialized domain of fraud and abuse detection. Here's a breakdown of its k
       performance.
 
 2. **Efficiency and Assurance:**
-    - With timely bug fixes, update support, and infrastructure advisory, Lean Care ensures the software runs smoothly
+    - With timely bug fixes, update support, and infrastructure advisory, Support ensures the software runs smoothly
       and remains up-to-date.
     - This minimizes downtime and maximizes operational efficiency.
 
@@ -24,7 +24,7 @@ the specialized domain of fraud and abuse detection. Here's a breakdown of its k
       on their specific needs.
 
 4. **Cost-Effective:**
-    - At $480 per month for four hours of retained support, Lean Care provides a cost-effective way to access
+    - At $480 per month for four hours of retained support, Support provides a cost-effective way to access
       high-quality, specialized support compared to building and maintaining an in-house team with equivalent expertise.
 
 ---
