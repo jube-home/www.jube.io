@@ -24,9 +24,9 @@ By the end of the implementation training, participants will:
 * Accelerate Jube adoption through hands-on experience and best practices.
 * For Developers; Troubleshoot and debug the system effectively.
 
-# Three Days of Core Jube Implementation Training
+# Agenda
 
-The schedule covers a duration of three days, with the length of each day ranging from 6 to 8 hours, depending on the
+The schedule covers a duration of three to four days, with the length of each day ranging from 6 to 8 hours, depending on the
 undertaking of Elective Modules. Elective Modules cover in-depth implementation training in advanced administrative
 concepts using
 dedicated training servers. Elective Modules are targeted at technical participants whom are likely to assume overall
@@ -72,8 +72,6 @@ system administrative responsibility of an implementation of Jube, but does not 
 * Elective: Archive Bottleneck Analysis.
 * Elective: Multi-Tenancy.
 
-# One Day of Optional Developer Training
-
 For organizations with a team of developers, an additional implementation training day is available to familiarize them
 with the Jube
 codebase for business continuity purposes. This developer implementation training provides a comprehensive overview of
@@ -103,7 +101,6 @@ gained familiarity with Jube through the core implementation training:
 * Four-Day Core Jube Implementation Training and Developer Implementation Training: USD 4,800
 * Travel and expenses are billed separately and covered in advance.
 
-# Request a Proposal
-
-Please email support@jube.io to inquire about available dates and request a detailed proposal, including customization
-options.
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Get in Touch</a>
+</div>
