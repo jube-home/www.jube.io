@@ -11,61 +11,27 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Features'
-      url: '/features/'
-    - title: 'GitHub'
-      url: 'https://github.com/jube-home/jube'
-    - title: 'Docs'
-      url: 'https://jube-home.github.io/jube/'
-    - title: 'Blog'
-      url: '/blog/'
-
-#-------------------------------
-# Author Settings
-author:
-  author__name: About Jube
-  author__bio: Jube is born of decades of experience in transaction and event monitoring, which is growing to specialise in the domain's overlap between data engineering and machine learning.
-  author__avatar: '/images/Jube.png'
-
-social:
-- {icon: "ion-logo-github", link: "https://github.com/jube-home/jube"}
-
-# Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
-# Other icons can be found at https://ionicons.com/v4/
+    - title: 'Services'
+      submenu:
+        - url: '/training'
+          title: 'Training'
+    - title: 'Learn'
+      submenu:
+        - title: 'Docs'
+        - url: 'https://jube-home.github.io/jube/'
+        - title: 'Sandbox'
+          url: 'https://sandbox.jube.io/'
+        - title: 'GitHub'
+          url: 'https://github.com/jube-home/jube'
+    - title: 'Contact'
+      url: '/contact'
 
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Open-Source Transaction and Event Monitoring
-  hero__description: Jube implements real-time data wrangling, machine learning, decision making and case management. Jube is particularly strong when implemented in fraud and abuse detection use cases.
+  hero__title: Open-Source Transaction and Event Monitoring Software
+  hero__description: Jube is an open-source software designed for monitoring transactions and events. It offers a range of powerful features including real-time data wrangling, artificial intelligence, decision making, and case management. Jube's exceptional performance is particularly evident in its application to fraud prevention and abuse detection scenarios.
   hero__image: '/images/Jube.png'
-
-#-------------------------------
-# Projects Settings
-projects__settings:
-  projects__title: Features
-  projects__description: Everything to ensure effective real-time transaction and event monitoring.
-
-#-------------------------------
-# Blog Section
-blog__settings:
-  blog__title: Recent Posts
-  blog__description:
-
-#-------------------------------
-# Footer Navigation Settings
-footer_menu__settings:
-  menu__items:
-    - title: 'Home'
-      url: '/'
-    - title: 'Features'
-      url: '/features/'
-    - title: 'GitHub'
-      url: 'https://github.com/jube-home/jube'
-    - title: 'Docs'
-      url: 'https://jube-home.github.io/jube/'
-    - title: 'Blog'
-      url: '/blog/'
 
 #-------------------------------
 # Google Analytics
