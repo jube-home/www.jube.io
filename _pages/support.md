@@ -70,5 +70,5 @@ combines expert support, operational assurance, and strategic influence at a com
 valuable investment for businesses in the fraud and abuse detection domain.
 
 <div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Get in Touch</a>
+  <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>

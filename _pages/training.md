@@ -128,5 +128,5 @@ By attending this program, participants will not only accelerate the adoption of
 For those ready to take the next step, Jube’s training program is an invaluable investment in building expertise and driving successful implementation.
 
 <div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Get in Touch</a>
+  <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>
