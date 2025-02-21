@@ -14,9 +14,9 @@ menu__settings:
     - title: 'Services'
       submenu:
         - url: '/training'
-          title: 'Jube Training'
+          title: 'Training'
         - url: '/care'
-          title: 'Jube Care'
+          title: 'Care'
     - title: 'Learn'
       submenu:
         - title: 'Docs'
