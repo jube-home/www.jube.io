@@ -4,8 +4,6 @@ title: Training
 permalink: /training/
 ---
 
-# Jube Training Overview
-
 For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/), interact with Jooby, Jube’s AI-powered chatbot, or utilize the [sandbox](https://sandbox.jube.io) environment, all accessible from the navigation menu on every page.
 
 To further support users, Jube offers a comprehensive training program designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube.
