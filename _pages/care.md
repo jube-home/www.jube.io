@@ -1,27 +1,26 @@
 ---
 layout: page
-title: Jube Care
-permalink: /care/
+title: Lean Support
+permalink: /support/
 ---
-# Jube Care: Lean Support Package
 
-Jube Care offers a compelling value proposition for organizations implementing and managing the Jube software, particularly in the specialized domain of fraud and abuse detection. Here's a breakdown of its key benefits and features:
+Lean Care is a compelling value proposition for organizations implementing and managing the Jube software, particularly in the specialized domain of fraud and abuse detection. Here's a breakdown of its key benefits and features:
 
-## **Key Benefits of Jube Care:**
+## **Key Benefits of Lean Care:**
 
 1. **Expert Support:**
     - Direct access to the Jube developers ensures that users receive guidance from those who know the software best.
     - This expertise can significantly reduce implementation time, troubleshoot issues efficiently, and optimize system performance.
 
 2. **Efficiency and Assurance:**
-    - With timely bug fixes, update support, and infrastructure advisory, Jube Care ensures the software runs smoothly and remains up-to-date.
+    - With timely bug fixes, update support, and infrastructure advisory, Lean Care ensures the software runs smoothly and remains up-to-date.
     - This minimizes downtime and maximizes operational efficiency.
 
 3. **Strategic Influence:**
     - Subscribers gain influence over the product roadmap, allowing them to shape future features and improvements based on their specific needs.
 
 4. **Cost-Effective:**
-    - At $480 per month for four hours of retained support, Jube Care provides a cost-effective way to access high-quality, specialized support compared to building and maintaining an in-house team with equivalent expertise.
+    - At $480 per month for four hours of retained support, Lean Care provides a cost-effective way to access high-quality, specialized support compared to building and maintaining an in-house team with equivalent expertise.
 
 ---
 
