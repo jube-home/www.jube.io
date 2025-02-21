@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jube Care
-permalink: /support/
+permalink: /care/
 ---
 # Jube Care: Lean Support Package
 
