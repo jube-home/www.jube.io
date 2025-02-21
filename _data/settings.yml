@@ -18,7 +18,7 @@ menu__settings:
     - title: 'Learn'
       submenu:
         - title: 'Docs'
-        - url: 'https://jube-home.github.io/jube/'
+          url: 'https://jube-home.github.io/jube/'
         - title: 'Sandbox'
           url: 'https://sandbox.jube.io/'
         - title: 'GitHub'
