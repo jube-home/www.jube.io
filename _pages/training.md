@@ -123,7 +123,7 @@ In conclusion, Jube’s comprehensive training program is designed to empower pr
 
 The structured agenda, spanning 3 to 4 days, provides a deep dive into Jube’s capabilities, from AI-driven solutions and sanctions fuzzy matching to performance optimization and debugging. With optional developer training, organizations can also ensure their technical teams are well-equipped to maintain and troubleshoot the system for long-term business continuity.
 
-By attending this program, participants will not only accelerate the adoption of Jube but also enhance their ability to leverage its advanced features for fraud detection, compliance, and financial crime prevention. Ultimately, this training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational efficiency in an ever-evolving landscape.
+By attending this program, participants will not only accelerate the adoption of Jube but also facilitate their ability to leverage its advanced features for fraud detection, compliance, and financial crime prevention. Ultimately, this training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational efficiency in an ever-evolving landscape.
 
 For those ready to take the next step, Jube’s training program is an invaluable investment in building expertise and driving successful implementation.
 
