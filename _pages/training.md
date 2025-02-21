@@ -72,6 +72,8 @@ system administrative responsibility of an implementation of Jube, but does not 
 * Elective: Archive Bottleneck Analysis.
 * Elective: Multi-Tenancy.
 
+**Day 4 (Optional)**:
+
 For organizations with a team of developers, an additional implementation training day is available to familiarize them
 with the Jube
 codebase for business continuity purposes. This developer implementation training provides a comprehensive overview of
@@ -79,8 +81,6 @@ software
 patterns, frameworks, and coding standards, followed by hands-on code stepping and debugging to give a holistic
 understanding of the system's inner workings. It is assumed that developers attending this session will have already
 gained familiarity with Jube through the core implementation training:
-
-**Day 4**:
 
 * Software Patterns.
 * C# Solution and Project Overview.
