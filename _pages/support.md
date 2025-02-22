@@ -24,8 +24,8 @@ the specialized domain of fraud and abuse detection. Here's a breakdown of its k
       on their specific needs.
 
 4. **Cost-Effective:**
-    - At $480 per month for four hours of retained support, Support provides a cost-effective way to access
-      high-quality, specialized support compared to building and maintaining an in-house team with equivalent expertise.
+    - At $480/month for four hours of retained support with a 24-hour service level, it offers a cost-effective solution
+      compared to building and maintaining an in-house team with similar expertise.
 
 ---
 
