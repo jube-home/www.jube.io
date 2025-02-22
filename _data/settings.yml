@@ -11,7 +11,7 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Services'
+    - title: 'Professional Services'
       submenu:
         - url: '/training'
           title: 'Training'
