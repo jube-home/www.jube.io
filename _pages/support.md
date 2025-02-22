@@ -24,8 +24,9 @@ the specialized domain of fraud and abuse detection. Here's a breakdown of its k
       on their specific needs.
 
 4. **Cost-Effective:**
-    - At $480/month for four hours of retained support with a 24-hour service level, it offers a cost-effective solution
-      compared to building and maintaining an in-house team with similar expertise.
+    - At $480/month for four hours of retained support, a 24-hour service level, and only a rolling three-month
+      commitment, Jube provides a cost-effective alternative to building and maintaining an in-house team with
+      equivalent expertise.
 
 ---
 
