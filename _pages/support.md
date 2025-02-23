@@ -4,75 +4,71 @@ title: Support
 permalink: /support/
 ---
 
-# **Jube Support: A Strategic Advantage for Fraud & Abuse Detection Systems**
+Support is a compelling value proposition for organizations implementing and managing the Jube software, particularly in
+the specialized domain of fraud and abuse detection. Here's a breakdown of its key benefits and features:
 
-Jube Support streamlines implementation and management of your fraud/abuse detection platform while reducing operational risks. Designed for organizations that value efficiency and strategic influence, here’s how our support services deliver value:
+## **Key Benefits of Support:**
 
----
+1. **Expert Support:**
+    - Direct access to the Jube developers ensures that users receive guidance from those who know the software best.
+    - This expertise can significantly reduce implementation time, troubleshoot issues efficiently, and optimize system
+      performance.
 
-## **Why Jube Support Matters**
+2. **Efficiency and Assurance:**
+    - With timely bug fixes, update support, and infrastructure advisory, Support ensures the software runs smoothly
+      and remains up-to-date.
+    - This minimizes downtime and maximizes operational efficiency.
 
-1. **Direct Expertise from Core Developers**
-    - Resolve issues faster with guidance from Jube’s creators.
-    - Accelerate implementation timelines and optimize system performance through insider knowledge.
+3. **Strategic Influence:**
+    - Subscribers gain influence over the product roadmap, allowing them to shape future features and improvements based
+      on their specific needs.
 
-2. **Guaranteed Stability**
-    - **Quarterly Releases:** Fully tested updates from a dedicated code branch.
-    - **Proactive Maintenance:** Timely bug fixes, infrastructure optimization, and update support minimize downtime.
-
-3. **Shape the Future of the Platform**
-    - Influence Jube’s product roadmap to prioritize features aligned with your needs.
-
-4. **Cost Efficiency**
-    - **$480/month** for:
-        - 24/7 support with a 24-hour response SLA
-        - 4 hours of retained developer time monthly
-        - No long-term contracts (flexible 3-month commitment)
-    - Avoid the overhead of hiring and training specialized in-house teams.
+4. **Cost-Effective:**
+    - At $480/month for four hours of retained support, a 24-hour service level, and only a rolling three-month
+      commitment, Jube provides a cost-effective alternative to building and maintaining an in-house team with
+      equivalent expertise.
 
 ---
 
-## **What Support Includes**
+## **Features of Support:**
 
-- **Priority Access to Developers**
-    - *Quick fixes:* Email/chat support for documented features.
-    - *Complex issues:* Zoom sessions for hands-on troubleshooting.
+- **Direct Developer Access:**
+    - Email and chat support for documented features ensures quick resolution of issues.
+    - Zoom support for more complex or hands-on troubleshooting.
 
-- **System Reliability**
-    - Prioritized bug resolution and security patches.
+- **Timely Bug Fixes:**
+    - Prioritized resolution of software bugs to maintain system reliability.
 
-- **Advanced Guidance**
-    - **Analytics Optimization:** Maximize fraud detection accuracy with tailored insights.
-    - **Infrastructure Tuning:** Ensure high availability and performance.
+- **Advanced Analytics Advisory:**
+    - Expert guidance on leveraging Jube's analytics capabilities for fraud and abuse detection.
 
-- **Roadmap Collaboration**
-    - Provide feedback to steer Jube’s future features.
+- **Infrastructure Performance Advisory:**
+    - Recommendations to ensure high availability and optimal performance of the Jube implementation.
 
----
+- **Update Support:**
+    - Assistance with software updates to keep the system current and secure.
 
-## **Support vs. Self-Implementation: Key Advantages**
-
-While Jube’s open-source model allows independent use, partnering with our support team offers:
-
-✅ **Faster Deployment**
-- Avoid costly trial-and-error with expert onboarding.
-
-✅ **Reduced Risk**
-- Ensure system stability with tested updates and rapid bug fixes.
-
-✅ **Strategic Value**
-- Align Jube’s evolution with your organizational goals.
-
-✅ **Resource Savings**
-- Dedicated expertise at a fraction of the cost of internal teams.
+- **Product Roadmap Influence:**
+    - Opportunity to provide input on future features and improvements.
 
 ---
 
-## **Conclusion**
+## **Why Choose Support Over Self-Implementation?**
 
-Jube Support is a turnkey solution for organizations prioritizing speed, reliability, and strategic control in fraud/abuse detection. By combining direct developer access, proactive system maintenance, and product influence, it delivers measurable ROI while future-proofing your investment.
+While Jube is open-source and can be implemented independently, Support offers several advantages:
 
-**Ready to optimize your implementation?**
+- **Speed:** Expert support accelerates implementation and troubleshooting.
+- **Reliability:** Access to timely bug fixes and updates ensures system stability.
+- **Optimization:** Advanced advisory services help maximize the software's potential.
+- **Strategic Advantage:** Influence over the product roadmap aligns Jube's development with your organizational needs.
+
+---
+
+## **Conclusion:**
+
+Support is an ideal solution for organizations seeking to leverage Jube's capabilities efficiently and effectively. It
+combines expert support, operational assurance, and strategic influence at a competitive price point, making it a
+valuable investment for businesses in the fraud and abuse detection domain.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
