@@ -19,6 +19,8 @@ menu__settings:
           title: 'Support'
     - title: 'Resources'
       submenu:
+        - title: 'Quick Start'
+          url: '/quick-start'
         - title: 'Docs'
           url: 'https://jube-home.github.io/jube/'
         - title: 'Sandbox'
