@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Start
-permalink: /Start/
+title: Docker
+permalink: /docker/
 ---
 
 A Docker Compose file simplifies Jube installation, orchestrating the following:
