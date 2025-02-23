@@ -4,71 +4,76 @@ title: Support
 permalink: /support/
 ---
 
-Support is a compelling value proposition for organizations implementing and managing the Jube software, particularly in
-the specialized domain of fraud and abuse detection. Here's a breakdown of its key benefits and features:
-
-## **Key Benefits of Support:**
-
-1. **Expert Support:**
-    - Direct access to the Jube developers ensures that users receive guidance from those who know the software best.
-    - This expertise can significantly reduce implementation time, troubleshoot issues efficiently, and optimize system
-      performance.
-
-2. **Efficiency and Assurance:**
-    - With timely bug fixes, update support, and infrastructure advisory, Support ensures the software runs smoothly
-      and remains up-to-date.
-    - This minimizes downtime and maximizes operational efficiency.
-
-3. **Strategic Influence:**
-    - Subscribers gain influence over the product roadmap, allowing them to shape future features and improvements based
-      on their specific needs.
-
-4. **Cost-Effective:**
-    - At $480/month for four hours of retained support, a 24-hour service level, and only a rolling three-month
-      commitment, Jube provides a cost-effective alternative to building and maintaining an in-house team with
-      equivalent expertise.
+**Streamline implementation, maximize performance, and align development with your goals.**
 
 ---
 
-## **Features of Support:**
+## **Why Jube Support Delivers Unmatched Value**
 
-- **Direct Developer Access:**
-    - Email and chat support for documented features ensures quick resolution of issues.
-    - Zoom support for more complex or hands-on troubleshooting.
+### **1. Expert Guidance, Accelerated Results**
 
-- **Timely Bug Fixes:**
-    - Prioritized resolution of software bugs to maintain system reliability.
+- **Direct Access to Developers:** Resolve issues faster with email/chat support for routine queries and Zoom sessions
+  for complex troubleshooting.
+- **Reduced Implementation Time:** Leverage deep software expertise to shorten setup, optimize configurations, and avoid
+  costly delays.
 
-- **Advanced Analytics Advisory:**
-    - Expert guidance on leveraging Jube's analytics capabilities for fraud and abuse detection.
+### **2. Efficiency Through Stability**
 
-- **Infrastructure Performance Advisory:**
-    - Recommendations to ensure high availability and optimal performance of the Jube implementation.
+- **Quarterly Tested Releases:** Ensure consistent performance with rigorously validated updates every 3 months.
+- **Proactive Maintenance:** Timely bug fixes, infrastructure advisories, and update assistance minimize downtime and
+  keep systems secure.
+- **Operational Confidence:** Focus on your core mission—fraud detection—while Jube handles technical reliability.
 
-- **Update Support:**
-    - Assistance with software updates to keep the system current and secure.
+### **3. Shape the Future of the Platform**
 
-- **Product Roadmap Influence:**
-    - Opportunity to provide input on future features and improvements.
+- **Influence the Roadmap:** Prioritize features and improvements that align with your organization’s evolving needs.
 
----
+### **4. Cost-Effective Expertise**
 
-## **Why Choose Support Over Self-Implementation?**
-
-While Jube is open-source and can be implemented independently, Support offers several advantages:
-
-- **Speed:** Expert support accelerates implementation and troubleshooting.
-- **Reliability:** Access to timely bug fixes and updates ensures system stability.
-- **Optimization:** Advanced advisory services help maximize the software's potential.
-- **Strategic Advantage:** Influence over the product roadmap aligns Jube's development with your organizational needs.
+- **$480/month** for:
+    - 4 hours of retained developer support.
+    - 24/7 emergency response.
+    - Flexible 3-month commitment (no long-term lock-in).
+- **Eliminate Hidden Costs:** Avoid the expense of recruiting, training, and maintaining an in-house team with niche
+  fraud-detection expertise.
 
 ---
 
-## **Conclusion:**
+## **Core Features of Jube Support**
 
-Support is an ideal solution for organizations seeking to leverage Jube's capabilities efficiently and effectively. It
-combines expert support, operational assurance, and strategic influence at a competitive price point, making it a
-valuable investment for businesses in the fraud and abuse detection domain.
+- **Technical Assurance**
+    - Private software fork with quarterly releases and QA validation.
+    - Prioritized bug resolution and performance optimization.
+- **Strategic Advisory**
+    - Analytics guidance to enhance fraud/abuse detection accuracy.
+    - Infrastructure recommendations for scalability and uptime.
+- **Continuous Modernization**
+    - Seamless update support to integrate security patches and new features.
+
+---
+
+## **Support vs. Self-Implementation: Key Advantages**
+
+| **Support**                           | **Self-Implementation**                     |  
+|---------------------------------------|---------------------------------------------|  
+| Rapid deployment with expert guidance | Time-consuming trial-and-error              |  
+| Guaranteed system stability           | Risk of unresolved bugs/performance gaps    |  
+| Tailored roadmap influence            | Limited control over feature prioritization |  
+| Predictable monthly cost              | Hidden staffing/training expenses           |  
+
+---
+
+## **Conclusion: Optimize Your Investment in Fraud Detection**
+
+Jube Support is designed for organizations that prioritize **speed**, **reliability**, and **strategic alignment** in
+fraud prevention. By combining hands-on expertise, proactive maintenance, and a voice in the platform’s evolution, it
+ensures your team stays ahead of threats without the overhead of in-house development.
+
+**Key Outcomes:**
+
+- Faster time-to-value for fraud-detection initiatives.
+- Reduced operational risk through stable, up-to-date systems.
+- A competitive edge with tailored analytics and roadmap influence.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
