@@ -4,130 +4,92 @@ title: Training
 permalink: /training/
 ---
 
-For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/), interact with Jooby, Jube’s AI-powered chatbot, or utilize the [sandbox](https://sandbox.jube.io) environment, all accessible from the navigation menu on every page.
+# Self-Guided Learning & Training Programs
 
-To further support users, Jube offers a comprehensive training program designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube.
+**Explore freely or deepen your expertise** with Jube's resources:
+- 📚 [Documentation](https://jube-home.github.io/jube/)
+- 🤖 Jooby (AI Chatbot)
 
----
-
-## **Program Outcomes:**
-
-By the end of the training, participants will:
-- Confidently implement and manage Jube within their organization.
-- Optimize Jube for performance, scalability, and security.
-- Accelerate adoption through hands-on experience and best practices.
-- Troubleshoot and debug the system effectively (for developers).
+For structured learning, enroll in our **Jube Implementation Training Program** to master implementation, optimization, and management.
 
 ---
 
-## **Why Attend?**
+## Program Outcomes
 
-- Gain hands-on experience with Jube’s features and tools.
-- Learn best practices for optimizing performance, scalability, and security.
-- Accelerate adoption and ensure successful implementation.
-- Develop skills to troubleshoot, debug, and manage Jube effectively.
-
----
-
-## **Who Should Attend?**
-
-The Jube Implementation Training Program is ideal for professionals involved in implementing, managing, and optimizing Jube within their organizations. Key roles include:
-
-### 1. **Developers:**
-- Responsible for integrating, customizing, and maintaining Jube.
-- Need to understand the codebase, debug issues, and ensure business continuity.
-
-### 2. **Heads of Fraud:**
-- Leaders overseeing fraud detection and prevention strategies.
-- Will leverage Jube’s advanced features like AI training, suppression rules, and sanctions fuzzy matching.
-
-### 3. **Heads of Compliance:**
-- Compliance officers ensuring regulatory adherence.
-- Will use Jube for sanctions screening, case management, and reporting.
-
-### 4. **Financial Crime Prevention Professionals:**
-- Focused on combating money laundering, fraud, and sanctions evasion.
-- Will benefit from Jube’s AI-driven solutions and performance optimization.
-
-### 5. **System Administrators:**
-- Responsible for Jube’s administration, configuration, and maintenance.
-- Will manage performance monitoring, caching, and high availability.
-
-### 6. **Data Analysts and Reporting Specialists:**
-- Involved in data discovery, visualization, and reporting.
-- Will utilize Jube’s SQL database discovery and reporting tools.
-
-### 7. **IT and Security Professionals:**
-- Ensure the security, scalability, and performance of Jube implementations.
-- Manage environment variables, log configurations, and authentication.
+By completion, participants will:  
+✅ Confidently implement/manage Jube deployments  
+✅ Optimize for performance, scalability & security  
+✅ Accelerate adoption through best practices  
+✅ Troubleshoot/debug effectively (developer track)
 
 ---
 
-## **Training Agenda**:
+## Why Attend?
 
-The training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules. Elective modules provide in-depth training on advanced administrative concepts using dedicated training servers. These are ideal for technical participants responsible for system administration but do not require developer expertise.
-
-For organizations with developer teams, an **additional day** is available to familiarize them with the Jube codebase for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
-
-### **Day 1: Core Concepts:**
-- Introduction
-- User Interface Concepts
-- HTTP Messaging
-- Models and Payload
-- Inline Functions
-- Abstraction Rules and Calculations
-- Lists and Dictionaries
-- Activation Rules
-- **Electives**: Architecture and Caching, Environment Variables, Installation and Log Configuration
-
-### **Day 2: Advanced Features:**
-- Suppression
-- Sanctions Fuzzy Matching
-- Time To Live (TTL) Counters
-- Introduction to Artificial Intelligence (AI)
-- Exhaustive AI Training
-- Case Management
-- Security
-- **Electives**: Tracing Transaction Flow, High Availability, Performance Counters, AMQP
-
-### **Day 3: Performance and Reporting:**
-- SQL Database Discovery
-- Performance Monitoring
-- Visualization and Reporting
-- Inline Scripts
-- Scores via R Plumber (HTTP)
-- **Electives**: Cache Bottleneck Analysis, Archive Bottleneck Analysis, Multi-Tenancy
-
-### **Day 4 (Optional): Developer Training:**
-- Software Patterns
-- C# Solution and Project Overview
-- Nuget and Dependencies
-- Debugging the .NET Hosting Environment, Dependency Injection, and Migrations
-- Debugging the User Interface (Frontend and Backend)
-- Debugging Background Services (Authentication, SignalR)
-- Detailed Transaction Flow and Algorithms
-- Debugging Exhaustive Model Training
+- **Hands-on labs** with real-world scenarios
+- **Performance mastery:** Learn caching, bottleneck analysis & HA strategies
+- **AI/ML workflows:** From model training to sanctions fuzzy matching
+- **Role-specific skills:** Compliance reporting to system administration
 
 ---
 
-## **Fees & Delivery:**
+## Target Audience
 
-- Three-Day Core Implementation Training: USD 3,600
-- Four-Day Core + Developer Training: USD 4,800
-- Hosted on a private, powerful, multi-tenant DigitalOcean Droplet.
-- Training is conducted on-site or at a global venue.
-- Travel and expenses are billed separately and must be covered in advance.
+| Role | Key Focus Areas |  
+|------|----------------|  
+| **Developers** | Codebase navigation, debugging, business continuity |  
+| **Heads of Fraud** | AI training, suppression rules, sanctions matching |  
+| **Compliance Leaders** | Sanctions screening, case management, regulatory reporting |  
+| **Financial Crime Teams** | Money laundering detection, performance optimization |  
+| **System Admins** | Configuration, monitoring, high availability |  
+| **Data Analysts** | SQL discovery, visualization, reporting tools |  
+| **IT/Security** | Auth management, log configs, environment variables |  
 
-## **Conclusion:**
+---
 
-In conclusion, Jube’s comprehensive training program is designed to empower professionals with the knowledge and skills necessary to effectively implement, manage, and optimize Jube within their organizations. By offering a blend of core concepts, advanced features, and elective modules, the program ensures participants gain hands-on experience and practical insights tailored to their roles—whether they are developers, compliance officers, fraud prevention specialists, or system administrators.
+## Training Structure
 
-The structured agenda, spanning 3 to 4 days, provides a deep dive into Jube’s capabilities, from AI-driven solutions and sanctions fuzzy matching to performance optimization and debugging. With optional developer training, organizations can also ensure their technical teams are well-equipped to maintain and troubleshoot the system for long-term business continuity.
+### **Core Track (3 Days)**
+**Daily Commitment:** 6-8 hours  
+**Format:** On-site/global venue (travel expenses billed separately)
 
-By attending this program, participants will not only accelerate the adoption of Jube but also facilitate their ability to leverage its advanced features for fraud detection, compliance, and financial crime prevention. Ultimately, this training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational efficiency in an ever-evolving landscape.
+| Day | Key Topics | Electives |  
+|-----|------------|-----------|  
+| **1** | UI Concepts, HTTP Messaging, Models, Activation Rules | Caching, Env Variables |  
+| **2** | Suppression, Sanctions AI, TTL Counters, Case Mgmt | Transaction Tracing, AMQP |  
+| **3** | SQL Discovery, Performance Monitoring, R Plumber | Multi-Tenancy, Archive Analysis |  
 
-For those ready to take the next step, Jube’s training program is an invaluable investment in building expertise and driving successful implementation.
+### **Developer Add-On (1 Day)**
+**For technical teams:**
+- .NET environment debugging
+- Frontend/backend troubleshooting
+- Transaction flow algorithms
+- Dependency injection & migrations
 
+---
+
+## Investment
+
+| Package | Price | Includes |  
+|---------|-------|----------|  
+| Core Implementation | $3,600 | 3-day training, DigitalOcean Droplet access |  
+| Core + Developer | $4,800 | 4-day program, codebase deep-dive |  
+
+---
+
+## Why This Training Matters
+
+Jube’s program delivers **role-specific mastery** through:  
+🔹 **AI/Compliance Focus:** Sanctions matching, exhaustive model training  
+🔹 **Performance Engineering:** Bottleneck analysis, caching strategies  
+🔹 **Future-Proof Skills:** Multi-tenancy, high availability configs  
+🔹 **Business Continuity:** Codebase familiarity for developer teams
+
+Equip your team to combat evolving financial crimes while ensuring system reliability and regulatory compliance.
+
+<center>
+[Contact Our Team](/contact){: .button .button--primary}  
+</center>  
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>
