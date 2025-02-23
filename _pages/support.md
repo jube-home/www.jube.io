@@ -65,7 +65,9 @@ the specialized domain of fraud and abuse detection. Here's a breakdown of its k
 While Jube is open-source and can be implemented independently, Support offers several advantages:
 
 - **Speed:** Expert support accelerates implementation and troubleshooting.
-- **Reliability:** Access to timely bug fixes and updates ensures system stability.
+- **Reliability:** Rigorous regression testing, proactive bug resolution, and seamless updates ensure uninterrupted
+  operations.
+- **Advanced Performance Optimization:** Tailored infrastructure guidance and configuration fine-tuning to fully leverage Jube’s capabilities.
 - **Optimization:** Advanced advisory services help maximize the software's potential.
 - **Strategic Advantage:** Influence over the product roadmap aligns Jube's development with your organizational needs.
 
