@@ -114,6 +114,7 @@ For organizations with developer teams, an **additional day** is available to fa
 
 - Three-Day Core Implementation Training: USD 3,600
 - Four-Day Core + Developer Training: USD 4,800
+- Hosted on a private, powerful, multi-tenant DigitalOcean Droplet.
 - Training is conducted on-site or at a global venue.
 - Travel and expenses are billed separately and must be covered in advance.
 

@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# Jube: Open-Source Transaction & Event Monitoring
-
 Jube is open-source software for real-time transaction and event monitoring, specializing in fraud and abuse detection. It combines real-time data wrangling, AI-driven decision-making, and case management.
 
 ## Key Features
