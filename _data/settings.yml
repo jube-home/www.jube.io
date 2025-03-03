@@ -35,7 +35,7 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Open-Source Transaction and Event Monitoring Software
+  hero__title: Open-Source Anti-Money Laundering (AML) Transaction Monitoring
   hero__description: Jube is an open-source software for real-time transaction and event monitoring, utilizing AI to support compliance with regulatory obligations through its AML Monitoring Compliance Framework.
   hero__image: '/images/Jube.png'
 
