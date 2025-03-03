@@ -12,10 +12,9 @@ needed to confidently implement, manage, and optimize Jube.
 
 ![Training](/training.png)
 
-While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on the AML (
-Anti-Money Laundering) use case. The training is designed to support compliance efforts and is structured around the
+While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on the AML (Anti-Money Laundering) use case. The training is designed to support compliance efforts and is structured around the
 [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf).
-This framework is intended to be adapted by compliance managers to align
+This guidance is intended to be adapted by compliance managers to align
 with your organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
 guidelines and further reflected in the Wolfsberg Principles.
 
@@ -93,7 +92,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 ### **Day 1: Core Concepts:**
 
-- AML Monitoring Compliance Framework Overview
+- AML Monitoring Compliance Guidance Overview
 - Introduction to Jube
 - User Interface Concepts
 - HTTP Messaging
