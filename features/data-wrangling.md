@@ -2,7 +2,7 @@
 title: Data Wrangling
 date: 2022-01-09 08:03:00 +0300
 image: '/images/data-wrangling/abstraction-with-builder.png'
-subtitle: Data-wrangled values are elegantly brought together into a score to detect new typologies while guarding against confirmed typology past.
+subtitle: User-defined rules, natively compiled, executing against in-memory datasets for unrivalled performance in real-time data wrangling.
 ---
 
 Data wrangling is real-time. Data wrangling is directed via a series of rules created using either a point-and-click rule builder or an intuitive rule coder. Rules are in-memory matching functions tested against data returned from high-performance cache tables, where datasets are fetched only once for each key that the rules roll up to for each transaction or event processing, with the matches aggregating using a variety of functions. Alternative means of maintaining a lightweight long-term state to facilitate data wrangling is Time To Live (TTL) Counters which are incremented on rule match and then decremented for that incrementation on time-lapse.
