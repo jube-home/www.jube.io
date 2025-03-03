@@ -10,8 +10,6 @@ regulatory standards based on FATF guidelines and the Wolfsberg Principles. Whil
 real-time system and methodologies also support broader transaction monitoring use cases, with slight adaptations for
 different scenarios.
 
-Here's a breakdown of its key benefits and features of support:
-
 ![Support](/support.png)
 
 ## **Key Benefits of Support:**
