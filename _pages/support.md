@@ -5,7 +5,12 @@ permalink: /support/
 ---
 
 Support is a compelling value proposition for organizations implementing and managing the Jube software, particularly in
-the specialized domain of fraud and abuse detection. Here's a breakdown of its key benefits and features:
+the specialized domain of AML (Anti-Money Laundering) compliance, aligning with the Jube AML Monitoring Compliance Guidance to meet
+regulatory standards based on FATF guidelines and the Wolfsberg Principles. While AML is the primary focus, Jube’s
+real-time system and methodologies also support broader transaction monitoring use cases, with slight adaptations for
+different scenarios.
+
+Here's a breakdown of its key benefits and features of support:
 
 ![Support](/support.png)
 
@@ -65,7 +70,8 @@ While Jube is open-source and can be implemented independently, Support offers s
 - **Speed:** Expert support accelerates implementation and troubleshooting.
 - **Reliability:** Rigorous regression testing, proactive bug resolution, and seamless updates ensure uninterrupted
   operations.
-- **Advanced Performance Optimization:** Tailored infrastructure guidance and configuration fine-tuning to fully leverage Jube’s capabilities.
+- **Advanced Performance Optimization:** Tailored infrastructure guidance and configuration fine-tuning to fully
+  leverage Jube’s capabilities.
 - **Optimization:** Advanced advisory services help maximize the software's potential.
 - **Strategic Advantage:** Influence over the product roadmap aligns Jube's development with your organizational needs.
 
