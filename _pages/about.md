@@ -11,6 +11,12 @@ regulatory standards based on FATF guidelines and the Wolfsberg Principles. Whil
 the primary focus, Jube’s real-time system and methodologies also support broader transaction monitoring use cases, with
 slight adaptations for different scenarios.
 
+Jube's philosophy is rooted in empowering technology teams by ensuring complete autonomy and eliminating any residual
+external dependencies. By steadfastly adhering to the open-source promise, Jube provides tools that are genuinely
+open-source, licensed under the AGPLv3, with no pay-gated features or hidden vendor lock-in tactics. This commitment to
+transparency and freedom allows teams to fully own and control their technology stack, fostering innovation and
+resilience.
+
 ## Key Features
 
 ### 1. **Real-Time Data Wrangling**
