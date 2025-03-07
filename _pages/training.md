@@ -154,12 +154,6 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Training is conducted on-site or at a global venue.
 - Travel and expenses are billed separately and must be covered in advance.
 
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
-</div>
-
----
-
 ## **Conclusion:**
 
 In conclusion, Jube’s comprehensive training program is designed to empower professionals with the knowledge and skills

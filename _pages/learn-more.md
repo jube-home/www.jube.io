@@ -25,6 +25,12 @@ features, ensuring an assured compliance outcome. By leveraging its advanced cap
 institutions to effectively monitor transactions, detect anomalies, and adhere to regulatory requirements, thereby
 enhancing overall compliance efforts.
 
+<div class="hero__subscribe">
+  <a href="/training" class="button button--primary section-button">Fast-track with Training</a>
+</div>
+
+---
+
 ## Core Principles of AML Monitoring
 
 - **Know Your Customer (KYC):** Central to AML compliance, involving due diligence and ongoing monitoring.
@@ -84,5 +90,5 @@ reduce costs, and adapt to evolving financial crime threats. The guidance emphas
 approach, ensuring effective monitoring and regulatory alignment.
 
 <div class="hero__subscribe">
-  <a href="/training" class="button button--primary section-button">Learn About Training</a>
+  <a href="/training" class="button button--primary section-button">Fast-track with Training</a>
 </div>
