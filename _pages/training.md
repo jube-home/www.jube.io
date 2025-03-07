@@ -7,8 +7,7 @@ permalink: /training/
 For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/), interact with Jooby
 or Jube’s AI-powered chatbot.
 
-To further support users, Jube offers a comprehensive training program designed to equip participants with the skills
-needed to confidently implement, manage, and optimize Jube.
+To accelerate implementation, **Richard Churchman**, the developer of Jube, offers a comprehensive training program. This program is designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube for their specific requirements.
 
 ![Training](/training.png)
 
@@ -26,7 +25,7 @@ are
 largely adjacent and require similar methodologies, albeit with subtle differences in application.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Speak to the Developer</a>
 </div>
 
 ---
@@ -88,7 +87,7 @@ Jube within their organizations. Key roles include:
 - Manage environment variables, log configurations, and authentication.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Speak to the Developer</a>
 </div>
 
 ---
@@ -176,5 +175,5 @@ For those ready to take the next step, Jube’s training program is an invaluabl
 driving successful implementation.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Speak to the Developer</a>
 </div>
