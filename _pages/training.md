@@ -145,6 +145,14 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Detailed Transaction Flow and Algorithms
 - Debugging Exhaustive Model Training
 
+<div class="hero__subscribe">
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Speak to the Developer</a>
+</div>
+
+--
+
+![Training](/support.png)
+
 ## **Fees & Delivery:**
 
 - Three-Day Core Implementation Training: USD 3,600
