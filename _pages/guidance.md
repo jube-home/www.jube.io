@@ -8,7 +8,7 @@ While transaction monitoring covers a wide range of activities, Jube specificall
 use case. To enhance clarity and precision,
 the [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) has been
 developed and is
-meticulously maintained. This guidance is designed to assist compliance managers in tailoring it to meet their
+meticulously maintained. Guidance is designed to assist compliance managers in tailoring it to meet their
 organization’s unique regulatory requirements. These obligations are often rooted in the Financial Action Task Force (
 FATF) guidelines and further reflected in the Wolfsberg Principles, which are updated periodically to reflect evolving
 standards.
@@ -16,9 +16,14 @@ standards.
 This [document](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) provides a comprehensive framework for
 monitoring
 compliance with Anti-Money Laundering (AML) regulations using Jube, an open-source fraud prevention and transaction
-monitoring tool. The framework aligns with guidance from the
+monitoring tool. The guidance aligns with guidance from the
 Financial Action Task Force (FATF) and the Wolfsberg Principles, focusing on transaction monitoring and risk-based
 approaches to AML compliance.
+
+Jube facilitates the execution of the AML compliance guidance, making it the most relevant tool to highlight its
+features, ensuring an assured compliance outcome. By leveraging its advanced capabilities, Jube enables financial
+institutions to effectively monitor transactions, detect anomalies, and adhere to regulatory requirements, thereby
+enhancing overall compliance efforts.
 
 ## Core Principles of AML Monitoring
 
@@ -75,7 +80,7 @@ approaches to AML compliance.
 
 Jube provides a powerful, flexible, and cost-effective solution for AML transaction monitoring. By leveraging its
 real-time capabilities, advanced analytics, and open-source nature, financial institutions can enhance compliance,
-reduce costs, and adapt to evolving financial crime threats. The framework emphasizes a data-driven, risk-based
+reduce costs, and adapt to evolving financial crime threats. The guidance emphasizes a data-driven, risk-based
 approach, ensuring effective monitoring and regulatory alignment.
 
 <div class="hero__subscribe">
