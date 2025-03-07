@@ -25,7 +25,7 @@ are
 largely adjacent and require similar methodologies, albeit with subtle differences in application.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
 </div>
 
 ---
@@ -87,7 +87,7 @@ Jube within their organizations. Key roles include:
 - Manage environment variables, log configurations, and authentication.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
 </div>
 
 ---
@@ -146,7 +146,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Debugging Exhaustive Model Training
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
 </div>
 
 ---
@@ -183,5 +183,5 @@ For those ready to take the next step, Jube’s training program is an invaluabl
 driving successful implementation.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
 </div>
