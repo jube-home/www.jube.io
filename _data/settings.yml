@@ -17,8 +17,6 @@ menu__settings:
       url: '/training'
     - title: 'Resources'
       submenu:
-        - title: 'Docker'
-          url: '/docker'
         - title: 'Docs'
           url: 'https://jube-home.github.io/jube/'
         - title: 'GitHub'
