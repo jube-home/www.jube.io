@@ -11,14 +11,12 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Guidance'
-      url: '/guidance'
+    - title: 'Learn More'
+      url: '/learn-more'
     - title: 'Training'
       url: '/training'
     - title: 'Resources'
       submenu:
-        - title: 'Guidance'
-          url: '/JubeAMLMonitoringComplianceGuidance.pdf'
         - title: 'Docker'
           url: '/docker'
         - title: 'Docs'

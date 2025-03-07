@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Guidance
-permalink: /guidance/
+title: Learn More
+permalink: /learn-more/
 ---
 
 While transaction monitoring covers a wide range of activities, Jube specifically targets the Anti-Money Laundering (AML)

@@ -29,6 +29,8 @@ largely adjacent and require similar methodologies, albeit with subtle differenc
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
 </div>
 
+---
+
 ## **Program Outcomes:**
 
 By the end of the training, participants will:
@@ -88,6 +90,8 @@ Jube within their organizations. Key roles include:
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
 </div>
+
+---
 
 ## **Training Agenda**:
 
@@ -149,6 +153,12 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Hosted on a private, powerful, multi-tenant DigitalOcean Droplet.
 - Training is conducted on-site or at a global venue.
 - Travel and expenses are billed separately and must be covered in advance.
+
+<div class="hero__subscribe">
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
+</div>
+
+---
 
 ## **Conclusion:**
 
