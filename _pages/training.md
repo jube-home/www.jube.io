@@ -149,7 +149,7 @@ for business continuity. This session covers software patterns, frameworks, codi
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book Developer Demonstration</a>
 </div>
 
---
+---
 
 ![Training](/support.png)
 
