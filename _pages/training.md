@@ -25,6 +25,10 @@ other transaction monitoring use cases will also be comprehensively addressed by
 are
 largely adjacent and require similar methodologies, albeit with subtle differences in application.
 
+<div class="hero__subscribe">
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
+</div>
+
 ## **Program Outcomes:**
 
 By the end of the training, participants will:
@@ -80,6 +84,10 @@ Jube within their organizations. Key roles include:
 
 - Ensure the security, scalability, and performance of Jube implementations.
 - Manage environment variables, log configurations, and authentication.
+
+<div class="hero__subscribe">
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
+</div>
 
 ## **Training Agenda**:
 
@@ -164,5 +172,5 @@ For those ready to take the next step, Jube’s training program is an invaluabl
 driving successful implementation.
 
 <div class="hero__subscribe">
-  <a href="/support" class="button button--primary section-button">Learn About Support</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Demo</a>
 </div>

@@ -13,12 +13,8 @@ menu__settings:
       url: '/'
     - title: 'Guidance'
       url: '/guidance'
-    - title: 'Professional Services'
-      submenu:
-        - url: '/training'
-          title: 'Training'
-        - url: '/support'
-          title: 'Support'
+    - title: 'Training'
+      url: '/training'
     - title: 'Resources'
       submenu:
         - title: 'Guidance'
@@ -29,8 +25,6 @@ menu__settings:
           url: 'https://jube-home.github.io/jube/'
         - title: 'GitHub'
           url: 'https://github.com/jube-home/jube'
-    - title: 'Contact'
-      url: '/contact'
 
 #-------------------------------
 # Hero Settings
