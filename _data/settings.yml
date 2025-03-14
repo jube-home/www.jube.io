@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Jube
+title: Open-Source Anti-Money Laundering (AML) Transaction Monitoring
 logo: '/images/logo.png'
-description: Jube is open-source transaction and event monitoring software.
+description: Jube is an open-source software for real-time transaction and event monitoring, utilizing AI to support compliance with regulatory obligations through its AML Monitoring Compliance Guidance.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 #-------------------------------
