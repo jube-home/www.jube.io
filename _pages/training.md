@@ -103,49 +103,56 @@ for technical participants responsible for system administration but do not requ
 For organizations with developer teams, an **additional day** is available to familiarize them with the Jube codebase
 for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
 
-### **Day 1: Core Concepts:**
+### **Day 1: Configuring Models, Messaging and Rule Strategy:**
 
 - AML Monitoring Compliance Guidance Overview
-- Introduction to Jube
-- User Interface Concepts
-- HTTP Messaging
-- Models and Payload
+- Introduction to Jube and Key User Interface Concepts
+- Models and HTTP Messaging
+- Request XPath Payload
 - Inline Functions
-- Abstraction Rules and Calculations
-- Lists and Dictionaries
+- Gateway Rules
+- Abstraction Rules
+- Abstraction Calculations
 - Activation Rules
-- **Electives**: Architecture and Caching, Environment Variables, Installation and Log Configuration
+- Lists and Dictionaries
+- Workshop
+- **Elective**: Architecture and Caching, Environment Variables, Installation, and Log Configuration
 
-### **Day 2: Advanced Features:**
+### **Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow:**
 
 - Suppression
 - Sanctions Fuzzy Matching
 - Time To Live (TTL) Counters
-- Introduction to Artificial Intelligence (AI)
-- Exhaustive AI Training
-- Case Management
-- Security
-- **Electives**: Tracing Transaction Flow, High Availability, Performance Counters, AMQP
+- Introduction to Machine Learning
+- Exhaustive Machine Learning Training
+- Activation Watcher
+- Tags
+- Case Workflows
+- Workshop
+- **Elective**: Tracing Transaction Flow, High Availability, Performance Counters, AMQP
 
-### **Day 3: Performance and Reporting:**
+### **Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility:**
 
+- Users, Roles, and Permissions:
 - SQL Database Discovery
-- Performance Monitoring
 - Visualization and Reporting
-- Inline Scripts
-- Scores via R Plumber (HTTP)
-- **Electives**: Cache Bottleneck Analysis, Archive Bottleneck Analysis, Multi-Tenancy
+- Reprocessing
+- Inline Scripts and Remote Procedure Calls (RPC)
+- Scores via Synchronous RPC
+- Synchronous Messaging and Advanced Data Engineering
+- Workshop
+- **Elective**: Tracing Transaction Flow, Bottleneck Analysis, and Cache Training
 
 ### **Day 4 (Optional): Developer Training:**
 
 - Software Patterns
 - C# Solution and Project Overview
-- Nuget and Dependencies
-- Debugging the .NET Hosting Environment, Dependency Injection, and Migrations
-- Debugging the User Interface (Frontend and Backend)
-- Debugging Background Services (Authentication, SignalR)
-- Detailed Transaction Flow and Algorithms
-- Debugging Exhaustive Model Training
+- Building and Running
+- Stepping and Debugging .NET Hosting, Dependency Injection, and Migrations
+- Stepping and Debugging the User Interface (Frontend and Backend):
+- Stepping and Debugging Background Threads
+- Stepping and Debugging Detailed Transaction Flow and Algorithms
+- Stepping and Debugging Exhaustive Model Training
 
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
