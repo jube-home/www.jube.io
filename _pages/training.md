@@ -94,7 +94,7 @@ Jube within their organizations. Key roles include:
 
 ## **Training Agenda**:
 
-The following is an abridged version of the full [Jube Implementation Training Plan (pdf)]((https://jube.io/JubeTrainingPlan.pdf)).
+The following is an abridged version of the full [Jube Implementation Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
 
 The training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules. Elective
 modules provide in-depth training on advanced administrative concepts using dedicated training servers. These are ideal
