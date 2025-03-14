@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Training
+title: Training to implement AML Transaction Monitoring with Jube
 permalink: /training/
 ---
 
@@ -12,14 +12,14 @@ To accelerate implementation, **Richard Churchman**, the developer of Jube, offe
 ![Training](/training.png)
 
 While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on the AML (Anti-Money Laundering) use case. The training is designed to support compliance efforts and is structured around the
-[Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf).
+[Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf).
 This guidance is intended to be adapted by compliance managers to align
-with your organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
+with an organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
 guidelines and further reflected in the Wolfsberg Principles.
 
 It is important to note that Jube operates as a real-time system. As a result, while the training emphasizes
 implementation of
-the [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf),
+the [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf),
 other transaction monitoring use cases will also be comprehensively addressed by implication. The underlying concepts
 are
 largely adjacent and require similar methodologies, albeit with subtle differences in application.
@@ -93,6 +93,8 @@ Jube within their organizations. Key roles include:
 ---
 
 ## **Training Agenda**:
+
+The following is an abridged version of the full [Jube Implementation Training Plan (pdf)]((https://jube.io/JubeTrainingPlan.pdf)).
 
 The training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules. Elective
 modules provide in-depth training on advanced administrative concepts using dedicated training servers. These are ideal
