@@ -4,8 +4,7 @@ title: Training to implement AML Transaction Monitoring with Jube
 permalink: /training/
 ---
 
-For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/), interact with Jooby
-or Jube’s AI-powered chatbot.
+For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/).
 
 To accelerate implementation, **Richard Churchman**, the developer of Jube, offers a comprehensive training program. This program is designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube for their specific requirements.
 
