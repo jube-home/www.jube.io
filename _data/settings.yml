@@ -21,9 +21,9 @@ menu__settings:
           url: 'https://jube-home.github.io/aml-transaction-monitoring/'
         - title: 'GitHub'
           url: 'https://github.com/jube-home/aml-transaction-monitoring'
-        - title: 'Guidance (pdf)'
-          url: 'JubeAMLMonitoringComplianceGuidance.pdf'
-        - title: 'Training (pdf)'
+        - title: 'Guidance'
+          url: '/JubeAMLMonitoringComplianceGuidance.pdf'
+        - title: 'Training'
           url: '/JubeTrainingPlan.pdf'
 
 #-------------------------------
