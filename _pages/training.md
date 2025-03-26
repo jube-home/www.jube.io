@@ -163,8 +163,8 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 ## **Fees & Delivery:**
 
-- Three-Day Core Implementation Training: USD 3,600
-- Four-Day Core + Developer Training: USD 4,800
+- Three-Day Core Implementation Training: USD 4,680
+- Four-Day Core + Developer Training: USD 6,240
 - Hosted on a private, powerful, multi-tenant DigitalOcean Droplet.
 - Training is conducted on-site or at a global venue.
 - Travel and expenses are billed separately and must be covered in advance.
