@@ -166,7 +166,7 @@ For a maximum of six participants:
 - Three-Day Core: USD 2,400
 - Four-Day Core and Developer Workshop: USD 3,200
 
-![Remote Training](/support.png)
+Includes three months of free support, for up to four hours a month, to assure successful implementation.
 
 ## **Conclusion:**
 
