@@ -1,22 +1,22 @@
 ---
 layout: page
-title: Training to implement AML Transaction Monitoring with Jube
+title: Remote Training to implement AML Transaction Monitoring with Jube
 permalink: /training/
 ---
 
 For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/).
 
-To accelerate implementation, **Richard Churchman**, the developer of Jube, offers a comprehensive training program. This program is designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube for their specific requirements.
+To accelerate implementation, **Richard Churchman**, the developer of Jube, offers a comprehensive remote training program. This program is designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube for their specific requirements.
 
-![Training](/training.png)
+![Remote Training](/training.png)
 
-While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on the AML (Anti-Money Laundering) use case. The training is designed to support compliance efforts and is structured around the
+While transaction monitoring encompasses a broad spectrum of activities, this remote training specifically focuses on the AML (Anti-Money Laundering) use case. The training is designed to support compliance efforts and is structured around the
 [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf).
 This guidance is intended to be adapted by compliance managers to align
 with an organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
 guidelines and further reflected in the Wolfsberg Principles.
 
-It is important to note that Jube operates as a real-time system. As a result, while the training emphasizes
+It is important to note that Jube operates as a real-time system. As a result, while the remote training emphasizes
 implementation of
 the [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf),
 other transaction monitoring use cases will also be comprehensively addressed by implication. The underlying concepts
@@ -31,7 +31,7 @@ largely adjacent and require similar methodologies, albeit with subtle differenc
 
 ## **Program Outcomes:**
 
-By the end of the training, participants will:
+By the end of the remote training, participants will:
 
 - Confidently implement and manage Jube within their organization.
 - Optimize Jube for performance, scalability, and security.
@@ -47,7 +47,7 @@ By the end of the training, participants will:
 
 ## **Who Should Attend?**
 
-The Jube Implementation Training Program is ideal for professionals involved in implementing, managing, and optimizing
+The remote training is ideal for professionals involved in implementing, managing, and optimizing
 Jube within their organizations. Key roles include:
 
 ### 1. **Developers:**
@@ -91,12 +91,12 @@ Jube within their organizations. Key roles include:
 
 ---
 
-## **Training Agenda**:
+## **Remote Training Agenda**:
 
-The following is an abridged version of the full [Jube Implementation Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
+The following is an abridged version of the full [Jube Remote Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
 
-The training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules. Elective
-modules provide in-depth training on advanced administrative concepts using dedicated training servers. These are ideal
+The remote training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules. Elective
+modules provide in-depth remote training on advanced administrative concepts using dedicated servers. These are ideal
 for technical participants responsible for system administration but do not require developer expertise.
 
 For organizations with developer teams, an **additional day** is available to familiarize them with the Jube codebase
@@ -142,7 +142,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Workshop
 - **Elective**: Tracing Transaction Flow, Bottleneck Analysis, and Cache Training
 
-### **Day 4 (Optional): Developer Training:**
+### **Day 4 (Optional): Developer Workshop:**
 
 - Software Patterns
 - C# Solution and Project Overview
@@ -159,35 +159,34 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 ---
 
-![Training](/support.png)
+![Remote Training](/support.png)
 
-## **Fees & Delivery:**
+## **Fees:**
 
-- Three-Day Core Implementation Training: USD 4,680
-- Four-Day Core + Developer Training: USD 6,240
-- Hosted on a private, powerful, multi-tenant DigitalOcean Droplet.
-- Training is conducted on-site or at a global venue.
-- Travel and expenses are billed separately and must be covered in advance.
+For a maximum of six participants:
+
+- Three-Day Core: USD 2,400
+- Four-Day Core and Developer Workshop: USD 3,200
 
 ## **Conclusion:**
 
-In conclusion, Jube’s comprehensive training program is designed to empower professionals with the knowledge and skills
+In conclusion, Jube’s comprehensive remote training program is designed to empower professionals with the knowledge and skills
 necessary to effectively implement, manage, and optimize Jube within their organizations. By offering a blend of core
 concepts, advanced features, and elective modules, the program ensures participants gain hands-on experience and
 practical insights tailored to their roles—whether they are developers, compliance officers, fraud prevention
 specialists, or system administrators.
 
 The structured agenda, spanning 3 to 4 days, provides a deep dive into Jube’s capabilities, from AI-driven solutions and
-sanctions fuzzy matching to performance optimization and debugging. With optional developer training, organizations can
+sanctions fuzzy matching to performance optimization and debugging. With optional developer remote training, organizations can
 also ensure their technical teams are well-equipped to maintain and troubleshoot the system for long-term business
 continuity.
 
 By attending this program, participants will not only accelerate the adoption of Jube but also facilitate their ability
 to leverage its advanced features for fraud detection, compliance, and financial crime prevention. Ultimately, this
-training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational efficiency
+remote training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational efficiency
 in an ever-evolving landscape.
 
-For those ready to take the next step, Jube’s training program is an invaluable investment in building expertise and
+For those ready to take the next step, Jube’s remote training program is an invaluable investment in building expertise and
 driving successful implementation.
 
 <div class="hero__subscribe">
