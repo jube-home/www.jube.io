@@ -159,14 +159,14 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 ---
 
-![Remote Training](/support.png)
-
 ## **Fees:**
 
 For a maximum of six participants:
 
 - Three-Day Core: USD 2,400
 - Four-Day Core and Developer Workshop: USD 3,200
+
+![Remote Training](/support.png)
 
 ## **Conclusion:**
 
