@@ -157,8 +157,8 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 For a maximum of six participants:
 
-- Three-Day Core: USD 2,400
-- Four-Day Core and Developer Workshop: USD 3,200
+- Three-Day Core: USD 3,600
+- Four-Day Core and Developer Workshop: USD 4,800
 
 Includes three months of free support, for up to four hours a month, to assure successful implementation.
 
