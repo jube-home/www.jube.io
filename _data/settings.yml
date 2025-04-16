@@ -21,10 +21,12 @@ menu__settings:
           url: 'https://jube-home.github.io/aml-transaction-monitoring/'
         - title: 'GitHub'
           url: 'https://github.com/jube-home/aml-transaction-monitoring'
-        - title: 'Guidance'
+        - title: 'AML Guidance'
           url: '/JubeAMLMonitoringComplianceGuidance.pdf'
-        - title: 'Training'
+        - title: 'Jube Training Plan'
           url: '/JubeTrainingPlan.pdf'
+        - title: 'Advanced Analytics Guidance'
+          url: '/AdvancedAnalyticsWithR.pdf'
 
 #-------------------------------
 # Hero Settings
