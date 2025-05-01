@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Remote Training to implement AML Transaction Monitoring with Jube
-permalink: /training/
+title: Jube Training
+permalink: /jube-training/
 ---
 
 While transaction monitoring encompasses a broad spectrum of activities, this remote training specifically focuses on
@@ -27,12 +27,11 @@ differences in application.
 * Troubleshoot & Debug (Developers): Explore Jube’s architecture (Docker/Redis/Postgres), debug with INFO-level logs, and manage async processes (AMQP) and background threads.
 * Leverage Advanced Compliance Features: Apply fuzzy matching (Levenshtein) for sanctions, trigger real-time alerts/cases via Activation Rules, and create custom dashboards for oversight.
 
-
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
 </div><br/>
 
-## **Remote Training Agenda**:
+## **Training Plan**:
 
 The following is an abridged version of the
 full [Jube Remote Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
