@@ -17,7 +17,7 @@ The course bridges theory and practice, equipping analysts to deploy advanced an
 maintaining transparency in machine learning processes.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Trainer Consultation</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>
 ---
 ## **Program Outcomes:**
@@ -30,7 +30,7 @@ maintaining transparency in machine learning processes.
   simulation for risk modelling, and model deployment (APIs, reports, operational integration).
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Trainer Consultation</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>
 ---
 ## **Training Plan**:
@@ -89,7 +89,7 @@ effectively.
 - Integration to the Operation (Outputting Reports and API's)
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Trainer Consultation</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>
 ---
 ## **Fees:**
@@ -125,5 +125,5 @@ course provides the tools and knowledge needed to stay ahead in fraud detection 
 investment for professionals looking to leverage machine learning for real-world impact.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>

@@ -16,7 +16,7 @@ implication. The underlying concepts are largely adjacent and require similar me
 differences in application.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>
 ---
 ## **Program Outcomes:**
@@ -28,7 +28,7 @@ differences in application.
 * Leverage Advanced Compliance Features: Apply fuzzy matching (Levenshtein) for sanctions, trigger real-time alerts/cases via Activation Rules, and create custom dashboards for oversight.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>
 ---
 ## **Training Plan**:
@@ -96,7 +96,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Exhaustive Model Training
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>
 ---
 ## **Fees:**
@@ -138,5 +138,5 @@ and
 driving successful implementation.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
 </div>
