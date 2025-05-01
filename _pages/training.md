@@ -6,22 +6,16 @@ permalink: /training/
 
 For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/).
 
-To accelerate implementation, **Richard Churchman**, the developer of Jube, offers a comprehensive remote training program. This program is designed to equip participants with the skills needed to confidently implement, manage, and optimize Jube for their specific requirements.
-
-![Remote Training](/training.png)
-
-While transaction monitoring encompasses a broad spectrum of activities, this remote training specifically focuses on the AML (Anti-Money Laundering) use case. The training is designed to support compliance efforts and is structured around the
-[Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf).
-This guidance is intended to be adapted by compliance managers to align
-with an organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
+While transaction monitoring encompasses a broad spectrum of activities, this remote training specifically focuses on
+the AML (Anti-Money Laundering) use case. The remote training is designed to support compliance efforts and is
+structured around this guidance. This guidance is intended to be adapted by compliance managers to align with an
+organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
 guidelines and further reflected in the Wolfsberg Principles.
 
 It is important to note that Jube operates as a real-time system. As a result, while the remote training emphasizes
-implementation of
-the [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf),
-other transaction monitoring use cases will also be comprehensively addressed by implication. The underlying concepts
-are
-largely adjacent and require similar methodologies, albeit with subtle differences in application.
+implementation of this guidance other transaction monitoring use cases will also be comprehensively addressed by
+implication. The underlying concepts are largely adjacent and require similar methodologies, albeit with subtle
+differences in application.
 
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
@@ -29,69 +23,17 @@ largely adjacent and require similar methodologies, albeit with subtle differenc
 
 ## **Program Outcomes:**
 
-By the end of the remote training, participants will:
-
-- Confidently implement and manage Jube within their organization.
-- Optimize Jube for performance, scalability, and security.
-- Accelerate adoption through hands-on experience and best practices.
-- Troubleshoot and debug the system effectively (for developers).
-
-## **Why Attend?**
-
-- Gain hands-on experience with Jube’s features and tools.
-- Learn best practices for optimizing performance, scalability, and security.
-- Accelerate adoption and ensure successful implementation.
-- Develop skills to troubleshoot, debug, and manage Jube effectively.
-
-## **Who Should Attend?**
-
-The remote training is ideal for professionals involved in implementing, managing, and optimizing
-Jube within their organizations. Key roles include:
-
-### 1. **Developers:**
-
-- Responsible for integrating, customizing, and maintaining Jube.
-- Need to understand the codebase, debug issues, and ensure business continuity.
-
-### 2. **Heads of Fraud:**
-
-- Leaders overseeing fraud detection and prevention strategies.
-- Will leverage Jube’s advanced features like AI training, suppression rules, and sanctions fuzzy matching.
-
-### 3. **Heads of Compliance:**
-
-- Compliance officers ensuring regulatory adherence.
-- Will use Jube for sanctions screening, case management, and reporting.
-
-### 4. **Financial Crime Prevention Professionals:**
-
-- Focused on combating money laundering, fraud, and sanctions evasion.
-- Will benefit from Jube’s AI-driven solutions and performance optimization.
-
-### 5. **System Administrators:**
-
-- Responsible for Jube’s administration, configuration, and maintenance.
-- Will manage performance monitoring, caching, and high availability.
-
-### 6. **Data Analysts and Reporting Specialists:**
-
-- Involved in data discovery, visualization, and reporting.
-- Will utilize Jube’s SQL database discovery and reporting tools.
-
-### 7. **IT and Security Professionals:**
-
-- Ensure the security, scalability, and performance of Jube implementations.
-- Manage environment variables, log configurations, and authentication.
-
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
 </div><br/>
 
 ## **Remote Training Agenda**:
 
-The following is an abridged version of the full [Jube Remote Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
+The following is an abridged version of the
+full [Jube Remote Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
 
-The remote training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules. Elective
+The remote training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules.
+Elective
 modules provide in-depth remote training on advanced administrative concepts using dedicated servers. These are ideal
 for technical participants responsible for system administration but do not require developer expertise.
 
@@ -162,25 +104,35 @@ For a maximum of six participants:
 
 Includes three months of free support, for up to four hours a month, to assure successful implementation.
 
+## **Resources:**
+
+[Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
+[Training Plan for Implementation of AML Transaction Monitoring with Jube](/training.png)
+[Jube Documentation](https://jube-home.github.io/aml-transaction-monitoring/)
+
 ## **Conclusion:**
 
-In conclusion, Jube’s comprehensive remote training program is designed to empower professionals with the knowledge and skills
+In conclusion, Jube’s comprehensive remote training program is designed to empower professionals with the knowledge and
+skills
 necessary to effectively implement, manage, and optimize Jube within their organizations. By offering a blend of core
 concepts, advanced features, and elective modules, the program ensures participants gain hands-on experience and
 practical insights tailored to their roles—whether they are developers, compliance officers, fraud prevention
 specialists, or system administrators.
 
 The structured agenda, spanning 3 to 4 days, provides a deep dive into Jube’s capabilities, from AI-driven solutions and
-sanctions fuzzy matching to performance optimization and debugging. With optional developer remote training, organizations can
+sanctions fuzzy matching to performance optimization and debugging. With optional developer remote training,
+organizations can
 also ensure their technical teams are well-equipped to maintain and troubleshoot the system for long-term business
 continuity.
 
 By attending this program, participants will not only accelerate the adoption of Jube but also facilitate their ability
 to leverage its advanced features for fraud detection, compliance, and financial crime prevention. Ultimately, this
-remote training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational efficiency
+remote training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational
+efficiency
 in an ever-evolving landscape.
 
-For those ready to take the next step, Jube’s remote training program is an invaluable investment in building expertise and
+For those ready to take the next step, Jube’s remote training program is an invaluable investment in building expertise
+and
 driving successful implementation.
 
 <div class="hero__subscribe">

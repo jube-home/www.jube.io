@@ -25,8 +25,8 @@ menu__settings:
           url: '/JubeAMLMonitoringComplianceGuidance.pdf'
         - title: 'Jube Training Plan'
           url: '/JubeTrainingPlan.pdf'
-        - title: 'Advanced Analytics Guidance'
-          url: '/AdvancedAnalyticsWithR.pdf'
+        - title: 'Advanced Analytics with R Guidance'
+          url: '/AdvancedAnalyticsWithRGuidance.pdf'
 
 #-------------------------------
 # Hero Settings
