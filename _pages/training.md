@@ -23,6 +23,13 @@ differences in application.
 
 ## **Program Outcomes:**
 
+* Confidently Implement and Manage Jube: Master Jube’s AML transaction monitoring (FATF/Wolfsberg-aligned), UI navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for fraud/AML detection.
+* Optimize Jube for Performance & Security: Configure caching, sanctions screening, and suppression techniques (keys/total/rule-based); use TTL counters for high-volume transaction tracking.
+* Accelerate Adoption with Best Practices: Build/evaluate predictive models (fraud/credit risk); implement ML via Exhaustive training; design case management workflows (tracking, forms, audits).
+* Troubleshoot & Debug (Developers): Explore Jube’s architecture (Docker/Redis/Postgres), debug with INFO-level logs, and manage async processes (AMQP) and background threads.
+* Leverage Advanced Compliance Features: Apply fuzzy matching (Levenshtein) for sanctions, trigger real-time alerts/cases via Activation Rules, and create custom dashboards for oversight.
+
+
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
 </div><br/>
