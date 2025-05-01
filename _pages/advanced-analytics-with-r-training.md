@@ -17,9 +17,9 @@ The course bridges theory and practice, equipping analysts to deploy advanced an
 maintaining transparency in machine learning processes.
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
-</div><br/>
-
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Trainer Consultation</a>
+</div>
+---
 ## **Program Outcomes:**
 
 * Understand foundational ML & statistical techniques, including linear/logistic regression, decision trees, Bayesian
@@ -30,9 +30,9 @@ maintaining transparency in machine learning processes.
   simulation for risk modelling, and model deployment (APIs, reports, operational integration).
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
-</div><br/>
-
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Trainer Consultation</a>
+</div>
+---
 ## **Training Plan**:
 
 The following is an abridged version of the
@@ -89,9 +89,9 @@ effectively.
 - Integration to the Operation (Outputting Reports and API's)
 
 <div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
-</div><br/>
-
+  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Trainer Consultation</a>
+</div>
+---
 ## **Fees:**
 
 For a maximum of six participants:

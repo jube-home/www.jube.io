@@ -17,8 +17,8 @@ differences in application.
 
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
-</div><br/>
-
+</div>
+---
 ## **Program Outcomes:**
 
 * Confidently Implement and Manage Jube: Master Jube’s AML transaction monitoring (FATF/Wolfsberg-aligned), UI navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for fraud/AML detection.
@@ -29,8 +29,8 @@ differences in application.
 
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
-</div><br/>
-
+</div>
+---
 ## **Training Plan**:
 
 The following is an abridged version of the
@@ -97,8 +97,8 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 <div class="hero__subscribe">
   <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Developer Demonstration</a>
-</div><br/>
-
+</div>
+---
 ## **Fees:**
 
 For a maximum of six participants:
