@@ -14,7 +14,11 @@ menu__settings:
     - title: 'Learn More'
       url: '/learn-more'
     - title: 'Training'
-      url: '/training'
+      submenu:
+        - title: 'Jube'
+          url: '/jube-training'
+        - title: 'Advanced Analytics with R'
+          url: 'AdvancedAnalyticsWithRTrainingPlan.pdf'
     - title: 'Resources'
       submenu:
         - title: 'Jube Documentation'
