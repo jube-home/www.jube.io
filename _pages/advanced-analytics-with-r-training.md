@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Advanced Analytics Training with R
+title: Advanced Analytics with R Training
 permalink: /advanced-analytics-with-r-training/
 ---
 
