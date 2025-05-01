@@ -4,8 +4,6 @@ title: Remote Training to implement AML Transaction Monitoring with Jube
 permalink: /training/
 ---
 
-For self-guided learning, users can explore the [documentation](https://jube-home.github.io/jube/).
-
 While transaction monitoring encompasses a broad spectrum of activities, this remote training specifically focuses on
 the AML (Anti-Money Laundering) use case. The remote training is designed to support compliance efforts and is
 structured around this guidance. This guidance is intended to be adapted by compliance managers to align with an
