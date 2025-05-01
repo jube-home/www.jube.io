@@ -108,9 +108,9 @@ For a maximum of six participants:
 
 ## **Resources:**
 
-[Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
-[Training Plan for Implementation of AML Transaction Monitoring with Jube](/training.png)
-[Jube Documentation](https://jube-home.github.io/aml-transaction-monitoring/)
+* [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
+* [Training Plan for Implementation of AML Transaction Monitoring with Jube](/training.png)
+* [Jube Documentation](https://jube-home.github.io/aml-transaction-monitoring/)
 
 ## **Conclusion:**
 
