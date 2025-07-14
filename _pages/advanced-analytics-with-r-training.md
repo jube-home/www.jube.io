@@ -16,9 +16,6 @@ ecosystem of packages and RStudio's intuitive interface for comprehensive advanc
 The course bridges theory and practice, equipping analysts to deploy advanced analytics across financial use cases while
 maintaining transparency in machine learning processes.
 
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
 ---
 ## **Program Outcomes:**
 
@@ -29,9 +26,6 @@ maintaining transparency in machine learning processes.
 * Explore advanced topics like unsupervised learning (anomaly detection with Bayesian networks & SVMs), Monte Carlo
   simulation for risk modelling, and model deployment (APIs, reports, operational integration).
 
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
 ---
 ## **Training Plan**:
 
@@ -88,17 +82,6 @@ effectively.
 - Monte Carlo Model Search and Prescriptive Analytics
 - Integration to the Operation (Outputting Reports and API's)
 
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
----
-## **Fees:**
-
-For a maximum of six participants:
-
-- Three-Day Core: USD 3,600
-- Four-Day Core and Developer Workshop: USD 4,800
-
 ## **Resources:**
 
 * [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
@@ -123,7 +106,3 @@ organizations.
 In an increasingly data-driven financial landscape, mastering these techniques is not just valuable—it’s essential. This
 course provides the tools and knowledge needed to stay ahead in fraud detection and risk analytics, making it a critical
 investment for professionals looking to leverage machine learning for real-world impact.
-
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
