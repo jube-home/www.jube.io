@@ -4,7 +4,8 @@ title: Learn more about AML Transaction Monitoring with Jube
 permalink: /learn-more/
 ---
 
-While transaction monitoring covers a wide range of activities, Jube specifically targets the Anti-Money Laundering (AML)
+While transaction monitoring covers a wide range of activities, Jube specifically targets the Anti-Money Laundering (
+AML)
 use case. To enhance clarity and precision,
 the [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) has been
 developed and is
@@ -13,7 +14,8 @@ organization’s unique regulatory requirements. These obligations are often roo
 FATF) guidelines and further reflected in the Wolfsberg Principles, which are updated periodically to reflect evolving
 standards.
 
-The [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) document provides a comprehensive framework for
+The [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) document
+provides a comprehensive framework for
 monitoring
 compliance with Anti-Money Laundering (AML) regulations using Jube, an open-source fraud prevention and transaction
 monitoring tool. The guidance aligns with guidance from the
@@ -24,10 +26,6 @@ Jube facilitates the execution of the AML compliance guidance, making it the mos
 features, ensuring an assured compliance outcome. By leveraging its advanced capabilities, Jube enables financial
 institutions to effectively monitor transactions, detect anomalies, and adhere to regulatory requirements, thereby
 enhancing overall compliance efforts.
-
-<div class="hero__subscribe">
-  <a href="/training" class="button button--primary section-button">Fast-track with Training</a>
-</div>
 
 ---
 

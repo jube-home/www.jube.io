@@ -4,41 +4,45 @@ title: Jube Training
 permalink: /jube-training/
 ---
 
-While transaction monitoring encompasses a broad spectrum of activities, this remote training specifically focuses on
-the AML (Anti-Money Laundering) use case. The remote training is designed to support compliance efforts and is
+While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on
+the AML (Anti-Money Laundering) use case. The training is designed to support compliance efforts and is
 structured around this guidance. This guidance is intended to be adapted by compliance managers to align with an
 organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
 guidelines and further reflected in the Wolfsberg Principles.
 
-It is important to note that Jube operates as a real-time system. As a result, while the remote training emphasizes
+It is important to note that Jube operates as a real-time system. As a result, while the training emphasizes
 implementation of this guidance other transaction monitoring use cases will also be comprehensively addressed by
 implication. The underlying concepts are largely adjacent and require similar methodologies, albeit with subtle
 differences in application.
 
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
+This training is delivered by [Richard Churchman](https://www.churchman.io), the developer of Jube.
+
 ---
+
 ## **Program Outcomes:**
 
-* Confidently Implement and Manage Jube: Master Jube’s AML transaction monitoring (FATF/Wolfsberg-aligned), UI navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for fraud/AML detection.
-* Optimize Jube for Performance & Security: Configure caching, sanctions screening, and suppression techniques (keys/total/rule-based); use TTL counters for high-volume transaction tracking.
-* Accelerate Adoption with Best Practices: Build/evaluate predictive models (fraud/credit risk); implement ML via Exhaustive training; design case management workflows (tracking, forms, audits).
-* Troubleshoot & Debug (Developers): Explore Jube’s architecture (Docker/Redis/Postgres), debug with INFO-level logs, and manage async processes (AMQP) and background threads.
-* Leverage Advanced Compliance Features: Apply fuzzy matching (Levenshtein) for sanctions, trigger real-time alerts/cases via Activation Rules, and create custom dashboards for oversight.
+* Confidently Implement and Manage Jube: Master Jube’s AML transaction monitoring (FATF/Wolfsberg-aligned), UI
+  navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for fraud/AML
+  detection.
+* Optimize Jube for Performance & Security: Configure caching, sanctions screening, and suppression techniques (
+  keys/total/rule-based); use TTL counters for high-volume transaction tracking.
+* Accelerate Adoption with Best Practices: Build/evaluate predictive models (fraud/credit risk); implement ML via
+  Exhaustive training; design case management workflows (tracking, forms, audits).
+* Troubleshoot & Debug (Developers): Explore Jube’s architecture (Docker/Redis/Postgres), debug with INFO-level logs,
+  and manage async processes (AMQP) and background threads.
+* Leverage Advanced Compliance Features: Apply fuzzy matching (Levenshtein) for sanctions, trigger real-time
+  alerts/cases via Activation Rules, and create custom dashboards for oversight.
 
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
 ---
+
 ## **Training Plan**:
 
 The following is an abridged version of the
-full [Jube Remote Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
+full [Jube Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
 
-The remote training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules.
+The training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules.
 Elective
-modules provide in-depth remote training on advanced administrative concepts using dedicated servers. These are ideal
+modules provide in-depth training on advanced administrative concepts using dedicated servers. These are ideal
 for technical participants responsible for system administration but do not require developer expertise.
 
 For organizations with developer teams, an **additional day** is available to familiarize them with the Jube codebase
@@ -95,17 +99,6 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Detailed Transaction Flow and Algorithms
 - Stepping and Debugging Exhaustive Model Training
 
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
----
-## **Fees:**
-
-For a maximum of six participants:
-
-- Three-Day Core: USD 3,600
-- Four-Day Core and Developer Workshop: USD 4,800
-
 ## **Resources:**
 
 * [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
@@ -114,7 +107,7 @@ For a maximum of six participants:
 
 ## **Conclusion:**
 
-In conclusion, Jube’s comprehensive remote training program is designed to empower professionals with the knowledge and
+In conclusion, Jube’s comprehensive training program is designed to empower professionals with the knowledge and
 skills
 necessary to effectively implement, manage, and optimize Jube within their organizations. By offering a blend of core
 concepts, advanced features, and elective modules, the program ensures participants gain hands-on experience and
@@ -122,21 +115,17 @@ practical insights tailored to their roles—whether they are developers, compli
 specialists, or system administrators.
 
 The structured agenda, spanning 3 to 4 days, provides a deep dive into Jube’s capabilities, from AI-driven solutions and
-sanctions fuzzy matching to performance optimization and debugging. With optional developer remote training,
+sanctions fuzzy matching to performance optimization and debugging. With optional developer training,
 organizations can
 also ensure their technical teams are well-equipped to maintain and troubleshoot the system for long-term business
 continuity.
 
 By attending this program, participants will not only accelerate the adoption of Jube but also facilitate their ability
 to leverage its advanced features for fraud detection, compliance, and financial crime prevention. Ultimately, this
-remote training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational
+training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational
 efficiency
 in an ever-evolving landscape.
 
-For those ready to take the next step, Jube’s remote training program is an invaluable investment in building expertise
+For those ready to take the next step, Jube’s training program is an invaluable investment in building expertise
 and
 driving successful implementation.
-
-<div class="hero__subscribe">
-  <a href="https://calendly.com/richard-churchman-jube/30min" class="button button--primary section-button">Book a Call</a>
-</div>
