@@ -5,7 +5,8 @@ permalink: /jube-training/
 ---
 
 While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on
-the AML (Anti-Money Laundering) use case. The training is designed to support compliance efforts and is
+the AML (Anti-Money Laundering) and Fraud Detection Transaction Monitoring use cases. The training is designed to support compliance efforts
+and is
 structured around this guidance. This guidance is intended to be adapted by compliance managers to align with an
 organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
 guidelines and further reflected in the Wolfsberg Principles.
@@ -21,8 +22,8 @@ This training is delivered by [Richard Churchman](https://www.churchman.io), the
 
 ## **Program Outcomes:**
 
-* Confidently Implement and Manage Jube: Master Jube’s AML transaction monitoring (FATF/Wolfsberg-aligned), UI
-  navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for fraud/AML
+* Confidently Implement and Manage Jube: Master Jube’s AML (FATF/Wolfsberg-aligned) and Fraud Detection Transaction
+  Monitoring, User Interface navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for abuse
   detection.
 * Optimize Jube for Performance & Security: Configure caching, sanctions screening, and suppression techniques (
   keys/total/rule-based); use TTL counters for high-volume transaction tracking.
@@ -50,7 +51,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 ### **Day 1: Configuring Models, Messaging and Rule Strategy:**
 
-- AML Monitoring Compliance Guidance Overview
+- AML Monitoring Compliance Guidance Overview and Fraud Detection Transaction Monitoring
 - Introduction to Jube and Key User Interface Concepts
 - Models and HTTP Messaging
 - Request XPath Payload
@@ -102,8 +103,8 @@ for business continuity. This session covers software patterns, frameworks, codi
 ## **Resources:**
 
 * [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
-* [Training Plan for Implementation of AML Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
-* [Jube Documentation](https://jube-home.github.io/aml-transaction-monitoring/)
+* [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
+* [Jube Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
 
 ## **Conclusion:**
 

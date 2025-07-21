@@ -5,8 +5,7 @@ permalink: /learn-more/
 ---
 
 While transaction monitoring covers a wide range of activities, Jube specifically targets the Anti-Money Laundering (
-AML)
-use case. To enhance clarity and precision,
+AML) and Fraud Detection Transaction Monitoring use cases. To enhance clarity and precision,
 the [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) has been
 developed and is
 meticulously maintained. Guidance is designed to assist compliance managers in tailoring it to meet their
@@ -17,10 +16,10 @@ standards.
 The [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) document
 provides a comprehensive framework for
 monitoring
-compliance with Anti-Money Laundering (AML) regulations using Jube, an open-source fraud prevention and transaction
+compliance with Anti-Money Laundering (AML) regulations using Jube, an open-source real-time fraud prevention and transaction
 monitoring tool. The guidance aligns with guidance from the
 Financial Action Task Force (FATF) and the Wolfsberg Principles, focusing on transaction monitoring and risk-based
-approaches to AML compliance.
+approaches to AML compliance and other Fraud Detection Transaction Monitoring use cases.
 
 Jube facilitates the execution of the AML compliance guidance, making it the most relevant tool to highlight its
 features, ensuring an assured compliance outcome. By leveraging its advanced capabilities, Jube enables financial
@@ -29,12 +28,13 @@ enhancing overall compliance efforts.
 
 ---
 
-## Core Principles of AML Monitoring
+## Core Principles of AML and Fraud Detection Transaction Monitoring
 
 - **Know Your Customer (KYC):** Central to AML compliance, involving due diligence and ongoing monitoring.
 - **Risk-Based Approach (RBA):** Financial institutions assess risks and implement proportionate controls.
 - **Customer Due Diligence (CDD):** Five levels of diligence, from anonymous to enhanced monitoring and suspicious
   activity reporting (SAR).
+- **Fraud Detection*** Overlap with Fraud Detection Transaction Monitoring use cases.
 
 ## Automated Monitoring Systems
 
@@ -77,12 +77,12 @@ enhancing overall compliance efforts.
 
 - **Real-Time Processing:** Ensures timely detection of suspicious activities.
 - **Open-Source Advantage:** Transparency, customization, and cost efficiency.
-- **Adaptability:** Supports evolving AML regulations and emerging risks.
+- **Adaptability:** Supports evolving AML and Fraud Detection Transaction Monitoring regulations and emerging risks.
 - **Advanced Analytics:** Combines supervised and unsupervised learning for robust risk detection.
 
 ## Conclusion
 
-Jube provides a powerful, flexible, and cost-effective solution for AML transaction monitoring. By leveraging its
+Jube provides a powerful, flexible, and cost-effective solution for AML and Fraud Detection Transaction Monitoring. By leveraging its
 real-time capabilities, advanced analytics, and open-source nature, financial institutions can enhance compliance,
 reduce costs, and adapt to evolving financial crime threats. The guidance emphasizes a data-driven, risk-based
 approach, ensuring effective monitoring and regulatory alignment.

@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Open-Source Anti-Money Laundering (AML) Transaction Monitoring
+title: Open-Source real-time Anti-Money Laundering (AML) and Fraud Detection Transaction Monitoring
 logo: '/images/logo.png'
-description: Jube is an open-source software for real-time transaction and event monitoring, utilizing AI to support compliance with regulatory obligations through its AML Monitoring Compliance Guidance.
+description: Jube is an open-source software for real-time transaction monitoring, utilizing AI to support compliance with regulatory obligations through its AML Monitoring Compliance Guidance and other fraud detection use cases.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 #-------------------------------
@@ -24,9 +24,9 @@ menu__settings:
     - title: 'Resources'
       submenu:
         - title: 'Jube Documentation'
-          url: 'https://jube-home.github.io/aml-transaction-monitoring/'
+          url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'
         - title: 'GitHub'
-          url: 'https://github.com/jube-home/aml-transaction-monitoring'
+          url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
         - title: 'AML Monitoring Compliance Guidance'
           url: '/JubeAMLMonitoringComplianceGuidance.pdf'
         - title: 'Jube Training Plan'
@@ -39,7 +39,7 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Open-Source Anti-Money Laundering (AML) Transaction Monitoring
+  hero__title: Open-Source real-time Anti-Money Laundering (AML) and Fraud Detection Transaction Monitoring
   hero__description: Jube is an open-source software for real-time transaction and event monitoring, utilizing AI to support compliance with regulatory obligations through its AML Monitoring Compliance Guidance.
   hero__image: '/images/Jube.png'
 
