@@ -91,6 +91,7 @@ Training delivered onsite.  Travel and expenses bill separately and in advance.
 ## **Resources:**
 
 * [Advanced Analytics with R Training Plan](https://jube.io/AdvancedAnalyticsWithRTrainingPlan.pdf)
+* [Support](/jube-support)
 
 ---
 
