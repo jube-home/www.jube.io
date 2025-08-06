@@ -80,13 +80,6 @@ enhancing overall compliance efforts.
 - **Adaptability:** Supports evolving AML and Fraud Detection Transaction Monitoring regulations and emerging risks.
 - **Advanced Analytics:** Combines supervised and unsupervised learning for robust risk detection.
 
-## Conclusion
-
-Jube provides a powerful, flexible, and cost-effective solution for AML and Fraud Detection Transaction Monitoring. By leveraging its
-real-time capabilities, advanced analytics, and open-source nature, financial institutions can enhance compliance,
-reduce costs, and adapt to evolving financial crime threats. The guidance emphasizes a data-driven, risk-based
-approach, ensuring effective monitoring and regulatory alignment.
-
 <div class="hero__subscribe">
   <a href="/jube-training" class="button button--primary section-button">Fast-track with Training</a>
 </div>
