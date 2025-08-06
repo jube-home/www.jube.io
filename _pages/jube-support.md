@@ -40,24 +40,3 @@ It is a common situation that Support from Jube is made available under the umbr
 * [Training](/jube-training)
 
 ---
-
-<div class="hero__subscribe">
-  <a href="javascript:void(Tawk_API.toggle())" class="button button--primary section-button">Get in Touch</a>
-</div>
-
-<script>
-jQuery(document).ready(function($) {
-  // Wait for the Tawk API to be loaded
-  Tawk_API.onLoad = function() {
-    // Attach a click event to your trigger element (e.g., a button or link)
-    $('.live-chat-trigger a').on('click', function(event) {
-      event.preventDefault(); // Prevent default link behavior
-
-      // Check if the chat is not already open before toggling
-      if (typeof Tawk_API !== 'undefined' && Tawk_API.isChatOpen && !Tawk_API.isChatOpen()) {
-        Tawk_API.toggle();
-      }
-    });
-  };
-});
-</script>
