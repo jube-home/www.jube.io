@@ -41,7 +41,7 @@ menu__settings:
 # Hero Settings
 hero:
   hero__title: Open-Source real-time Anti-Money Laundering (AML) and Fraud Detection Transaction Monitoring
-  hero__description: Open-Source Anti-Money Laundering (AML) and Fraud Detection Transaction Monitoring
+  hero__description: Jube empowers organizations with enterprise-grade monitoring capabilities through a powerful combination of real-time processing, artificial intelligence, and automated decision-making.
   hero__image: '/images/Jube.png'
 
 #-------------------------------
