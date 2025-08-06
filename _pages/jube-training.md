@@ -112,6 +112,7 @@ Training delivered onsite.  Travel and expenses bill separately and in advance.
 * [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 * [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
+* [Advanced Analytics with R Training](/advanced-analytics-with-r-training)
 * [Support](/jube-support)
 
 ---
