@@ -88,5 +88,5 @@ reduce costs, and adapt to evolving financial crime threats. The guidance emphas
 approach, ensuring effective monitoring and regulatory alignment.
 
 <div class="hero__subscribe">
-  <a href="/training" class="button button--primary section-button">Fast-track with Training</a>
+  <a href="/jube-training" class="button button--primary section-button">Fast-track with Training</a>
 </div>
