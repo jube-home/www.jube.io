@@ -84,24 +84,4 @@ effectively.
 
 ## **Resources:**
 
-* [Advanced Analytics with R Training Plan](https://jube.io/AdvancedAnalyticsWithRTrainingPlan.pdf).
-
-## **Conclusion:**
-
-This Jube training course on Advanced Analytics for Transaction Monitoring delivers a robust and practical learning
-experience, equipping participants with essential machine learning skills tailored for real-world financial
-applications. Over three immersive days, attendees develop a strong command of predictive modelling techniques using R,
-from foundational statistical methods like linear and logistic regression to advanced approaches such as neural networks
-and anomaly detection. The hands-on, case-study-driven format ensures that theoretical concepts are immediately applied
-to practical scenarios, including fraud detection, credit risk analysis, and transaction monitoring.
-
-Beyond model building, the course emphasizes operational readiness, teaching participants how to deploy models
-effectively through APIs and reporting tools. By combining technical expertise with business context, the training
-enables professionals to transform raw data into actionable insights that enhance fraud prevention and risk management
-strategies. Designed for analysts, data scientists, and risk professionals, this program bridges the gap between theory
-and implementation, ensuring learners leave with the confidence and skills to apply advanced analytics in their
-organizations.
-
-In an increasingly data-driven financial landscape, mastering these techniques is not just valuable—it’s essential. This
-course provides the tools and knowledge needed to stay ahead in fraud detection and risk analytics, making it a critical
-investment for professionals looking to leverage machine learning for real-world impact.
+* [Advanced Analytics with R Training Plan](https://jube.io/AdvancedAnalyticsWithRTrainingPlan.pdf)
