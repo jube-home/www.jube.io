@@ -17,7 +17,7 @@ The course bridges theory and practice, equipping analysts to deploy advanced an
 maintaining transparency in machine learning processes.
 
 ---
-## **Program Outcomes:**
+## **Learning Outcomes:**
 
 * Understand foundational ML & statistical techniques, including linear/logistic regression, decision trees, Bayesian
   classifiers, neural networks, feature engineering, and model optimization.

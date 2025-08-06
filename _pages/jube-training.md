@@ -20,7 +20,7 @@ This training is delivered by [Richard Churchman](https://www.churchman.io), the
 
 ---
 
-## **Program Outcomes:**
+## **Learning Outcomes:**
 
 * Confidently Implement and Manage Jube: Master Jube’s AML (FATF/Wolfsberg-aligned) and Fraud Detection Transaction
   Monitoring, User Interface navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for abuse
