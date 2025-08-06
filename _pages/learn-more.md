@@ -4,6 +4,23 @@ title: Learn more about AML Transaction Monitoring with Jube
 permalink: /learn-more/
 ---
 
+
+Jube empowers organizations with enterprise-grade monitoring capabilities through a powerful combination of real-time
+processing, artificial intelligence, and automated decision-making. Purpose-built for AML, fraud prevention and abuse
+detection, Jube delivers comprehensive case management in an open-source package.
+
+* Wholly open-source under AGPLv3 licence.
+* Continuously monitored for vulnerabilities using GitHub CodeQL, ensuring robust security. Active maintenance keeps the
+  codebase current and reliable.
+* Built in C# with a streamlined javascript front end. Uses open-source dependencies including .NET 9 runtime, Redis,
+  and Postgres. Optimized for Linux environments and fully containerizable, thus cloud-agnostic.
+* Implements stateless architecture for horizontal scaling, capable of handling massive workloads. Features clear,
+  simple coding patterns that make it accessible for developers to adopt and contribute.
+
+--- 
+
+## Developed for AML and Fraud Detection Transaction Fraud Monitoring
+
 While transaction monitoring covers a wide range of activities, Jube specifically targets the Anti-Money Laundering (
 AML) and Fraud Detection Transaction Monitoring use cases. To enhance clarity and precision,
 the [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) has been
@@ -16,7 +33,8 @@ standards.
 The [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) document
 provides a comprehensive framework for
 monitoring
-compliance with Anti-Money Laundering (AML) regulations using Jube, an open-source real-time fraud prevention and transaction
+compliance with Anti-Money Laundering (AML) regulations using Jube, an open-source real-time fraud prevention and
+transaction
 monitoring tool. The guidance aligns with guidance from the
 Financial Action Task Force (FATF) and the Wolfsberg Principles, focusing on transaction monitoring and risk-based
 approaches to AML compliance and other Fraud Detection Transaction Monitoring use cases.
