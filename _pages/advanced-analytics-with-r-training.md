@@ -85,3 +85,7 @@ effectively.
 ## **Resources:**
 
 * [Advanced Analytics with R Training Plan](https://jube.io/AdvancedAnalyticsWithRTrainingPlan.pdf)
+
+<div class="hero__subscribe">
+  <a href="/jube-support" class="button button--primary section-button">Reduce Resource Costs with Support</a>
+</div>

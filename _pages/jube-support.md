@@ -36,3 +36,7 @@ It is a common situation that Support from Jube is made available under the umbr
 
 * [Source Code](https://github.com/jube-home/aml-fraud-transaction-monitoring)
 * [Training](/jube-training)
+
+<div class="hero__subscribe">
+  <a href="javascript:void(Tawk_API.toggle())" class="button button--primary section-button">Get in Touch</a>
+</div>
