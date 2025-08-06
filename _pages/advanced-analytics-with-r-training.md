@@ -84,7 +84,6 @@ effectively.
 
 ## **Resources:**
 
-* [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 * [Advanced Analytics with R Training Plan](https://jube.io/AdvancedAnalyticsWithRTrainingPlan.pdf).
 
 ## **Conclusion:**

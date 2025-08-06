@@ -100,33 +100,16 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Detailed Transaction Flow and Algorithms
 - Stepping and Debugging Exhaustive Model Training
 
+## **Pricing**
+* 3 Days Core Training: EUR 2400
+* 4 Days Core and Developer Training: EUR 3200
+
+Training delivered onsite.  Travel and expenses bill separately and in advance.
+
 ## **Resources:**
 
-* [Jube AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
+* [Source Code]()
+* [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 * [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
-* [Jube Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
-
-## **Conclusion:**
-
-In conclusion, Jube’s comprehensive training program is designed to empower professionals with the knowledge and
-skills
-necessary to effectively implement, manage, and optimize Jube within their organizations. By offering a blend of core
-concepts, advanced features, and elective modules, the program ensures participants gain hands-on experience and
-practical insights tailored to their roles—whether they are developers, compliance officers, fraud prevention
-specialists, or system administrators.
-
-The structured agenda, spanning 3 to 4 days, provides a deep dive into Jube’s capabilities, from AI-driven solutions and
-sanctions fuzzy matching to performance optimization and debugging. With optional developer training,
-organizations can
-also ensure their technical teams are well-equipped to maintain and troubleshoot the system for long-term business
-continuity.
-
-By attending this program, participants will not only accelerate the adoption of Jube but also facilitate their ability
-to leverage its advanced features for fraud detection, compliance, and financial crime prevention. Ultimately, this
-training equips organizations to maximize the value of Jube, ensuring scalability, security, and operational
-efficiency
-in an ever-evolving landscape.
-
-For those ready to take the next step, Jube’s training program is an invaluable investment in building expertise
-and
-driving successful implementation.
+* [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
+* [support](/jube-support)

@@ -19,12 +19,12 @@ menu__settings:
           url: '/jube-training'
         - title: 'Advanced Analytics with R Training'
           url: '/advanced-analytics-with-r-training'
-    - title: 'GitHub'
-      url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
-    - title: 'Contact Developer'
-      url: 'https://www.churchman.io/'
+    - title: 'Support'
+      url: '/jube-support'
     - title: 'Resources'
       submenu:
+        - title: 'Source Code (GitHub)'
+        - url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
         - title: 'Jube Documentation'
           url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'
         - title: 'AML Monitoring Compliance Guidance'
@@ -35,6 +35,7 @@ menu__settings:
           url: '/AdvancedAnalyticsWithRTrainingPlan.pdf'
         - title: 'Advanced Analytics with R Guidance'
           url: '/AdvancedAnalyticsWithRGuidance.pdf'
+          
 
 #-------------------------------
 # Hero Settings
