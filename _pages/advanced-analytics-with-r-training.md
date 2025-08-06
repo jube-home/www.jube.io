@@ -82,9 +82,17 @@ effectively.
 - Monte Carlo Model Search and Prescriptive Analytics
 - Integration to the Operation (Outputting Reports and API's)
 
+## **Pricing**
+* 3 Days Core Training: EUR 2400
+* 4 Days Core and Developer Training: EUR 3200
+
+Training delivered onsite.  Travel and expenses bill separately and in advance.
+
 ## **Resources:**
 
 * [Advanced Analytics with R Training Plan](https://jube.io/AdvancedAnalyticsWithRTrainingPlan.pdf)
+
+---
 
 <div class="hero__subscribe">
   <a href="/jube-support" class="button button--primary section-button">Reduce Resource Costs with Support</a>
