@@ -5,9 +5,8 @@ permalink: /jube-training/
 ---
 
 It is common to implement and run Jube based on the time spent with the <a href="https://jube-home.github.io/jube/">
-documentation</a> alone. Training provides a significant acceleration of a successful implementation of Jube.
-
-This training is delivered in person by [Richard Churchman](https://www.churchman.io), the developer of Jube.
+documentation</a> alone. Training provides a significant acceleration of a successful implementation of Jube. The
+training is delivered in person by the [developer](https://www.churchman.io) of Jube.
 
 While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on
 the AML (Anti-Money Laundering) and Fraud Detection Transaction Monitoring use cases. The training is designed to

@@ -4,7 +4,7 @@ title: Jube Support
 permalink: /jube-support/
 ---
 
-Support provides direct retained access to the developer to facilitate the implementation, maintenance and ongoing
+Support provides direct retained access to the [developer](https://www.churchman.io) of Jube to facilitate the implementation, maintenance and ongoing
 production running of Jube. It is perfectly possible to implement and run Jube based on the time spent with
 the <a href="https://jube-home.github.io/jube/">documentation</a> alone. Still, in opting for Support, outcomes are
 achieved much faster, with fewer resources, expertly delivered and assured.
