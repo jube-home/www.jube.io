@@ -14,13 +14,14 @@ assured to be ongoing.
 ## Support Outcomes
 
 * All Jube features are open-source, and always will be. New code is first committed to the public master branch, but in
-  practice public master is analogous to a develop branch, and no releases are not tagged. Support provides access to a
-  private fork with comprehensive - client implementation use case specific - test coverage, to assured release tags.
+  practice public master is analogous to a develop branch, and releases are not tagged. Support provides access to a
+  private fork with comprehensive - client implementation specific - test coverage, to assured release tags.
   Notwithstanding releases being sourced from a private fork, all the software is still licensed under AGPLv3, as public
-  master branch.
+  master branch, and source code is otherwise the same.
 * Direct communication channels (email, chat, and scheduled meetings) for swift issue resolution and hands-on
   implementation assistance.
-* Access to private, client implementation specific, Wiki resources.
+* Access to Support Wiki, including private client implementation specific resources such as infrastructure
+  documentation, configuration environment and production support procedures.
 * Prioritised bug fixes and infrastructure recommendations to maintain high availability and optimal system performance.
 * Expert consultation to enhance fraud and abuse detection strategies using Jube’s analytics capabilities.
 * The retained nature is such that a rich understanding of client infrastructure and domain is brought to bear in the
