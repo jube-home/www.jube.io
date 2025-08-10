@@ -18,10 +18,11 @@ achieved much faster, with fewer resources, expertly delivered and assured.
   private fork with comprehensive - client implementation specific - test coverage, to assured release tags.
   Notwithstanding releases being sourced from a private fork, all the software is still licensed under AGPLv3, as public
   master branch, and source code is otherwise the same.
-* Direct communication channels (email, chat, and scheduled meetings) for swift issue resolution and hands-on
-  implementation assistance.
-* Access to Support Wiki, including private client implementation specific resources such as infrastructure
-  documentation, configuration environment and production support procedures.
+* Ticket led service delivery using JIRA, with tickets rolling up to dedicated client projects, such as Support,
+  Implementation, Integration, Training etc.
+* Direct and immediate communication channels including private client [matrix] chat room, email and scheduled meetings.
+* Access to Support Wiki, including private, client specific, resources such as infrastructure
+  documentation, configuration environments and production support procedures.
 * Prioritised bug fixes and infrastructure recommendations to maintain high availability and optimal system performance.
 * Expert consultation to enhance fraud and abuse detection strategies using Jube’s analytics capabilities.
 * The retained nature is such that a rich understanding of client infrastructure and domain is brought to bear in the
