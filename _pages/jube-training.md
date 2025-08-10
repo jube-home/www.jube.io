@@ -4,26 +4,27 @@ title: Jube Training
 permalink: /jube-training/
 ---
 
+It is common to implement and run Jube based on the time spent with the <a href="https://jube-home.github.io/jube/">
+documentation</a> alone. Training provides a significant acceleration of a successful implementation of Jube.
+
+This training is delivered in person by [Richard Churchman](https://www.churchman.io), the developer of Jube.
+
 While transaction monitoring encompasses a broad spectrum of activities, this training specifically focuses on
-the AML (Anti-Money Laundering) and Fraud Detection Transaction Monitoring use cases. The training is designed to support compliance efforts
-and is
-structured around this guidance. This guidance is intended to be adapted by compliance managers to align with an
-organization’s specific regulatory obligations, which are often derived from Financial Action Taskforce (FATF)
-guidelines and further reflected in the Wolfsberg Principles.
+the AML (Anti-Money Laundering) and Fraud Detection Transaction Monitoring use cases. The training is designed to
+support compliance efforts and is structured around this guidance.
 
 It is important to note that Jube operates as a real-time system. As a result, while the training emphasizes
 implementation of this guidance other transaction monitoring use cases will also be comprehensively addressed by
 implication. The underlying concepts are largely adjacent and require similar methodologies, albeit with subtle
 differences in application.
 
-This training is delivered by [Richard Churchman](https://www.churchman.io), the developer of Jube.
-
 ---
 
 ## **Learning Outcomes:**
 
 * Confidently Implement and Manage Jube: Master Jube’s AML (FATF/Wolfsberg-aligned) and Fraud Detection Transaction
-  Monitoring, User Interface navigation, API integration (e.g., Postman), and rule strategies (Gateway/Abstraction/Activation Rules) for abuse
+  Monitoring, User Interface navigation, API integration (e.g., Postman), and rule strategies (
+  Gateway/Abstraction/Activation Rules) for abuse
   detection.
 * Optimize Jube for Performance & Security: Configure caching, sanctions screening, and suppression techniques (
   keys/total/rule-based); use TTL counters for high-volume transaction tracking.
@@ -101,10 +102,11 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Exhaustive Model Training
 
 ## **Pricing**
+
 * 3 Days Core Training: EUR 2400
 * 4 Days Core and Developer Training: EUR 3200
 
-Training delivered onsite.  Travel and expenses bill separately and in advance.
+Training delivered in person and onsite. Travel and expenses billed separately and in advance.
 
 ## **Resources:**
 
