@@ -21,8 +21,8 @@ menu__settings:
           url: '/advanced-analytics-with-r-training'
     - title: 'Support'
       url: '/jube-support'
-    - title: 'Who is the Developer?'
-      url: 'https://www.churchman.io'
+    - title: 'Contact'
+      url: '/contact'
     - title: 'Resources'
       submenu:
         - title: 'Source Code (GitHub)'
