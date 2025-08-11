@@ -58,3 +58,7 @@ users).
 * [Training](/jube-training)
 
 ---
+
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Contact</a>
+</div>
