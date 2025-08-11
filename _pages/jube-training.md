@@ -17,6 +17,10 @@ implementation of this guidance other transaction monitoring use cases will also
 implication. The underlying concepts are largely adjacent and require similar methodologies, albeit with subtle
 differences in application.
 
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Contact</a>
+</div>
+
 ---
 
 ## **Learning Outcomes:**
@@ -119,5 +123,5 @@ Training delivered in person and onsite. Travel and expenses billed separately a
 ---
 
 <div class="hero__subscribe">
-  <a href="/jube-support" class="button button--primary section-button">Reduce Resource Costs with Support</a>
+  <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>

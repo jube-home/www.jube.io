@@ -4,7 +4,6 @@ title: Learn more about AML Transaction Monitoring with Jube
 permalink: /learn-more/
 ---
 
-
 Jube empowers organizations with enterprise-grade monitoring capabilities through a powerful combination of real-time
 processing, artificial intelligence, and automated decision-making. Purpose-built for AML, fraud prevention and abuse
 detection, Jube delivers comprehensive case management in an open-source package.
@@ -16,6 +15,10 @@ detection, Jube delivers comprehensive case management in an open-source package
   and Postgres. Optimized for Linux environments and fully containerizable, thus cloud-agnostic.
 * Implements stateless architecture for horizontal scaling, capable of handling massive workloads. Features clear,
   simple coding patterns that make it accessible for developers to adopt and contribute.
+
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Contact</a>
+</div>
 
 --- 
 
@@ -98,6 +101,8 @@ enhancing overall compliance efforts.
 - **Adaptability:** Supports evolving AML and Fraud Detection Transaction Monitoring regulations and emerging risks.
 - **Advanced Analytics:** Combines supervised and unsupervised learning for robust risk detection.
 
+---
+
 <div class="hero__subscribe">
-  <a href="/jube-training" class="button button--primary section-button">Fast-track with Training</a>
+  <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>
