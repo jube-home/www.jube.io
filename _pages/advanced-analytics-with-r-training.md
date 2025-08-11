@@ -16,7 +16,7 @@ ecosystem of packages and RStudio's intuitive interface for comprehensive advanc
 The course bridges theory and practice, equipping analysts to deploy advanced analytics across financial use cases while
 maintaining transparency in machine learning processes.
 
-<div class="hero__cta">
+<div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>
 
@@ -99,6 +99,6 @@ Training delivered onsite.  Travel and expenses bill separately and in advance.
 
 ---
 
-<div class="hero__cta">
+<div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>

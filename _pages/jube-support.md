@@ -9,7 +9,7 @@ production running of Jube. It is perfectly possible to implement and run Jube b
 the <a href="https://jube-home.github.io/jube/">documentation</a> alone. Still, in opting for Support, outcomes are
 achieved much faster, with fewer resources, expertly delivered and assured.
 
-<div class="hero__cta">
+<div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>
 
@@ -59,6 +59,6 @@ users).
 
 ---
 
-<div class="hero__cta">
+<div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>

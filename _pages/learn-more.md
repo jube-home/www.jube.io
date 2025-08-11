@@ -16,7 +16,7 @@ detection, Jube delivers comprehensive case management in an open-source package
 * Implements stateless architecture for horizontal scaling, capable of handling massive workloads. Features clear,
   simple coding patterns that make it accessible for developers to adopt and contribute.
 
-<div class="hero__cta">
+<div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>
 
@@ -103,6 +103,6 @@ enhancing overall compliance efforts.
 
 ---
 
-<div class="hero__cta">
+<div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
 </div>
