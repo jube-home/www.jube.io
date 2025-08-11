@@ -43,7 +43,7 @@ menu__settings:
 # Hero Settings
 hero:
   hero__title: Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring
-  hero__description: </hr><div class="hero__subscribe"><a href="/learn-more" class="button button--primary section-button">Learn More</a></div>
+  hero__description: <hr><div class="hero__subscribe"><a href="/learn-more" class="button button--primary section-button">Learn More</a></div>
   hero__image: '/images/Jube.png'
 
 #-------------------------------
