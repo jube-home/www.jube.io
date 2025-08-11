@@ -26,7 +26,7 @@ menu__settings:
     - title: 'Resources'
       submenu:
         - title: 'Source Code (GitHub)'
-        - url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
+          url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
         - title: 'Jube Documentation'
           url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'
         - title: 'AML Monitoring Compliance Guidance'
