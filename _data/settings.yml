@@ -37,6 +37,8 @@ menu__settings:
           url: '/AdvancedAnalyticsWithRTrainingPlan.pdf'
         - title: 'Advanced Analytics with R Guidance'
           url: '/AdvancedAnalyticsWithRGuidance.pdf'
+        - title: 'Who is the Developer?'
+          url: 'https://www.churchman.io/'
           
 
 #-------------------------------
