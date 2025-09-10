@@ -152,7 +152,7 @@ JOL may engage third-party sub-processors to help provide our services. All sub-
 **7. Data Subject Rights**  
 JOL will assist clients in fulfilling their obligations to respond to data subject requests under GDPR, including requests for:
 - Access to Personal Data.
-- Rectification or erasure,
+- Rectification or erasure.
 - Restriction or objection to processing.
 - Data portability.
 - Withdrawal of consent.
