@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jube Terms of Service (JTOS) 
+title: Jube Terms of Service (JTOS)
 permalink: /agreements/jtos-version-1-0
 ---
 
@@ -68,7 +68,7 @@ JOL’s stated mission is to work with clients on the training, support, and imp
 
 **5. Intellectual Property**
 5.1 All intellectual property rights in any materials, deliverables, or software created by the Provider in connection with the Services (“Deliverables”) shall vest in the Provider until all fees due under the relevant agreement have been paid in full, except as otherwise agreed in writing.
-5.2 Vesting does not include Jube Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring software, integration software to Jube software, reports, or advanced analytics (such as machine learning models) developed using consortium data.
+5.2 Vesting does not include Jube Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring software (which is independently licenced under AGPLv3), integration software created to Jube software, reports, or advanced analytics (such as machine learning models) developed using consortium data.
 5.3 Upon full payment of fees, ownership of Deliverables not falling under clause 5.2 exceptions (excluding any pre-existing intellectual property of the Provider or its licensors) shall transfer to the Client.
 5.4 The Provider shall retain ownership of any methodologies, know-how, tools, frameworks, and pre-existing intellectual property used in providing the Services. The Provider grants the Client a non-exclusive, non-transferable license to use such elements solely as incorporated into the Deliverables.
 
