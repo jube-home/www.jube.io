@@ -16,9 +16,9 @@ Registered Address: Northgate House, North Gate, New Basford, Nottingham, Englan
 ---
 
 **Company Introduction**
-JOL is a UK company that architects, develops, and implements horizontally scalable, high-throughput software for real-time transaction and event monitoring. Engagements with clients typically span software development, data engineering, machine learning (both supervised and unsupervised classification), and increasingly artificial intelligence, including integration, embedding, and inference where distinct from machine learning.
+JOL is a UK company that architects, develops, and implements horizontally scalable, high-throughput software for real-time transaction and event monitoring. Engagements with Clients typically span software development, data engineering, machine learning (both supervised and unsupervised classification), and increasingly artificial intelligence, including integration, embedding, and inference where distinct from machine learning.
 
-JOL’s stated mission is to work with clients on the training, support, and implementation of Jube – an Open-Source Anti-Money Laundering (AML) and Fraud Detection Transaction Monitoring software, which it maintains. Under the umbrella of JOL, there is also a corpus of advanced analytics know-how.
+JOL’s stated mission is to work with Clients on the training, support, and implementation of Jube – an Open-Source Anti-Money Laundering (AML) and Fraud Detection Transaction Monitoring software, which it maintains. Under the umbrella of JOL, there is also a corpus of advanced analytics know-how.
 
 ---
 
@@ -84,7 +84,7 @@ JOL’s stated mission is to work with clients on the training, support, and imp
 7.1 To the maximum extent permitted by law, the Provider shall not be liable for:
 (a) any indirect, incidental, consequential, or special loss or damage;
 (b) any loss of profit, revenue, savings, data, goodwill, or opportunity;
-(c) any claim arising out of or in connection with the Client’s misuse of the Deliverables.
+(c) any claim arising out of or in connection with Client misuse of the Deliverables.
 7.2 The Provider’s total aggregate liability in contract, tort (including negligence), or otherwise arising out of or in connection with these Terms shall not exceed the total fees paid by the Client to the Provider under the relevant agreement in the 12 months preceding the claim.
 
 ---
@@ -129,11 +129,11 @@ JOL’s stated mission is to work with clients on the training, support, and imp
 ## Appendix A: Data Processing (GDPR)
 
 **1. Role as Data Processor**  
-JOL acts as a data processor under the GDPR and processes personal data, including email addresses, usernames, contact details, and IP addresses, on behalf of clients (the data controllers) and only in accordance with their instructions.
+JOL acts as a data processor under the GDPR and processes personal data, including email addresses, usernames, contact details, and IP addresses, on behalf of Clients (the data controllers) and only in accordance with their instructions.
 
 **2. Purpose of Processing**  
 JOL processes Personal Data solely to:
-- Provide, manage, and improve the services requested by clients.
+- Provide, manage, and improve the services requested by Clients.
 - Maintain the security and integrity of services.
 - Comply with applicable legal obligations as a processor.
 
@@ -150,7 +150,7 @@ JOL implements appropriate technical and organisational measures to protect Pers
 JOL may engage third-party sub-processors to help provide our services. All sub-processors are bound by contractual obligations consistent with GDPR.
 
 **7. Data Subject Rights**  
-JOL will assist clients in fulfilling their obligations to respond to data subject requests under GDPR, including requests for:
+JOL will assist Clients in fulfilling their obligations to respond to data subject requests under GDPR, including requests for:
 - Access to Personal Data.
 - Rectification or erasure.
 - Restriction or objection to processing.
