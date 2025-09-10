@@ -4,7 +4,8 @@ title: Jube Terms of Service (JTOS)
 permalink: /agreements/jtos-version-1-0
 ---
 
-**Version:** 1.0  
+**Version:** 1.0
+**Date:** July 1st 2025
 
 ---
 
