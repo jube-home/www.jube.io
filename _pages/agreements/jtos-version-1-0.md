@@ -122,8 +122,7 @@ JOL’s stated mission is to work with clients on the training, support, and imp
 12.1 These Terms shall be governed by and construed in accordance with the laws of England and Wales.
 12.2 Subject to Clause 10 (ADR), the courts of England and Wales shall have exclusive jurisdiction to settle any dispute arising under or in connection with these Terms.
 
-**13. Data Processing Compliance**  
-For the purposes of the UK GDPR and the EU GDPR (GDPR), the parties acknowledge that JOL acts as a data processor. The terms and obligations relating to our processing of Personal Data are set out in Appendix A: Data Processing (GDPR) which forms an integral part of the JTOS.
+**13. Data Processing Compliance** 13.1 For the purposes of the UK GDPR and the EU GDPR (GDPR), the parties acknowledge that JOL acts as a data processor. The terms and obligations relating to our processing of Personal Data are set out in Appendix A: Data Processing (GDPR) which forms an integral part of the JTOS.
 
 ---
 
