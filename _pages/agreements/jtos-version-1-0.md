@@ -121,3 +121,42 @@ JOL’s stated mission is to work with clients on the training, support, and imp
 **12. Governing Law and Jurisdiction**
 12.1 These Terms shall be governed by and construed in accordance with the laws of England and Wales.
 12.2 Subject to Clause 10 (ADR), the courts of England and Wales shall have exclusive jurisdiction to settle any dispute arising under or in connection with these Terms.
+
+**13. Data Processing Compliance**  
+For the purposes of the UK GDPR and the EU GDPR (GDPR), the parties acknowledge that JOL acts as a data processor. The terms and obligations relating to our processing of Personal Data are set out in Appendix A: Data Processing (GDPR) which forms an integral part of the JTOS.
+
+---
+
+## Appendix A: Data Processing (GDPR)
+
+**1. Role as Data Processor**  
+JOL acts as a data processor under the GDPR and processes personal data, including email addresses, usernames, contact details, and IP addresses, on behalf of clients (the data controllers) and only in accordance with their instructions.
+
+**2. Purpose of Processing**  
+JOL processes Personal Data solely to:
+- Provide, manage, and improve the services requested by clients.
+- Maintain the security and integrity of services.
+- Comply with applicable legal obligations as a processor.
+
+**3. Data Sharing and Transfers**  
+JOL does not sell Personal Data. JOL may share personal data only as necessary to provide services or as required by law. Any transfers outside the UK/EEA are subject to appropriate safeguards in line with GDPR.
+
+**4. Data Retention**  
+JOL retains Personal Data only as instructed by the data controller or as required by law.
+
+**5. Security**  
+JOL implements appropriate technical and organisational measures to protect Personal Data against unauthorised or unlawful processing, loss, destruction, or damage.
+
+**6. Sub-processors**  
+JOL may engage third-party sub-processors to help provide our services. All sub-processors are bound by contractual obligations consistent with GDPR.
+
+**7. Data Subject Rights**  
+JOL will assist clients in fulfilling their obligations to respond to data subject requests under GDPR, including requests for:
+- Access to Personal Data.
+- Rectification or erasure,
+- Restriction or objection to processing.
+- Data portability.
+- Withdrawal of consent.
+
+**8. Contact**  
+For any enquiries regarding JOL processing of Personal Data, please contact support@jube.io.
