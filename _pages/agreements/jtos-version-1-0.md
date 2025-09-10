@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jube Terms of Service (JTOS)
+title: Terms of Service
 permalink: /agreements/jtos-version-1-0
 ---
 
