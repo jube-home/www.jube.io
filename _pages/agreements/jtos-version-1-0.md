@@ -1,7 +1,12 @@
 ---
 layout: page
-title: Jube Terms of Service (JTOS) Version 1.0 
+title: Jube Terms of Service (JTOS) 
 permalink: /agreements/jtos-version-1-0
+---
+
+**Version:** 1.0  
+
+---
 
 **Company Details**
 Company Name: Jube Operations Limited trading as Jube (JOL)
