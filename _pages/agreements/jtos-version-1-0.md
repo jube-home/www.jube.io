@@ -4,7 +4,7 @@ title: Terms of Service
 permalink: /agreements/jtos-version-1-0
 ---
 
-**Version:** 1.0 published 1st July 2025.
+**Version:** 1.0.
 
 ---
 
