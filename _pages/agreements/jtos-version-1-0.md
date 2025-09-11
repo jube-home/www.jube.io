@@ -40,12 +40,11 @@ JOL’s stated mission is to work with Clients on the training, support, and imp
 ---
 
 **3. Service Delivery**
-3.1 Remote Delivery: The Services shall be delivered remotely by default unless otherwise agreed in writing between the Provider and the Client.
-3.2 Service Request Channels: All service requests must be submitted through one of the following channels:
-
 - [Matrix] Room (preferred; invite-only private support channel).
 - Email to support@jube.io
 
+3.1 Remote Delivery: The Services shall be delivered remotely by default unless otherwise agreed in writing between the Provider and the Client.
+3.2 Service Request Channels: All service requests must be submitted through one of the following channels:
 3.3 Response Time: The Provider shall acknowledge and respond to all service requests within a maximum of four (4) business hours during UK office hours (09:00–17:30 GMT/BST, Monday to Friday, excluding UK public holidays).
 3.4 Service Management: All service requests will be promptly transposed into a new or related JIRA ticket linked to the Client’s project.
 3.5 Documentation: Documentation and supporting materials (including but not limited to procedures) created as part of the Services will be shared via the Provider’s Confluence workspace, to which the Client will be granted guest-user access.
