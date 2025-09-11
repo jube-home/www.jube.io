@@ -9,7 +9,7 @@ permalink: /agreements/jtos-version-1-0
 ---
 
 **Company Details**
-Company Name: Jube Operations Limited trading as Jube (JOL)
+Company Name: Jube Operations Limited trading as Jube ("JOL")
 Company Number: 14442207
 Registered Address: Northgate House, North Gate, New Basford, Nottingham, England, NG7 7BQ.
 
@@ -18,7 +18,7 @@ Registered Address: Northgate House, North Gate, New Basford, Nottingham, Englan
 **Company Introduction**
 JOL is a UK company that architects, develops, and implements horizontally scalable, high-throughput software for real-time transaction and event monitoring. Engagements with Clients typically span software development, data engineering, machine learning (both supervised and unsupervised classification), and increasingly artificial intelligence, including integration, embedding, and inference where distinct from machine learning.
 
-JOL’s stated mission is to work with Clients on the training, support, and implementation of Jube – an Open-Source Anti-Money Laundering (AML) and Fraud Detection Transaction Monitoring software, which it maintains. Under the umbrella of JOL, there is also a corpus of advanced analytics know-how.
+JOL’s stated mission is to work with Clients on the training, support, and implementation of Jube – an Open-Source Anti-Money Laundering ("AML") and Fraud Detection Transaction Monitoring software, which it maintains. Under the umbrella of JOL, there is also a corpus of advanced analytics know-how.
 
 ---
 
@@ -67,9 +67,9 @@ JOL’s stated mission is to work with Clients on the training, support, and imp
 ---
 
 **5. Intellectual Property**
-5.1 All intellectual property rights in any materials, deliverables, or software created by the Provider in connection with the Services (“Deliverables”) shall vest in the Provider until all fees due under the relevant agreement have been paid in full, except as otherwise agreed in writing.
-5.2 Vesting does not include Jube Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring software (which is independently licenced under AGPLv3), integration software created to Jube software, reports, or advanced analytics (such as machine learning models) developed using consortium data.
-5.3 Upon full payment of fees, ownership of Deliverables not falling under clause 5.2 exceptions (excluding any pre-existing intellectual property of the Provider or its licensors) shall transfer to the Client.
+5.1 For intellectual property expressly particularised in the statement of work, rights in any materials, deliverables, or software created by the Provider in connection with the Services (“Deliverables”) shall vest in the Provider until all fees due under the relevant agreement have been paid in full, except as otherwise agreed in writing.
+5.2 Notwithstanding clause 5.1, for the avoidance of doubt, vesting does not, and will never in the performance of this agreement, include Jube Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring software (which is independently licenced under AGPLv3), integration software created to Jube software, advanced analytics (such as machine learning models) developed using JOL or consortium data, and any such supporting materials (e.g. documentation, scripts etc.).
+5.3 Upon full payment of fees, ownership of Deliverables expressly particularised as clause 5.1 and not falling under clause 5.2 exceptions (excluding any pre-existing intellectual property of the Provider or its licensors) shall transfer to the Client.
 5.4 The Provider shall retain ownership of any methodologies, know-how, tools, frameworks, and pre-existing intellectual property used in providing the Services. The Provider grants the Client a non-exclusive, non-transferable license to use such elements solely as incorporated into the Deliverables.
 
 ---
@@ -90,9 +90,9 @@ JOL’s stated mission is to work with Clients on the training, support, and imp
 ---
 
 **8. Insurance**
-8.1 The Provider shall maintain in force throughout the term of its engagement with the Client the following insurance policies with a reputable insurer:
-(a) Professional Indemnity Insurance – with a minimum cover of GBP £1,000,000 per claim to cover liabilities arising from the provision of the Services;
-(b) Public Liability Insurance – with a minimum cover of GBP £1,000,000 per claim to cover liabilities, claims, or damages arising out of site visits, including injury to persons (other than employees) or damage to property.
+8.1 The Provider shall maintain in force throughout the term of its engagement with the Client the following insurance policies with a reputable insurer, each for an amount reasonably sufficient to cover the risks arising from the engagement:
+(a) Professional Indemnity Insurance to cover liabilities arising from the provision of the Services;
+(b) Public Liability Insurance to cover liabilities, claims, or damages arising out of site visits, including injury to persons (other than employees) or damage to property.
 8.2 The Provider shall provide evidence of such insurance to the Client upon reasonable request.
 
 ---
