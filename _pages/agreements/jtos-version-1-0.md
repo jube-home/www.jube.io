@@ -52,6 +52,7 @@ JOL’s stated mission is to work with Clients on the training, support, and imp
 3.7 Meetings: Online meetings (e.g., Brave Talk) will be scheduled on demand as required. The Client shall ensure that an appropriately qualified resource is available to supervise the work during such sessions.
 3.8 Client Control of Production: The Provider will never take control of or directly implement changes to the Client’s production systems. Responsibility for implementing any changes in production rests solely with the Client, based on the documentation and procedures created by the Provider and formally signed off by the Client. 
 3.9 Testing and Sign-Off: The Client is responsible for testing all Deliverables in a suitable non-production environment and must provide formal sign-off prior to any Deliverables being promoted to production. The Provider shall have no liability for any issues arising from promotion to production without such sign-off.
+
 ---
 
 **4. Confidentiality**
