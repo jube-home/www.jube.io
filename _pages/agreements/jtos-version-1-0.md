@@ -41,7 +41,7 @@ JOL’s stated mission is to work with Clients on the training, support, and imp
 
 **3. Service Delivery**
 - [Matrix] Room (preferred; invite-only private support channel).
-- Email to support@jube.io
+- Email to support@jube.io.
 
 3.1 Remote Delivery: The Services shall be delivered remotely by default unless otherwise agreed in writing between the Provider and the Client.
 3.2 Service Request Channels: All service requests must be submitted through one of the following channels:
