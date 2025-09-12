@@ -95,19 +95,39 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 ### **Day 4 (Optional): Developer Workshop:**
 
-- Software Patterns
+- Software Patterns employed in Jube
 - C# Solution and Project Overview
-- Building and Running
-- Stepping and Debugging .NET Hosting, Dependency Injection, and Migrations
-- Stepping and Debugging the User Interface (Frontend and Backend):
-- Stepping and Debugging Background Threads
-- Stepping and Debugging Detailed Transaction Flow and Algorithms
+- Building and Running Jube from Git (i.e. in Rider or Visual Studio)
+- Working with Dockerfile and Docker Compose
+- Stepping and Debugging instantiation of Environment Variables, Secrets and Logging Libraries
+- Stepping and Debugging other .NET Hosting, Dependency Injection Services and Migrations
+- Stepping and Debugging the HTTP Authentication Scheme, JWT and HTTP Status Code directions
+- Stepping and Debugging Validations
+- Stepping and Debugging the User Interface for Model Creation and Common Administration (frontend and backend)
+- Stepping and Debugging the Rule Parser (frontend and backend)
+- Stepping and Debugging the User Interface for Case Management (Frontend and Backend)
+- Stepping and Debugging the User Interface for Visualisation (Frontend and Backend)
+- Stepping and Debugging the Repository Data Layer, ORM, Schema and Schemaless \ JSONB Data
+
+### **Day 5 (Optional): Developer Workshop:**
+
+- Stepping and Debugging Model Synchronisation
+- Stepping and Debugging .Net Rule, Inline Script, Inline Calculation Compilation and the Assembly Hash Cache
+- Stepping and Debugging Detailed Transaction Flow, Serialisation HTTP Response and AMQP Exchange
+- Stepping and Debugging Case Creation
+- Stepping and Debugging Archive Data Storage, given ORM Bulk Copy
+- Stepping and Debugging Performance Counters
+- Stepping and Debugging the Redis Cache, Schema and Protocols
+- Stepping and Debugging Reprocessing
+- Stepping and Debugging Other Background Threads
 - Stepping and Debugging Exhaustive Model Training
+- Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
+- Stepping and Debugging the Jube CLI
 
 ## **Pricing**
 
-* 3 Days Core Training: EUR 2400
-* 4 Days Core and Developer Training: EUR 3200
+* 3 Days Core Training: EUR 3600
+* 5 Days Core and Developer Training: EUR 6000
 
 Training delivered in person and onsite. Travel and expenses billed separately and in advance.
 

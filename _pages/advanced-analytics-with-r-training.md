@@ -4,8 +4,6 @@ title: Advanced Analytics with R Training
 permalink: /advanced-analytics-with-r-training/
 ---
 
-Jube is an open-source transaction monitoring platform that automates machine learning while emphasizing the importance
-of understanding foundational ML concepts to maintain quantitative competence and demystify fraud prevention systems.
 This practical training course focuses on implementing analytical techniques in real business environments, using
 real-world case studies cantered on transaction monitoring while also exploring other datasets like housing prices,
 credit risk, and fraud simulation.
@@ -87,14 +85,14 @@ effectively.
 - Integration to the Operation (Outputting Reports and API's)
 
 ## **Pricing**
-* 3 Days Core Training: EUR 2400
-* 4 Days Core and Developer Training: EUR 3200
+* 3 Days Training: EUR 3600
 
 Training delivered onsite.  Travel and expenses bill separately and in advance.
 
 ## **Resources:**
 
 * [Advanced Analytics with R Training Plan](https://jube.io/AdvancedAnalyticsWithRTrainingPlan.pdf)
+* * [Advanced Analytics with R Training Guidance](https://jube.io/AdvancedAnalyticsWithRGuidance.pdf)
 * [Support](/jube-support)
 
 ---
