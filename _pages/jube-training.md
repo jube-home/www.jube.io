@@ -104,7 +104,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging the HTTP Authentication Scheme, JWT and HTTP Status Code directions
 - Stepping and Debugging Validations
 - Stepping and Debugging the User Interface for Model Creation and Common Administration (frontend and backend)
-- Stepping and Debugging the Rule Parser (frontend and backend)
+- Stepping and Debugging the Rule Parser (frontend and backend) and token security
 - Stepping and Debugging the User Interface for Case Management (Frontend and Backend)
 - Stepping and Debugging the User Interface for Visualisation (Frontend and Backend)
 - Stepping and Debugging the Repository Data Layer, ORM, Schema and Schemaless \ JSONB Data
