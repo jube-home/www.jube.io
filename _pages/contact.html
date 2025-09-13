@@ -27,22 +27,24 @@ permalink: /contact/
             <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message"
                       required></textarea>
         </div>
+        <div class="form__group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAABqVWVhn8qbLCCu4" data-callback="enableSubmit"></div>
+        </div>
         <input
                 type="hidden"
                 name="_redirect"
                 value="https://www.jube.io/thank-you"
         />
         <div class="form__group">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAABqVWVhn8qbLCCu4" data-callback="enableSubmit"></div>
-        </div>
-        <div class="form__group">
-            <button id="submit-button" class="button button--primary" type="submit" hidden>Send Message</button>
+            <button id="submit-button" class="button button--primary" type="submit" disabled>Send Message</button>
         </div>
     </form>
 </div>
 <script>
     function enableSubmit() {
         let submitButton = document.getElementById("submit-button");
-        submitButton.hidden = false;
+        submitButton.classList.remove("button button--disabled");
+        submitButton.classList.add("button button--primary");
+        submitButton.disabled = false;
     }
 </script>
