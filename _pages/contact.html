@@ -28,7 +28,7 @@ permalink: /contact/
                       required></textarea>
         </div>
         <div class="form__group">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAABqVWVhn8qbLCCu4"></div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAABqVWVhn8qbLCCu4" data-callback="enableSubmit"></div>
         </div>
         <input
                 type="hidden"
@@ -36,7 +36,12 @@ permalink: /contact/
                 value="https://www.jube.io/thank-you"
         />
         <div class="form__group">
-            <button class="button button--primary" type="submit">Send Message</button>
+            <button id="submit-button" class="button button--primary" type="submit" disabled>Send Message</button>
         </div>
     </form>
 </div>
+<script>
+    function enableSubmit() {
+        document.getElementById("submit-button").disabled = false;
+    }
+</script>
