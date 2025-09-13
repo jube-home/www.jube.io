@@ -36,12 +36,15 @@ permalink: /contact/
                 value="https://www.jube.io/thank-you"
         />
         <div class="form__group">
-            <button id="submit-button" class="button button--primary" type="submit" disabled>Send Message</button>
+            <button id="submit-button" class="button button--disabled" type="submit" disabled>Send Message</button>
         </div>
     </form>
 </div>
 <script>
     function enableSubmit() {
-        document.getElementById("submit-button").disabled = false;
+        let submitButton = document.getElementById("submit-button");
+        submitButton.classList.remove("button button--disabled");
+        submitButton.classList.add("button button--primary");
+        submitButton.disabled = false;
     }
 </script>
