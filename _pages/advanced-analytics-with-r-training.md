@@ -58,6 +58,7 @@ interpret numeric forecasts while understanding the underlying statistical princ
 - Loading, Shaping and Merging Data
 - Summary Statistics and Basic Plots in R
 - Abstraction and Transformations (aka Feature Engineering)
+- Variable Selection 
 - Linear Regression
 
 ### **Day 2: Classification & Machine Learning**
@@ -74,18 +75,37 @@ effectively.
 - Pretty Plots with ggplot2 and rapid, visual, dataset exploration
 - Logistic Regression
 - R Naive Bayesian Classifiers and Laplace Estimator
-- Splits, Probability and Decision Trees
+- Tree Augmented Naive Bayes Classifiers
+- Splits, Probability and Decision Trees. Random Forests and C5
 
 ### **Day 3: Advanced Techniques & Deployment**
 
+- XG Boost
+- Self Organising Maps
 - Neural Networks
-- Unsupervised Learning with Bayesian Network Anomaly Detection
 - Supervised and Unsupervised Learning with Bayesian Network Anomaly Detection
 - Monte Carlo Model Search and Prescriptive Analytics
 - Integration to the Operation (Outputting Reports and API's)
 
+### **Day 4 (Optional): Credit Analytics**
+
+- Introduction to Credit Risk and Credit Analytics
+- Regulatory Environment Review
+- Data Preparation and Advanced Feature Engineering for Credit Analytics
+- Dataset Exploration
+- Risk Weight Functions
+- Probability of Default (PD) Models
+- Loss Given Default (LGD) 
+- Exposure At Default Models (EAD)
+- Bayesian Methods
+- Low Probability Portfolios (i.e. not enough data for modelling)
+- Validation
+- Stress Testing
+- A nod to Neural Networks
+
 ## **Pricing**
 * 3 Days Training: EUR 3600
+* 4 Days Core and Credit Analytics Training: EUR 4800
 
 Training delivered onsite.  Travel and expenses bill separately and in advance.
 
