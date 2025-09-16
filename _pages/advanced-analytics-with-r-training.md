@@ -92,13 +92,12 @@ effectively.
 - Credit Analytics and Regulatory Environment
 - Dataset Exploration and Abstraction
 - Probability of Default (PD) Models
-- Loss Given Default (LGD) Models
-- Exposure At Default Models (EAD) Models
-- Bayesian Methods
 - Low Probability Portfolios (i.e. not enough data for modelling)
+- Loss Given Default (LGD)
+- Exposure At Default (EAD)
+- Bayesian and Decision Tree Methods for Credit Analytics PD models
 - Model Validation
-- Risk Weight Functions and Stress Testing
-- A nod to Neural Networks
+- Monte Carlo Simulation, Credit Portfolio Risk and Stress Testing
 
 ## **Pricing**
 * 3 Days Training: EUR 3600
