@@ -5,7 +5,7 @@ permalink: /advanced-analytics-with-r-training/
 ---
 
 This practical training course focuses on implementing analytical techniques in real business environments, using
-real-world case studies cantered on transaction monitoring while also exploring other datasets like housing prices,
+real-world case studies centered on transaction monitoring while also exploring other datasets like housing prices,
 credit risk, and fraud simulation.
 
 Participants will develop skills in data analysis, predictive analytics (regression, decision trees, neural networks),
