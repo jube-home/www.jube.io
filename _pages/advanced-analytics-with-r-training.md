@@ -89,18 +89,15 @@ effectively.
 
 ### **Day 4 (Optional): Credit Analytics**
 
-- Introduction to Credit Risk and Credit Analytics
-- Regulatory Environment Review
-- Data Preparation and Advanced Feature Engineering for Credit Analytics
-- Dataset Exploration
-- Risk Weight Functions
+- Credit Analytics and Regulatory Environment
+- Dataset Exploration and Abstraction
 - Probability of Default (PD) Models
-- Loss Given Default (LGD) 
-- Exposure At Default Models (EAD)
+- Loss Given Default (LGD) Models
+- Exposure At Default Models (EAD) Models
 - Bayesian Methods
 - Low Probability Portfolios (i.e. not enough data for modelling)
-- Validation
-- Stress Testing
+- Model Validation
+- Risk Weight Functions and Stress Testing
 - A nod to Neural Networks
 
 ## **Pricing**
