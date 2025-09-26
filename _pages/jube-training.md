@@ -62,6 +62,8 @@ technology stack.
 
 # **Pricing**
 
+Training delivered in person and onsite:
+
 |                                                                          | User Training | Developer Training |
 |--------------------------------------------------------------------------|---------------|--------------------|
 | Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅             | ✅                  |
@@ -77,7 +79,7 @@ technology stack.
 * **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
   required to maintain, extend, and support the platform for ongoing business continuity.
 
-Training delivered in person and onsite. Excluding travel cos and expenses.
+Pricing is excluding travel and expenses.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
