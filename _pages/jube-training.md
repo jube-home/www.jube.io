@@ -4,8 +4,7 @@ title: Jube Training
 permalink: /jube-training/
 ---
 
-Master Jube in three days.  Hands-on training for compliance teams, engineers, and analysts to accelerate implementation, reduce false positives,
-and improve detection.
+Master Jube in three days. Hands-on training for compliance teams, engineers, and analysts to accelerate implementation.
 
 ![Jube Training](/training.png)
 
@@ -27,8 +26,6 @@ technology stack.
 
 # Who is Jube for?
 
-Jube empowers professionals to protect their organization’s financial integrity and security with data-driven insights:
-
 - **Compliance & Risk Leaders:** Get a holistic view of compliance and fraud risk. Quickly generate reports for auditors
   and regulators to stay ahead of evolving requirements.
 - **Fraud Analysts:** Move from insight to action faster. Build, test, and refine detection rules to proactively reduce
@@ -38,30 +35,27 @@ Jube empowers professionals to protect their organization’s financial integrit
 - **Developers & Technical Teams:** Integrate Jube seamlessly with clear APIs and developer-friendly tools for fast,
   reliable implementation.
 
-Jube equips compliance, fraud, data, and technical professionals with the insights and tools to protect their
-organization’s financial integrity and act on risk with confidence.
-
 # **Learning Outcomes**
 
-- **Implement & Manage Jube Confidently**
+- **Implement & Manage Jube Confidently:**
     - Master AML (FATF/Wolfsberg) and Fraud Detection transaction monitoring.
     - Navigate the user interface and integrate via APIs (e.g., Postman).
     - Configure rule strategies: Gateway, Abstraction, Activation Rules for abuse detection.
 
-- **Optimize Performance & Security**
+- **Optimize Performance & Security:**
     - Configure caching, sanctions screening, and suppression techniques (key/total/rule-based).
     - Use TTL counters for high-volume transaction tracking.
 
-- **Accelerate Adoption & Best Practices**
+- **Accelerate Adoption & Best Practices:**
     - Build and evaluate predictive models for fraud and credit risk.
     - Implement machine learning via exhaustive training.
     - Design case management workflows (tracking, forms, audits).
 
-- **Troubleshoot & Debug (for Developers)**
+- **Troubleshoot & Debug (for Developers):**
     - Explore Jube architecture (Docker, Redis, Postgres).
     - Debug with INFO-level logs and manage asynchronous processes (AMQP) and background threads.
 
-- **Leverage Advanced Compliance Features**
+- **Leverage Advanced Compliance Features:**
     - Apply fuzzy matching (Levenshtein) for sanctions.
     - Trigger real-time alerts/cases via Activation Rules.
     - Create custom dashboards for oversight.
@@ -73,12 +67,12 @@ organization’s financial integrity and act on risk with confidence.
 | Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅              | ✅              |
 | Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow.      | ✅              | ✅              |
 | Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅              | ✅              |
-| Day 4 (Optional): Developer Workshop.                                    | –              | ✅              |
-| Day 5 (Optional): Developer Workshop.                                    | –              | ✅              |
+| Day 4: Developer Workshop.                                               | –              | ✅              |
+| Day 5: Developer Workshop.                                               | –              | ✅              |
 | Ongoing Post-Training Support.                                           | 6 weeks        | 12 weeks       |
 |                                                                          | EUR 3600       | EUR 6000       |
 
-Training delivered in person and onsite. Travel and expenses billed separately and in advance.
+Training delivered in person and onsite. Excluding travel cost and expenses.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
@@ -196,7 +190,8 @@ for business continuity. This session covers software patterns, frameworks, codi
 
 ![Jube Support](/support.png)
 
-Participants gain access to a private [Matrix] chat room \ channel, and can continue to ask questions and obtain guidance after
+Participants gain access to a private [Matrix] chat room \ channel, and can continue to ask questions and obtain
+guidance after
 the training delivery. The training, and developer of Jube, will provide timely, asynchronous responses to ensure the
 participants can confidently apply what they’ve learned and resolve any challenges that arise.
 
