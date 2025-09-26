@@ -4,5 +4,47 @@ title: Contact
 permalink: /contact/
 ---
 
-<p>For questions about <a href="/jube-training">Training</a>, <a href="/jube-support">Support</a> from Trusted Partners or more general inquiries feel free to reach out via email:</p>
-<p><a href="mailto:support@jube.io">support@jube.io</a></p>
+<p>For self-guided learning, users can explore the <a href="https://jube-home.github.io/jube/">documentation</a>. For
+    questions about <a href="/jube-training">training</a> or more general
+    inquiries feel free to reach out using the contact form below:</p>
+<div class="form-box">
+    <div class="contact-head">
+        {% if site.data.settings.contact.description %}
+        <p class="contact-description">{{site.data.settings.contact.description}}</p>
+        {% endif %}
+    </div>
+    <form class="form" action="https://submit-form.com/VRAh0ylZ6">
+        <div class="form__group">
+            <label class="form__label screen-reader-text" for="form-name">Your Name</label>
+            <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
+        </div>
+        <div class="form__group">
+            <label class="form__label screen-reader-text" for="form-email">Your Email</label>
+            <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email" required>
+        </div>
+        <div class="form__group">
+            <label class="form__label screen-reader-text" for="form-text">Your Message</label>
+            <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message"
+                      required></textarea>
+        </div>
+        <div class="form__group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAABqVWVhn8qbLCCu4" data-callback="enableSubmit"></div>
+        </div>
+        <input
+                type="hidden"
+                name="_redirect"
+                value="https://www.jube.io/thank-you"
+        />
+        <div class="form__group">
+            <button id="submit-button" class="button button--disabled" type="submit" disabled>Send Message</button>
+        </div>
+    </form>
+</div>
+<script>
+    function enableSubmit() {
+        let submitButton = document.getElementById("submit-button");
+        submitButton.classList.remove("button--disabled");
+        submitButton.classList.add("button--primary");
+        submitButton.disabled = false;
+    }
+</script>
