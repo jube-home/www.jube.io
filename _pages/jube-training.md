@@ -4,9 +4,7 @@ title: Jube Training
 permalink: /jube-training/
 ---
 
-# Master Jube in three days
-
-Hands-on training for compliance teams, engineers, and analysts to accelerate implementation, reduce false positives,
+Master Jube in three days.  Hands-on training for compliance teams, engineers, and analysts to accelerate implementation, reduce false positives,
 and improve detection.
 
 ![Jube Training](/training.png)
@@ -185,12 +183,6 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
 - Stepping and Debugging the Jube CLI
 
-## **Ongoing Post-Training Support**
-
-Participants gain access to a private [Matrix] chat room \ channel, and can continue to ask questions and obtain guidance after
-the training delivery. The training, and developer of Jube, will provide timely, asynchronous responses to ensure the
-participants can confidently apply what they’ve learned and resolve any challenges that arise.
-
 ## **Resources**
 
 * [Source Code]()
@@ -202,9 +194,19 @@ participants can confidently apply what they’ve learned and resolve any challe
 
 ---
 
-# Next Steps
+## **Ongoing Post-Training Support**
 
-Get in touch to align your team’s training needs with measurable outcomes and timelines.
+![Jube Support](/support.png)
+
+Participants gain access to a private [Matrix] chat room \ channel, and can continue to ask questions and obtain guidance after
+the training delivery. The training, and developer of Jube, will provide timely, asynchronous responses to ensure the
+participants can confidently apply what they’ve learned and resolve any challenges that arise.
+
+---
+
+## Next Steps
+
+Get in touch to align your team’s project and training needs with measurable outcomes and timelines.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
