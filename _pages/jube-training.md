@@ -199,11 +199,6 @@ participants can confidently apply what they’ve learned and resolve any challe
 * [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
 
----
-
-# Next Steps
-
-Get in touch to align your team’s project and training needs with measurable outcomes and timelines.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
