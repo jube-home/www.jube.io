@@ -184,23 +184,20 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
 - Stepping and Debugging the Jube CLI
 
+## **Ongoing Post-Training Support**
+
+Participants gain access to a private [Matrix] chat room \ channel, and can continue to ask questions and obtain
+guidance after
+the training delivery. The training, and developer of Jube, will provide timely, asynchronous responses to ensure the
+participants can confidently apply what they’ve learned and resolve any challenges that arise.
+
+
 ## **Resources**
 
 * [Source Code]()
 * [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 * [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
-
----
-
-# **Ongoing Post-Training Support**
-
-![Jube Support](/support.png)
-
-Participants gain access to a private [Matrix] chat room \ channel, and can continue to ask questions and obtain
-guidance after
-the training delivery. The training, and developer of Jube, will provide timely, asynchronous responses to ensure the
-participants can confidently apply what they’ve learned and resolve any challenges that arise.
 
 ---
 
