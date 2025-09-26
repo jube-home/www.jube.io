@@ -25,7 +25,7 @@ same power—without the lock-in or costs. The only barrier is confidence, and t
 Break free from overpriced, restrictive AML and transaction monitoring systems—learn Jube and take full control of your
 technology stack.
 
-## Who is Jube for?
+# Who is Jube for?
 
 Jube empowers professionals to protect their organization’s financial integrity and security with data-driven insights:
 
@@ -41,7 +41,7 @@ Jube empowers professionals to protect their organization’s financial integrit
 Jube equips compliance, fraud, data, and technical professionals with the insights and tools to protect their
 organization’s financial integrity and act on risk with confidence.
 
-## **Learning Outcomes**
+# **Learning Outcomes**
 
 - **Implement & Manage Jube Confidently**
     - Master AML (FATF/Wolfsberg) and Fraud Detection transaction monitoring.
@@ -66,7 +66,7 @@ organization’s financial integrity and act on risk with confidence.
     - Trigger real-time alerts/cases via Activation Rules.
     - Create custom dashboards for oversight.
 
-## **Pricing**
+# **Pricing**
 
 | Topics                                                                   | 3-Day Training | 5-Day Training |
 |--------------------------------------------------------------------------|----------------|----------------|
@@ -86,7 +86,7 @@ Training delivered in person and onsite. Travel and expenses billed separately a
 
 ---
 
-## **Training Plan**
+# **Training Plan**
 
 It is common to implement and run Jube based on the time spent with the <a href="https://jube-home.github.io/jube/">
 documentation</a> alone. Training provides a significant acceleration of a successful implementation of Jube. The
@@ -112,7 +112,7 @@ for technical participants responsible for system administration but do not requ
 For organizations with developer teams, an **additional day** is available to familiarize them with the Jube codebase
 for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
 
-### **Day 1: Configuring Models, Messaging and Rule Strategy**
+## **Day 1: Configuring Models, Messaging and Rule Strategy**
 
 - AML Monitoring Compliance Guidance Overview and Fraud Detection Transaction Monitoring
 - Introduction to Jube and Key User Interface Concepts
@@ -127,7 +127,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Workshop
 - **Elective**: Architecture and Caching, Environment Variables, Installation, and Log Configuration
 
-### **Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow**
+## **Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow**
 
 - Suppression
 - Sanctions Fuzzy Matching
@@ -140,7 +140,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Workshop
 - **Elective**: Tracing Transaction Flow, High Availability, Performance Counters, AMQP
 
-### **Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility**
+## **Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility**
 
 - Users, Roles, and Permissions:
 - SQL Database Discovery
@@ -152,7 +152,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Workshop
 - **Elective**: Tracing Transaction Flow, Bottleneck Analysis, and Cache Training
 
-### **Day 4 (Optional): Developer Workshop**
+## **Day 4 (Optional): Developer Workshop**
 
 - Software Patterns employed in Jube
 - C# Solution and Project Overview
@@ -168,7 +168,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging the User Interface for Visualisation (Frontend and Backend)
 - Stepping and Debugging the Repository Data Layer, ORM, Schema and Schemaless \ JSONB Data
 
-### **Day 5 (Optional): Developer Workshop**
+## **Day 5 (Optional): Developer Workshop**
 
 - Stepping and Debugging Model Synchronisation
 - Stepping and Debugging .Net Rule, Inline Script, Inline Calculation Compilation and the Assembly Hash Cache
@@ -189,12 +189,10 @@ for business continuity. This session covers software patterns, frameworks, codi
 * [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 * [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
-* [Advanced Analytics with R Training](/advanced-analytics-with-r-training)
-* [Support](/jube-support)
 
 ---
 
-## **Ongoing Post-Training Support**
+# **Ongoing Post-Training Support**
 
 ![Jube Support](/support.png)
 
@@ -204,7 +202,7 @@ participants can confidently apply what they’ve learned and resolve any challe
 
 ---
 
-## Next Steps
+# Next Steps
 
 Get in touch to align your team’s project and training needs with measurable outcomes and timelines.
 
