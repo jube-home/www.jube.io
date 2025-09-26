@@ -11,6 +11,8 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
+    - title: 'Learn More'
+      url: '/learn-more'
     - title: 'Training'
       url: '/jube-training'  
     - title: 'Contact'
@@ -39,7 +41,7 @@ menu__settings:
 # Hero Settings
 hero:
   hero__title: Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring<hr>
-  hero__description: Jube is an open-source software for real-time transaction monitoring, utilizing AI to support compliance with regulatory obligations through its AML Monitoring Compliance Guidance and other fraud detection use cases.
+  hero__description: <div class="hero__subscribe"><a href="/learn-more" class="button button--primary section-button">Learn More</a></div>
   hero__image: '/images/Jube.png'
 
 #-------------------------------
