@@ -9,9 +9,7 @@ permalink: /jube-training/
 Hands-on training for compliance teams, engineers, and analysts to accelerate implementation, reduce false positives,
 and improve detection.
 
-![Jube Training](training.png)
-
----
+![Jube Training](/training.png)
 
 # Why Jube Training?
 
@@ -29,8 +27,6 @@ same power—without the lock-in or costs. The only barrier is confidence, and t
 Break free from overpriced, restrictive AML and transaction monitoring systems—learn Jube and take full control of your
 technology stack.
 
----
-
 ## Who is Jube for?
 
 Jube empowers professionals to protect their organization’s financial integrity and security with data-driven insights:
@@ -46,8 +42,6 @@ Jube empowers professionals to protect their organization’s financial integrit
 
 Jube equips compliance, fraud, data, and technical professionals with the insights and tools to protect their
 organization’s financial integrity and act on risk with confidence.
-
----
 
 ## **Learning Outcomes**
 
@@ -73,8 +67,6 @@ organization’s financial integrity and act on risk with confidence.
     - Apply fuzzy matching (Levenshtein) for sanctions.
     - Trigger real-time alerts/cases via Activation Rules.
     - Create custom dashboards for oversight.
-
----
 
 ## **Pricing**
 
@@ -192,6 +184,8 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Exhaustive Model Training
 - Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
 - Stepping and Debugging the Jube CLI
+
+---
 
 ## **Resources**
 
