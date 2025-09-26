@@ -4,6 +4,100 @@ title: Jube Training
 permalink: /jube-training/
 ---
 
+# Master Jube in three days
+
+Hands-on training for compliance teams, engineers, and analysts to accelerate implementation, reduce false positives,
+and improve detection.
+
+![Jube Training](training.png)
+
+---
+
+# Why Jube Training?
+
+Proprietary AML and transaction fraud detection systems are overpriced, restrictive, and complex. Open-source
+alternatives like Jube deliver the
+same power—without the lock-in or costs. The only barrier is confidence, and that’s where this training comes in:
+
+- **Training direct from the Developer:** Learn Jube straight from its creator.
+- **Rapid Mastery:** Get proficient in days, not months.
+- **True Independence:** Own your AML and transaction monitoring technology stack, free from vendor contracts.
+- **Smart ROI:** Faster project evaluation , faster implementation, fewer mistakes, and independent mastery mean the
+  investment quickly multiplies in value.
+- **Ongoing Support:** Post training chat support available to assure project outcome.
+
+Break free from overpriced, restrictive AML and transaction monitoring systems—learn Jube and take full control of your
+technology stack.
+
+---
+
+## Who is Jube for?
+
+Jube empowers professionals to protect their organization’s financial integrity and security with data-driven insights:
+
+- **Compliance & Risk Leaders:** Get a holistic view of compliance and fraud risk. Quickly generate reports for auditors
+  and regulators to stay ahead of evolving requirements.
+- **Fraud Analysts:** Move from insight to action faster. Build, test, and refine detection rules to proactively reduce
+  fraud losses.
+- **Data Analysts & Scientists:** Go beyond basic rules with advanced analytics and machine learning to uncover hidden
+  patterns and improve detection accuracy.
+- **Developers & Technical Teams:** Integrate Jube seamlessly with clear APIs and developer-friendly tools for fast,
+  reliable implementation.
+
+Jube equips compliance, fraud, data, and technical professionals with the insights and tools to protect their
+organization’s financial integrity and act on risk with confidence.
+
+---
+
+## **Learning Outcomes**
+
+- **Implement & Manage Jube Confidently**
+    - Master AML (FATF/Wolfsberg) and Fraud Detection transaction monitoring.
+    - Navigate the user interface and integrate via APIs (e.g., Postman).
+    - Configure rule strategies: Gateway, Abstraction, Activation Rules for abuse detection.
+
+- **Optimize Performance & Security**
+    - Configure caching, sanctions screening, and suppression techniques (key/total/rule-based).
+    - Use TTL counters for high-volume transaction tracking.
+
+- **Accelerate Adoption & Best Practices**
+    - Build and evaluate predictive models for fraud and credit risk.
+    - Implement machine learning via exhaustive training.
+    - Design case management workflows (tracking, forms, audits).
+
+- **Troubleshoot & Debug (for Developers)**
+    - Explore Jube architecture (Docker, Redis, Postgres).
+    - Debug with INFO-level logs and manage asynchronous processes (AMQP) and background threads.
+
+- **Leverage Advanced Compliance Features**
+    - Apply fuzzy matching (Levenshtein) for sanctions.
+    - Trigger real-time alerts/cases via Activation Rules.
+    - Create custom dashboards for oversight.
+
+---
+
+## **Pricing**
+
+| Topics                                                                   | 3-Day Training | 5-Day Training |
+|--------------------------------------------------------------------------|----------------|----------------|
+| Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅              | ✅              |
+| Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow.      | ✅              | ✅              |
+| Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅              | ✅              |
+| Day 4 (Optional): Developer Workshop.                                    | –              | ✅              |
+| Day 5 (Optional): Developer Workshop.                                    | –              | ✅              |
+| [Matrix] Chat Room Post Training Support.                                | 6 weeks        | 12 weeks       |
+|                                                                          | EUR 3600       | EUR 6000       |
+
+Training delivered in person and onsite. Travel and expenses billed separately and in advance.
+
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Contact</a>
+</div>
+
+---
+
+## **Training Plan**
+
 It is common to implement and run Jube based on the time spent with the <a href="https://jube-home.github.io/jube/">
 documentation</a> alone. Training provides a significant acceleration of a successful implementation of Jube. The
 training is delivered in person by the [developer](https://www.churchman.io) of Jube.
@@ -17,31 +111,6 @@ implementation of this guidance other transaction monitoring use cases will also
 implication. The underlying concepts are largely adjacent and require similar methodologies, albeit with subtle
 differences in application.
 
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Contact</a>
-</div>
-
----
-
-## **Learning Outcomes:**
-
-* Confidently Implement and Manage Jube: Master Jube’s AML (FATF/Wolfsberg-aligned) and Fraud Detection Transaction
-  Monitoring, User Interface navigation, API integration (e.g., Postman), and rule strategies (
-  Gateway/Abstraction/Activation Rules) for abuse
-  detection.
-* Optimize Jube for Performance & Security: Configure caching, sanctions screening, and suppression techniques (
-  keys/total/rule-based); use TTL counters for high-volume transaction tracking.
-* Accelerate Adoption with Best Practices: Build/evaluate predictive models (fraud/credit risk); implement ML via
-  Exhaustive training; design case management workflows (tracking, forms, audits).
-* Troubleshoot & Debug (Developers): Explore Jube’s architecture (Docker/Redis/Postgres), debug with INFO-level logs,
-  and manage async processes (AMQP) and background threads.
-* Leverage Advanced Compliance Features: Apply fuzzy matching (Levenshtein) for sanctions, trigger real-time
-  alerts/cases via Activation Rules, and create custom dashboards for oversight.
-
----
-
-## **Training Plan**:
-
 The following is an abridged version of the
 full [Jube Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
 
@@ -53,7 +122,7 @@ for technical participants responsible for system administration but do not requ
 For organizations with developer teams, an **additional day** is available to familiarize them with the Jube codebase
 for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
 
-### **Day 1: Configuring Models, Messaging and Rule Strategy:**
+### **Day 1: Configuring Models, Messaging and Rule Strategy**
 
 - AML Monitoring Compliance Guidance Overview and Fraud Detection Transaction Monitoring
 - Introduction to Jube and Key User Interface Concepts
@@ -68,7 +137,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Workshop
 - **Elective**: Architecture and Caching, Environment Variables, Installation, and Log Configuration
 
-### **Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow:**
+### **Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow**
 
 - Suppression
 - Sanctions Fuzzy Matching
@@ -81,7 +150,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Workshop
 - **Elective**: Tracing Transaction Flow, High Availability, Performance Counters, AMQP
 
-### **Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility:**
+### **Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility**
 
 - Users, Roles, and Permissions:
 - SQL Database Discovery
@@ -93,7 +162,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Workshop
 - **Elective**: Tracing Transaction Flow, Bottleneck Analysis, and Cache Training
 
-### **Day 4 (Optional): Developer Workshop:**
+### **Day 4 (Optional): Developer Workshop**
 
 - Software Patterns employed in Jube
 - C# Solution and Project Overview
@@ -109,7 +178,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging the User Interface for Visualisation (Frontend and Backend)
 - Stepping and Debugging the Repository Data Layer, ORM, Schema and Schemaless \ JSONB Data
 
-### **Day 5 (Optional): Developer Workshop:**
+### **Day 5 (Optional): Developer Workshop**
 
 - Stepping and Debugging Model Synchronisation
 - Stepping and Debugging .Net Rule, Inline Script, Inline Calculation Compilation and the Assembly Hash Cache
@@ -124,14 +193,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
 - Stepping and Debugging the Jube CLI
 
-## **Pricing**
-
-* 3 Days Core Training: EUR 3600
-* 5 Days Core and Developer Training: EUR 6000
-
-Training delivered in person and onsite. Travel and expenses billed separately and in advance.
-
-## **Resources:**
+## **Resources**
 
 * [Source Code]()
 * [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
@@ -141,6 +203,10 @@ Training delivered in person and onsite. Travel and expenses billed separately a
 * [Support](/jube-support)
 
 ---
+
+# Next Steps
+
+Get in touch to align your team’s training needs with measurable outcomes and timelines.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
