@@ -77,7 +77,7 @@ organization’s financial integrity and act on risk with confidence.
 | Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅              | ✅              |
 | Day 4 (Optional): Developer Workshop.                                    | –              | ✅              |
 | Day 5 (Optional): Developer Workshop.                                    | –              | ✅              |
-| [Matrix] Chat Room Post Training Support.                                | 6 weeks        | 12 weeks       |
+| Ongoing Post-Training Support.                                           | 6 weeks        | 12 weeks       |
 |                                                                          | EUR 3600       | EUR 6000       |
 
 Training delivered in person and onsite. Travel and expenses billed separately and in advance.
@@ -185,7 +185,11 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
 - Stepping and Debugging the Jube CLI
 
----
+## **Ongoing Post-Training Support**
+
+Participants gain access to a private [Matrix] chat room \ channel, and can continue to ask questions and obtain guidance after
+the training delivery. The training, and developer of Jube, will provide timely, asynchronous responses to ensure the
+participants can confidently apply what they’ve learned and resolve any challenges that arise.
 
 ## **Resources**
 
