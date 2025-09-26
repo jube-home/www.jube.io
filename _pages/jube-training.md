@@ -62,17 +62,22 @@ technology stack.
 
 # **Pricing**
 
-| Topics                                                                   | 3-Day Training | 5-Day Training |
-|--------------------------------------------------------------------------|----------------|----------------|
-| Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅              | ✅              |
-| Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow.      | ✅              | ✅              |
-| Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅              | ✅              |
-| Day 4: Developer Workshop.                                               | –              | ✅              |
-| Day 5: Developer Workshop.                                               | –              | ✅              |
-| Ongoing Post-Training Support.                                           | 6 weeks        | 12 weeks       |
-|                                                                          | EUR 3600       | EUR 6000       |
+|                                                                          | User Training | Developer Training |
+|--------------------------------------------------------------------------|---------------|--------------------|
+| Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅             | ✅                  |
+| Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow.      | ✅             | ✅                  |
+| Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅             | ✅                  |
+| Day 4: Developer Workshop.                                               | –             | ✅                  |
+| Day 5: Developer Workshop.                                               | –             | ✅                  |
+| Ongoing Post-Training Support.                                           | 6 weeks       | 12 weeks           |
+|                                                                          | EUR 3600      | EUR 6000           |
 
-Training delivered in person and onsite. Excluding travel cost and expenses.
+* **User Training**: Provides a comprehensive understanding of all Jube functionality, enabling staff to effectively
+  operate and leverage the platform for day-to-day business processes.
+* **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
+  required to maintain, extend, and support the platform for ongoing business continuity.
+
+Training delivered in person and onsite. Excluding travel cos and expenses.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
