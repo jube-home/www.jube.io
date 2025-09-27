@@ -64,15 +64,15 @@ technology stack.
 
 Training delivered in person and onsite:
 
-|                                                                          | User Training | Developer Training |
-|--------------------------------------------------------------------------|---------------|--------------------|
-| Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅             | ✅                  |
-| Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow.      | ✅             | ✅                  |
-| Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅             | ✅                  |
-| Day 4: Developer Workshop.                                               | –             | ✅                  |
-| Day 5: Developer Workshop.                                               | –             | ✅                  |
-| Ongoing Post-Training Support.                                           | 6 weeks       | 12 weeks           |
-|                                                                          | EUR 3600      | EUR 6000           |
+|                                                                          | User Training              | Developer Training          |
+|--------------------------------------------------------------------------|----------------------------|-----------------------------|
+| Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅                          | ✅                           |
+| Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow.      | ✅                          | ✅                           |
+| Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅                          | ✅                           |
+| Day 4: Developer Workshop.                                               | –                          | ✅                           |
+| Day 5: Developer Workshop.                                               | –                          | ✅                           |
+| Post-Training Support. Consulting.                                       | 6 hours (within six weeks) | 10 hours (within six weeks) |
+|                                                                          | EUR 3600                   | EUR 6000                    |
 
 * **User Training**: Provides a comprehensive understanding of all Jube functionality, enabling staff to effectively
   operate and leverage the platform for day-to-day business processes.
@@ -184,12 +184,12 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
 - Stepping and Debugging the Jube CLI
 
-## **Ongoing: Training Support**
+## **Post-Training Support: Consulting**
 
 For a defined period of time, participants gain access to a private [Matrix] chat room \ channel, and can continue to
 ask questions and obtain
 guidance after
-the training delivery. The training, and developer of Jube, will provide timely, asynchronous responses to ensure the
+the training delivery. The developer of Jube will provide timely, asynchronous responses to ensure the
 participants can confidently apply what they’ve learned and resolve any challenges that arise.
 
 ## **Resources**
@@ -198,7 +198,6 @@ participants can confidently apply what they’ve learned and resolve any challe
 * [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 * [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
-
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Contact</a>
