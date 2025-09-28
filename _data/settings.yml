@@ -15,7 +15,7 @@ menu__settings:
       url: '/learn-more'
     - title: 'Training'
       url: '/jube-training'  
-    - title: 'Contact'
+    - title: 'Book a Demo'
       url: '/contact'
     - title: 'Resources'
       submenu:
