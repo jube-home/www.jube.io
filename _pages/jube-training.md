@@ -204,7 +204,7 @@ participants can confidently apply what they’ve learned and resolve any challe
 
 ## **Resources**
 
-* [Source Code]()
+* [Source Code](https://github.com/jube-home/aml-fraud-transaction-monitoring)
 * [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 * [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)

@@ -103,9 +103,7 @@ enhancing overall compliance efforts.
 
 ## **Resources**
 
-* [Source Code]()
-* [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
-* [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
+* [Source Code](https://github.com/jube-home/aml-fraud-transaction-monitoring)
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
 
 ---
