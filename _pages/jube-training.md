@@ -8,21 +8,30 @@ Master Jube in three days. Hands-on training for compliance teams, engineers, an
 
 ![Jube Training](/training.png)
 
-# Why Jube Training?
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
 
-Proprietary AML and transaction fraud detection systems are overpriced, restrictive, and complex. Open-source
-alternatives like Jube deliver the
-same power—without the lock-in or costs. The only barrier is confidence, and that’s where this training comes in:
+## Why Jube Training?
 
-- **Training direct from the Developer:** Learn Jube straight from its creator.
-- **Rapid Mastery:** Get proficient in days, not months.
-- **True Independence:** Own your AML and transaction monitoring technology stack, free from vendor contracts.
-- **Smart ROI:** Faster project evaluation , faster implementation, fewer mistakes, and independent mastery mean the
-  investment quickly multiplies in value.
-- **Ongoing Support:** Post training chat support available to assure project outcome.
+💡 **Training Direct from the Developer**  
+Learn Jube straight from its creator—no second-hand knowledge, no gaps.
 
-Break free from overpriced, restrictive AML and transaction monitoring systems—learn Jube and take full control of your
-technology stack.
+⚡ **Rapid Mastery**  
+Get proficient in days, not months. Accelerate your implementation timeline.
+
+🔓 **True Independence**  
+Own your AML and transaction monitoring stack—free from vendor lock-in and restrictive contracts.
+
+📈 **Smart ROI**  
+Faster evaluation, smoother implementation, fewer mistakes, and independent mastery mean your training investment multiplies in value.
+
+🤝 **Ongoing Support**  
+Post-training chat support ensures your project succeeds long after the course ends.
+
+{: .tip }
+Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your technology stack.
+
 
 # Who is Jube for?
 
@@ -62,7 +71,7 @@ technology stack.
 
 # **Pricing**
 
-Training delivered in person and onsite:
+Training delivered in person onsite, remote or hybrid:
 
 |                                                                          | User Training              | Developer Training          |
 |--------------------------------------------------------------------------|----------------------------|-----------------------------|
@@ -79,10 +88,10 @@ Training delivered in person and onsite:
 * **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
   required to maintain, extend, and support the platform for ongoing business continuity.
 
-Pricing is excluding travel and expenses.
+Onside delivery is excluding travel and expenses.
 
 <div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Contact</a>
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
 
 ---
@@ -200,5 +209,5 @@ participants can confidently apply what they’ve learned and resolve any challe
 * [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
 
 <div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Contact</a>
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
