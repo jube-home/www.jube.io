@@ -4,44 +4,49 @@ title: Contact
 permalink: /contact/
 ---
 
-<p>Training questions or general inquiries there a variety of contact direct options:</p>
-📧 **Email:** [support@jube.io](mailto:support@jube.io)
-📞 **Phone:** +357 97 517 137
-💬 **WhatsApp:** [Chat on WhatsApp](https://wa.me/35797517137)
-📅 **Book a Meeting:** [Schedule a Meeting](https://calendly.com/richard-churchman-jube/30min)
-<p>**Contact Form:**</p>
-<div class="form-box">
-    <div class="contact-head">
-        {% if site.data.settings.contact.description %}
-        <p class="contact-description">{{site.data.settings.contact.description}}</p>
-        {% endif %}
+<div class="contact-block" style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+    <p><strong>📧 Email:</strong> <a href="mailto:support@jube.io" style="color: #007bff; text-decoration: none;">support@jube.io</a>
+    </p>
+    <p><strong>📞 Phone:</strong> +357 97 517 137</p>
+    <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/35797517137" target="_blank"
+                                       style="color: #007bff; text-decoration: none;">Chat on WhatsApp</a></p>
+    <p><strong>📅 Book a Meeting:</strong> <a href="https://calendly.com/richard-churchman-jube/30min" target="_blank"
+                                             style="color: #007bff; text-decoration: none;">Schedule a Meeting</a></p>
+
+    <h3>Contact Form:</h3>
+    <div class="form-box">
+        <div class="contact-head">
+            {% if site.data.settings.contact.description %}
+            <p class="contact-description">{{site.data.settings.contact.description}}</p>
+            {% endif %}
+        </div>
+        <form class="form" action="https://submit-form.com/VRAh0ylZ6">
+            <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-name">Your Name</label>
+                <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-email">Your Email</label>
+                <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email" required>
+            </div>
+            <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-text">Your Message</label>
+                <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message"
+                          required></textarea>
+            </div>
+            <div class="form__group">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAABqVWVhn8qbLCCu4" data-callback="enableSubmit"></div>
+            </div>
+            <input
+                    type="hidden"
+                    name="_redirect"
+                    value="https://www.jube.io/thank-you"
+            />
+            <div class="form__group">
+                <button id="submit-button" class="button button--disabled" type="submit" disabled>Send Message</button>
+            </div>
+        </form>
     </div>
-    <form class="form" action="https://submit-form.com/VRAh0ylZ6">
-        <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-name">Your Name</label>
-            <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
-        </div>
-        <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-email">Your Email</label>
-            <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email" required>
-        </div>
-        <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-text">Your Message</label>
-            <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message"
-                      required></textarea>
-        </div>
-        <div class="form__group">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAABqVWVhn8qbLCCu4" data-callback="enableSubmit"></div>
-        </div>
-        <input
-                type="hidden"
-                name="_redirect"
-                value="https://www.jube.io/thank-you"
-        />
-        <div class="form__group">
-            <button id="submit-button" class="button button--disabled" type="submit" disabled>Send Message</button>
-        </div>
-    </form>
 </div>
 <script>
     function enableSubmit() {

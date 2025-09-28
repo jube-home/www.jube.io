@@ -11,6 +11,7 @@ Master Jube in three days. Hands-on training for compliance teams, engineers, an
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
+<p></p>
 
 ## Why Jube Training?
 
@@ -88,7 +89,7 @@ Training delivered in person onsite, remote or hybrid:
 * **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
   required to maintain, extend, and support the platform for ongoing business continuity.
 
-Onside delivery is excluding travel and expenses.
+Onsite delivery is excluding travel and expenses.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
