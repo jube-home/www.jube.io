@@ -199,12 +199,15 @@ For the purposes of the UK GDPR and EU GDPR, the parties acknowledge that JOL ac
 
 2. Subject to ADR, the courts of England and Wales have exclusive jurisdiction.
 
-## 14. Miscellaneous / Boilerplate Clauses
+## 14. Miscellaneous
 
-1. **Severability:** Invalid clauses do not affect the rest.
-2. **Assignment:** No rights/obligations may be assigned without prior written consent.
-3. **Notices:** Notices must be in writing via email or post.
-4. **Non-Waiver:** Failure to enforce a right does not waive it.
+1. **Severability:** If any provision of this Agreement is found to be invalid, unlawful, or unenforceable, that provision shall be severed and the remaining provisions shall continue in full force and effect.
+
+2. **Assignment:** Neither party may assign nor transfer any rights or obligations under this Agreement without the prior written consent of the other party.
+
+3. **Notices:** Any formal notice under this Agreement must be in writing and delivered by email or by post to the addresses notified by the parties from time to time.
+
+4. **Non-Waiver:** A failure or delay by either party to enforce any right or remedy under this Agreement shall not constitute a waiver of that right or remedy, nor shall a single or partial exercise of any right or remedy preclude further exercise of that or any other right or remedy.
 
 ## Appendix A: Data Processing (GDPR)
 
