@@ -21,22 +21,13 @@ menu__settings:
       submenu:
         - title: 'Source Code (GitHub)'
           url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
-        - title: 'Jube Documentation'
+        - title: 'Documentation'
           url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'
-        - title: 'AML Monitoring Compliance Guidance [PDF]'
-          url: '/JubeAMLMonitoringComplianceGuidance.pdf'
-        - title: 'Jube Training Plan [PDF]'
+        - title: 'Training Plan [PDF]'
           url: '/JubeTrainingPlan.pdf'
-        - title: 'Advanced Analytics with R Training'
-          url: '/advanced-analytics-with-r-training'
-        - title: 'Advanced Analytics with R Training Plan [PDF]'
-          url: '/AdvancedAnalyticsWithRTrainingPlan.pdf'
-        - title: 'Advanced Analytics with R Guidance [PDF]'
-          url: '/AdvancedAnalyticsWithRGuidance.pdf'
-        - title: 'Who is the Developer?'
-          url: 'https://www.churchman.io/'
+        - title: 'Transaction Monitoring Compliance Guidance [PDF]'
+          url: '/JubeAMLMonitoringComplianceGuidance.pdf'
           
-
 #-------------------------------
 # Hero Settings
 hero:
