@@ -25,14 +25,15 @@ Get proficient in days, not months. Accelerate your implementation timeline.
 Own your AML and transaction monitoring stack—free from vendor lock-in and restrictive contracts.
 
 📈 **Smart ROI**  
-Faster evaluation, smoother implementation, fewer mistakes, and independent mastery mean your training investment multiplies in value.
+Faster evaluation, smoother implementation, fewer mistakes, and independent mastery mean your training investment
+multiplies in value.
 
 🤝 **Ongoing Support**  
 Post-training chat support ensures your project succeeds long after the course ends.
 
 {: .tip }
-Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your technology stack.
-
+Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your
+technology stack.
 
 # Who is Jube for?
 
@@ -120,7 +121,7 @@ Elective
 modules provide in-depth training on advanced administrative concepts using dedicated servers. These are ideal
 for technical participants responsible for system administration but do not require developer expertise.
 
-For organizations with developer teams, an **additional day** is available to familiarize them with the Jube codebase
+For organizations with developer teams, an **additional two days** is available to familiarize them with the Jube codebase
 for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
 
 ## **Day 1: Configuring Models, Messaging and Rule Strategy**
