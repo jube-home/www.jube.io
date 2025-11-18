@@ -73,7 +73,7 @@ technology stack.
 
 # **Pricing**
 
-Training delivered in person onsite, remote or hybrid:
+Training delivered in remotely:
 
 |                                                                          | User Training              | Developer Training          |
 |--------------------------------------------------------------------------|----------------------------|-----------------------------|
@@ -83,14 +83,12 @@ Training delivered in person onsite, remote or hybrid:
 | Day 4: Developer Workshop.                                               | –                          | ✅                           |
 | Day 5: Developer Workshop.                                               | –                          | ✅                           |
 | Post-Training Support. Consulting.                                       | 6 hours (within six weeks) | 10 hours (within six weeks) |
-|                                                                          | EUR 3600                   | EUR 6000                    |
+|                                                                          | USD 3000                   | USD 5000                    |
 
 * **User Training**: Provides a comprehensive understanding of all Jube functionality, enabling staff to effectively
   operate and leverage the platform for day-to-day business processes.
 * **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
   required to maintain, extend, and support the platform for ongoing business continuity.
-
-Onsite delivery is excluding travel and expenses.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
@@ -121,7 +119,8 @@ Elective
 modules provide in-depth training on advanced administrative concepts using dedicated servers. These are ideal
 for technical participants responsible for system administration but do not require developer expertise.
 
-For organizations with developer teams, an **additional two days** is available to familiarize them with the Jube codebase
+For organizations with developer teams, an **additional two days** is available to familiarize them with the Jube
+codebase
 for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
 
 ## **Day 1: Configuring Models, Messaging and Rule Strategy**

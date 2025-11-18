@@ -100,10 +100,10 @@ effectively.
 - Monte Carlo Simulation, Credit Portfolio Risk and Stress Testing
 
 ## **Pricing**
-* 3 Days Training: EUR 3600
-* 4 Days Core and Credit Analytics Training: EUR 4800
+* 3 Days Training: USD 3000
+* 4 Days Core and Credit Analytics Training: USD 4000
 
-Training delivered onsite.  Travel and expenses bill separately and in advance.
+Training delivered remotely.
 
 ## **Resources:**
 
