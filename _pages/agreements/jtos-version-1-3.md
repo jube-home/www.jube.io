@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Jube Terms of Service (JTOS)
-permalink: /agreements/jtos-version-1-2
+permalink: /agreements/jtos-version-1-3
 ---
 
-**Version:** 1.2.
+**Version:** 1.3.
 
 ---
 
