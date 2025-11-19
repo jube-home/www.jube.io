@@ -111,9 +111,6 @@ implementation of this guidance other transaction monitoring use cases will also
 implication. The underlying concepts are largely adjacent and require similar methodologies, albeit with subtle
 differences in application.
 
-The following is an abridged version of the
-full [Jube Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf).
-
 The training spans **3 to 4 days**, with each day lasting **6 to 8 hours**, depending on elective modules.
 Elective
 modules provide in-depth training on advanced administrative concepts using dedicated servers. These are ideal
@@ -122,6 +119,9 @@ for technical participants responsible for system administration but do not requ
 For organizations with developer teams, an **additional two days** is available to familiarize them with the Jube
 codebase
 for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
+
+* [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
+* [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 
 ## **Day 1: Configuring Models, Messaging and Rule Strategy**
 
@@ -201,13 +201,6 @@ ask questions and obtain
 guidance after
 the training delivery. The developer of Jube will provide timely, asynchronous responses to ensure the
 participants can confidently apply what they’ve learned and resolve any challenges that arise.
-
-## **Resources**
-
-* [Source Code](https://github.com/jube-home/aml-fraud-transaction-monitoring)
-* [AML Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
-* [Training Plan for Implementation of AML and Fraud Detection Transaction Monitoring with Jube](/JubeTrainingPlan.pdf)
-* [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
