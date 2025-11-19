@@ -21,12 +21,6 @@ menu__settings:
       url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
     - title: 'Book a Demo'
       url: '/contact'
-    - title: 'Resources'
-      submenu:
-        - title: 'Training Plan [PDF]'
-          url: '/JubeTrainingPlan.pdf'
-        - title: 'Transaction Monitoring Compliance Guidance [PDF]'
-          url: '/JubeAMLMonitoringComplianceGuidance.pdf'
           
 #-------------------------------
 # Hero Settings
