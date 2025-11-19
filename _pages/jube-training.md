@@ -8,11 +8,6 @@ Master Jube in three days. Hands-on training for compliance teams, engineers, an
 
 ![Jube Training](/training.png)
 
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
-<p></p>
-
 ## Why Jube Training?
 
 💡 **Training Direct from the Developer**  
@@ -197,7 +192,3 @@ participants can confidently apply what they’ve learned and resolve any challe
 
 * [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
 * [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
-
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
