@@ -90,12 +90,7 @@ Training delivered in remotely:
 * **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
   required to maintain, extend, and support the platform for ongoing business continuity.
 
-* [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
-* [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
-
----
-
-# **Training Plan**
+# **Training Plan Overview**
 
 It is common to implement and run Jube based on the time spent with the <a href="https://jube-home.github.io/jube/">
 documentation</a> alone. Training provides a significant acceleration of a successful implementation of Jube. The
@@ -197,6 +192,11 @@ ask questions and obtain
 guidance after
 the training delivery. The developer of Jube will provide timely, asynchronous responses to ensure the
 participants can confidently apply what they’ve learned and resolve any challenges that arise.
+
+## Downloads
+
+* [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
+* [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>

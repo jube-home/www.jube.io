@@ -20,8 +20,6 @@ detection, Jube delivers comprehensive case management in an open-source package
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
 
---- 
-
 ## Developed for AML and Fraud Detection Transaction Fraud Monitoring
 
 While transaction monitoring covers a wide range of activities, Jube specifically targets the Anti-Money Laundering (
@@ -46,8 +44,6 @@ Jube facilitates the execution of the AML compliance guidance, making it the mos
 features, ensuring an assured compliance outcome. By leveraging its advanced capabilities, Jube enables financial
 institutions to effectively monitor transactions, detect anomalies, and adhere to regulatory requirements, thereby
 enhancing overall compliance efforts.
-
----
 
 ## **Core Principles of AML and Fraud Detection Transaction Monitoring**
 
@@ -100,13 +96,6 @@ enhancing overall compliance efforts.
 - **Open-Source Advantage:** Transparency, customization, and cost efficiency.
 - **Adaptability:** Supports evolving AML and Fraud Detection Transaction Monitoring regulations and emerging risks.
 - **Advanced Analytics:** Combines supervised and unsupervised learning for robust risk detection.
-
-## **Resources**
-
-* [Source Code](https://github.com/jube-home/aml-fraud-transaction-monitoring)
-* [Documentation](https://jube-home.github.io/aml-fraud-transaction-monitoring/)
-
----
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
