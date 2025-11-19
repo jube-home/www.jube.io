@@ -90,9 +90,8 @@ Training delivered in remotely:
 * **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
   required to maintain, extend, and support the platform for ongoing business continuity.
 
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
+* [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
+* [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 
 ---
 
@@ -119,9 +118,6 @@ for technical participants responsible for system administration but do not requ
 For organizations with developer teams, an **additional two days** is available to familiarize them with the Jube
 codebase
 for business continuity. This session covers software patterns, frameworks, coding standards, and hands-on debugging.
-
-* [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
-* [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 
 ## **Day 1: Configuring Models, Messaging and Rule Strategy**
 
