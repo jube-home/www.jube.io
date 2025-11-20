@@ -100,7 +100,9 @@ hands-on experience running Jube in a real-world environment. Typical outcomes i
   Learn to assign cases, monitor progress, and generate compliance-ready reports.
 - **Monitoring & Adjustment:** Observe system behavior, analyze analytics and logs, identify false positives or gaps,
   and refine rules and workflows accordingly.
-- **Operational Readiness:** Document processes and best practices for daily monitoring, escalation, and compliance
+- **Operational Readiness:** In keeing
+  with [Transaction Monitoring Compliance Methodology](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) create
+  processes and best practices for real-time monitoring, escalation, and compliance
   reporting, ensuring your team can confidently operate independently.
 - **Pilot Validation:** Complete the pilot cycle within the six-week period, demonstrating that alerts are
   captured and managed correctly, and providing actionable insights for scaling to additional channels and rules.
@@ -250,7 +252,7 @@ for business continuity. This session covers software patterns, frameworks, codi
 # Downloads
 
 * [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
-* [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
+* [Download Transaction Monitoring Compliance Methodology](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 
 ---
 
