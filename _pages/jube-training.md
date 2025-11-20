@@ -31,8 +31,8 @@ Own your AML and transaction monitoring stack—free from vendor lock-in and res
 Faster evaluation, smoother implementation, fewer mistakes, and independent mastery mean your training investment
 multiplies in value.
 
-🤝 **Ongoing Support**  
-Post-training chat support ensures your project succeeds long after the course ends.
+🤝 **Real Implementation Outcome**
+Hands-on training plus up to six weeks of pilot implementation support ensures your team can deploy Jube, configure rules, manage cases, and validate alerts—turning learning into a fully operational pre-production system.
 
 Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your
 technology stack.
