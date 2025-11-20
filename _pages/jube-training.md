@@ -4,8 +4,8 @@ title: Training and Implementation
 permalink: /jube-training/
 ---
 
-Master Jube in three to five days with hands-on training for compliance teams, engineers, and analysts—accelerating
-implementation with guided integration support to deliver a pre-production pilot.
+Master Jube in 3–5 days with hands-on training for compliance teams, engineers, and analysts. Accelerate implementation
+with guided integration support to deliver a pre-production pilot — all led by the developer of Jube.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
@@ -58,7 +58,7 @@ technology stack.
     - Master AML (FATF/Wolfsberg) and Fraud Detection transaction monitoring.
     - Navigate the user interface and integrate via APIs (e.g., Postman).
     - Configure rule strategies: Gateway, Abstraction, Activation Rules for abuse detection.
-    - Be equipiped to move into the 
+    - Be equipiped to move into the
 
 - **Optimize Performance & Security:**
     - Configure caching, sanctions screening, and suppression techniques (key/total/rule-based).
