@@ -80,7 +80,7 @@ technology stack.
 
 ---
 
-# **Pilot Outcomes**
+# **Implementation Outcomes**
 
 After completing the training, participants will enter a **pilot implementation period of up to six weeks**, gaining
 hands-on experience running Jube in a real-world environment. Typical outcomes include:
