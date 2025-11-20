@@ -1,94 +1,124 @@
 ---
 layout: page
-title: Learn more about AML Transaction Monitoring with Jube
+title: Jube — Open-Source AML & Fraud Transaction Monitoring Platform
 permalink: /learn-more/
 ---
 
-Jube empowers organizations with enterprise-grade monitoring capabilities through a powerful combination of real-time
-processing, artificial intelligence, and automated decision-making. Purpose-built for AML, fraud prevention and abuse
-detection, Jube delivers comprehensive case management in an open-source package.
+Jube is an open-source software platform for real-time detection of suspicious transactions, AML case management, and
+fraud prevention. Fully open-source (AGPLv3) with all features available and no vendor lock-in, Jube is transparent,
+auditable, and extensible—keeping your data under your control while enabling rapid adaptation to new products,
+workflows, regulations, or payment schemes.
 
-* Wholly open-source under AGPLv3 licence.
-* Continuously monitored for vulnerabilities using GitHub CodeQL, ensuring robust security. Active maintenance keeps the
-  codebase current and reliable.
-* Built in C# with a streamlined javascript front end. Uses open-source dependencies including .NET 9 runtime, Redis,
-  and Postgres. Optimized for Linux environments and fully containerizable, thus cloud-agnostic.
-* Implements stateless architecture for horizontal scaling, capable of handling massive workloads. Features clear,
-  simple coding patterns that make it accessible for developers to adopt and contribute.
+Jube combines real-time transaction monitoring, adaptive machine learning, rule-based detection, and workflow-driven
+case management into a single, scalable system.
 
-## Developed for AML and Fraud Detection Transaction Fraud Monitoring
+Designed for compliance teams, financial institutions, and fintechs, Jube provides:
 
-While transaction monitoring covers a wide range of activities, Jube specifically targets the Anti-Money Laundering (
-AML) and Fraud Detection Transaction Monitoring use cases. To enhance clarity and precision,
-the [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) has been
-developed and is
-meticulously maintained. Guidance is designed to assist compliance managers in tailoring it to meet their
-organization’s unique regulatory requirements. These obligations are often rooted in the Financial Action Task Force (
-FATF) guidelines and further reflected in the Wolfsberg Principles, which are updated periodically to reflect evolving
-standards.
+- Accurate and interpretable risk scoring using supervised and unsupervised machine learning models
+- Rule-based detection with thresholds, velocity checks, aggregation counts, and sanctions screening
+- Workflow-driven AML and fraud case management with automated escalation and full audit trails
+- Cloud-native deployment with Docker and Kubernetes support, multi-tenancy, configuration preservation, and
+  high-performance caching for low-latency decisioning
 
-The [Jube AML Monitoring Compliance Guidance (pdf)](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf) document
-provides a comprehensive framework for
-monitoring
-compliance with Anti-Money Laundering (AML) regulations using Jube, an open-source real-time fraud prevention and
-transaction
-monitoring tool. The guidance aligns with guidance from the
-Financial Action Task Force (FATF) and the Wolfsberg Principles, focusing on transaction monitoring and risk-based
-approaches to AML compliance and other Fraud Detection Transaction Monitoring use cases.
+Jube ensures accuracy, transparency, and auditability, making it ideal for organizations that must meet strict
+regulatory requirements while monitoring large transaction volumes.
 
-Jube facilitates the execution of the AML compliance guidance, making it the most relevant tool to highlight its
-features, ensuring an assured compliance outcome. By leveraging its advanced capabilities, Jube enables financial
-institutions to effectively monitor transactions, detect anomalies, and adhere to regulatory requirements, thereby
-enhancing overall compliance efforts.
+![Case Management Listing](CaseManagementListing.png)
 
-## **Core Principles of AML and Fraud Detection Transaction Monitoring**
+![Exhaustive Performance](ExhaustivePerformance.png)
 
-- **Know Your Customer (KYC):** Central to AML compliance, involving due diligence and ongoing monitoring.
-- **Risk-Based Approach (RBA):** Financial institutions assess risks and implement proportionate controls.
-- **Customer Due Diligence (CDD):** Five levels of diligence, from anonymous to enhanced monitoring and suspicious
-  activity reporting (SAR).
-- **Fraud Detection*** Overlap with Fraud Detection Transaction Monitoring use cases.
+---
 
-## **Automated Monitoring Systems**
+## Key Features
 
-- **Real-Time and Batch Processing:** Jube supports both real-time and batch processing for transaction monitoring.
-- **Anomaly Detection and Classification:** Utilizes supervised and unsupervised machine learning techniques.
-- **Activation Rules:** Escalate suspicious cases for further investigation.
+### Adaptive Machine Learning — Exhaustive Adaptation
 
-## **Data-Driven Risk-Based Approach**
+Jube leverages adaptive machine learning for AML and fraud detection, combining anomaly detection, supervised risk
+models, and continuous model training to identify both known and emerging threats, while deriving behavioral features
+for interpretable and actionable risk insights.
 
-- **Risk Factors:** Includes product characteristics, transaction behaviour, and geographic spending patterns.
-- **Machine Learning Models:** Such as One-Class SVM to identify anomalies and classify suspicious activities.
-- **Abstraction Rules:** Model risk factors and integrate them into activation rules for case escalation.
+- Unsupervised learning identifies deviations from normal customer behavior for anomaly detection
+- Supervised learning models detect known fraud and AML patterns based on historical data
+- A hybrid approach combines supervised and unsupervised methods
+- “Exhaustive Adaptation” evolves the model topology — trying different neural-network
+  structures and variables — to find well‑generalized, computationally efficient models as data patterns change
+- Behavioral feature abstraction derives signals such as transaction volume, velocity, and geolocation to improve ML
+  model interpretability
 
-## **Case Management**
+![Exhaustive Learning Curve](ExhaustiveLearningCurve.png)
 
-- **Case Review:** Flagged cases are reviewed by analysts with statuses like "Refer to MLRO," "No Further Action," or "
-  SAR Sent."
-- **Audit Trails:** Ensure transparency, and EDD documentation can be uploaded for further investigation.
-- **Escalation:** Streamlined escalation to the Money Laundering Reporting Officer (MLRO) and SAR creation.
+![Exhaustive Variable Statistics](ExhaustiveVariableStatistics.png)
 
-## **Dashboards**
+![Exhaustive Winning Model Topology](ExhaustiveWinningModelTopology.png)
 
-- **Real-Time Insights:** Provide insights into product behaviour, customer activity, and territorial risks.
-- **Proactive Risk Management:** Enable adaptation to emerging threats.
+![Exhaustive Score Model Testing](ExhaustiveScoreModelTesting.png)
 
-## **Integration and Data Processing**
+### Real-Time Transaction Monitoring
 
-- **Data Sources:** Integrates data from various sources such as MasterCard/Visa authorizations, financial transactions,
-  and CDD events.
-- **IP Address Decoding:** Provides geographic and contextual insights for risk assessment.
-- **Serial Processing:** Data is processed serially, even in batch mode, to simulate real-time monitoring.
+Jube’s real-time transaction monitoring engine detects suspicious activity instantly, enabling financial institutions
+and fintechs to respond to fraud and AML risks as they occur. The engine combines low-latency processing, scalable
+architecture, and reliable storage to handle large transaction volumes efficiently.
 
-## **Value Proposition**
+- Stateless, horizontally scalable architecture
+- Low-latency, in-memory processing with Redis for real-time state mutable state
+- Frequently accessed immutable state stored locally also to minimize network overhead, reduce
+  serialization/deserialization, and
+  increase server density, ensuring fast, scalable decisioning under high load
+- Durable storage and audit logs with PostgreSQL
+- AMQP integration (RabbitMQ) for inbound and outbound events
+- Full support for synchronous and asynchronous interfaces via HTTP, AMQP, and hybrid modes
+- Asynchronous archival of decision payloads for analytics and reporting
+- Real-time reprocessing of past data available for integration of fresh intelligence and analysis of exposure
 
-- **Cost Reduction:** Eliminates prohibitive costs of proprietary solutions.
-- **Vendor Lock-In Eradication:** Open-source nature ensures flexibility.
-- **Improved Compliance:** Advanced tooling enhances regulatory adherence.
+### Case Management for Compliance
 
-## **Key Features of Jube**
+Jube delivers workflow-driven AML and fraud case management with automated escalation, full audit trails, and document
+versioning, giving compliance teams an end-to-end solution for investigating suspicious transactions efficiently.
 
-- **Real-Time Processing:** Ensures timely detection of suspicious activities.
-- **Open-Source Advantage:** Transparency, customization, and cost efficiency.
-- **Adaptability:** Supports evolving AML and Fraud Detection Transaction Monitoring regulations and emerging risks.
-- **Advanced Analytics:** Combines supervised and unsupervised learning for robust risk detection.
+- Multiple case streams (AML, fraud, compliance)
+- Workflow-driven dashboards for investigators
+- Document upload and versioning (EDD, CDD, ID verification)
+- Automatic case escalation via activation rules
+- Full audit trails for all actions
+
+![Case](Case.png)
+
+![Visualisation](Visualisation.png)
+
+![Activation Watcher](ActivationWatcher.png)
+
+### Flexible Rule Engine
+
+Jube’s rules engine supports thresholds, velocity checks, aggregation counts, and sanctions screening, fully integrated
+with ML outputs for comprehensive detection.
+
+- Threshold-based detection
+- Velocity and aggregation checks
+- Automatically check transactions and counterparties against global sanctions lists for
+  regulatory compliance
+- Time-to-live counters and suppression
+- Fully integrates with ML outputs for combined detection
+- Online or background preparation of velocity and other aggregations depending on data volume
+
+![Rule Builder](RuleBuilder.png)
+
+![Rule Coder](RuleCoder.png)
+
+![Manual Sanctions](ManualSanctions.png)
+
+### Cloud-Native
+
+Jube offers a developer-friendly, cloud-native architecture (Docker- and Kubernetes-ready) for AML and fraud monitoring.
+Its fully containerized platform includes an embedded HTTP server with REST APIs, Swagger documentation, and secure JWT
+authentication, making deployment and integration seamless for fintechs and financial institutions.
+
+The platform preserves configuration, enabling institutions to back up, restore, and migrate rules, workflows, and ML
+settings. This ensures operational continuity and smooth system upgrades or deployments.
+
+Jube supports multi-tenancy, allowing financial institutions or service providers to monitor transactions for multiple
+sub-clients (brands or business units) within a single deployment. Each tenant can maintain independent rules,
+workflows, and ML configurations.
+
+![Swagger](Swagger.png)
+
+---
