@@ -58,7 +58,7 @@ technology stack.
     - Master AML (FATF/Wolfsberg) and Fraud Detection transaction monitoring.
     - Navigate the user interface and integrate via APIs (e.g., Postman).
     - Configure rule strategies: Gateway, Abstraction, Activation Rules for abuse detection.
-    - Be equipiped to move into the
+    - - Be equipped to move directly into a pilot implementation period.
 
 - **Optimize Performance & Security:**
     - Configure caching, sanctions screening, and suppression techniques (key/total/rule-based).
@@ -82,7 +82,7 @@ technology stack.
 
 # **Implementation Outcomes**
 
-After completing the training, participants will enter a **pilot implementation period of up to six weeks**, gaining
+After completing the training, participants will enter a pilot implementation period of up to **six weeks**, gaining
 hands-on experience running Jube in a real-world environment. Typical outcomes include:
 
 - **Single Channel Deployment:** Configure and activate a core transaction monitoring channel connected to sandbox or
@@ -97,11 +97,21 @@ hands-on experience running Jube in a real-world environment. Typical outcomes i
   reporting, ensuring your team can confidently operate independently.
 - **Pilot Validation:** Complete the pilot cycle within the six-week period, demonstrating that alerts are
   captured and managed correctly, and providing actionable insights for scaling to additional channels and rules.
-- **Service Delivery:** Integration support is provided throughout the pilot via asynchronous chat through a
-  private [Matrix] room for direct developer access, email support, and on-demand online meetings.
 
 This approach ensures training is **practical, not just theoretical**—participants transition seamlessly into a **live
 pilot**, leaving with both knowledge and a working implementation ready for expansion.
+
+---
+
+# **Service Delivery & Developer Support**
+
+Integration support is provided throughout the pilot, including:
+
+- **Matrix Chat Room:** Direct asynchronous access to the developer for fast guidance.
+- **Email Support:** Guidance and clarifications as needed.
+- **On-Demand Meetings:** Live walkthroughs and problem-solving sessions.
+
+If desired, as an elective, **retained developer support** is available on a rolling monthly basis, providing **two days (16 hours) of support per month**, prorated by the hour. This ensures your team can continue to implement, operate, and refine Jube confidently.
 
 ---
 
