@@ -9,6 +9,11 @@ fraud prevention. Fully open-source (AGPLv3) with all features available and no 
 auditable, and extensible—keeping your data under your control while enabling rapid adaptation to new products,
 workflows, regulations, or payment schemes.
 
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+<p></p>
+
 Jube combines real-time transaction monitoring, adaptive machine learning, rule-based detection, and workflow-driven
 case management into a single, scalable system.
 
@@ -22,11 +27,6 @@ Designed for compliance teams, financial institutions, and fintechs, Jube provid
 
 Jube ensures accuracy, transparency, and auditability, making it ideal for organizations that must meet strict
 regulatory requirements while monitoring large transaction volumes.
-
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
-<p></p>
 
 ![Case Management Listing](/CaseManagementListing.png)
 
