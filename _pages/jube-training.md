@@ -1,14 +1,17 @@
 ---
 layout: page
-title: Jube Training
+title: Training and Implementation
 permalink: /jube-training/
 ---
 
-Master Jube in three days. Hands-on training for compliance teams, engineers, and analysts to accelerate implementation.
+Master Jube in three to five days with hands-on training for compliance teams, engineers, and analysts—accelerating
+implementation with guided integration support to deliver a pre-production pilot.
 
 ![Jube Training](/training.png)
 
-## Why Jube Training?
+---
+
+# Why Jube Training and Implementation?
 
 💡 **Training Direct from the Developer**  
 Learn Jube straight from its creator—no second-hand knowledge, no gaps.
@@ -26,9 +29,10 @@ multiplies in value.
 🤝 **Ongoing Support**  
 Post-training chat support ensures your project succeeds long after the course ends.
 
-{: .tip }
 Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your
 technology stack.
+
+---
 
 # Who is Jube for?
 
@@ -41,12 +45,15 @@ technology stack.
 - **Developers & Technical Teams:** Integrate Jube seamlessly with clear APIs and developer-friendly tools for fast,
   reliable implementation.
 
+---
+
 # **Learning Outcomes**
 
 - **Implement & Manage Jube Confidently:**
     - Master AML (FATF/Wolfsberg) and Fraud Detection transaction monitoring.
     - Navigate the user interface and integrate via APIs (e.g., Postman).
     - Configure rule strategies: Gateway, Abstraction, Activation Rules for abuse detection.
+    - Be equipiped to move into the 
 
 - **Optimize Performance & Security:**
     - Configure caching, sanctions screening, and suppression techniques (key/total/rule-based).
@@ -65,6 +72,33 @@ technology stack.
     - Apply fuzzy matching (Levenshtein) for sanctions.
     - Trigger real-time alerts/cases via Activation Rules.
     - Create custom dashboards for oversight.
+
+---
+
+# **Pilot Outcomes**
+
+After completing the training, participants will enter a **pilot implementation period of up to six weeks**, gaining
+hands-on experience running Jube in a real-world environment. Typical outcomes include:
+
+- **Single Channel Deployment:** Configure and activate a core transaction monitoring channel connected to sandbox or
+  live data sources, ready to process real transactions.
+- **Initial Rules Configuration:** Define, test, and deploy a foundational set of AML and fraud detection rules,
+  including gateway, abstraction, and activation rules aligned with your workflows.
+- **Case Management Setup:** Implement basic case management workflows to track alerts, investigations, and resolutions.
+  Learn to assign cases, monitor progress, and generate compliance-ready reports.
+- **Monitoring & Adjustment:** Observe system behavior, analyze analytics and logs, identify false positives or gaps,
+  and refine rules and workflows accordingly.
+- **Operational Readiness:** Document processes and best practices for daily monitoring, escalation, and compliance
+  reporting, ensuring your team can confidently operate independently.
+- **Pilot Validation:** Complete the pilot cycle within the six-week period, demonstrating that alerts are
+  captured and managed correctly, and providing actionable insights for scaling to additional channels and rules.
+- **Service Delivery:** Integration support is provided throughout the pilot via asynchronous chat through a
+  private [Matrix] room for direct developer access, email support, and on-demand online meetings.
+
+This approach ensures training is **practical, not just theoretical**—participants transition seamlessly into a **live
+pilot**, leaving with both knowledge and a working implementation ready for expansion.
+
+---
 
 # **Pricing**
 
@@ -85,7 +119,15 @@ Training delivered in remotely:
 * **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
   required to maintain, extend, and support the platform for ongoing business continuity.
 
-# **Training Plan Overview**
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+<p></p>
+
+
+---
+
+# **Training Plan**
 
 It is common to implement and run Jube based on the time spent with the <a href="https://jube-home.github.io/jube/">
 documentation</a> alone. Training provides a significant acceleration of a successful implementation of Jube. The
@@ -180,15 +222,16 @@ for business continuity. This session covers software patterns, frameworks, codi
 - Stepping and Debugging Preservation (Export \ Import), Serialisation and Encryption Scheme
 - Stepping and Debugging the Jube CLI
 
-## **Post-Training Support: Consulting**
+---
 
-For a defined period of time, participants gain access to a private [Matrix] chat room \ channel, and can continue to
-ask questions and obtain
-guidance after
-the training delivery. The developer of Jube will provide timely, asynchronous responses to ensure the
-participants can confidently apply what they’ve learned and resolve any challenges that arise.
-
-## Downloads
+# Downloads
 
 * [Download Full Training Plan (pdf)](https://jube.io/JubeTrainingPlan.pdf)
 * [Download Transaction Monitoring Compliance Guidance](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
+
+---
+
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+<p></p>

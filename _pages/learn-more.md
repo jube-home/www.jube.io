@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jube — Open-Source AML & Fraud Transaction Monitoring Platform
+title: Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring
 permalink: /learn-more/
 ---
 
@@ -26,6 +26,12 @@ regulatory requirements while monitoring large transaction volumes.
 ![Case Management Listing](/CaseManagementListing.png)
 
 ![Exhaustive Performance](/ExhaustivePerformance.png)
+
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+<p></p>
+
 
 ---
 
@@ -122,3 +128,8 @@ workflows, and ML configurations.
 ![Swagger](/Swagger.png)
 
 ---
+
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+<p></p>
