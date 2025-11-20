@@ -7,6 +7,11 @@ permalink: /jube-training/
 Master Jube in three to five days with hands-on training for compliance teams, engineers, and analysts—accelerating
 implementation with guided integration support to deliver a pre-production pilot.
 
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+<p></p>
+
 ![Jube Training](/training.png)
 
 ---
@@ -123,7 +128,6 @@ Training delivered in remotely:
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
 <p></p>
-
 
 ---
 

@@ -23,15 +23,14 @@ Designed for compliance teams, financial institutions, and fintechs, Jube provid
 Jube ensures accuracy, transparency, and auditability, making it ideal for organizations that must meet strict
 regulatory requirements while monitoring large transaction volumes.
 
-![Case Management Listing](/CaseManagementListing.png)
-
-![Exhaustive Performance](/ExhaustivePerformance.png)
-
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
 <p></p>
 
+![Case Management Listing](/CaseManagementListing.png)
+
+![Exhaustive Performance](/ExhaustivePerformance.png)
 
 ---
 

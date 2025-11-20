@@ -15,7 +15,7 @@ menu__settings:
       url: '/learn-more'
     - title: 'Documentation'
       url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'
-    - title: 'Training'
+    - title: 'Training and Implementation'
       url: '/jube-training'
     - title: 'Book a Demo'
       url: '/contact'
