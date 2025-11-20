@@ -23,9 +23,9 @@ Designed for compliance teams, financial institutions, and fintechs, Jube provid
 Jube ensures accuracy, transparency, and auditability, making it ideal for organizations that must meet strict
 regulatory requirements while monitoring large transaction volumes.
 
-![Case Management Listing](CaseManagementListing.png)
+![Case Management Listing](/CaseManagementListing.png)
 
-![Exhaustive Performance](ExhaustivePerformance.png)
+![Exhaustive Performance](/ExhaustivePerformance.png)
 
 ---
 
@@ -45,13 +45,13 @@ for interpretable and actionable risk insights.
 - Behavioral feature abstraction derives signals such as transaction volume, velocity, and geolocation to improve ML
   model interpretability
 
-![Exhaustive Learning Curve](ExhaustiveLearningCurve.png)
+![Exhaustive Learning Curve](/ExhaustiveLearningCurve.png)
 
-![Exhaustive Variable Statistics](ExhaustiveVariableStatistics.png)
+![Exhaustive Variable Statistics](/ExhaustiveVariableStatistics.png)
 
-![Exhaustive Winning Model Topology](ExhaustiveWinningModelTopology.png)
+![Exhaustive Winning Model Topology](/ExhaustiveWinningModelTopology.png)
 
-![Exhaustive Score Model Testing](ExhaustiveScoreModelTesting.png)
+![Exhaustive Score Model Testing](/ExhaustiveScoreModelTesting.png)
 
 ### Real-Time Transaction Monitoring
 
@@ -81,11 +81,11 @@ versioning, giving compliance teams an end-to-end solution for investigating sus
 - Automatic case escalation via activation rules
 - Full audit trails for all actions
 
-![Case](Case.png)
+![Case](/Case.png)
 
-![Visualisation](Visualisation.png)
+![Visualisation](/Visualisation.png)
 
-![Activation Watcher](ActivationWatcher.png)
+![Activation Watcher](/ActivationWatcher.png)
 
 ### Flexible Rule Engine
 
@@ -100,11 +100,11 @@ with ML outputs for comprehensive detection.
 - Fully integrates with ML outputs for combined detection
 - Online or background preparation of velocity and other aggregations depending on data volume
 
-![Rule Builder](RuleBuilder.png)
+![Rule Builder](/RuleBuilder.png)
 
-![Rule Coder](RuleCoder.png)
+![Rule Coder](/RuleCoder.png)
 
-![Manual Sanctions](ManualSanctions.png)
+![Manual Sanctions](/ManualSanctions.png)
 
 ### Cloud-Native
 
@@ -119,6 +119,6 @@ Jube supports multi-tenancy, allowing financial institutions or service provider
 sub-clients (brands or business units) within a single deployment. Each tenant can maintain independent rules,
 workflows, and ML configurations.
 
-![Swagger](Swagger.png)
+![Swagger](/Swagger.png)
 
 ---
