@@ -32,7 +32,13 @@ Faster evaluation, smoother implementation, fewer mistakes, and independent mast
 multiplies in value.
 
 🤝 **Real Implementation Outcome**
-Hands-on training plus up to six weeks of pilot implementation support ensures your team can deploy Jube, configure rules, manage cases, and validate alerts—turning learning into a fully operational pre-production system.
+Hands-on training plus up to six weeks of pilot implementation support ensures your team can deploy Jube, configure
+rules, manage cases, and validate alerts—turning learning into a fully operational pre-production system.
+
+🛠 **Fully Open-Source & Transparent**  
+[Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring) with all features
+available and no vendor lock-in. It is transparent, auditable, and extensible—keeping your data under your control while
+enabling rapid adaptation to new products, workflows, regulations, or payment schemes.
 
 Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your
 technology stack.
@@ -58,7 +64,8 @@ technology stack.
     - Master AML (FATF/Wolfsberg) and Fraud Detection transaction monitoring.
     - Navigate the user interface and integrate via APIs (e.g., Postman).
     - Configure rule strategies: Gateway, Abstraction, Activation Rules for abuse detection.
-    - - Be equipped to move directly into a pilot implementation period.
+    -
+        - Be equipped to move directly into a pilot implementation period.
 
 - **Optimize Performance & Security:**
     - Configure caching, sanctions screening, and suppression techniques (key/total/rule-based).
@@ -111,7 +118,9 @@ Integration support is provided throughout the pilot, including:
 - **Email Support:** Guidance and clarifications as needed.
 - **On-Demand Meetings:** Live walkthroughs and problem-solving sessions.
 
-If desired, as an elective, **retained developer support** is available on a rolling monthly basis, providing **two days (16 hours) of support per month**, prorated by the hour. This ensures your team can continue to implement, operate, and refine Jube confidently.
+If desired, as an elective, **retained developer support** is available on a rolling monthly basis, providing **two
+days (16 hours) of support per month**, prorated by the hour. This ensures your team can continue to implement, operate,
+and refine Jube confidently.
 
 ---
 
