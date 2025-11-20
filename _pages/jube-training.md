@@ -4,8 +4,10 @@ title: Training and Implementation
 permalink: /jube-training/
 ---
 
-Master Jube in 3–5 days with hands-on training for compliance teams, engineers, and analysts. Accelerate implementation
-with guided integration support to deliver a pre-production pilot — all led by the developer of Jube.
+Master Jube in 3–5 days with hands-on training for compliance teams, engineers, 
+and analysts. Accelerate implementation with guided integration support 
+to deliver a pre-production pilot — 
+all led by [Richard Churchman](https://www.churchman.io), the developer of Jube.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
