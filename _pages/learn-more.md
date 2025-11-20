@@ -5,7 +5,8 @@ permalink: /learn-more/
 ---
 
 Jube is an open-source software platform for real-time detection of suspicious transactions, AML case management, and
-fraud prevention. Fully open-source (AGPLv3) with all features available and no vendor lock-in, Jube is transparent,
+fraud prevention. [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring)
+with all features available and no vendor lock-in, Jube is transparent,
 auditable, and extensible—keeping your data under your control while enabling rapid adaptation to new products,
 workflows, regulations, or payment schemes.
 
