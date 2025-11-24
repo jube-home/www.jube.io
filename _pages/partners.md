@@ -6,6 +6,13 @@ permalink: /partners/
 
 Empower partners to deliver high‑performance AML and behavioural‑modelling solutions with confidence — starting with deep, developer‑led training that unlocks the full capability of Jube’s real‑time, open‑source platform.
 
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+<p></p>
+
+![Partners](/support.png)
+
 ---
 
 ## Partner‑First Engagement Model
