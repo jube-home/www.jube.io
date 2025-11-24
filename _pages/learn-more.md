@@ -15,6 +15,8 @@ workflows, regulations, or payment schemes.
 </div>
 <p></p>
 
+---
+
 Jube combines real-time transaction monitoring, adaptive machine learning, rule-based detection, and workflow-driven
 case management into a single, scalable system.
 
