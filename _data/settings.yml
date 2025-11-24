@@ -25,7 +25,7 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Real-time **open source AML software** and **open source fraud detection software** for transaction monitoring, case management, and fraud prevention. Fully open-source (AGPLv3), transparent, and auditable—keeping your data under your control.<hr>
+  hero__title: Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring<hr>
   hero__description: <div class="hero__subscribe"><a href="/learn-more" class="button button--primary section-button">Learn More</a></div>
   hero__image: '/images/Jube.png'
 
