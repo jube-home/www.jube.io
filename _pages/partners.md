@@ -4,7 +4,16 @@ title: Become a Jube Implementation Partner
 permalink: /partners/
 ---
 
-Empower partners to deliver high‑performance AML and behavioural‑modelling solutions with confidence — starting with deep, developer‑led training that unlocks the full capability of Jube’s real‑time, open‑source platform.
+Empower your team to deliver high-performance AML and behavioural-modelling solutions with confidence.  
+Start with deep, developer-led training, then extend expertise as needed through optional Expert of Record
+engagement—ensuring quality, risk reduction, and predictable outcomes on every client project.
+
+<div class="hero__subscribe">
+  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
+</div>
+
+![Partners](/support.png)
+
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
@@ -17,16 +26,20 @@ Empower partners to deliver high‑performance AML and behavioural‑modelling s
 
 ## Partner‑First Engagement Model
 
-**Jube operates on a partner‑first model.** The preferred and primary engagement approach is through trained implementation partners, ensuring clients receive high‑quality delivery, scalable support, and a consistent experience — without long sales cycles or bespoke consulting engagements.
+**Jube operates on a partner‑first model.** The preferred and primary engagement approach is through trained
+implementation partners, ensuring clients receive high‑quality delivery, scalable support, and a consistent experience —
+without long sales cycles or bespoke consulting engagements.
 
-Direct engagement with financial institutions occurs only when the work is well‑defined, low‑friction, and aligned with the standard delivery model.
+Direct engagement with financial institutions occurs only when the work is well‑defined, low‑friction, and aligned with
+the standard delivery model.
 
 ---
 
 ## Why Partner With Jube
 
 📈 **Expanded Capabilities**  
-Partners gain a high‑value behavioural modelling and AML capability that slots directly into existing consulting offerings.
+Partners gain a high‑value behavioural modelling and AML capability that slots directly into existing consulting
+offerings.
 
 ⚙️ **Low Delivery Risk**  
 Training and direct access to the developer ensure partners deliver consistently and confidently.
@@ -35,7 +48,8 @@ Training and direct access to the developer ensure partners deliver consistently
 Jube is fully open-source, enabling clear extensibility, auditable operations, and independence.
 
 💼 **Commercial Simplicity**  
-No licensing fees, no volume pricing, no user caps — only training and optional retained support.
+No licensing fees, no volume pricing, no user caps — only training and optional Expert of Record engagement for
+prioritized guidance and strategic support.
 
 📦 **Repeatable Engagements**  
 A delivery model designed specifically for consultancies with an existing financial‑services client base.
@@ -45,10 +59,12 @@ A delivery model designed specifically for consultancies with an existing financ
 ## Partner Engagement Framework
 
 Jube’s partner model begins with a single, essential foundation [training](/jube-training).  
-All successful engagements originate with partner teams becoming fully Jube‑capable before client delivery or integration work begins.  
+All successful engagements originate with partner teams becoming fully Jube‑capable before client delivery or
+integration work begins.  
 The framework is intentionally simple, repeatable, and centred on capability building.
 
 ### ⚡ 1. Training & Enablement (The Starting Point)
+
 Training is the entry point for every partner relationship.  
 Partner teams receive structured, hands‑on instruction delivered by the developer of Jube, covering:
 
@@ -61,6 +77,7 @@ Partner teams receive structured, hands‑on instruction delivered by the develo
 This phase ensures partner SMEs have the competence and confidence to design, deploy, and operate Jube independently.
 
 ### 🔧 2. Integration Pilot
+
 Once trained, partners move into a guided pilot phase to accelerate their first client engagement.  
 This period provides:
 
@@ -71,15 +88,17 @@ This period provides:
 
 Pilots remain partner‑led while benefiting from direct access to the creator of Jube.
 
-### 📘 3. Retained Services
-For ongoing delivery, an optional retained package provides a small number of hours per month for:
+### 📘 3. Optional Expert of Record
 
-- architectural oversight
-- model optimisation
-- support with high‑value client engagements
+Ensure delivery success without taking over your team. With an optional Expert of Record engagement, Jube provides:
+
+- Priority access to senior expertise
+- Architectural guidance and best-practice reviews
+- Support during high-value client projects
 - SME input on rules, data flows, and operational design
 
-This structure maintains long‑term quality without displacing the partner’s relationship with their clients.
+You retain full control of client relationships while benefiting from expert oversight and risk reduction.
+
 
 ---
 
@@ -109,20 +128,23 @@ Matrix chat and on‑demand support during early engagements.
 🚀 **Accelerated Delivery**  
 Reduced implementation risk and faster client outcomes.
 
-🧩 **Optional Retained SME Support**  
-Ongoing architectural or client‑facing support when required.
+🧩 **Optional Expert of Record Support**  
+Priority access to senior expertise for architectural guidance, model optimisation, and support during high-value client
+engagements—without taking over your team.
+
 
 ---
 
-## Service Delivery & Developer Support
+## Service Delivery
 
-Integration support is provided throughout the pilot, including:
+Partners benefit from flexible, on-demand expert guidance throughout the pilot, including:
 
-- **Matrix Chat Room:** Asynchronous guidance directly from the developer
-- **Email Support:** Clarifications and implementation advice
-- **On‑Demand Meetings:** Live sessions for walkthroughs and troubleshooting
+- Asynchronous advice via Matrix or email
+- Live sessions for walkthroughs and troubleshooting
+- Access to the creator of Jube for high-value questions or escalation
 
-Optional retained support provides **two days per month** (16 hours, prorated by the hour) for ongoing implementation, optimisation, and client delivery.
+Optional Expert of Record engagement extends this access into ongoing projects without taking over your team. Deeper
+hands-on work is scoped and billed separately as needed.
 
 ---
 

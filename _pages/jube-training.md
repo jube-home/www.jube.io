@@ -4,10 +4,9 @@ title: Training and Implementation
 permalink: /jube-training/
 ---
 
-Master Jube in 3–5 days with hands-on training for compliance teams, engineers, 
-and analysts. Accelerate implementation with guided integration support 
-to deliver a pre-production pilot — 
-all led by [Richard Churchman](https://www.churchman.io), the developer of Jube.
+Master Jube in 3–5 days with hands-on training for compliance teams, engineers, and analysts. Accelerate implementation
+with guided integration support and optional Expert of Record access—ensuring quality, risk reduction, and confidence in
+live deployments.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
@@ -114,17 +113,19 @@ pilot**, leaving with both knowledge and a working implementation ready for expa
 
 ---
 
-# **Service Delivery & Developer Support**
+## Service Delivery
 
-Integration support is provided throughout the pilot, including:
+Throughout the pilot, partners receive flexible, on-demand guidance to support successful integration, including:
 
-- **Matrix Chat Room:** Direct asynchronous access to the developer for fast guidance.
-- **Email Support:** Guidance and clarifications as needed.
-- **On-Demand Meetings:** Live walkthroughs and problem-solving sessions.
+- **Matrix Chat Room:** Asynchronous access to the developer for timely guidance.
+- **Email Support:** Clarifications and implementation advice.
+- **On-Demand Meetings:** Live walkthroughs and problem-solving sessions as needed.
 
-If desired, as an elective, **retained developer support** is available on a rolling monthly basis, providing **two
-days (16 hours) of support per month**, prorated by the hour. This ensures your team can continue to implement, operate,
-and refine Jube confidently.
+Partners can also optionally engage Jube on an **Expert of Record** basis. This is not billed developer time, but a
+strategic assurance layer: a lightweight monthly retainer providing priority access to senior expertise, architectural
+oversight, and escalation support. Your team retains control of day-to-day development, while Jube offers guidance on
+critical issues—reducing risk, avoiding costly mistakes, and ensuring high-quality delivery. Any deeper, hands-on
+intervention is scoped and billed separately.
 
 ---
 
@@ -132,20 +133,22 @@ and refine Jube confidently.
 
 Training delivered in remotely:
 
-|                                                                          | User Training              | Developer Training          |
-|--------------------------------------------------------------------------|----------------------------|-----------------------------|
-| Day 1: Configuring Models, Messaging and Rule Strategy.                  | ✅                          | ✅                           |
-| Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow.      | ✅                          | ✅                           |
-| Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility. | ✅                          | ✅                           |
-| Day 4: Developer Workshop.                                               | –                          | ✅                           |
-| Day 5: Developer Workshop.                                               | –                          | ✅                           |
-| Post-Training Support. Consulting.                                       | 6 hours (within six weeks) | 10 hours (within six weeks) |
-|                                                                          | USD 3000                   | USD 5000                    |
+|                                                                         | User Training | Developer Training |
+|-------------------------------------------------------------------------|---------------|--------------------|
+| Day 1: Configuring Models, Messaging and Rule Strategy                  | ✅             | ✅                  |
+| Day 2: Suppressions, Sanctions, Machine Learning and Case Workflow      | ✅             | ✅                  |
+| Day 3: Permissions, Database, Reporting, Reprocessing and Extensibility | ✅             | ✅                  |
+| Optional Developer Workshops (formerly Day 4–5 content)                 | –             | ✅                  |
+|                                                                         | USD 3000      | USD 5000           |
 
-* **User Training**: Provides a comprehensive understanding of all Jube functionality, enabling staff to effectively
-  operate and leverage the platform for day-to-day business processes.
-* **Developer Training**: Offers in-depth technical instruction on the Jube codebase, ensuring teams have the expertise
-  required to maintain, extend, and support the platform for ongoing business continuity.
+* **User Training**: Provides a comprehensive understanding of all Jube functionality, enabling staff to operate and
+  leverage the platform for day-to-day business processes.
+* **Developer Training**: Offers in-depth technical instruction on the Jube codebase, including advanced debugging,
+  deployment, architecture, and performance topics, ensuring teams have the expertise to maintain, extend, and support
+  Jube for ongoing business continuity.
+* **Post-Training Support:** Optional Expert of Record engagement during the pilot period provides prioritized guidance,
+  architectural oversight, and escalation support. Additional hands-on interventions are scoped and billed separately as
+  needed.
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
