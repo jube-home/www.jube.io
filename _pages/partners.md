@@ -8,6 +8,8 @@ Empower your team to deliver high-performance AML and behavioural-modelling solu
 Start with deep, developer-led training, then extend expertise as needed through optional Expert of Record
 engagement—ensuring quality, risk reduction, and predictable outcomes on every client project.
 
+See Jube **open source AML software** and **open source fraud detection software** in action:
+
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
@@ -150,6 +152,8 @@ hands-on work is scoped and billed separately as needed.
 - Rapid responsiveness and direct access to expertise
 
 ---
+
+See Jube **open source AML software** and **open source fraud detection software** in action:
 
 <div class="hero__subscribe">
 <a href="/contact" class="button button--primary section-button">Book a Demo</a>

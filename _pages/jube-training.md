@@ -8,6 +8,8 @@ Master Jube in 3–5 days with hands-on training for compliance teams, engineers
 with guided integration support and optional Expert of Record access—ensuring quality, risk reduction, and confidence in
 live deployments.
 
+See Jube **open source AML software** and **open source fraud detection software** in action:
+
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
@@ -150,6 +152,8 @@ Training delivered in remotely:
   architectural oversight, and escalation support. Additional hands-on interventions are scoped and billed separately as
   needed.
 
+See Jube **open source AML software** and **open source fraud detection software** in action:
+
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
@@ -260,6 +264,8 @@ for business continuity. This session covers software patterns, frameworks, codi
 * [Download Transaction Monitoring Compliance Methodology](https://jube.io/JubeAMLMonitoringComplianceGuidance.pdf)
 
 ---
+
+See Jube **open source AML software** and **open source fraud detection software** in action:
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
