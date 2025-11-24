@@ -261,4 +261,3 @@ for business continuity. This session covers software patterns, frameworks, codi
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
-<p></p>

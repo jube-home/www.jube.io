@@ -132,4 +132,3 @@ workflows, and ML configurations.
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Book a Demo</a>
 </div>
-<p></p>
