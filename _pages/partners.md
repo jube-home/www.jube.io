@@ -14,14 +14,6 @@ engagement—ensuring quality, risk reduction, and predictable outcomes on every
 
 ![Partners](/support.png)
 
-
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
-<p></p>
-
-![Partners](/support.png)
-
 ---
 
 ## Partner‑First Engagement Model
