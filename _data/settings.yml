@@ -20,7 +20,7 @@ menu__settings:
     - title: 'Documentation'
       url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'      
     - title: 'Book a Demo'
-      url: '/contact'
+      url: 'https://calendly.com/richard-churchman-jube/30min'
           
 #-------------------------------
 # Hero Settings
