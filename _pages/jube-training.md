@@ -8,13 +8,6 @@ Master Jube in 3–5 days with hands-on training for compliance teams, engineers
 with guided integration support and optional Expert of Record access—ensuring quality, risk reduction, and confidence in
 live deployments.
 
-See Jube **open source AML software** and **open source fraud detection software** in action:
-
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
-<p></p>
-
 ![Jube Training](/training.png)
 
 ## **Public Training – Kuala Lumpur | April 2026**
