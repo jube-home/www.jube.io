@@ -15,22 +15,25 @@ live deployments.
 A small, in-person cohort for teams implementing Jube in production environments.
 
 **Dates:** **Tuesday 14 – Thursday 16 April 2026**  
-**Location:** **Kuala Lumpur, Malaysia** (4-star business hotel conference facilities – final venue confirmed once minimum cohort reached)  
+**Location:** **Kuala Lumpur, Malaysia** (Hosted at a 4-star business hotel conference facility — final venue confirmed once minimum cohort size is met)  
 **Format:** 3 full days, hands-on, instructor-led  
 **Cohort size:** **Maximum 8 participants** (minimum 4 to run)  
-**Price:** **USD 1,625 per participant**
+**Price:** **USD 1,625 per participant**  
+*Includes all training materials, hands-on workshops, lunch, and refreshments each day, plus up to six weeks remote pilot support*
 
 This is a **serious, implementation-focused course** delivered by the developer of Jube. It is designed for compliance leaders, architects, engineers, and analysts who need to **deploy and operate Jube with confidence**, not just evaluate it.
 
 The format is deliberately small to allow:
-- deep technical discussion
-- hands-on configuration and workshops
-- real implementation questions
-- direct access to the developer
+- Deep technical discussion
+- Hands-on configuration and workshops
+- Real implementation questions
+- Direct access to the developer
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--primary section-button">Enquire About April 2026 Training</a>
 </div>
+
+> Limited seats to ensure hands-on guidance.
 
 ---
 
@@ -46,9 +49,9 @@ For organisations with larger teams, specialized use cases, or internal training
   <a href="/contact" class="button button--secondary section-button">Request Private Training Quote</a>
 </div>
 
----
-
 > Private training is ideal for organisations needing tailored coverage or multiple team streams. Public training is recommended for individuals or smaller teams looking for cost-effective, structured, hands-on learning.
+
+---
 
 ## **Who this is for**
 - Teams preparing to implement Jube in a pilot or production environment
@@ -60,6 +63,7 @@ For organisations with larger teams, specialized use cases, or internal training
 ## **What’s included**
 - 3 days of in-person training (see full training plan below)
 - Hands-on workshops and guided configuration
+- **Lunch and refreshments provided daily**
 - Post-training pilot implementation support (up to 6 weeks, remote)
 - Direct access to the developer for technical guidance during the pilot period
 
@@ -67,23 +71,12 @@ For organisations with larger teams, specialized use cases, or internal training
 
 # Why Jube Training and Implementation?
 
-💡 **Training Direct from the Developer**  
-Learn Jube straight from its creator—no second-hand knowledge, no gaps.
-
-⚡ **Rapid Mastery**  
-Get proficient in days, not months. Accelerate your implementation timeline.
-
-🔓 **True Independence**  
-Own your AML and transaction monitoring stack—free from vendor lock-in and restrictive contracts.
-
-📈 **Smart ROI**  
-Faster evaluation, smoother implementation, fewer mistakes, and independent mastery mean your training investment multiplies in value.
-
-🤝 **Real Implementation Outcome**  
-Hands-on training plus up to six weeks of pilot implementation support ensures your team can deploy Jube, configure rules, manage cases, and validate alerts—turning learning into a fully operational pre-production system.
-
-🛠 **Fully Open-Source & Transparent**  
-[Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring) with all features available and no vendor lock-in. It is transparent, auditable, and extensible—keeping your data under your control while enabling rapid adaptation to new products, workflows, regulations, or payment schemes.
+💡 **Training Direct from the Developer** — Learn Jube straight from its creator, no second-hand knowledge.  
+⚡ **Rapid Mastery** — Become proficient in days, not months, accelerating your implementation timeline.  
+🔓 **True Independence** — Own your AML and transaction monitoring stack—free from vendor lock-in and restrictive contracts.  
+📈 **Smart ROI** — Faster evaluation, smoother implementation, fewer mistakes, and independent mastery multiply your training investment.  
+🤝 **Real Implementation Outcome** — Hands-on training plus up to six weeks of pilot support ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.  
+🛠 **Fully Open-Source & Transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control while enabling rapid adaptation.
 
 Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your technology stack.
 
