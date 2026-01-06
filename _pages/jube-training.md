@@ -11,8 +11,6 @@ Whether you join a **public cohort** or schedule **private, bespoke training**, 
 - **Real deployment outcomes** — leave ready to implement Jube in a pilot or production environment
 - **Guided integration support** — optional Expert of Record access ensures architectural correctness, risk reduction, and confidence in live systems
 
-This is **not a generic AML overview**. It is a technical, implementation-first programme that equips your team to **deploy Jube with confidence from day one**.
-
 ---
 
 ## Hands-On, Implementation-Focused Training
@@ -46,7 +44,7 @@ The format is deliberately small to allow:
 
 ---
 
-### **Private Training (Remote or On-Site)**
+### **Private Training (Remote or On-Site) | On Demand**
 
 For organisations with larger teams, specialised use cases, or internal rollout requirements, Jube offers **private training** delivered exclusively to your team — remotely or on-site.
 
@@ -85,13 +83,11 @@ Private delivery allows deeper focus on your architecture, data, workflows, and 
 ---
 
 ## **Who this is for**
-- Teams preparing to implement Jube in a pilot or production environment
-- Organisations replacing legacy AML / fraud platforms with an open architecture
-- Compliance, risk, and engineering teams who need **practical mastery**, not theory
+- Teams preparing to deploy Jube in a pilot or production environment
+- Organisations modernising legacy AML or fraud detection systems with an open, flexible platform
+- Compliance, risk, and engineering teams who want **hands-on, practical experience** rather than just theory
 
-> **Important:** This is **not** a generic AML overview, regulatory theory course, or compliance fundamentals training.  
-> It is an **implementation-focused, technical programme** for teams who intend to configure, deploy, and operate Jube in real environments.  
-> Participants should be prepared to engage hands-on with configuration, workflows, and architecture.
+> This is a **practical, implementation-focused programme**. Participants will gain real experience configuring, operating, and managing Jube in realistic environments, without requiring deep prior technical expertise.
 
 ---
 
