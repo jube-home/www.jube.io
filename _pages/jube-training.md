@@ -42,13 +42,13 @@ For organisations with larger teams, specialized use cases, or internal training
 - Can include **developer workshops**, advanced topics, and pilot implementation support
 - Pricing depends on scope and number of participants (starting at **USD 3,000 per day**)
 
-> Private training is ideal for organisations needing tailored coverage or multiple team streams. Public training is recommended for individuals or smaller teams looking for cost-effective, structured, hands-on learning.
-
 <div class="hero__subscribe">
   <a href="/contact" class="button button--secondary section-button">Request Private Training Quote</a>
 </div>
 
 ---
+
+> Private training is ideal for organisations needing tailored coverage or multiple team streams. Public training is recommended for individuals or smaller teams looking for cost-effective, structured, hands-on learning.
 
 ## **Who this is for**
 - Teams preparing to implement Jube in a pilot or production environment
