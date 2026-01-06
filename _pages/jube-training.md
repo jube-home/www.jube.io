@@ -12,16 +12,16 @@ live deployments.
 
 ## **Public Training – Kuala Lumpur | April 2026**
 
-A small, in-person cohort for teams implementing Jube in production environments.
+A small, in-person cohort for teams preparing real production deployments.
 
 **Dates:** **Tuesday 14 – Thursday 16 April 2026**  
-**Location:** **Kuala Lumpur, Malaysia** (Hosted at a 4-star business hotel conference facility — final venue confirmed once minimum cohort size is met)  
+**Location:** **Kuala Lumpur, Malaysia** Hosted at a 4-star business hotel conference facility in central Kuala Lumpur (venue confirmed once minimum cohort size is met).  
 **Format:** 3 full days, hands-on, instructor-led  
 **Cohort size:** **Maximum 8 participants** (minimum 4 to run)  
 **Price:** **USD 1,625 per participant**  
 *Includes all training materials, hands-on workshops, lunch, and refreshments each day, plus up to six weeks remote pilot support*
 
-This is a **serious, implementation-focused course** delivered by the developer of Jube. It is designed for compliance leaders, architects, engineers, and analysts who need to **deploy and operate Jube with confidence**, not just evaluate it.
+This is a **serious, implementation-focused Programme** delivered by the developer of Jube. It is designed for compliance leaders, architects, engineers, and analysts who need to **deploy and operate Jube with confidence**, not just evaluate it.
 
 The format is deliberately small to allow:
 - Deep technical discussion
@@ -37,26 +37,22 @@ The format is deliberately small to allow:
 
 ---
 
-## **Private Training – Custom Delivery**
+## **Private Training (Remote or On-Site)**
 
-For organisations with larger teams, specialized use cases, or internal training requirements, Jube also offers **private training**, delivered remotely or on-site.
+For organisations with larger teams, specialised use cases, or internal rollout requirements, Jube offers **private training** delivered exclusively to your team — remotely or on-site.
 
-- Fully customizable to your team’s schedule and focus areas
-- Can include **developer workshops**, advanced topics, and pilot implementation support
-- Pricing depends on scope and number of participants (typically starting from **USD 3,600 for three days, and USD 6,000 for five days**)
+Private delivery allows deeper focus on your architecture, data, workflows, and implementation strategy, ensuring the training directly supports real deployment outcomes.
 
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--secondary section-button">Request Private Training Quote</a>
-</div>
+- Fully customised to your team’s schedule, experience level, and objectives
+- Can include **developer workshops**, advanced architecture topics, and live implementation support
+- Ideal for teams planning production deployment or complex integrations
 
-> Private training is ideal for organisations needing tailored coverage or multiple team streams. Public training is recommended for individuals or smaller teams looking for cost-effective, structured, hands-on learning.
+**Pricing:**
+- **3-day private training:** from **USD 4,500**
+- **5-day private training (incl. developer workshop):** from **USD 7,500**
+- On-site delivery priced according to location and scope
 
----
-
-## **Who this is for**
-- Teams preparing to implement Jube in a pilot or production environment
-- Organisations replacing legacy AML / fraud platforms with an open architecture
-- Compliance, risk, and engineering teams who need **practical mastery**, not theory
+> *Private training is delivered by the creator of Jube and is designed to accelerate real-world implementation, reduce risk, and ensure architectural correctness from day one.*
 
 ---
 
@@ -66,6 +62,17 @@ For organisations with larger teams, specialized use cases, or internal training
 - **Lunch and refreshments provided daily**
 - Post-training pilot implementation support (up to 6 weeks, remote)
 - Direct access to the developer for technical guidance during the pilot period
+
+---
+
+## **Who this is for**
+- Teams preparing to implement Jube in a pilot or production environment
+- Organisations replacing legacy AML / fraud platforms with an open architecture
+- Compliance, risk, and engineering teams who need **practical mastery**, not theory
+
+> **Important:** This is **not** a generic AML overview, regulatory theory course, or compliance fundamentals training.  
+> It is an **implementation-focused, technical programme** for teams who intend to configure, deploy, and operate Jube in real environments.  
+> Participants should be prepared to engage hands-on with configuration, workflows, and architecture.
 
 ---
 
