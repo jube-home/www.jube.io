@@ -43,7 +43,7 @@ For organisations with larger teams, specialized use cases, or internal training
 
 - Fully customizable to your team’s schedule and focus areas
 - Can include **developer workshops**, advanced topics, and pilot implementation support
-- Pricing depends on scope and number of participants (starting at **USD 3,000 per day**)
+- Pricing depends on scope and number of participants (typically starting from **USD 3,600 for three days, and USD 6,000 for five days ***)
 
 <div class="hero__subscribe">
   <a href="/contact" class="button button--secondary section-button">Request Private Training Quote</a>
