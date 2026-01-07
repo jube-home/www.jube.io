@@ -6,7 +6,7 @@ permalink: /jube-training/
 
 Transform your team into Jube experts in **3–5 days** with hands-on, implementation-focused training. Designed for compliance leaders, engineers, analysts, and architects, this program goes beyond theory: your team will **learn, configure, and operate Jube in real-world scenarios**.
 
-Whether you join a **public cohort** or schedule **private, bespoke training**, you’ll gain:
+Whether you join a **public cohort in Kuala Lumpur, Malaysia**, or schedule **private, bespoke training**, you’ll gain:
 - **Practical mastery** — configure rules, workflows, and machine learning models hands-on
 - **Real deployment outcomes** — leave ready to implement Jube in a pilot or production environment
 - **Guided integration support** — optional Expert of Record access ensures architectural correctness, risk reduction, and confidence in live systems
