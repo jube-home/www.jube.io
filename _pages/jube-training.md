@@ -55,8 +55,8 @@ Private delivery allows deeper focus on your architecture, data, workflows, and 
 - Ideal for teams planning production deployment or complex integrations
 
 **Pricing:**
-- **3-day private training:** from **USD 4,500**
-- **5-day private training (incl. developer workshop):** from **USD 7,500**
+- **3-day private training:** from **USD 6,000**
+- **5-day private training (incl. developer workshop):** from **USD 9,000**
 - On-site delivery priced according to location and scope
 
 > *Private training is delivered by the creator of Jube and is designed to accelerate real-world implementation, reduce risk, and ensure architectural correctness from day one.*
