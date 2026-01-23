@@ -139,11 +139,11 @@ See [Full Training Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for details.
 
 # System Integrators
 
-For System Integrators, the Jube Certified Application Specialist certification is the first step toward becoming a Jube
+For System Integrators, the Jube Certified Application Specialist Certification is the first step toward becoming a Jube
 Certified Partner.
 From there, organisations can progress through the following certifications:
 
-- Jube Certified Integrator Developer
+- Jube Certified Integration Developer
 - Jube Certified Advanced Analytics and Machine Learning Specialist
 - Jube Certified Infrastructure Engineer
 
