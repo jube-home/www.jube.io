@@ -99,9 +99,9 @@ risk, and ensure architectural correctness from day one.*
 
 ## **Who this is for**
 
-- Teams preparing to use Jube in a pre-production environment
-- Organisations modernising legacy AML or fraud detection systems with an open, flexible platform
-- Compliance, risk, and engineering teams who want **hands-on, practical experience** rather than just theory
+- System Integrators (SI's) looking to serve their clients with new regulatory led opportunities
+- SI teams preparing to use Jube in a pre-production environment
+- End users - client's of an SI - representing organisations modernising legacy AML or fraud detection systems with an open, flexible platform
 
 > This is a **practical, implementation-focused programme**. Participants will gain real experience configuring,
 > operating, and managing Jube in realistic environments, without requiring deep prior technical expertise.
@@ -136,21 +136,6 @@ customisation.)*
 - **Day 3:** Permissions, Database, Reporting, Reprocessing and Extensibility
 
 See [Full Training Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for details.
-
-# System Integrators
-
-For System Integrators, the Jube Certified Application Specialist Certification is the first step toward becoming a Jube
-Certified Partner.
-From there, organisations can progress through the following certifications:
-
-- Jube Certified Integration Developer
-- Jube Certified Advanced Analytics and Machine Learning Specialist
-- Jube Certified Infrastructure Engineer
-
-Once these certifications are completed at an organisational level, the organisation becomes eligible for Jube Certified
-Partner status.
-This designation validates complete production‑level competence across Jube capabilities and enables System Integrators
-to demonstrate both technological excellence and market‑ready expertise.
 
 ---
 
