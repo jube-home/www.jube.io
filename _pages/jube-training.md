@@ -15,10 +15,6 @@ Whether you join a **public cohort in Kuala Lumpur, Malaysia**, or schedule **pr
 - **Guided integration support** — six weeks of expert access to ensure architectural correctness,
   successful pre-production deployment, and smooth completion of certification.
 
----
-
-## Jube Certified Application Specialist: Hands-On, Implementation-Focused Training
-
 ![Jube Training](/training.png)
 
 ### **Public Training – Kuala Lumpur | April 2026**
