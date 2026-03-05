@@ -4,7 +4,7 @@ title: Training and Implementation
 permalink: /jube-training/
 ---
 
-Transform your team into Jube Certified Application Specialists in **3–5 days** with hands-on, implementation-focused
+Transform your team into Jube Certified Application Specialists in **4 days** with hands-on, implementation-focused
 training. Designed for compliance leaders, engineers, analysts, and architects, this programme goes beyond theory: your
 team will **learn, configure, and operate Jube in real-world scenarios**.
 
@@ -29,7 +29,7 @@ training directly supports pre-production.
 
 **Pricing:**
 
-- **3-day private training:** from **USD 6,000**
+- **4-day private training:** from **USD 6,000**
 - On-site delivery priced according to location and scope
 
 > *Private training is delivered by the creator of Jube and is designed to accelerate real-world implementation, reduce
@@ -39,7 +39,7 @@ risk, and ensure architectural correctness from day one.*
 
 ## What’s included
 
-- Fully customised 3- or 5-day curriculum based on your team’s schedule, experience, and objectives
+- Fully customised 4-day curriculum based on your team’s schedule, experience, and objectives
 - Hands-on workshops, guided configuration, and optional developer-focused sessions
 - Post-training certification support (up to 6 weeks, remote)
 - Direct access to the developer for technical guidance throughout the engagement
@@ -84,7 +84,8 @@ customisation.)*
 
 - **Day 1:** Configuring Models, Messaging and Rule Strategy
 - **Day 2:** Suppressions, Sanctions, Machine Learning and Case Workflow
-- **Day 3:** Permissions, Database, Reporting, Reprocessing and Extensibility
+- **Day 3:** Permissions, Database, Reporting and Reprocessing
+- **Day 4:** C# Developer Extensibility and Software Architecture Patterns
 
 See [Full Training Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for details.
 
