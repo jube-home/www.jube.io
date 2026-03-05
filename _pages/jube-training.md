@@ -8,7 +8,7 @@ Transform your team into Jube Certified Application Specialists in **3–5 days*
 training. Designed for compliance leaders, engineers, analysts, and architects, this programme goes beyond theory: your
 team will **learn, configure, and operate Jube in real-world scenarios**.
 
-Whether you join a **public cohort in Kuala Lumpur, Malaysia**, or schedule **private, bespoke training**, you’ll gain:
+In **private training**, you’ll gain:
 
 - **Practical mastery** — configure rules, workflows, and machine learning models hands-on
 - **Real deployment outcomes** — leave ready to implement Jube in a pre-production environment
@@ -16,39 +16,6 @@ Whether you join a **public cohort in Kuala Lumpur, Malaysia**, or schedule **pr
   successful pre-production deployment, and smooth completion of certification.
 
 ![Jube Training](/training.png)
-
-### **Public Training – Kuala Lumpur | April 2026**
-
-A small, in‑person cohort for teams preparing real pre-production deployments.
-
-**Dates:** **Tuesday 28th – Thursday 30th April 2026**  
-**Location:** **Kuala Lumpur, Malaysia** — hosted at a 4-star business hotel conference facility in central Kuala
-Lumpur (venue confirmed once minimum cohort size is met).  
-**Format:** 3 full days, hands-on, instructor-led  
-**Cohort size:** **Maximum 6 participants** (minimum 3 to run)  
-**Price:** **USD 1,825 per participant**  
-*Includes all training materials, hands-on workshops, lunch, and refreshments each day, plus up to six weeks remote support*
-
-This is a **serious, implementation-focused Programme** delivered by the developer of Jube. It is designed for
-compliance leaders, architects, engineers, and analysts who need to **deploy and operate Jube with confidence**, not
-just evaluate it.
-
-The format is deliberately small to allow:
-
-- Deep technical discussion
-- Hands-on configuration and workshops
-- Real implementation questions
-- Direct access to the developer
-
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Enquire About April 2026 Training</a>
-</div>
-
-> Limited seats to ensure hands-on guidance.
-
----
-
-### **Private Training (Remote or On-Site) | On Demand**
 
 For organisations with larger teams, specialised use cases, or internal rollout requirements, Jube offers **private
 training** delivered exclusively to your team — remotely or on-site.
@@ -71,18 +38,6 @@ risk, and ensure architectural correctness from day one.*
 ---
 
 ## What’s included
-
-### Public Training (Kuala Lumpur)
-
-- 3 days of instructor-led, in-person training
-- Hands-on workshops and guided configuration
-- **Lunch and refreshments provided daily**
-- Post-training certification support (up to 6 weeks, remote)
-- Direct access to the developer during the course and certification period
-- Maximum 6 participants per cohort (minimum 3 to run)
-- Jube Certified Application Specialist Verifiable Certificate (after six weeks and conclusion of test project)
-
-### Private Training (Remote or On-Site)
 
 - Fully customised 3- or 5-day curriculum based on your team’s schedule, experience, and objectives
 - Hands-on workshops, guided configuration, and optional developer-focused sessions
@@ -124,7 +79,7 @@ technology stack.
 
 # Training Plan
 
-*(All public and private training is built from the same structured curriculum — the difference is cohort size and
+*(All training is built from the same structured curriculum — the difference is cohort size and
 customisation.)*
 
 - **Day 1:** Configuring Models, Messaging and Rule Strategy
