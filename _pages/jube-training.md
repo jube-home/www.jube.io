@@ -140,7 +140,7 @@ specific environment.
 
 See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for session-level and project detail.
 
---
+---
 
 See Jube **open source AML software** and **open source fraud detection software** in action:
 
