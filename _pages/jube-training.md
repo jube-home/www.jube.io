@@ -4,8 +4,6 @@ title: Training and Implementation
 permalink: /jube-training/
 ---
 
-# Training and Implementation
-
 Private training that takes your team from first principles to a working pre-production
 deployment of Jube. Designed for compliance professionals, engineers, analysts, and
 architects, this programme is structured around a six-week delivery — combining
@@ -35,7 +33,7 @@ implementation strategy, ensuring the training directly supports pre-production.
 
 **Pricing:**
 
-- **Private training and integration programme:** from **USD 6,000**
+- **Private training and integration programme:** for **USD 6,250**
 - On-site delivery priced according to location and scope
 
 > *Training is delivered by the creator of Jube, ensuring first-hand knowledge throughout
