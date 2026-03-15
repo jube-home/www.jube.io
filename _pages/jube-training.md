@@ -6,7 +6,7 @@ permalink: /jube-training/
 
 Private training that takes your team from first principles to a working pre-production
 deployment of Jube. Designed for compliance professionals, engineers, analysts, and
-architects, this programme is structured around a six-week delivery — combining
+architects, this programme is structured around a seven-week delivery — combining
 instructor-led sessions with supported own-time project work.
 
 Your team will **learn, configure, and operate Jube in realistic scenarios** throughout.
@@ -59,7 +59,7 @@ completion.
 - Practical own-time project exercises bridging each phase of delivery
 - Post-training certification support (up to 6 weeks, remote)
 - Direct access to the developer for technical guidance throughout the engagement
-- Expert of Record meetings twice weekly throughout the six-week period
+- Expert of Record meetings twice-weekly throughout the seven-week period
 - Optional on-site delivery (venue and catering priced according to location and scope)
 - Jube Certified Application Specialist Verifiable Certificate (after seven weeks and
   conclusion of test project)
@@ -119,9 +119,28 @@ Practical exercises are woven throughout: designing a transaction monitoring str
 building a compliance-grade case management system, chaos engineering a live Jube
 cluster, and constructing an analytical dashboard and management reporting suite.
 
-See [Full Training Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for session-level detail.
+See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for session-level detail.
 
 ---
+
+# Integration Plan
+
+The eleven sessions above form the core curriculum. Beyond these, the programme
+includes additional mop-up training sessions addressing practical administration
+topics as they arise during implementation, alongside Expert of Record meetings held
+twice-weekly throughout the seven-week period — up to an hour each — to review project
+progress, resolve blockers, and keep the implementation tracking toward the
+pre-production milestone. These are working sessions against the project plan, not
+extensions of the curriculum, and are where integration decisions, async messaging
+patterns, and architectural questions tend to get resolved in the context of your
+specific environment.
+
+---
+## Full Specification
+
+See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for session-level and project detail.
+
+--
 
 See Jube **open source AML software** and **open source fraud detection software** in action:
 
