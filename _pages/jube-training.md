@@ -4,90 +4,124 @@ title: Training and Implementation
 permalink: /jube-training/
 ---
 
-Transform your team into Jube Certified Application Specialists in **4 days** with hands-on, implementation-focused
-training. Designed for compliance leaders, engineers, analysts, and architects, this programme goes beyond theory: your
-team will **learn, configure, and operate Jube in real-world scenarios**.
+# Training and Implementation
 
-In **private training**, you’ll gain:
+Private training that takes your team from first principles to a working pre-production
+deployment of Jube. Designed for compliance professionals, engineers, analysts, and
+architects, this programme is structured around a six-week delivery — combining
+instructor-led sessions with supported own-time project work.
+
+Your team will **learn, configure, and operate Jube in realistic scenarios** throughout.
+
+In **private training**, you'll gain:
 
 - **Practical mastery** — configure rules, workflows, and machine learning models hands-on
 - **Real deployment outcomes** — leave ready to implement Jube in a pre-production environment
-- **Guided integration support** — six weeks of expert access to ensure architectural correctness,
-  successful pre-production deployment, and smooth completion of certification.
+- **Guided integration support** — seven weeks of expert access to ensure architectural
+  correctness, successful pre-production deployment, and smooth completion of certification.
+- **Production-ready architecture** — deploy and chaos-test a high availability cluster
+    configuration, covering Docker Swarm, Patroni, Redis Sentinel, and HAProxy, so your
+    team understands the stack before it matters.
 
 ![Jube Training](/training.png)
 
-For organisations with larger teams, specialised use cases, or internal rollout requirements, Jube offers **private
-training** delivered exclusively to your team — remotely or on-site.
+Private delivery allows deeper focus on your architecture, data, workflows, and
+implementation strategy, ensuring the training directly supports pre-production.
 
-Private delivery allows deeper focus on your architecture, data, workflows, and implementation strategy, ensuring the
-training directly supports pre-production.
-
-- Fully customised to your team’s schedule, experience level, and objectives
+- Fully customised to your team's schedule, experience level, and objectives
 - Can include **developer workshops**, advanced architecture topics, and live implementation support
 - Ideal for teams planning pre-production deployment or complex integrations
+- Delivered remotely via Teams, with recordings available via OneDrive throughout
 
 **Pricing:**
 
-- **4-day private training:** from **USD 6,000**
+- **Private training and integration programme:** from **USD 6,000**
 - On-site delivery priced according to location and scope
 
-> *Private training is delivered by the creator of Jube and is designed to accelerate real-world implementation, reduce
-risk, and ensure architectural correctness from day one.*
+> *Training is delivered by the creator of Jube, ensuring first-hand knowledge throughout
+> — from compliance fundamentals through to production deployment and C# extensibility.*
+
+This programme has been deliberately designed for remote delivery. Experience has shown
+that distributed compliance and technology teams have competing priorities, inconsistent
+availability, and finite attention — and that attempting to replicate a classroom day across
+a video call rarely serves anyone well. Sessions are capped at three hours, held regularly
+over seven weeks, and paired with practical own-time exercises so that concepts are applied
+before the next session builds on them. Recordings are available throughout. The cadence
+is intentional: short, focused, repeated — with each session reinforcing what came before
+rather than racing to cover ground. The aim is retention and implementation, not
+completion.
 
 ---
 
-## What’s included
+## What's included
 
-- Fully customised 4-day curriculum based on your team’s schedule, experience, and objectives
+- Fully customised curriculum across eleven sessions, based on your team's schedule,
+  experience, and objectives
 - Hands-on workshops, guided configuration, and optional developer-focused sessions
+- Practical own-time project exercises bridging each phase of delivery
 - Post-training certification support (up to 6 weeks, remote)
 - Direct access to the developer for technical guidance throughout the engagement
+- Expert of Record meetings twice weekly throughout the six-week period
 - Optional on-site delivery (venue and catering priced according to location and scope)
-- Jube Certified Application Specialist Verifiable Certificate (after six weeks and conclusion of test project)
+- Jube Certified Application Specialist Verifiable Certificate (after seven weeks and
+  conclusion of test project)
 
 ---
 
-## **Who this is for**
+## Who this is for
 
-- System Integrators (SI's) looking to serve their clients with new regulatory led opportunities
+- System Integrators looking to serve clients with new regulatory-led opportunities
 - SI teams preparing to use Jube in a pre-production environment
-- End users - client's of an SI - representing organisations modernising legacy AML or fraud detection systems with an open, flexible platform
+- End users representing organisations modernising legacy AML or fraud detection systems
+  with an open, flexible platform
 
-> This is a **practical, implementation-focused programme**. Participants will gain real experience configuring,
-> operating, and managing Jube in realistic environments, without requiring deep prior technical expertise.
+> This is a **practical, implementation-focused programme**. Participants will gain real
+> experience configuring, operating, and managing Jube in realistic environments, without
+> requiring deep prior technical expertise.
 
 ---
 
 # Why Jube Training and Implementation?
 
-💡 **Training Direct from the Developer** — Learn Jube straight from its creator, no second-hand knowledge.  
-⚡ **Rapid Mastery** — Become proficient in days, not months, accelerating your implementation timeline.  
-🔓 **True Independence** — Own your AML and transaction monitoring stack—free from vendor lock-in and restrictive
-contracts.  
-📈 **Smart ROI** — Faster evaluation, smoother implementation, fewer mistakes, and independent mastery multiply your
-training investment.  
-🤝 **Real Implementation Outcome** — Hands-on training plus up to six weeks of support ensures your team can deploy
-Jube, configure rules, manage cases, and validate alerts.  
-🛠 **Fully Open-Source and Transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and
-extensible, keeping your data under your control while enabling rapid adaptation.
-
-Break free from overpriced, restrictive AML and fraud detection systems. Learn Jube and take full control of your
-technology stack.
+💡 **Training Direct from the Developer** — Learn Jube from its creator, with no
+second-hand interpretation.  
+⚡ **Rapid Mastery** — Become proficient in weeks rather than months, accelerating your
+implementation timeline.  
+🔓 **True Independence** — Own your AML and transaction monitoring stack, free from
+vendor lock-in and restrictive contracts.  
+📈 **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery
+significantly reduce the cost of getting to production.  
+🤝 **Real Implementation Outcome** — Hands-on training plus seven weeks of supported project
+work ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.  
+🛠 **Fully Open-Source and Transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring),
+auditable and extensible, keeping your data under your control while enabling rapid adaptation.
 
 ---
 
 # Training Plan
 
-*(All training is built from the same structured curriculum — the difference is cohort size and
-customisation.)*
+The programme comprises eleven sessions delivered remotely over seven weeks, with a
+maximum of three hours per session to sustain engagement across remote delivery.
+Each pair of instructor-led sessions is followed by a practical own-time project exercise,
+progressively building toward a complete pre-production implementation.
 
-- **Day 1:** Configuring Models, Messaging and Rule Strategy
-- **Day 2:** Suppressions, Sanctions, Machine Learning and Case Workflow
-- **Day 3:** Permissions, Database, Reporting and Reprocessing
-- **Day 4:** C# Developer Extensibility and Software Architecture Patterns
+- **Session 1** *(1 hour)* — Prerequisites and Dress Rehearsal
+- **Session 2** *(3 hours)* — From Regulation to Real-Time
+- **Session 3** *(3 hours)* — From Data to Decisions
+- **Session 4** *(3 hours)* — Precision, Memory and Intelligence
+- **Session 5** *(3 hours)* — Managing the Human Side
+- **Session 6** *(3 hours)* — Access, Data and Insight
+- **Session 7** *(3 hours)* — Extending the Platform
+- **Session 8** *(2 hours)* — Transaction Flow Analysis and Redis Cache Internals
+- **Session 9** *(3 hours)* — Production-Grade Deployment
+- **Session 10** *(3 hours)* — C# Architecture Patterns and Solution Structure
+- **Session 11** *(3 hours)* — C# Background Threads and Transaction Processing
 
-See [Full Training Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for details.
+Practical exercises are woven throughout: designing a transaction monitoring strategy,
+building a compliance-grade case management system, chaos engineering a live Jube
+cluster, and constructing an analytical dashboard and management reporting suite.
+
+See [Full Training Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for session-level detail.
 
 ---
 

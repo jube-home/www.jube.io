@@ -25,8 +25,6 @@ menu__settings:
           url: '/JubeAMLMonitoringComplianceGuidance.pdf'
         - title: 'Jube Training Plan [PDF]'
           url: '/JubeTrainingPlan.pdf'
-        - title: 'Advanced Analytics with R Guidance [PDF]'
-          url: '/AdvancedAnalyticsWithRGuidance.pdf'
         - title: 'Advanced Analytics with R Training Plan [PDF]'
           url: '/AdvancedAnalyticsWithRTrainingPlan.pdf'
     - title: 'Contact'
