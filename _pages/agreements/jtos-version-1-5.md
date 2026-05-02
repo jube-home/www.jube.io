@@ -10,9 +10,11 @@ permalink: /agreements/jtos-version-1-5
 
 ## Company Details
 
-Company Name: Jube Operations Limited trading as Jube ("JOL")  
-Company Number: 14442207  
-Registered Address: Northgate House, North Gate, New Basford, Nottingham, England, NG7 7BQ
+**Company Name:** Jube Operations Limited trading as Jube ("JOL").
+
+**Company Number:** 14442207  
+
+**Registered Address:** Northgate House, North Gate, New Basford, Nottingham, England, NG7 7BQ
 
 ## Company Introduction
 
