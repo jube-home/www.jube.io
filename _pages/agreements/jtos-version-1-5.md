@@ -380,7 +380,7 @@ to:
 * Make representations on behalf of JOL or its personnel;
 * Hold out JOL or its personnel as employees, staff, or exclusive resources of any other entity;
 * Include JOL or its personnel in proposals, tenders, or submissions to third parties without prior written consent from
-  JOL.
+  JOL;
 * Submit JOL or its personnel details in visa applications, government submissions, or regulatory filings without prior
   written consent from JOL.
 
