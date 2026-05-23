@@ -15,6 +15,10 @@ menu__settings:
       url: '/learn-more'
     - title: 'Training and Implementation'
       url: '/jube-training'
+    - title: 'Support'
+      url: '/jube-support'
+    - title: 'Partners'
+      url: '/jube-partners'
     - title: 'Resources'
       submenu:
         - title: 'Software (GitHub)'

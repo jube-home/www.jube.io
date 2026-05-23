@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Training and Implementation
+title: Jube Training and Implementation
 permalink: /jube-training/
 ---
 
@@ -36,7 +36,7 @@ implementation strategy, ensuring the training directly supports pre-production.
 - **Private training and integration programme:** for **USD 6,250**
 - On-site delivery priced according to location and scope
 
-> *Training is delivered by the creator of Jube, ensuring first-hand knowledge throughout
+> *Training is delivered by the Jube developer, ensuring first-hand knowledge throughout
 > — from compliance fundamentals through to production deployment and C# extensibility.*
 
 This programme has been deliberately designed for remote delivery. Experience has shown
@@ -81,18 +81,12 @@ completion.
 
 # Why Jube Training and Implementation?
 
-💡 **Training Direct from the Developer** — Learn Jube from its creator, with no
-second-hand interpretation.  
-⚡ **Rapid Mastery** — Become proficient in weeks rather than months, accelerating your
-implementation timeline.  
-🔓 **True Independence** — Own your AML and transaction monitoring stack, free from
-vendor lock-in and restrictive contracts.  
-📈 **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery
-significantly reduce the cost of getting to production.  
-🤝 **Real Implementation Outcome** — Hands-on training plus seven weeks of supported project
-work ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.  
-🛠 **Fully Open-Source and Transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring),
-auditable and extensible, keeping your data under your control while enabling rapid adaptation.
+- **Training direct from the developer** — Learn Jube from its developer, with no second-hand interpretation.
+- **Rapid mastery** — Become proficient in weeks rather than months, accelerating your implementation timeline.
+- **True independence** — Own your AML and transaction monitoring stack, free from vendor lock-in and restrictive contracts.
+- **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery significantly reduce the cost of getting to production.
+- **Real implementation outcome** — Hands-on training plus seven weeks of supported project work ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.
+- **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control while enabling rapid adaptation.
 
 ---
 
@@ -142,8 +136,7 @@ See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pd
 
 ---
 
-See Jube **open source AML software** and **open source fraud detection software** in action:
+Following successful implementation and first live transactions, ongoing support is available
+directly from the Jube developer. See [Support](/jube-support/) for details.
 
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](https://jube.io/agreements/jtos-version-1-5) — published, versioned, and written to be clear and equitable for both parties.*

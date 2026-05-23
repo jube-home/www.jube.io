@@ -14,11 +14,6 @@ workflows, regulations, or payment schemes.
 
 See Jube **open source AML software** and **open source fraud detection software** in action:
 
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
-<p></p>
-
 ---
 
 Jube combines real-time transaction monitoring, adaptive machine learning, rule-based detection, and workflow-driven
@@ -38,8 +33,6 @@ regulatory requirements while monitoring large transaction volumes.
 ![Open source AML software case management dashboard](/CaseManagementListing.png)
 
 ![Open source fraud detection software performance metrics](/ExhaustivePerformance.png)
-
----
 
 ## Key Features
 
@@ -140,11 +133,3 @@ sub-clients (brands or business units) within a single deployment. Each tenant c
 workflows, and ML configurations.
 
 ![Open source AML and fraud detection software API integration](/Swagger.png)
-
----
-
-See Jube **open source AML software** and **open source fraud detection software** in action:
-
-<div class="hero__subscribe">
-  <a href="/contact" class="button button--primary section-button">Book a Demo</a>
-</div>
