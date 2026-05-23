@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jube Support
-permalink: /support/
+permalink: /jube-support/
 ---
 
 Jube is open source and free to use. Implementation and training engagements are fixed fee.
