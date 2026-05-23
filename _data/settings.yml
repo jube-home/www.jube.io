@@ -11,8 +11,6 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Learn More'
-      url: '/learn-more'
     - title: 'Training and Implementation'
       url: '/jube-training'
     - title: 'Support'
