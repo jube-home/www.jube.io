@@ -61,5 +61,5 @@ The natural first step is putting your team through the
 [Jube Training and Integration programme](/jube-training). Certification and a partner
 relationship follow naturally from there.
 
-*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-15) —
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-5) —
 published, versioned, and written to be clear and equitable for both parties.*

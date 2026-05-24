@@ -144,5 +144,5 @@ See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pd
 Following successful implementation and first live transactions, ongoing support is available
 directly from the Jube developer. See [Support](/jube-support/) for details.
 
-*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-15) —
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-5) —
 published, versioned, and written to be clear and equitable for both parties.*
