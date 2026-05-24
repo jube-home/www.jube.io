@@ -18,8 +18,8 @@ In **private training**, you'll gain:
 - **Guided integration support** — seven weeks of expert access to ensure architectural
   correctness, successful pre-production deployment, and smooth completion of certification.
 - **Production-ready architecture** — deploy and chaos-test a high availability cluster
-    configuration, covering Docker Swarm, Patroni, Redis Sentinel, and HAProxy, so your
-    team understands the stack before it matters.
+  configuration, covering Docker Swarm, Patroni, Redis Sentinel, and HAProxy, so your
+  team understands the stack before it matters.
 
 ![Jube Training](/training.png)
 
@@ -33,7 +33,11 @@ implementation strategy, ensuring the training directly supports pre-production.
 
 **Pricing:**
 
-- **Private training and integration programme:** for **USD 6,250**
+- **Private training and implementation programme:** **USD 6,250**, structured as two equal
+  instalments. The first instalment is due on engagement acceptance and covers the training
+  programme. The second instalment becomes due on completion of initial training delivery and
+  constitutes a prepaid support block for post-training integration through to pre-production
+  deployment, valid for up to three months.
 - On-site delivery priced according to location and scope
 
 > *Training is delivered by the Jube developer, ensuring first-hand knowledge throughout
@@ -57,7 +61,7 @@ completion.
   experience, and objectives
 - Hands-on workshops, guided configuration, and optional developer-focused sessions
 - Practical own-time project exercises bridging each phase of delivery
-- Post-training certification support (up to 6 weeks, remote)
+- Post-training integration support up to three months, covering pre-production deployment
 - Direct access to the developer for technical guidance throughout the engagement
 - Expert of Record meetings twice-weekly throughout the seven-week period
 - Optional on-site delivery (venue and catering priced according to location and scope)
@@ -130,6 +134,7 @@ patterns, and architectural questions tend to get resolved in the context of you
 specific environment.
 
 ---
+
 ## Full Specification
 
 See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for session-level and project detail.
@@ -139,4 +144,4 @@ See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pd
 Following successful implementation and first live transactions, ongoing support is available
 directly from the Jube developer. See [Support](/jube-support/) for details.
 
-*All engagements are delivered under the [Jube Terms of Service (JTOS)](https://jube.io/agreements/jtos-version-1-5) — published, versioned, and written to be clear and equitable for both parties.*
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](https://jube.io/agreements/jtos-version-1-16) — published, versioned, and written to be clear and equitable for both parties.*
