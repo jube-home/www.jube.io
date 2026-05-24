@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Jube Terms of Service (JTOS)
-permalink: /agreements/jtos-version-1-18
+permalink: /agreements/jtos-version-1-5
 ---
 
 ## Version
 
-1.18 as of [DATE]
+1.5 as of May 24th, 2026
 
 ## Company Details
 
