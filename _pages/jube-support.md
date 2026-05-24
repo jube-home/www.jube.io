@@ -34,11 +34,10 @@ where project cadence warrants it, agreed before each period closes. It includes
   changes, and infrastructure modifications, delivered within the Runbook and sign-off
   framework.
 - **Async-first delivery** — day-to-day support via WhatsApp Business and Microsoft Teams,
-  with screencasts and voice notes preferred over scheduled calls. Where something is urgent,
-  WhatsApp is the only channel that guarantees an audible alert.
-  - **24/7 callout coverage** — urgent matters raised via WhatsApp Business are interrupt-driven and will be picked up as
-    quickly as practically possible. Response during 06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours,
-    coverage is on a best endeavours basis.
+  with screencasts and voice notes preferred over scheduled calls.
+- **24/7 callout coverage** — urgent matters raised via WhatsApp Business are interrupt-driven and will be picked up as
+  quickly as practically possible. Response during 06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours,
+  coverage is on a best endeavours basis.
 
 Support is available to clients who have completed Jube training and hold a current
 certification.
