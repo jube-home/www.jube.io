@@ -18,6 +18,9 @@ deployment decisions that carry a material risk of service interruption.
 
 **What we offer**
 
+For system integrators, technology consultancies, and regional delivery partners serving banks,
+fintechs, and payment institutions in emerging and growth markets:
+
 - **Training and certification** — the entry point to any partner engagement. Your team goes
   through the same Training and Integration programme as end clients, emerging with the skills
   and certification to deliver Jube independently.
@@ -31,21 +34,13 @@ deployment decisions that carry a material risk of service interruption.
 - **Async-first working** — support and co-delivery are delivered via WhatsApp Business and
   Microsoft Teams, with screencasts and voice notes preferred over scheduled calls.
 
-**Who this is for**
-
-System integrators, technology consultancies, and regional delivery partners serving banks,
-fintechs, and payment institutions in emerging and growth markets.
-
 **Pricing is published and fixed.** Training, implementation, and support fees are set out
 on this site and do not vary by channel.
-
-**How the terms work**
-
-All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-5), which is published,
-versioned, and non-negotiable.
 
 **Getting started**
 
 Put your team through the [Jube Training and Integration programme](/jube-training).
 Everything else follows from there.
+
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-5) —
+published, versioned, and written to be clear and equitable for both parties.*

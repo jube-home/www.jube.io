@@ -7,6 +7,8 @@ permalink: /jube-support/
 Jube is open source and free to use. Implementation and training engagements are fixed fee.
 Ongoing support is available in two arrangements.
 
+**What we offer**
+
 **PAYG support** is billed at **$125 per hour**, prepaid in blocks of ten hours for use
 within the month. It is a good fit for cost-sensitive markets and clients with modest or
 variable support needs. Support is provided on a best endeavours basis, with responses
@@ -39,8 +41,10 @@ where project cadence warrants it, agreed before each period closes. It includes
   quickly as practically possible. Response during 06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours,
   coverage is on a best endeavours basis.
 
-Support is available to clients who have completed Jube training and hold a current
-certification.
+**Getting started**
+
+Put your team through the [Jube Training and Integration programme](/jube-training).
+Everything else follows from there.
 
 *All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-5) —
 published, versioned, and written to be clear and equitable for both parties.*
