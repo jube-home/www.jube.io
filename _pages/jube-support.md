@@ -46,5 +46,5 @@ the period closes.
 Support is available to clients who have completed Jube training and implementation and
 hold a current certification.
 
-*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-17) —
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-15) —
 published, versioned, and written to be clear and equitable for both parties.*

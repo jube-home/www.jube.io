@@ -34,7 +34,8 @@ confidence that the Provider is a committed participant in the value chain, not 
 - **PAYG and Enterprise Support** — ongoing post-live support arrangements are available
   to certified end clients directly or through a partner structure, on the same published
   terms regardless of channel.
-  **Who this is for**
+
+**Who this is for**
 
 System integrators, technology consultancies, and regional delivery partners serving banks,
 fintechs, and payment institutions in emerging and growth markets.
@@ -59,3 +60,6 @@ end clients of their obligations under the AGPLv3 licence prior to deployment.
 The natural first step is putting your team through the
 [Jube Training and Integration programme](/jube-training). Certification and a partner
 relationship follow naturally from there.
+
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-15) —
+published, versioned, and written to be clear and equitable for both parties.*
