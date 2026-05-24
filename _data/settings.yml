@@ -27,6 +27,8 @@ menu__settings:
           url: '/JubeAMLMonitoringComplianceGuidance.pdf'
         - title: 'Jube Training Plan [PDF]'
           url: '/JubeTrainingPlan.pdf'
+        - title: 'Jube Terms of Service (JTOS)'
+          url: '/agreements/jtos-version-1-5'
     - title: 'Contact'
       url: '/contact'
           
