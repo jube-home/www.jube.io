@@ -334,7 +334,8 @@ Details:
    response within this timeframe acknowledges receipt and initiates engagement with the request. It does not imply
    resolution within that period nor constitute a service level commitment to the same.
 4. Urgent Matters: Where a matter is time-sensitive or urgent, the Client should contact the Provider via WhatsApp
-   Business, which is the only channel guaranteed to generate an audible alert regardless of the Provider's current activity. Microsoft Teams
+   Business, which is the only channel guaranteed to generate an audible alert regardless of the Provider's current
+   activity. Microsoft Teams
    notifications are subject to device and availability settings and cannot be guaranteed to interrupt. Email cannot be
    relied upon for urgent matters under any circumstances.
 5. Service Management: All service requests are recorded and tracked by the Provider against the relevant Client project
@@ -360,9 +361,10 @@ Details:
    environment. Promotion to production requires written acceptance by an authorised representative of the Client via
    email or other traceable written communication. The Provider shall have no liability for issues arising from
    promotion undertaken without such written acceptance.
-10. Client Security Obligations: The Client is responsible for maintaining appropriate security measures and controls for
-   their systems, networks, and data. The Provider shall not be liable for security incidents arising from the Client's
-   environment, hosting, or data handling practices.
+10. Client Security Obligations: The Client is responsible for maintaining appropriate security measures and controls
+    for
+    their systems, networks, and data. The Provider shall not be liable for security incidents arising from the Client's
+    environment, hosting, or data handling practices.
 11. Production Support: The fees charged under this Agreement are not intended to cover production support, critical
     incident response, or 24x7 on-call obligations. Responsibility for the stability, monitoring, and support of
     production systems rests solely with the Client, and production support is not within the scope of the Services as
@@ -701,14 +703,14 @@ basis of translated materials provided by the Client without prior agreement.
 
 ## 22. Professional Indemnity and Liability Insurance
 
-The Provider maintains Professional Indemnity insurance of GBP 1,000,000 per claim and Public Liability insurance of GBP
-1,000,000 per claim, with a UK-authorised insurer rated to a standard appropriate for commercial engagements of this
-nature. Evidence of current coverage is available on request.
+The Provider maintains Professional Indemnity insurance with a UK-authorised insurer. The specific level of coverage in
+force at any time is particularised in the applicable Work Order and is confidential between the parties.
+Notwithstanding, £1,000,000 per claim represents the upper limit of coverage that JOL will seek to maintain, and no
+Client should expect or request coverage beyond this level. Evidence of current coverage is available on request.
 
-These coverages reflect the nature and scale of the Services. Clients whose governance requirements call for higher
-indemnity thresholds are encouraged to consider engaging through a larger implementation partner or system integrator
-within whose value chain the Provider may participate in a capacity that is commercially and contractually appropriate
-for all parties.
+Clients whose governance requirements call for higher indemnity thresholds are encouraged to consider engaging through a
+larger implementation partner or system integrator within whose value chain the Provider may participate in a capacity
+that is commercially and contractually appropriate for all parties.
 
 For the avoidance of doubt, this Section applies solely to parties engaged with the Provider under a Work Order. The use
 of Jube as AGPLv3-licensed software carries no insurance or indemnity obligations on the part of the Provider, and any
