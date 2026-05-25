@@ -33,12 +33,12 @@ implementation strategy, ensuring the training directly supports pre-production.
 
 **Pricing:**
 
-- **Private training and implementation programme:** **USD 6,250**, structured as two equal
-  instalments. The first instalment is due on engagement acceptance and covers the training
-  programme. The second instalment becomes due on completion of initial training delivery and
-  constitutes a prepaid support block for post-training integration through to pre-production
-  deployment, valid for up to three months.
-- On-site delivery priced according to location and scope
+- **Private training and implementation programme:** **USD 6,250** fixed fee, due on
+  engagement acceptance. No delivery commences until this fee has cleared. Following
+  completion of initial training delivery, integration support continues on a prepaid
+  Hour Block basis at **USD 125 per hour**, billed monthly in blocks of ten hours, until
+  certification and pre-production deployment are confirmed.
+- On-site delivery priced according to location and scope.
 
 > *Training is delivered by the Jube developer, ensuring first-hand knowledge throughout
 > — from compliance fundamentals through to production deployment and C# extensibility.*
@@ -61,7 +61,8 @@ completion.
   experience, and objectives
 - Hands-on workshops, guided configuration, and optional developer-focused sessions
 - Practical own-time project exercises bridging each phase of delivery
-- Post-training integration support up to three months, covering pre-production deployment
+- Post-training integration support on a prepaid Hour Block basis, continuing until
+  pre-production deployment is confirmed — there is no fixed end date
 - Direct access to the developer for technical guidance throughout the engagement
 - Expert of Record meetings twice-weekly throughout the seven-week period
 - Optional on-site delivery (venue and catering priced according to location and scope)
@@ -72,10 +73,11 @@ completion.
 
 ## Who this is for
 
-- System Integrators looking to serve clients with new regulatory-led opportunities
-- SI teams preparing to use Jube in a pre-production environment
-- End users representing organisations modernising legacy AML or fraud detection systems
-  with an open, flexible platform
+- Teams and organisations looking to adopt Jube for AML or fraud detection
+- Compliance professionals, engineers, analysts, and architects preparing for
+  pre-production deployment
+- Organisations modernising legacy transaction monitoring systems with an open,
+  flexible platform
 
 > This is a **practical, implementation-focused programme**. Participants will gain real
 > experience configuring, operating, and managing Jube in realistic environments, without
