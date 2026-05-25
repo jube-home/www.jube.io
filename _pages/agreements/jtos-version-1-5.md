@@ -163,7 +163,7 @@ committed service and ancillary obligations, not a different payment model.
 
 **Hour Block:** A prepaid allocation of hours purchased by the Client in advance as a condition of commencing or
 continuing Services under a Work Order. The minimum Hour Block for Training and Integration and PAYG engagements is
-ten (10) hours. The minimum Hour Block for Enterprise Support engagements is as specified in the applicable Work Order.
+eight (8) hours. The minimum Hour Block for Enterprise Support engagements is as specified in the applicable Work Order.
 Hour Blocks are drawn down as hours are recorded against the Client's project during each monthly billing period.
 Advance payments in respect of Hour Blocks are treated by the Provider as deferred revenue, held in custody against
 hours to be delivered, and are not recognised as earned income until the corresponding hours have been recorded and

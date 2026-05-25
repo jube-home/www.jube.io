@@ -13,7 +13,7 @@ are available but treated as a last resort.
 
 **What we offer**
 
-**PAYG support** is billed at **$125 per hour**, prepaid in blocks of ten hours for use
+**PAYG support** is billed at **$125 per hour**, prepaid in blocks of eight hours (loosly, one day) for use
 within the month. It is a good fit for cost-sensitive markets and clients with modest or
 variable support needs. Responses within four business hours during UK office hours, on a
 best endeavours basis.
