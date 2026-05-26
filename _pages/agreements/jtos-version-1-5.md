@@ -325,6 +325,9 @@ primary channels for the purposes of response, logging, and billing:
 The Provider will not be obliged to monitor or respond to service requests submitted through any other channel,
 including client-operated platforms, ticketing systems, or tools not listed above.
 
+The basis on which time is recorded and charged across all engagement activities is set out in Appendix B: Basis of Time
+Recording.
+
 Details:
 
 1. Remote Delivery: The Services shall be delivered remotely by default unless otherwise agreed in writing.
@@ -334,9 +337,8 @@ Details:
    response within this timeframe acknowledges receipt and initiates engagement with the request. It does not imply
    resolution within that period nor constitute a service level commitment to the same.
 4. Urgent Matters: Where a matter is time-sensitive or urgent, the Client should contact the Provider via WhatsApp
-   Business, which is the only channel guaranteed to generate an audible alert regardless of the Provider's current
-   activity. Microsoft Teams
-   notifications are subject to device and availability settings and cannot be guaranteed to interrupt. Email cannot be
+   Business or
+   Microsoft Teams, both of which generate audible alerts and are appropriate for urgent matters. Email cannot be
    relied upon for urgent matters under any circumstances.
 5. Service Management: All service requests are recorded and tracked by the Provider against the relevant Client project
    for the purposes of time recording and billing. The Provider maintains internal records using its own tools and
@@ -800,3 +802,101 @@ JOL assists Clients in responding to data subject requests:
 ### 8. Contact
 
 For enquiries: support@jube.io
+
+# Appendix B: Basis of Time Recording
+
+## 1. Purpose
+
+1.1 This Appendix sets out the basis on which time spent on asynchronous communications, scheduled meetings, and
+engagement administration is recorded and charged under the Agreement.
+
+1.2 This Appendix forms part of the Jube Terms of Service (JTOS) and should be read in conjunction with it, in
+particular Section 2 (Fees and Payment) and Section 3 (Service Delivery).
+
+## 2. Principle of Cognitive Engagement
+
+2.1 Time is recorded on the basis of genuine cognitive engagement rather than message transmission time or meeting clock
+time alone. Billable time includes the time reasonably spent reading, contextualising, reasoning, drafting, preparing,
+and reviewing, in addition to direct communication or meeting time.
+
+2.2 The Provider does not apply unit-based rounding. Time is recorded to the nearest minute actually engaged.
+
+2.3 Time spent on Jube platform development, product roadmap activity, or any work of general application to the
+platform is not billable and is conducted solely at the Provider's expense. Only time directly attributable to the
+Client's engagement under a Work Order is recorded and charged.
+
+## 3. Asynchronous Communications
+
+3.1 The following activities constitute billable time when conducted through asynchronous channels:
+
+- a. Reading and re-reading a thread or prior correspondence to establish context before responding;
+- b. Reasoning, analysis, or research required to formulate a response;
+- c. Drafting, reviewing, and revising a response prior to sending;
+- d. Follow-up review of sent communications where substantively required by the nature of the Services.
+
+3.2 Incidental or administrative communications of a transactional nature (e.g. scheduling confirmations,
+acknowledgements) are not typically recorded as billable time.
+
+3.3 This section applies to all asynchronous communication channels through which Services are delivered, currently
+including:
+
+- a. WhatsApp (dedicated Jube support channel); and
+- b. Microsoft Teams chat (used as a peer primary channel to WhatsApp, according to Client preference, and as distinct
+  from scheduled meetings).
+
+3.4 The Provider reserves the right to update the list of covered channels by written notice to the Client.
+
+## 4. Provider-Initiated Communications
+
+4.1 The Provider may, at its discretion, initiate communications with the Client to share notices, observations,
+or guidance of direct relevance to the Client's specific configuration or engagement. Such communications will only
+be made where the Provider considers them material and nuanced to the Client's circumstances; general platform
+guidance is not delivered through this mechanism.
+
+4.2 Time recorded in respect of any single provider-initiated communication, including preparation and sending,
+shall not exceed six (6) minutes. The Client is under no obligation to respond, and any decision to engage further
+rests solely with the Client and will be treated as a client-initiated interaction from that point.
+
+4.3 General guidance, platform updates, and broader advisory content are disseminated through the Provider's
+monthly newsletter, to which the Client is encouraged to subscribe. Such content does not form part of the Services
+and is not billable.
+
+## 5. Scheduled Meetings
+
+5.1 Scheduled meetings are billed as a single contiguous engagement encompassing reasonable preparation, the meeting
+itself, and reasonable wrap-up, including follow-up notes and actions recorded immediately after the meeting.
+
+5.2 Preparation and wrap-up time are not charged separately from the meeting; they are treated as integral to it.
+
+## 6. Engagement Administration
+
+6.1 The Provider maintains comprehensive, indexed records in connection with each Client engagement. These include but
+are not limited to client notes, task records, interaction logs, runbooks, and related documentation maintained in the
+Provider's notes and knowledge management systems.
+
+6.2 Time reasonably spent on such administration — including creating, updating, and organising records directly
+relating to the Client's engagement — is billable as engagement administration time and will be recorded accordingly in
+the Provider's internal records.
+
+6.3 The Provider exercises reasonable discretion in recording only administration time that is directly attributable to
+the Client's engagement and proportionate to the nature of the Services being delivered.
+
+## 7. Email Communications
+
+7.1 Email is not a primary service request channel and is not subject to the response time commitment in clause 3.3
+of the Terms.
+
+7.2 Where communications are received by email, the Provider will, where practicable, redirect them to the WhatsApp
+or Microsoft Teams channel. Time spent reading, triaging, and redirecting email communications is billable where it
+constitutes genuine cognitive engagement as described in Section 2 of this Appendix.
+
+7.3 Email communications are subject to the same time recording principles as set out in Section 2 of this
+Appendix. The Provider's preferred channels for service delivery remain WhatsApp and Microsoft Teams, and
+the Client is encouraged to use these in preference to email.
+
+## 8. Recording and Transparency
+
+8.1 Time Records are submitted to the Client monthly in accordance with the Time Records definition set out in
+the Definitions section of the Agreement, and the billing obligations set out in clause 2.3.
+
+8.2 The Provider maintains contemporaneous records of time engaged, available for Client review on request.
