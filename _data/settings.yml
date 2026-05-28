@@ -17,6 +17,8 @@ menu__settings:
       url: '/jube-support'
     - title: 'Partners'
       url: '/jube-partners'
+    - title: 'Newsletter'
+      url: '/jube-newsletter'
     - title: 'Resources'
       submenu:
         - title: 'Software (GitHub)'
