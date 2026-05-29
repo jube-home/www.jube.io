@@ -39,6 +39,10 @@ where project cadence warrants it, agreed before each period closes. It includes
 - **Release advisory and support** — hands-on guidance through platform upgrades, dependency
   changes, and infrastructure modifications, delivered within the Runbook and sign-off
   framework.
+- **Advanced Analytics** — model development, feature engineering, supervised and unsupervised classification using
+  Neural Networks, Decision Trees, Support Vector Machines, and Bayesian Networks, and stress testing via Monte Carlo
+  simulation, available within the scope of the relationship where the detection strategy requires it. The real value of
+  transaction monitoring is rarely in the platform — it is in the quality of the models running on it.
 - **24/7 callout coverage** — urgent matters raised via WhatsApp Business or Microsoft Teams are
   interrupt-driven and will be picked up as quickly as practically possible. Response during
   06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours, coverage is on a
