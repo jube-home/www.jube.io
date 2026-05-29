@@ -16,13 +16,12 @@ The AGPLv3 is a strong copyleft licence. In plain terms:
 - You can modify Jube to suit your environment
 - You can build workflows, configure rules, and extend the platform using its documented extensibility framework
 - You cannot take Jube, modify it, and distribute or deploy it as a closed source product
-- The network provision of AGPLv3 applies — if you run a modified version of Jube as a service accessible to others, the
-  modified source must be made available under the same licence. This includes internal network deployments where users
-  interact with the software remotely, such as a reskinned interface or modified case management tool accessed by staff
-  over an organisational network. Users in that scenario are entitled to the corresponding source code.
-
-Configuration, use of documented features, case management workflows, and integration with your own systems are entirely
-your business and carry no AGPLv3 obligations. The licence concerns the software itself, not how you use it.
+- The network provision of AGPLv3 applies — if you run a modified version of Jube as a service accessible to others,
+  including over an internal network, the modified source must be made available to those users under the same licence.
+  This obligation applies to modifications to Jube's core software only. Configuration, use of documented features, case
+  management workflows, integrations, and Configuration Artifacts are entirely your business and carry no AGPLv3
+  obligations — they remain proprietary to their creator as is customary in open source software of this nature. The
+  licence concerns the software itself, not how you use it.
 
 ## For system integrators and technology partners
 
