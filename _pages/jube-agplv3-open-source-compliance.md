@@ -61,8 +61,7 @@ the kind their frameworks are designed to address, and through which the obligat
 natural and effective expression in practice.
 
 JHL's position is simply that Jube is offered under AGPLv3, that no commercial licence exists or will be created, and
-that the obligations the licence carries travel with the software regardless of how it arrived. If your implementation
-partner has represented otherwise, we would welcome the conversation.
+that the obligations the licence carries travel with the software regardless of how it arrived.
 
 *If you have questions about what the AGPLv3 means for your specific deployment, the licence text is the authoritative
 reference. We are also happy to discuss it directly.*
