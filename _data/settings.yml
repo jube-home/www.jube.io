@@ -33,6 +33,8 @@ menu__settings:
           url: '/agreements/jtos-version-1-5'
         - title: 'Jube AGPLv3 Open Source Compliance'
           url: '/jube-agplv3-open-source-compliance'
+        - title: 'The Developer'
+          url: 'https://www.churchman.io'
     - title: 'Contact'
       url: '/contact'
           
