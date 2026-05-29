@@ -26,7 +26,9 @@ Building services around Jube is entirely compatible with the AGPLv3, but the bo
 
 Each deploying organisation is responsible for ensuring their own use and deployment of Jube complies with the AGPLv3. No commercial arrangement with an intermediary discharges that obligation. The licence is between you and the open source community — JOL's role is to build the software and maintain the terms under which it is offered, not to police compliance.
 
-No commercial licence exists. No partner or client relationship creates or implies one. Any representation to the contrary should be referred to JOL directly.
+No commercial licence exists. No partner or client relationship creates or implies one. Any representation to the contrary should be referred to Jube Operations Limited (JOL), the operating company through which all services are delivered, or Jube Holdings Limited (JHL), the ultimate owner of all intellectual property, trademarks, and the operating company, directly.
+
+Where JHL becomes aware of material non-compliance with the AGPLv3, it reserves the right to pursue enforcement through all available means, including formal cease and desist correspondence directed at the deploying organisation.
 
 ## A note for end users
 
