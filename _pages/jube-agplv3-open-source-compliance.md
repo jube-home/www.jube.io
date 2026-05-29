@@ -52,6 +52,11 @@ operating company, directly.
 Where JHL becomes aware of material non-compliance with the AGPLv3, it reserves the right to pursue enforcement through
 all available means, including formal cease and desist correspondence directed at the deploying organisation.
 
+JHL's enforcement position is informed by established case law, including Artifex v. Hancom (2017), in which a US
+federal court confirmed that the AGPLv3 constitutes an enforceable contract giving rise to copyright infringement claims
+on breach. That principle is broadly recognised across jurisdictions and forms the basis on which JHL's intellectual
+property rights are maintained.
+
 ## A note for end users
 
 Licence compliance is ultimately the responsibility of the deploying organisation — not the intermediary who implemented
