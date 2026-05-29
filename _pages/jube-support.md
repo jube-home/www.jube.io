@@ -39,7 +39,7 @@ where project cadence warrants it, agreed before each period closes. It includes
 - **Release advisory and support** — hands-on guidance through platform upgrades, dependency
   changes, and infrastructure modifications, delivered within the Runbook and sign-off
   framework.
-- **24/7 callout coverage** — urgent matters raised via WhatsApp Business are
+- **24/7 callout coverage** — urgent matters raised via WhatsApp Business or Microsoft Teams are
   interrupt-driven and will be picked up as quickly as practically possible. Response during
   06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours, coverage is on a
   best endeavours basis.

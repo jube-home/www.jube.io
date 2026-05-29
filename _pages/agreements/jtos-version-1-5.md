@@ -686,6 +686,22 @@ basis of translated materials provided by the Client without prior agreement.
    created them and are not subject to the AGPLv3 licence, consistent with the documented extensibility framework of the
    Jube platform. This clause does not affect the AGPLv3 obligations of any party in respect of Jube's core platform
    software.
+6. The boundary between independent tooling and a derivative work of the Jube platform requires honest
+   consideration by any party building on Jube's APIs or extensibility framework. Integrations that interact with Jube
+   through its published APIs are generally independent — but not automatically so. Where tooling exists solely to
+   present Jube's functionality under a different form — including but not limited to a reskinned or rebranded user
+   interface — the derivative work provisions of the AGPLv3 are likely engaged regardless of how that tooling is
+   described or structured. The tightness of the coupling and the purpose of the work are the operative considerations,
+   not its name or commercial framing. The Provider does not make that determination on behalf of any party. Parties
+   uncertain of their position should take appropriate legal advice. Any representation to the end Client that such
+   tooling is proprietary or independent of the AGPLv3 without proper legal basis shall constitute a breach of clause
+   20.3.
+
+The Provider maintains a plain language AGPLv3 compliance guide at
+[jube-agplv3-open-source-compliance](/jube-agplv3-open-source-compliance/), which sets out its interpretation of common
+deployment and integration scenarios. That guide does not form part of this Agreement but reflects the Provider's
+current position and is updated from time to time. Where any inconsistency arises between the guide and this
+Agreement, this Agreement prevails.
 
 ## 21. Direct Communication with End Clients
 
