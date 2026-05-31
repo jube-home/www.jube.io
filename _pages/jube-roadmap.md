@@ -95,7 +95,9 @@ changes.
 Jube validated for deployment on Flatcar Container Linux, where the full Docker Swarm stack is provisioned via
 the provided Swarm compose configuration. Flatcar's immutable, container-optimised runtime makes it well suited to
 on-premises and edge deployments where operational simplicity, security hardening, and a minimal host footprint are
-priorities.
+priorities. Persistent storage and log shipping are handled via NFS-mounted network-attached storage — an approach that
+complements Flatcar's immutable OS model by externalising durable Docker volumes and log shipping entirely outside the
+host lifecycle.
 
 ---
 
