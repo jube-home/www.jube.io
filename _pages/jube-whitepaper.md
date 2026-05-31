@@ -4,8 +4,10 @@ title: Jube Whitepaper
 permalink: /jube-whitepaper/
 ---
 
-A monthly whitepaper from the developer of Jube, an open-source transaction monitoring platform. Each issue covers a
-whitepaper, development updates and work from the field.
+Practitioner-focused whitepapers on real-time Anti Money Laundering and Fraud Detection — written by the developer of
+Jube from direct experience in the field.
+
+New whitepapers are published periodically. Check back here, or subscribe to be notified by email when the next one drops.
 
 <div class="hero__subscribe">
   <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/jube" method="POST">
