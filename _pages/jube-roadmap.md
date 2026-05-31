@@ -53,8 +53,10 @@ reflected consistently across case records, and tag management within the Case K
 Report page.
 
 **Idempotency**
-Idempotency for Time to Live Counter incrementing at the transaction level, and Case Creation and Notifications at the
-transaction and activation rule level.
+Idempotency for Time to Live (TTL) Counter incrementing at the transaction level, and Case Creation and Notifications at the
+transaction and activation rule level. The intention is to increase adoption of the reprocessing functionality by
+assuring material actions are guaranteed to only happen the once, regardless the amount of reprocessing having been
+instructed (which is an especially material issue in the case of the incrementing of TTL Counters).
 
 **Manual Case Creation via Transaction Report Page**
 The ability to retroactively create cases on the basis of results in the aforementioned Transaction Report page.
