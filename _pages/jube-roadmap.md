@@ -91,16 +91,34 @@ changes.
 
 ---
 
-## Version 1.0.0 — User Experience — March 2027
+## Version 1.0.0 — User Experience and Continuous Integration — March 2027
 
 Version 1.0.0 is the full platform release. The backend capability established in 0.1.0 is complete; this release
 delivers the user experience to match. It is a comprehensive UX investment.
 
+**Integration Test Coverage**
+A structured integration test suite focused on the invocation pipeline and model construction via the API. Test cases
+will be built around real integration scenarios — exercising the full path from invocation through model execution — rather
+than controller-level unit coverage. Controllers are covered only to the extent that they participate in meaningful
+end-to-end scenarios. The test suite suite will be designed to support continuous integration and protect feature velocity as the
+platform matures: changes to core pipeline behaviour are caught early, and new capability can be delivered with
+confidence against a stable, verified baseline.
+
 **Platform UI Migration — Daisy and Vue**
 The full platform UI will be migrated to Daisy UI and Vue, replacing the current jQuery-based implementation. The
-migration will deliver a modern, component-driven interface with consistent design language across all platform areas. The
+migration will deliver a modern, component-driven interface with consistent design language across all platform areas.
+The
 configuration interface — covering rule management, model configuration, entity setup, and platform administration —
 will be migrated as a direct translation of existing functionality.
+
+**Visualisation**
+The visualisation layer will remain SQL-led and largely unchanged in its underlying approach. The port to Chart.js replaces
+the current rendering implementation while preserving the query-driven model. The primary UX improvement will be a move away
+from requiring analysts to author raw JSON initialisation blocks: charts are instead defined through templated
+configurations with user-defined parameters and series definitions, keeping the flexibility of the existing approach
+while substantially reducing the technical burden of chart authorship. More broadly, visualisation will not only be confined
+to the Case Management and Visualisation Directory contexts — chart and query output will be available across a wider
+range of platform areas, bringing data-proximate rendering to the workflows where it is most useful.
 
 **Case Management Redesign**
 The case management interface will be rebuilt from the ground up with serious usability at its core. The existing
@@ -111,11 +129,13 @@ analyst who lives in it all day. Workflow, information architecture, and interac
 LLM-driven automation within the case management workflow via Semantic Kernel, supporting narrative generation, case
 summarisation, next-action recommendation, and structured reporting. Designed to reduce analyst burden on routine
 documentation tasks and accelerate case throughput without reducing quality or auditability. Case management functions
-otherwise available via API are exposed through the same integration layer and invocable given prompts via Semantic Kernel.
+otherwise available via API are exposed through the same integration layer and invocable given prompts via Semantic
+Kernel.
 
 **Vector Similarity Analysis**
 Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
-across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development, and the
+across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development,
+and the
 surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex layering and
 integration-stage AML typologies.
 
