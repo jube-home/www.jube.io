@@ -94,8 +94,7 @@ changes.
 ## Version 1.0.0 — User Experience — January 2027
 
 Version 1.0.0 is the full platform release. The backend capability established in 0.1.0 is complete; this release
-delivers the user experience to match. It is a comprehensive UX investment spanning the full platform, delivered as two
-related but distinct workstreams.
+delivers the user experience to match. It is a comprehensive UX investment.
 
 **Platform UI Migration — Daisy and Vue**
 The full platform UI will be migrated to Daisy UI and Vue, replacing the current jQuery-based implementation. The
