@@ -53,7 +53,8 @@ reflected consistently across case records, and tag management within the Case K
 Report page.
 
 **Idempotency**
-Idempotency for Time to Live (TTL) Counter incrementing at the transaction level, and Case Creation and Notifications at the
+Idempotency for Time to Live (TTL) Counter incrementing at the transaction level, and Case Creation and Notifications at
+the
 transaction and activation rule level. The intention is to increase adoption of the reprocessing functionality by
 assuring material actions are guaranteed to only happen the once, regardless the amount of reprocessing having been
 instructed (which is an especially material issue in the case of the incrementing of TTL Counters).
@@ -83,13 +84,18 @@ compliance focus — prioritising attributes that can be verified with confidenc
 precision without the substance to support it. City-level geolocation is deliberately out of scope; the dataset is
 designed around what remains accurate and defensible under compliance scrutiny, not what looks compelling in a demo.
 
-**Cluster and High Availability**
+**Cluster, High Availability and Flatcar Linux Validation**
 Support of fully active-active clustered deployments with no single point of failure, suitable for primary and Disaster
 Recovery configurations. The reference cluster topology comprises multiple Jube application nodes, a Patroni-managed
 PostgreSQL cluster with automatic failover coordinated via etcd, and a Redis master-replica setup with Sentinel for
 near-real-time failover detection. The platform is designed to run in this configuration, typically in Docker Swarm,
 though Kubernetes is equally supported, in production; horizontal scaling of application nodes requires no architectural
 changes.
+
+Jube validated for deployment on Flatcar Container Linux, where the full Docker Swarm stack is provisioned via
+the provided Swarm compose configuration. Flatcar's immutable, container-optimised runtime makes it well suited to
+on-premises and edge deployments where operational simplicity, security hardening, and a minimal host footprint are
+priorities.
 
 ---
 
