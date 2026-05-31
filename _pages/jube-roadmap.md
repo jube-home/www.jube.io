@@ -111,11 +111,11 @@ analyst who lives in it all day. Workflow, information architecture, and interac
 LLM-driven automation within the case management workflow via Semantic Kernel, supporting narrative generation, case
 summarisation, next-action recommendation, and structured reporting. Designed to reduce analyst burden on routine
 documentation tasks and accelerate case throughput without reducing quality or auditability. Case management functions
-otherwise available via API are exposed through the same integration layer.
+otherwise available via API are exposed through the same integration layer and invocable given prompts via Semantic Kernel.
 
 **Vector Similarity Analysis**
 Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
-across time, entity, and typology dimensions. Supports pattern recognition at scale, typology development, and the
+across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development, and the
 surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex layering and
 integration-stage AML typologies.
 
