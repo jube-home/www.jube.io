@@ -17,8 +17,8 @@ menu__settings:
       url: '/jube-support'
     - title: 'Partners'
       url: '/jube-partners'
-    - title: 'Whitepaper'
-      url: '/jube-whitepaper'
+    - title: 'Whitepapers'
+      url: '/jube-whitepapers'
     - title: 'Resources'
       submenu:
         - title: 'Roadmap'

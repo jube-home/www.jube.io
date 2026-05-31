@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Jube Whitepaper
-permalink: /jube-whitepaper/
+title: Jube Whitepapers
+permalink: /jube-whitepapers/
 ---
 
 Practitioner-focused whitepapers on real-time Anti Money Laundering and Fraud Detection — written by the developer of
