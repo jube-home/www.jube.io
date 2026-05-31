@@ -25,4 +25,4 @@ without Run Books, the importance of analytical methodology over template rules,
 within Jube's extensibility framework while remaining compliant with its AGPLv3 licence. Candid, experience-led, and
 written for practitioners who want to build a practice rather than merely survive a project.
 
-[Download PDF](/whitepapers/JubeWhitepaperNoBigRubberShoes.pdf)
+[Download PDF](/JubeWhitepaperNoBigRubberShoes.pdf)
