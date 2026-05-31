@@ -25,6 +25,8 @@ menu__settings:
           url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
         - title: 'Documentation'
           url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'
+        - title: 'Roadmap'
+          url: '/jube-roadmap/'
         - title: 'AML Monitoring Compliance Guidance [PDF]'
           url: '/JubeAMLMonitoringComplianceGuidance.pdf'
         - title: 'Jube Training Plan [PDF]'
