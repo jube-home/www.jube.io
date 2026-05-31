@@ -91,7 +91,7 @@ changes.
 
 ---
 
-## Version 1.0.0 — User Experience and Continuous Integration — March 2027
+## Version 1.0.0 — Tests and User Experience — March 2027
 
 Version 1.0.0 is the full platform release. The backend capability established in 0.1.0 is complete; this release
 delivers the user experience to match. It is a comprehensive UX investment.
