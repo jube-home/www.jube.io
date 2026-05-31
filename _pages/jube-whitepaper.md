@@ -18,8 +18,6 @@ New whitepapers are published periodically. Check back here, or subscribe to be 
   </form>
 </div>
 
-Published papers as follows:
-
 ---
 
 ### June 2026: No Big Rubber Shoes: A Jaded Practitioner's Guide to Building on Jube
