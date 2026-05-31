@@ -23,7 +23,7 @@ menu__settings:
       submenu:
         - title: 'Roadmap'
           url: '/jube-roadmap/'
-        - title: 'Software (GitHub)'
+        - title: 'GitHub'
           url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
         - title: 'Documentation'
           url: 'https://jube-home.github.io/aml-fraud-transaction-monitoring/'
