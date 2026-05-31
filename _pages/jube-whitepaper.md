@@ -16,10 +16,6 @@ whitepaper, development updates and work from the field.
   </form>
 </div>
 
----
-
-## Published
-
 ### June 2026: No Big Rubber Shoes: A Jaded Practitioner's Guide to Building on Jube
 
 A practical guide for System Integrators embarking on a Jube implementation for real-time Anti Money Laundering and
