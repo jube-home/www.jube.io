@@ -84,6 +84,12 @@ compliance focus — prioritising attributes that can be verified with confidenc
 precision without the substance to support it. City-level geolocation is deliberately out of scope; the dataset is
 designed around what remains accurate and defensible under compliance scrutiny, not what looks compelling in a demo.
 
+**Transaction Journey Protocol**
+Currently the HTTP Adaptation, which exists for remote microservice model recall returns just a single value, the
+score. While the score is the primary output and carried through to activation, in the case page, further analysis of
+how the model arrived at the decision is valuable, the so-called transaction journey. Transaction Journey will be
+protocol between the model recall microservice and Jube to present the scores quantitative origin.
+
 **Cluster, High Availability and Flatcar Linux Validation**
 Support of fully active-active clustered deployments with no single point of failure, suitable for primary and Disaster
 Recovery configurations. The reference cluster topology comprises multiple Jube application nodes, a Patroni-managed
