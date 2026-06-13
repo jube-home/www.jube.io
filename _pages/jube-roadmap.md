@@ -107,7 +107,7 @@ host lifecycle.
 
 ---
 
-## Version 1.0.0 — Tests and User Experience — March 2027
+## Version 1.0.0 — Tests and User Experience — January 2027
 
 Version 1.0.0 is the full platform release. The backend capability established in 0.1.0 is complete; this release
 delivers the user experience to match. It is a comprehensive UX investment.
@@ -143,6 +143,8 @@ useful.
 The case management interface will be rebuilt from the ground up with serious usability at its core. The existing
 interface was designed for functional completeness; the redesigned interface is being designed for the compliance
 analyst who lives in it all day. Workflow, information architecture, and interaction design are all in scope.
+
+## Version 1.1.0 — AI Case Management Facilitation — July 2027
 
 **AI-Assisted Case Automation**
 LLM-driven automation within the case management workflow via Semantic Kernel, supporting narrative generation, case
