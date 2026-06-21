@@ -124,6 +124,11 @@ The
 configuration interface — covering rule management, model configuration, entity setup, and platform administration —
 will be migrated as a direct translation of existing functionality.
 
+The core information architecture will be unchanged, although the tree based navigation will be replaced with a hub card
+journey approach, reducing navigation depth and making the path through configuration more explicit. Hub cards will also
+surface significantly more contextual information than the current tree allows, including status, activity, and
+configuration state at a glance.
+
 **Visualisation**
 The visualisation layer will remain SQL-led and largely unchanged in its underlying approach. The port to Chart.js will
 replace the current rendering implementation while preserving the query-driven model. The primary UX improvement will be
