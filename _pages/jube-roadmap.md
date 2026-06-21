@@ -77,20 +77,13 @@ compliance posture.
 The ability to add entities, values, or identifiers directly to a List from within the Case Journal, without leaving the
 investigation workflow. Reduces analyst friction and accelerates response.
 
-**IP Intelligence Dataset Integration**
-Integration of a proprietary IP intelligence dataset built from multiple corroborating public sources, cross-validated
-to produce reliable attribution at the country, ASN, and network type level. The dataset is maintained with a specific
-compliance focus — prioritising attributes that can be verified with confidence over those that carry an impression of
-precision without the substance to support it. City-level geolocation is deliberately out of scope; the dataset is
-designed around what remains accurate and defensible under compliance scrutiny, not what looks compelling in a demo.
-
 **Transaction Journey Protocol**
 Currently the HTTP Adaptation, which exists for remote microservice model recall returns just a single value, the
 score. While the score is the primary output and carried through to activation, in the case page, further analysis of
 how the model arrived at the decision is valuable, the so-called transaction journey. Transaction Journey will be
 protocol between the model recall microservice and Jube to present the scores quantitative origin.
 
-**Cluster, High Availability and Flatcar Linux Validation**
+**Jube Reference Cluster, High Availability and Flatcar Linux Validation**
 Support of fully active-active clustered deployments with no single point of failure, suitable for primary and Disaster
 Recovery configurations. The reference cluster topology comprises multiple Jube application nodes, a Patroni-managed
 PostgreSQL cluster with automatic failover coordinated via etcd, and a Redis master-replica setup with Sentinel for
@@ -159,6 +152,13 @@ across time, entity, and typology dimensions. Intended to support pattern recogn
 and the
 surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex layering and
 integration-stage AML typologies.
+
+**IP Intelligence Dataset Integration**
+Integration of a proprietary IP intelligence dataset built from multiple corroborating public sources, cross-validated
+to produce reliable attribution at the country, ASN, and network type level. The dataset is maintained with a specific
+compliance focus — prioritising attributes that can be verified with confidence over those that carry an impression of
+precision without the substance to support it. City-level geolocation is deliberately out of scope; the dataset is
+designed around what remains accurate and defensible under compliance scrutiny, not what looks compelling in a demo.
 
 ---
 
