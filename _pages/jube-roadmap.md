@@ -59,6 +59,8 @@ transaction and activation rule level. The intention is to increase adoption of 
 assuring material actions are guaranteed to only happen the once, regardless the amount of reprocessing having been
 instructed (which is an especially material issue in the case of the incrementing of TTL Counters).
 
+Invocation hash on Json POST or AMQP body to improve retry logic in Jube Cluster HAProxy or AMQP ACK NACK patterns.
+
 **Manual Case Creation via Transaction Report Page**
 The ability to retroactively create cases on the basis of results in the aforementioned Transaction Report page.
 Structured case creation directly from transaction and alert context, with full audit trail and journal from point of
