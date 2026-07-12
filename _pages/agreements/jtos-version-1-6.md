@@ -606,6 +606,8 @@ continuing engagement.
 
 ## 18. Security Patching and Vulnerability Management
 
+Security Patching and Vulnerability Management is an Enterprise Support benefit.
+
 1. The Provider shall make reasonable efforts to address credible, documented security vulnerabilities identified in the
    Jube platform software through timely patches and releases, prioritised according to the severity and exploitability
    of the vulnerability as assessed by the Provider.
@@ -622,14 +624,16 @@ continuing engagement.
 
 ## 19. Regulatory Feature Mapping
 
-Regulatory feature mapping is an Enterprise Support benefit. The Provider maintains Jube's feature set with the
-objective of supporting compliance with applicable AML and fraud detection regulatory requirements, and provides
-mapping of platform functionality against the Client's applicable regulatory requirements as part of Enterprise
-Support. This does not constitute legal advice or regulatory advice, and is provided without warranty as to the
-sufficiency of any implementation for the Client's specific regulatory obligations. The Client remains solely
-responsible for its own regulatory compliance and for obtaining appropriate legal and compliance advice. PAYG and
-Training and Integration Clients do not receive regulatory feature mapping as part of their engagement, though the
-Provider may respond to an ad hoc regulatory query as ordinary billable Services time upon request.
+Regulatory feature mapping is an Enterprise Support benefit.
+
+The Provider maintains Jube's feature set with the objective of supporting compliance with applicable AML and fraud
+detection regulatory requirements, and provides mapping of platform functionality against the Client's applicable 
+regulatory requirements as part of Enterprise Support. This does not constitute legal advice or regulatory advice, 
+and is provided without warranty as to the sufficiency of any implementation for the Client's specific regulatory 
+obligations. The Client remains solely responsible for its own regulatory compliance and for obtaining appropriate 
+legal and compliance advice. PAYG and Training and Integration Clients do not receive regulatory feature mapping 
+as part of their engagement, though the Provider may respond to an ad hoc regulatory query as ordinary billable 
+Services time upon request.
 
 Regulatory feature mapping is conducted on the basis that the relevant regulations, guidance, and technical standards
 are available in the English language. The Provider shall not be obliged to interpret, translate, or assess regulatory
