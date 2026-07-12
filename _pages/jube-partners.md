@@ -42,5 +42,5 @@ on this site and do not vary by channel.
 Put your team through the [Jube Training and Integration programme](/jube-training).
 Everything else follows from there.
 
-*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-5) —
+*All engagements are delivered under the [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-6) —
 published, versioned, and written to be clear and equitable for both parties.*
