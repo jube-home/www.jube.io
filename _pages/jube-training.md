@@ -620,7 +620,7 @@ leveraging the AGPLv3-licensed Jube platform.
 ## Governance and insurance
 
 All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
+[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-6) — published, versioned,
 and written to be clear and equitable for both parties. Professional insurances are
 carried at GBP 1M per claim, subject to exclusions as set out in the JTOS.
 
@@ -643,7 +643,7 @@ quotes under this offer.
 
 There is no proposal step. This page, together with the
 [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) and the
-[JTOS](/agreements/jtos-version-1-7), constitutes the complete published offer. The
+[JTOS](/agreements/jtos-version-1-6), constitutes the complete published offer. The
 quote adds only the parameters specific to your engagement:
 
 1. **Quote issued** — Jube raises a formal quote for digital signature, referencing this

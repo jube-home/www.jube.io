@@ -32,7 +32,7 @@ at any time, including an AI-generated summary of status and suggested next step
 
 **The business model is retained professional service hours, with a fair-use,
 no-overage commitment.** The monthly amount is agreed in advance, invoiced monthly in
-arrears as provided for in the [JTOS](/agreements/jtos-version-1-7), and — within fair
+arrears as provided for in the [JTOS](/agreements/jtos-version-1-6), and — within fair
 use — is the amount invoiced, full stop. Professional services billing typically makes
 its margin in the overage, which is exactly where bill shock lives; this model removes
 the category.
@@ -253,7 +253,7 @@ Carlo simulation.
 ## From this page to a signed engagement
 
 There is no proposal step. This page, together with the
-[JTOS](/agreements/jtos-version-1-7), constitutes the complete published offer. The
+[JTOS](/agreements/jtos-version-1-6), constitutes the complete published offer. The
 quote adds only the parameters specific to your engagement:
 
 1. **Prerequisite** — completion of the
@@ -322,7 +322,7 @@ leveraging the AGPLv3-licensed Jube platform.
 ## Governance and insurance
 
 All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
+[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-6) — published, versioned,
 and written to be clear and equitable for both parties. Professional indemnity
 insurance is carried at GBP 1M per claim, subject to exclusions as set out in the
 JTOS. Where work is delivered at your premises, public liability insurance is
