@@ -157,13 +157,14 @@ engagement. **Pre-production is a milestone of the month, not a consequence of i
 organisations working to a regulatory deadline, a migration cut-over, or a licence
 condition, that is ordinarily the whole reason to choose it.
 
-Two things are worth saying plainly. First, the month only works if the team is genuinely
-released for it — a room half-populated by people answering email is slower than a
-well-run remote programme, and the three implementation weeks in particular require the
-infrastructure and integration people to be available rather than merely nearby. Second,
-the month presumes your environments exist to deploy into. Where they do not, that is
-identified during the lead-in and dealt with before travel, because it is the one thing
-that can waste a week that has already been paid for.
+Two things are worth saying in advance. The first is that the month depends on the team
+being genuinely released for it: a room half-populated by people answering email is
+slower than a well-run remote programme, and the three implementation weeks in particular
+need the infrastructure and integration people available rather than merely nearby. That
+is worth weighing honestly when choosing between the two modes. The second is that the
+month assumes there are environments to deploy into. Where there are not, it is far
+better to find that during the lead-in than on the first morning, and the lead-in is
+arranged with exactly that in mind.
 
 ---
 
@@ -171,10 +172,10 @@ that can waste a week that has already been paid for.
 
 One rate card governs everything Jube charges for time, and no rate is invented per
 engagement. Keener rates on that card are earned by ongoing commitment — a retained
-support arrangement — and by nothing else. In particular, **Jube does not derate for
-on-site work as a matter of policy**: travelling to you consumes a month of capacity
-outright, and it would be a strange rate card that made the more demanding engagement the
-cheaper one per hour.
+support arrangement — rather than by the size of any single piece of work. **On-site
+delivery is not derated**, and it is worth saying why: travelling to you consumes a month
+of capacity outright rather than reserving it, so a card that made the more demanding
+engagement the cheaper one per hour would be hard to justify to anyone else on it.
 
 ### Remote delivery — $6,250
 
@@ -208,9 +209,8 @@ you and are not recharged, and subsistence is charged on the HMRC international 
 basis set out below. **Travel days are not billed** — days spent in transit do not consume programme hours and are not charged.
 
 Set against remote delivery, the on-site month is 2.8 times the fee for 2.8 times the
-hours. The rate is identical; only the quantity differs. There is nothing to reconcile
-between the two figures, because they are the same rate applied to a different number of
-hours.
+hours. The rate is identical; only the quantity differs — the two figures are the same
+rate applied to a different number of hours.
 
 The fee is fixed until pre-production conditions are satisfied, although not more than
 four months from commencement for remote delivery, or two months for the on-site month.
@@ -232,12 +232,12 @@ no expense claim, receipt reconciliation, or reimbursement arises. For a month-l
 corporate rate will almost always beat an individual booking, so this is usually cheaper
 for you than the alternative, as well as simpler for both sides.
 
-**Economy class is fine.** There is no business class stipulation and none is charged for.
-There is one requirement, and it concerns timing rather than cabin: flights are booked
-within social hours. No overnight departures, no red-eyes, and no arrival that leaves the
-first working day to be delivered on no sleep. Where a direct daytime routing is not
-available, an indirect routing with a layover, or an additional night either side, is
-preferred to a night flight — and costs you less than a business class seat would.
+**Economy class is fine** — there is no business class stipulation and none is charged
+for. The one request concerns timing rather than cabin: flights booked within social
+hours where possible. An overnight departure or a red-eye arrival tends to cost the first
+working day, which serves neither side well. Where no direct daytime routing exists, a
+routing with a layover, or an additional night either side, works better than a night
+flight, and will still come to less than a premium cabin would.
 
 What remains is subsistence, and it is charged on a published, externally-set basis rather
 than as a discretionary claim:
@@ -401,10 +401,10 @@ when asked for:
 
 - **The working week is yours.** Where the week runs Sunday to Thursday, the training
   week runs Sunday to Thursday. It is not treated as a variation from a standard.
-- **Blocks are scheduled around daily prayer, never across it.** The two-block day exists
-  partly because it fits the rhythm of a working day punctuated by prayer far better than
-  a single long session does. Sessions break for prayer; they are not paused mid-topic
-  and resumed in a thinner room.
+- **Blocks are scheduled around daily prayer rather than across it.** The two-block day
+  suits a working day punctuated by prayer rather better than a single long session does:
+  sessions break for prayer, instead of being paused mid-topic and resumed in a thinner
+  room.
 - **Ramadan is planned for, not worked through.** Where the month falls within the
   engagement, session length, timing, and the balance between curriculum and
   implementation are adjusted to the shortened working day. Where you would rather the
@@ -413,11 +413,11 @@ when asked for:
 - **National and religious holidays** are identified during the lead-in and built into
   the plan, rather than discovered on arrival.
 
-None of this is complicated. It is mentioned only because delivery models designed
-elsewhere often arrive assuming a Monday to Friday week and an uninterrupted nine to
-five, and then treat everything else as an exception to be managed. Jube does not, and
-after some years of delivering into these markets the schedule is put together with the
-local week and the local day as the starting point.
+None of this is complicated, and it is mentioned only because it is easy to get wrong
+from a distance. A schedule built around a Monday to Friday week and an uninterrupted
+nine to five meets a great many exceptions in these markets, and managing them one at a
+time makes for a poor month. After some years of delivering into these markets, it is
+easier to start from the local week and the local day and work outwards from there.
 
 ---
 
@@ -620,7 +620,7 @@ leveraging the AGPLv3-licensed Jube platform.
 ## Governance and insurance
 
 All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-6) — published, versioned,
+[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
 and written to be clear and equitable for both parties. Professional insurances are
 carried at GBP 1M per claim, subject to exclusions as set out in the JTOS.
 
@@ -643,7 +643,7 @@ quotes under this offer.
 
 There is no proposal step. This page, together with the
 [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) and the
-[JTOS](/agreements/jtos-version-1-6), constitutes the complete published offer. The
+[JTOS](/agreements/jtos-version-1-7), constitutes the complete published offer. The
 quote adds only the parameters specific to your engagement:
 
 1. **Quote issued** — Jube raises a formal quote for digital signature, referencing this
