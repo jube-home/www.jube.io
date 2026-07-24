@@ -66,8 +66,7 @@ Retained Support or Enterprise Support without having completed Training and Int
 constitutes the technical and commercial gateway to any ongoing support arrangement.
 
 **Retained Support** is available to certified Clients who require ongoing access to the Provider's
-expertise without a minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a
-Minimum
+expertise without a minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum
 Monthly Retainer, giving Clients flexible access to support as their operational needs evolve without any prepayment
 obligation.
 
@@ -158,24 +157,18 @@ Enterprise Support rung, or concentrated, as in a fixed-scope engagement committ
 a single billing period; both are recognised on the same schedule, and clause 2.12 governs the rate applicable to
 concentrated commitment.
 
-**Retained Support (formerly PAYG):** A support arrangement under which a certified Client accesses ongoing Services
-without a
-minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum Monthly
-Retainer. The
-absence of a minimum commitment period and ancillary service obligations distinguishes Retained Support from Enterprise
-Support;
+**Retained Support (formerly PAYG):** A support arrangement under which a certified Client accesses ongoing Services without a
+minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum Monthly Retainer. The
+absence of a minimum commitment period and ancillary service obligations distinguishes Retained Support from Enterprise Support;
 billing mechanics and rhythm are otherwise identical.
 
 **Enterprise Support:** A support arrangement under which a certified Client commits to a minimum annual engagement,
-with access to callout obligations under clause 3.12. Enterprise Support operates on the same in-arrears monthly billing
-model
-as Retained Support, with a larger Minimum Monthly Retainer as specified in the applicable Work Order. The premium of
-Enterprise
+with access to callout obligations under clause 3.12. Enterprise Support operates on the same in-arrears monthly billing model
+as Retained Support, with a larger Minimum Monthly Retainer as specified in the applicable Work Order. The premium of Enterprise
 Support is the level of committed service and ancillary obligations, not a different payment model.
 
 **Minimum Monthly Retainer:** The minimum fee payable by the Client in respect of each monthly billing period during
-which an engagement is active, as specified in the applicable Work Order. For ad hoc Retained Support engagements and
-the integration
+which an engagement is active, as specified in the applicable Work Order. For ad hoc Retained Support engagements and the integration
 support component of Training and Integration, the Minimum Monthly Retainer is one (1) hour at the applicable hourly
 rate. For Enterprise Support engagements, the Minimum Monthly Retainer is as specified in the applicable Work Order and
 shall not be less than one (1) hour at the applicable hourly rate. The Minimum Monthly Retainer is payable in respect of
@@ -194,8 +187,7 @@ maintaining an active monthly engagement under this Agreement — together with 
 availability commitments set out in Section 3, including the four (4) business hour response commitment under clause
 3.3. Where a Client's Minimum Monthly Retainer meets the higher threshold specified for Enterprise Support, it
 additionally unlocks the further bundle of commitments set out across this Agreement: 24/7 callout under clause 3.12,
-the security patching response commitment under Section 18, and regulatory feature mapping under Section 19. These are
-not independent add-ons; they
+the security patching response commitment under Section 18, and regulatory feature mapping under Section 19. These are not independent add-ons; they
 are different facets of the same underlying purpose — keeping the Provider's familiarity with the Client's
 implementation current, and the Provider's confidence in supporting it, so that the commitments the Client is paying
 for can actually be relied upon when they are needed, including in support of the Client's own operational uptime. A
@@ -279,25 +271,28 @@ above. The clauses below set out the operative payment obligations governing eac
    has concluded, the first instalment falls due notwithstanding termination; and hours recorded beyond the included
    allocation up to the effective termination date shall be invoiced in accordance with clause 2.3.
 5. There is no prepayment requirement for the commencement of any Work Order. Services commence on the basis of the
-   applicable Work Order and Service Activation Letter, with fees invoiced in accordance with this Section. Travel and
-   subsistence under clause 2.7 are the sole exception, being third-party costs carried on the Client's behalf rather
-   than Services, and may be invoiced as incurred.
+   applicable Work Order and Service Activation Letter, with fees invoiced in accordance with this Section. Subsistence under clause 2.7 is the sole exception, being an expense rather than
+   Services, and may be invoiced as incurred.
 6. If any payment is not made when due, the Provider reserves the right to charge statutory interest at the rate
    applicable under the Late Payment of Commercial Debts (Interest) Act 1998, accruing daily until payment is received
    in full.
-7. To the extent that on-site visits to the Client's premises (or any other location) are required, the Provider shall
-   be entitled to charge for reasonable travel and subsistence expenses. Such expenses must be agreed with the Client in
-   advance, shall be estimated in the applicable Work Order, and shall not be exceeded without the Client's written
-   agreement. They are charged without markup or administration fee, on the following basis:
-   a. accommodation and subsistence are billed in accordance with the HMRC international scale rate directory for the
-   destination (as updated from time to time —
-   see [HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk));
-   b. air travel, visas, work permits, any required insurance loadings or vaccinations, and local transport not provided
-   for within the scale rate are billed at cost against receipts;
-   c. days spent in transit to or from the location of On-Site Delivery are not billed as time and consume no hours
+7. To the extent that on-site visits to the Client's premises (or any other location) are required, travel and
+   subsistence shall be dealt with as follows. Such arrangements must be agreed with the Client in advance and shall be
+   recorded in the applicable Work Order, and no amount is charged with markup or administration fee:
+   a. air travel and accommodation shall be booked and paid for directly by the Client, in the Client's own name and
+   under the Client's own travel arrangements. No amount in respect of those items shall be invoiced to or recharged by
+   the Provider, and no reimbursement obligation arises in respect of them;
+   b. subsistence is billed in accordance with the HMRC international scale rate directory for the destination (as
+   updated from time to time —
+   see [HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk)), estimated
+   in the Work Order and not exceeded without the Client's written agreement;
+   c. visas, work permits, any required insurance loadings or vaccinations, and local transport not provided for within
+   the scale rate are billed at cost against receipts, save to the extent the Client obtains or pays for them directly;
+   d. days spent in transit to or from the location of On-Site Delivery are not billed as time and consume no hours
    included within any fixed fee or committed allocation; and
-   d. where the Client elects to book and pay for air travel and accommodation directly under its own travel policy,
-   nothing in respect of those items shall be recharged, and only subsistence shall be claimed.
+   e. where the parties exceptionally agree in the Work Order that the Provider shall book air travel or accommodation,
+   those items are billed at cost against receipts and may be invoiced as incurred, and clause 11.6 shall apply to any
+   amount irrecoverably committed.
 8. Where the Provider is registered for Value Added Tax (VAT) with HMRC, applicable VAT will be charged on fees at the
    prevailing rate and shown separately on invoices. Clients outside the UK should satisfy their own VAT or equivalent
    obligations in their respective jurisdictions.
@@ -565,10 +560,12 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
    Client in writing at that time.
 6. Where the dates for a period of On-Site Delivery have been confirmed in a Work Order, the Client may postpone them
    once without charge by written notice given not less than thirty (30) days before the first scheduled day, and the
-   parties shall agree revised dates in accordance with the Provider's capacity. Where a postponement is requested less
-   than thirty (30) days before the first scheduled day, or where a second or subsequent postponement is requested, any
-   travel, accommodation, permit, or other third-party cost already irrecoverably committed in respect of the scheduled
-   period remains payable by the Client at cost, whether or not the engagement is otherwise terminated. No other charge
+   parties shall agree revised dates in accordance with the Provider's capacity. Air travel and accommodation being held by the Client under clause 2.7(a), any cost
+   arising from their cancellation or amendment is a matter between the Client and its own travel providers. Where a
+   postponement is requested less than thirty (30) days before the first scheduled day, or where a second or subsequent
+   postponement is requested, any permit cost, or any travel or accommodation cost exceptionally booked by the Provider
+   under clause 2.7(e), already irrecoverably committed in respect of the scheduled period remains payable by the Client
+   at cost, whether or not the engagement is otherwise terminated. No other charge
    arises in respect of a postponement. This clause does not apply where the Provider postpones, and the Provider shall
    bear its own irrecoverable costs in that event.
 
@@ -711,8 +708,7 @@ detection regulatory requirements, and provides mapping of platform functionalit
 regulatory requirements as part of Enterprise Support. This does not constitute legal advice or regulatory advice,
 and is provided without warranty as to the sufficiency of any implementation for the Client's specific regulatory
 obligations. The Client remains solely responsible for its own regulatory compliance and for obtaining appropriate
-legal and compliance advice. Retained Support and Training and Integration Clients do not receive regulatory feature
-mapping
+legal and compliance advice. Retained Support and Training and Integration Clients do not receive regulatory feature mapping
 as part of their engagement, though the Provider may respond to an ad hoc regulatory query as ordinary billable
 Services time upon request.
 
@@ -807,6 +803,10 @@ The territorial limits of the Provider's insurances shall extend to the location
 of the scheduled period. The Provider shall confirm this in advance of travel, and shall not attend a location falling
 outside the territorial limits then in force until cover has been extended to it.
 
+For the avoidance of doubt, this Section applies solely to parties engaged with the Provider under a Work Order. The use
+of Jube as AGPLv3-licensed software carries no insurance or indemnity obligations on the part of the Provider, and any
+rights and obligations arising from that licence are governed exclusively by its terms.
+
 ## 23. Co-Delivery
 
 1. Co-delivery is a distinct service arrangement under which the Provider works alongside an intermediary's team in the
@@ -847,13 +847,15 @@ allocation of responsibility between the parties, or the protections either part
 1. Application: This Section applies where the applicable Work Order provides for On-Site Delivery. Where it does not,
    the Services are delivered remotely in accordance with clause 3.1.
 2. Work Order particulars: A Work Order providing for On-Site Delivery shall record the location of delivery, the
-   confirmed dates of the scheduled period, the estimated travel and subsistence under clause 2.7, and any Client
-   security, access, or screening requirements notified to the Provider before acceptance.
+   confirmed dates of the scheduled period, the travel and accommodation to be booked by the Client and the
+   estimated subsistence under clause 2.7, and any Client security, access, or screening requirements notified to the
+   Provider before acceptance.
 3. Client obligations: The Client shall, at its own cost and for the duration of the scheduled period, provide safe and
    lawful access to the location of delivery, a suitable working space, network access sufficient for the Services, and
    reasonable access to the personnel, systems, and environments upon which delivery depends. The Client shall notify
-   the Provider before acceptance of the Work Order of any induction, screening, clearance, or documentation requirement
-   applicable to attendance, and shall provide such reasonable assistance as the Provider requires to satisfy it.
+   the Provider before acceptance of the Work Order of any induction, screening, clearance, insurance evidence, or
+   documentation requirement applicable to attendance, and shall provide such reasonable assistance as the Provider
+   requires to satisfy it. Section 22 governs the insurances the Provider maintains in respect of On-Site Delivery.
 4. Provider obligations: The Provider shall comply with the Client's reasonable site policies, security procedures,
    health and safety requirements, and inductions applicable to visitors at the location of delivery, and shall ensure
    that its personnel do likewise. Compliance with a Client policy under this clause does not vary this Agreement, and
@@ -899,6 +901,8 @@ allocation of responsibility between the parties, or the protections either part
 11. Postponement: Clause 11.6 governs the postponement of confirmed dates.
 12. Expenses: Clause 2.7 governs travel and subsistence, and records that days spent in transit are not billed.
 13. No establishment: Clause 13.3 governs the effect of attendance on jurisdiction and establishment.
+14. Insurance: Section 22 governs the Professional Indemnity and Public Liability insurances maintained in respect of
+    On-Site Delivery, and the territorial extension of those insurances to the location of delivery.
 
 ## Appendix A: Data Processing (GDPR)
 

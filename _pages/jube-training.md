@@ -57,17 +57,17 @@ Both modes deliver the same eleven sessions, the same practical exercises, the s
 days of custom gap development, and the same certification. What differs is how the
 implementation support is delivered, and therefore how long the project takes.
 
-| | **Remote** | **On-site month** |
-|---|---|---|
-| Elapsed time to pre-production | Seven weeks, plus integration thereafter | Within the month |
-| Curriculum | Eleven sessions over seven weeks | Eleven sessions in week one, two blocks a day |
-| Session length | Capped at three hours, one at a time | Two three-hour blocks a day |
-| Implementation support | 20 hours, asynchronous | 100 hours in the room across three weeks, plus 10 on call |
-| Total hours | 50 | 140 |
-| Fee | $6,250 | $13,650 |
-| Travel and subsistence | None | HMRC scale rate, agreed in advance; travel days not billed |
-| Implementation reviews | Twice-weekly, remote | Daily, in the room |
-| Recordings | Yes | Yes |
+|                                | **Remote**                               | **On-site month**                                         |
+|--------------------------------|------------------------------------------|-----------------------------------------------------------|
+| Elapsed time to pre-production | Seven weeks, plus integration thereafter | Within the month                                          |
+| Curriculum                     | Eleven sessions over seven weeks         | Eleven sessions in week one, two blocks a day             |
+| Session length                 | Capped at three hours, one at a time     | Two three-hour blocks a day                               |
+| Implementation support         | 20 hours, asynchronous                   | 100 hours in the room across three weeks, plus 10 on call |
+| Total hours                    | 50                                       | 140                                                       |
+| Fee                            | $6,250                                   | $13,650                                                   |
+| Travel and subsistence         | None                                     | You book travel directly; subsistence at HMRC scale rate  |
+| Implementation reviews         | Twice-weekly, remote                     | Daily, in the room                                        |
+| Recordings                     | Yes                                      | Yes                                                       |
 
 ### Remote delivery
 
@@ -180,11 +180,11 @@ Priced at the published **project rate of USD 125 per hour**. A fixed-scope remo
 programme carries scope commitment, but its fifty hours are spread across seven weeks
 and do not represent concentrated capacity.
 
-| Line Item             | Hours  | Rate    | Fee        |
-|-----------------------|--------|---------|------------|
-| Training Delivery     | 30     | $125    | $3,750     |
-| Asynchronous Support  | 20     | $125    | $2,500     |
-| **Total**             | **50** | | **$6,250** |
+| Line Item            | Hours  | Rate | Fee        |
+|----------------------|--------|------|------------|
+| Training Delivery    | 30     | $125 | $3,750     |
+| Asynchronous Support | 20     | $125 | $2,500     |
+| **Total**            | **50** |      | **$6,250** |
 
 ### On-site month — $13,650
 
@@ -195,15 +195,17 @@ publishes. The thirty curriculum hours remain at the project rate: they are the 
 thirty hours the remote client buys, and they are not discounted for being delivered in
 person.
 
-| Line Item                       | Hours   | Rate            | Fee         |
-|---------------------------------|---------|-----------------|-------------|
-| Training Delivery               | 30      | $125            | $3,750      |
-| On-site Implementation Support  | 100     | $90 *(floor)*   | $9,000      |
-| On-call Asynchronous Support    | 10      | $90 *(floor)*   | $900        |
-| **Total**                       | **140** |                 | **$13,650** |
+| Line Item                      | Hours   | Rate          | Fee         |
+|--------------------------------|---------|---------------|-------------|
+| Training Delivery              | 30      | $125          | $3,750      |
+| On-site Implementation Support | 100     | $90 *(floor)* | $9,000      |
+| On-call Asynchronous Support   | 10      | $90 *(floor)* | $900        |
+| **Total**                      | **140** |               | **$13,650** |
 
-Travel and subsistence are additional, charged on the HMRC international scale rate
-basis set out below. **Travel days are not billed** — days spent in transit do not consume programme hours and are not charged.
+Travel and subsistence are additional: flights and accommodation are booked directly by
+you and are not recharged, and subsistence is charged on the HMRC international scale rate
+basis set out below. **Travel days are not billed** — days spent in transit do not consume programme hours and are not
+charged.
 
 Set against remote delivery, the on-site month is 2.2 times the fee for 2.8 times the
 hours. The rate falls as the commitment rises, exactly as the rate card provides.
@@ -222,39 +224,34 @@ gap development into the core product** — see
 
 ### Travel and subsistence (on-site delivery only)
 
-Travel and subsistence are charged on a published, externally-set basis rather than as a
-discretionary expense claim. Expenses are billed in accordance with the **HMRC
-international scale rate directory** for the destination country, as updated from time to
-time — see the
-[HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk).
-All expenses are agreed with the client in advance.
+**Flights and accommodation are booked and paid directly by you**, under your own
+corporate travel policy and in your own name. Nothing in respect of them is recharged, and
+no expense claim, receipt reconciliation, or reimbursement arises. For a month-long stay a
+corporate rate will almost always beat an individual booking, so this is usually cheaper
+for you than the alternative, as well as simpler for both sides.
 
-- **Accommodation and subsistence** — at the HMRC published scale rate for the
-  destination. The rate is set by HMRC, not by Jube, and is the same rate the UK tax
-  authority accepts for any UK employer sending staff to that country.
-- **Air travel** — at cost, against receipts. Economy for flights under six hours;
-  premium economy or equivalent above that, where the itinerary requires delivery to
-  begin the following morning.
-- **Visas, work permits, and any required insurance loadings or vaccinations** — at cost.
-  A month's presence engages permit requirements in some jurisdictions that a short visit
-  does not; this is checked during the lead-in, not on arrival.
+What remains is subsistence, and it is charged on a published, externally-set basis rather
+than as a discretionary claim:
+
+- **Subsistence** — at the **HMRC international scale rate** for the destination, as
+  updated from time to time (see the
+  [HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk)).
+  The rate is set by HMRC, not by Jube, and is the same rate the UK tax authority accepts
+  for any UK employer sending staff to that country. It is estimated in the quote before
+  signature and cannot drift upward during the stay.
+- **Visas, work permits, and any required vaccinations or insurance loadings** — at cost,
+  where the Jube side must obtain them. A month's presence engages permit requirements in
+  some jurisdictions that a short visit does not; this is checked during the lead-in, not
+  on arrival.
 - **Local transport** — at cost, or within the scale rate where it provides for it.
 
-The scale-rate basis is used deliberately. It gives a figure that can be estimated
-accurately in the quote before signature, cannot drift upward during a month-long stay,
-requires no line-by-line expense adjudication at month end, and is set by a third party
-with no interest in the outcome. Nobody has to form a view on whether a dinner was
-reasonable.
+The effect is that the on-site month carries no expense float in either direction: you
+hold your own travel arrangements, Jube claims a published per-diem, and nobody has to
+form a view at month end on whether a dinner was reasonable.
 
 **Travel days are not billed.** Days spent in transit consume no programme hours and are
 not charged as time.
 
-Where your organisation prefers it, flights and accommodation may be booked directly by
-you under your own corporate travel policy, in which case only subsistence is claimed.
-For a month-long stay a corporate rate will usually beat an individual booking, and this
-is the recommended route.
-
-An indicative total is stated in the quote and is not exceeded without written agreement.
 Venue and catering at your own premises are your responsibility; where a neutral venue is
 required, it is priced according to location and scope.
 
@@ -282,11 +279,10 @@ client's protection changes: no advance payment, and the balance still contingen
 outcome. It is the same structure, arriving sooner — which is the whole proposition of
 the variant, applied to the commercials as well as the delivery.
 
-Travel and subsistence are the sole exception to billing in arrears: where flights and
-accommodation are booked by Jube, they are invoiced as incurred, since they are
-third-party costs carried on your behalf rather than time. Non-refundable travel already
-committed remains payable if the on-site month is postponed at short notice — which is
-the practical reason the direct-booking route above is recommended.
+Subsistence is the sole exception to billing in arrears, and is invoiced monthly as
+incurred. Because flights and accommodation are held in your own name, a postponement
+costs Jube nothing to recover from you — whatever your own bookings allow is a matter
+between you and your travel provider, and there is no third-party cost to pass back.
 
 ---
 
@@ -420,10 +416,15 @@ local week and the local day as the starting point.
 
 - **Training direct from the developer** — Learn Jube from its developer, with no second-hand interpretation.
 - **Rapid mastery** — Become proficient in weeks rather than months, accelerating your implementation timeline.
-- **True independence** — Own your AML and transaction monitoring stack, free from vendor lock-in and restrictive contracts.
-- **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery significantly reduce the cost of getting to production.
-- **Real implementation outcome** — Hands-on training plus supported project work ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.
-- **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control while enabling rapid adaptation.
+- **True independence** — Own your AML and transaction monitoring stack, free from vendor lock-in and restrictive
+  contracts.
+- **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery significantly reduce the cost of
+  getting to production.
+- **Real implementation outcome** — Hands-on training plus supported project work ensures your team can deploy Jube,
+  configure rules, manage cases, and validate alerts.
+- **Fully open-source and transparent
+  ** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable
+  and extensible, keeping your data under your control while enabling rapid adaptation.
 
 ---
 
@@ -644,8 +645,8 @@ quote adds only the parameters specific to your engagement:
 1. **Quote issued** — Jube raises a formal quote for digital signature, referencing this
    page and the Training and Integration Plan, and stating: the client entity, the
    delivery mode (remote or on-site), the confirmed start date and, for the on-site
-   month, its dates, the venue, and the estimated travel and subsistence on the HMRC
-   scale rate basis, invoicing details, and any
+   month, its dates, the venue, the travel and accommodation to be booked by the client,
+   and the estimated subsistence on the HMRC scale rate basis, invoicing details, and any
    engagement-specific commitments agreed in advance (for example, custom gap development
    beyond the included two days, or reference introductions).
 2. **Signature** — On digital signature of the quote, the quote and the referenced
