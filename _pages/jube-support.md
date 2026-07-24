@@ -32,7 +32,7 @@ at any time, including an AI-generated summary of status and suggested next step
 
 **The business model is retained professional service hours, with a fair-use,
 no-overage commitment.** The monthly amount is agreed in advance, invoiced monthly in
-arrears as provided for in the [JTOS](/agreements/jtos-version-1-6), and — within fair
+arrears as provided for in the [JTOS](/agreements/jtos-version-1-7), and — within fair
 use — is the amount invoiced, full stop. Professional services billing typically makes
 its margin in the overage, which is exactly where bill shock lives; this model removes
 the category.
@@ -69,20 +69,36 @@ price, the discount is front-loaded as commitment begins, and the curve flattens
 a floor. It is published so that it is the same for every client — the rate is a
 function of commitment, not of negotiation:
 
-| Committed hours per month | Hourly rate     | Retained monthly amount |
-|---------------------------|-----------------|-------------------------|
-| None (ad hoc)             | $150            | billed as used          |
-| 5                         | $125            | $625                    |
-| 10                        | $110            | $1,100                  |
-| 15                        | $100            | $1,500                  |
-| 20                        | $94             | $1,880                  |
-| 25                        | $90 *(floor)*   | $2,250                  |
+| Committed hours per month | Hourly rate   | Retained monthly amount |
+|---------------------------|---------------|-------------------------|
+| None (ad hoc)             | $150          | billed as used          |
+| 5                         | $125          | $625                    |
+| 10                        | $110          | $1,100                  |
+| 15                        | $100          | $1,500                  |
+| 20                        | $94           | $1,880                  |
+| 25                        | $90 *(floor)* | $2,250                  |
 
 Fixed-scope project engagements — the
 [training and integration programme](/jube-training) among them — are billed at the
 **project rate of $125 per hour**, matching the first committed rung: a project
 carries scope commitment, but not the ongoing commitment that earns the keener
 retained rates.
+
+**What the derate is, and is not, for.** The keener rates on this card are earned by
+one thing only: an ongoing monthly commitment. They are not earned by the size of a
+single engagement, and they are not earned by asking for more of Jube at once. Two
+consequences follow, and both are policy rather than negotiating position:
+
+- **A large fixed-scope project does not attract a derate.** A hundred hours committed
+  inside one project is not the same as a hundred hours committed across a year of
+  months, and it is charged at the project rate.
+- **On-site attendance does not attract a derate.** Where work is delivered at your
+  premises — including the
+  [on-site month](/jube-training) within the training and integration programme —
+  it is charged at the project rate, without premium for the location and without
+  discount for the volume. Travelling to you consumes capacity outright rather than
+  guaranteeing it, and it would be a strange rate card that made the most demanding
+  engagement the cheapest one per hour.
 
 Commitments are set at the nearest rung to evidenced demand, and revisited at the
 quarterly account management review — moved up or down the same published card,
@@ -155,6 +171,14 @@ The discipline is the point, and it is what extends the no-bill-shock principle 
 biggest tasks, where it matters most. A project does not begin until its scope, plan,
 and price are agreed and recorded in its work order; the price is known before the
 work starts, and it is the work order that changes it — never the invoice.
+
+Project engagements are ordinarily delivered remotely, on the same async-first basis
+as everything else. Where a project genuinely warrants attendance at your premises,
+that is agreed in advance and recorded in the work order, priced at the project rate
+with no derate for attendance, and with travel and subsistence handled exactly as set
+out for the [on-site month](/jube-training): flights and accommodation booked directly
+by you, economy class, scheduled within social hours, and subsistence at the published
+HMRC scale rate.
 
 ---
 
@@ -229,7 +253,7 @@ Carlo simulation.
 ## From this page to a signed engagement
 
 There is no proposal step. This page, together with the
-[JTOS](/agreements/jtos-version-1-6), constitutes the complete published offer. The
+[JTOS](/agreements/jtos-version-1-7), constitutes the complete published offer. The
 quote adds only the parameters specific to your engagement:
 
 1. **Prerequisite** — completion of the
@@ -298,9 +322,11 @@ leveraging the AGPLv3-licensed Jube platform.
 ## Governance and insurance
 
 All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-6) — published, versioned,
-and written to be clear and equitable for both parties. Professional insurances are
-carried at GBP 1M per claim, subject to exclusions as set out in the JTOS.
+[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
+and written to be clear and equitable for both parties. Professional indemnity
+insurance is carried at GBP 1M per claim, subject to exclusions as set out in the
+JTOS. Where work is delivered at your premises, public liability insurance is
+additionally carried, at the level recorded in the work order.
 
 Behind the Jube name sit two companies. Jube Holdings Limited (JHL) is a Cyprus-based
 company that owns the Jube software and trademarks, registered with the Cyprus

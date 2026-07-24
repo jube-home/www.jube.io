@@ -152,10 +152,10 @@ separately invoiced.
 jube.io/jube-support and versioned alongside these Terms, comprising an ad hoc rate, a project rate, committed Retained
 Support rungs, and a floor rate. The rate and Minimum Monthly Retainer applicable to an engagement are drawn from the
 Rate Card in force at Work Order acceptance and recorded in the Work Order. The Rate Card is uniform across Clients;
-rates are a function of commitment, not negotiation. Commitment may be ongoing, as in a committed Retained Support or
-Enterprise Support rung, or concentrated, as in a fixed-scope engagement committing a substantial number of hours within
-a single billing period; both are recognised on the same schedule, and clause 2.12 governs the rate applicable to
-concentrated commitment.
+rates are a function of commitment, not negotiation. The keener rates on the Rate Card are earned by ongoing commitment
+under a committed Retained Support or Enterprise Support rung. The Provider does not apply a reduced rate by reason of
+the volume of hours committed within a single engagement, nor by reason of On-Site Delivery; Services delivered on site
+are charged at the project rate on the Rate Card, without premium or discount for the location of delivery.
 
 **Retained Support (formerly PAYG):** A support arrangement under which a certified Client accesses ongoing Services without a
 minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum Monthly Retainer. The
@@ -281,7 +281,12 @@ above. The clauses below set out the operative payment obligations governing eac
    recorded in the applicable Work Order, and no amount is charged with markup or administration fee:
    a. air travel and accommodation shall be booked and paid for directly by the Client, in the Client's own name and
    under the Client's own travel arrangements. No amount in respect of those items shall be invoiced to or recharged by
-   the Provider, and no reimbursement obligation arises in respect of them;
+   the Provider, and no reimbursement obligation arises in respect of them. Air travel shall be booked in economy class;
+   the Provider does not require, and shall not charge for, premium cabin travel. Air travel shall however be scheduled
+   within social hours, such that it does not require the Provider to travel overnight, and such that the Provider is
+   not required to commence delivery on the day of arrival without an intervening night's rest. Where no direct routing
+   satisfying this requirement is available, an indirect routing including a layover, or an additional night's
+   accommodation before or after the scheduled period, shall be booked in preference to an overnight flight;
    b. subsistence is billed in accordance with the HMRC international scale rate directory for the destination (as
    updated from time to time —
    see [HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk)), estimated
@@ -308,13 +313,7 @@ above. The clauses below set out the operative payment obligations governing eac
     accordance with Section 3 wherever practicable. Where sustained usage has departed from the commitment, the
     commitment shall be moved to the appropriate rung of the Rate Card with effect from the start of the next monthly
     billing period. Adjustments under this clause are prospective only.
-12. Where a Work Order commits hours within a single monthly billing period at or above the highest committed rung then
-    published on the Rate Card, the Services committed by that Work Order shall be charged at the floor rate on the Rate
-    Card, save that any structured training delivery component shall be charged at the project rate. Commitment
-    concentrated in this way is recognised on the same schedule as ongoing commitment and on the same basis; the rate is
-    a function of the commitment made and not of negotiation, and is uniform across Clients making the equivalent
-    commitment.
-13. Where a fixed fee has been agreed for an engagement involving On-Site Delivery, the fee is earned by the Provider's
+12. Where a fixed fee has been agreed for an engagement involving On-Site Delivery, the fee is earned by the Provider's
     attendance and availability during the scheduled period. Where the Client's personnel, environments, approvals, or
     access are unavailable during that period for reasons attributable to the Client, the scheduled period is not
     extended, no additional days accrue to the Client, and no reduction in the fee arises. The Provider shall use
@@ -460,14 +459,14 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
    created by the Provider shall vest in and transfer to the Client upon payment of all fees in full, excluding clause
    6.2 exceptions and pre-existing IP.
 2. Notwithstanding clause 6.1, vesting does not include:
-    * Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (AGPLv3).
-    * Advanced analytics (e.g., machine learning models) developed using only JOL or consortium data.
-    * Supporting materials to Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (
-      AGPLv3) (e.g., platform documentation, scripts), being materials of general application to the Jube platform
-      rather than specific to the Client's implementation.
-    * Configuration Artifacts and documentation developed by the Provider specifically for the Client as expressly
-      particularised in a Work Order, which are expressly excluded from this clause and shall vest in the Client in
-      accordance with clause 6.1.
+   * Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (AGPLv3).
+   * Advanced analytics (e.g., machine learning models) developed using only JOL or consortium data.
+   * Supporting materials to Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (
+     AGPLv3) (e.g., platform documentation, scripts), being materials of general application to the Jube platform
+     rather than specific to the Client's implementation.
+   * Configuration Artifacts and documentation developed by the Provider specifically for the Client as expressly
+     particularised in a Work Order, which are expressly excluded from this clause and shall vest in the Client in
+     accordance with clause 6.1.
 3. The Provider retains ownership of methodologies, know-how, tools, frameworks, and pre-existing IP used in providing
    the Services. The Provider grants the Client a non-exclusive, non-transferable license to use such elements solely as
    incorporated into the Deliverables. For the avoidance of doubt, Jube's core platform software is maintained as
@@ -502,14 +501,14 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
 2. The Provider's total liability shall not exceed fees paid by the Client under the relevant Work Order in the
    preceding 12 months.
 3. Excluded Uses: The Provider excludes liability for claims arising from use of Deliverables in:
-    - Industrial/engineering process control
-    - Financial trading (high-frequency or algorithmic)
-    - Transactional processing systems where the Deliverables are used as or in place of a ledger, settlement engine, or
-      system of financial record; for the avoidance of doubt, use of Deliverables as monitoring or validation layers
-      operating alongside such systems is not an excluded use.
-    - Medical-related systems
-    - Safety-critical systems
-    - Aerospace, automotive, or military applications
+   - Industrial/engineering process control
+   - Financial trading (high-frequency or algorithmic)
+   - Transactional processing systems where the Deliverables are used as or in place of a ledger, settlement engine, or
+     system of financial record; for the avoidance of doubt, use of Deliverables as monitoring or validation layers
+     operating alongside such systems is not an excluded use.
+   - Medical-related systems
+   - Safety-critical systems
+   - Aerospace, automotive, or military applications
 4. The Client warrants it will not use Deliverables for Excluded Uses. Any proposed use of Deliverables for an Excluded
    Use must be agreed in writing by both parties and is subject to the express prior approval of the Provider's
    professional indemnity insurers. The Provider reserves the right to decline any such request without obligation or
@@ -893,7 +892,7 @@ allocation of responsibility between the parties, or the protections either part
    at that location, including religious observance and prayer, and the sequence of delivery is agreed with the Client
    in advance of travel rather than imposed, subject to any dependencies between sessions. Delivery may be arranged as
    more than one block within a working day.
-9. Availability of Client personnel: Clause 2.13 governs the consequences of the unavailability of the Client's
+9. Availability of Client personnel: Clause 2.12 governs the consequences of the unavailability of the Client's
    personnel, environments, approvals, or access during the scheduled period.
 10. Continuity: The Provider shall deliver a scheduled period of On-Site Delivery once travelled to. Where an emergency
     arises during that period, including an obligation to another Client under clause 3.12, the Provider shall address
@@ -1038,7 +1037,7 @@ fixed fee or committed allocation, in accordance with clause 2.7(c).
 
 6.3 Where a fixed fee has been agreed, hours recorded during the scheduled period are recorded for the purposes of the
 Time Record and of the sizing of any subsequent support arrangement, and are covered by the fixed fee. They are not
-separately invoiced, and clause 2.13 governs the position where the Client's personnel or environments are unavailable.
+separately invoiced, and clause 2.12 governs the position where the Client's personnel or environments are unavailable.
 
 ## 7. Engagement Administration
 

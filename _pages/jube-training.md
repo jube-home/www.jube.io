@@ -57,17 +57,17 @@ Both modes deliver the same eleven sessions, the same practical exercises, the s
 days of custom gap development, and the same certification. What differs is how the
 implementation support is delivered, and therefore how long the project takes.
 
-|                                | **Remote**                               | **On-site month**                                         |
-|--------------------------------|------------------------------------------|-----------------------------------------------------------|
-| Elapsed time to pre-production | Seven weeks, plus integration thereafter | Within the month                                          |
-| Curriculum                     | Eleven sessions over seven weeks         | Eleven sessions in week one, two blocks a day             |
-| Session length                 | Capped at three hours, one at a time     | Two three-hour blocks a day                               |
-| Implementation support         | 20 hours, asynchronous                   | 100 hours in the room across three weeks, plus 10 on call |
-| Total hours                    | 50                                       | 140                                                       |
-| Fee                            | $6,250                                   | $13,650                                                   |
-| Travel and subsistence         | None                                     | You book travel directly; subsistence at HMRC scale rate  |
-| Implementation reviews         | Twice-weekly, remote                     | Daily, in the room                                        |
-| Recordings                     | Yes                                      | Yes                                                       |
+| | **Remote** | **On-site month** |
+|---|---|---|
+| Elapsed time to pre-production | Seven weeks, plus integration thereafter | Within the month |
+| Curriculum | Eleven sessions over seven weeks | Eleven sessions in week one, two blocks a day |
+| Session length | Capped at three hours, one at a time | Two three-hour blocks a day |
+| Implementation support | 20 hours, asynchronous | 100 hours in the room across three weeks, plus 10 on call |
+| Total hours | 50 | 140 |
+| Fee | $6,250 | $17,500 |
+| Travel and subsistence | None | You book travel directly; subsistence at HMRC scale rate |
+| Implementation reviews | Twice-weekly, remote | Daily, in the room |
+| Recordings | Yes | Yes |
 
 ### Remote delivery
 
@@ -169,46 +169,48 @@ that can waste a week that has already been paid for.
 
 ## Pricing
 
-One rate card governs everything Jube charges for time. The rate on it is a function of
-committed hours, and commitment takes two forms: **ongoing**, as in a retained support
-arrangement, or **concentrated**, as in a block of dedicated on-site work. Both earn the
-keener rates on the same scale. No rate is invented per engagement.
+One rate card governs everything Jube charges for time, and no rate is invented per
+engagement. Keener rates on that card are earned by ongoing commitment — a retained
+support arrangement — and by nothing else. In particular, **Jube does not derate for
+on-site work as a matter of policy**: travelling to you consumes a month of capacity
+outright, and it would be a strange rate card that made the more demanding engagement the
+cheaper one per hour.
 
 ### Remote delivery — $6,250
 
-Priced at the published **project rate of USD 125 per hour**. A fixed-scope remote
-programme carries scope commitment, but its fifty hours are spread across seven weeks
-and do not represent concentrated capacity.
+Priced at the published **project rate of USD 125 per hour**, the same rate that governs
+on-site delivery.
 
-| Line Item            | Hours  | Rate | Fee        |
-|----------------------|--------|------|------------|
-| Training Delivery    | 30     | $125 | $3,750     |
-| Asynchronous Support | 20     | $125 | $2,500     |
-| **Total**            | **50** |      | **$6,250** |
+| Line Item             | Hours  | Rate    | Fee        |
+|-----------------------|--------|---------|------------|
+| Training Delivery     | 30     | $125    | $3,750     |
+| Asynchronous Support  | 20     | $125    | $2,500     |
+| **Total**             | **50** | | **$6,250** |
 
-### On-site month — $13,650
+### On-site month — $17,500
 
-One hundred and forty hours committed inside a single month is the largest commitment on
-the rate card — larger than any retained rung — and the implementation hours are
-therefore priced at the **floor rate of USD 90 per hour**, the keenest rate Jube
-publishes. The thirty curriculum hours remain at the project rate: they are the same
-thirty hours the remote client buys, and they are not discounted for being delivered in
-person.
+Priced at the same published **project rate of USD 125 per hour** as remote delivery.
+On-site delivery is not derated. The rate card's keener rates are earned by ongoing
+commitment, which is a different thing from physical presence: presence is a month of
+dedicated capacity rather than a volume of hours booked in advance, and it is charged at
+the standard project rate — no premium for being on-site, and no discount for the
+quantity.
 
-| Line Item                      | Hours   | Rate          | Fee         |
-|--------------------------------|---------|---------------|-------------|
-| Training Delivery              | 30      | $125          | $3,750      |
-| On-site Implementation Support | 100     | $90 *(floor)* | $9,000      |
-| On-call Asynchronous Support   | 10      | $90 *(floor)* | $900        |
-| **Total**                      | **140** |               | **$13,650** |
+| Line Item                       | Hours   | Rate            | Fee         |
+|---------------------------------|---------|-----------------|-------------|
+| Training Delivery               | 30      | $125            | $3,750      |
+| On-site Implementation Support  | 100     | $125            | $12,500     |
+| On-call Asynchronous Support    | 10      | $125            | $1,250      |
+| **Total**                       | **140** |                 | **$17,500** |
 
 Travel and subsistence are additional: flights and accommodation are booked directly by
 you and are not recharged, and subsistence is charged on the HMRC international scale rate
-basis set out below. **Travel days are not billed** — days spent in transit do not consume programme hours and are not
-charged.
+basis set out below. **Travel days are not billed** — days spent in transit do not consume programme hours and are not charged.
 
-Set against remote delivery, the on-site month is 2.2 times the fee for 2.8 times the
-hours. The rate falls as the commitment rises, exactly as the rate card provides.
+Set against remote delivery, the on-site month is 2.8 times the fee for 2.8 times the
+hours. The rate is identical; only the quantity differs. There is nothing to reconcile
+between the two figures, because they are the same rate applied to a different number of
+hours.
 
 The fee is fixed until pre-production conditions are satisfied, although not more than
 four months from commencement for remote delivery, or two months for the on-site month.
@@ -229,6 +231,13 @@ corporate travel policy and in your own name. Nothing in respect of them is rech
 no expense claim, receipt reconciliation, or reimbursement arises. For a month-long stay a
 corporate rate will almost always beat an individual booking, so this is usually cheaper
 for you than the alternative, as well as simpler for both sides.
+
+**Economy class is fine.** There is no business class stipulation and none is charged for.
+There is one requirement, and it concerns timing rather than cabin: flights are booked
+within social hours. No overnight departures, no red-eyes, and no arrival that leaves the
+first working day to be delivered on no sleep. Where a direct daytime routing is not
+available, an indirect routing with a layover, or an additional night either side, is
+preferred to a night flight — and costs you less than a business class seat would.
 
 What remains is subsistence, and it is charged on a published, externally-set basis rather
 than as a discretionary claim:
@@ -416,15 +425,10 @@ local week and the local day as the starting point.
 
 - **Training direct from the developer** — Learn Jube from its developer, with no second-hand interpretation.
 - **Rapid mastery** — Become proficient in weeks rather than months, accelerating your implementation timeline.
-- **True independence** — Own your AML and transaction monitoring stack, free from vendor lock-in and restrictive
-  contracts.
-- **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery significantly reduce the cost of
-  getting to production.
-- **Real implementation outcome** — Hands-on training plus supported project work ensures your team can deploy Jube,
-  configure rules, manage cases, and validate alerts.
-- **Fully open-source and transparent
-  ** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable
-  and extensible, keeping your data under your control while enabling rapid adaptation.
+- **True independence** — Own your AML and transaction monitoring stack, free from vendor lock-in and restrictive contracts.
+- **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery significantly reduce the cost of getting to production.
+- **Real implementation outcome** — Hands-on training plus supported project work ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.
+- **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control while enabling rapid adaptation.
 
 ---
 
@@ -616,7 +620,7 @@ leveraging the AGPLv3-licensed Jube platform.
 ## Governance and insurance
 
 All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-6) — published, versioned,
+[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
 and written to be clear and equitable for both parties. Professional insurances are
 carried at GBP 1M per claim, subject to exclusions as set out in the JTOS.
 
@@ -639,7 +643,7 @@ quotes under this offer.
 
 There is no proposal step. This page, together with the
 [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) and the
-[JTOS](/agreements/jtos-version-1-6), constitutes the complete published offer. The
+[JTOS](/agreements/jtos-version-1-7), constitutes the complete published offer. The
 quote adds only the parameters specific to your engagement:
 
 1. **Quote issued** — Jube raises a formal quote for digital signature, referencing this
