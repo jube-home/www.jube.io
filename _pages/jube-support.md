@@ -19,8 +19,8 @@ page (see [From this page to a signed engagement](#from-this-page-to-a-signed-en
 
 ## How support works
 
-Support is delivered async-first — day-to-day via WhatsApp Business and Microsoft
-Teams, with screencasts and voice notes preferred over scheduled calls. Meetings are
+Support is delivered async-first — day-to-day via WhatsApp Business, with
+screencasts and voice notes preferred over scheduled calls. Meetings are
 available but treated as a last resort.
 
 All client support runs through a single, transparent system. Issues are raised
@@ -128,8 +128,8 @@ set apart from it. It includes:
   reference configurations and your recorded departures from them.
 - **Advanced analytics consulting** — available within the scope of the relationship
   where the detection strategy requires it; see below.
-- **24/7 callout coverage** — urgent matters raised via WhatsApp Business or Microsoft
-  Teams are interrupt-driven and will be picked up as quickly as practically possible.
+- **24/7 callout coverage** — urgent matters raised via WhatsApp Business are
+  interrupt-driven and will be picked up as quickly as practically possible.
   Response during 06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours,
   coverage is on a best endeavours basis.
 
@@ -145,6 +145,11 @@ rate of $125 per hour against the scoped estimate, and delivered under a specifi
 work order as defined in the JTOS — the
 [training and integration programme](/jube-training) itself is delivered on exactly
 this basis.
+
+Where the line falls is the client's question rather than Jube's: retained hours can
+be spent however the client pleases, and there is no obligation to convert anything
+into a project. In practice, for the really big pieces of work, clients usually want
+the commitment — a scoped plan and a known price — and this is where they get it.
 
 The discipline is the point, and it is what extends the no-bill-shock principle to the
 biggest tasks, where it matters most. A project does not begin until its scope, plan,

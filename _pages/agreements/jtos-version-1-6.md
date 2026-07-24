@@ -6,7 +6,7 @@ permalink: /agreements/jtos-version-1-6
 
 ## Version
 
-1.6 as of July 12th, 2026
+1.6 as of July 24th, 2026
 
 ## Company Details
 
@@ -27,11 +27,6 @@ not incidental.
 
 The Provider's approach to intermediary relationships, co-delivery arrangements, and the conditions under which direct
 engagement with end Clients may occur is set out in Sections 21 and 23.
-
-For the avoidance of doubt, the Expert of Record designation set out in this Agreement is a governance, audit, and
-regulatory documentation designation only. It is not intended to create approval dependencies, oversight obligations, or
-any restriction whatsoever in relation to the free and liberal use of documented Jube platform functionality, which
-remains entirely at the discretion of the Client or intermediary.
 
 The commercial terms set out in this Agreement are structured to be fair, transparent, and easy to exit. The Provider's
 confidence in the value of the Services is reflected in the brevity of its notice periods and the accessibility of its
@@ -55,32 +50,35 @@ engagement:
 **Training and Integration** is the sole entry point to the Jube ecosystem and a prerequisite for all subsequent
 engagement. It is a structured, hands-on programme — delivered in person or remotely — through which Client personnel
 gain practical mastery of the Jube platform, configure it against real-world scenarios, and progress to a state of
-pre-production readiness. Training and Integration comprises two components: a training delivery component, invoiced as
-a fixed fee on Work Order acceptance and covering the initial structured training programme; and a post-training
-integration support component, which operates on the same in-arrears monthly billing model, subject to the Minimum
-Monthly Retainer, as PAYG and Enterprise Support. The integration component begins on completion of initial training
-delivery and continues until certification and pre-production deployment are confirmed. The Training and Integration
+pre-production readiness. Training and Integration is delivered for a fixed fee covering both structured training
+delivery and a stated allocation of integration support hours, invoiced in two instalments to mutually de-risk the
+engagement: fifty percent (50%) upon conclusion of the first week of training delivery, and the balance upon
+confirmation of proof-of-concept infrastructure stability and the first transaction flowing in production, and in any
+event not later than four (4) months from commencement. Integration support beyond the included allocation, or
+following pre-production confirmation, is billed on the Retained Support model. The Training and Integration
 engagement concludes with certification of the relevant Client personnel as Jube Certified Application Specialists and
-confirmation of successful pre-production deployment. Upon conclusion, the engagement transitions naturally into a PAYG
-or Enterprise Support arrangement, reflecting the expectation that Training and Integration marks the commencement of a
-long-term operational relationship. No Client shall proceed to PAYG or Enterprise Support without having completed
-Training and Integration; the certification programme constitutes the technical and commercial gateway to any ongoing
-support arrangement.
+confirmation of successful pre-production deployment. Upon conclusion, the engagement transitions naturally into a
+Retained Support or Enterprise Support arrangement, reflecting the expectation that Training and Integration marks the
+commencement of a long-term operational relationship. No Client shall proceed to Retained Support or Enterprise Support
+without having completed Training and Integration; the certification programme constitutes the technical and
+commercial gateway to any ongoing support arrangement.
 
-**PAYG (Pay As You Go) Support** is available to certified Clients who require ongoing access to the Provider's
-expertise without a minimum annual commitment. PAYG engagements are billed monthly in arrears, subject to a Minimum
+**Retained Support** is available to certified Clients who require ongoing access to the Provider's
+expertise without a minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum
 Monthly Retainer, giving Clients flexible access to support as their operational needs evolve without any prepayment
 obligation.
 
 **Enterprise Support** is available to certified Clients who require a committed, higher-availability support
-relationship, including callout obligations and, where the Client's committed support hours meet the applicable
-threshold, Expert of Record designation. Enterprise Support operates on the same in-arrears monthly billing model as
-PAYG, with a larger Minimum Monthly Retainer and the ancillary service commitments set out in Section 16.
+relationship, including callout obligations. Enterprise Support operates on the same in-arrears monthly billing model as
+Retained Support, with a larger Minimum Monthly Retainer and the ancillary service commitments set out in clause 3.12
+and Sections 18 and 19.
 
 Engagements under any of these service lines may include elements of bespoke software development, data engineering, or
-machine learning work where the Client's implementation requires it. Such work is delivered under the same monthly
-in-arrears billing model within the applicable Work Order and does not constitute a separate service line or commercial
-arrangement.
+machine learning work where the Client's implementation requires it. Such work is delivered either within the
+applicable Work Order on the monthly in-arrears billing model or, for larger defined tasks, as a fixed-scope project
+under its own Work Order, with the scope, plan, and price recorded in that Work Order at the project rate on the Rate
+Card. Fixed-scope projects do not constitute a separate service line; the Work Order is the operative commercial
+record in either case.
 
 Where engagements are delivered through or alongside an intermediary, the Provider may participate as a specialist
 technical contributor within the intermediary's delivery structure under a co-delivery arrangement, as set out in
@@ -143,33 +141,34 @@ of a Service Activation Letter, carried out in connection with and in anticipati
 activity is considered rendered and paid upon issue of the relevant Service Activation Letter and shall not be
 separately invoiced.
 
-**Expert of Record:** A formal designation, available to Enterprise Support Clients, whereby the Provider acts as the
-named technical authority on the Client's Jube implementation for the purposes of governance, audit, and regulatory
-documentation, including a periodic technical account review check-in. The Expert of Record designation is available
-where the Client's Minimum Monthly Retainer meets or exceeds the hours threshold, and the Client maintains the check-in
-cadence, specified for that purpose in the applicable Work Order, as set out in Section 16.
+**Rate Card:** The graduated schedule of hourly rates and committed-hour rungs published by the Provider at
+jube.io/jube-support and versioned alongside these Terms, comprising an ad hoc rate, a project rate, committed Retained
+Support rungs, and a floor rate. The rate and Minimum Monthly Retainer applicable to an engagement are drawn from the
+Rate Card in force at Work Order acceptance and recorded in the Work Order. The Rate Card is uniform across Clients;
+rates are a function of commitment, not negotiation.
 
-**PAYG (Pay As You Go):** A support arrangement under which a certified Client accesses ongoing Services without a
-minimum annual commitment. PAYG engagements are billed monthly in arrears, subject to a Minimum Monthly Retainer. The
-absence of a minimum commitment period and ancillary service obligations distinguishes PAYG from Enterprise Support;
+**Retained Support (formerly PAYG):** A support arrangement under which a certified Client accesses ongoing Services without a
+minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum Monthly Retainer. The
+absence of a minimum commitment period and ancillary service obligations distinguishes Retained Support from Enterprise Support;
 billing mechanics and rhythm are otherwise identical.
 
 **Enterprise Support:** A support arrangement under which a certified Client commits to a minimum annual engagement,
-with access to callout obligations and, where the Minimum Monthly Retainer meets the applicable threshold, Expert of
-Record designation, as set out in Section 16. Enterprise Support operates on the same in-arrears monthly billing model
-as PAYG, with a larger Minimum Monthly Retainer as specified in the applicable Work Order. The premium of Enterprise
+with access to callout obligations under clause 3.12. Enterprise Support operates on the same in-arrears monthly billing model
+as Retained Support, with a larger Minimum Monthly Retainer as specified in the applicable Work Order. The premium of Enterprise
 Support is the level of committed service and ancillary obligations, not a different payment model.
 
 **Minimum Monthly Retainer:** The minimum fee payable by the Client in respect of each monthly billing period during
-which an engagement is active, as specified in the applicable Work Order. For PAYG engagements and the integration
+which an engagement is active, as specified in the applicable Work Order. For ad hoc Retained Support engagements and the integration
 support component of Training and Integration, the Minimum Monthly Retainer is one (1) hour at the applicable hourly
 rate. For Enterprise Support engagements, the Minimum Monthly Retainer is as specified in the applicable Work Order and
 shall not be less than one (1) hour at the applicable hourly rate. The Minimum Monthly Retainer is payable in respect of
 each monthly billing period regardless of whether any hours were recorded during that period, and represents the
-minimum consideration payable for the Provider's availability and commitment during that period. Where hours recorded
-and billable during a monthly billing period, valued at the applicable hourly rate, exceed the Minimum Monthly Retainer,
-the Client shall pay for those hours in place of, and not in addition to, the Minimum Monthly Retainer — that is, the
-Client pays whichever is greater for that period.
+minimum consideration payable for the Provider's availability and commitment during that period. For ad hoc
+engagements, the fee payable for a monthly billing period is the greater of the hours recorded at the ad hoc rate or
+the Minimum Monthly Retainer. For committed Retained Support and Enterprise Support engagements, the Minimum Monthly
+Retainer is the retained monthly amount for the committed rung recorded in the Work Order; recorded hours within fair
+use of the committed hours are covered by it and are not separately invoiced, and variance is handled in accordance
+with clauses 2.10 and 2.11.
 
 The tiered structure of the Minimum Monthly Retainer reflects why it exists at all. Any Minimum Monthly Retainer
 secures the Client's access to the hourly rate specified in the Work Order — a reduced rate offered only to Clients
@@ -177,8 +176,7 @@ maintaining an active monthly engagement under this Agreement — together with 
 availability commitments set out in Section 3, including the four (4) business hour response commitment under clause
 3.3. Where a Client's Minimum Monthly Retainer meets the higher threshold specified for Enterprise Support, it
 additionally unlocks the further bundle of commitments set out across this Agreement: 24/7 callout under clause 3.12,
-Expert of Record designation and its associated check-in cadence under Section 16, the security patching response
-commitment under Section 18, and regulatory feature mapping under Section 19. These are not independent add-ons; they
+the security patching response commitment under Section 18, and regulatory feature mapping under Section 19. These are not independent add-ons; they
 are different facets of the same underlying purpose — keeping the Provider's familiarity with the Client's
 implementation current, and the Provider's confidence in supporting it, so that the commitments the Client is paying
 for can actually be relied upon when they are needed, including in support of the Client's own operational uptime. A
@@ -236,29 +234,27 @@ above. The clauses below set out the operative payment obligations governing eac
 
 1. Fees for the Services will be as set out in the applicable Work Order, which shall specify the hourly rate and the
    Minimum Monthly Retainer applicable to the engagement. In the case of Training and Integration, the Work Order shall
-   specify the fixed fee for the training delivery component and the hourly rate and Minimum Monthly Retainer applicable
-   to the integration support component, which operates on the same in-arrears monthly billing model as PAYG.
+   specify the fixed fee, the included integration support hours, and the instalment schedule set out in clause 2.4.
 2. All fees are exclusive of taxes, which shall be payable by the Client in addition.
 3. All engagements operate on a monthly billing cycle, billed in arrears. At the end of each calendar month, the
    Provider shall issue an invoice for that month, accompanied by a Time Record showing the hours recorded during the
-   month. The fee payable for the month shall be the greater of (a) the fees for the hours actually recorded during the
-   month at the applicable hourly rate, or (b) the Minimum Monthly Retainer. A month in which no hours are recorded is
+   month. The fee payable for the month shall be determined in accordance with the Minimum Monthly Retainer definition
+   and clauses 2.10 and 2.11. A month in which no hours are recorded is
    invoiced at the Minimum Monthly Retainer and accompanied by a Time Record showing no hours recorded, and constitutes
    a valid monthly statement for the purposes of this Agreement. Invoices are payable within thirty (30) days of the
    invoice date.
-4. Training and Integration engagements are invoiced in two parts. The training delivery component is a fixed fee as
-   particularised in the applicable Work Order, due and payable upon Work Order acceptance; no delivery shall commence
-   until this fee has cleared. The integration support component begins on completion of initial training delivery as
-   confirmed by the Provider in writing, and operates on exactly the same in-arrears monthly billing model as a PAYG
-   engagement: hours are recorded as they are incurred and invoiced monthly in arrears in accordance with clause 2.3,
-   subject to the Minimum Monthly Retainer specified in the applicable Work Order. The integration support component
-   continues until certification and pre-production deployment are confirmed, at which point the engagement concludes
-   and transitions to PAYG or Enterprise Support. In the event of termination of a Training and Integration engagement
-   prior to completion, the training delivery fixed fee is non-refundable, and hours recorded under the integration
-   support component up to the effective termination date shall be invoiced in accordance with clause 2.3.
-5. There is no prepayment requirement for the commencement of any PAYG, Enterprise Support, or Training and
-   Integration Support Work Order. Services commence on the basis of the applicable Work Order and Service Activation
-   Letter, with fees invoiced monthly in arrears in accordance with clause 2.3.
+4. Training and Integration engagements are invoiced as a fixed fee in two instalments. The first instalment, being
+   fifty percent (50%) of the fixed fee, falls due upon conclusion of the first week of training delivery; no payment
+   is required in advance of delivery. The second instalment falls due upon confirmation of proof-of-concept
+   infrastructure stability and the first transaction flowing in production, and in any event not later than four (4)
+   months from the start date recorded in the Service Activation Letter. The fixed fee includes the integration
+   support hours stated in the Work Order; hours beyond that allocation, or Services following pre-production
+   confirmation, are billed in accordance with clause 2.3. In the event of termination prior to completion, any
+   instalment that has fallen due remains payable and is non-refundable; where the first week of training delivery has
+   concluded, the first instalment falls due notwithstanding termination; and hours recorded beyond the included
+   allocation up to the effective termination date shall be invoiced in accordance with clause 2.3.
+5. There is no prepayment requirement for the commencement of any Work Order. Services commence on the basis of the
+   applicable Work Order and Service Activation Letter, with fees invoiced in accordance with this Section.
 6. If any payment is not made when due, the Provider reserves the right to charge statutory interest at the rate
    applicable under the Late Payment of Commercial Debts (Interest) Act 1998, accruing daily until payment is received
    in full.
@@ -270,13 +266,18 @@ above. The clauses below set out the operative payment obligations governing eac
 8. Where the Provider is registered for Value Added Tax (VAT) with HMRC, applicable VAT will be charged on fees at the
    prevailing rate and shown separately on invoices. Clients outside the UK should satisfy their own VAT or equivalent
    obligations in their respective jurisdictions.
-9. Any discount agreed between the parties is a confidential commercial arrangement and forms part of the applicable
-   Work Order. Neither the Client nor any intermediary shall disclose the existence or terms of any discount to any
-   third party without the prior written consent of the Provider.
-10. Where Services are engaged through an intermediary, fees remain payable to the Provider in full in accordance with
-    the applicable Work Order, regardless of whether the intermediary has collected payment from the end Client. The
-    intermediary's failure to collect from the end Client shall not constitute grounds for withholding or reducing
-    payment to the Provider.
+9. Where Services are engaged through an intermediary, fees remain payable to the Provider in full in accordance with
+   the applicable Work Order, regardless of whether the intermediary has collected payment from the end Client. The
+   intermediary's failure to collect from the end Client shall not constitute grounds for withholding or reducing
+   payment to the Provider.
+10. The Provider does not invoice overage in the ordinary course. Where hours recorded in a monthly billing period
+    exceed one and a half (1.5) times the committed hours, the Provider may invoice the excess above that threshold at
+    the applicable hourly rate, and shall in any event raise the variance at the next quarterly account management
+    review. Sustained variance in either direction is addressed prospectively under clause 2.11, never retrospectively.
+11. The parties shall review recorded hours against the committed hours each quarter, conducted asynchronously in
+    accordance with Section 3 wherever practicable. Where sustained usage has departed from the commitment, the
+    commitment shall be moved to the appropriate rung of the Rate Card with effect from the start of the next monthly
+    billing period. Adjustments under this clause are prospective only.
 
 ## 3. Service Delivery
 
@@ -369,7 +370,7 @@ Details:
 12. Enterprise Support Callout: For clients on an Enterprise Support arrangement, out-of-hours and emergency response is
     available on a 24/7 basis, with a guaranteed response during 06:00–18:00 GMT, Monday to Friday, excluding UK public
     holidays. Outside those hours, response is on a best endeavours basis. Enterprise Support callout obligations apply
-    to all Enterprise Support Clients and are independent of the Expert of Record designation described in Section 16.
+    to all Enterprise Support Clients.
 
 ## 4. Confidentiality
 
@@ -400,14 +401,14 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
    created by the Provider shall vest in and transfer to the Client upon payment of all fees in full, excluding clause
    6.2 exceptions and pre-existing IP.
 2. Notwithstanding clause 6.1, vesting does not include:
-    * Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (AGPLv3).
-    * Advanced analytics (e.g., machine learning models) developed using only JOL or consortium data.
-    * Supporting materials to Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (
-      AGPLv3) (e.g., platform documentation, scripts), being materials of general application to the Jube platform
-      rather than specific to the Client's implementation.
-    * Configuration Artifacts and documentation developed by the Provider specifically for the Client as expressly
-      particularised in a Work Order, which are expressly excluded from this clause and shall vest in the Client in
-      accordance with clause 6.1.
+   * Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (AGPLv3).
+   * Advanced analytics (e.g., machine learning models) developed using only JOL or consortium data.
+   * Supporting materials to Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (
+     AGPLv3) (e.g., platform documentation, scripts), being materials of general application to the Jube platform
+     rather than specific to the Client's implementation.
+   * Configuration Artifacts and documentation developed by the Provider specifically for the Client as expressly
+     particularised in a Work Order, which are expressly excluded from this clause and shall vest in the Client in
+     accordance with clause 6.1.
 3. The Provider retains ownership of methodologies, know-how, tools, frameworks, and pre-existing IP used in providing
    the Services. The Provider grants the Client a non-exclusive, non-transferable license to use such elements solely as
    incorporated into the Deliverables. For the avoidance of doubt, Jube's core platform software is maintained as
@@ -442,14 +443,14 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
 2. The Provider's total liability shall not exceed fees paid by the Client under the relevant Work Order in the
    preceding 12 months.
 3. Excluded Uses: The Provider excludes liability for claims arising from use of Deliverables in:
-    - Industrial/engineering process control
-    - Financial trading (high-frequency or algorithmic)
-    - Transactional processing systems where the Deliverables are used as or in place of a ledger, settlement engine, or
-      system of financial record; for the avoidance of doubt, use of Deliverables as monitoring or validation layers
-      operating alongside such systems is not an excluded use.
-    - Medical-related systems
-    - Safety-critical systems
-    - Aerospace, automotive, or military applications
+   - Industrial/engineering process control
+   - Financial trading (high-frequency or algorithmic)
+   - Transactional processing systems where the Deliverables are used as or in place of a ledger, settlement engine, or
+     system of financial record; for the avoidance of doubt, use of Deliverables as monitoring or validation layers
+     operating alongside such systems is not an excluded use.
+   - Medical-related systems
+   - Safety-critical systems
+   - Aerospace, automotive, or military applications
 4. The Client warrants it will not use Deliverables for Excluded Uses. Any proposed use of Deliverables for an Excluded
    Use must be agreed in writing by both parties and is subject to the express prior approval of the Provider's
    professional indemnity insurers. The Provider reserves the right to decline any such request without obligation or
@@ -474,22 +475,19 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
 
 ## 11. Termination
 
-1. Either party may terminate a PAYG engagement by giving not less than one (1) month's prior written notice to the
-   other party.
-2. Either party may terminate an Enterprise Support engagement by giving not less than three (3) months' prior written
-   notice to the other party.
-3. Training and Integration engagements may be terminated by either party upon written notice at any point prior to
-   completion. Upon termination: the training delivery fixed fee is non-refundable and shall be retained by the Provider
-   in full as consideration for the training programme delivered or commenced; hours recorded under the integration
-   support component up to the effective termination date shall be invoiced in arrears in accordance with Section 2. No
+1. Either party may terminate a Retained Support or Enterprise Support engagement by giving not less than thirty (30)
+   days' prior written notice to the other party.
+2. Upon termination of a Training and Integration engagement: any instalment of the fixed fee that has fallen due
+   under clause 2.4 remains payable and is non-refundable; hours recorded beyond the included integration support
+   allocation up to the effective termination date shall be invoiced in arrears in accordance with Section 2. No
    minimum notice period shall apply to the termination of a Training and Integration engagement.
-4. Either party may terminate any engagement with immediate effect by written notice if the other party materially
+3. Either party may terminate any engagement with immediate effect by written notice if the other party materially
    breaches these Terms and fails to remedy such breach within thirty (30) days of receiving written notice specifying
    the breach in reasonable detail.
-5. Upon termination of any engagement, the Client shall pay the Provider for all Services performed and expenses
+4. Upon termination of any engagement, the Client shall pay the Provider for all Services performed and expenses
    incurred up to the effective date of termination, including the Minimum Monthly Retainer for the billing period in
    which termination occurs, invoiced in accordance with Section 2.
-6. On termination of any engagement, the Provider shall delete all Client configuration assets held by the Provider,
+5. On termination of any engagement, the Provider shall delete all Client configuration assets held by the Provider,
    including any .jemp exports, within thirty (30) days of the effective termination date, and shall confirm deletion to
    the Client in writing. Notwithstanding this, the Provider may retain such assets for a period of up to six (6) years
    from the termination date where retention is required to satisfy legal obligations or to defend against a potential
@@ -558,32 +556,18 @@ an appropriate co-delivery Work Order. Where no such agreement is reached within
 reserves the right to invoice that time at the co-delivery rate and to require a co-delivery Work Order before
 continuing engagement.
 
-## 16. Expert of Record
+## 16. Reference Configurations and Client Context
 
-1. The Expert of Record designation is available to Enterprise Support Clients whose Minimum Monthly Retainer, as
-   specified in the applicable Work Order, meets or exceeds the hours threshold, and whose engagement maintains the
-   check-in cadence, specified for that purpose in that Work Order. No infrastructure review, sign-off, or operational
-   audit is a precondition of the designation; it is a factor of committed support hours and check-in cadence only.
-2. Where a Client's Minimum Monthly Retainer is varied such that it no longer meets the applicable threshold, or where
-   the Client does not maintain the check-in cadence required under clause 16.4, the Expert of Record designation shall
-   lapse with effect from the start of the next billing period, and the Provider shall confirm this to the Client in
-   writing. Where the threshold and cadence are subsequently restored, the designation shall resume from the start of
-   the next billing period following restoration.
-3. While holding the Expert of Record designation, the Provider acts as the named technical authority on the Client's
-   Jube implementation for the purposes of governance, audit, and regulatory documentation. This is a naming and
-   documentation function only; it does not entail infrastructure sign-off, Runbook authority, or any approval
-   dependency over the Client's operation of the platform, consistent with the Preamble.
-4. Because Expert of Record designation is only available to Enterprise Support Clients, who separately receive 24/7
-   callout coverage under clause 3.12, the Provider's ability to respond effectively to a callout depends on
-   maintaining current familiarity with the Client's implementation. Accordingly, Clients holding the Expert of Record
-   designation shall maintain a periodic technical account review check-in with the Provider, at the cadence specified
-   in the applicable Work Order and no less frequently than quarterly, conducted asynchronously in accordance with
-   Section 3 wherever practicable. Time spent on a check-in is recorded and billed as ordinary Services time in
-   accordance with Section 2 and Appendix B, drawn against the Client's Minimum Monthly Retainer or billed as an
-   overage in the same manner as any other Services time. The check-in does not entail the production or ongoing
-   maintenance of documentation, configuration records, or reports on the Client's behalf.
-5. The Provider accepts no liability for outcomes arising from the Client's infrastructure, deployment, or architectural
-   decisions, whether or not the Provider holds the Expert of Record designation at the relevant time.
+1. The Provider maintains reference configurations for infrastructure and deployment. The Provider carries no sign-off
+   responsibility for the Client's environment, and no approval dependency exists over the Client's use of documented
+   platform functionality, which remains entirely at the Client's discretion.
+2. Material departures from the reference configurations, as they surface in the ordinary course of the Services, are
+   recorded in the Provider's client notes to maintain working context, on a best endeavours basis. Such notes are a
+   support aid, maintained asynchronously in accordance with Section 3; they do not constitute documentation,
+   configuration records, or reports produced or maintained on the Client's behalf, and are not warranted to be
+   current or complete.
+3. The Provider accepts no liability for outcomes arising from the Client's infrastructure, deployment, or
+   architectural decisions.
 
 ## 17. Diagnostic Information Requirements
 
@@ -619,20 +603,20 @@ Security Patching and Vulnerability Management is an Enterprise Support benefit.
    extensibility framework.
 4. The Client is responsible for applying patches and releases provided by the Provider in a timely manner. The Provider
    shall not be liable for security incidents arising from the Client's failure to apply available patches.
-5. Security patching obligations under this Section apply to Enterprise Support arrangements. PAYG clients receive
-   patches as and when released but have no guaranteed response timeline.
+5. Security patching obligations under this Section apply to Enterprise Support arrangements. Retained Support clients
+   receive patches as and when released but have no guaranteed response timeline.
 
 ## 19. Regulatory Feature Mapping
 
 Regulatory feature mapping is an Enterprise Support benefit.
 
 The Provider maintains Jube's feature set with the objective of supporting compliance with applicable AML and fraud
-detection regulatory requirements, and provides mapping of platform functionality against the Client's applicable 
-regulatory requirements as part of Enterprise Support. This does not constitute legal advice or regulatory advice, 
-and is provided without warranty as to the sufficiency of any implementation for the Client's specific regulatory 
-obligations. The Client remains solely responsible for its own regulatory compliance and for obtaining appropriate 
-legal and compliance advice. PAYG and Training and Integration Clients do not receive regulatory feature mapping 
-as part of their engagement, though the Provider may respond to an ad hoc regulatory query as ordinary billable 
+detection regulatory requirements, and provides mapping of platform functionality against the Client's applicable
+regulatory requirements as part of Enterprise Support. This does not constitute legal advice or regulatory advice,
+and is provided without warranty as to the sufficiency of any implementation for the Client's specific regulatory
+obligations. The Client remains solely responsible for its own regulatory compliance and for obtaining appropriate
+legal and compliance advice. Retained Support and Training and Integration Clients do not receive regulatory feature mapping
+as part of their engagement, though the Provider may respond to an ad hoc regulatory query as ordinary billable
 Services time upon request.
 
 Regulatory feature mapping is conducted on the basis that the relevant regulations, guidance, and technical standards
@@ -739,9 +723,8 @@ rights and obligations arising from that licence are governed exclusively by its
    independently.
 6. The intermediary shall ensure that the end Client is informed of the Provider's role and independent status prior to
    commencement of any co-delivery engagement, consistent with Section 15.
-7. Co-delivery engagements are only available where the co-delivery Work Order commits sufficient hours to meet the
-   Expert of Record threshold under Section 16 for the full duration, such that the Provider holds the Expert of Record
-   designation throughout the engagement. The Provider will not enter into a co-delivery engagement on any other basis.
+7. Co-delivery engagements are only available where the co-delivery Work Order commits an Enterprise Support level
+   Minimum Monthly Retainer for the full duration of the engagement.
 
 ## Appendix A: Data Processing (GDPR)
 

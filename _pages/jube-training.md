@@ -91,7 +91,7 @@ engagement for both parties:
 - **50%** is invoiced only after the first week of training sessions has concluded.
 - The **balance** falls due on success — defined as proof-of-concept level infrastructure
   stability and the first transaction flowing in production — and in any case typically
-  within eight weeks.
+  within twelve weeks.
 
 No payment is taken before delivery has demonstrably begun, and the second half of the
 fee is tied to the outcome the programme exists to produce.
@@ -109,7 +109,7 @@ fee is tied to the outcome the programme exists to produce.
 - Twenty hours of asynchronous integration support via WhatsApp, JIRA, and Loom,
   continuing through pre-production deployment
 - Direct access to the developer for technical guidance throughout the engagement
-- Expert of Record meetings twice-weekly throughout the seven-week period
+- Implementation review meetings twice-weekly throughout the seven-week period
 - Additional mop-up training sessions covering practical administration topics as they
   arise during implementation
 - Optional on-site delivery (venue and catering priced according to location and scope)
@@ -193,7 +193,7 @@ See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pd
 
 The eleven sessions above form the core curriculum. Beyond these, the programme
 includes additional mop-up training sessions addressing practical administration
-topics as they arise during implementation, alongside Expert of Record meetings held
+topics as they arise during implementation, alongside implementation review meetings held
 twice-weekly throughout the seven-week period — up to an hour each — to review project
 progress, resolve blockers, and keep the implementation tracking toward the
 pre-production milestone. These are working sessions against the project plan, not
