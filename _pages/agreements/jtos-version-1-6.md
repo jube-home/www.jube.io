@@ -48,23 +48,26 @@ JOL's commercial services are organised around three service lines, which reflec
 engagement:
 
 **Training and Integration** is the sole entry point to the Jube ecosystem and a prerequisite for all subsequent
-engagement. It is a structured, hands-on programme — delivered in person or remotely — through which Client personnel
-gain practical mastery of the Jube platform, configure it against real-world scenarios, and progress to a state of
-pre-production readiness. Training and Integration is delivered for a fixed fee covering both structured training
-delivery and a stated allocation of integration support hours, invoiced in two instalments to mutually de-risk the
-engagement: fifty percent (50%) upon conclusion of the first week of training delivery, and the balance upon
+engagement. It is a structured, hands-on programme — delivered remotely or on the Client's premises, as recorded in the
+applicable Work Order — through which Client personnel gain practical mastery of the Jube platform, configure it against
+real-world scenarios, and progress to a state of pre-production readiness. The delivery mode affects the elapsed
+duration of the programme, the hours it includes, and the fee, but not the instalment structure nor the mutual
+de-risking that structure provides. Training and Integration is delivered for a fixed fee covering both structured
+training delivery and a stated allocation of integration support hours, invoiced in two instalments to mutually de-risk
+the engagement: fifty percent (50%) upon conclusion of the first week of training delivery, and the balance upon
 confirmation of proof-of-concept infrastructure stability and the first transaction flowing in production, and in any
-event not later than four (4) months from commencement. Integration support beyond the included allocation, or
-following pre-production confirmation, is billed on the Retained Support model. The Training and Integration
-engagement concludes with certification of the relevant Client personnel as Jube Certified Application Specialists and
-confirmation of successful pre-production deployment. Upon conclusion, the engagement transitions naturally into a
-Retained Support or Enterprise Support arrangement, reflecting the expectation that Training and Integration marks the
-commencement of a long-term operational relationship. No Client shall proceed to Retained Support or Enterprise Support
-without having completed Training and Integration; the certification programme constitutes the technical and
-commercial gateway to any ongoing support arrangement.
+event not later than four (4) months from commencement or such shorter period as the applicable Work Order specifies.
+Integration support beyond the included allocation, or following pre-production confirmation, is billed on the Retained
+Support model. The Training and Integration engagement concludes with certification of the relevant Client personnel as
+Jube Certified Application Specialists and confirmation of successful pre-production deployment. Upon conclusion, the
+engagement transitions naturally into a Retained Support or Enterprise Support arrangement, reflecting the expectation
+that Training and Integration marks the commencement of a long-term operational relationship. No Client shall proceed to
+Retained Support or Enterprise Support without having completed Training and Integration; the certification programme
+constitutes the technical and commercial gateway to any ongoing support arrangement.
 
 **Retained Support** is available to certified Clients who require ongoing access to the Provider's
-expertise without a minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum
+expertise without a minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a
+Minimum
 Monthly Retainer, giving Clients flexible access to support as their operational needs evolve without any prepayment
 obligation.
 
@@ -132,6 +135,11 @@ rule extensions, stored procedures, or related documentation created by the Clie
 supported extensibility frameworks, which are treated as configuration data rather than modifications to Jube's core
 codebase.
 
+**On-Site Delivery:** The delivery of Services, or any part of them, at the Client's premises or at any other location
+agreed between the parties, as recorded in the applicable Work Order. On-Site Delivery is a published delivery mode
+rather than a variation from the Provider's ordinary practice, and is governed by Section 24. On-Site Delivery does not
+alter the allocation of responsibilities under this Agreement, and in particular does not alter clauses 3.8 and 3.9.
+
 **Service Activation Letter:** A written confirmation issued by the Provider to the Client on the commencement date of a
 Work Order, confirming that Services have been activated thereunder. The Service Activation Letter records the start
 date for the purposes of billing, notice periods, and IP vesting.
@@ -145,20 +153,29 @@ separately invoiced.
 jube.io/jube-support and versioned alongside these Terms, comprising an ad hoc rate, a project rate, committed Retained
 Support rungs, and a floor rate. The rate and Minimum Monthly Retainer applicable to an engagement are drawn from the
 Rate Card in force at Work Order acceptance and recorded in the Work Order. The Rate Card is uniform across Clients;
-rates are a function of commitment, not negotiation.
+rates are a function of commitment, not negotiation. Commitment may be ongoing, as in a committed Retained Support or
+Enterprise Support rung, or concentrated, as in a fixed-scope engagement committing a substantial number of hours within
+a single billing period; both are recognised on the same schedule, and clause 2.12 governs the rate applicable to
+concentrated commitment.
 
-**Retained Support (formerly PAYG):** A support arrangement under which a certified Client accesses ongoing Services without a
-minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum Monthly Retainer. The
-absence of a minimum commitment period and ancillary service obligations distinguishes Retained Support from Enterprise Support;
+**Retained Support (formerly PAYG):** A support arrangement under which a certified Client accesses ongoing Services
+without a
+minimum annual commitment. Retained Support engagements are billed monthly in arrears, subject to a Minimum Monthly
+Retainer. The
+absence of a minimum commitment period and ancillary service obligations distinguishes Retained Support from Enterprise
+Support;
 billing mechanics and rhythm are otherwise identical.
 
 **Enterprise Support:** A support arrangement under which a certified Client commits to a minimum annual engagement,
-with access to callout obligations under clause 3.12. Enterprise Support operates on the same in-arrears monthly billing model
-as Retained Support, with a larger Minimum Monthly Retainer as specified in the applicable Work Order. The premium of Enterprise
+with access to callout obligations under clause 3.12. Enterprise Support operates on the same in-arrears monthly billing
+model
+as Retained Support, with a larger Minimum Monthly Retainer as specified in the applicable Work Order. The premium of
+Enterprise
 Support is the level of committed service and ancillary obligations, not a different payment model.
 
 **Minimum Monthly Retainer:** The minimum fee payable by the Client in respect of each monthly billing period during
-which an engagement is active, as specified in the applicable Work Order. For ad hoc Retained Support engagements and the integration
+which an engagement is active, as specified in the applicable Work Order. For ad hoc Retained Support engagements and
+the integration
 support component of Training and Integration, the Minimum Monthly Retainer is one (1) hour at the applicable hourly
 rate. For Enterprise Support engagements, the Minimum Monthly Retainer is as specified in the applicable Work Order and
 shall not be less than one (1) hour at the applicable hourly rate. The Minimum Monthly Retainer is payable in respect of
@@ -168,7 +185,8 @@ engagements, the fee payable for a monthly billing period is the greater of the 
 the Minimum Monthly Retainer. For committed Retained Support and Enterprise Support engagements, the Minimum Monthly
 Retainer is the retained monthly amount for the committed rung recorded in the Work Order; recorded hours within fair
 use of the committed hours are covered by it and are not separately invoiced, and variance is handled in accordance
-with clauses 2.10 and 2.11.
+with clauses 2.10 and 2.11. No Minimum Monthly Retainer is payable in respect of a billing period in which the fixed
+fee for Training and Integration covers the Services delivered, whether remotely or under On-Site Delivery.
 
 The tiered structure of the Minimum Monthly Retainer reflects why it exists at all. Any Minimum Monthly Retainer
 secures the Client's access to the hourly rate specified in the Work Order — a reduced rate offered only to Clients
@@ -176,7 +194,8 @@ maintaining an active monthly engagement under this Agreement — together with 
 availability commitments set out in Section 3, including the four (4) business hour response commitment under clause
 3.3. Where a Client's Minimum Monthly Retainer meets the higher threshold specified for Enterprise Support, it
 additionally unlocks the further bundle of commitments set out across this Agreement: 24/7 callout under clause 3.12,
-the security patching response commitment under Section 18, and regulatory feature mapping under Section 19. These are not independent add-ons; they
+the security patching response commitment under Section 18, and regulatory feature mapping under Section 19. These are
+not independent add-ons; they
 are different facets of the same underlying purpose — keeping the Provider's familiarity with the Client's
 implementation current, and the Provider's confidence in supporting it, so that the commitments the Client is paying
 for can actually be relied upon when they are needed, including in support of the Client's own operational uptime. A
@@ -226,6 +245,9 @@ Client has independent access.
 8. Support Services are scoped to the documented functionality of the Jube platform as published at the official
    documentation site. The Provider is not obliged to support undocumented usage, integrations outside the supported
    extensibility framework, or any configuration or operational practice not covered by the platform documentation.
+9. Each Work Order shall record the delivery mode applicable to the engagement, being remote delivery, On-Site Delivery,
+   or a combination of both. Where a Work Order provides for On-Site Delivery, it shall additionally record the matters
+   specified in clause 24.2, and Section 24 shall apply to that engagement.
 
 ## 2. Fees and Payment
 
@@ -247,22 +269,35 @@ above. The clauses below set out the operative payment obligations governing eac
    fifty percent (50%) of the fixed fee, falls due upon conclusion of the first week of training delivery; no payment
    is required in advance of delivery. The second instalment falls due upon confirmation of proof-of-concept
    infrastructure stability and the first transaction flowing in production, and in any event not later than four (4)
-   months from the start date recorded in the Service Activation Letter. The fixed fee includes the integration
-   support hours stated in the Work Order; hours beyond that allocation, or Services following pre-production
-   confirmation, are billed in accordance with clause 2.3. In the event of termination prior to completion, any
-   instalment that has fallen due remains payable and is non-refundable; where the first week of training delivery has
-   concluded, the first instalment falls due notwithstanding termination; and hours recorded beyond the included
+   months from the start date recorded in the Service Activation Letter, or such shorter period as the applicable Work
+   Order specifies. The fixed fee includes the integration support hours stated in the Work Order, whether those hours
+   are delivered remotely or under On-Site Delivery; hours beyond that allocation, or Services following pre-production
+   confirmation, are billed in accordance with clause 2.3. This instalment structure, and the de-risking it provides to
+   the Client, applies identically to remote delivery and to On-Site Delivery; the delivery mode may affect when the
+   instalments fall due, but not the events upon which they fall due. In the event of termination prior to completion,
+   any instalment that has fallen due remains payable and is non-refundable; where the first week of training delivery
+   has concluded, the first instalment falls due notwithstanding termination; and hours recorded beyond the included
    allocation up to the effective termination date shall be invoiced in accordance with clause 2.3.
 5. There is no prepayment requirement for the commencement of any Work Order. Services commence on the basis of the
-   applicable Work Order and Service Activation Letter, with fees invoiced in accordance with this Section.
+   applicable Work Order and Service Activation Letter, with fees invoiced in accordance with this Section. Travel and
+   subsistence under clause 2.7 are the sole exception, being third-party costs carried on the Client's behalf rather
+   than Services, and may be invoiced as incurred.
 6. If any payment is not made when due, the Provider reserves the right to charge statutory interest at the rate
    applicable under the Late Payment of Commercial Debts (Interest) Act 1998, accruing daily until payment is received
    in full.
 7. To the extent that on-site visits to the Client's premises (or any other location) are required, the Provider shall
-   be entitled to charge for reasonable travel and subsistence expenses. Such expenses will be billed in accordance
-   with the HMRC international scale rate directory (as updated from time to time —
-   see [HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk)) and must be
-   agreed with the Client in advance.
+   be entitled to charge for reasonable travel and subsistence expenses. Such expenses must be agreed with the Client in
+   advance, shall be estimated in the applicable Work Order, and shall not be exceeded without the Client's written
+   agreement. They are charged without markup or administration fee, on the following basis:
+   a. accommodation and subsistence are billed in accordance with the HMRC international scale rate directory for the
+   destination (as updated from time to time —
+   see [HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk));
+   b. air travel, visas, work permits, any required insurance loadings or vaccinations, and local transport not provided
+   for within the scale rate are billed at cost against receipts;
+   c. days spent in transit to or from the location of On-Site Delivery are not billed as time and consume no hours
+   included within any fixed fee or committed allocation; and
+   d. where the Client elects to book and pay for air travel and accommodation directly under its own travel policy,
+   nothing in respect of those items shall be recharged, and only subsistence shall be claimed.
 8. Where the Provider is registered for Value Added Tax (VAT) with HMRC, applicable VAT will be charged on fees at the
    prevailing rate and shown separately on invoices. Clients outside the UK should satisfy their own VAT or equivalent
    obligations in their respective jurisdictions.
@@ -278,12 +313,29 @@ above. The clauses below set out the operative payment obligations governing eac
     accordance with Section 3 wherever practicable. Where sustained usage has departed from the commitment, the
     commitment shall be moved to the appropriate rung of the Rate Card with effect from the start of the next monthly
     billing period. Adjustments under this clause are prospective only.
+12. Where a Work Order commits hours within a single monthly billing period at or above the highest committed rung then
+    published on the Rate Card, the Services committed by that Work Order shall be charged at the floor rate on the Rate
+    Card, save that any structured training delivery component shall be charged at the project rate. Commitment
+    concentrated in this way is recognised on the same schedule as ongoing commitment and on the same basis; the rate is
+    a function of the commitment made and not of negotiation, and is uniform across Clients making the equivalent
+    commitment.
+13. Where a fixed fee has been agreed for an engagement involving On-Site Delivery, the fee is earned by the Provider's
+    attendance and availability during the scheduled period. Where the Client's personnel, environments, approvals, or
+    access are unavailable during that period for reasons attributable to the Client, the scheduled period is not
+    extended, no additional days accrue to the Client, and no reduction in the fee arises. The Provider shall use
+    reasonable endeavours to apply the time productively and shall raise any material unavailability with the Client
+    promptly. Any additional attendance requested by the Client to address such unavailability requires a variation to
+    the Work Order.
 
 ## 3. Service Delivery
 
 The Provider operates an async-first service delivery model. The primary working channel is **WhatsApp Business**,
 through which the majority of day-to-day service activity is conducted. This channel supports direct, responsive
 communication without the overhead of scheduled meetings, and is actively monitored during UK business hours.
+
+Where a Work Order provides for On-Site Delivery, the async-first model continues to govern the engagement before and
+after the on-site period, and the WhatsApp channel is opened and used throughout. On-Site Delivery supplements that
+model for the scheduled period rather than replacing it, and is governed by Section 24.
 
 Email is reserved for formal business communications and notices — including Work Order acceptance, Service Activation
 Letters, written sign-offs, and other communications where a traceable formal record is required. Email is not regularly
@@ -320,13 +372,18 @@ Recording.
 
 Details:
 
-1. Remote Delivery: The Services shall be delivered remotely by default unless otherwise agreed in writing.
+1. Delivery Mode: The Services shall be delivered remotely by default. On-Site Delivery is a published delivery mode
+   rather than an exception, and applies where the applicable Work Order so provides, in accordance with Section 24.
+   Any other variation to the delivery mode requires written agreement.
 2. Service Request Channels: All service requests must be submitted through WhatsApp Business, in accordance with this
    Section.
 3. Response Time: The Provider shall acknowledge and respond to all service requests within a maximum of four (4)
    business hours during UK office hours (09:00–17:30 GMT/BST, Monday to Friday, excluding UK public holidays). A
    response within this timeframe acknowledges receipt and initiates engagement with the request. It does not imply
-   resolution within that period nor constitute a service level commitment to the same.
+   resolution within that period nor constitute a service level commitment to the same. Where a Work Order provides for
+   On-Site Delivery, it may substitute the business hours, working week, and public holidays of the location of delivery
+   for those stated above, for the duration of the scheduled on-site period only, in which case the four (4) business
+   hour commitment shall be construed accordingly.
 4. Urgent Matters: Where a matter is time-sensitive or urgent, the Client should contact the Provider via WhatsApp
    Business, which generates audible alerts and is appropriate for urgent matters. Email cannot be relied upon for
    urgent matters under any circumstances.
@@ -350,7 +407,14 @@ Details:
    representative of the Client via email or other traceable written communication prior to implementation. In the
    absence of such written acceptance, the Provider shall have no liability for outcomes arising from the Client's
    implementation of those changes. The Client acknowledges that written acceptance constitutes confirmation that the
-   Client has reviewed, understood, and taken responsibility for the implementation of the relevant changes.
+   Client has reviewed, understood, and taken responsibility for the implementation of the relevant changes. For the
+   avoidance of doubt, this clause applies without modification during On-Site Delivery. The physical presence of the
+   Provider's personnel at the Client's premises, including presence alongside the Client's personnel during
+   configuration, deployment, or testing activity, does not constitute control of the Client's production systems, does
+   not transfer responsibility for implementation to the Provider, and does not dispense with the written acceptance
+   required by this clause and clause 3.9. Where the Provider's personnel operate Client systems at the Client's
+   direction during On-Site Delivery, they do so as an extension of the Client's own implementation activity and subject
+   to the Client's controls, change management, and authorisation.
 9. Testing and Sign-Off: The Client is responsible for testing all Deliverables in a suitable non-production
    environment. Promotion to production requires written acceptance by an authorised representative of the Client via
    email or other traceable written communication. The Provider shall have no liability for issues arising from
@@ -401,14 +465,14 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
    created by the Provider shall vest in and transfer to the Client upon payment of all fees in full, excluding clause
    6.2 exceptions and pre-existing IP.
 2. Notwithstanding clause 6.1, vesting does not include:
-   * Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (AGPLv3).
-   * Advanced analytics (e.g., machine learning models) developed using only JOL or consortium data.
-   * Supporting materials to Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (
-     AGPLv3) (e.g., platform documentation, scripts), being materials of general application to the Jube platform
-     rather than specific to the Client's implementation.
-   * Configuration Artifacts and documentation developed by the Provider specifically for the Client as expressly
-     particularised in a Work Order, which are expressly excluded from this clause and shall vest in the Client in
-     accordance with clause 6.1.
+    * Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (AGPLv3).
+    * Advanced analytics (e.g., machine learning models) developed using only JOL or consortium data.
+    * Supporting materials to Jube Open-Source real-time AML and Fraud Detection Transaction Monitoring software (
+      AGPLv3) (e.g., platform documentation, scripts), being materials of general application to the Jube platform
+      rather than specific to the Client's implementation.
+    * Configuration Artifacts and documentation developed by the Provider specifically for the Client as expressly
+      particularised in a Work Order, which are expressly excluded from this clause and shall vest in the Client in
+      accordance with clause 6.1.
 3. The Provider retains ownership of methodologies, know-how, tools, frameworks, and pre-existing IP used in providing
    the Services. The Provider grants the Client a non-exclusive, non-transferable license to use such elements solely as
    incorporated into the Deliverables. For the avoidance of doubt, Jube's core platform software is maintained as
@@ -443,14 +507,14 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
 2. The Provider's total liability shall not exceed fees paid by the Client under the relevant Work Order in the
    preceding 12 months.
 3. Excluded Uses: The Provider excludes liability for claims arising from use of Deliverables in:
-   - Industrial/engineering process control
-   - Financial trading (high-frequency or algorithmic)
-   - Transactional processing systems where the Deliverables are used as or in place of a ledger, settlement engine, or
-     system of financial record; for the avoidance of doubt, use of Deliverables as monitoring or validation layers
-     operating alongside such systems is not an excluded use.
-   - Medical-related systems
-   - Safety-critical systems
-   - Aerospace, automotive, or military applications
+    - Industrial/engineering process control
+    - Financial trading (high-frequency or algorithmic)
+    - Transactional processing systems where the Deliverables are used as or in place of a ledger, settlement engine, or
+      system of financial record; for the avoidance of doubt, use of Deliverables as monitoring or validation layers
+      operating alongside such systems is not an excluded use.
+    - Medical-related systems
+    - Safety-critical systems
+    - Aerospace, automotive, or military applications
 4. The Client warrants it will not use Deliverables for Excluded Uses. Any proposed use of Deliverables for an Excluded
    Use must be agreed in writing by both parties and is subject to the express prior approval of the Provider's
    professional indemnity insurers. The Provider reserves the right to decline any such request without obligation or
@@ -463,6 +527,11 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
 1. Neither party is liable for failure or delay caused by events beyond reasonable control (Force Majeure Event).
 2. The affected party shall notify the other and take reasonable steps to mitigate the effects.
 3. If the event continues for over sixty (60) days, either party may terminate with written notice.
+4. Where a Force Majeure Event prevents attendance at a scheduled period of On-Site Delivery, including the refusal,
+   withdrawal, or delay of a visa or work permit, or a restriction on travel to or from the location of delivery, the
+   parties shall cooperate in good faith to reschedule that period. Neither party shall be liable to the other in
+   respect of the postponement, save that any travel or accommodation cost already irrecoverably committed shall be
+   dealt with in accordance with clause 11.6.
 
 ## 10. Alternate Dispute Resolution (ADR)
 
@@ -485,8 +554,8 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
    breaches these Terms and fails to remedy such breach within thirty (30) days of receiving written notice specifying
    the breach in reasonable detail.
 4. Upon termination of any engagement, the Client shall pay the Provider for all Services performed and expenses
-   incurred up to the effective date of termination, including the Minimum Monthly Retainer for the billing period in
-   which termination occurs, invoiced in accordance with Section 2.
+   incurred or irrecoverably committed up to the effective date of termination, including the Minimum Monthly Retainer
+   for the billing period in which termination occurs, invoiced in accordance with Section 2.
 5. On termination of any engagement, the Provider shall delete all Client configuration assets held by the Provider,
    including any .jemp exports, within thirty (30) days of the effective termination date, and shall confirm deletion to
    the Client in writing. Notwithstanding this, the Provider may retain such assets for a period of up to six (6) years
@@ -494,6 +563,14 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
    claim. Assets retained under this exception shall be held securely, used for no other purpose, and deleted promptly
    on expiry of that period or earlier resolution of any relevant matter. The Provider shall confirm deletion to the
    Client in writing at that time.
+6. Where the dates for a period of On-Site Delivery have been confirmed in a Work Order, the Client may postpone them
+   once without charge by written notice given not less than thirty (30) days before the first scheduled day, and the
+   parties shall agree revised dates in accordance with the Provider's capacity. Where a postponement is requested less
+   than thirty (30) days before the first scheduled day, or where a second or subsequent postponement is requested, any
+   travel, accommodation, permit, or other third-party cost already irrecoverably committed in respect of the scheduled
+   period remains payable by the Client at cost, whether or not the engagement is otherwise terminated. No other charge
+   arises in respect of a postponement. This clause does not apply where the Provider postpones, and the Provider shall
+   bear its own irrecoverable costs in that event.
 
 ## 12. Entire Agreement and Variations
 
@@ -509,6 +586,9 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
 1. These Terms are governed by the laws of England and Wales.
 2. Subject to Section 10 (ADR), the courts of England and Wales have exclusive jurisdiction over any dispute arising
    under or in connection with this Agreement.
+3. The location of any On-Site Delivery shall not affect the governing law or jurisdiction under this Section, nor shall
+   attendance at a Client's premises in any jurisdiction be construed as the establishment of a place of business,
+   permanent establishment, or fixed presence by the Provider in that jurisdiction.
 
 ## 14. Miscellaneous
 
@@ -528,7 +608,8 @@ obligations relating to processing Personal Data are set out in Appendix A: Data
    any tax obligations arising outside the United Kingdom, and any such deductions shall not reduce the fees payable to
    the Provider unless expressly agreed in writing in the relevant Work Order. Clients engaging from jurisdictions where
    local tax or withholding obligations may apply are encouraged to confirm the position with their own advisors prior
-   to Work Order acceptance.
+   to Work Order acceptance. Clients engaging the Provider for On-Site Delivery are further encouraged to confirm the
+   position in respect of any local obligation arising from the physical presence of the Provider's personnel.
 
 ## 15. Independent Status and Representations
 
@@ -549,6 +630,16 @@ third party engaged in connection with the Services. No Client, subcontracting p
 Any such representation made without written consent is unauthorised and shall not bind JOL. The Provider reserves the
 right to withdraw from any engagement where this clause has been breached, without liability.
 
+Where a Work Order provides for On-Site Delivery, that Work Order shall constitute the prior written consent required by
+this Section for the submission of the Provider's personnel details in visa, work permit, site access, security
+clearance, and equivalent applications, to the extent necessary to enable attendance at the location of delivery under
+the Work Order and for no other purpose. Such consent extends only to the named engagement, only to the personnel whose
+attendance is contemplated by it, and only to submissions made to the authorities and to the Client's own access and
+security functions. It does not extend to proposals, tenders, submissions to third parties, or filings unconnected with
+attendance, which continue to require separate written consent. Where an intermediary is the contracting party, the
+intermediary shall obtain the Provider's written confirmation of the specific submissions to be made before making
+them, and shall provide copies to the Provider on request.
+
 Where an intermediary repeatedly draws on Provider time in connection with their own client delivery — whether framed as
 support queries, presales activity, or otherwise — and that activity appears to the Provider to be substantively
 co-delivery in nature, the Provider will raise this with the intermediary in the first instance with a view to agreeing
@@ -567,7 +658,8 @@ continuing engagement.
    configuration records, or reports produced or maintained on the Client's behalf, and are not warranted to be
    current or complete.
 3. The Provider accepts no liability for outcomes arising from the Client's infrastructure, deployment, or
-   architectural decisions.
+   architectural decisions. Nothing in Section 24, and no observation of the Client's environment during On-Site
+   Delivery, shall be construed as approval, sign-off, or assumption of responsibility for that environment.
 
 ## 17. Diagnostic Information Requirements
 
@@ -587,6 +679,10 @@ continuing engagement.
    handling obligations prior to transmission to the Provider.
 5. The Provider shall not be liable for misdiagnosis or failure to resolve incidents where diagnostic information
    provided is incomplete, inaccurate, or withheld.
+6. Where the Provider is present at the Client's premises under Section 24, diagnostic information may instead be
+   examined in situ on the Client's systems, under the Client's controls and supervision, without extraction or
+   transmission to the Provider. Examination in situ satisfies clause 17.1 in respect of the matter examined. Clause
+   24.6 governs the handling of any data so examined.
 
 ## 18. Security Patching and Vulnerability Management
 
@@ -615,7 +711,8 @@ detection regulatory requirements, and provides mapping of platform functionalit
 regulatory requirements as part of Enterprise Support. This does not constitute legal advice or regulatory advice,
 and is provided without warranty as to the sufficiency of any implementation for the Client's specific regulatory
 obligations. The Client remains solely responsible for its own regulatory compliance and for obtaining appropriate
-legal and compliance advice. Retained Support and Training and Integration Clients do not receive regulatory feature mapping
+legal and compliance advice. Retained Support and Training and Integration Clients do not receive regulatory feature
+mapping
 as part of their engagement, though the Provider may respond to an ad hoc regulatory query as ordinary billable
 Services time upon request.
 
@@ -672,8 +769,9 @@ Agreement, this Agreement prevails.
    the exercise of its rights, including but not limited to:
    a. the issue or reissue of a Service Activation Letter under clause 1.5;
    b. the request for diagnostic information under clause 17.3;
-   c. the notification of AGPLv3 licence obligations under clause 20; and
-   d. any circumstance where the intermediary's conduct may affect the Provider's ability to perform its obligations or
+   c. the notification of AGPLv3 licence obligations under clause 20;
+   d. the arrangement of site access, permits, scheduling, and security requirements under Section 24; and
+   e. any circumstance where the intermediary's conduct may affect the Provider's ability to perform its obligations or
    protect its interests.
 2. The exercise of this right shall not be construed as bypassing or replacing the intermediary's role under the
    applicable Work Order, but as a necessary safeguard in the interests of the end Client and the integrity of the
@@ -685,16 +783,29 @@ Agreement, this Agreement prevails.
 
 The Provider maintains Professional Indemnity insurance with a UK-authorised insurer. The specific level of coverage in
 force at any time is particularised in the applicable Work Order and is confidential between the parties.
-Notwithstanding, £1,000,000 per claim represents the upper limit of coverage that JOL will seek to maintain, and no
-Client should expect or request coverage beyond this level. Evidence of current coverage is available on request.
+Notwithstanding, £1,000,000 per claim represents the upper limit of Professional Indemnity coverage that JOL will seek to
+maintain, and no Client should expect or request Professional Indemnity coverage beyond this level. Evidence of current
+coverage is available on request.
 
 Clients whose governance requirements call for higher indemnity thresholds are encouraged to consider engaging through a
 larger implementation partner or system integrator within whose value chain the Provider may participate in a capacity
 that is commercially and contractually appropriate for all parties.
 
-For the avoidance of doubt, this Section applies solely to parties engaged with the Provider under a Work Order. The use
-of Jube as AGPLv3-licensed software carries no insurance or indemnity obligations on the part of the Provider, and any
-rights and obligations arising from that licence are governed exclusively by its terms.
+The limit stated above applies to Professional Indemnity coverage only. It does not constrain, and shall not be construed
+as constraining, the level of any other insurance the Provider carries.
+
+Where a Work Order provides for On-Site Delivery, the Provider shall additionally maintain Public Liability insurance
+with a UK-authorised insurer, at the level particularised in that Work Order and effective for the duration of the
+scheduled period. The Client shall notify the Provider, before acceptance of the Work Order, of any minimum level of
+Public Liability coverage required as a condition of access to the location of delivery, together with any other
+insurance evidence its access or procurement process requires, so that the position can be confirmed in advance of
+travel. Where the level required materially exceeds the coverage the Provider ordinarily carries, the parties shall agree
+in advance whether the additional coverage is to be obtained and, if so, the incremental premium shall be recharged to
+the Client at cost in accordance with clause 2.7. Evidence of current coverage is available on request.
+
+The territorial limits of the Provider's insurances shall extend to the location of any On-Site Delivery for the duration
+of the scheduled period. The Provider shall confirm this in advance of travel, and shall not attend a location falling
+outside the territorial limits then in force until cover has been extended to it.
 
 ## 23. Co-Delivery
 
@@ -726,15 +837,84 @@ rights and obligations arising from that licence are governed exclusively by its
 7. Co-delivery engagements are only available where the co-delivery Work Order commits an Enterprise Support level
    Minimum Monthly Retainer for the full duration of the engagement.
 
+## 24. On-Site Delivery
+
+On-Site Delivery is a published delivery mode under which the Provider attends the Client's premises, or another agreed
+location, for a scheduled period recorded in the Work Order. It exists because the concentration of attention it affords
+can materially compress the elapsed duration of an implementation. It does not alter the substance of the Services, the
+allocation of responsibility between the parties, or the protections either party enjoys under this Agreement.
+
+1. Application: This Section applies where the applicable Work Order provides for On-Site Delivery. Where it does not,
+   the Services are delivered remotely in accordance with clause 3.1.
+2. Work Order particulars: A Work Order providing for On-Site Delivery shall record the location of delivery, the
+   confirmed dates of the scheduled period, the estimated travel and subsistence under clause 2.7, and any Client
+   security, access, or screening requirements notified to the Provider before acceptance.
+3. Client obligations: The Client shall, at its own cost and for the duration of the scheduled period, provide safe and
+   lawful access to the location of delivery, a suitable working space, network access sufficient for the Services, and
+   reasonable access to the personnel, systems, and environments upon which delivery depends. The Client shall notify
+   the Provider before acceptance of the Work Order of any induction, screening, clearance, or documentation requirement
+   applicable to attendance, and shall provide such reasonable assistance as the Provider requires to satisfy it.
+4. Provider obligations: The Provider shall comply with the Client's reasonable site policies, security procedures,
+   health and safety requirements, and inductions applicable to visitors at the location of delivery, and shall ensure
+   that its personnel do likewise. Compliance with a Client policy under this clause does not vary this Agreement, and
+   in the event of conflict between a Client site policy and this Agreement, this Agreement prevails in respect of the
+   commercial and contractual relationship between the parties.
+5. Permits and immigration: Visa, work permit, and equivalent requirements applicable to attendance shall be identified
+   by the parties in advance of travel and not on arrival. The Client shall provide invitation letters, sponsorship
+   documentation, and equivalent support reasonably required for any application. Section 15 governs the submission of
+   the Provider's personnel details for these purposes, and a Work Order providing for On-Site Delivery constitutes the
+   consent required by that Section to the extent there stated. Clause 9.4 governs the position where a permit is
+   refused, withdrawn, or delayed.
+6. Data handled on the Client's premises: Where the Provider is present at the Client's premises, the Client may grant
+   the Provider supervised access to production or production-like data, including transaction data, held on the
+   Client's own systems and within the Client's own environment, for the purposes of configuration, tuning, analysis,
+   testing, or diagnosis. Where such access is granted:
+   a. any processing occurs on the Client's systems, under the Client's controls, access management, and monitoring, and
+   at the Client's direction;
+   b. the Provider shall not extract, copy, export, transmit, photograph, or otherwise remove such data from the
+   Client's environment, and shall not retain it following the scheduled period;
+   c. no such data is transferred to the Provider or to any sub-processor, and accordingly no transfer outside the
+   Client's jurisdiction arises by virtue of the Provider's attendance;
+   d. the Client remains the controller in respect of such data and is responsible for the lawful basis of the access it
+   grants, for any authorisation required under its own policies and regulatory obligations, and for the sufficiency of
+   the controls under which access is given; and
+   e. all such data is Confidential Information for the purposes of Section 4.
+   Paragraph 1 of Appendix A is to be construed subject to this clause. Nothing in this clause obliges the Client to
+   grant access to any data, and the Provider does not require access to raw Personal Data in order to deliver the
+   Services.
+7. Production boundary preserved: Clauses 3.8 and 3.9 apply without modification during On-Site Delivery. The
+   Provider's presence at the Client's premises does not constitute control of the Client's production systems, does not
+   transfer responsibility for implementation to the Provider, and does not dispense with the written acceptance those
+   clauses require.
+8. Scheduling: The working week, working hours, and public holidays observed during the scheduled period are those of
+   the location of delivery, subject to clause 3.3. Sessions are scheduled around the ordinary rhythm of the working day
+   at that location, including religious observance and prayer, and the sequence of delivery is agreed with the Client
+   in advance of travel rather than imposed, subject to any dependencies between sessions. Delivery may be arranged as
+   more than one block within a working day.
+9. Availability of Client personnel: Clause 2.13 governs the consequences of the unavailability of the Client's
+   personnel, environments, approvals, or access during the scheduled period.
+10. Continuity: The Provider shall deliver a scheduled period of On-Site Delivery once travelled to. Where an emergency
+    arises during that period, including an obligation to another Client under clause 3.12, the Provider shall address
+    it outside the scheduled hours of delivery in preference to cancelling or curtailing a scheduled day.
+11. Postponement: Clause 11.6 governs the postponement of confirmed dates.
+12. Expenses: Clause 2.7 governs travel and subsistence, and records that days spent in transit are not billed.
+13. No establishment: Clause 13.3 governs the effect of attendance on jurisdiction and establishment.
+
 ## Appendix A: Data Processing (GDPR)
 
 ### 1. Role as Data Processor
 
-JOL acts as a data processor under GDPR. In practice, JOL does not collect, store, or process Personal Data in the
-course of providing the Services. All data handled during engagements is masked or anonymised prior to any involvement
-by JOL, and JOL does not have access to raw Personal Data. In the unlikely event that Personal Data is incidentally
-disclosed, JOL will process it only according to Client instructions and solely to the extent necessary to perform the
-Services.
+JOL acts as a data processor under GDPR. In the ordinary course of remote delivery, JOL does not collect, store, or
+process Personal Data: all data handled during such engagements is masked or anonymised prior to any involvement by JOL,
+and JOL does not have access to raw Personal Data. In the unlikely event that Personal Data is incidentally disclosed,
+JOL will process it only according to Client instructions and solely to the extent necessary to perform the Services.
+
+Where Services are delivered at the Client's premises under Section 24, the Client may grant supervised access to
+production or production-like data held on the Client's own systems. In that case JOL processes such data only on the
+Client's systems, under the Client's controls and at the Client's direction, and does not extract, copy, transmit, or
+retain it. Clause 24.6 governs that access in full and prevails over the first paragraph of this section to the extent
+of any inconsistency. For the avoidance of doubt, access of that kind does not involve a transfer of Personal Data to
+JOL, and sections 3, 4, and 6 of this Appendix are to be construed accordingly.
 
 ### 2. Purpose of Processing
 
@@ -747,11 +927,13 @@ JOL processes Personal Data solely to:
 ### 3. Data Sharing and Transfers
 
 JOL does not sell Personal Data. Transfers outside the UK/EEA are made only where appropriate GDPR safeguards are in
-place.
+place. Supervised access to data on the Client's own systems under clause 24.6 does not constitute a transfer for the
+purposes of this section.
 
 ### 4. Data Retention
 
-Data is retained only as instructed by the Client or as required by applicable law.
+Data is retained only as instructed by the Client or as required by applicable law. Data accessed under clause 24.6 is
+not retained by JOL.
 
 ### 5. Security
 
@@ -760,7 +942,8 @@ unlawful processing and against accidental loss, destruction, or damage.
 
 ### 6. Sub-processors
 
-Third-party sub-processors may be used. All sub-processors are bound by GDPR-equivalent obligations.
+Third-party sub-processors may be used. All sub-processors are bound by GDPR-equivalent obligations. No sub-processor is
+granted access to data accessed under clause 24.6.
 
 ### 7. Data Subject Rights
 
@@ -839,35 +1022,49 @@ itself, and reasonable wrap-up, including follow-up notes and actions recorded i
 
 5.2 Preparation and wrap-up time are not charged separately from the meeting; they are treated as integral to it.
 
-## 6. Engagement Administration
+## 6. On-Site Delivery
 
-6.1 The Provider maintains comprehensive, indexed records in connection with each Client engagement. These include but
+6.1 During a scheduled period of On-Site Delivery, time is recorded on the basis of the working day attended, being the
+hours of attendance at the location of delivery applied to the Services, together with reasonable preparation and
+wrap-up in accordance with section 5 of this Appendix. Delivery may be arranged as more than one block within a working
+day, and the recording basis is unaffected by how the day is divided.
+
+6.2 Days spent in transit to or from the location of delivery are not billed and consume no hours included within any
+fixed fee or committed allocation, in accordance with clause 2.7(c).
+
+6.3 Where a fixed fee has been agreed, hours recorded during the scheduled period are recorded for the purposes of the
+Time Record and of the sizing of any subsequent support arrangement, and are covered by the fixed fee. They are not
+separately invoiced, and clause 2.13 governs the position where the Client's personnel or environments are unavailable.
+
+## 7. Engagement Administration
+
+7.1 The Provider maintains comprehensive, indexed records in connection with each Client engagement. These include but
 are not limited to client notes, task records, Jira tickets, interaction logs, and related documentation maintained in
 the Provider's notes and knowledge management systems.
 
-6.2 Time reasonably spent on such administration — including creating, updating, and organising records directly
+7.2 Time reasonably spent on such administration — including creating, updating, and organising records directly
 relating to the Client's engagement — is billable as engagement administration time and will be recorded accordingly in
 the Provider's internal records.
 
-6.3 The Provider exercises reasonable discretion in recording only administration time that is directly attributable to
+7.3 The Provider exercises reasonable discretion in recording only administration time that is directly attributable to
 the Client's engagement and proportionate to the nature of the Services being delivered.
 
-## 7. Email Communications
+## 8. Email Communications
 
-7.1 Email is not a primary service request channel and is not subject to the response time commitment in clause 3.3
+8.1 Email is not a primary service request channel and is not subject to the response time commitment in clause 3.3
 of the Terms.
 
-7.2 Where communications are received by email, the Provider will, where practicable, redirect them to WhatsApp. Time
+8.2 Where communications are received by email, the Provider will, where practicable, redirect them to WhatsApp. Time
 spent reading, triaging, and redirecting email communications is billable where it constitutes genuine cognitive
 engagement as described in Section 2 of this Appendix.
 
-7.3 Email communications are subject to the same time recording principles as set out in Section 2 of this
+8.3 Email communications are subject to the same time recording principles as set out in Section 2 of this
 Appendix. The Provider's preferred channel for service delivery remains WhatsApp, and the Client is encouraged to use
 it in preference to email.
 
-## 8. Recording and Transparency
+## 9. Recording and Transparency
 
-8.1 Time Records are submitted to the Client monthly in accordance with the Time Records definition set out in
+9.1 Time Records are submitted to the Client monthly in accordance with the Time Records definition set out in
 the Definitions section of the Agreement, and the billing obligations set out in clause 2.3.
 
-8.2 The Provider maintains contemporaneous records of time engaged, available for Client review on request.
+9.2 Contemporaneous records of time engaged are maintained by the Provider, available for Client review on request.
