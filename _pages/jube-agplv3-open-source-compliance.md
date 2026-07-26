@@ -8,8 +8,6 @@ Jube is distributed exclusively under the GNU Affero General Public License v3 (
 modify. That is not a commercial positioning statement — it is the foundation on which Jube is built, and it will not
 change.
 
-## What this means in practice
-
 The AGPLv3 is a strong copyleft licence. In plain terms:
 
 - You can deploy Jube in your organisation without paying a licence fee
@@ -23,8 +21,6 @@ The AGPLv3 is a strong copyleft licence. In plain terms:
   obligations — they remain proprietary to their creator as is customary in open source software of this nature. The
   licence concerns the software itself, not how you use it.
 
-## For system integrators and technology partners
-
 Building services around Jube is entirely compatible with the AGPLv3, but the boundary between independent tooling and a
 derivative work requires honest consideration. Integrations that interact with Jube through its published APIs and
 documented extensibility framework are generally independent — but not automatically so. A new user interface that
@@ -36,8 +32,6 @@ not a novel question in open source software, and the answer in any specific cas
 the coupling rather than what the work is called. If you are building on top of Jube and uncertain where your
 implementation sits, take proper legal advice. JOL does not make that determination on your behalf, but will not pretend
 the question does not exist.
-
-## Responsibility
 
 Each deploying organisation is responsible for ensuring their own use and deployment of Jube complies with the AGPLv3.
 No commercial arrangement with an intermediary discharges that obligation. The licence is between you and the open
@@ -56,8 +50,6 @@ JHL's enforcement position is informed by established case law, including Artife
 federal court confirmed that the AGPLv3 constitutes an enforceable contract giving rise to copyright infringement claims
 on breach. That principle is broadly recognised across jurisdictions and forms the basis on which JHL's intellectual
 property rights are maintained.
-
-## A note for end users
 
 Licence compliance is ultimately the responsibility of the deploying organisation — not the intermediary who implemented
 the software, and not JHL. In practice this means the question of AGPLv3 compliance is most often one for the end user's

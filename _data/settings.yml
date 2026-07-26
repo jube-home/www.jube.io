@@ -15,8 +15,6 @@ menu__settings:
       url: '/jube-training'
     - title: 'Support'
       url: '/jube-support'
-    - title: 'Partners'
-      url: '/jube-partners'
     - title: 'Whitepapers'
       url: '/jube-whitepapers'
     - title: 'Resources'
