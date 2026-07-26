@@ -17,6 +17,8 @@ shock by design.
 published here in full. Engagement proceeds directly to a quote which references this
 page (see [From this page to a signed engagement](#from-this-page-to-a-signed-engagement) below).
 
+![Jube Training](/support.png)
+
 ## How support works
 
 Support is delivered async-first — day-to-day via WhatsApp Business, with

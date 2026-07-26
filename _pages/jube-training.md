@@ -25,6 +25,8 @@ full. Engagement proceeds directly to a quote which references this page; the qu
 only the handful of parameters specific to your engagement (see
 [From this page to a signed engagement](#from-this-page-to-a-signed-engagement) below).
 
+![Jube Training](/training.png)
+
 In **private training**, you'll gain:
 
 - **Practical mastery** — configure rules, workflows, and machine learning models hands-on
@@ -34,8 +36,6 @@ In **private training**, you'll gain:
 - **Production-ready architecture** — deploy and chaos-test a high availability cluster
   configuration, covering Docker Swarm, Patroni, Redis Sentinel, and HAProxy, so your
   team understands the stack before it matters.
-
-![Jube Training](/training.png)
 
 Private delivery allows deeper focus on your architecture, data, workflows, and
 implementation strategy, ensuring the training directly supports pre-production.
