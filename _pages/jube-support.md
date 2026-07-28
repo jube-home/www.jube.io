@@ -8,7 +8,7 @@ Jube is open source and free to use. Implementation and training engagements are
 fee. Ongoing support is available in two arrangements — retained support and
 Enterprise — with advanced analytics consulting available under either, and larger
 defined tasks handled as fixed-scope [project engagements](#project-engagements), each
-under its own work order. All operate
+under its own Work Order. All operate
 on the same business model: **retained professional service hours, with a fair-use,
 no-overage commitment**. The monthly amount is known in advance, and there is no bill
 shock by design.
@@ -39,6 +39,15 @@ use — is the amount invoiced, full stop. Professional services billing typical
 its margin in the overage, which is exactly where bill shock lives; this model removes
 the category.
 
+Fair use has a published number attached to it rather than being left to judgement.
+Recorded hours are within fair use up to one and a half times the committed hours in a
+month, and are covered by the retained amount. Above that threshold the excess may be
+invoiced at the engaged hourly rate — but never silently: where it becomes apparent
+during a month that recorded hours are heading past it, you are told while there is
+still time to decide how you want to proceed. In practice sustained variance is dealt
+with by moving the commitment at the quarterly review rather than by invoicing the
+month.
+
 Time is still recorded against every piece of work as it happens, and is fully
 auditable — but it exists to demonstrate fairness, not to generate charges. Recorded
 time feeds a **quarterly account management review**, where the retained rate is
@@ -53,10 +62,18 @@ absurd overheads that proprietary vendors carry, and pass on, have been cut clea
 What you are paying for is the time of the person who wrote the platform, and very
 little else.
 
-**Termination is thirty days' notice**, by either party, as set out in the JTOS. Long
-notice periods exist to keep clients who would rather leave. Support billed monthly in
-arrears has to earn its keep every month, and is retained because it is useful — not
-because a contract compels it.
+**Retained support is terminable on thirty days' notice**, by either party, at any
+time, as set out in the JTOS. Long notice periods exist to keep clients who would
+rather leave. Support billed monthly in arrears has to earn its keep every month, and
+is retained because it is useful — not because a contract compels it.
+
+Enterprise is the single exception, and the reason is worth stating plainly. Enterprise
+carries a twelve-month initial term to which both sides are equally committed — Jube
+cannot walk away inside the year any more than you can. What Enterprise sells is a year
+of maintained availability: the callout coverage, the patching response, the regulatory
+mapping, and a working knowledge of your implementation that stays current. None of
+that can be honestly promised on a thirty-day footing. After the initial term Enterprise
+continues month to month on the same thirty days' notice as everything else.
 
 ## Retained support
 
@@ -69,16 +86,16 @@ monthly in arrears, under the fair-use, no-overage commitment described above.
 The rate card is graduated as an exponential derate: no commitment earns no keen
 price, the discount is front-loaded as commitment begins, and the curve flattens onto
 a floor. It is published so that it is the same for every client — the rate is a
-function of commitment, not of negotiation:
+function of commitment, not of negotiation. All rates are in United States dollars:
 
-| Committed hours per month | Hourly rate     | Retained monthly amount |
-|---------------------------|-----------------|-------------------------|
-| None (ad hoc)             | $150            | billed as used          |
-| 5                         | $125            | $625                    |
-| 10                        | $114            | $1,140                  |
-| 15                        | $106            | $1,590                  |
-| 20                        | $100            | $2,000                  |
-| 25 *(Enterprise)*         | $96 *(floor)*   | $2,400                  |
+| Committed hours per month | Hourly rate     | Retained monthly amount        |
+|---------------------------|-----------------|--------------------------------|
+| None (ad hoc)             | $150            | billed as used, one hour a month minimum |
+| 5                         | $125            | $625                           |
+| 10                        | $114            | $1,140                         |
+| 15                        | $106            | $1,590                         |
+| 20                        | $100            | $2,000                         |
+| 25 *(Enterprise)*         | $96 *(floor)*   | $2,400                         |
 
 Fixed-scope project engagements — the
 [training and integration programme](/jube-training) among them — are billed at the
@@ -111,7 +128,10 @@ through a quote.
 
 Commitments are set at the nearest rung to evidenced demand, and revisited at the
 quarterly account management review — moved up or down the same published card,
-prospectively and in the open. **$96 an hour is the floor of the card.** Holding it
+prospectively and in the open. Within an Enterprise initial term the commitment does
+not move below the top rung, because that rung is what Enterprise is; a client whose
+sustained demand settles lower can move to retained support at the end of the term.
+**$96 an hour is the floor of the card.** Holding it
 matters more than winning any single engagement: a rate that moves under pressure is not
 really a published rate at all, and part of what this page offers is the assurance that
 the number you are given is the number everyone else is given.
@@ -127,12 +147,19 @@ variable support needs — the entry rung, five hours a month at $625, is delibe
 sized to work in emerging markets. Responses within four business hours during UK
 office hours, on a best endeavours basis.
 
+Out-of-hours and emergency response is not part of retained support. Where it is
+provided at all it is at Jube's discretion and on a best endeavours basis, charged at
+the ad hoc rate of $150 per hour with a two-hour minimum per callout. Guaranteed
+out-of-hours coverage is what Enterprise buys, and it is the honest answer to give here
+rather than an implication left hanging.
+
 ## Enterprise support
 
 Enterprise support is available at **$2,400 per month — $28,800 a year** — invoiced
 monthly in arrears in accordance with the JTOS and under the same fair-use, no-overage
 commitment, for clients who want a retained relationship, committed availability, and a
-named technical authority on their implementation.
+named technical authority on their implementation. It is committed for a twelve-month
+initial term, mutually, and continues month to month on thirty days' notice thereafter.
 
 The price is not set apart from the rate card; it is the top of it. Twenty-five committed
 hours a month at the floor rate of $96 is $2,400, which is the whole of the calculation.
@@ -161,7 +188,11 @@ are what a commitment at the top of the scale carries with it:
 - **24/7 callout coverage** — urgent matters raised via WhatsApp Business are
   interrupt-driven and will be picked up as quickly as practically possible.
   Response during 06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours,
-  coverage is on a best endeavours basis.
+  coverage is on a best endeavours basis. Callout is included within the retained
+  amount and recorded like any other time; it is not separately invoiced. Sustained
+  callout volume is a quarterly review conversation, not an invoice. Callout is tied to the top rung: if the
+  commitment ever falls below twenty-five hours a month, callout and the other Enterprise inclusions cease from
+  that billing period and the arrangement is retained support.
 
 ---
 
@@ -172,7 +203,7 @@ cluster build, a migration, a substantial integration, or a sustained piece of m
 development. These are handled as fixed-scope projects, on a project-by-project basis:
 properly scoped and planned before anything begins, priced at the published project
 rate of $125 per hour against the scoped estimate, and delivered under a specific
-work order as defined in the JTOS — the
+Work Order as defined in the JTOS — the
 [training and integration programme](/jube-training) itself is delivered on exactly
 this basis.
 
@@ -183,16 +214,17 @@ the commitment — a scoped plan and a known price — and this is where they ge
 
 The discipline is the point, and it is what extends the no-bill-shock principle to the
 biggest tasks, where it matters most. A project does not begin until its scope, plan,
-and price are agreed and recorded in its work order; the price is known before the
-work starts, and it is the work order that changes it — never the invoice.
+and price are agreed and recorded in its Work Order; the price is known before the
+work starts, and it is the Work Order that changes it — never the invoice.
 
 Project engagements are ordinarily delivered remotely, on the same async-first basis
 as everything else. Where a project genuinely warrants attendance at your premises,
-that is agreed in advance and recorded in the work order, priced at the project rate
+that is agreed in advance and recorded in the Work Order, priced at the project rate
 with no derate for attendance, and with travel and subsistence handled exactly as set
 out for the [on-site month](/jube-training): flights and accommodation booked directly
 by you, economy class, scheduled within social hours, and subsistence at the published
-HMRC scale rate.
+HMRC scale rate. Days spent travelling to you and back are not billed and consume none
+of the engaged hours.
 
 ---
 
@@ -281,13 +313,20 @@ quote adds only the parameters specific to your engagement:
 2. **Quote issued** — Jube raises a formal quote for digital signature, referencing
    this page, and stating: the client entity, the arrangement (retained or
    Enterprise), the committed hours and corresponding retained monthly amount from the
-   published scale where applicable, invoicing details, and the commencement date.
+   published scale where applicable, the initial term where the arrangement is
+   Enterprise, invoicing details, and the commencement date.
 3. **Signature** — On digital signature of the quote, the quote and the referenced
-   documents together constitute the work order as defined in the JTOS. Quotes are
+   documents together constitute the Work Order as defined in the JTOS. Quotes are
    issued by Jube Operations Limited, the contracting entity (see
    [Governance and insurance](#governance-and-insurance) below).
 4. **Commencement** — support commences on the confirmed date, typically continuing
-   seamlessly from the programme's asynchronous support period.
+   seamlessly from the programme's asynchronous support period. Jube issues a **Service
+   Activation Letter** on commencement, recording the start date, the arrangement, the
+   delivery mode, and which of the Enterprise commitments are and are not in force. It
+   states no fees or rates, which means it can be shared freely — including with your
+   own compliance, audit, or procurement function, or where support reaches you through
+   a partner and you want to see for yourself what has actually been contracted. It is
+   reissued whenever anything it records changes.
 
 ## Ownership of extensions and configurations
 
@@ -338,9 +377,11 @@ leveraging the AGPLv3-licensed Jube platform.
 All engagements are delivered under the
 [Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
 and written to be clear and equitable for both parties. Professional indemnity
-insurance is carried at GBP 1M per claim, subject to exclusions as set out in the
-JTOS. Where work is delivered at your premises, public liability insurance is
-additionally carried, at the level recorded in the work order.
+insurance is carried with a UK-authorised insurer at the level recorded in the Work
+Order, up to GBP 1M per claim, which is the ceiling Jube maintains and the most any
+client should expect, subject to exclusions as set out in the JTOS. Where work is
+delivered at your premises, public liability insurance is additionally carried, at the
+level recorded in the Work Order.
 
 Behind the Jube name sit two companies. Jube Holdings Limited (JHL) is a Cyprus-based
 company that owns the Jube software and trademarks, registered with the Cyprus
