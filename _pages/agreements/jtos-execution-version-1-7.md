@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jube Terms of Service (JTOS)
+title: Jube Terms of Service (JTOS) for Signed Execution
 permalink: /agreements/jtos-execution-version-1-7
 ---
 
