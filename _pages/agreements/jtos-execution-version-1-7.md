@@ -1,3 +1,9 @@
+---
+layout: page
+title: Jube Terms of Service (JTOS)
+permalink: /agreements/jtos-execution-version-1-7
+---
+
 # Jube Terms of Service (JTOS): [Insert other client sympathetic or project title]
 
 **[Enterprise Support — Client short name]**
