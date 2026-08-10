@@ -108,6 +108,15 @@ The client who believes it bought bespoke IP and later discovers it is running r
 own, against the integrator, entirely independent of anything JHL, a contributor, or a competitor might raise. That
 exposure is the integrator's alone to carry.
 
+It is also worth connecting this back to the contract position set out earlier. Because breach of the AGPLv3 sounds in
+contract as well as copyright, the damages that flow from a breach are not confined to the value of the software
+itself. Jube is a registered trademark with the Cyprus Registrar of Companies and Intellectual Property, and where
+non-compliant use also carries the Jube name or brand into contexts that dilute its distinctiveness, damage its
+reputation, or erode the intangible asset value the mark represents, that harm sits within the same case rather than
+requiring a separate action — it goes to the scale of what a breach actually costs, not to a second, independent claim.
+Organisations and their intangible-asset risk functions may find it more useful to read the two as a single, cumulative
+exposure rather than parallel tracks.
+
 This is not a weakness of the model. It is the mechanism by which the field stays honest, and it operates independently
 of whether JHL notices any particular breach first. Jube's traction compounds it: as one of the most widely deployed
 open source AML and fraud prevention platforms in service, it means more contributors with standing, more recipients
@@ -148,4 +157,3 @@ ultimately raises the question.
 
 *This page sets out JHL's position on the terms under which Jube is offered. It is not legal advice and does not vary
 the AGPLv3, the text of which governs. Organisations uncertain about their obligations should take their own advice.*
- 
