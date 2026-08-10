@@ -107,6 +107,14 @@ of whether JHL notices any particular breach first. Jube's traction compounds it
 open source AML and fraud prevention platforms in service, it means more contributors with standing, more recipients
 with entitlements, and more competitors with cause.
 
+Nor is enforcement theoretical elsewhere in the AGPLv3 ecosystem. The Software Freedom Conservancy, which supports and
+enforces on behalf of a wide range of copyleft projects, has said openly that private negotiation with violators is
+often met with delay and refusal, and has shifted its own strategy toward litigation rather than treating it as a last
+resort. Its active investigations — most recently into AGPLv3 compliance in commercial hardware and firmware — are a
+reminder that AGPLv3 enforcement is not the preserve of any one copyright holder acting alone, and that the boundaries
+of the licence continue to be tested in practice, not just in commentary. Organisations should read that as a live
+enforcement environment, not a dormant one.
+
 ## Where this surfaces in practice
 
 Software composition analysis is routine in regulated environments, and Jube will appear in it. An organisation running
