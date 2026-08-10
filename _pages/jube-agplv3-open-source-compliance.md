@@ -37,7 +37,8 @@ auditor, a regulator, or a board.
 - The network provision applies. If you run a modified version of Jube as a service accessible to others, including over
   an internal network, the modified source must be made available to those users under the same licence
   That obligation attaches to modifications of Jube's core software. Configuration, use of documented features, case
-  management workflows, integrations, and Configuration Artifacts are your business and carry no AGPLv3 obligation — they
+  management workflows, integrations, and Configuration Artifacts are your business and carry no AGPLv3 obligation —
+  they
   remain proprietary to their creator, as is customary in open source software of this nature. The licence concerns the
   software, not how you use it.
 
@@ -155,5 +156,7 @@ ultimately raises the question.
  
 ---
 
-*This page sets out JHL's position on the terms under which Jube is offered. It is not legal advice and does not vary
-the AGPLv3, the text of which governs. Organisations uncertain about their obligations should take their own advice.*
+*This page sets out JHL's position on the terms under which Jube is offered. It is written primarily for the deploying
+organisation's compliance function and for the auditor of record who encounters Jube in a scan or review — not as an
+invitation for informal interpretation. It is not legal advice and does not vary the AGPLv3, the text of which governs.
+Organisations uncertain about their obligations should take their own advice.*
