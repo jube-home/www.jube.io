@@ -37,11 +37,9 @@ auditor, a regulator, or a board.
 - The network provision applies. If you run a modified version of Jube as a service accessible to others, including over
   an internal network, the modified source must be made available to those users under the same licence
   That obligation attaches to modifications of Jube's core software. Configuration, use of documented features, case
-  management workflows, integrations, and Configuration Artifacts are your business and carry no AGPLv3 obligation —
-  they
+  management workflows, integrations, and Configuration Artifacts are your business and carry no AGPLv3 obligation — they
   remain proprietary to their creator, as is customary in open source software of this nature. The licence concerns the
   software, not how you use it.
-
 ## Derivative works
 
 Building services around Jube is entirely compatible with the AGPLv3. The boundary between independent tooling and a
@@ -103,6 +101,12 @@ structure, or presentation, has every reason to raise it — with the end client
 with the procurement process, or with JHL. That such a challenge is commercially motivated does not make it wrong, and
 does not make it go away. It is a legitimate lever, and it will be pulled.
 
+A System Integrator that strips Jube's copyright notices and branding and holds the platform out to its own client as
+proprietary technology has not solved its AGPLv3 exposure — it has added a second problem, owed to a different party.
+The client who believes it bought bespoke IP and later discovers it is running rebadged Jube has a grievance of its
+own, against the integrator, entirely independent of anything JHL, a contributor, or a competitor might raise. That
+exposure is the integrator's alone to carry.
+
 This is not a weakness of the model. It is the mechanism by which the field stays honest, and it operates independently
 of whether JHL notices any particular breach first. Jube's traction compounds it: as one of the most widely deployed
 open source AML and fraud prevention platforms in service, it means more contributors with standing, more recipients
@@ -141,7 +145,6 @@ ultimately raises the question.
  
 ---
 
-*This page sets out JHL's position on the terms under which Jube is offered. It is written primarily for the deploying
-organisation's compliance function and for the auditor of record who encounters Jube in a scan or review — not as an
-invitation for informal interpretation. It is not legal advice and does not vary the AGPLv3, the text of which governs.
-Organisations uncertain about their obligations should take their own advice.*
+*This page sets out JHL's position on the terms under which Jube is offered. It is not legal advice and does not vary
+the AGPLv3, the text of which governs. Organisations uncertain about their obligations should take their own advice.*
+ 
