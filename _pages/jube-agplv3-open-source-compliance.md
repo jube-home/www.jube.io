@@ -40,6 +40,7 @@ auditor, a regulator, or a board.
   management workflows, integrations, and Configuration Artifacts are your business and carry no AGPLv3 obligation — they
   remain proprietary to their creator, as is customary in open source software of this nature. The licence concerns the
   software, not how you use it.
+
 ## Derivative works
 
 Building services around Jube is entirely compatible with the AGPLv3. The boundary between independent tooling and a
