@@ -55,17 +55,23 @@ or contractual language cures that. Code tightly coupled to, embedded within, or
 raises the question more sharply still.
 
 None of this is novel in open source. The answer in any given case turns on the nature and purpose of the coupling. If
-you are building on Jube and uncertain where your implementation sits, take proper legal advice. JOL does not make that
-determination on your behalf, and will not pretend the question does not exist.
+you are building on Jube and uncertain where your implementation sits, take proper legal advice. Jube Operations Limited
+(JOL) — the company that develops, operates, and supports Jube commercially — does not make that determination on your
+behalf, and will not pretend the question does not exist.
 
 ## Guidance is not absolution
 
-Asking JOL, JHL, or anyone associated with either for informal steer on compliance does not discharge your obligations,
-and nothing you receive in reply should be read as doing so.
+Copyright in Jube is held by Jube Holdings Limited (JHL). JOL is a separate company: it develops the software, provides
+training, support, and implementation services around it, but holds no copyright in Jube and has no authority over the
+licence beyond what any other party has. Asking either JHL or JOL — or anyone associated with either — for informal
+steer on compliance does not discharge your obligations, and nothing you receive in reply should be read as doing so.
 
-Jube Holdings Limited (JHL) is the copyright holder. It is not a licensing authority. It does not issue compliance
-opinions, comfort letters, waivers, or forbearance, and it has no mechanism by which to do so. Nothing said, written, or
-implied by JHL, Jube Operations Limited (JOL), or anyone acting on their behalf — in conversation, correspondence, a
+JHL, as the copyright holder, is not a licensing authority. It does not issue compliance opinions, comfort letters,
+waivers, or forbearance, and it has no mechanism by which to do so. JOL is in no different a position: operating and
+supporting Jube commercially does not give it any power to vary the licence, and nothing it says changes what the
+AGPLv3 requires.
+
+Nothing said, written, or implied by JHL, JOL, or anyone acting on their behalf — in conversation, correspondence, a
 proposal, a support ticket, or a workshop — creates a commercial licence, varies the AGPLv3, or forgives an obligation
 already assumed.
 
