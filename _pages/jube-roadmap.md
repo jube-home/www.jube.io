@@ -8,157 +8,139 @@ The Jube roadmap is shaped by production experience across a significant number 
 reflects real operational feedback from compliance teams, implementation partners, and co-delivery engagements — not
 theoretical product planning. Items are sequenced by impact and dependency, not by ambition.
 
-The roadmap is published in plain terms. No commitments are made to specific release dates beyond the releases described
-below. The platform evolves continuously and this page is updated to reflect current direction. Between formal releases,
-the platform continues to evolve in response to the requirements of the current corpus of production clients; changes of
-general application are merged continuously and will be present in 0.1.0 onwards, as shipped.
+The roadmap is published in plain terms. No commitments are made to specific release dates — Jube does not tag
+versioned releases; see *Master is the release* below. The platform evolves continuously and this page is updated to
+reflect current direction, in response to the requirements of the current corpus of production clients; changes of
+general application are merged to master continuously.
 
----
+**Controllers Moving to Service Layer and Prompt Decoration**
+The user interface is moving to Blazor and Radzen components. This migration necessitates moving controller logic into
+a service layer, since Blazor Server renders on the server rather than calling controller endpoints from client-side
+script. As part of this migration, service properties and methods will be comprehensively decorated to provide robust,
+strongly-typed function calling for "Ask Jooby", the AI chatbot described below — the same service layer that drives the
+UI becomes the surface the agent invokes.
 
-## Version 0.1.0 — Consolidation Release — July 2026
+**Maker Checker Improvements**
+A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
+production. Every model entity gains an Approved state; during synchronisation, only approved states are eligible for
+propagation, with the system falling back to the last approved version wherever a pending change has not yet been
+signed off. The model sync page will surface a digest of unapproved changes, linking directly to the affected entity, so
+a human reviewer can see — and approve or reject — exactly what an agent, or a person, is proposing before it reaches
+production.
 
-Version 0.1.0 is the first formal tag of the Jube platform. It represents a deliberate consolidation of
-production-proven capability across a significant number of production deployments — tightening existing functionality,
-closing identified gaps in operational completeness, and establishing a stable, versioned baseline for all subsequent
-development.
+**Service Layer Test Coverage**
+As part of the controller migration, comprehensive XUnit test coverage is being built out for the new service layer,
+establishing a tested foundation ahead of both the UI migration and Ask Jooby's function-calling surface.
 
-This is not a feature release in the conventional sense. The feature additions included are directly informed by
-production client requirements. The majority of the work is hardening, integrity, and operational completeness rather
-than new capability.
-
-**Security and Authentication Overhaul**
-A comprehensive platform hardening including hybrid JWT and API key authentication across all endpoints, parameterised
-SQL throughout, AES encryption hardening, password generation improvements, and HTTP security header injection. Breaking
-changes to Invoke endpoint authentication are included; all endpoints now require authentication.
-
-**Performance and Resilience Under Load**
-Significant work on connection pool management, Redis Polly retry policies, Sentinel failover support, cache warm jitter
-and batching, and resolution of a long-standing connection exhaustion root cause in the PostgreSQL connection wrapper.
-Benchmarks on development hardware show substantial headroom against production throughput requirements.
-
-**UTC Standardisation**
-Full stack standardisation to UTC timestamps.
-
-**Preservation**
-Corrections to import and preservation logic covering edge cases identified in production and role migration support.
-
-**Cache Architecture**
-Optional offload of HSET operations from Redis to PostgreSQL, a new CacheSetHash table with covering index for
-index-only scan performance, and an abstraction interface over the Redis cache layer to support future backend
-substitution.
-
-**Tagging Infrastructure**
-Tags promoted to a data structure with their own table, archive integration ensuring tagged records are
-reflected consistently across case records, and tag management within the Case Key Journal and a dedicated Transaction
-Report page.
-
-**Idempotency**
-Idempotency for Time to Live (TTL) Counter incrementing at the transaction level, and Case Creation and Notifications at
-the
-transaction and activation rule level. The intention is to increase adoption of the reprocessing functionality by
-assuring material actions are guaranteed to only happen the once, regardless the amount of reprocessing having been
-instructed (which is an especially material issue in the case of the incrementing of TTL Counters).
-
-Invocation hash on Json POST or AMQP body to improve retry logic in Jube Cluster HAProxy or AMQP ACK NACK patterns.
-
-**Manual Case Creation via Transaction Report Page**
-The ability to retroactively create cases on the basis of results in the aforementioned Transaction Report page.
-Structured case creation directly from transaction and alert context, with full audit trail and journal from point of
-origin. Closes the workflow loop between detection and investigation.
-
-**Sampling and Analytics**
-Archive sampling page enabling date-range and percentage-based sample extraction from the transaction archive, with JSON
-flattening to CSV for downstream analytics use.
-
-**Date Expiry on Suppressions and List Entries**
-Time-bounded suppression and list management, ensuring that entries age out automatically rather than accumulating
-indefinitely. Addresses a common operational hygiene problem in production deployments and supports defensible
-compliance posture.
-
-**Add to List from Case Journal**
-The ability to add entities, values, or identifiers directly to a List from within the Case Journal, without leaving the
-investigation workflow. Reduces analyst friction and accelerates response.
-
-**Transaction Journey Protocol**
-Currently the HTTP Adaptation, which exists for remote microservice model recall returns just a single value, the
-score. While the score is the primary output and carried through to activation, in the case page, further analysis of
-how the model arrived at the decision is valuable, the so-called transaction journey. Transaction Journey will be
-protocol between the model recall microservice and Jube to present the scores quantitative origin.
-
-**Jube Reference Cluster, High Availability and Flatcar Linux Validation**
-Support of fully active-active clustered deployments with no single point of failure, suitable for primary and Disaster
-Recovery configurations. The reference cluster topology comprises multiple Jube application nodes, a Patroni-managed
-PostgreSQL cluster with automatic failover coordinated via etcd, and a Redis master-replica setup with Sentinel for
-near-real-time failover detection. The platform is designed to run in this configuration, typically in Docker Swarm,
-though Kubernetes is equally supported, in production; horizontal scaling of application nodes requires no architectural
-changes.
-
-Jube validated for deployment on Flatcar Container Linux, where the full Docker Swarm stack is provisioned via
-the provided Swarm compose configuration. Flatcar's immutable, container-optimised runtime makes it well suited to
-on-premises and edge deployments where operational simplicity, security hardening, and a minimal host footprint are
-priorities. Persistent storage and log shipping are handled via NFS-mounted network-attached storage — an approach that
-complements Flatcar's immutable OS model by externalising durable Docker volumes and log shipping entirely outside the
-host lifecycle.
-
----
-
-## Version 1.0.0 — Tests and User Experience — January 2027
-
-Version 1.0.0 is the full platform release. The backend capability established in 0.1.0 is complete; this release
-delivers the user experience to match. It is a comprehensive UX investment.
-
-**Integration Test Coverage**
-A structured integration test suite focused on the invocation pipeline and model construction via the API. Test cases
+**Invocation Test Coverage**
+A structured integration XUnit test suite focused on the invocation pipeline and model construction via the API. Test cases
 will be built around real integration scenarios — exercising the full path from invocation through model execution —
-rather
-than controller-level unit coverage. Controllers are covered only to the extent that they participate in meaningful
-end-to-end scenarios. The test suite will be designed to support continuous integration and protect feature velocity as
-the
-platform matures: changes to core pipeline behaviour are caught early, and new capability can be delivered with
-confidence against a stable, verified baseline.
+rather than controller-level unit coverage. Controllers are covered only to the extent that they participate in
+meaningful end-to-end scenarios. The test suite will be designed to support continuous integration and protect feature
+velocity as the platform matures: changes to core pipeline behaviour are caught early, and new capability can be
+delivered with confidence against a stable, verified baseline.
 
-**Platform UI Migration — Daisy and Vue**
-The full platform UI will be migrated to Daisy UI and Vue, replacing the current jQuery-based implementation. The
-migration will deliver a modern, component-driven interface with consistent design language across all platform areas.
-The
-configuration interface — covering rule management, model configuration, entity setup, and platform administration —
-will be migrated as a direct translation of existing functionality.
+**Platform UI Migration — Blazor and Radzen**
+The full platform UI will be migrated to Blazor Server and Radzen, replacing the current jQuery-based implementation.
+The migration will deliver a modern, component-driven interface with consistent design language across all platform
+areas. The configuration interface — covering rule management, model configuration, entity setup, and platform
+administration — will be migrated as a direct translation of existing functionality.
 
 The core information architecture will be unchanged, although the tree based navigation will be replaced with a hub card
 journey approach, reducing navigation depth and making the path through configuration more explicit. Hub cards will also
 surface significantly more contextual information than the current tree allows, including status, activity, and
 configuration state at a glance.
 
+*Why Blazor.* Most Jube deployments sit inside enterprise environments with stringent security requirements, and a
+large, fast-moving JavaScript dependency tree is a genuinely difficult thing to keep on top of — the churn, the
+transitive dependency count, and the supply-chain risk of the npm ecosystem are an ongoing operational burden that sits
+uneasily with compliance-grade software. Run as Blazor Server, the UI renders to what is effectively a dumb terminal: a
+minimal Blazor JS interop shim plus an optimised transport (SignalR) to keep the circuit alive, and nothing else. No
+application logic runs in the browser, there is no bundler toolchain to maintain, and there is no meaningful
+client-side attack surface to audit or patch — the code that matters runs server-side, next to the data, never shipped
+to the client for inspection or tampering.
+
+Blazor has also come of age considerably as an SSR framework, and it is well suited to the situation most Jube
+deployments sit in: backend infrastructure that is substantially more capable than the client, on a network the
+operator controls end-to-end. Because the UI shares the same C# codebase and type system as the decorated service
+layer described above, there is a single source of truth for validation and behaviour rather than a duplicated — and
+potentially divergent — copy on the client, which matters for software whose outputs need to hold up under compliance
+scrutiny. It also keeps the whole stack within the developers' existing .NET expertise, rather than requiring a separate
+front-end discipline and toolchain to be maintained and kept secure alongside it.
+
 **Visualisation**
-The visualisation layer will remain SQL-led and largely unchanged in its underlying approach. The port to Chart.js will
-replace the current rendering implementation while preserving the query-driven model. The primary UX improvement will be
-a move away from requiring analysts to author raw JSON initialisation blocks: charts will instead be defined through
-templated configurations with user-defined parameters and series definitions, keeping the flexibility of the existing
-approach while substantially reducing the technical burden of chart authorship. More broadly, visualisation will no
-longer be confined to the Case Management and Visualisation Directory contexts — chart and query output will be
+The visualisation layer will remain SQL-led and largely unchanged in its underlying approach. The port to Radzen charts
+will replace the current rendering implementation while preserving the query-driven model. The primary UX improvement
+will be a move away from requiring analysts to author raw JSON initialisation blocks: charts will instead be defined
+through templated configurations with user-defined parameters and series definitions, keeping the flexibility of the
+existing approach while substantially reducing the technical burden of chart authorship. More broadly, visualisation
+will no longer be confined to the Case Management and Visualisation Directory contexts — chart and query output will be
 available across a wider range of platform areas, bringing data-proximate rendering to the workflows where it is most
 useful.
+
+Alongside SQL, remote web calls will be supported as a chart data source in their own right — configured with the same
+templated approach as SQL-defined charts. This allows visualisation to be built directly against external APIs and
+third-party services, such as reporting platforms or enrichment and sanctions providers, without first landing the data
+in Jube's own database.
 
 **Case Management Redesign**
 The case management interface will be rebuilt from the ground up with serious usability at its core. The existing
 interface was designed for functional completeness; the redesigned interface is being designed for the compliance
 analyst who lives in it all day. Workflow, information architecture, and interaction design are all in scope.
 
-## Version 1.1.0 — AI Case Management Facilitation — July 2027
+**Blazor Test Coverage**
+As part of the user interface redesign, comprehensive BUnit test coverage will be added for Blazor pages.
 
-**AI-Assisted Case Automation**
-LLM-driven automation within the case management workflow via Semantic Kernel, supporting narrative generation, case
-summarisation, next-action recommendation, and structured reporting. Designed to reduce analyst burden on routine
-documentation tasks and accelerate case throughput without reducing quality or auditability. Case management functions
-otherwise available via API are exposed through the same integration layer and invocable given prompts via Semantic
-Kernel.
+**AI Chatbot "Ask Jooby"**
+LLM-driven automation within the case management workflow, running on a fine-tuned Phi-4 Mini model via the Microsoft
+Agent Framework. Ask Jooby is delivered as a set of role-scoped agents rather than a single general assistant, each
+invoking the decorated service layer described above:
+
+* **Analyst Agent** — narrative generation, case summarisation, next-action recommendation, and structured reporting.
+  Intended to reduce analyst burden on routine documentation tasks and accelerate case throughput without reducing
+  quality or auditability. Case management functions otherwise available via the API are exposed through the same
+  integration layer and invocable via natural-language prompts.
+* **Rule Writer** — translates an analyst's description of a typology or a control gap into a candidate rule
+  definition — thresholds, velocity checks, aggregation counts, sanctions logic — within the existing rule engine,
+  leaving it in an unapproved state for a human reviewer to test and sign off before activation.
+* **Data Analyst** — interprets query and visualisation output, model performance statistics, and Exhaustive Adaptation
+  results, giving analysts and non-technical stakeholders a way to ask questions of the data without first learning SQL
+  or the platform's chart configuration.
+* **DevOps** — a read-only operational assistant for running Jube in production: interpreting cluster, PostgreSQL, and
+  Redis Sentinel health, triaging logs, and explaining deployment state to reduce time-to-diagnosis during incidents.
+* **General Administrator** — guides platform configuration: entity setup, multi-tenancy, and user and role
+  management, aimed at reducing the learning curve for teams new to the platform.
+
+Rule Writer and General Administrator write to production configuration and are therefore gated by the Maker Checker
+approval workflow above; Data Analyst and DevOps are read-only by design.
+
+*AI philosophy.* Ask Jooby is deliberately built on the smallest model we can find with good reasoning — specifically
+mathematical and logical reasoning — rather than chasing the largest general-purpose model available. Jube's domain is
+quantitative: thresholds, velocity and aggregation logic, rule authoring, statistical model output. That rewards
+reasoning capability over conversational breadth, and it is what Phi-4 Mini, and its successors, is being backed on.
+A small model also keeps inference cheap enough to run within the operator's own infrastructure, in keeping with Jube's
+open source, no-vendor-lock-in stance — no case, transaction, or configuration data need ever leave the deployment
+boundary to reach a third-party inference API.
+
+The model is fine-tuned on our own direct experience administering the platform, on the verbose decorations already
+being added to the service layer as part of the migration above, and on synthetic chat datasets constructed from common
+how-to questions and Jube's existing documentation — never on client data. No case, transaction, or configuration data
+from any deployment is used in training, at any point.
+
+RAG and embedding-based similarity, within Ask Jooby itself, are scoped narrowly: limited to function calling — matching
+a request to the correct decorated service-layer method — by transposing the descriptive elements of that decoration
+into embeddings for retrieval. They are not used as a general-purpose retrieval layer over case or transaction data.
+Where Ask Jooby needs to act on specific data, it does so through the decorated service layer and the Maker
+Checker-gated function calls described above, not through open-ended retrieval.
 
 **Vector Similarity Analysis**
 Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
 across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development,
-and the
-surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex layering and
-integration-stage AML typologies.
+and the surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex
+layering and integration-stage AML typologies. The intention is for this to be available both on the Case page and for
+real-time recall — to the extent embedding models permit real-time recall, since they require a remote procedure call
+and are likely to take longer than the rest of the invocation pipeline. Anything under 60ms is likely acceptable, which
+is still a long way off the sub-20ms latency Jube otherwise targets for model invocation.
 
 **IP Intelligence Dataset Integration**
 Integration of a proprietary IP intelligence dataset built from multiple corroborating public sources, cross-validated
@@ -178,9 +160,23 @@ development, not to gate functionality.
 **Production informed.** Every item on this roadmap has been validated against real deployment experience. Nothing here
 is speculative.
 
+**Master is the release.** Rightly or wrongly, Jube does not tag versioned releases. Issues and fixes are patched
+forward directly on master, and this becomes a materially more defensible position as the automated test coverage
+described above comes on stream. Clients on Enterprise Support may request a hot fix against a specific Git SHA, but
+this is exceptional rather than routine: the intention is that Enterprise deployments track master as a matter of
+course, since deferring that only stores up larger migrations for later. Where a hot fix is issued, the regression risk
+between the client's SHA and current master is documented as a matter of course.
+
+Not everything lands on master on the same terms, though. The controller-to-service-layer migration and its
+accompanying test coverage, for instance, is wholly backward compatible, so it merges to master almost as soon as it's
+written — the intention is iterative feedback, not a big-bang cutover. The Blazor UI rewrite doesn't enjoy that same
+privilege, and neither does Ask Jooby, which depends on it: it is being developed as a project distinct from the
+current jQuery UI, and it will land in master feature by feature as each area is migrated, but it will sit in a
+non-functional state for some time before there is enough of it in place to run.
+
 **No roadmap theatre.** This page will be updated when direction changes. Items will be removed if they are
 deprioritised. The roadmap exists to communicate genuine intent, not to market a vision.
 
 ---
 
-*Last updated: May 2026*
+*Last updated: August 2026*
