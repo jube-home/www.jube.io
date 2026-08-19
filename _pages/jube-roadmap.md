@@ -8,14 +8,14 @@ The Jube roadmap is shaped by production experience across a significant number 
 reflects real operational feedback from compliance teams, implementation partners, and co-delivery engagements — not
 theoretical product planning. Items are sequenced by impact and dependency, not by ambition.
 
-The roadmap is published in plain terms. No commitments are made to specific release dates — Jube does not tag
-versioned releases; see *Master is the release* below. The platform evolves continuously and this page is updated to
-reflect current direction, in response to the requirements of the current corpus of production clients; changes of
-general application are merged to master continuously.
+The roadmap is published in plain terms. No commitments are made to specific release dates — Jube does not tag versioned
+releases; see *Master is the release* below. The platform evolves continuously and this page is updated to reflect
+current direction, in response to the requirements of the current corpus of production clients; changes of general
+application are merged to master continuously.
 
 **Controllers Moving to Service Layer and Prompt Decoration**
-The user interface is moving to Blazor and Radzen components. This migration necessitates moving controller logic into
-a service layer, since Blazor Server renders on the server rather than calling controller endpoints from client-side
+The user interface is moving to Blazor and Radzen components. This migration necessitates moving controller logic into a
+service layer, since Blazor Server renders on the server rather than calling controller endpoints from client-side
 script. As part of this migration, service properties and methods will be comprehensively decorated to provide robust,
 strongly-typed function calling for "Ask Jooby", the AI chatbot described below — the same service layer that drives the
 UI becomes the surface the agent invokes.
@@ -23,9 +23,9 @@ UI becomes the surface the agent invokes.
 **Maker Checker Improvements**
 A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
 production. Every model entity gains an Approved state; during synchronisation, only approved states are eligible for
-propagation, with the system falling back to the last approved version wherever a pending change has not yet been
-signed off. The model sync page will surface a digest of unapproved changes, linking directly to the affected entity, so
-a human reviewer can see — and approve or reject — exactly what an agent, or a person, is proposing before it reaches
+propagation, with the system falling back to the last approved version wherever a pending change has not yet been signed
+off. The model sync page will surface a digest of unapproved changes, linking directly to the affected entity, so a
+human reviewer can see — and approve or reject — exactly what an agent, or a person, is proposing before it reaches
 production.
 
 **Service Layer Test Coverage**
@@ -33,12 +33,19 @@ As part of the controller migration, comprehensive XUnit test coverage is being 
 establishing a tested foundation ahead of both the UI migration and Ask Jooby's function-calling surface.
 
 **Invocation Test Coverage**
-A structured integration XUnit test suite focused on the invocation pipeline and model construction via the API. Test cases
-will be built around real integration scenarios — exercising the full path from invocation through model execution —
-rather than controller-level unit coverage. Controllers are covered only to the extent that they participate in
-meaningful end-to-end scenarios. The test suite will be designed to support continuous integration and protect feature
-velocity as the platform matures: changes to core pipeline behaviour are caught early, and new capability can be
+A structured integration XUnit test suite focused on the invocation pipeline and model construction via the API. Test
+cases will be built around real integration scenarios — exercising the full path from invocation through model
+execution — rather than controller-level unit coverage. Controllers are covered only to the extent that they participate
+in meaningful end-to-end scenarios. The test suite will be designed to support continuous integration and protect
+feature velocity as the platform matures: changes to core pipeline behaviour are caught early, and new capability can be
 delivered with confidence against a stable, verified baseline.
+
+**Flatten HSET Switch**
+Although the load on Redis leaves plenty of headroom, and Redis wire-compatible dictionary backends are increasingly
+leaning towards multithreading (e.g. Valkey), HSET does not support sharding, since hash keys are only ever top-level
+keys. A switch will be included that optionally promotes HSET entries to more traditional key-value pairs, to facilitate
+sharding for very large Jube implementations, or implementations that rely on managed cloud Redis, which is often
+backend-sharded.
 
 **Platform UI Migration — Blazor and Radzen**
 The full platform UI will be migrated to Blazor Server and Radzen, replacing the current jQuery-based implementation.
@@ -56,27 +63,24 @@ large, fast-moving JavaScript dependency tree is a genuinely difficult thing to 
 transitive dependency count, and the supply-chain risk of the npm ecosystem are an ongoing operational burden that sits
 uneasily with compliance-grade software. Run as Blazor Server, the UI renders to what is effectively a dumb terminal: a
 minimal Blazor JS interop shim plus an optimised transport (SignalR) to keep the circuit alive, and nothing else. No
-application logic runs in the browser, there is no bundler toolchain to maintain, and there is no meaningful
-client-side attack surface to audit or patch — the code that matters runs server-side, next to the data, never shipped
-to the client for inspection or tampering.
+application logic runs in the browser, there is no bundler toolchain to maintain, and there is no meaningful client-side
+attack surface to audit or patch — the code that matters runs server-side, next to the data, never shipped to the client
+for inspection or tampering.
 
-Blazor has also come of age considerably as an SSR framework, and it is well suited to the situation most Jube
-deployments sit in: backend infrastructure that is substantially more capable than the client, on a network the
-operator controls end-to-end. Because the UI shares the same C# codebase and type system as the decorated service
-layer described above, there is a single source of truth for validation and behaviour rather than a duplicated — and
-potentially divergent — copy on the client, which matters for software whose outputs need to hold up under compliance
-scrutiny. It also keeps the whole stack within the developers' existing .NET expertise, rather than requiring a separate
-front-end discipline and toolchain to be maintained and kept secure alongside it.
+Blazor has also come of age considerably as an Server Side Rendering (SSR) framework, and it is well suited to the
+situation most Jube deployments sit in: backend infrastructure that is substantially more capable than the client, on a
+network the operator controls end-to-end. Because the UI shares the same C# codebase and type system as the decorated
+service layer described above, there is a single source of truth for validation and behaviour rather than a duplicated —
+and potentially divergent — copy on the client, which matters for software whose outputs need to hold up under
+compliance scrutiny. It also keeps the whole stack within the developers' existing .NET expertise, rather than requiring
+a separate front-end discipline and toolchain to be maintained and kept secure alongside it.
 
 **Visualisation**
 The visualisation layer will remain SQL-led and largely unchanged in its underlying approach. The port to Radzen charts
 will replace the current rendering implementation while preserving the query-driven model. The primary UX improvement
 will be a move away from requiring analysts to author raw JSON initialisation blocks: charts will instead be defined
 through templated configurations with user-defined parameters and series definitions, keeping the flexibility of the
-existing approach while substantially reducing the technical burden of chart authorship. More broadly, visualisation
-will no longer be confined to the Case Management and Visualisation Directory contexts — chart and query output will be
-available across a wider range of platform areas, bringing data-proximate rendering to the workflows where it is most
-useful.
+existing approach while substantially reducing the technical burden of chart authorship.
 
 Alongside SQL, remote web calls will be supported as a chart data source in their own right — configured with the same
 templated approach as SQL-defined charts. This allows visualisation to be built directly against external APIs and
@@ -92,9 +96,9 @@ analyst who lives in it all day. Workflow, information architecture, and interac
 As part of the user interface redesign, comprehensive BUnit test coverage will be added for Blazor pages.
 
 **AI Chatbot "Ask Jooby"**
-LLM-driven automation within the case management workflow, running on a fine-tuned Phi-4 Mini model via the Microsoft
-Agent Framework. Ask Jooby is delivered as a set of role-scoped agents rather than a single general assistant, each
-invoking the decorated service layer described above:
+LLM-driven automation running on a fine-tuned Phi-4 Mini model via the Microsoft Agent Framework. Ask Jooby is delivered
+as a set of role-scoped agents rather than a single general assistant, each invoking the decorated service layer
+described above:
 
 * **Analyst Agent** — narrative generation, case summarisation, next-action recommendation, and structured reporting.
   Intended to reduce analyst burden on routine documentation tasks and accelerate case throughput without reducing
@@ -106,34 +110,35 @@ invoking the decorated service layer described above:
 * **Data Analyst** — interprets query and visualisation output, model performance statistics, and Exhaustive Adaptation
   results, giving analysts and non-technical stakeholders a way to ask questions of the data without first learning SQL
   or the platform's chart configuration.
-* **DevOps** — a read-only operational assistant for running Jube in production: interpreting cluster, PostgreSQL, and
-  Redis Sentinel health, triaging logs, and explaining deployment state to reduce time-to-diagnosis during incidents.
-* **General Administrator** — guides platform configuration: entity setup, multi-tenancy, and user and role
-  management, aimed at reducing the learning curve for teams new to the platform.
+* **DevOps Support** — a read-only operational assistant for running Jube in production: interpreting cluster,
+  PostgreSQL, and Redis Sentinel health, triaging logs, and explaining deployment state to reduce time-to-diagnosis
+  during incidents.
+* **General Administrator** — guides platform configuration: entity setup, multi-tenancy, and user and role management,
+  aimed at reducing the learning curve for teams new to the platform.
 
 Rule Writer and General Administrator write to production configuration and are therefore gated by the Maker Checker
 approval workflow above; Data Analyst and DevOps are read-only by design.
 
-*AI philosophy.* Ask Jooby is deliberately built on the smallest model we can find with good reasoning — specifically
+*AI philosophy.* Ask Jooby is deliberately built on the smallest available model with good reasoning — specifically
 mathematical and logical reasoning — rather than chasing the largest general-purpose model available. Jube's domain is
 quantitative: thresholds, velocity and aggregation logic, rule authoring, statistical model output. That rewards
-reasoning capability over conversational breadth, and it is what Phi-4 Mini, and its successors, is being backed on.
-A small model also keeps inference cheap enough to run within the operator's own infrastructure, in keeping with Jube's
-open source, no-vendor-lock-in stance — no case, transaction, or configuration data need ever leave the deployment
-boundary to reach a third-party inference API.
+reasoning capability over conversational breadth, and it is what Phi-4 Mini, and its successors, is being backed on. A
+small model also keeps inference cheap enough to run within the clients own infrastructure, in keeping with Jube's open
+source, no-vendor-lock-in stance — no case, transaction, or configuration data need ever leave the deployment boundary
+to reach a third-party inference API.
 
 The model is fine-tuned on our own direct experience administering the platform, on the verbose decorations already
 being added to the service layer as part of the migration above, and on synthetic chat datasets constructed from common
-how-to questions and Jube's existing documentation — never on client data. No case, transaction, or configuration data
-from any deployment is used in training, at any point.
+how-to questions, knowhow and Jube's existing documentation — never on client data. No case, transaction, or
+configuration data from any deployment is used in training, at any point.
 
-RAG and embedding-based similarity, within Ask Jooby itself, are scoped narrowly: limited to function calling — matching
-a request to the correct decorated service-layer method — by transposing the descriptive elements of that decoration
-into embeddings for retrieval. They are not used as a general-purpose retrieval layer over case or transaction data.
-Where Ask Jooby needs to act on specific data, it does so through the decorated service layer and the Maker
-Checker-gated function calls described above, not through open-ended retrieval.
+Retrieval Augmented Generation (RAG) and embedding-based similarity, within Ask Jooby itself, are scoped narrowly:
+limited to function calling — matching a request to the correct decorated service-layer method — by transposing the
+descriptive elements of that decoration into embeddings for retrieval. They are not used as a general-purpose retrieval
+layer over case or transaction data. Where Ask Jooby needs to act on specific data, it does so through the decorated
+service layer and the Maker Checker-gated function calls described above, not through open-ended retrieval.
 
-**Vector Similarity Analysis**
+**Case Vector Similarity Analysis**
 Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
 across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development,
 and the surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex
@@ -142,7 +147,7 @@ real-time recall — to the extent embedding models permit real-time recall, sin
 and are likely to take longer than the rest of the invocation pipeline. Anything under 60ms is likely acceptable, which
 is still a long way off the sub-20ms latency Jube otherwise targets for model invocation.
 
-**IP Intelligence Dataset Integration**
+**IP Intelligence Dataset**
 Integration of a proprietary IP intelligence dataset built from multiple corroborating public sources, cross-validated
 to produce reliable attribution at the country, ASN, and network type level. The dataset is maintained with a specific
 compliance focus — prioritising attributes that can be verified with confidence over those that carry an impression of
@@ -167,12 +172,12 @@ this is exceptional rather than routine: the intention is that Enterprise deploy
 course, since deferring that only stores up larger migrations for later. Where a hot fix is issued, the regression risk
 between the client's SHA and current master is documented as a matter of course.
 
-Not everything lands on master on the same terms, though. The controller-to-service-layer migration and its
-accompanying test coverage, for instance, is wholly backward compatible, so it merges to master almost as soon as it's
-written — the intention is iterative feedback, not a big-bang cutover. The Blazor UI rewrite doesn't enjoy that same
-privilege, and neither does Ask Jooby, which depends on it: it is being developed as a project distinct from the
-current jQuery UI, and it will land in master feature by feature as each area is migrated, but it will sit in a
-non-functional state for some time before there is enough of it in place to run.
+Not everything lands on master on the same terms, though. The controller-to-service-layer migration and its accompanying
+test coverage, for instance, is wholly backward compatible, so it merges to master almost as soon as it's written — the
+intention is iterative feedback, not a big-bang cutover. The Blazor UI rewrite doesn't enjoy that same privilege, and
+neither does Ask Jooby, which depends on it: it is being developed as a project distinct from the current jQuery UI, and
+it will land in master feature by feature as each area is migrated, but it will sit in a non-functional state for some
+time before there is enough of it in place to run.
 
 **No roadmap theatre.** This page will be updated when direction changes. Items will be removed if they are
 deprioritised. The roadmap exists to communicate genuine intent, not to market a vision.
