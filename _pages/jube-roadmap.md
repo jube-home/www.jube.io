@@ -25,9 +25,8 @@ As part of the controller migration, comprehensive XUnit test coverage is being 
 establishing a tested foundation ahead of both the UI migration and Ask Jooby's function-calling surface.
 
 **AI Chatbot "Ask Jooby"**
-LLM-driven automation running on a fine-tuned Phi-4 Mini model via the Microsoft Agent Framework. Ask Jooby is delivered
-as a set of role-scoped agents rather than a single general assistant, each invoking the decorated service layer
-described above:
+LLM-driven automation running on a Phi-4 Mini model via the Microsoft Agent Framework. Ask Jooby is delivered as a set
+of role-scoped agents rather than a single general assistant, each invoking the decorated service layer described above:
 
 * **DevOps Support** — a read-only operational assistant for running Jube in production: interpreting cluster,
   PostgreSQL, and Redis Sentinel health, triaging logs, and explaining deployment state to reduce time-to-diagnosis
@@ -49,6 +48,13 @@ Ask Jooby will come onstream very quickly, but early agents will focus on read o
 order as above. Rule Writer and General Administrator write to production configuration and are therefore gated by the
 Maker Checker approval workflow above; Data Analyst and DevOps are read-only by design, and will be one of the last
 agents to arrive, mindful that the highest impact agents are likely to be read-only in any case.
+
+The use of such a small model has only recently become possible because of the agentic AI patterns we have seen prevail
+in 2026, alongside new frameworks such as Microsoft Agentic Framework. While Phi-4, let along Phi-4 mini, has nothing like the
+knowladge, the itterateve nature of agentic AI skills and run books means computation demands are less, although it does
+offload this to the AI engineer to create relevant skills.  The reality is that the large models frequently
+have the end user chasing their tail, and it is this reality that guides the approach.  Creative solutions are wrong 
+quite a lot.
 
 Ask Jooby is deliberately built on the smallest available model with good reasoning — specifically mathematical and
 logical reasoning — rather than chasing the largest general-purpose model available. Jube's domain is quantitative:
