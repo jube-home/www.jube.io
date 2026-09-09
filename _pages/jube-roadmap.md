@@ -46,7 +46,22 @@ described above:
   leaving it in an unapproved state for a human reviewer to test and sign off before activation.
 
 Ask Jooby will come onstream very quickly, but early agents will focus on read only activities, broadly in priority
-order as above.
+order as above. Rule Writer and General Administrator write to production configuration and are therefore gated by the
+Maker Checker approval workflow above; Data Analyst and DevOps are read-only by design, and will be one of the last
+agents to arrive, mindful that the highest impact agents are likely to be read-only in any case.
+
+Ask Jooby is deliberately built on the smallest available model with good reasoning — specifically mathematical and
+logical reasoning — rather than chasing the largest general-purpose model available. Jube's domain is quantitative:
+thresholds, velocity and aggregation logic, rule authoring, statistical model output. That rewards reasoning capability
+over conversational breadth, and it is what Phi-4 Mini, and its successors, is being backed on. A small model also keeps
+inference cheap enough to run within the clients own infrastructure, in keeping with Jube's open source,
+no-vendor-lock-in stance — no case, transaction, or configuration data need ever leave the deployment boundary to reach
+a third-party inference API.
+
+Retrieval Augmented Generation (RAG) and embedding-based similarity, within Ask Jooby itself, are scoped broadly:
+directing function calling — matching a request to the correct decorated service-layer method — by transposing the
+descriptive elements of that decoration into embeddings for retrieval, yet also containing chunked documentation, source
+code tree and example, generalised, rule definitions.
 
 **Maker Checker Improvements**
 A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
@@ -114,34 +129,12 @@ in Jube's own database.
 **Case Management Redesign and Service Levels**
 The case management interface will be rebuilt from the ground up with serious usability at its core. The existing
 interface was designed for functional completeness; the redesigned interface is being designed for the compliance
-analyst who lives in it all day. Workflow, information architecture, and interaction design are all in scope.  Service 
-Level metrics will be included as part of the overall audit functionality,  which is a gap between Jube and other
-open source systems.
+analyst who lives in it all day. Workflow, information architecture, and interaction design are all in scope. Service
+Level metrics will be included as part of the overall audit functionality, which is a gap between Jube and other open
+source systems.
 
 **Blazor Test Coverage**
 As part of the user interface redesign, comprehensive BUnit test coverage will be added for Blazor pages.
-
-Rule Writer and General Administrator write to production configuration and are therefore gated by the Maker Checker
-approval workflow above; Data Analyst and DevOps are read-only by design.
-
-*AI philosophy.* Ask Jooby is deliberately built on the smallest available model with good reasoning — specifically
-mathematical and logical reasoning — rather than chasing the largest general-purpose model available. Jube's domain is
-quantitative: thresholds, velocity and aggregation logic, rule authoring, statistical model output. That rewards
-reasoning capability over conversational breadth, and it is what Phi-4 Mini, and its successors, is being backed on. A
-small model also keeps inference cheap enough to run within the clients own infrastructure, in keeping with Jube's open
-source, no-vendor-lock-in stance — no case, transaction, or configuration data need ever leave the deployment boundary
-to reach a third-party inference API.
-
-The model is fine-tuned on our own direct experience administering the platform, on the verbose decorations already
-being added to the service layer as part of the migration above, and on synthetic chat datasets constructed from common
-how-to questions, knowhow and Jube's existing documentation — never on client data. No case, transaction, or
-configuration data from any deployment is used in training, at any point.
-
-Retrieval Augmented Generation (RAG) and embedding-based similarity, within Ask Jooby itself, are scoped narrowly:
-limited to function calling — matching a request to the correct decorated service-layer method — by transposing the
-descriptive elements of that decoration into embeddings for retrieval. They are not used as a general-purpose retrieval
-layer over case or transaction data. Where Ask Jooby needs to act on specific data, it does so through the decorated
-service layer and the Maker Checker-gated function calls described above, not through open-ended retrieval.
 
 **Case Vector Similarity Analysis**
 Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
