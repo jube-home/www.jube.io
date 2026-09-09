@@ -20,14 +20,6 @@ script. As part of this migration, service properties and methods will be compre
 strongly-typed function calling for "Ask Jooby", the AI chatbot described below — the same service layer that drives the
 UI becomes the surface the agent invokes.
 
-**Maker Checker Improvements**
-A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
-production. Every model entity gains an Approved state; during synchronisation, only approved states are eligible for
-propagation, with the system falling back to the last approved version wherever a pending change has not yet been signed
-off. The model sync page will surface a digest of unapproved changes, linking directly to the affected entity, so a
-human reviewer can see — and approve or reject — exactly what an agent, or a person, is proposing before it reaches
-production.
-
 **Service Layer Test Coverage**
 As part of the controller migration, comprehensive XUnit test coverage is being built out for the new service layer,
 establishing a tested foundation ahead of both the UI migration and Ask Jooby's function-calling surface.
@@ -55,6 +47,14 @@ described above:
 
 Ask Jooby will come onstream very quickly, but early agents will focus on read only activities, broadly in priority
 order as above.
+
+**Maker Checker Improvements**
+A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
+production. Every model entity gains an Approved state; during synchronisation, only approved states are eligible for
+propagation, with the system falling back to the last approved version wherever a pending change has not yet been signed
+off. The model sync page will surface a digest of unapproved changes, linking directly to the affected entity, so a
+human reviewer can see — and approve or reject — exactly what an agent, or a person, is proposing before it reaches
+production.
 
 **Invocation Test Coverage**
 A structured integration XUnit test suite focused on the invocation pipeline and model construction via the API. Test
