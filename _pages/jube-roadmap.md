@@ -32,6 +32,30 @@ production.
 As part of the controller migration, comprehensive XUnit test coverage is being built out for the new service layer,
 establishing a tested foundation ahead of both the UI migration and Ask Jooby's function-calling surface.
 
+**AI Chatbot "Ask Jooby"**
+LLM-driven automation running on a fine-tuned Phi-4 Mini model via the Microsoft Agent Framework. Ask Jooby is delivered
+as a set of role-scoped agents rather than a single general assistant, each invoking the decorated service layer
+described above:
+
+* **DevOps Support** — a read-only operational assistant for running Jube in production: interpreting cluster,
+  PostgreSQL, and Redis Sentinel health, triaging logs, and explaining deployment state to reduce time-to-diagnosis
+  during incidents.
+* **Analyst Agent** — narrative generation, case summarisation, next-action recommendation, and structured reporting.
+  Intended to reduce analyst burden on routine documentation tasks and accelerate case throughput without reducing
+  quality or auditability. Case management functions otherwise available via the API are exposed through the same
+  integration layer and invocable via natural-language prompts.
+* **Data Analyst** — interprets query and visualisation output, model performance statistics, and Exhaustive Adaptation
+  results, giving analysts and non-technical stakeholders a way to ask questions of the data without first learning SQL
+  or the platform's chart configuration.
+* **General Administrator** — guides platform configuration: entity setup, multi-tenancy, and user and role management,
+  aimed at reducing the learning curve for teams new to the platform.
+* **Rule Writer** — translates an analyst's description of a typology or a control gap into a candidate rule
+  definition — thresholds, velocity checks, aggregation counts, sanctions logic — within the existing rule engine,
+  leaving it in an unapproved state for a human reviewer to test and sign off before activation.
+
+Ask Jooby will come onstream very quickly, but early agents will focus on read only activities, broadly in priority
+order as above.
+
 **Invocation Test Coverage**
 A structured integration XUnit test suite focused on the invocation pipeline and model construction via the API. Test
 cases will be built around real integration scenarios — exercising the full path from invocation through model
@@ -87,34 +111,15 @@ templated approach as SQL-defined charts. This allows visualisation to be built 
 third-party services, such as reporting platforms or enrichment and sanctions providers, without first landing the data
 in Jube's own database.
 
-**Case Management Redesign**
+**Case Management Redesign and Service Levels**
 The case management interface will be rebuilt from the ground up with serious usability at its core. The existing
 interface was designed for functional completeness; the redesigned interface is being designed for the compliance
-analyst who lives in it all day. Workflow, information architecture, and interaction design are all in scope.
+analyst who lives in it all day. Workflow, information architecture, and interaction design are all in scope.  Service 
+Level metrics will be included as part of the overall audit functionality,  which is a gap between Jube and other
+open source systems.
 
 **Blazor Test Coverage**
 As part of the user interface redesign, comprehensive BUnit test coverage will be added for Blazor pages.
-
-**AI Chatbot "Ask Jooby"**
-LLM-driven automation running on a fine-tuned Phi-4 Mini model via the Microsoft Agent Framework. Ask Jooby is delivered
-as a set of role-scoped agents rather than a single general assistant, each invoking the decorated service layer
-described above:
-
-* **Analyst Agent** — narrative generation, case summarisation, next-action recommendation, and structured reporting.
-  Intended to reduce analyst burden on routine documentation tasks and accelerate case throughput without reducing
-  quality or auditability. Case management functions otherwise available via the API are exposed through the same
-  integration layer and invocable via natural-language prompts.
-* **Rule Writer** — translates an analyst's description of a typology or a control gap into a candidate rule
-  definition — thresholds, velocity checks, aggregation counts, sanctions logic — within the existing rule engine,
-  leaving it in an unapproved state for a human reviewer to test and sign off before activation.
-* **Data Analyst** — interprets query and visualisation output, model performance statistics, and Exhaustive Adaptation
-  results, giving analysts and non-technical stakeholders a way to ask questions of the data without first learning SQL
-  or the platform's chart configuration.
-* **DevOps Support** — a read-only operational assistant for running Jube in production: interpreting cluster,
-  PostgreSQL, and Redis Sentinel health, triaging logs, and explaining deployment state to reduce time-to-diagnosis
-  during incidents.
-* **General Administrator** — guides platform configuration: entity setup, multi-tenancy, and user and role management,
-  aimed at reducing the learning curve for teams new to the platform.
 
 Rule Writer and General Administrator write to production configuration and are therefore gated by the Maker Checker
 approval workflow above; Data Analyst and DevOps are read-only by design.
