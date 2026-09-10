@@ -188,4 +188,4 @@ deprioritised. The roadmap exists to communicate genuine intent, not to market a
 
 ---
 
-*Last updated: August 2026*
+*Last updated: September 2026*
