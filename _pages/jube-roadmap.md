@@ -50,11 +50,11 @@ Maker Checker approval workflow above; Data Analyst and DevOps are read-only by 
 agents to arrive, mindful that the highest impact agents are likely to be read-only in any case.
 
 The use of such a small model has only recently become possible because of the agentic AI patterns we have seen prevail
-in 2026, alongside new frameworks such as Microsoft Agentic Framework. While Phi-4, let along Phi-4 mini, has nothing like the
-knowladge, the itterateve nature of agentic AI skills and run books means computation demands are less, although it does
-offload this to the AI engineer to create relevant skills.  The reality is that the large models frequently
-have the end user chasing their tail, and it is this reality that guides the approach.  Creative solutions are wrong 
-quite a lot.
+in 2026, alongside new frameworks such as Microsoft Agentic Framework. While Phi-4, let along Phi-4 mini, has nothing
+like the knowladge, the itterateve nature of agentic AI skills and run books means computation demands are less,
+although it does offload this to the AI engineer to create relevant skills. The reality is that the large models
+frequently have the end user chasing their tail, and it is this reality that guides the approach. Creative solutions are
+wrong quite a lot.
 
 Ask Jooby is deliberately built on the smallest available model with good reasoning — specifically mathematical and
 logical reasoning — rather than chasing the largest general-purpose model available. Jube's domain is quantitative:
@@ -69,7 +69,7 @@ directing function calling — matching a request to the correct decorated servi
 descriptive elements of that decoration into embeddings for retrieval, yet also containing chunked documentation, source
 code tree and example, generalised, rule definitions.
 
-**Case Vector Similarity Analysis**
+**Case Vector Similarity Analysis and Real-Time Comparison**
 Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
 across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development,
 and the surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex
@@ -77,6 +77,10 @@ layering and integration-stage AML typologies. The intention is for this to be a
 real-time recall — to the extent embedding models permit real-time recall, since they require a remote procedure call
 and are likely to take longer than the rest of the invocation pipeline. Anything under 60ms is likely acceptable, which
 is still a long way off the sub-20ms latency Jube otherwise targets for model invocation.
+
+Redis is used for the Vector storage in RAG and Case Similarity, via full text and distance evaluation indexes, lending
+it to realtime evaluation. An extension to the invocation pipeline will facilitate realtime evaluation of similar cases
+given vector distance and other case status attributes.
 
 **Maker Checker Improvements**
 A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
