@@ -69,6 +69,15 @@ directing function calling — matching a request to the correct decorated servi
 descriptive elements of that decoration into embeddings for retrieval, yet also containing chunked documentation, source
 code tree and example, generalised, rule definitions.
 
+**Case Vector Similarity Analysis**
+Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
+across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development,
+and the surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex
+layering and integration-stage AML typologies. The intention is for this to be available both on the Case page and for
+real-time recall — to the extent embedding models permit real-time recall, since they require a remote procedure call
+and are likely to take longer than the rest of the invocation pipeline. Anything under 60ms is likely acceptable, which
+is still a long way off the sub-20ms latency Jube otherwise targets for model invocation.
+
 **Maker Checker Improvements**
 A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
 production. Every model entity gains an Approved state; during synchronisation, only approved states are eligible for
@@ -141,15 +150,6 @@ source systems.
 
 **Blazor Test Coverage**
 As part of the user interface redesign, comprehensive BUnit test coverage will be added for Blazor pages.
-
-**Case Vector Similarity Analysis**
-Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
-across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development,
-and the surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex
-layering and integration-stage AML typologies. The intention is for this to be available both on the Case page and for
-real-time recall — to the extent embedding models permit real-time recall, since they require a remote procedure call
-and are likely to take longer than the rest of the invocation pipeline. Anything under 60ms is likely acceptable, which
-is still a long way off the sub-20ms latency Jube otherwise targets for model invocation.
 
 **IP Intelligence Dataset**
 Integration of a proprietary IP intelligence dataset built from multiple corroborating public sources, cross-validated
