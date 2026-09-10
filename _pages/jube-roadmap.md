@@ -62,7 +62,8 @@ thresholds, velocity and aggregation logic, rule authoring, statistical model ou
 over conversational breadth, and it is what Phi-4 Mini, and its successors, is being backed on. A small model also keeps
 inference cheap enough to run within the clients own infrastructure, in keeping with Jube's open source,
 no-vendor-lock-in stance — no case, transaction, or configuration data need ever leave the deployment boundary to reach
-a third-party inference API.
+a third-party inference API. Enterprise AI looks absolutely nothing like consumer AI and high computational demands have
+no place.
 
 Retrieval Augmented Generation (RAG) and embedding-based similarity, within Ask Jooby itself, are scoped broadly:
 directing function calling — matching a request to the correct decorated service-layer method — by transposing the
