@@ -17,9 +17,9 @@ hold rights on stated conditions — and the conditions are the consideration.
 This is the position from which everything below follows. It is also the position taken by a US federal court in
 *Artifex Software, Inc. v. Hancom, Inc.*, No. 16-cv-06982-JSC, 2017 WL 1477373 (N.D. Cal. Apr. 24, 2017), which declined
 to dismiss a claim that breach of the GNU General Public Licence sounds in contract as well as copyright, on the basis
-that the licence's stated terms and dual-licensing structure were capable of constituting an enforceable agreement. The case settled on terms favourable to
-the plaintiff. The principle it illustrates — that copyleft obligations are legally operative rather than aspirational —
-is recognised in substance across the jurisdictions in which Jube's users operate.
+that the licence's stated terms and dual-licensing structure were capable of constituting an enforceable agreement. The
+case settled on terms favourable to the plaintiff. The principle it illustrates — that copyleft obligations are legally
+operative rather than aspirational — is recognised in substance across the jurisdictions in which Jube's users operate.
 
 The practical consequence is the part organisations tend to overlook. A breach of the AGPLv3 is not a matter to be
 regularised later at a price. Under Section 8, the rights granted terminate automatically on violation. Reinstatement is
@@ -68,16 +68,16 @@ implementation behind a technical firewall. That assumption fundamentally miscon
 to data pipelines.
 
 If an orchestrator relies on a vector database built by parsing, chunking, and embedding Jube's C# service layer,
-internal methods, or core system documentation, that vector data layer contains direct structural representations of
-the copyrighted asset. The resulting orchestration tool has zero independent utility or existence; it operates as a
+internal methods, or core system documentation, that vector data layer contains direct structural representations of the
+copyrighted asset. The resulting orchestration tool has zero independent utility or existence; it operates as a
 functional extension of the core platform disguised under a different runtime skin.
 
 The legal precedent here is structurally consistent with established software copyright principles. In *Oracle America,
 Inc. v. Google LLC*, 750 F.3d 1339 (Fed. Cir. 2014), the Federal Circuit affirmed that the structure, sequence, and
 organisation (SSO) of software interfaces are protectable under copyright law when selection and arrangement involve
-architectural expression. A RAG
-pipeline designed to systematically map natural language queries directly to Jube's specific, decorated class structures
-and database schemas is, by definition, processing and exposing that protected structure, sequence, and organisation.
+architectural expression. A RAG pipeline designed to systematically map natural language queries directly to Jube's
+specific, decorated class structures and database schemas is, by definition, processing and exposing that protected
+structure, sequence, and organisation.
 
 Consequently, when an end-user interacts with an orchestration layer or chatbot over a network, and that layer executes
 logic derived intimately from an ingested index of Jube's internal mechanics, the network-trigger provision of Section
