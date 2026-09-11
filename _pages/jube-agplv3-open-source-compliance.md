@@ -15,9 +15,9 @@ have to use Jube exists, and it is the only one. Absent it, deployment of Jube i
 hold rights on stated conditions — and the conditions are the consideration.
 
 This is the position from which everything below follows. It is also the position taken by a US federal court in
-*Artifex Software, Inc. v. Hancom, Inc.* (N.D. Cal. 2017), which declined to dismiss a claim that breach of the GNU
-General Public Licence sounds in contract as well as copyright, on the basis that the licence's stated terms and
-dual-licensing structure were capable of constituting an enforceable agreement. The case settled on terms favourable to
+*Artifex Software, Inc. v. Hancom, Inc.*, No. 16-cv-06982-JSC, 2017 WL 1477373 (N.D. Cal. Apr. 24, 2017), which declined
+to dismiss a claim that breach of the GNU General Public Licence sounds in contract as well as copyright, on the basis
+that the licence's stated terms and dual-licensing structure were capable of constituting an enforceable agreement. The case settled on terms favourable to
 the plaintiff. The principle it illustrates — that copyleft obligations are legally operative rather than aspirational —
 is recognised in substance across the jurisdictions in which Jube's users operate.
 
@@ -35,11 +35,10 @@ auditor, a regulator, or a board.
 - You can build workflows, configure rules, and extend the platform using its documented extensibility framework
 - You cannot take Jube, modify it, and distribute or deploy it as a closed source product
 - The network provision applies. If you run a modified version of Jube as a service accessible to others, including over
-  an internal network, the modified source must be made available to those users under the same licence
-  That obligation attaches to modifications of Jube's core software. Configuration, use of documented features, case
-  management workflows, integrations, and Configuration Artifacts are your business and carry no AGPLv3 obligation —
-  they
-  remain proprietary to their creator, as is customary in open source software of this nature. The licence concerns the
+  an internal network, the modified source must be made available to those users under the same licence. That obligation
+  attaches to modifications of Jube's core software. Configuration, use of documented features, case management
+  workflows, integrations, and Configuration Artifacts are your business and carry no AGPLv3 obligation — they remain
+  proprietary to their creator, as is customary in open source software of this nature. The licence concerns the
   software, not how you use it.
 
 ## Derivative works
@@ -60,6 +59,33 @@ you are building on Jube and uncertain where your implementation sits, take prop
 (JOL) — the company that develops, operates, and supports Jube commercially — does not make that determination on your
 behalf, and will not pretend the question does not exist.
 
+## Ingestion, Vectorisation, and the RAG Pipeline
+
+The application of Retrieval-Augmented Generation (RAG) frameworks to Jube's codebase and internal architectural
+documentation introduces a distinct and comprehensive vector of licence contamination. Organisations occasionally assume
+that orchestrating an external agent framework via standard OpenAPI or Swagger definitions insulates their
+implementation behind a technical firewall. That assumption fundamentally misconstrues how copyleft obligations attach
+to data pipelines.
+
+If an orchestrator relies on a vector database built by parsing, chunking, and embedding Jube's C# service layer,
+internal methods, or core system documentation, that vector data layer contains direct structural representations of
+the copyrighted asset. The resulting orchestration tool has zero independent utility or existence; it operates as a
+functional extension of the core platform disguised under a different runtime skin.
+
+The legal precedent here is structurally consistent with established software copyright principles. In *Oracle America,
+Inc. v. Google LLC*, 750 F.3d 1339 (Fed. Cir. 2014), the Federal Circuit affirmed that the structure, sequence, and
+organisation (SSO) of software interfaces are protectable under copyright law when selection and arrangement involve
+architectural expression. A RAG
+pipeline designed to systematically map natural language queries directly to Jube's specific, decorated class structures
+and database schemas is, by definition, processing and exposing that protected structure, sequence, and organisation.
+
+Consequently, when an end-user interacts with an orchestration layer or chatbot over a network, and that layer executes
+logic derived intimately from an ingested index of Jube's internal mechanics, the network-trigger provision of Section
+13 is fully engaged. The entire combined framework — including the orchestration layers and prompt-handling code —
+becomes a derivative work that must be made fully transparently available under the terms of the AGPLv3. Attempting to
+obscure this coupling behind a generalised API layer does not cure the defect; it merely ensures the non-compliance will
+surface during standard third-party risk reviews and software composition analysis.
+
 ## Guidance is not absolution
 
 Copyright in Jube is held by Jube Holdings Limited (JHL). JOL is a separate company: it develops the software, provides
@@ -69,8 +95,8 @@ steer on compliance does not discharge your obligations, and nothing you receive
 
 JHL, as the copyright holder, is not a licensing authority. It does not issue compliance opinions, comfort letters,
 waivers, or forbearance, and it has no mechanism by which to do so. JOL is in no different a position: operating and
-supporting Jube commercially does not give it any power to vary the licence, and nothing it says changes what the
-AGPLv3 requires.
+supporting Jube commercially does not give it any power to vary the licence, and nothing it says changes what the AGPLv3
+requires.
 
 Nothing said, written, or implied by JHL, JOL, or anyone acting on their behalf — in conversation, correspondence, a
 proposal, a support ticket, or a workshop — creates a commercial licence, varies the AGPLv3, or forgives an obligation
@@ -105,18 +131,18 @@ does not make it go away. It is a legitimate lever, and it will be pulled.
 
 A System Integrator that strips Jube's copyright notices and branding and holds the platform out to its own client as
 proprietary technology has not solved its AGPLv3 exposure — it has added a second problem, owed to a different party.
-The client who believes it bought bespoke IP and later discovers it is running rebadged Jube has a grievance of its
-own, against the integrator, entirely independent of anything JHL, a contributor, or a competitor might raise. That
-exposure is the integrator's alone to carry.
+The client who believes it bought bespoke IP and later discovers it is running rebadged Jube has a grievance of its own,
+against the integrator, entirely independent of anything JHL, a contributor, or a competitor might raise. That exposure
+is the integrator's alone to carry.
 
 It is also worth connecting this back to the contract position set out earlier. Because breach of the AGPLv3 sounds in
-contract as well as copyright, the damages that flow from a breach are not confined to the value of the software
-itself. Jube is a registered trademark with the Cyprus Registrar of Companies and Intellectual Property, and where
-non-compliant use also carries the Jube name or brand into contexts that dilute its distinctiveness, damage its
-reputation, or erode the intangible asset value the mark represents, that harm sits within the same case rather than
-requiring a separate action — it goes to the scale of what a breach actually costs, not to a second, independent claim.
-Organisations and their intangible-asset risk functions may find it more useful to read the two as a single, cumulative
-exposure rather than parallel tracks.
+contract as well as copyright, the damages that flow from a breach are not confined to the value of the software itself.
+Jube is a registered trademark with the Cyprus Registrar of Companies and Intellectual Property, and where non-compliant
+use also carries the Jube name or brand into contexts that dilute its distinctiveness, damage its reputation, or erode
+the intangible asset value the mark represents, that harm sits within the same case rather than requiring a separate
+action — it goes to the scale of what a breach actually costs, not to a second, independent claim. Organisations and
+their intangible-asset risk functions may find it more useful to read the two as a single, cumulative exposure rather
+than parallel tracks.
 
 This is not a weakness of the model. It is the mechanism by which the field stays honest, and it operates independently
 of whether JHL notices any particular breach first. Jube's traction compounds it: as one of the most widely deployed
@@ -153,7 +179,7 @@ travel with the software regardless of how it arrived, who was asked about it, w
 ultimately raises the question.
 
 *Jube is, and will remain, open source.*
- 
+
 ---
 
 *This page sets out JHL's position on the terms under which Jube is offered. It is written primarily for the deploying
