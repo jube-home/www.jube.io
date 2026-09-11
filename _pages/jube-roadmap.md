@@ -17,7 +17,7 @@ application are merged to master continuously.
 The user interface is moving to Blazor and Radzen components. This migration necessitates moving controller logic into a
 service layer, since Blazor Server renders on the server rather than calling controller endpoints from client-side
 script. As part of this migration, service properties and methods will be comprehensively decorated to provide robust,
-strongly-typed function calling for "Ask Jooby", the AI chatbot described below — the same service layer that drives the
+strongly-typed function calling for Ask Jooby, the AI chatbot described below — the same service layer that drives the
 UI becomes the surface the agent invokes.
 
 **Service Layer Test Coverage**
@@ -70,34 +70,13 @@ directing function calling — matching a request to the correct decorated servi
 descriptive elements of that decoration into embeddings for retrieval, yet also containing chunked documentation, source
 code tree and example, generalised, rule definitions.
 
-**Case Vector Similarity Analysis and Real-Time Comparison**
+**Case Vector Similarity Analysis**
 Embedding-based similarity analysis across case history, enabling the identification of structurally similar cases
 across time, entity, and typology dimensions. Intended to support pattern recognition at scale, typology development,
 and the surfacing of related activity that rule-based approaches may not connect. Particularly relevant to complex
-layering and integration-stage AML typologies. The intention is for this to be available both on the Case page and for
-real-time recall — to the extent embedding models permit real-time recall, since they require a remote procedure call
-and are likely to take longer than the rest of the invocation pipeline. Anything under 60ms is likely acceptable, which
-is still a long way off the sub-20ms latency Jube otherwise targets for model invocation.
-
-Redis is used for the Vector storage in RAG and Case Similarity, via full text and distance evaluation indexes, lending
-it to realtime evaluation. An extension to the invocation pipeline will facilitate realtime evaluation of similar cases
-given vector distance and other case status attributes.
-
-**Maker Checker Improvements**
-A review layer in support of "Ask Jooby": an LLM agent cannot be allowed to drop function calls straight into
-production. Every model entity gains an Approved state; during synchronisation, only approved states are eligible for
-propagation, with the system falling back to the last approved version wherever a pending change has not yet been signed
-off. The model sync page will surface a digest of unapproved changes, linking directly to the affected entity, so a
-human reviewer can see — and approve or reject — exactly what an agent, or a person, is proposing before it reaches
-production.
-
-**Invocation Test Coverage**
-A structured integration XUnit test suite focused on the invocation pipeline and model construction via the API. Test
-cases will be built around real integration scenarios — exercising the full path from invocation through model
-execution — rather than controller-level unit coverage. Controllers are covered only to the extent that they participate
-in meaningful end-to-end scenarios. The test suite will be designed to support continuous integration and protect
-feature velocity as the platform matures: changes to core pipeline behaviour are caught early, and new capability can be
-delivered with confidence against a stable, verified baseline.
+layering and integration-stage AML typologies. Postgres is used for the Vector storage in RAG and Case Similarity, via
+full text and distance evaluation indexes, lending it to realtime evaluation. Retrival is a hybrid of embedding
+similarity and full text search.
 
 **Flatten HSET Switch**
 Although the load on Redis leaves plenty of headroom, and Redis wire-compatible dictionary backends are increasingly
@@ -155,6 +134,23 @@ source systems.
 
 **Blazor Test Coverage**
 As part of the user interface redesign, comprehensive BUnit test coverage will be added for Blazor pages.
+
+**Invocation Test Coverage**
+A structured integration XUnit test suite focused on the invocation pipeline and model construction via the API. Test
+cases will be built around real integration scenarios — exercising the full path from invocation through model
+execution — rather than controller-level unit coverage. Controllers are covered only to the extent that they participate
+in meaningful end-to-end scenarios. The test suite will be designed to support continuous integration and protect
+feature velocity as the platform matures: changes to core pipeline behaviour are caught early, and new capability can be
+delivered with confidence against a stable, verified baseline.
+
+**Maker Checker Improvements**
+A review layer in support of Ask Jooby: an LLM agent cannot be allowed to drop function calls straight into production.
+Every model entity gains an Approved state; during synchronisation, only approved states are eligible for propagation,
+with the system falling back to the last approved version wherever a pending change has not yet been signed off. The
+model sync page will surface a digest of unapproved changes, linking directly to the affected entity, so a human
+reviewer can see — and approve or reject — exactly what an agent, or a person, is proposing before it reaches
+production. One of the last tasks in the current roadmap given that Ask Jooby is going be read only agents in the early
+days.
 
 **IP Intelligence Dataset**
 Integration of a proprietary IP intelligence dataset built from multiple corroborating public sources, cross-validated
