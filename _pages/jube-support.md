@@ -13,12 +13,12 @@ each under its own Work Order. All of it operates on the same principle: **a fla
 monthly fee, governed by a transparent fair-use policy, with no overage billing.** The
 amount is known in advance, and there is no bill shock by design.
 
-**This page is the offer.** Fees, response commitments, inclusions, and governance are
-published here in full. Engagement proceeds directly to a quote which references this
-page (see [From this page to a signed engagement](#from-this-page-to-a-signed-engagement) below).
+**This page is the offer.** Fees, response commitments, and inclusions are published
+here in full — there's nothing to negotiate and nothing held back for a sales call.
+[Get in touch](/contact/) to get started.
 
 <p>
-  <a class="button button--primary button--small" href="/contact/">Talk to us about a tier →</a>
+  <a class="button button--primary button--small" href="/contact/">Get in touch about a tier →</a>
 </p>
 
 ![Jube Training](/support.png)
@@ -127,8 +127,8 @@ arrangement in its own right for teams who want a steady, low-cost line to Jube 
 they stay in a non-production environment for as long as that suits them — there's no
 expectation of moving up on any particular timeline.
 
-Not sure which tier fits your deployment? [Talk to us](/contact/) — most quotes go out
-within a day.
+Not sure which tier fits your deployment? [Get in touch](/contact/) — replies
+typically go out within a day.
 
 Ad hoc, no-commitment support — for teams not yet ready to take a monthly tier —
 remains available at Jube's discretion, on a best-endeavours basis, quoted per
@@ -212,7 +212,10 @@ what Enterprise's flat fee carries with it:
   arrangement moves to Scale support.
 
 Running mission-critical infrastructure and want a named technical authority on it?
-<a class="button button--primary button--small" href="https://wa.me/35797517137">Talk to us about Enterprise on WhatsApp</a>
+
+<p>
+  <a class="button button--primary button--small" href="/contact/">Get in touch about Enterprise →</a>
+</p>
 
 ---
 
@@ -330,40 +333,10 @@ Carlo simulation.
   what you're paying for is expertise, not a license.
 
 <p>
-  <a class="button button--primary button--small" href="/contact/">Get your quote →</a>
+  <a class="button button--primary button--small" href="/contact/">Get started →</a>
 </p>
 
 ---
-
-## From this page to a signed engagement
-
-There is no proposal step. This page, together with the
-[JTOS](/agreements/jtos-version-1-8), constitutes the complete published offer. The
-quote adds only the parameters specific to your engagement:
-
-1. **Quote issued** — Jube raises a formal quote for digital signature, referencing
-   this page, and stating: the client entity, the support tier and corresponding flat
-   monthly fee from the published scale, the initial term where the tier is
-   Enterprise, invoicing details, and the commencement date. Sandbox is available to
-   any team directly, with no prior engagement required — it is a good entry point in
-   its own right for teams who want to map rules against their own data before
-   committing to anything larger. Where a client is moving up from the
-   [Jube Training and Integration programme](/jube-training), its asynchronous support
-   period gives an evidenced picture of what your environment actually demands, and
-   the quoted tier is sized from that evidence rather than a guess.
-2. **Signature** — On digital signature of the quote, the quote and the referenced
-   documents together constitute the Work Order as defined in the JTOS. Quotes are
-   issued by Jube Operations Limited, the contracting entity (see
-   [Governance and insurance](#governance-and-insurance) below).
-3. **Commencement** — support commences on the confirmed date, continuing seamlessly
-   from the training programme's asynchronous support period where one preceded it.
-   Jube issues a **Service
-   Activation Letter** on commencement, recording the start date, the tier, the
-   delivery mode, and which of the Enterprise commitments are and are not in force. It
-   states no fees or rates, which means it can be shared freely — including with your
-   own compliance, audit, or procurement function, or where support reaches you through
-   a partner and you want to see for yourself what has actually been contracted. It is
-   reissued whenever anything it records changes.
 
 ## Ownership of extensions and configurations
 
@@ -409,20 +382,13 @@ well-established in the open-source community (Redis Lua scripts) and provides t
 client with the flexibility to deliver proprietary value-added solutions while
 leveraging the AGPLv3-licensed Jube platform.
 
-## Governance and insurance
+## Governance
 
-All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-8) — published, versioned,
-and written to be clear and equitable for both parties. Professional indemnity
-insurance is carried with a UK-authorised insurer at the level recorded in the Work
-Order, up to GBP 1M per claim, which is the ceiling Jube maintains and the most any
-client should expect, subject to exclusions as set out in the JTOS. Where work is
-delivered at your premises, public liability insurance is additionally carried, at the
-level recorded in the Work Order.
+There is no proposal step. This page, together with the
+[JTOS](/agreements/jtos-version-1-8), is the complete published offer — insurance,
+liability, and the contracting entity are all set out there in full. Get in touch to
+get started.
 
-Behind the Jube name sit two companies. Jube Holdings Limited (JHL) is a Cyprus-based
-company that owns the Jube software and trademarks, registered with the Cyprus
-Intellectual Property Office. Jube Operations Limited (JOL) is a UK-based company and
-wholly owned subsidiary of JHL, providing services utilising JHL's intellectual
-property. JOL is the customary client contracting entity, and the entity that issues
-quotes under this offer.
+<p>
+  <a class="button button--primary button--small" href="/contact/">Get in touch →</a>
+</p>

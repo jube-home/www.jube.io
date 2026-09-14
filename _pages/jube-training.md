@@ -19,14 +19,12 @@ than through an asynchronous channel over the two months that follow.
 
 Your team will **learn, configure, and operate Jube in realistic scenarios** throughout.
 
-**This page is the offer.** Everything commercial — fees, payment schedule, de-risking,
-what's included, governance, and intellectual property position — is published here in
-full. Engagement proceeds directly to a quote which references this page; the quote adds
-only the handful of parameters specific to your engagement (see
-[From this page to a signed engagement](#from-this-page-to-a-signed-engagement) below).
+**This page is the offer.** Fees, payment schedule, de-risking, and what's included are
+published here in full — there's nothing to negotiate and nothing held back for a sales
+call. [Get in touch](/contact/) to get started.
 
 <p>
-  <a class="button button--primary button--small" href="/contact/">Talk to us about your team →</a>
+  <a class="button button--primary button--small" href="/contact/">Get in touch about your team →</a>
 </p>
 
 ![Jube Training](/training.png)
@@ -72,7 +70,8 @@ implementation support is delivered, and therefore how long the project takes.
 | Implementation reviews | Twice-weekly, remote | Daily, in the room |
 | Recordings | Yes | Yes |
 
-Not sure which mode fits your team? [Talk to us](/contact/) and we'll help you decide.
+Not sure which mode fits your team? [Get in touch](/contact/) — happy to help you
+decide.
 
 ### Remote delivery
 
@@ -134,7 +133,10 @@ quarter is ordinarily the calculation that decides between the two delivery mode
 the difference in fee.
 
 Working to a deadline like that?
-<a class="button button--primary button--small" href="https://wa.me/35797517137">Ask about the on-site month on WhatsApp</a>
+
+<p>
+  <a class="button button--primary button--small" href="/contact/">Get in touch about the on-site month →</a>
+</p>
 
 The month is structured as follows:
 
@@ -610,49 +612,19 @@ well-established in the open-source community (Redis Lua scripts) and provides t
 client with the flexibility to deliver proprietary value-added solutions while
 leveraging the AGPLv3-licensed Jube platform.
 
-## Governance and insurance
-
-All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-8) — published, versioned,
-and written to be clear and equitable for both parties. Professional insurances are
-carried at GBP 1M per claim, subject to exclusions as set out in the JTOS.
-
-On-site attendance is additionally subject to your site access, security, and health and
-safety requirements, which are complied with as a matter of course. Where your
-procurement process requires evidence of insurance, contractor screening, or background
-checks ahead of site access, this is provided during the lead-in and should be raised at
-quote stage so that it does not delay the block.
-
-Behind the Jube name sit two companies. Jube Holdings Limited (JHL) is a Cyprus-based
-company that owns the Jube software and trademarks, registered with the Cyprus
-Intellectual Property Office. Jube Operations Limited (JOL) is a UK-based company and
-wholly owned subsidiary of JHL, providing services utilising JHL's intellectual
-property. JOL is the customary client contracting entity, and the entity that issues
-quotes under this offer.
-
----
-
-## From this page to a signed engagement
+## Governance
 
 There is no proposal step. This page, together with the
 [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) and the
-[JTOS](/agreements/jtos-version-1-8), constitutes the complete published offer. The
-quote adds only the parameters specific to your engagement:
+[JTOS](/agreements/jtos-version-1-8), is the complete published offer — insurance,
+liability, and the contracting entity are all set out there in full. On-site attendance
+is subject to your site access, security, and health and safety requirements; where
+your procurement process requires evidence of insurance or background checks ahead of
+site access, raise it when you get in touch and it's sorted during the lead-in.
 
-1. **Quote issued** — Jube raises a formal quote for digital signature, referencing this
-   page and the Training and Integration Plan, and stating: the client entity, the
-   delivery mode (remote or on-site), the confirmed start date and, for the on-site
-   month, its dates, the venue, the travel and accommodation to be booked by the client,
-   and the estimated subsistence on the HMRC scale rate basis, invoicing details, and any
-   engagement-specific commitments agreed in advance (for example, custom gap development
-   beyond the included two days, or reference introductions).
-2. **Signature** — On digital signature of the quote, the quote and the referenced
-   documents together constitute the work order as defined in the JTOS. Quotes are
-   issued by Jube Operations Limited, the contracting entity (see
-   [Governance and insurance](#governance-and-insurance) above).
-3. **Scheduling** — On signature, meeting invites are distributed for training delivery
-   commencing on the confirmed start date, and any travel is booked against the fixed
-   on-site dates.
+<p>
+  <a class="button button--primary button--small" href="/contact/">Get in touch →</a>
+</p>
 
 ---
 
