@@ -58,75 +58,28 @@ delivered, and therefore how long the project takes.
 Not sure which mode fits your team? [Get in touch](/contact/) — happy to help you
 decide.
 
-**Remote** was deliberately designed this way: distributed teams have competing
-priorities and finite attention, and short, regular, three-hour sessions with own-time
-exercises beat trying to replicate a classroom day over video. **On-site** reaches
-pre-production faster for five reasons that only apply with the developer in the room:
+Both fees are fixed, agreed in advance, and include two days of custom gap development.
+**Payment is de-risked for both sides**: 50% after the first week of training, the
+balance on success (proof-of-concept stability and the first live transaction),
+typically within twelve weeks. On-site adds travel booked directly by you and
+subsistence at the HMRC scale rate — no premium for location, no expense float either
+way, and travel days aren't billed. Support beyond what's included continues under
+standard [support](/jube-support/) terms.
 
-- **Latency compounds.** A chain of dependent questions asked asynchronously is a
-  fortnight; asked over a shoulder, it's an afternoon.
-- **The expensive mistakes are the ones nobody asks about.** A subtly wrong entity
-  model is weeks of rework found later by the false-positive rate — or caught on the
-  spot by someone watching the screen.
-- **Decisions, not tasks, sit on the critical path.** Which topic a team publishes to,
-  who owns identity — a fortnight of meetings remotely, twenty minutes in a corridor
-  on-site.
-- **Real data can't leave the building.** Thresholds and false-positive tuning against
-  sampled data remotely gets redone against the real thing anyway, inside the
-  perimeter — the same job twice.
-- **Some institutions will badge a person but not open a connection.** Where that's the
-  case, on-site isn't an accelerator, it's the only route that runs at all.
-
-The fee is best judged against the cost of the delay it removes — a legacy licence paid
-monthly, fraud losses against inadequate controls, or a regulator's deadline — against
-which moving go-live forward by a quarter usually decides the mode, not the difference
-in fee.
+On-site reaches pre-production faster because latency compounds (a fortnight of
+async questions is an afternoon over a shoulder), the expensive mistakes are the ones
+nobody thinks to ask about, and some institutions will badge a person but never open a
+remote connection at all. Structure: a **remote lead-in** to get the basics done before
+travel, **week one** for the full curriculum, **weeks two to four** full-time
+implementation against your own cluster and data, and an **on-call tail** through to
+first live transaction. It needs your team genuinely released for it, and an
+environment ready to deploy into — which the lead-in exists to confirm.
 
 Working to a deadline like that?
 
 <p>
   <a class="button button--primary button--small" href="/contact/">Get in touch about the on-site month →</a>
 </p>
-
-The on-site month runs: a **remote lead-in** during the booked lead time (Session 1,
-WhatsApp channel, training server, any custom gap development); **week one**, the full
-curriculum in two blocks a day; **weeks two to four**, full-time implementation against
-your cluster and your data; and a **tail** of on-call asynchronous support through to
-first live transaction and certification. Three quarters of the month is
-implementation — pre-production is a milestone of the month, not a consequence of it.
-
-Two things worth weighing honestly: the month needs your team genuinely released for
-it, not merely nearby; and it assumes there are environments to deploy into, which is
-exactly what the lead-in is there to confirm.
-
----
-
-## Pricing
-
-Both modes are a single fixed fee, agreed in advance and unaffected by how the work
-unfolds. On-site carries no premium for location — presence takes up a month of
-capacity outright rather than reserving a slice of it, so it was never priced as the
-cheaper option per unit of work.
-
-**Remote Fast-Track — $6,250** covers the full curriculum plus asynchronous
-implementation support alongside it and for two months after.
-
-**On-Site Core Accelerator — $17,500** covers the full curriculum (delivered in week
-one), three weeks of full-time implementation support, and the on-call tail. Travel and
-subsistence are additional: flights and accommodation are booked directly by you and
-not recharged; subsistence is billed at the HMRC international scale rate; travel days
-are not billed.
-
-The fee is fixed until pre-production is confirmed (within four months of
-commencement for remote, two for on-site). Support beyond what's included, or after
-pre-production, continues under standard [support](/jube-support/) terms — the same
-channels and cadence carry straight through. Also included: **two days of custom gap
-development** into the core product (see [Practicalities](#practicalities) below).
-
-**Payment is de-risked for both sides**: 50% is invoiced after the first week of
-training concludes; the balance falls due on success — proof-of-concept stability and
-the first live transaction — typically within twelve weeks (sooner, on the same
-triggers, for the on-site month). No payment before delivery has demonstrably begun.
 
 ---
 

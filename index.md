@@ -5,7 +5,8 @@ image: '/images/01.jpg'
 
 {% include section-hero.html %}
 
-<div class="container animate">
+<section class="section animate">
+<div class="container">
 <article class="page">
 <div class="page__content" markdown="1">
 
@@ -18,12 +19,24 @@ with all features available and no vendor lock-in, Jube is transparent,
 auditable, and extensible—keeping your data under your control while enabling rapid adaptation to new products,
 workflows, regulations, or payment schemes.
 
-## Why teams pick Jube over legacy AML platforms
+</div>
+</article>
+</div>
+</section>
 
-The bar for AML and fraud platforms moved: regulators now expect model decisions to be
-explainable and defensible at audit, not just accurate, while buyers are increasingly
-priced out of — or held hostage by — the incumbent enterprise vendors. Jube was built
-against both pressures directly:
+<section class="section section--alt animate">
+<div class="container">
+
+<div class="section__info">
+  <h2 class="section__title">Why teams pick Jube</h2>
+  <p class="section__description">The bar for AML and fraud platforms moved: regulators now expect model
+    decisions to be explainable and defensible at audit, not just accurate, while buyers are increasingly priced
+    out of — or held hostage by — the incumbent enterprise vendors. Jube was built against both pressures
+    directly.</p>
+</div>
+
+<article class="page">
+<div class="page__content" markdown="1">
 
 - **Explainable, regulator-defensible models** — Bayesian Networks and decision-tree
   rule output you can walk a regulator through, calibrated and validated against BASEL
@@ -39,95 +52,90 @@ against both pressures directly:
 - **Rules your compliance team can actually change** — a visual rule builder and coder,
   so a new typology doesn't have to wait on an engineering backlog.
 
-See Jube **open source AML software** and **open source fraud detection software** in action:
-
----
-
-Jube combines real-time transaction monitoring, adaptive machine learning, rule-based detection, and workflow-driven
-case management into a single, scalable system.
-
-Designed for compliance teams, financial institutions, and fintechs, Jube provides:
-
-- Accurate and interpretable risk scoring using supervised and unsupervised machine learning models
-- Rule-based detection with thresholds, velocity checks, aggregation counts, and sanctions screening
-- Workflow-driven AML and fraud case management with automated escalation and full audit trails
-- Cloud-native deployment with Docker and Kubernetes support, multi-tenancy, configuration preservation, and
-  high-performance caching for low-latency decisioning
-
-Jube ensures accuracy, transparency, and auditability, making it ideal for organizations that must meet strict
-regulatory requirements while monitoring large transaction volumes.
-
-![Open source AML software case management dashboard](/CaseManagementListing.png)
-
-![Open source fraud detection software performance metrics](/ExhaustivePerformance.png)
-
-<div class="section__info">
-  <h2 class="section__title">See it in action</h2>
 </div>
-
-<div class="row">
-
-<article class="project col col-4 col-d-6 col-t-12">
-  <div class="project__content">
-    <a href="#adaptive-machine-learning-exhaustive-adaptation" class="project__image">
-      <img class="lazy" data-src="/ExhaustiveWinningModelTopology.png" alt="Adaptive machine learning model topology">
-    </a>
-    <div class="project__info">
-      <h3 class="project__title"><a href="#adaptive-machine-learning-exhaustive-adaptation">Adaptive ML</a></h3>
-      <div class="project__subtitle">Explainable &amp; Basel-validated</div>
-    </div>
-  </div>
 </article>
-
-<article class="project col col-4 col-d-6 col-t-12">
-  <div class="project__content">
-    <a href="#real-time-transaction-monitoring" class="project__image">
-      <img class="lazy" data-src="/ExhaustivePerformance.png" alt="Real-time transaction monitoring performance">
-    </a>
-    <div class="project__info">
-      <h3 class="project__title"><a href="#real-time-transaction-monitoring">Real-Time Monitoring</a></h3>
-      <div class="project__subtitle">Low-latency at scale</div>
-    </div>
-  </div>
-</article>
-
-<article class="project col col-4 col-d-6 col-t-12">
-  <div class="project__content">
-    <a href="#case-management-for-compliance" class="project__image">
-      <img class="lazy" data-src="/Case.png" alt="AML and fraud case management workflow">
-    </a>
-    <div class="project__info">
-      <h3 class="project__title"><a href="#case-management-for-compliance">Case Management</a></h3>
-      <div class="project__subtitle">Workflow &amp; audit trail</div>
-    </div>
-  </div>
-</article>
-
-<article class="project col col-4 col-d-6 col-t-12">
-  <div class="project__content">
-    <a href="#flexible-rule-engine" class="project__image">
-      <img class="lazy" data-src="/RuleBuilder.png" alt="Visual rule builder interface">
-    </a>
-    <div class="project__info">
-      <h3 class="project__title"><a href="#flexible-rule-engine">Rule Engine</a></h3>
-      <div class="project__subtitle">No engineering backlog</div>
-    </div>
-  </div>
-</article>
-
-<article class="project col col-4 col-d-6 col-t-12">
-  <div class="project__content">
-    <a href="#cloud-native" class="project__image">
-      <img class="lazy" data-src="/Swagger.png" alt="Cloud-native API integration">
-    </a>
-    <div class="project__info">
-      <h3 class="project__title"><a href="#cloud-native">Cloud-Native</a></h3>
-      <div class="project__subtitle">Docker, Kubernetes, multi-tenant</div>
-    </div>
-  </div>
-</article>
-
 </div>
+</section>
+
+<section class="section projects animate">
+  <div class="container">
+
+    <div class="section__info">
+      <h2 class="section__title">See it in action</h2>
+      <p class="section__description">Trusted open source AML and fraud detection software for compliance teams,
+        financial institutions, and fintechs.</p>
+    </div>
+
+    <div class="row">
+
+      <article class="project col col-4 col-d-6 col-t-12">
+        <div class="project__content">
+          <a href="#adaptive-machine-learning-exhaustive-adaptation" class="project__image">
+            <img class="lazy" data-src="/ExhaustiveWinningModelTopology.png" alt="Adaptive machine learning model topology">
+          </a>
+          <div class="project__info">
+            <h3 class="project__title"><a href="#adaptive-machine-learning-exhaustive-adaptation">Adaptive ML</a></h3>
+            <div class="project__subtitle">Explainable &amp; Basel-validated</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project col col-4 col-d-6 col-t-12">
+        <div class="project__content">
+          <a href="#real-time-transaction-monitoring" class="project__image">
+            <img class="lazy" data-src="/ExhaustivePerformance.png" alt="Real-time transaction monitoring performance">
+          </a>
+          <div class="project__info">
+            <h3 class="project__title"><a href="#real-time-transaction-monitoring">Real-Time Monitoring</a></h3>
+            <div class="project__subtitle">Low-latency at scale</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project col col-4 col-d-6 col-t-12">
+        <div class="project__content">
+          <a href="#case-management-for-compliance" class="project__image">
+            <img class="lazy" data-src="/Case.png" alt="AML and fraud case management workflow">
+          </a>
+          <div class="project__info">
+            <h3 class="project__title"><a href="#case-management-for-compliance">Case Management</a></h3>
+            <div class="project__subtitle">Workflow &amp; audit trail</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project col col-4 col-d-6 col-t-12">
+        <div class="project__content">
+          <a href="#flexible-rule-engine" class="project__image">
+            <img class="lazy" data-src="/RuleBuilder.png" alt="Visual rule builder interface">
+          </a>
+          <div class="project__info">
+            <h3 class="project__title"><a href="#flexible-rule-engine">Rule Engine</a></h3>
+            <div class="project__subtitle">No engineering backlog</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project col col-4 col-d-6 col-t-12">
+        <div class="project__content">
+          <a href="#cloud-native" class="project__image">
+            <img class="lazy" data-src="/Swagger.png" alt="Cloud-native API integration">
+          </a>
+          <div class="project__info">
+            <h3 class="project__title"><a href="#cloud-native">Cloud-Native</a></h3>
+            <div class="project__subtitle">Docker, Kubernetes, multi-tenant</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section animate">
+<div class="container">
+<article class="page">
+<div class="page__content" markdown="1">
 
 ## Key Features
 
@@ -217,8 +225,7 @@ with ML outputs for comprehensive detection.
 
 Jube’s architecture is **purpose-built for open source fraud detection and AML transaction monitoring**. It’s fully
 containerized (Docker, Kubernetes), supports multi-tenancy, and is highly scalable — making it a top-tier **AML and
-fraud
-detection software open source** solution.
+fraud detection software open source** solution.
 
 The platform preserves configuration, enabling institutions to back up, restore, and migrate rules, workflows, and ML
 settings. This ensures operational continuity and smooth system upgrades or deployments.
@@ -229,11 +236,21 @@ workflows, and ML configurations.
 
 ![Open source AML and fraud detection software API integration](/Swagger.png)
 
----
+</div>
+</article>
+</div>
+</section>
 
-Ready to see it running against your own data? [Get in touch](/contact/) for a demo,
-or head straight to [Training and Implementation](/jube-training/) or
-[Support](/jube-support/) for the published offer.
+<section class="section section--alt animate">
+<div class="container">
+<article class="page">
+<div class="page__content" markdown="1">
+
+## Ready to see it running against your own data?
+
+[Get in touch](/contact/) for a demo, or head straight to
+[Training and Implementation](/jube-training/) or [Support](/jube-support/) for the
+published offer.
 
 <p>
   <a class="button button--primary button--small" href="/contact/">Get in touch →</a>
@@ -242,3 +259,4 @@ or head straight to [Training and Implementation](/jube-training/) or
 </div>
 </article>
 </div>
+</section>

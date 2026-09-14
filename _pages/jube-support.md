@@ -17,34 +17,6 @@ get started.
   <a class="button button--primary button--small" href="/contact/">Get in touch about a tier →</a>
 </p>
 
-![Jube Training](/support.png)
-
-## How it works
-
-Support runs async-first over WhatsApp — a message becomes a ticket, answered with a
-Loom video and documentation, tracked against a permanent record. Meetings happen, but
-are a last resort rather than the default.
-
-**There's no clock running against your engineers.** Each tier is a flat monthly fee,
-invoiced in arrears under the [JTOS](/agreements/jtos-version-1-8). Fair use is
-generous and monitored continuously — the large majority of clients never approach it.
-Where sustained usage runs materially outside what's typical for your tier, you're told
-early and the position is addressed by moving your tier at the next quarterly review,
-never by a surprise line on the invoice.
-
-Sandbox, Growth, and Scale are terminable on thirty days' notice by either party —
-support earns its keep every month rather than being locked in. Enterprise carries a
-twelve-month initial term, because what it sells — callout coverage, patching response,
-and a working knowledge of your implementation that stays current — can't honestly be
-promised on a thirty-day footing; after that it continues month to month on the same
-notice as everything else.
-
-## Support tiers
-
-Tiers are published so the fee is the same for every client at that scale — the price
-is a function of your deployment, not of negotiation. All fees are in United States
-dollars:
-
 | Support Tier | Target Audience | Scope & Environment Limit | Flat Price |
 |---|---|---|---|
 | **Sandbox** | Startups and independent developers | Non-production sandbox only. Async response within 48 hours. | **$350 / mo** |
@@ -52,29 +24,36 @@ dollars:
 | **Scale** | Mid-tier financial institutions | Multi-region pipelines. Same-day, high-priority routing. | **$1,590 / mo** |
 | **Enterprise** | Banks and other regulated institutions | Mission-critical infrastructure. 24/7 priority emergency SLA. | **$2,400 / mo** ($28,800/yr) |
 
-Each tier builds on the one below it:
+Flat, published, non-negotiable — no clock, no overage. Each tier builds on the one
+below it:
 
-- **Sandbox** — asynchronous WhatsApp support, Loom video ticket resolution, and
-  document and rule-mapping help. A comfortable place to start, or to stay — it's a
-  legitimate standing arrangement, not just a waypoint.
-- **Growth** — adds core platform performance tuning and mid-level AML configuration
-  consulting, plus an async engineering channel.
-- **Scale** — adds advanced platform abstraction advisory and cross-tenant architecture
-  support.
-- **Enterprise** — adds the full set of inclusions described under
-  [Enterprise support](#enterprise-support) below.
+- **Sandbox** — async WhatsApp support, Loom video ticket resolution, document and
+  rule-mapping help. A fine place to stay, not just a waypoint.
+- **Growth** — adds core platform performance tuning and mid-level AML config consulting.
+- **Scale** — adds advanced platform abstraction advisory and cross-tenant architecture.
+- **Enterprise** — adds everything under [Enterprise support](#enterprise-support) below.
 
-Ad hoc, no-commitment support also remains available at Jube's discretion, quoted per
-engagement. Out-of-hours and emergency response outside Enterprise is best-endeavours
-only, quoted per callout.
+Ad hoc support is available at Jube's discretion, quoted per engagement. Big or
+on-premises work is priced separately as [project engagements](#project-engagements).
+Not sure which tier fits? [Get in touch](/contact/) — replies typically go out within a
+day.
 
-A large one-off project doesn't, by itself, earn a place on a cheaper tier — tiers are
-priced against sustained monthly commitment, not the size of any single piece of work,
-which is why big or on-premises jobs are priced separately as
-[project engagements](#project-engagements) instead.
+![Jube Training](/support.png)
 
-Not sure which tier fits your deployment? [Get in touch](/contact/) — replies
-typically go out within a day.
+## How it works
+
+Support runs async-first over WhatsApp — a message becomes a ticket, answered with a
+Loom video and documentation, tracked against a permanent record.
+
+**There's no clock running against your engineers.** Fair use is generous and
+monitored continuously; if usage runs materially outside what's typical for your tier,
+you're told early and it's addressed by moving your tier at the next quarterly review
+— never a surprise line on the invoice.
+
+Sandbox, Growth, and Scale are terminable on thirty days' notice. Enterprise carries a
+twelve-month initial term, since callout coverage and patching response can't honestly
+be promised on a thirty-day footing — after that, it's month to month like everything
+else.
 
 ## Enterprise support
 
@@ -136,24 +115,6 @@ curriculum.
 
 Available within any tier; for sustained model development, Enterprise is its natural
 home.
-
----
-
-## Why Jube support?
-
-- **No bill shock, by design** — a flat monthly fee per tier, governed by a transparent
-  fair-use policy, with no overage billing.
-- **Direct access** — WhatsApp straight to the person who built the platform, not a
-  ticket queue or a first-line screen.
-- **Scales with your deployment** — from sandbox experimentation to mission-critical,
-  24/7 coverage, without ever renegotiating a rate.
-- **No lock-in** — terminable on thirty days' notice outside Enterprise.
-- **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring);
-  what you're paying for is expertise, not a license.
-
-<p>
-  <a class="button button--primary button--small" href="/contact/">Get started →</a>
-</p>
 
 ---
 
