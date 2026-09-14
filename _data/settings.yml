@@ -15,8 +15,6 @@ menu__settings:
       url: '/jube-training'
     - title: 'Support'
       url: '/jube-support'
-    - title: 'Whitepapers'
-      url: '/jube-whitepapers'
     - title: 'Resources'
       submenu:
         - title: 'Roadmap'
@@ -30,7 +28,7 @@ menu__settings:
         - title: 'Jube Training Plan [PDF]'
           url: '/JubeTrainingPlan.pdf'
         - title: 'Jube Terms of Service (JTOS)'
-          url: '/agreements/jtos-version-1-7'
+          url: '/agreements/jtos-version-1-8'
         - title: 'Jube AGPLv3 Open Source Compliance'
           url: '/jube-agplv3-open-source-compliance'
         - title: 'The Developer'
