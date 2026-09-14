@@ -1,16 +1,43 @@
 ---
-layout: page
-title: Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring
-permalink: /learn-more/
+layout: default
+image: '/images/01.jpg'
 ---
 
-Jube is an **open source AML software** and **open source fraud detection software** platform for real-time detection of
-suspicious transactions, AML case management, and fraud prevention.
+{% include section-hero.html %}
+
+<div class="container animate">
+<article class="page">
+<div class="page__content" markdown="1">
+
+Jube is an **open source AML software** and **open source fraud detection software**
+platform for real-time detection of suspicious transactions, AML case management, and
+fraud prevention.
 
 [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring)
 with all features available and no vendor lock-in, Jube is transparent,
 auditable, and extensible—keeping your data under your control while enabling rapid adaptation to new products,
 workflows, regulations, or payment schemes.
+
+## Why teams pick Jube over legacy AML platforms
+
+The bar for AML and fraud platforms moved: regulators now expect model decisions to be
+explainable and defensible at audit, not just accurate, while buyers are increasingly
+priced out of — or held hostage by — the incumbent enterprise vendors. Jube was built
+against both pressures directly:
+
+- **Explainable, regulator-defensible models** — Bayesian Networks and decision-tree
+  rule output you can walk a regulator through, calibrated and validated against BASEL
+  practice, not a black box scored on accuracy alone.
+- **Hybrid detection, not rules or ML alone** — thresholds, velocity, and aggregation
+  checks alongside supervised and unsupervised machine learning, so known typologies and
+  emerging patterns are both covered.
+- **No vendor lock-in** — fully open source under AGPLv3, self-hosted or in your own
+  cloud, with your data, your rules, and your extensions remaining yours.
+- **Weeks to pre-production, not years** — a fixed-fee [training and implementation](/jube-training/)
+  programme reaches a working deployment in as little as a month, at a published price
+  rather than a custom enterprise quote.
+- **Rules your compliance team can actually change** — a visual rule builder and coder,
+  so a new typology doesn't have to wait on an engineering backlog.
 
 See Jube **open source AML software** and **open source fraud detection software** in action:
 
@@ -33,6 +60,74 @@ regulatory requirements while monitoring large transaction volumes.
 ![Open source AML software case management dashboard](/CaseManagementListing.png)
 
 ![Open source fraud detection software performance metrics](/ExhaustivePerformance.png)
+
+<div class="section__info">
+  <h2 class="section__title">See it in action</h2>
+</div>
+
+<div class="row">
+
+<article class="project col col-4 col-d-6 col-t-12">
+  <div class="project__content">
+    <a href="#adaptive-machine-learning-exhaustive-adaptation" class="project__image">
+      <img class="lazy" data-src="/ExhaustiveWinningModelTopology.png" alt="Adaptive machine learning model topology">
+    </a>
+    <div class="project__info">
+      <h3 class="project__title"><a href="#adaptive-machine-learning-exhaustive-adaptation">Adaptive ML</a></h3>
+      <div class="project__subtitle">Explainable &amp; Basel-validated</div>
+    </div>
+  </div>
+</article>
+
+<article class="project col col-4 col-d-6 col-t-12">
+  <div class="project__content">
+    <a href="#real-time-transaction-monitoring" class="project__image">
+      <img class="lazy" data-src="/ExhaustivePerformance.png" alt="Real-time transaction monitoring performance">
+    </a>
+    <div class="project__info">
+      <h3 class="project__title"><a href="#real-time-transaction-monitoring">Real-Time Monitoring</a></h3>
+      <div class="project__subtitle">Low-latency at scale</div>
+    </div>
+  </div>
+</article>
+
+<article class="project col col-4 col-d-6 col-t-12">
+  <div class="project__content">
+    <a href="#case-management-for-compliance" class="project__image">
+      <img class="lazy" data-src="/Case.png" alt="AML and fraud case management workflow">
+    </a>
+    <div class="project__info">
+      <h3 class="project__title"><a href="#case-management-for-compliance">Case Management</a></h3>
+      <div class="project__subtitle">Workflow &amp; audit trail</div>
+    </div>
+  </div>
+</article>
+
+<article class="project col col-4 col-d-6 col-t-12">
+  <div class="project__content">
+    <a href="#flexible-rule-engine" class="project__image">
+      <img class="lazy" data-src="/RuleBuilder.png" alt="Visual rule builder interface">
+    </a>
+    <div class="project__info">
+      <h3 class="project__title"><a href="#flexible-rule-engine">Rule Engine</a></h3>
+      <div class="project__subtitle">No engineering backlog</div>
+    </div>
+  </div>
+</article>
+
+<article class="project col col-4 col-d-6 col-t-12">
+  <div class="project__content">
+    <a href="#cloud-native" class="project__image">
+      <img class="lazy" data-src="/Swagger.png" alt="Cloud-native API integration">
+    </a>
+    <div class="project__info">
+      <h3 class="project__title"><a href="#cloud-native">Cloud-Native</a></h3>
+      <div class="project__subtitle">Docker, Kubernetes, multi-tenant</div>
+    </div>
+  </div>
+</article>
+
+</div>
 
 ## Key Features
 
@@ -133,3 +228,17 @@ sub-clients (brands or business units) within a single deployment. Each tenant c
 workflows, and ML configurations.
 
 ![Open source AML and fraud detection software API integration](/Swagger.png)
+
+---
+
+Ready to see it running against your own data? [Get in touch](/contact/) for a demo,
+or head straight to [Training and Implementation](/jube-training/) or
+[Support](/jube-support/) for the published offer.
+
+<p>
+  <a class="button button--primary button--small" href="/contact/">Get in touch →</a>
+</p>
+
+</div>
+</article>
+</div>
