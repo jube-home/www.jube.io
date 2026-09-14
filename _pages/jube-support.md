@@ -22,7 +22,7 @@ get started.
 | **Sandbox** | Startups and independent developers | Non-production sandbox only. Async response within 48 hours. | **$350 / mo** |
 | **Growth** | Emerging fintechs | One live production pipeline (under roughly 100k transactions a month). Next-business-day response. | **$950 / mo** |
 | **Scale** | Mid-tier financial institutions | Multi-region pipelines. Same-day, high-priority routing. | **$1,590 / mo** |
-| **Enterprise** | Banks and other regulated institutions | Mission-critical infrastructure. 24/7 priority emergency SLA. | **$2,400 / mo** ($28,800/yr) |
+| **Enterprise** | Banks and other regulated institutions | Mission-critical infrastructure. 24/7 priority emergency SLA. Includes advanced analytics consulting. | **$2,400 / mo** ($28,800/yr) |
 
 Flat, published, non-negotiable — no clock, no overage. Each tier builds on the one
 below it:
@@ -69,11 +69,27 @@ month to month on thirty days' notice. Includes:
 - **Regulatory feature mapping** — Jube's tooling kept aligned to evolving AML and
   fraud regulation.
 - **Release advisory** — hands-on guidance through upgrades and infrastructure changes.
-- **Advanced analytics consulting** — see below.
+- **Advanced analytics consulting** — an Enterprise-only inclusion, described below.
 - **24/7 callout** — guaranteed response 06:00–18:00 GMT, Monday to Friday;
   best-endeavours outside those hours. Included in the flat fee, not separately
   invoiced. Tied to the tier: if your deployment scales back below Enterprise-level
   workloads, these inclusions cease and the arrangement moves to Scale.
+
+The real value of transaction monitoring is in the models, not the platform, and
+advanced analytics consulting is a consulting offer, not a helpdesk category: Jube
+works alongside your team across the full lifecycle — abstraction and feature
+engineering, model development (logistic regression through decision trees, neural
+networks, and Bayesian networks), calibration and validation against BASEL practice,
+deployment over HTTP, and stress testing — set out in full in
+[Labrador-Level Advanced Analytics](https://jube.io/LabradorLevelAdvancedAnalytics.pdf).
+Training is folded into the work on a little-and-often basis rather than sold
+separately, following the
+[Advanced Analytics with R](https://www.jube.io/AdvancedAnalyticsWithRGuidance.pdf)
+curriculum. Outside Enterprise, this is scoped and priced as a
+[project engagement](#project-engagements) instead — bespoke model work carries a
+different cost profile from day-to-day support, and deserves its own scoped plan and
+known price rather than being quietly absorbed into a support fee it was never sized
+for.
 
 Running mission-critical infrastructure and want a named technical authority on it?
 
@@ -90,31 +106,13 @@ sustained model development — is scoped and priced as a fixed fee under its ow
 Order, agreed before anything begins, the same basis as
 [training and integration](/jube-training). Your tier can still be spent however you
 like; projects exist for work where a scoped plan and known price make more sense than
-running it through support.
+running it through support. This is also how [advanced analytics consulting](#enterprise-support)
+is available to any tier below Enterprise, where it's included.
 
 On-site attendance, where genuinely warranted, is priced within that fixed fee with no
 premium for location, on the same travel terms as the
 [on-site month](/jube-training): you book flights and accommodation directly, and
 travel days are not billed.
-
----
-
-## Advanced analytics consulting
-
-The real value of transaction monitoring is in the models, not the platform. This is a
-consulting offer, not a helpdesk category: Jube works alongside your team across the
-full lifecycle — abstraction and feature engineering, model development (logistic
-regression through decision trees, neural networks, and Bayesian networks), calibration
-and validation against BASEL practice, deployment over HTTP, and stress testing — set
-out in full in
-[Labrador-Level Advanced Analytics](https://jube.io/LabradorLevelAdvancedAnalytics.pdf).
-Training is folded into the work on a little-and-often basis rather than sold
-separately, following the
-[Advanced Analytics with R](https://www.jube.io/AdvancedAnalyticsWithRGuidance.pdf)
-curriculum.
-
-Available within any tier; for sustained model development, Enterprise is its natural
-home.
 
 ---
 
