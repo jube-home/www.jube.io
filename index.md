@@ -16,8 +16,9 @@ fraud prevention.
 
 [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring)
 with all features available and no vendor lock-in, Jube is transparent,
-auditable, and extensible—keeping your data under your control while enabling rapid adaptation to new products,
-workflows, regulations, or payment schemes.
+auditable, and extensible—deployed on your own infrastructure, in your own jurisdiction,
+so your data never has to leave your control, while enabling rapid adaptation to new
+products, workflows, regulations, or payment schemes.
 
 </div>
 </article>
@@ -44,8 +45,10 @@ workflows, regulations, or payment schemes.
 - **Hybrid detection, not rules or ML alone** — thresholds, velocity, and aggregation
   checks alongside supervised and unsupervised machine learning, so known typologies and
   emerging patterns are both covered.
-- **No vendor lock-in** — fully open source under AGPLv3, self-hosted or in your own
-  cloud, with your data, your rules, and your extensions remaining yours.
+- **Data sovereignty, not vendor lock-in** — fully open source under AGPLv3, running on
+  your own infrastructure or your own cloud tenancy, in your own jurisdiction if that
+  matters to you. Your data never has to leave your control, and your rules and
+  extensions stay yours.
 - **Weeks to pre-production, not years** — a fixed-fee [training and implementation](/jube-training/)
   programme reaches a working deployment in as little as a month, at a published price
   rather than a custom enterprise quote.
@@ -75,7 +78,7 @@ workflows, regulations, or payment schemes.
           </a>
           <div class="project__info">
             <h3 class="project__title"><a href="#adaptive-machine-learning-exhaustive-adaptation">Adaptive ML</a></h3>
-            <div class="project__subtitle">Explainable &amp; Basel-validated</div>
+            <div class="project__subtitle">Built to survive scrutiny</div>
           </div>
         </div>
       </article>
@@ -252,7 +255,7 @@ workflows, and ML configurations.
 [Training and Implementation](/jube-training/) or [Support](/jube-support/) for the
 published offer.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch →</a>
 </p>
 

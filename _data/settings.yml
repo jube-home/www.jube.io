@@ -40,7 +40,7 @@ menu__settings:
 # Hero Settings
 hero:
   hero__title: Open-Source real-time Anti-Money Laundering and Fraud Detection Transaction Monitoring<hr>
-  hero__description: The open-source alternative to six- and seven-figure AML platforms — explainable, Basel-validated machine learning, hybrid rule-based detection, and a working deployment in weeks, not years. <div class="hero__subscribe"><a href="/contact/" class="button button--primary section-button">Get in touch</a></div>
+  hero__description: The open-source alternative to six- and seven-figure AML platforms — machine learning built to survive regulatory scrutiny, your data running on your own infrastructure, and a working deployment in weeks, not years. <div class="hero__subscribe"><a href="/contact/" class="button button--primary section-button">Get in touch</a></div>
   hero__image: '/images/Jube.png'
 
 #-------------------------------

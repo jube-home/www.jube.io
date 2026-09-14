@@ -16,7 +16,7 @@ your team.
 here in full, with nothing held back for a sales call. [Get in touch](/contact/) to get
 started.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch about your team →</a>
 </p>
 
@@ -77,7 +77,7 @@ environment ready to deploy into — which the lead-in exists to confirm.
 
 Working to a deadline like that?
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch about the on-site month →</a>
 </p>
 
@@ -147,7 +147,7 @@ built around that as a matter of course:
 - **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery significantly reduce the cost of getting to production.
 - **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Book your training →</a>
 </p>
 
@@ -220,7 +220,7 @@ is subject to your site access, security, and health and safety requirements; wh
 your procurement process requires evidence of insurance or background checks ahead of
 site access, raise it when you get in touch and it's sorted during the lead-in.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch →</a>
 </p>
 

@@ -13,7 +13,7 @@ hours, with no overage billing. Training and larger project work are fixed fee (
 in full below, with nothing held back for a sales call. [Get in touch](/contact/) to
 get started.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch about a tier →</a>
 </p>
 
@@ -77,7 +77,7 @@ month to month on thirty days' notice. Includes:
 
 Running mission-critical infrastructure and want a named technical authority on it?
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch about Enterprise →</a>
 </p>
 
@@ -129,6 +129,6 @@ All engagements are delivered under the
 [JTOS](/agreements/jtos-version-1-8), which sets out insurance, liability, and the
 contracting entity in full. There is no proposal step. Get in touch to get started.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch →</a>
 </p>
