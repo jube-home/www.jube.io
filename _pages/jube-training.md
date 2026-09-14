@@ -5,23 +5,16 @@ permalink: /jube-training/
 ---
 
 Private training that takes your team from first principles to a working pre-production
-deployment of Jube. Designed for compliance professionals, engineers, analysts, and
-architects, this programme combines instructor-led sessions with supported own-time
-project work.
+deployment of Jube — for compliance professionals, engineers, analysts, and architects.
+Delivered **remotely over seven weeks**, or **on-site across a single month**, at the
+end of which the system is in pre-production. The curriculum, certification, and
+payment schedule are the same either way; on-site simply compresses the curriculum into
+week one and turns the remaining three weeks into full-time implementation alongside
+your team.
 
-It is delivered in one of two ways — **remotely over seven weeks**, or **on-site across a
-single month, at the end of which the system is in pre-production**. The curriculum, the
-certification, and the payment schedule — including the de-risking that defers payment
-until delivery is under way — are the same in both cases. On-site, sessions run two
-blocks a day, so the curriculum completes in week one and the remaining three weeks are
-full-time implementation delivered alongside your team, in your environment, rather
-than through an asynchronous channel over the two months that follow.
-
-Your team will **learn, configure, and operate Jube in realistic scenarios** throughout.
-
-**This page is the offer.** Fees, payment schedule, de-risking, and what's included are
-published here in full — there's nothing to negotiate and nothing held back for a sales
-call. [Get in touch](/contact/) to get started.
+**This page is the offer** — fees, payment schedule, and what's included are published
+here in full, with nothing held back for a sales call. [Get in touch](/contact/) to get
+started.
 
 <p>
   <a class="button button--primary button--small" href="/contact/">Get in touch about your team →</a>
@@ -31,33 +24,26 @@ call. [Get in touch](/contact/) to get started.
 
 In **private training**, you'll gain:
 
-- **Practical mastery** — configure rules, workflows, and machine learning models hands-on
-- **Real deployment outcomes** — leave ready to implement Jube in a pre-production environment
-- **Guided integration support** — expert access throughout to ensure architectural
-  correctness, successful pre-production deployment, and smooth completion of certification.
-- **Production-ready architecture** — deploy and chaos-test a high availability cluster
-  configuration, covering Docker Swarm, Patroni, Redis Sentinel, and HAProxy, so your
-  team understands the stack before it matters.
+- **Practical mastery** — configure rules, workflows, and machine learning models
+  hands-on, in scenarios drawn from your own data
+- **A pre-production deployment** — including a chaos-tested high-availability cluster
+  (Docker Swarm, Patroni, Redis Sentinel, HAProxy)
+- **Direct access to the developer** throughout, for architectural correctness and
+  certification
+- **Fully customised delivery** — built around your team's schedule, experience level,
+  and objectives, via Google Meet or on-site, with recordings either way
 
-Private delivery allows deeper focus on your architecture, data, workflows, and
-implementation strategy, ensuring the training directly supports pre-production.
-
-- Fully customised to your team's schedule, experience level, and objectives
-- Can include **developer workshops**, advanced architecture topics, and live implementation support
-- Ideal for teams planning pre-production deployment or complex integrations
-- Delivered remotely via Google Meet or on-site at your offices, with recordings
-  available via OneDrive throughout in either case
-
-> *Training is delivered by the Jube developer, ensuring first-hand knowledge throughout
-> — from compliance fundamentals through to production deployment and C# extensibility.*
+> *Training is delivered by the Jube developer, ensuring first-hand knowledge
+> throughout — from compliance fundamentals through to production deployment and C#
+> extensibility.*
 
 ---
 
 ## Choosing a delivery mode
 
-Both modes deliver the same eleven sessions, the same practical exercises, the same two
-days of custom gap development, and the same certification. What differs is how the
-implementation support is delivered, and therefore how long the project takes.
+Both modes deliver the same eleven sessions, the same two days of custom gap
+development, and the same certification. What differs is how implementation support is
+delivered, and therefore how long the project takes.
 
 | | **Remote Fast-Track** | **On-Site Core Accelerator** |
 |---|---|---|
@@ -68,69 +54,33 @@ implementation support is delivered, and therefore how long the project takes.
 | Fee | $6,250 | $17,500 |
 | Travel and subsistence | None | You book travel directly; subsistence at HMRC scale rate |
 | Implementation reviews | Twice-weekly, remote | Daily, in the room |
-| Recordings | Yes | Yes |
 
 Not sure which mode fits your team? [Get in touch](/contact/) — happy to help you
 decide.
 
-### Remote delivery
+**Remote** was deliberately designed this way: distributed teams have competing
+priorities and finite attention, and short, regular, three-hour sessions with own-time
+exercises beat trying to replicate a classroom day over video. **On-site** reaches
+pre-production faster for five reasons that only apply with the developer in the room:
 
-This programme was deliberately designed for remote delivery. Experience has shown that
-distributed compliance and technology teams have competing priorities, inconsistent
-availability, and finite attention — and that attempting to replicate a classroom day
-across a video call rarely serves anyone well. Sessions are capped at three hours, held
-regularly over seven weeks, and paired with practical own-time exercises so that concepts
-are applied before the next session builds on them. Recordings are available throughout.
-The cadence is intentional: short, focused, repeated — with each session reinforcing what
-came before rather than racing to cover ground. The aim is retention and implementation,
-not completion.
+- **Latency compounds.** A chain of dependent questions asked asynchronously is a
+  fortnight; asked over a shoulder, it's an afternoon.
+- **The expensive mistakes are the ones nobody asks about.** A subtly wrong entity
+  model is weeks of rework found later by the false-positive rate — or caught on the
+  spot by someone watching the screen.
+- **Decisions, not tasks, sit on the critical path.** Which topic a team publishes to,
+  who owns identity — a fortnight of meetings remotely, twenty minutes in a corridor
+  on-site.
+- **Real data can't leave the building.** Thresholds and false-positive tuning against
+  sampled data remotely gets redone against the real thing anyway, inside the
+  perimeter — the same job twice.
+- **Some institutions will badge a person but not open a connection.** Where that's the
+  case, on-site isn't an accelerator, it's the only route that runs at all.
 
-### On-site delivery, and why it accelerates the project
-
-The three-hour cap is a remote-delivery constraint, not a pedagogical one. It exists
-because attention across a video call is finite and because participants remain
-reachable by their day jobs throughout. Neither applies in a room.
-
-But longer sessions are the least of it. The reason an on-site month reaches
-pre-production while a remote programme is still working through its integration backlog
-comes down to five things that behave differently when the developer is in the building.
-
-**Latency compounds; it does not add.** An implementation is a chain of dependent
-decisions, where the answer to one question determines what the next question is. Asked
-asynchronously, each link costs most of a day. Ten dependent questions is a fortnight; the
-same ten, asked over a shoulder, are an afternoon.
-
-**The questions nobody asks are the expensive ones.** A team asks about what it knows it
-does not understand, not about what it has misunderstood. Sixty rules built on a subtly
-wrong entity model is weeks of rework — found remotely by the false positive rate, and
-on-site by someone watching the screen. Most of the acceleration is rework never
-incurred, not work done faster.
-
-**Decisions sit on the critical path, not tasks.** Which topic the payments team
-publishes to, whether security permits the cluster's internal traffic, who owns identity.
-Remote, each is a meeting in a fortnight with four people who are never free at once.
-On-site, twenty minutes in a corridor.
-
-**Real data cannot leave the building.** Thresholds, suppression, model training, and
-false positive analysis are only meaningful against your actual transaction history.
-Remotely this is worked around — tuned against sampled data, then redone against the real
-thing inside the perimeter. That is the same job twice, and the second pass is the one
-that finds the problems.
-
-**Access is granted to a person, not a connection.** Institutions that will not open
-remote access to a foreign supplier will issue a badge and seat the same person beside
-the team. Where that is the position, on-site is not an accelerator so much as the only
-route that runs at all.
-
-### What the acceleration is worth
-
-The fee is best assessed against the cost of the delay it removes rather than against the
-remote programme's price. Most organisations arriving at Jube are carrying something
-while they wait: a legacy licence paid monthly until cut-over, fraud losses running
-against controls everyone agrees are inadequate, or a remediation date with a regulator
-on the other end. Against a monthly cost of that kind, moving go-live forward by a
-quarter is ordinarily the calculation that decides between the two delivery modes — not
-the difference in fee.
+The fee is best judged against the cost of the delay it removes — a legacy licence paid
+monthly, fraud losses against inadequate controls, or a regulator's deadline — against
+which moving go-live forward by a quarter usually decides the mode, not the difference
+in fee.
 
 Working to a deadline like that?
 
@@ -138,152 +88,45 @@ Working to a deadline like that?
   <a class="button button--primary button--small" href="/contact/">Get in touch about the on-site month →</a>
 </p>
 
-The month is structured as follows:
+The on-site month runs: a **remote lead-in** during the booked lead time (Session 1,
+WhatsApp channel, training server, any custom gap development); **week one**, the full
+curriculum in two blocks a day; **weeks two to four**, full-time implementation against
+your cluster and your data; and a **tail** of on-call asynchronous support through to
+first live transaction and certification. Three quarters of the month is
+implementation — pre-production is a milestone of the month, not a consequence of it.
 
-1. **Remote lead-in** *(during the booked lead time)* — Session 1, prerequisites, the
-   WhatsApp channel, the training server, and any agreed custom gap development, exactly
-   as for a remote engagement. Nobody's time on-site is spent installing Docker.
-2. **Week one — the whole curriculum.** On-site, sessions run in two blocks a day, one
-   morning and one afternoon. Sessions 2 to 11 are therefore delivered inside a single
-   week rather than spread across seven, and the curriculum is complete by Friday. The
-   two-block day is what makes the rest of the month possible: it is not a longer
-   training week, it is a shorter one.
-3. **Weeks two, three and four — implementation.** Three full weeks, not training:
-   building your cluster, configuring your rules against your data, integrating your
-   messaging, chaos-testing what has been built, and driving to pre-production, with the
-   developer working alongside the team throughout. The own-time project exercises become
-   supervised project work.
-4. **Tail** — a follow-on on-call asynchronous support period through to first live
-   transaction and certification.
-
-Three quarters of the month is implementation. That ratio is the point of the on-site
-variant: the curriculum is the entry price, and what the fee actually buys is fifteen
-working days of a developer building the thing alongside the people who will run it.
-
-This is the part that matters commercially. In remote delivery, pre-production is reached
-some weeks after training ends, at a pace set by how quickly questions can be asked and
-answered across a channel. In the on-site month, the implementation is done inside the
-engagement. **Pre-production is a milestone of the month, not a consequence of it.** For
-organisations working to a regulatory deadline, a migration cut-over, or a licence
-condition, that is ordinarily the whole reason to choose it.
-
-Two things are worth saying in advance. The first is that the month depends on the team
-being genuinely released for it: a room half-populated by people answering email is
-slower than a well-run remote programme, and the three implementation weeks in particular
-need the infrastructure and integration people available rather than merely nearby. That
-is worth weighing honestly when choosing between the two modes. The second is that the
-month assumes there are environments to deploy into. Where there are not, it is far
-better to find that during the lead-in than on the first morning, and the lead-in is
-arranged with exactly that in mind.
+Two things worth weighing honestly: the month needs your team genuinely released for
+it, not merely nearby; and it assumes there are environments to deploy into, which is
+exactly what the lead-in is there to confirm.
 
 ---
 
 ## Pricing
 
-Both delivery modes are priced as a single fixed fee, agreed in advance and unaffected
-by how the work actually unfolds. **On-site delivery carries no premium for its
-location**, and it's worth saying why: travelling to you takes up a month of capacity
-outright, rather than reserving a slice of it in advance, so it never seemed right to
-make that the cheaper option per unit of work.
+Both modes are a single fixed fee, agreed in advance and unaffected by how the work
+unfolds. On-site carries no premium for location — presence takes up a month of
+capacity outright rather than reserving a slice of it, so it was never priced as the
+cheaper option per unit of work.
 
-### Remote Fast-Track — $6,250
+**Remote Fast-Track — $6,250** covers the full curriculum plus asynchronous
+implementation support alongside it and for two months after.
 
-A single fixed fee covering the full curriculum and the asynchronous implementation
-support that runs alongside it and for two months after training concludes.
+**On-Site Core Accelerator — $17,500** covers the full curriculum (delivered in week
+one), three weeks of full-time implementation support, and the on-call tail. Travel and
+subsistence are additional: flights and accommodation are booked directly by you and
+not recharged; subsistence is billed at the HMRC international scale rate; travel days
+are not billed.
 
-### On-Site Core Accelerator — $17,500
+The fee is fixed until pre-production is confirmed (within four months of
+commencement for remote, two for on-site). Support beyond what's included, or after
+pre-production, continues under standard [support](/jube-support/) terms — the same
+channels and cadence carry straight through. Also included: **two days of custom gap
+development** into the core product (see [Practicalities](#practicalities) below).
 
-A single fixed fee covering the full curriculum, delivered in week one, and the three
-weeks of full-time implementation support that follow, plus the on-call tail described
-above. On-site delivery isn't priced any higher per unit of work than remote delivery —
-presence is a month of dedicated capacity rather than a larger volume of work booked in
-advance, so there's no premium for being on-site.
-
-Travel and subsistence are additional: flights and accommodation are booked directly by
-you and are not recharged, and subsistence is charged on the HMRC international scale rate
-basis set out below. **Travel days are not billed** — days spent in transit do not consume
-programme time and are not charged.
-
-The fee is fixed until pre-production conditions are satisfied, although not more than
-four months from commencement for remote delivery, or two months for the on-site month.
-Support required beyond what's included, or
-after pre-production is confirmed, continues under standard
-[support](/jube-support/) terms, billed in arrears — the same channels, cadence, and
-record-keeping used throughout the programme carry straight through, so there's no
-separate onboarding to a "real" support process later.
-
-In addition to what's included above, the programme includes **two days of custom
-gap development into the core product** — see
-[Custom gap development](#custom-gap-development) below.
-
-### Travel and subsistence (on-site delivery only)
-
-**Flights and accommodation are booked and paid directly by you**, under your own
-corporate travel policy and in your own name. Nothing in respect of them is recharged, and
-no expense claim, receipt reconciliation, or reimbursement arises. For a month-long stay a
-corporate rate will almost always beat an individual booking, so this is usually cheaper
-for you than the alternative, as well as simpler for both sides.
-
-**Economy class is fine** — there is no business class stipulation and none is charged
-for. The one request concerns timing rather than cabin: flights booked within social
-hours where possible. An overnight departure or a red-eye arrival tends to cost the first
-working day, which serves neither side well. Where no direct daytime routing exists, a
-routing with a layover, or an additional night either side, works better than a night
-flight, and will still come to less than a premium cabin would.
-
-What remains is subsistence, and it is charged on a published, externally-set basis rather
-than as a discretionary claim:
-
-- **Subsistence** — at the **HMRC international scale rate** for the destination, as
-  updated from time to time (see the
-  [HMRC guidance](https://www.gov.uk/guidance/expenses-rates-for-employees-travelling-outside-the-uk)).
-  The rate is set by HMRC, not by Jube, and is the same rate the UK tax authority accepts
-  for any UK employer sending staff to that country. It is estimated in the quote before
-  signature and cannot drift upward during the stay.
-- **Visas, work permits, and any required vaccinations or insurance loadings** — at cost,
-  where the Jube side must obtain them. A month's presence engages permit requirements in
-  some jurisdictions that a short visit does not; this is checked during the lead-in, not
-  on arrival.
-- **Local transport** — at cost, or within the scale rate where it provides for it.
-
-The effect is that the on-site month carries no expense float in either direction: you
-hold your own travel arrangements, Jube claims a published per-diem, and nobody has to
-form a view at month end on whether a dinner was reasonable.
-
-**Travel days are not billed.** Days spent in transit consume no programme time and are
-not charged.
-
-Venue and catering at your own premises are your responsibility; where a neutral venue is
-required, it is priced according to location and scope.
-
-### Payment schedule and mutual de-risking
-
-**The de-risking is unchanged.** The payment schedule, its triggers, and the protections
-it gives the client are identical in both delivery modes — the on-site month simply
-reaches those triggers sooner. In new relationships,
-it is recognised that a demand for payment in advance is counterproductive to engagement,
-and Jube structures payment to mutually de-risk the engagement for both parties:
-
-- **50%** is invoiced only after the first week of training sessions has concluded.
-- The **balance** falls due on success — defined as proof-of-concept level infrastructure
-  stability and the first transaction flowing in production — and in any case typically
-  within twelve weeks.
-
-No payment is taken before delivery has demonstrably begun, and the second half of the
-fee is tied to the outcome the programme exists to produce.
-
-On the on-site month these are the same two triggers on a compressed calendar. The first
-falls at the end of week one, by which point the entire curriculum has been delivered
-rather than the first two sessions of it. The second falls on pre-production, which
-arrives inside the month rather than some weeks after training ends. Nothing about the
-client's protection changes: no advance payment, and the balance still contingent on the
-outcome. It is the same structure, arriving sooner — which is the whole proposition of
-the variant, applied to the commercials as well as the delivery.
-
-Subsistence is the sole exception to billing in arrears, and is invoiced monthly as
-incurred. Because flights and accommodation are held in your own name, a postponement
-costs Jube nothing to recover from you — whatever your own bookings allow is a matter
-between you and your travel provider, and there is no third-party cost to pass back.
+**Payment is de-risked for both sides**: 50% is invoiced after the first week of
+training concludes; the balance falls due on success — proof-of-concept stability and
+the first live transaction — typically within twelve weeks (sooner, on the same
+triggers, for the on-site month). No payment before delivery has demonstrably begun.
 
 ---
 
@@ -297,119 +140,49 @@ Included in both remote and on-site delivery:
   requirements ahead of training
 - Hands-on workshops, guided configuration, and optional developer-focused sessions
 - Practical own-time project exercises bridging each phase of delivery
-- Integration support via WhatsApp, JIRA, and Loom, continuing through pre-production
-  deployment — asynchronous on remote delivery, an on-call tail following the on-site
-  month
-- Direct access to the developer for technical guidance throughout the engagement
-- Additional mop-up training sessions covering practical administration topics as they
-  arise during implementation
-- Sessions recorded and made available via OneDrive in both delivery modes
-- Jube Certified Application Specialist Verifiable Certificate (after conclusion of the
-  test project)
+- Integration support via WhatsApp, JIRA, and Loom, continuing through pre-production —
+  asynchronous on remote delivery, an on-call tail following the on-site month
+- Direct access to the developer for technical guidance throughout
+- Sessions recorded and made available via OneDrive
+- Jube Certified Application Specialist Verifiable Certificate
 
-On remote delivery, additionally:
+On remote delivery, additionally: implementation review meetings twice-weekly across
+the seven weeks.
 
-- Implementation review meetings twice-weekly across the seven weeks
-
-On the on-site month, additionally:
-
-- Full-time implementation support delivered in the room, across three full weeks,
-  against your own environment and your own data
-- Sessions delivered as two blocks a day, completing the curriculum inside week one
-- Daily implementation review, held with the people who can answer the question
-- Whiteboard architecture sessions with your infrastructure and security teams, which in
-  remote delivery tend to be the slowest conversations to converge
-- Supervised cluster build and chaos testing, rather than the same work attempted
-  unsupervised and reviewed afterwards
+On the on-site month, additionally: full-time implementation support in the room
+against your own environment and data; daily implementation review; whiteboard
+architecture sessions with your infrastructure and security teams; and a supervised
+cluster build and chaos test rather than the same work attempted unsupervised.
 
 ---
 
 ## Who this is for
 
-- Teams and organisations looking to adopt Jube for AML or fraud detection
+- Teams and organisations adopting Jube for AML or fraud detection
 - Compliance professionals, engineers, analysts, and architects preparing for
   pre-production deployment
-- Organisations modernising legacy transaction monitoring systems with an open,
-  flexible platform
+- Organisations modernising legacy transaction monitoring with an open, flexible
+  platform
 
-> This is a **practical, implementation-focused programme**. Participants will gain real
-> experience configuring, operating, and managing Jube in realistic environments, without
-> requiring deep prior technical expertise.
+The on-site month suits a fixed external date — a licence condition, a remediation
+deadline, a migration cut-over — or a security posture, data residency, or co-located
+team that make remote delivery slower. Remote suits distributed teams and a longer
+runway. Sessions are grouped so each of compliance, case management, developers, and
+system administrators can prioritise the ones relevant to them; on the on-site month
+this determines who needs to be in the room on which day (roughly two to two and a half
+days each, not a week), sequenced around your calendar during the lead-in.
 
-The on-site month suits organisations working to a fixed external date — a licence
-condition, a remediation deadline, a vendor contract expiring, a migration cut-over —
-those whose security posture makes remote access to environments slow or impossible,
-those whose transaction data cannot leave their premises, and those whose teams are
-co-located and can be released for the month. Remote delivery suits distributed teams,
-those who cannot release people for whole days at a time, and those for whom a longer
-runway is an advantage rather than a cost. Where there is no date pressing and the team
-is spread across three time zones, remote is the better programme and is recommended as
-such.
+**Your working week, not ours.** A substantial share of Jube's work is with
+institutions in the Gulf, Africa, and South and Southeast Asia, and the schedule is
+built around that as a matter of course:
 
-### Who should attend which sessions
-
-Participants typically fall into four groups, and not every session is relevant to every
-group. Sessions are structured so each group can prioritise attendance accordingly:
-
-- **Compliance Officers / MLRO** — primarily Sessions 2, 4 (Suppression, Sanctions,
-  ML overview), and 5 (Case Management).
-- **Analysts / Case Management Teams** — primarily Sessions 2, 5, and 6 (Access,
-  Reporting), who will work the queues day-to-day.
-- **Developers / Integrators** — primarily Sessions 7, 9, 10, and 11, covering
-  extensibility, cluster deployment, and codebase architecture.
-- **System Administrators (Jube power users)** — primarily Sessions 3, 6, 8, and 9,
-  covering rule configuration, database/reporting, cache internals, and cluster
-  operations.
-
-All sessions are recorded and made available via OneDrive, so participants who miss a
-session relevant to another group can review it asynchronously rather than needing to
-attend live.
-
-On the on-site month this grouping does real work, because it determines who is needed on
-which day. The curriculum week runs as two blocks a day, and the sessions are sequenced so
-that each group is required in the room only for the days that concern it — in practice
-around two and a half days for compliance and case management staff, and around two for
-developers and integrators, rather than a week each. Releasing people for the month is a
-significant ask of any organisation, and the schedule is built to make it a smaller one.
-
-That sequencing is agreed with you rather than imposed. The order in which the blocks
-fall is a matter of your operational reality and your own preference: month-end, audit
-committee dates, existing standing meetings, whether your architects would rather see the
-deployment sessions before the compliance ones or after, and which of your people can
-realistically be released on which days. The eleven sessions have dependencies among them
-and those are respected, but within that constraint the week is arranged around your
-calendar. The proposed sequence is set out ahead of travel during the lead-in and
-confirmed before anyone books anything.
-
-### Your working week, not ours
-
-A substantial share of Jube's work is with institutions in the Gulf, the wider Middle
-East, Africa, and South and Southeast Asia — places where the working week and the shape
-of the working day are not the European ones, and where faith is part of the ordinary
-structure of both.
-
-The schedule is built around that as a matter of course, not offered as an accommodation
-when asked for:
-
-- **The working week is yours.** Where the week runs Sunday to Thursday, the training
-  week runs Sunday to Thursday. It is not treated as a variation from a standard.
-- **Blocks are scheduled around daily prayer rather than across it.** The two-block day
-  suits a working day punctuated by prayer rather better than a single long session does:
-  sessions break for prayer, instead of being paused mid-topic and resumed in a thinner
-  room.
-- **Ramadan is planned for, not worked through.** Where the month falls within the
-  engagement, session length, timing, and the balance between curriculum and
-  implementation are adjusted to the shortened working day. Where you would rather the
-  on-site month did not overlap it at all, that is a scheduling decision taken at quote
-  stage — the lead time is long enough to make it easily.
-- **National and religious holidays** are identified during the lead-in and built into
-  the plan, rather than discovered on arrival.
-
-None of this is complicated, and it is mentioned only because it is easy to get wrong
-from a distance. A schedule built around a Monday to Friday week and an uninterrupted
-nine to five meets a great many exceptions in these markets, and managing them one at a
-time makes for a poor month. After some years of delivering into these markets, it is
-easier to start from the local week and the local day and work outwards from there.
+- The training week follows your working week (e.g. Sunday–Thursday), not a European
+  default.
+- Two-block days break for prayer rather than pausing mid-topic.
+- Ramadan is planned for — shortened days, or scheduled around it entirely if you'd
+  rather.
+- National and religious holidays are identified during the lead-in, not discovered on
+  arrival.
 
 ---
 
@@ -419,8 +192,7 @@ easier to start from the local week and the local day and work outwards from the
 - **Rapid mastery** — Become proficient in weeks rather than months, accelerating your implementation timeline.
 - **True independence** — Own your AML and transaction monitoring stack, free from vendor lock-in and restrictive contracts.
 - **Genuine ROI** — Faster evaluation, smoother implementation, and independent mastery significantly reduce the cost of getting to production.
-- **Real implementation outcome** — Hands-on training plus supported project work ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.
-- **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control while enabling rapid adaptation.
+- **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control.
 
 <p>
   <a class="button button--primary button--small" href="/contact/">Book your training →</a>
@@ -430,13 +202,9 @@ easier to start from the local week and the local day and work outwards from the
 
 ## Training Plan
 
-The programme comprises eleven sessions. Delivered remotely, they run over seven weeks
-with a maximum of three hours per session to sustain engagement. Delivered on-site, the
-same sessions run as two three-hour blocks a day and are completed inside week one,
-leaving three weeks for supervised implementation. Each pair of
-instructor-led sessions is followed by a
-practical own-time project exercise, progressively building toward a complete
-pre-production implementation.
+Eleven sessions, each followed by a practical own-time project exercise, building
+toward a complete pre-production implementation. Remotely, they run over seven weeks
+(max three hours each); on-site, as two three-hour blocks a day inside week one.
 
 - **Session 1** *(1 hour)* — Prerequisites and Dress Rehearsal
 - **Session 2** *(3 hours)* — From Regulation to Real-Time
@@ -450,169 +218,46 @@ pre-production implementation.
 - **Session 10** *(3 hours)* — C# Architecture Patterns and Solution Structure
 - **Session 11** *(3 hours)* — C# Background Threads and Transaction Processing
 
-Practical exercises are woven throughout: designing a transaction monitoring strategy,
-building a compliance-grade case management system, chaos engineering a live Jube
-cluster, and constructing an analytical dashboard and management reporting suite.
-
-See [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for session-level detail.
-
----
-
-## Integration Plan
-
-The eleven sessions above form the core curriculum. Beyond these, the programme
-includes additional mop-up training sessions addressing practical administration
-topics as they arise during implementation, alongside implementation review meetings held
-twice-weekly throughout the programme — up to an hour each — to review project
-progress, resolve blockers, and keep the implementation tracking toward the
-pre-production milestone. These are working sessions against the project plan, not
-extensions of the curriculum, and are where integration decisions, async messaging
-patterns, and architectural questions tend to get resolved in the context of your
-specific environment.
-
-During the on-site month these reviews are held in the room, at the end of each day, and
-are markedly more productive for it: the people who can answer a network, identity, or
-data question are in the building.
-
-## How asynchronous support works
-
-Integration support during and after the programme is delivered async-first, through
-channels aligned with your own tooling. Jube manages all client support through a single,
-transparent system: issues are raised directly via WhatsApp and tracked in real time
-against a permanent record — every note, time entry, and status change captured once
-and traceable from start to finish. Most generally: a WhatsApp message becomes a
-ticket, responded to with a Loom video and links to documentation.
-
-Clients can request a full digest of open issues and progress at any time, including an
-AI-generated summary of status and suggested next steps. Everything is logged internally
-and fully auditable at month end, with no surprises at invoice time.
-
-This period doubles as the natural introduction to Jube's standard support model. By the
-end of the programme, both sides have a clear, evidenced picture of what ongoing
-support demands — how often your team needs to reach in, what kind of questions recur,
-and roughly what a normal month of usage looks like — making the sizing of any follow-on
-support tier straightforward rather than a guess.
-
-Where delivery is on-site, the asynchronous channel is still opened during the lead-in and
-used throughout. The block does not replace it; it front-loads the questions that would
-otherwise have flowed through it, which is precisely why on-site engagements tend to
-finish the programme with more of the included asynchronous allowance intact.
+Practical exercises run throughout: a transaction monitoring strategy, a
+compliance-grade case management system, chaos engineering a live cluster, and an
+analytical dashboard. See the
+[Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) for
+session-level detail.
 
 ---
 
-## Training servers
+## Practicalities
 
-Training takes place on a dedicated cloud server (DigitalOcean, Frankfurt or
-Singapore). The server exists for two months, allowing your team time to assemble its
-own test servers as part of the wider integration project (i.e. Jube Cluster on Flatcar
-Linux). Training is delivered in isolated tenants — the same software and hardware
-infrastructure, yet logically independent environments.
+**Integration support** continues async-first through WhatsApp, JIRA, and Loom, on the
+same ticket-and-Loom-video model used in ongoing [support](/jube-support/) — this
+period doubles as the natural introduction to that model, sizing any follow-on tier
+from evidence rather than a guess. Implementation review meetings run twice-weekly
+(daily, in the room, on-site).
 
-Training assumes local installations of Jube: participants are expected to have Git and
-Docker installed and functional, as well as a running version of Jube. In advance of
-training, trainer support is available to individual participants to validate all
-prerequisites — this is the purpose of Session 1.
+**Training servers** are dedicated cloud instances (DigitalOcean, Frankfurt or
+Singapore), live for two months in isolated tenants. Participants need Git, Docker, and
+a running Jube instance beforehand — validated in Session 1, completed remotely before
+travel for on-site delivery.
 
-For on-site delivery this validation matters more, not less. Session 1 is completed
-remotely and in full before travel, so that the first morning in the room begins with
-training rather than with laptop builds.
+**Custom gap development** (two included days) closes any gap between your environment
+and the platform — a Kafka integration in place of RabbitMQ or HTTP, say — identified
+and delivered during the lead-in. It's built into the core product under AGPLv3, not
+held as a private fork.
 
-## Custom gap development
-
-The programme includes **two days of custom gap development into the core Jube
-product**. Exact client requirements are usually minimal to satisfy — a Kafka
-integration where RabbitMQ or HTTP messaging would otherwise exist is a typical
-example — and are identified and delivered during the lead-in, so the platform meets
-your environment before training begins.
-
-Gap work is developed into the core product under AGPLv3, not held as client-side
-customisation: it is maintained with the platform from then on, benefits the wider
-Jube community, and never becomes a private fork you have to carry. Requirements
-beyond the included two days are agreed in advance and recorded in the quote.
-
-## Scheduling and lead time
-
-Capacity is one training and implementation client started a month, and the lead time
-from signature to commencement is typically two months. This is a statement of fact
-rather than a sales device: the programme is delivered by the Jube developer
-personally, and starts are scheduled so that each client receives the attention the
-programme is designed around. Start dates are confirmed in the quote.
-
-The on-site month occupies that capacity slot in full — it is a month of the developer's
-working year, not a portion of one — and its dates are fixed at signature, since they
-commit travel and displace all other project work. Once fixed, the month is not moved
-other than in the circumstances described under
-[Continuity commitment](#continuity-commitment). One reschedule outside thirty days is
-accommodated without charge; inside thirty days, any non-refundable travel already
-committed remains payable, which is the practical reason the direct-booking route above
-is recommended.
-
-The lead-in, once booked, is not idle time. It is used little and often to put the
-prerequisites in place: the training server, the WhatsApp channel, any agreed custom
-gap development, and a more general introduction to Docker for participants who prefer
-to run the software locally throughout the project — typically the infrastructure
-team. By the time Session 1's dress rehearsal arrives, the foundations are already
-standing.
-
-## Continuity commitment
-
-Jube prioritises scheduled training and treats session continuity seriously. In rare
-cases — critical outage support required by another client — a session could need to be
-rescheduled rather than run as planned. This has not occurred to date across Jube
-training engagements, and is stated here only for completeness, on the same basis that
-you would expect the same priority from Jube in a genuine emergency of your own.
-
-The on-site month, once travelled to, is delivered. Where a genuine emergency arises
-during it, it is handled outside working hours or at day's end, not by cancelling a day
-your team has been released for.
+**Scheduling**: Jube runs one training and implementation client at a time, with a
+typical two-month lead time from signature to commencement — a capacity constraint, not
+a sales device, since delivery is personal to the developer. The lead-in isn't idle
+time: it's used to stand up the training server, the WhatsApp channel, and any custom
+gap development ahead of Session 1.
 
 ---
 
-## Ownership of extensions and configurations
+## Ownership and governance
 
-Jube provides extensive configuration and extensibility capabilities through mechanisms
-including Inline Scripts, dependency injection add-ins, custom DLLs, and rule
-extensions. These mechanisms are analogous to Lua scripts in Redis — an AGPLv3-licensed
-software where it is standard practice that user-created scripts remain proprietary to
-the user and are not considered modifications to the underlying platform.
-
-Configuration and extensibility artefacts, such as Inline Scripts and similar
-extensibility features, are treated as configuration data, not as modifications to
-Jube's core codebase. They are:
-
-- Stored as data within the system (not merged into source code).
-- Compiled or interpreted at runtime (not at build time).
-- Deployable without modifying Jube's core binaries or source files.
-- Analogous to Lua scripts in Redis.
-
-Notwithstanding that Inline Scripts may be written in C# or other programming
-languages, the way they are deployed to the software constitutes configuration rather
-than code modification. This architecture allows the client to develop sophisticated
-customisations without forking Jube's codebase, and does not require that they be
-released to end users — protecting the client's intellectual property. Extensions and
-configurations developed by the client remain the client's proprietary assets. Just as
-it would not be expected to share stored procedures from an open-source database
-deployment, clients' Inline Scripts and custom extensions are not automatically subject
-to source disclosure.
-
-The AGPLv3 license applies to Jube's core platform code. When Inline Scripts or custom
-extensions are executed as part of a network-accessible Jube service:
-
-- If they constitute independent works that merely use Jube's APIs and extension points
-  (akin to stored procedures using a database API), they are not derivative works and
-  remain proprietary to the client.
-- If they are so tightly integrated that they form a derivative work of Jube's AGPLv3
-  code, source availability may be required for that specific deployment to users of
-  that service — but this is not the case when using the extensibility features of Jube.
-
-In practice, Jube's extensibility architecture is designed to ensure that
-client-specific logic implemented through Inline Scripts and supported extension
-mechanisms remains within the configuration layer. This design pattern is
-well-established in the open-source community (Redis Lua scripts) and provides the
-client with the flexibility to deliver proprietary value-added solutions while
-leveraging the AGPLv3-licensed Jube platform.
-
-## Governance
+Your Inline Scripts, custom DLLs, and configuration remain your property — treated as
+configuration data, not a modification to Jube's AGPLv3 core, the same principle as Lua
+scripts in Redis. Full detail is in the
+[AGPLv3 compliance guide](/jube-agplv3-open-source-compliance/).
 
 There is no proposal step. This page, together with the
 [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) and the
