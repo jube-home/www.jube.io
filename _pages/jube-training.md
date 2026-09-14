@@ -13,9 +13,9 @@ It is delivered in one of two ways — **remotely over seven weeks**, or **on-si
 single month, at the end of which the system is in pre-production**. The curriculum, the
 certification, and the payment schedule — including the de-risking that defers payment
 until delivery is under way — are the same in both cases. On-site, sessions run two
-blocks a day, so the curriculum completes in week one and the remaining three weeks are a
-hundred hours of implementation delivered alongside your team, in your environment,
-rather than through an asynchronous channel over the two months that follow.
+blocks a day, so the curriculum completes in week one and the remaining three weeks are
+full-time implementation delivered alongside your team, in your environment, rather
+than through an asynchronous channel over the two months that follow.
 
 Your team will **learn, configure, and operate Jube in realistic scenarios** throughout.
 
@@ -24,6 +24,10 @@ what's included, governance, and intellectual property position — is published
 full. Engagement proceeds directly to a quote which references this page; the quote adds
 only the handful of parameters specific to your engagement (see
 [From this page to a signed engagement](#from-this-page-to-a-signed-engagement) below).
+
+<p>
+  <a class="button button--primary button--small" href="/contact/">Talk to us about your team →</a>
+</p>
 
 ![Jube Training](/training.png)
 
@@ -57,17 +61,18 @@ Both modes deliver the same eleven sessions, the same practical exercises, the s
 days of custom gap development, and the same certification. What differs is how the
 implementation support is delivered, and therefore how long the project takes.
 
-| | **Remote** | **On-site month** |
+| | **Remote Fast-Track** | **On-Site Core Accelerator** |
 |---|---|---|
-| Elapsed time to pre-production | Seven weeks, plus integration thereafter | Within the month |
+| Velocity milestone | Seven-week curriculum; pre-production typically follows within about three months | Pre-production within the month |
 | Curriculum | Eleven sessions over seven weeks | Eleven sessions in week one, two blocks a day |
 | Session length | Capped at three hours, one at a time | Two three-hour blocks a day |
-| Implementation support | 20 hours, asynchronous | 100 hours in the room across three weeks, plus 10 on call |
-| Total hours | 50 | 140 |
+| Implementation support | Asynchronous, alongside the curriculum and for two months after | Full-time in the room across three weeks, plus a follow-on on-call tail |
 | Fee | $6,250 | $17,500 |
 | Travel and subsistence | None | You book travel directly; subsistence at HMRC scale rate |
 | Implementation reviews | Twice-weekly, remote | Daily, in the room |
 | Recordings | Yes | Yes |
+
+Not sure which mode fits your team? [Talk to us](/contact/) and we'll help you decide.
 
 ### Remote delivery
 
@@ -128,6 +133,9 @@ on the other end. Against a monthly cost of that kind, moving go-live forward by
 quarter is ordinarily the calculation that decides between the two delivery modes — not
 the difference in fee.
 
+Working to a deadline like that?
+<a class="button button--primary button--small" href="https://wa.me/35797517137">Ask about the on-site month on WhatsApp</a>
+
 The month is structured as follows:
 
 1. **Remote lead-in** *(during the booked lead time)* — Session 1, prerequisites, the
@@ -143,8 +151,8 @@ The month is structured as follows:
    messaging, chaos-testing what has been built, and driving to pre-production, with the
    developer working alongside the team throughout. The own-time project exercises become
    supervised project work.
-4. **Tail** — Ten hours of on-call asynchronous support through to first live transaction
-   and certification.
+4. **Tail** — a follow-on on-call asynchronous support period through to first live
+   transaction and certification.
 
 Three quarters of the month is implementation. That ratio is the point of the on-site
 variant: the curriculum is the entry price, and what the fee actually buys is fifteen
@@ -170,57 +178,39 @@ arranged with exactly that in mind.
 
 ## Pricing
 
-One rate card governs everything Jube charges for time, and no rate is invented per
-engagement. Keener rates on that card are earned by ongoing commitment — a retained
-support arrangement — rather than by the size of any single piece of work. **On-site
-delivery is not derated**, and it is worth saying why: travelling to you consumes a month
-of capacity outright rather than reserving it, so a card that made the more demanding
-engagement the cheaper one per hour would be hard to justify to anyone else on it.
+Both delivery modes are priced as a single fixed fee, agreed in advance and unaffected
+by how the work actually unfolds. **On-site delivery carries no premium for its
+location**, and it's worth saying why: travelling to you takes up a month of capacity
+outright, rather than reserving a slice of it in advance, so it never seemed right to
+make that the cheaper option per unit of work.
 
-### Remote delivery — $6,250
+### Remote Fast-Track — $6,250
 
-Priced at the published **project rate of USD 125 per hour**, the same rate that governs
-on-site delivery.
+A single fixed fee covering the full curriculum and the asynchronous implementation
+support that runs alongside it and for two months after training concludes.
 
-| Line Item             | Hours  | Rate    | Fee        |
-|-----------------------|--------|---------|------------|
-| Training Delivery     | 30     | $125    | $3,750     |
-| Asynchronous Support  | 20     | $125    | $2,500     |
-| **Total**             | **50** | | **$6,250** |
+### On-Site Core Accelerator — $17,500
 
-### On-site month — $17,500
-
-Priced at the same published **project rate of USD 125 per hour** as remote delivery.
-On-site delivery is not derated. The rate card's keener rates are earned by ongoing
-commitment, which is a different thing from physical presence: presence is a month of
-dedicated capacity rather than a volume of hours booked in advance, and it is charged at
-the standard project rate — no premium for being on-site, and no discount for the
-quantity.
-
-| Line Item                       | Hours   | Rate            | Fee         |
-|---------------------------------|---------|-----------------|-------------|
-| Training Delivery               | 30      | $125            | $3,750      |
-| On-site Implementation Support  | 100     | $125            | $12,500     |
-| On-call Asynchronous Support    | 10      | $125            | $1,250      |
-| **Total**                       | **140** |                 | **$17,500** |
+A single fixed fee covering the full curriculum, delivered in week one, and the three
+weeks of full-time implementation support that follow, plus the on-call tail described
+above. On-site delivery isn't priced any higher per unit of work than remote delivery —
+presence is a month of dedicated capacity rather than a larger volume of work booked in
+advance, so there's no premium for being on-site.
 
 Travel and subsistence are additional: flights and accommodation are booked directly by
 you and are not recharged, and subsistence is charged on the HMRC international scale rate
-basis set out below. **Travel days are not billed** — days spent in transit do not consume programme hours and are not charged.
-
-Set against remote delivery, the on-site month is 2.8 times the fee for 2.8 times the
-hours. The rate is identical; only the quantity differs — the two figures are the same
-rate applied to a different number of hours.
+basis set out below. **Travel days are not billed** — days spent in transit do not consume
+programme time and are not charged.
 
 The fee is fixed until pre-production conditions are satisfied, although not more than
 four months from commencement for remote delivery, or two months for the on-site month.
-Support required beyond the included hours, or
+Support required beyond what's included, or
 after pre-production is confirmed, continues under standard
-[support](/jube-support/) terms on the published rate scale, billed in arrears — the
-same channels, cadence, and time-recording basis used throughout the programme carry
-straight through, so there is no separate onboarding to a "real" support process later.
+[support](/jube-support/) terms, billed in arrears — the same channels, cadence, and
+record-keeping used throughout the programme carry straight through, so there's no
+separate onboarding to a "real" support process later.
 
-In addition to the hours itemised above, the programme includes **two days of custom
+In addition to what's included above, the programme includes **two days of custom
 gap development into the core product** — see
 [Custom gap development](#custom-gap-development) below.
 
@@ -258,8 +248,8 @@ The effect is that the on-site month carries no expense float in either directio
 hold your own travel arrangements, Jube claims a published per-diem, and nobody has to
 form a view at month end on whether a dinner was reasonable.
 
-**Travel days are not billed.** Days spent in transit consume no programme hours and are
-not charged as time.
+**Travel days are not billed.** Days spent in transit consume no programme time and are
+not charged.
 
 Venue and catering at your own premises are your responsibility; where a neutral venue is
 required, it is priced according to location and scope.
@@ -306,7 +296,7 @@ Included in both remote and on-site delivery:
 - Hands-on workshops, guided configuration, and optional developer-focused sessions
 - Practical own-time project exercises bridging each phase of delivery
 - Integration support via WhatsApp, JIRA, and Loom, continuing through pre-production
-  deployment — twenty hours on remote delivery, ten on-call hours following the on-site
+  deployment — asynchronous on remote delivery, an on-call tail following the on-site
   month
 - Direct access to the developer for technical guidance throughout the engagement
 - Additional mop-up training sessions covering practical administration topics as they
@@ -321,8 +311,8 @@ On remote delivery, additionally:
 
 On the on-site month, additionally:
 
-- One hundred hours of implementation support delivered in the room, across three full
-  weeks, against your own environment and your own data
+- Full-time implementation support delivered in the room, across three full weeks,
+  against your own environment and your own data
 - Sessions delivered as two blocks a day, completing the curriculum inside week one
 - Daily implementation review, held with the people who can answer the question
 - Whiteboard architecture sessions with your infrastructure and security teams, which in
@@ -430,6 +420,10 @@ easier to start from the local week and the local day and work outwards from the
 - **Real implementation outcome** — Hands-on training plus supported project work ensures your team can deploy Jube, configure rules, manage cases, and validate alerts.
 - **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring), auditable and extensible, keeping your data under your control while enabling rapid adaptation.
 
+<p>
+  <a class="button button--primary button--small" href="/contact/">Book your training →</a>
+</p>
+
 ---
 
 ## Training Plan
@@ -488,20 +482,19 @@ and traceable from start to finish. Most generally: a WhatsApp message becomes a
 ticket, responded to with a Loom video and links to documentation.
 
 Clients can request a full digest of open issues and progress at any time, including an
-AI-generated summary of status and suggested next steps. All logged time is billed in
-arrears at the published rate and fully auditable at month end, with no surprises at
-invoice time.
+AI-generated summary of status and suggested next steps. Everything is logged internally
+and fully auditable at month end, with no surprises at invoice time.
 
 This period doubles as the natural introduction to Jube's standard support model. By the
 end of the programme, both sides have a clear, evidenced picture of what ongoing
 support demands — how often your team needs to reach in, what kind of questions recur,
-and roughly how many hours a normal month requires — making the sizing of any follow-on
-support arrangement straightforward rather than a guess.
+and roughly what a normal month of usage looks like — making the sizing of any follow-on
+support tier straightforward rather than a guess.
 
 Where delivery is on-site, the asynchronous channel is still opened during the lead-in and
 used throughout. The block does not replace it; it front-loads the questions that would
 otherwise have flowed through it, which is precisely why on-site engagements tend to
-finish the programme with more of the twenty included hours intact.
+finish the programme with more of the included asynchronous allowance intact.
 
 ---
 
@@ -620,7 +613,7 @@ leveraging the AGPLv3-licensed Jube platform.
 ## Governance and insurance
 
 All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
+[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-8) — published, versioned,
 and written to be clear and equitable for both parties. Professional insurances are
 carried at GBP 1M per claim, subject to exclusions as set out in the JTOS.
 
@@ -643,7 +636,7 @@ quotes under this offer.
 
 There is no proposal step. This page, together with the
 [Full Training and Integration Plan PDF](https://jube.io/JubeTrainingPlan.pdf) and the
-[JTOS](/agreements/jtos-version-1-7), constitutes the complete published offer. The
+[JTOS](/agreements/jtos-version-1-8), constitutes the complete published offer. The
 quote adds only the parameters specific to your engagement:
 
 1. **Quote issued** — Jube raises a formal quote for digital signature, referencing this

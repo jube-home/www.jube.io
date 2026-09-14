@@ -5,19 +5,37 @@ permalink: /jube-support/
 ---
 
 Jube is open source and free to use. Implementation and training engagements are fixed
-fee. Ongoing support is available in two arrangements — retained support and
-Enterprise — with advanced analytics consulting available under either, and larger
-defined tasks handled as fixed-scope [project engagements](#project-engagements), each
-under its own Work Order. All operate
-on the same business model: **retained professional service hours, with a fair-use,
-no-overage commitment**. The monthly amount is known in advance, and there is no bill
-shock by design.
+fee. Ongoing support is offered as one of four flat-fee tiers — Sandbox, Growth,
+Scale, and Enterprise — sized to the scale and complexity of your deployment rather than
+to a block of hours, with advanced analytics consulting available within any tier, and
+larger defined tasks handled as fixed-scope [project engagements](#project-engagements),
+each under its own Work Order. All of it operates on the same principle: **a flat
+monthly fee, governed by a transparent fair-use policy, with no overage billing.** The
+amount is known in advance, and there is no bill shock by design.
 
-**This page is the offer.** Rates, response commitments, inclusions, and governance are
+**This page is the offer.** Fees, response commitments, inclusions, and governance are
 published here in full. Engagement proceeds directly to a quote which references this
 page (see [From this page to a signed engagement](#from-this-page-to-a-signed-engagement) below).
 
+<p>
+  <a class="button button--primary button--small" href="/contact/">Talk to us about a tier →</a>
+</p>
+
 ![Jube Training](/support.png)
+
+## Zero-friction platform maintenance
+
+Jube support is built so your team never sits on a problem, or delays raising one, out
+of invoice anxiety. **There is no clock running against your engineers.** Every tier is
+a flat monthly fee, and it stays that way for the life of the tier.
+
+Instead of billing against time, your tier is set against the scale and complexity of
+your deployment — sandbox, single production pipeline, multi-region, or
+mission-critical — so the fee is predictable and the coverage matches what your
+environment actually needs. It is governed by a transparent fair-use policy rather than
+a meter: if your deployment changes shape over a sustained period, your tier is
+recalibrated up or down for the following period, agreed in advance and never applied
+retroactively.
 
 ## How support works
 
@@ -27,45 +45,42 @@ available but treated as a last resort.
 
 All client support runs through a single, transparent system. Issues are raised
 directly via WhatsApp and tracked in real time against a permanent record — every note,
-time entry, and status change captured once and traceable from start to finish. Most
+update, and status change captured once and traceable from start to finish. Most
 generally: a WhatsApp message becomes a ticket, responded to with a Loom video and
 links to documentation. Clients can request a full digest of open issues and progress
 at any time, including an AI-generated summary of status and suggested next steps.
 
-**The business model is retained professional service hours, with a fair-use,
-no-overage commitment.** The monthly amount is agreed in advance, invoiced monthly in
-arrears as provided for in the [JTOS](/agreements/jtos-version-1-7), and — within fair
-use — is the amount invoiced, full stop. Professional services billing typically makes
-its margin in the overage, which is exactly where bill shock lives; this model removes
-the category.
+**The business model is a flat monthly fee, governed by a fair-use policy with no
+overage billing.** Your tier's fee is agreed in advance, invoiced monthly in arrears as
+provided for in the [JTOS](/agreements/jtos-version-1-8), and — within fair use — is
+the amount invoiced, full stop. Professional services billing typically makes its
+margin in the overage, which is exactly where bill shock lives; this model removes the
+category.
 
-Fair use has a published number attached to it rather than being left to judgement.
-Recorded hours are within fair use up to one and a half times the committed hours in a
-month, and are covered by the retained amount. Above that threshold the excess may be
-invoiced at the engaged hourly rate — but never silently: where it becomes apparent
-during a month that recorded hours are heading past it, you are told while there is
-still time to decide how you want to proceed. In practice sustained variance is dealt
-with by moving the commitment at the quarterly review rather than by invoicing the
-month.
+Fair use is generous and sized to the typical demand of a deployment at your tier — the
+large majority of clients never approach it. It is monitored continuously rather than
+left to judgement, and — within fair use — is fully covered by your flat monthly fee.
+Where sustained usage over a quarter diverges materially from what is typical for your
+tier, you are told while there is still time to decide how you want to proceed, and the
+position is addressed by recalibrating your tier at the next quarterly review — never
+by an unexpected line on the invoice.
 
-Time is still recorded against every piece of work as it happens, and is fully
-auditable — but it exists to demonstrate fairness, not to generate charges. Recorded
-time feeds a **quarterly account management review**, where the retained rate is
-checked against sustained reality and adjusted, in either direction, prospectively and
-in the open. No prepayment, no blocks to buy in advance, no unused-hours
-administration, and no surprises at invoice time.
+Every piece of work is still logged against a permanent record internally, and feeds a
+**quarterly account management review**, where your tier is checked against sustained
+reality and adjusted, in either direction, prospectively and in the open. No
+prepayment, no blocks to buy in advance, no unused-capacity administration, and no
+surprises at invoice time.
 
-These rates should not be mistaken for cheapness. The margin on time is not radically
-different from a proprietary vendor's — what differs is the cost base. Jube maintains
-a ruthlessly low one, and a strict, highly efficient async-first support model; the
-absurd overheads that proprietary vendors carry, and pass on, have been cut clean out.
-What you are paying for is the time of the person who wrote the platform, and very
-little else.
+These fees aren't meant to read as a bargain price — the margin isn't wildly different
+from a proprietary vendor's. What differs is the cost base: a lean, async-first support
+model without the overhead a larger vendor typically carries and passes on. What you're
+paying for is direct access to the person who built the platform, and not a great deal
+beyond that.
 
-**Retained support is terminable on thirty days' notice**, by either party, at any
-time, as set out in the JTOS. Long notice periods exist to keep clients who would
-rather leave. Support billed monthly in arrears has to earn its keep every month, and
-is retained because it is useful — not because a contract compels it.
+**Sandbox, Growth, and Scale are terminable on thirty days' notice**, by either
+party, at any time, as set out in the JTOS. Long notice periods exist to keep clients
+who would rather leave. Support billed monthly in arrears has to earn its keep every
+month, and is retained because it is useful — not because a contract compels it.
 
 Enterprise is the single exception, and the reason is worth stating plainly. Enterprise
 carries a twelve-month initial term to which both sides are equally committed — Jube
@@ -75,96 +90,97 @@ mapping, and a working knowledge of your implementation that stays current. None
 that can be honestly promised on a thirty-day footing. After the initial term Enterprise
 continues month to month on the same thirty days' notice as everything else.
 
-## Retained support
+## Support tiers
 
-Retained support operates on committed professional service hours against a single
-published rate card. By the end of the training and integration programme, both sides
-have a very good understanding of what support the client's environment actually
-demands, and a commitment is set broadly in keeping with that expected demand — billed
-monthly in arrears, under the fair-use, no-overage commitment described above.
+Support tiers align with the scale and complexity of your deployment environment, not
+with a block of hours purchased in advance. Many clients arrive here after the training
+and integration programme, where both sides get a good picture of what an environment
+actually demands; others start directly on Sandbox and move up as their deployment
+grows. Either way, a tier is set to match — billed monthly in arrears, under the
+fair-use, no-overage commitment described above.
 
-The rate card is graduated as an exponential derate: no commitment earns no keen
-price, the discount is front-loaded as commitment begins, and the curve flattens onto
-a floor. It is published so that it is the same for every client — the rate is a
-function of commitment, not of negotiation. All rates are in United States dollars:
+Tiers are published so the fee is the same for every client at that scale — the price
+is a function of your deployment, not of negotiation. All fees are in United States
+dollars:
 
-| Committed hours per month | Hourly rate     | Retained monthly amount        |
-|---------------------------|-----------------|--------------------------------|
-| None (ad hoc)             | $150            | billed as used, one hour a month minimum |
-| 5                         | $125            | $625                           |
-| 10                        | $114            | $1,140                         |
-| 15                        | $106            | $1,590                         |
-| 20                        | $100            | $2,000                         |
-| 25 *(Enterprise)*         | $96 *(floor)*   | $2,400                         |
+| Support Tier | Target Audience | Scope & Environment Limit | Flat Price |
+|---|---|---|---|
+| **Sandbox** | Startups and independent developers | Non-production sandbox only. Async response within 48 hours. | **$350 / mo** |
+| **Growth** | Emerging fintechs | One live production pipeline (under roughly 100k transactions a month). Next-business-day response. | **$950 / mo** |
+| **Scale** | Mid-tier financial institutions | Multi-region pipelines. Same-day, high-priority routing. | **$1,590 / mo** |
+| **Enterprise** | Banks and other regulated institutions | Mission-critical infrastructure. 24/7 priority emergency SLA. | **$2,400 / mo** ($28,800/yr) |
 
-Fixed-scope project engagements — the
-[training and integration programme](/jube-training) among them — are billed at the
-**project rate of $125 per hour**, matching the first committed rung: a project
-carries scope commitment, but not the ongoing commitment that earns the keener
-retained rates.
+Each tier builds on the one below it:
 
-It is worth being explicit about what earns the keener rates on this card, because the
-answer is narrower than it first appears. The derate is bought by ongoing commitment —
-a monthly amount, sustained over time, that makes a portion of Jube's capacity
-reliably spoken for. That is genuinely worth something: it removes the need to go and
-find the work, it smooths the year, and it is the reason the rate can come down at all.
-What is being priced is the commitment itself, not the number of hours attached to it.
+- **Sandbox** — asynchronous WhatsApp support, Loom video ticket resolution, and
+  document and rule-mapping help. A comfortable place to start, whether you're a step
+  away from production or plan to stay in sandbox for a while.
+- **Growth** — adds core platform performance tuning and mid-level AML configuration
+  consulting, plus an async engineering channel.
+- **Scale** — adds advanced platform abstraction advisory and cross-tenant architecture
+  support.
+- **Enterprise** — adds the full set of inclusions described under
+  [Enterprise support](#enterprise-support) below.
 
-Which means that a large piece of work does not, on its own, earn a keener rate. A
-hundred hours inside a single fixed-scope project is not the same proposition as a
-hundred hours committed across a year of months, however similar the arithmetic looks:
-the project ends, and the capacity it occupied goes back to being unspoken for.
-Fixed-scope projects are charged at the project rate accordingly, whatever their size.
+Sandbox doesn't have to be a waypoint. It's sized and priced to work as a standing
+arrangement in its own right for teams who want a steady, low-cost line to Jube while
+they stay in a non-production environment for as long as that suits them — there's no
+expectation of moving up on any particular timeline.
 
-The same reasoning applies to work delivered at your premises, including the
-[on-site month](/jube-training) within the training and integration programme. On-site
-work is charged at the project rate — no premium for the location, and no discount for
-the quantity of hours involved. If anything the case runs the other way, since
-travelling to you consumes a month of capacity outright rather than guaranteeing it,
-and a card that made the most demanding engagement the cheapest one per hour would be
-difficult to defend and harder still to sustain. So on-site work is not derated. It seems
-better to say where that line falls here than to leave it to be discovered halfway
-through a quote.
+Not sure which tier fits your deployment? [Talk to us](/contact/) — most quotes go out
+within a day.
 
-Commitments are set at the nearest rung to evidenced demand, and revisited at the
-quarterly account management review — moved up or down the same published card,
-prospectively and in the open. Within an Enterprise initial term the commitment does
-not move below the top rung, because that rung is what Enterprise is; a client whose
-sustained demand settles lower can move to retained support at the end of the term.
-**$96 an hour is the floor of the card.** Holding it
-matters more than winning any single engagement: a rate that moves under pressure is not
-really a published rate at all, and part of what this page offers is the assurance that
-the number you are given is the number everyone else is given.
+Ad hoc, no-commitment support — for teams not yet ready to take a monthly tier —
+remains available at Jube's discretion, on a best-endeavours basis, quoted per
+engagement rather than published on a scale.
 
-Enterprise is the top rung of the same card rather than a separate product: twenty-five
-committed hours a month at the floor rate. There is no separate Enterprise price to
-reconcile against the scale, and no point at which the scale overtakes it — the card
-simply ends where Enterprise begins. The Enterprise inclusions come with that
-commitment rather than being charged for.
+It's worth explaining what a lower tier fee reflects, since the answer is a little
+narrower than it might look. Each tier is priced against ongoing commitment — a
+monthly relationship, sustained over time, that makes a portion of Jube's capacity
+reliably available. That's worth something in its own right: it smooths the year and
+removes the need to chase the next piece of work, and it's a reasonable part of why the
+fee can sit where it does at every tier. What's being priced is the commitment itself,
+rather than the size of any one piece of work inside it.
 
-Retained support is a good fit for cost-sensitive markets and clients with modest or
-variable support needs — the entry rung, five hours a month at $625, is deliberately
-sized to work in emerging markets. Responses within four business hours during UK
-office hours, on a best endeavours basis.
+A large piece of work doesn't, by itself, earn a place on a cheaper tier. A substantial
+one-off project is a different proposition from the same amount of work spread across
+a year of months, even where the totals look similar: the project ends, and the
+capacity it occupied goes back to being unspoken for. Fixed-scope projects are
+therefore priced separately, as [project engagements](#project-engagements), on their
+own fixed fee, whatever their size.
 
-Out-of-hours and emergency response is not part of retained support. Where it is
-provided at all it is at Jube's discretion and on a best endeavours basis, charged at
-the ad hoc rate of $150 per hour with a two-hour minimum per callout. Guaranteed
-out-of-hours coverage is what Enterprise buys, and it is the honest answer to give here
-rather than an implication left hanging.
+The same applies to work delivered at your premises, including the
+[on-site month](/jube-training) within the training and integration programme: it's
+priced as part of the fixed project fee, with no premium for the location and no
+discount for its duration. Travelling to you takes up a month of capacity outright
+rather than reserving it in advance, so it didn't seem right to make that the cheapest
+option per unit of work. It seemed better to say so here than to leave it to be found
+partway through a quote.
+
+Tiers are set at the nearest match to evidenced demand, and revisited at the quarterly
+account management review — moved up or down the same published scale, prospectively
+and in the open. Within an Enterprise initial term the tier doesn't move down, since
+that commitment is what Enterprise is for; a client whose sustained demand settles
+lower can move to a lower tier at the end of the term. $2,400 a month sits at the top of
+the published scale, and it's held there for everyone alike — the aim is that the
+number you're given is the same one anyone else would be given.
+
+Out-of-hours and emergency response isn't part of Sandbox, Growth, or Scale. Where it's
+provided at all outside those tiers, it's at Jube's discretion and on a best-endeavours
+basis, quoted per callout. Guaranteed out-of-hours coverage is what Enterprise
+provides.
 
 ## Enterprise support
 
 Enterprise support is available at **$2,400 per month — $28,800 a year** — invoiced
 monthly in arrears in accordance with the JTOS and under the same fair-use, no-overage
-commitment, for clients who want a retained relationship, committed availability, and a
-named technical authority on their implementation. It is committed for a twelve-month
+commitment, for clients who want committed availability, mission-critical coverage, and
+a named technical authority on their implementation. It is committed for a twelve-month
 initial term, mutually, and continues month to month on thirty days' notice thereafter.
 
-The price is not set apart from the rate card; it is the top of it. Twenty-five committed
-hours a month at the floor rate of $96 is $2,400, which is the whole of the calculation.
-The inclusions below are not priced separately and add nothing to the hourly rate; they
-are what a commitment at the top of the scale carries with it:
+The fee sits at the ceiling of the published scale rather than apart from it. The
+inclusions below are not priced separately and add nothing to the monthly fee; they are
+what Enterprise's flat fee carries with it:
 
 - **Reference configurations and client context** — Jube maintains reference
   configurations for infrastructure and deployment. Support does not carry sign-off
@@ -188,43 +204,47 @@ are what a commitment at the top of the scale carries with it:
 - **24/7 callout coverage** — urgent matters raised via WhatsApp Business are
   interrupt-driven and will be picked up as quickly as practically possible.
   Response during 06:00–18:00 GMT, Monday to Friday is guaranteed. Outside those hours,
-  coverage is on a best endeavours basis. Callout is included within the retained
-  amount and recorded like any other time; it is not separately invoiced. Sustained
-  callout volume is a quarterly review conversation, not an invoice. Callout is tied to the top rung: if the
-  commitment ever falls below twenty-five hours a month, callout and the other Enterprise inclusions cease from
-  that billing period and the arrangement is retained support.
+  coverage is on a best endeavours basis. Callout is included within the flat monthly
+  fee; it is not separately invoiced. Sustained callout volume is a quarterly review
+  conversation, not an invoice. Callout is tied to the Enterprise tier: if your
+  deployment scale no longer matches Enterprise-level mission-critical workloads,
+  callout and the other Enterprise inclusions cease from that billing period and the
+  arrangement moves to Scale support.
+
+Running mission-critical infrastructure and want a named technical authority on it?
+<a class="button button--primary button--small" href="https://wa.me/35797517137">Talk to us about Enterprise on WhatsApp</a>
 
 ---
 
 ## Project engagements
 
-Some work is too large to sit inside day-to-day support — a major version upgrade, a
-cluster build, a migration, a substantial integration, or a sustained piece of model
+Some work is too large to sit inside a monthly support tier — a major version upgrade,
+a cluster build, a migration, a substantial integration, or a sustained piece of model
 development. These are handled as fixed-scope projects, on a project-by-project basis:
-properly scoped and planned before anything begins, priced at the published project
-rate of $125 per hour against the scoped estimate, and delivered under a specific
-Work Order as defined in the JTOS — the
+properly scoped and planned before anything begins, priced as a single fixed fee
+agreed in advance against the scoped estimate, and delivered under a specific Work
+Order as defined in the JTOS — the
 [training and integration programme](/jube-training) itself is delivered on exactly
 this basis.
 
-Where the line falls is the client's question rather than Jube's: retained hours can
-be spent however the client pleases, and there is no obligation to convert anything
-into a project. In practice, for the really big pieces of work, clients usually want
-the commitment — a scoped plan and a known price — and this is where they get it.
+Where the line falls is the client's question rather than Jube's: your monthly tier
+can be used however you please, and there is no obligation to convert anything into a
+project. In practice, for the really big pieces of work, clients usually want the
+commitment — a scoped plan and a known price — and this is where they get it.
 
-The discipline is the point, and it is what extends the no-bill-shock principle to the
-biggest tasks, where it matters most. A project does not begin until its scope, plan,
-and price are agreed and recorded in its Work Order; the price is known before the
-work starts, and it is the Work Order that changes it — never the invoice.
+This carries the same no-bill-shock principle through to the biggest tasks, where it
+matters most. A project does not begin until its scope, plan, and price are agreed and
+recorded in its Work Order; the price is known before the work starts, and it is the
+Work Order that changes it — never the invoice.
 
 Project engagements are ordinarily delivered remotely, on the same async-first basis
 as everything else. Where a project genuinely warrants attendance at your premises,
-that is agreed in advance and recorded in the Work Order, priced at the project rate
-with no derate for attendance, and with travel and subsistence handled exactly as set
-out for the [on-site month](/jube-training): flights and accommodation booked directly
-by you, economy class, scheduled within social hours, and subsistence at the published
-HMRC scale rate. Days spent travelling to you and back are not billed and consume none
-of the engaged hours.
+that is agreed in advance and recorded in the Work Order, priced within the fixed
+project fee with no premium for attendance, and with travel and subsistence handled
+exactly as set out for the [on-site month](/jube-training): flights and accommodation
+booked directly by you, economy class, scheduled within social hours, and subsistence
+at the published HMRC scale rate. Days spent travelling to you and back are not billed
+and consume none of the engaged time.
 
 ---
 
@@ -270,10 +290,10 @@ sets out the reasoning, the techniques, and the required reading. There is nothi
 proprietary about the approach — the value is in its consistent, defensible
 application to your data.
 
-Advanced analytics consulting is available under either arrangement. The work is
-recorded at the client's engaged hourly rate like everything else, and reflected in
-the retained commitment at review. For sustained model development, Enterprise support
-is its natural home.
+Advanced analytics consulting is available within any support tier. The work is
+delivered within the scope of your tier like everything else, and reflected in your
+tier at review if it becomes a sustained pattern. For sustained model development,
+Enterprise support is its natural home.
 
 ### Analytical training — little and often
 
@@ -296,32 +316,49 @@ Carlo simulation.
 
 ---
 
+## Why Jube support?
+
+- **No bill shock, by design** — a flat monthly fee per tier, governed by a transparent
+  fair-use policy, with no overage billing.
+- **Direct access** — WhatsApp straight to the person who built the platform, not a
+  ticket queue or a first-line screen.
+- **Scales with your deployment** — from sandbox experimentation to mission-critical,
+  24/7 coverage, without ever renegotiating a rate.
+- **No lock-in** — terminable on thirty days' notice outside Enterprise, because it's
+  retained for being useful, not because a contract compels it.
+- **Fully open-source and transparent** — [Jube is fully open-source (AGPLv3)](https://github.com/jube-home/aml-fraud-transaction-monitoring);
+  what you're paying for is expertise, not a license.
+
+<p>
+  <a class="button button--primary button--small" href="/contact/">Get your quote →</a>
+</p>
+
+---
+
 ## From this page to a signed engagement
 
 There is no proposal step. This page, together with the
-[JTOS](/agreements/jtos-version-1-7), constitutes the complete published offer. The
+[JTOS](/agreements/jtos-version-1-8), constitutes the complete published offer. The
 quote adds only the parameters specific to your engagement:
 
-1. **Prerequisite** — completion of the
-   [Jube Training and Integration programme](/jube-training) is a prerequisite for
-   taking on support. This is not gatekeeping for its own sake: the programme
-   establishes the channels, the working relationship, and — through its asynchronous
-   support period — an evidenced picture of what support your environment actually
-   demands. Support arrangements are then sized from evidence rather than a guess,
-   and continue on the same channels, cadence, and time-recording basis with no
-   separate onboarding.
-2. **Quote issued** — Jube raises a formal quote for digital signature, referencing
-   this page, and stating: the client entity, the arrangement (retained or
-   Enterprise), the committed hours and corresponding retained monthly amount from the
-   published scale where applicable, the initial term where the arrangement is
-   Enterprise, invoicing details, and the commencement date.
-3. **Signature** — On digital signature of the quote, the quote and the referenced
+1. **Quote issued** — Jube raises a formal quote for digital signature, referencing
+   this page, and stating: the client entity, the support tier and corresponding flat
+   monthly fee from the published scale, the initial term where the tier is
+   Enterprise, invoicing details, and the commencement date. Sandbox is available to
+   any team directly, with no prior engagement required — it is a good entry point in
+   its own right for teams who want to map rules against their own data before
+   committing to anything larger. Where a client is moving up from the
+   [Jube Training and Integration programme](/jube-training), its asynchronous support
+   period gives an evidenced picture of what your environment actually demands, and
+   the quoted tier is sized from that evidence rather than a guess.
+2. **Signature** — On digital signature of the quote, the quote and the referenced
    documents together constitute the Work Order as defined in the JTOS. Quotes are
    issued by Jube Operations Limited, the contracting entity (see
    [Governance and insurance](#governance-and-insurance) below).
-4. **Commencement** — support commences on the confirmed date, typically continuing
-   seamlessly from the programme's asynchronous support period. Jube issues a **Service
-   Activation Letter** on commencement, recording the start date, the arrangement, the
+3. **Commencement** — support commences on the confirmed date, continuing seamlessly
+   from the training programme's asynchronous support period where one preceded it.
+   Jube issues a **Service
+   Activation Letter** on commencement, recording the start date, the tier, the
    delivery mode, and which of the Enterprise commitments are and are not in force. It
    states no fees or rates, which means it can be shared freely — including with your
    own compliance, audit, or procurement function, or where support reaches you through
@@ -375,7 +412,7 @@ leveraging the AGPLv3-licensed Jube platform.
 ## Governance and insurance
 
 All engagements are delivered under the
-[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-7) — published, versioned,
+[Jube Terms of Service (JTOS)](/agreements/jtos-version-1-8) — published, versioned,
 and written to be clear and equitable for both parties. Professional indemnity
 insurance is carried with a UK-authorised insurer at the level recorded in the Work
 Order, up to GBP 1M per claim, which is the ceiling Jube maintains and the most any
