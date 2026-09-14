@@ -47,10 +47,10 @@ delivered, and therefore how long the project takes.
 
 | | **Remote Fast-Track** | **On-Site Core Accelerator** |
 |---|---|---|
-| Velocity milestone | Seven-week curriculum; pre-production typically follows within about three months | Pre-production within the month |
+| Velocity milestone | Seven-week curriculum; pre-production typically follows within about three months | Four weeks to pre-production |
 | Curriculum | Eleven sessions over seven weeks | Eleven sessions in week one, two blocks a day |
 | Session length | Capped at three hours, one at a time | Two three-hour blocks a day |
-| Implementation support | Asynchronous, alongside the curriculum and for two months after | Full-time in the room across three weeks, plus a follow-on on-call tail |
+| Implementation support | Asynchronous, alongside the curriculum and for two months after | Full-time in the room across the remaining three of the four weeks, plus a follow-on on-call tail |
 | Fee | $6,250 | $17,500 |
 | Travel and subsistence | None | You book travel directly; subsistence at HMRC scale rate |
 | Implementation reviews | Twice-weekly, remote | Daily, in the room |
