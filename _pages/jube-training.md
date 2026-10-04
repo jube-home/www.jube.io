@@ -16,21 +16,21 @@ the first session.
 full, with nothing held back for a sales call.
 
 <p class="text-center">
-  <a class="button button--primary button--small" href="/contact/">Request a quote</a>
+  <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
 
 ## At a glance
 
-| | |
-|---|---|
-| Fee | USD 6,250, fixed and agreed in advance |
-| Curriculum | Weeks 1 to 3: 3 sessions a week, each up to 3 hours (9 core sessions), plus a 1-hour prerequisites check and a 2-hour elective |
-| Project phase | From week 4: you build the deployment with twice-weekly implementation reviews, until the first pre-production traffic flows |
-| Pre-production | First pre-production traffic typically within about 12 weeks of the first session |
-| Payment | 50% after the first week of training. The balance falls due on proof-of-concept stability and the first live transaction, and no later than 4 months from the start date |
-| Included | 2 days of custom gap development, integration support, session recordings and the Jube Certified Application Specialist certificate |
-| Delivery | Remote, by the Jube developer, on your working week |
-| Start | Typically 2 months from signature. Jube starts one new client a month |
+|                |                                                                                                                                                                          |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fee            | USD 6,250, fixed and agreed in advance                                                                                                                                   |
+| Curriculum     | Weeks 1 to 3: 3 sessions a week, each up to 3 hours (9 core sessions), plus a 1-hour prerequisites check and a 2-hour elective                                           |
+| Project phase  | From week 4: you build the deployment with twice-weekly implementation reviews, until the first pre-production traffic flows                                             |
+| Pre-production | First pre-production traffic typically within about 12 weeks of the first session                                                                                        |
+| Payment        | 50% after the first week of training. The balance falls due on proof-of-concept stability and the first live transaction, and no later than 4 months from the start date |
+| Included       | 2 days of custom gap development, integration support, session recordings and the Jube Certified Application Specialist certificate                                      |
+| Delivery       | Remote, by the Jube developer, on your working week                                                                                                                      |
+| Start          | Typically 2 months from signature. Jube starts one new client a month                                                                                                    |
 
 ## How it runs
 
@@ -44,7 +44,9 @@ and data, with implementation review meetings twice a week and asynchronous supp
 WhatsApp, Jira and Loom, until the first pre-production traffic flows. That typically
 happens within about 12 weeks of the first session.
 
-![Jube Training](/training.png)
+<p class="text-center">
+  <img src="/training.png" alt="Jube Training" width="200" loading="lazy" style="width:200px;max-width:60%;height:auto;">
+</p>
 
 In private training, you will gain:
 
@@ -100,7 +102,7 @@ built around that as a matter of course:
 - Sessions break for prayer rather than pausing mid-topic.
 - Ramadan is planned for, with shortened days or a schedule that avoids it entirely,
   as you prefer.
-- National and religious holidays are identified during the lead-in, not discovered on
+- National and religious holidays are identified during the lead time, not discovered on
   the day.
 
 ---
@@ -115,30 +117,6 @@ built around that as a matter of course:
   custom DLLs and configuration remain your property.
 - The fee is fixed at USD 6,250 and agreed in advance. Half falls due after the first
   week of training, and the balance only on the first live transaction.
-
-<p class="text-center">
-  <a class="button button--primary button--small" href="/contact/">Request a quote</a>
-</p>
-
----
-
-## What happens after you get in touch
-
-1. Message the developer on WhatsApp or email. Ask for a demo first if you want one.
-2. Send the details a quote needs: the full legal name of the organisation that will
-   deploy Jube, the people who will attend and their roles, your target go-live, your
-   working week and time zone, and whether you are buying directly or through an
-   intermediary.
-3. Receive a quote. There is no proposal step, and the quote carries only those
-   engagement-specific details. Accept it by email, through the quote link, or by
-   signing a Work Order.
-4. Jube issues a Service Activation Letter on the start date. It records the service
-   line, the delivery mode and the version of the [JTOS](/agreements/jtos-version-1-8)
-   that applies, and you can share it with your auditors or your bank.
-5. The lead-in, typically 2 months from signature, stands up the training server, the
-   WhatsApp channel and any custom gap development ahead of Session 1.
-
----
 
 ## Training plan
 
@@ -184,32 +162,30 @@ running Jube instance beforehand, validated in Session 1.
 
 **Custom gap development** (2 included days) closes any gap between your environment
 and the platform, such as a Kafka integration in place of RabbitMQ or HTTP. It is
-identified and delivered during the lead-in, and it is built into the core product under
+identified and delivered during the lead time, and it is built into the core product under
 AGPLv3, not held as a private fork.
 
 **Scheduling.** Jube starts one training and implementation client a month, with a
 typical 2-month lead time from signature to the first session. This is a capacity
 constraint, not a sales device, because delivery is personal to the developer.
 
+**After go-live.** Following successful implementation and first live transactions,
+ongoing [support](/jube-support/) is available directly from the Jube developer.
+
+**Ownership and terms.** Your Inline Scripts, custom DLLs and configuration remain your
+property, as set out in the [AGPLv3 compliance guide](/jube-agplv3-open-source-compliance/).
+Insurance, liability and the contracting entity are in the
+[JTOS](/agreements/jtos-version-1-8), and evidence of current insurance is available on
+request.
+
 ---
 
-## Ownership and governance
+## Get in touch
 
-Your Inline Scripts, custom DLLs and configuration remain your property. They are
-treated as configuration data, not a modification to Jube's AGPLv3 core, the same
-principle as Lua scripts in Redis. Full detail is in the
-[AGPLv3 compliance guide](/jube-agplv3-open-source-compliance/).
-
-There is no proposal step. This page and the [JTOS](/agreements/jtos-version-1-8)
-together are the complete published offer: insurance, liability and the contracting
-entity are all set out in the JTOS in full. Evidence of current insurance is available
-on request.
+Message the developer on WhatsApp or email, and ask for a demo first if you want one.
+You will get a proposal built around your own technical and regulatory circumstances,
+with no surprises in the price.
 
 <p class="text-center">
-  <a class="button button--primary button--small" href="/contact/">Request a quote</a>
+  <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
-
----
-
-Following successful implementation and first live transactions, ongoing support is
-available directly from the Jube developer. See [Support](/jube-support/) for details.
