@@ -5,7 +5,9 @@ permalink: /jube-training/
 description: "Fixed-fee private training: a 3-week curriculum, then a project phase with the Jube developer to first pre-production traffic. USD 6,250."
 ---
 
-<img src="/training.png" alt="Jube Training" width="160" loading="lazy" style="float:left;width:160px;max-width:28%;height:auto;margin:0.25rem 1.5rem 0.5rem 0;">
+<p class="text-center">
+  <img src="/training.png" alt="Jube Training" width="160" loading="lazy" style="width:160px;max-width:40%;height:auto;">
+</p>
 
 Private training that takes your team from first principles to a working pre-production
 deployment of Jube, for compliance professionals, engineers, analysts and architects.
@@ -20,8 +22,6 @@ full, with nothing held back for a sales call.
 <p>
   <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
-
-<div style="clear:both;"></div>
 
 ## At a glance
 
