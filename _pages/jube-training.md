@@ -5,6 +5,8 @@ permalink: /jube-training/
 description: "Fixed-fee private training: a 3-week curriculum, then a project phase with the Jube developer to first pre-production traffic. USD 6,250."
 ---
 
+<img src="/training.png" alt="Jube Training" width="160" loading="lazy" style="float:left;width:160px;max-width:28%;height:auto;margin:0.25rem 1.5rem 0.5rem 0;">
+
 Private training that takes your team from first principles to a working pre-production
 deployment of Jube, for compliance professionals, engineers, analysts and architects.
 It runs remotely in two phases: a 3-week curriculum of 3 sessions a week, each up to
@@ -15,22 +17,24 @@ the first session.
 **This page is the offer.** Fees, payment schedule and inclusions are published here in
 full, with nothing held back for a sales call.
 
-<p class="text-center">
+<p>
   <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
 
+<div style="clear:both;"></div>
+
 ## At a glance
 
-|                |                                                                                                                                                                          |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Fee            | USD 6,250, fixed and agreed in advance                                                                                                                                   |
-| Curriculum     | Weeks 1 to 3: 3 sessions a week, each up to 3 hours (9 core sessions), plus a 1-hour prerequisites check and a 2-hour elective                                           |
-| Project phase  | From week 4: you build the deployment with twice-weekly implementation reviews, until the first pre-production traffic flows                                             |
-| Pre-production | First pre-production traffic typically within about 12 weeks of the first session                                                                                        |
-| Payment        | 50% after the first week of training. The balance falls due on proof-of-concept stability and the first live transaction, and no later than 4 months from the start date |
-| Included       | 2 days of custom gap development, integration support, session recordings and the Jube Certified Application Specialist certificate                                      |
-| Delivery       | Remote, by the Jube developer, on your working week                                                                                                                      |
-| Start          | Typically 2 months from signature. Jube starts one new client a month                                                                                                    |
+| | |
+|---|---|
+| Fee | USD 6,250, fixed and agreed in advance |
+| Curriculum | Weeks 1 to 3: 3 sessions a week, each up to 3 hours (9 core sessions), plus a 1-hour prerequisites check and a 2-hour elective |
+| Project phase | From week 4: you build the deployment with twice-weekly implementation reviews, until the first pre-production traffic flows |
+| Pre-production | First pre-production traffic typically within about 12 weeks of the first session |
+| Payment | 50% after the first week of training. The balance falls due on proof-of-concept stability and the first live transaction, and no later than 4 months from the start date |
+| Included | 2 days of custom gap development, integration support, session recordings and the Jube Certified Application Specialist certificate |
+| Delivery | Remote, by the Jube developer, on your working week |
+| Start | Typically 2 months from signature. Jube starts one new client a month |
 
 ## How it runs
 
@@ -43,10 +47,6 @@ cluster.
 and data, with implementation review meetings twice a week and asynchronous support over
 WhatsApp, Jira and Loom, until the first pre-production traffic flows. That typically
 happens within about 12 weeks of the first session.
-
-<p class="text-center">
-  <img src="/training.png" alt="Jube Training" width="200" loading="lazy" style="width:200px;max-width:60%;height:auto;">
-</p>
 
 In private training, you will gain:
 
@@ -186,6 +186,6 @@ Message the developer on WhatsApp or email, and ask for a demo first if you want
 You will get a proposal built around your own technical and regulatory circumstances,
 with no surprises in the price.
 
-<p class="text-center">
+<p>
   <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
