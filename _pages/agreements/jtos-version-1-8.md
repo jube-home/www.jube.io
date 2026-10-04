@@ -2,6 +2,7 @@
 layout: page
 title: Jube Terms of Service (JTOS)
 permalink: /agreements/jtos-version-1-8
+description: "Jube Terms of Service version 1.8, dated 14 September 2026: the published terms for training, support and project engagements."
 ---
 
 ## Version

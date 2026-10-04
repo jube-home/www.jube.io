@@ -2,6 +2,7 @@
 layout: page
 title: Jube Terms of Service (JTOS) for Signed Execution
 permalink: /agreements/jtos-execution-version-1-8
+description: "Jube Terms of Service version 1.8 in signed-execution form, for engagements executed as a single instrument."
 ---
 
 # Jube Terms of Service (JTOS): [Insert other client sympathetic or project title]

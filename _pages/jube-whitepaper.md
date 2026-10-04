@@ -2,6 +2,7 @@
 layout: page
 title: Jube Whitepapers
 permalink: /jube-whitepapers/
+description: "Practitioner whitepapers on real-time AML and fraud detection, written by the developer of Jube from direct experience in the field."
 ---
 
 Practitioner-focused whitepapers on real-time Anti Money Laundering and Fraud Detection — written by the developer of

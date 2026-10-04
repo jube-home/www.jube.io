@@ -2,6 +2,7 @@
 layout: page
 title: Jube AGPLv3 and Open Source Compliance
 permalink: /jube-agplv3-open-source-compliance/
+description: "How Jube is licensed under the AGPLv3, and what the licence requires of anyone who deploys, modifies or builds on it."
 ---
 
 Jube is distributed exclusively under the GNU Affero General Public License v3 (AGPLv3). It is free to use, deploy, and
