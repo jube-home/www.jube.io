@@ -20,6 +20,10 @@ auditable, and extensible—deployed on your own infrastructure, in your own jur
 so your data never has to leave your control, while enabling rapid adaptation to new
 products, workflows, regulations, or payment schemes.
 
+<p class="text-center">
+  <a class="button button--primary button--small" href="/contact/">Get in touch</a>
+</p>
+
 </div>
 </article>
 </div>

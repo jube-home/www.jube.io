@@ -42,26 +42,6 @@ Ad hoc support is available at Jube's discretion, priced per engagement. Not sur
 and monthly transaction volume, and Jube will write a proposal around your technical and regulatory circumstances. The
 prices above are the prices, so there are no surprises in it. Replies typically go out within a day.
 
-## How it works
-
-Support runs async-first over WhatsApp. A message becomes a ticket, answered with a Loom video and documentation, and
-tracked against a permanent record.
-
-Support covers the documented features of Jube. Where a feature is documented, Jube will help you use it, tune it and
-keep it running.
-
-**There is no clock running against your engineers.** Usage within fair use is covered by the monthly fee and is never
-invoiced separately. If usage runs materially outside what is typical for your tier, you are told before any excess
-arises, and it is addressed by moving your tier at the next quarterly review, not by a surprise line on the invoice.
-
-Your Inline Scripts, custom DLLs and configuration remain your property, as set out in
-the [AGPLv3 compliance guide](/jube-agplv3-open-source-compliance/). All engagements run under
-the [JTOS](/agreements/jtos-version-1-8).
-
-Sandbox, Growth and Scale are terminable on 30 days' notice. Enterprise carries a 12-month initial term, because callout
-coverage and patching response cannot honestly be promised on a 30-day footing. After that, it is month to month on 30
-days' notice, like everything else.
-
 ## Enterprise support
 
 USD 2,400 a month (USD 28,800 a year), invoiced in arrears under the same fair-use commitment, for clients who want
@@ -81,6 +61,30 @@ then month to month on 30 days' notice. Includes:
 The 12-month commitment is a minimum, not a cap. If you end the engagement early, the remaining months of the retainer
 fall due. They do not fall due if Jube ends the engagement, if Jube is in material breach, or on force majeure. The full
 terms are in the [JTOS](/agreements/jtos-version-1-8).
+
+## Practicalities
+
+**Channel.** Support runs async-first over WhatsApp. A message becomes a ticket, answered with a Loom video and
+documentation, and tracked against a permanent record.
+
+**Scope.** Support covers the documented features of Jube. Where a feature is documented, Jube will help you use it,
+tune it and keep it running.
+
+**Fair use.** There is no clock running against your engineers. Usage within fair use is covered by the monthly fee and
+is never invoiced separately. If usage runs materially outside what is typical for your tier, you are told before any
+excess arises, and it is addressed by moving your tier at the next quarterly review, not by a surprise line on the
+invoice.
+
+**Notice.** Sandbox, Growth and Scale are terminable on 30 days' notice. Enterprise carries a 12-month initial term,
+because callout coverage and patching response cannot honestly be promised on a 30-day footing. After that, it is month
+to month on 30 days' notice, like everything else.
+
+**After training.** Integration support during [training and implementation](/jube-training/) uses the same ticket and
+Loom model, so it is the natural introduction to support and sizes your tier from evidence rather than a guess.
+
+**Ownership and terms.** Your Inline Scripts, custom DLLs and configuration remain your property, as set out in the
+[AGPLv3 compliance guide](/jube-agplv3-open-source-compliance/). All engagements run under the
+[JTOS](/agreements/jtos-version-1-8).
 
 ---
 
