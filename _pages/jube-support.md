@@ -8,6 +8,7 @@ description: "Four flat-fee Jube support tiers, from USD 350 to USD 2,400 a mont
 <div style="display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-start;">
 <img src="/support.png" alt="Jube Support" width="160" loading="lazy" style="width:160px;max-width:100%;height:auto;flex:0 0 auto;">
 <div style="flex:1 1 20rem;min-width:0;" markdown="1">
+
 Jube is open source and free to use. Support runs on four flat-fee tiers (Sandbox, Growth, Scale and Enterprise) sized
 to your deployment rather than to a block of hours, with no routine overage billing. Training is a separate fixed-fee
 offer: see [training and implementation](/jube-training/).
@@ -15,11 +16,9 @@ offer: see [training and implementation](/jube-training/).
 **This page is the offer.** Fees, inclusions and response commitments are published in full below, with nothing held
 back for a sales call.
 
-<p class="text-center">
-  <a class="button button--primary button--small" href="/contact/">Get in touch</a>
-</p>
 </div>
 </div>
+
 | Tier       | For                                    | Environment                                                           | Response target                                                                    | Price                                 |
 |------------|----------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------------------------------|
 | Sandbox    | Startups and independent developers    | Non-production sandbox only                                           | Async, within 48 hours                                                             | USD 350 a month                       |
@@ -37,10 +36,11 @@ the one below it:
   stay, not just a waypoint.
 - Growth: adds core platform performance tuning and mid-level AML configuration consulting.
 - Scale: adds advanced platform abstraction advisory and cross-tenant architecture.
-- Enterprise: adds everything under [Enterprise support](#enterprise-support) below. Ad hoc support is available at
-  Jube's discretion, priced per engagement. Not sure which tier fits? Get in touch with your environment, regions and
-  monthly transaction volume, and Jube will write a proposal around your technical and regulatory circumstances. The
-  prices above are the prices, so there are no surprises in it. Replies typically go out within a day.
+- Enterprise: adds everything under [Enterprise support](#enterprise-support) below.
+
+Ad hoc support is available at Jube's discretion, priced per engagement. Not sure which tier fits? Get in touch with your environment, regions
+and monthly transaction volume, and Jube will write a proposal around your technical and regulatory circumstances. The
+prices above are the prices, so there are no surprises in it. Replies typically go out within a day.
 
 ## How it works
 
@@ -76,15 +76,12 @@ then month to month on 30 days' notice. Includes:
 - 24/7 callout: a guaranteed response from 06:00 to 18:00 GMT, Monday to Friday, and best endeavours outside those
   hours. Included in the flat fee, not separately invoiced. These inclusions are tied to the tier: if your deployment
   scales back below Enterprise-level workloads, they cease once the initial term has ended and the arrangement moves to
-  Scale. The 12-month commitment is a minimum, not a cap. If you end the engagement early, the remaining months of the
-  retainer fall due. They do not fall due if Jube ends the engagement, if Jube is in material breach, or on force
-  majeure. The full terms are in the [JTOS](/agreements/jtos-version-1-8).
+  Scale.
 
-Running mission-critical infrastructure and want a named technical authority on it?
+The 12-month commitment is a minimum, not a cap. If you end the engagement early, the remaining months of the retainer
+fall due. They do not fall due if Jube ends the engagement, if Jube is in material breach, or on force majeure. The full
+terms are in the [JTOS](/agreements/jtos-version-1-8).
 
-<p class="text-center">
-  <a class="button button--primary button--small" href="/contact/">Ask about Enterprise</a>
-</p>
 ---
 
 ## Get in touch
