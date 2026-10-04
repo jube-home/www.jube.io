@@ -24,7 +24,7 @@ full, with nothing held back for a sales call.
 
 ## At a glance
 
-| | |
+| Item | Detail |
 |---|---|
 | Fee | USD 6,250, fixed and agreed in advance |
 | Curriculum | Weeks 1 to 3: 3 sessions a week, each up to 3 hours (9 core sessions), plus a 1-hour prerequisites check and a 2-hour elective |
