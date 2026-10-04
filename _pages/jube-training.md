@@ -19,7 +19,7 @@ the first session.
 **This page is the offer.** Fees, payment schedule and inclusions are published here in
 full, with nothing held back for a sales call.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
 
@@ -186,6 +186,6 @@ Message the developer on WhatsApp or email, and ask for a demo first if you want
 You will get a proposal built around your own technical and regulatory circumstances,
 with no surprises in the price.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>

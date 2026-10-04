@@ -8,14 +8,13 @@ description: "Four flat-fee Jube support tiers, from USD 350 to USD 2,400 a mont
 <img src="/support.png" alt="Jube Support" width="160" loading="lazy" style="float:left;width:160px;max-width:28%;height:auto;margin:0.25rem 1.5rem 0.5rem 0;">
 
 Jube is open source and free to use. Support runs on four flat-fee tiers (Sandbox, Growth, Scale and Enterprise) sized
-to your deployment rather than to a block of hours, with no routine overage billing. Training and larger project work
-are fixed fee. See
-[Training](/jube-training/) and [Project engagements](#project-engagements) below.
+to your deployment rather than to a block of hours, with no routine overage billing. Training is a separate fixed-fee
+offer: see [training and implementation](/jube-training/).
 
 **This page is the offer.** Fees, inclusions and response commitments are published in full below, with nothing held
 back for a sales call.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
 
@@ -40,8 +39,7 @@ the one below it:
 - Scale: adds advanced platform abstraction advisory and cross-tenant architecture.
 - Enterprise: adds everything under [Enterprise support](#enterprise-support) below.
 
-Ad hoc support is available at Jube's discretion, priced per engagement. Larger work is priced separately
-as [project engagements](#project-engagements). Not sure which tier fits? Get in touch with your environment, regions
+Ad hoc support is available at Jube's discretion, priced per engagement. Not sure which tier fits? Get in touch with your environment, regions
 and monthly transaction volume, and Jube will write a proposal around your technical and regulatory circumstances. The
 prices above are the prices, so there are no surprises in it. Replies typically go out within a day.
 
@@ -87,18 +85,9 @@ terms are in the [JTOS](/agreements/jtos-version-1-8).
 
 Running mission-critical infrastructure and want a named technical authority on it?
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Ask about Enterprise</a>
 </p>
-
----
-
-## Project engagements
-
-Work too large for a monthly tier, such as a major upgrade, a cluster build or a migration, is scoped and priced as a
-fixed fee under its own Work Order, agreed before anything begins, on the same basis as
-[training and implementation](/jube-training/). Your tier can still be spent however you like. Projects exist for work
-where a scoped plan and a known price make more sense than running it through support.
 
 ---
 
@@ -107,6 +96,6 @@ where a scoped plan and a known price make more sense than running it through su
 Message the developer on WhatsApp or email to talk through your tier. You will get a proposal built around your own
 technical and regulatory circumstances, at the published prices.
 
-<p>
+<p class="text-center">
   <a class="button button--primary button--small" href="/contact/">Get in touch</a>
 </p>
