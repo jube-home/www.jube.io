@@ -22,7 +22,7 @@ menu__settings:
         - title: 'GitHub'
           url: 'https://github.com/jube-home/aml-fraud-transaction-monitoring'
         - title: 'Jube v2 design [PDF, 75 pages]'
-          url: '/v2JubeProductDesignBuildHandoff.pdf'
+          url: '/v2JubeDesignBuildHandoff.pdf'
     - title: 'Get in touch'
       url: '/contact'
 
