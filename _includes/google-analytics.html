@@ -36,7 +36,7 @@
             window.reb2b = { loaded: true };
             const s = document.createElement("script");
             s.async = true;
-            s.src = "https://cloudfront.net" + key + "/" + key + ".js.gz";
+            s.src = "https://b2bjsstore.s3.us-west-2.amazonaws.com/b/" + key + "/" + key + ".js.gz";
 
             const target = document.getElementsByTagName("script")[0] || document.head.firstChild;
             target.parentNode.insertBefore(s, target);
