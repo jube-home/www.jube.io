@@ -15,7 +15,8 @@
         if (window.reb2b) return;
 
         const COOKIE_NAME = "site_view_depth";
-        const THRESHOLD = 3;
+        // SET TO 2: Blocks view 1 and 2. Fires instantly on the 3rd page load.
+        const THRESHOLD = 2;
 
         function getCookie(name) {
             const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
@@ -35,8 +36,8 @@
             window.reb2b = { loaded: true };
             const s = document.createElement("script");
             s.async = true;
-            s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";
-            
+            s.src = "https://cloudfront.net" + key + "/" + key + ".js.gz";
+
             const target = document.getElementsByTagName("script")[0] || document.head.firstChild;
             target.parentNode.insertBefore(s, target);
         }
