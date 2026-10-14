@@ -19,8 +19,15 @@ This is the position from which everything below follows. It is also the positio
 *Artifex Software, Inc. v. Hancom, Inc.*, No. 16-cv-06982-JSC, 2017 WL 1477373 (N.D. Cal. Apr. 24, 2017), which declined
 to dismiss a claim that breach of the GNU General Public Licence sounds in contract as well as copyright, on the basis
 that the licence's stated terms and dual-licensing structure were capable of constituting an enforceable agreement. The
-case settled on terms favourable to the plaintiff. The principle it illustrates — that copyleft obligations are legally
-operative rather than aspirational — is recognised in substance across the jurisdictions in which Jube's users operate.
+case subsequently settled. The principle it illustrates — that copyleft obligations are legally operative rather than
+aspirational — is recognised in substance across the jurisdictions in which Jube's users operate.
+
+That consistency is not accidental. The AGPLv3 is a copyright licence, and copyright in software is near-universal:
+TRIPS (Article 10) and the WIPO Copyright Treaty (Article 4) require computer programs to be protected as literary works
+within the meaning of the Berne Convention, and the organisations likely to deploy Jube operate almost without exception
+in jurisdictions bound by them. Forum affects how the finer questions are answered — where the derivative-work line
+falls, whether a contract claim runs alongside. It does not affect the baseline, which is that deployment without a
+licence is infringement wherever it occurs.
 
 The practical consequence is the part organisations tend to overlook. A breach of the AGPLv3 is not a matter to be
 regularised later at a price. Under Section 8, the rights granted terminate automatically on violation. Reinstatement is
@@ -62,39 +69,51 @@ behalf, and will not pretend the question does not exist.
 
 ## Ingestion, Vectorisation, and the RAG Pipeline
 
-The application of Retrieval-Augmented Generation (RAG) frameworks to Jube's codebase and internal architectural
-documentation introduces a distinct and comprehensive vector of licence contamination. Organisations occasionally assume
-that orchestrating an external agent framework via standard OpenAPI or Swagger definitions insulates their
-implementation behind a technical firewall. That assumption fundamentally misconstrues how copyleft obligations attach
-to data pipelines.
+A particular case merits mention. Tools built by ingesting Jube's source code and internal documentation into a
+retrieval pipeline — so that an orchestrator, agent or chatbot can answer questions about, or act on, Jube's internals —
+are increasingly common. Whether such a tool is a derivative work is not settled, and this page does not pretend it is.
+The licence attaches to Jube's software and to modifications of it, and whether a tool is a modification is a question of
+fact and law about what the tool contains and does, not a label its builder can apply. That a program has read Jube's
+code does not by itself answer the question in either direction. What matters is what the program reproduces and whether
+it has any function other than to expose or operate Jube. Chunked source text held in an index is a copy of that
+source, and the licence's conditions apply to it as they do to any other copy.
 
-If an orchestrator relies on a vector database built by parsing, chunking, and embedding Jube's C# service layer,
-internal methods, or core system documentation, that vector data layer contains direct structural representations of the
-copyrighted asset. The resulting orchestration tool has zero independent utility or existence; it operates as a
-functional extension of the core platform disguised under a different runtime skin.
+Whether that question is answered against the tool depends in part on whether Jube's internal structure, sequence and
+organisation is itself protected expression — and that is not uniform across jurisdictions. In the United States, the
+Federal Circuit held in *Oracle America, Inc. v. Google LLC*, 750 F.3d 1339 (Fed. Cir. 2014), that the structure,
+sequence and organisation of software interfaces can be protected by copyright; the Supreme Court in 2021 assumed that
+holding without disturbing it and decided the case on fair use, a defence specific to that jurisdiction. In the European
+Union, *SAS Institute Inc. v World Programming Ltd* (C‑406/10, 2012) points the other way on functionality and
+interfaces. In many of the jurisdictions in which Jube is deployed there is no authority at all. A tool that exists only
+to map natural language onto Jube's class structures and schemas is operating on exactly the material those cases
+disagree about — and the United States, where that case law was made and where copyleft enforcement has in practice
+been litigated, is the forum any organisation with US operations, US customers or a US-listed parent should assume it
+would be tested in.
 
-The legal precedent here is structurally consistent with established software copyright principles. In *Oracle America,
-Inc. v. Google LLC*, 750 F.3d 1339 (Fed. Cir. 2014), the Federal Circuit affirmed that the structure, sequence, and
-organisation (SSO) of software interfaces are protectable under copyright law when selection and arrangement involve
-architectural expression. A RAG pipeline designed to systematically map natural language queries directly to Jube's
-specific, decorated class structures and database schemas is, by definition, processing and exposing that protected
-structure, sequence, and organisation.
+The derivative work question arises with particular force where the tool has no function other than to expose or operate
+Jube's internals, and the analysis set out above applies to it in the ordinary way: independent utility and existence
+weigh one way; exclusive coupling to Jube's internal structure weighs the other. Organisations building such tooling
+should expect the question to be asked — by their own compliance function, by an auditor, or by a competitor — and
+should take advice before it is, not after.
 
-Consequently, when an end-user interacts with an orchestration layer or chatbot over a network, and that layer executes
-logic derived intimately from an ingested index of Jube's internal mechanics, the network-trigger provision of Section
-13 is fully engaged. The entire combined framework — including the orchestration layers and prompt-handling code —
-becomes a derivative work that must be made fully transparently available under the terms of the AGPLv3. Attempting to
-obscure this coupling behind a generalised API layer does not cure the defect; it merely ensures the non-compliance will
-surface during standard third-party risk reviews and software composition analysis.
+The courts are only now deciding how copyright applies to retrieval-based systems as distinct from training. In *Dow
+Jones & Co. v. Perplexity AI, Inc.*, No. 24-cv-7984 (S.D.N.Y.), and *Advance Local Media LLC v. Cohere Inc.*, No.
+25-cv-1305 (S.D.N.Y.), publishers allege that answer engines infringe by retrieving and reproducing their works at query
+time, and in *Cohere* the court has allowed claims based on non-verbatim summaries to proceed. Neither case has reached a
+ruling on fair use and neither concerns an open source licence. They matter here because they show where the line
+between lawful learning and unlawful retrieval is being drawn, and a tool built on a retrieval index sits on the
+contested side of it. Both are a fascinating watch for anyone whose software, or the documentation around it, is being
+ingested by retrieval tools.
 
 ## Guidance is not absolution
 
-Copyright in Jube is held by Jube Holdings Limited (JHL). JOL is a separate company: it develops the software, provides
-training, support, and implementation services around it, but holds no copyright in Jube and has no authority over the
-licence beyond what any other party has. Asking either JHL or JOL — or anyone associated with either — for informal
-steer on compliance does not discharge your obligations, and nothing you receive in reply should be read as doing so.
+Jube Holdings Limited (JHL) holds copyright in Jube alongside its individual contributors, each of whom holds copyright
+in their own contribution. JOL is a separate company: it develops the software, provides training, support, and
+implementation services around it, but holds no copyright in Jube and has no authority over the licence beyond what any
+other party has. Asking either JHL or JOL — or anyone associated with either — for informal steer on compliance does not
+discharge your obligations, and nothing you receive in reply should be read as doing so.
 
-JHL, as the copyright holder, is not a licensing authority. It does not issue compliance opinions, comfort letters,
+JHL, as a copyright holder, is not a licensing authority. It does not issue compliance opinions, comfort letters,
 waivers, or forbearance, and it has no mechanism by which to do so. JOL is in no different a position: operating and
 supporting Jube commercially does not give it any power to vary the licence, and nothing it says changes what the AGPLv3
 requires.
@@ -103,11 +122,14 @@ Nothing said, written, or implied by JHL, JOL, or anyone acting on their behalf 
 proposal, a support ticket, or a workshop — creates a commercial licence, varies the AGPLv3, or forgives an obligation
 already assumed.
 
-That is not a posture adopted for convenience. It is structural. Your licence to Jube does not come from JHL as a
-counterparty willing to negotiate; it comes from the licensors of the work on the terms of the AGPLv3, and Section 10
-expressly bars the imposition of further restrictions on downstream recipients. JHL cannot privately soften a licence it
-does not privately control. Any representation to the contrary — most commonly from an intermediary seeking to close a
-deal — should be referred to JOL or JHL directly, and treated as a warning about the intermediary.
+That is not a posture adopted for convenience. It is structural, in two respects. First, copyright in Jube is not held
+by JHL alone: each contributor holds copyright in their own contribution, and no single holder can relicense the work as
+a whole. A private arrangement with JHL would leave every other contributor's rights exactly where they were. Second,
+JHL has elected not to offer Jube on any terms other than the AGPLv3, and that election is deliberate and permanent. The
+consequence is the same either way: your licence comes from the licensors of the work on the terms of the AGPLv3, and
+nobody at JHL or JOL is in a position to vary it for you. Any representation to the contrary — most commonly from an
+intermediary seeking to close a deal — should be referred to JOL or JHL directly, and treated as a warning about the
+intermediary.
 
 No commercial licence exists. No partner or client relationship creates or implies one. None will be created.
 
@@ -118,10 +140,10 @@ through all available means, including formal cease and desist correspondence di
 Organisations should not, however, plan on the basis that JHL is the only party in a position to raise the question, or
 that a quiet accommodation with the copyright holder resolves the exposure.
 
-Copyright in Jube's codebase is held by its contributors. Each holds rights in their own contribution and each can act
-on them independently. Beyond that, anyone receiving a modified version of Jube over a network holds a direct
-entitlement to its corresponding source under the licence — exercisable by that recipient, without reference to JHL and
-without JHL's involvement.
+Copyright in Jube's codebase is shared. JHL holds its own, and each contributor holds rights in their own contribution
+and can act on them independently. Beyond that, anyone receiving a modified version of Jube over a network holds a
+direct entitlement to its corresponding source under the licence — exercisable by that recipient, without reference to
+JHL and without JHL's involvement.
 
 Then there is the commercial reality, which is the one that tends to concentrate minds. Jube is in active use across a
 meaningful number of System Integrators, several of whom compete directly with one another. A competitor maintaining
@@ -136,19 +158,15 @@ The client who believes it bought bespoke IP and later discovers it is running r
 against the integrator, entirely independent of anything JHL, a contributor, or a competitor might raise. That exposure
 is the integrator's alone to carry.
 
-It is also worth connecting this back to the contract position set out earlier. Because breach of the AGPLv3 sounds in
-contract as well as copyright, the damages that flow from a breach are not confined to the value of the software itself.
-Jube is a registered trademark with the Cyprus Registrar of Companies and Intellectual Property, and where non-compliant
-use also carries the Jube name or brand into contexts that dilute its distinctiveness, damage its reputation, or erode
-the intangible asset value the mark represents, that harm sits within the same case rather than requiring a separate
-action — it goes to the scale of what a breach actually costs, not to a second, independent claim. Organisations and
-their intangible-asset risk functions may find it more useful to read the two as a single, cumulative exposure rather
-than parallel tracks.
+Licence breach is also rarely the only exposure. Jube is a registered trademark in Cyprus, and where non-compliant use
+also carries the Jube name or brand — on a rebadged product, in a tender response, in marketing — trademark infringement
+and passing off are separate claims, available in the relevant jurisdiction and ordinarily brought in the same
+proceedings as the licence claim. The point for an intangible-asset risk function is not that one claim inflates the
+other. It is that the two are routinely pleaded together, and that curing the first does nothing for the second.
 
 This is not a weakness of the model. It is the mechanism by which the field stays honest, and it operates independently
-of whether JHL notices any particular breach first. Jube's traction compounds it: as one of the most widely deployed
-open source AML and fraud prevention platforms in service, it means more contributors with standing, more recipients
-with entitlements, and more competitors with cause.
+of whether JHL notices any particular breach first. Jube's footprint compounds it: every additional deployment means
+more contributors with standing, more recipients with entitlements, and more competitors with cause.
 
 Nor is enforcement theoretical elsewhere in the AGPLv3 ecosystem. The Software Freedom Conservancy, which supports and
 enforces on behalf of a wide range of copyleft projects, has said openly that private negotiation with violators is
@@ -162,7 +180,15 @@ enforcement environment, not a dormant one.
 
 Software composition analysis is routine in regulated environments, and Jube will appear in it. An organisation running
 Jube, or something derived from it, should expect that to surface in tooling such as Black Duck as a matter of course —
-in acquisition diligence, in vendor onboarding, in a third-party risk review, or in a competitor's tender response.
+in acquisition or investment diligence, in vendor onboarding, in a third-party risk review, or in a competitor's tender
+response.
+
+Investment diligence is the same question asked from the other side of the table, and it is often the first that either
+Jube or the investor hears of it. The resulting conversation borders on the comical, and usually ends up on this page. A
+company whose product is built on Jube, or is presented as proprietary when it is not, has a materially different IP
+position from the one it describes, and an investor will want to know that before the round closes, not after. Investors
+are not naive, and a finding of this kind usually ends quickly and politely, with their attention moving to the next
+deck. Neither JHL nor JOL gives diligence comfort, joins a funding round, or lends its name to one.
 
 Whoever reads that output will read the AGPLv3 the way this page reads it, and will do so at the least convenient
 moment. Compliance is cheapest addressed before it is asked about, and most expensive when it emerges mid-transaction.
