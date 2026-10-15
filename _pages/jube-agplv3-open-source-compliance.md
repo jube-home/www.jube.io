@@ -9,6 +9,12 @@ Jube is distributed exclusively under the GNU Affero General Public License v3 (
 modify. That is not a commercial positioning statement — it is the foundation on which Jube is built, and it will not
 change.
 
+This page exists because the licence has, on occasion, been read by some in the way that suited them rather than the
+way it is written — most often by intermediaries presenting Jube to their own clients as something it is not. Nothing
+here changes the licence or adds to it. It sets out what the AGPLv3 already requires, so that the organisations relying
+on Jube in good faith can see exactly where they stand, and the organisations relying on it in some other spirit cannot
+claim they were not told.
+
 ## The licence is a contract
 
 The AGPLv3 is not a courtesy, a convention, or a statement of intent. It is the instrument under which every right you
