@@ -49,6 +49,21 @@ auditor, a regulator, or a board.
   proprietary to their creator, as is customary in open source software of this nature. The licence concerns the
   software, not how you use it.
 
+## If you are the end user
+
+If you are a bank, a payment company, a fintech, or any other organisation running Jube for your own use — as released,
+configured through its documented features, with your own systems calling it over the network — then your position
+under the AGPLv3 is the same as your position with Redis 8, Grafana, or MinIO. All three are AGPLv3. You almost
+certainly run at least one of them today, on exactly that basis, and your open-source review process signed it off some
+time ago. Calling an AGPLv3 service from your own code does not make your code a covered work, and running the service
+unmodified gives you nothing to publish. Jube is the same question with a different name in the scan, and the answer is
+the same.
+
+You should feel comfortable integrating Jube. The remainder of this page is about organisations that change Jube's
+software, or build products on its internals and sell them to others. If that is not you, you have just read the part
+that applies to you — and you now know the one question to ask anyone who delivered Jube to you: which part applies to
+them?
+
 ## Derivative works
 
 Building services around Jube is entirely compatible with the AGPLv3. The boundary between independent tooling and a
