@@ -1,0 +1,3905 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme="jube">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
+<title>Data Access, Migrations and Archive | Jube</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Data Access, Migrations and Archive" />
+<meta name="author" content="Jube Holdings Limited" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<meta name="twitter:description" property="og:description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<link rel="canonical" href="https://www.jube.io/docs/Testing/DataAccessAndMigrations.html" />
+<meta property="og:url" content="https://www.jube.io/docs/Testing/DataAccessAndMigrations.html" />
+<meta property="og:site_name" content="Jube" />
+<meta property="og:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta name="twitter:title" content="Data Access, Migrations and Archive" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Jube Holdings Limited" />
+<meta name="google-site-verification" content="" />
+<meta name="msvalidate.01" content="" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jube Holdings Limited"},"description":"Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee.","headline":"Data Access, Migrations and Archive","image":"https://www.jube.io/assets/img/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.jube.io/assets/img/jube-logo.png"},"name":"Jube Holdings Limited"},"url":"https://www.jube.io/docs/Testing/DataAccessAndMigrations.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <link rel="icon" href="/assets/img/jube-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="min-h-screen bg-base-100 text-base-content antialiased">
+  <a href="/" class="w-full bg-neutral text-neutral-content flex justify-center px-5 no-underline group" data-pagefind-ignore><div class="w-full max-w-7xl py-2 flex items-baseline gap-x-3 gap-y-0.5 flex-wrap"><span class="text-sm font-semibold tracking-tight">Open-source agentic AI for transaction monitoring. <span class="text-primary">Just ask Jooby.</span></span><span class="mono text-[11px] uppercase tracking-widest text-neutral-content/60 group-hover:text-neutral-content">What's Jube? →</span></div></a>
+<header class="w-full border-b border-base-300 flex justify-center px-5 bg-base-100/95 backdrop-blur sticky top-0 z-20">
+  <div class="navbar w-full max-w-7xl px-0 py-2 gap-4 flex-nowrap">
+    <div class="flex-none flex items-center gap-2">
+      <button id="mnav-toggle" class="btn btn-ghost btn-sm btn-square lg:hidden" aria-label="Menu"><span class="text-lg leading-none">☰</span></button>
+      <a href="/" class="flex shrink-0 items-center gap-0.5 text-2xl font-semibold tracking-tight no-underline"><img src="/assets/img/jube-logo.png" alt="" class="h-11 w-auto"><span>jube</span></a>
+    </div>
+    <div id="sx" class="relative hidden md:block flex-1 max-w-md min-w-0" data-pf="/pagefind/pagefind.js" data-pagefind-ignore>
+      <label class="input input-sm w-full bg-base-200 border-base-300 flex items-center gap-2 focus-within:border-primary">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="text-base-content/50 shrink-0" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <input id="sx-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search documentation, training, support…" class="grow min-w-0 text-sm" role="combobox" aria-expanded="false" aria-controls="sx-list" aria-autocomplete="list" aria-label="Search">
+        <span class="flex gap-1 shrink-0"><kbd class="kbd kbd-xs">⌘</kbd><kbd class="kbd kbd-xs">K</kbd></span>
+      </label>
+      <div id="sx-panel" class="absolute left-0 w-[min(38rem,calc(100vw-2.5rem))] top-full mt-2 z-50 rounded-box border border-base-300 bg-base-100 shadow-xl overflow-hidden" hidden>
+        <ul id="sx-list" role="listbox" class="list-none m-0 p-1 max-h-[65vh] overflow-y-auto"></ul>
+        <div id="sx-foot" class="mono text-[11px] text-base-content/50 px-3 py-2 border-t border-base-300 flex gap-3 flex-wrap"></div>
+      </div>
+    </div>
+    <nav class="flex flex-none items-center gap-1 ml-auto text-sm">
+      <a href="https://jube.io/v2JubeDesignBuildHandoff.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm font-medium"><span class="badge badge-accent badge-xs mono">v2</span><span class="hidden sm:inline">Get an early look at Version 2</span><span class="sm:hidden">Early look</span></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="btn btn-ghost btn-sm btn-square" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+    </nav>
+  </div>
+</header>
+<div id="mnav" class="lg:hidden w-full border-b border-base-300 bg-base-100 px-5 py-4 max-h-[70vh] overflow-y-auto" hidden>
+  <ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70 menu-active">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+
+</div>
+
+  <div class="w-full flex justify-center">
+    <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] xl:grid-cols-[auto_minmax(0,1fr)_280px] gap-8 px-5">
+      <aside id="side" class="hidden lg:block py-6 sticky top-16 self-start max-h-[calc(100vh-4rem)] overflow-y-auto transition-[width] duration-200 w-10">
+  <div class="flex pb-2"><button id="side-toggle" class="btn btn-ghost btn-sm btn-square" aria-label="Show menu" title="Show menu"><span class="text-lg leading-none" data-icon>☰</span></button></div>
+  <div id="side-nav" hidden><ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70 menu-active">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+</div>
+</aside>
+
+      <main class="py-8 min-w-0 flex flex-col">
+        <div data-pagefind-body><div class="flex flex-col gap-6">
+  <div class="breadcrumbs text-xs mono p-0 text-base-content/60"><ul><li><a href="/docs/">Documentation</a></li><li>Testing</li><li>Data Access, Migrations and Archive</li></ul></div>
+  <article class="prose max-w-none prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-pre:bg-neutral prose-pre:text-neutral-content">
+    <h1 id="data-access-migrations-and-archive">Data Access, Migrations and Archive</h1>
+
+<p>Tests of the data layer itself: repositories, migrations, reporting SQL, resilient Npgsql behaviour, archive writes,
+preservation and volume characteristics.</p>
+
+<h2 id="archive-writes">Archive writes</h2>
+
+<h3 id="archivereprocessingwritetests">ArchiveReprocessingWriteTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.ArchiveWrites.ArchiveReprocessingWriteTests</code> — 7 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UnchangedKeysAreLeftAloneWithoutAVersionAsync</code></td>
+      <td>Fact</td>
+      <td>Unchanged keys are left alone without a version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AChangedKeyIsVersionedAndUpdatedInPlaceAsync</code></td>
+      <td>Fact</td>
+      <td>A changed key is versioned and updated in place.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NewKeysAreAddedAndKeysNoLongerProducedAreRemovedWithTheirVersionsAsync</code></td>
+      <td>Fact</td>
+      <td>New keys are added and keys no longer produced are removed with their versions.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnotherRecordsKeysAreNeverTouchedAsync</code></td>
+      <td>Fact</td>
+      <td>Another records keys are never touched.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheArchiveRecordIsVersionedAndUpdatedAsync</code></td>
+      <td>Fact</td>
+      <td>The archive record is versioned and updated.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ABatchUpdatesEveryRecordInOneGoAndReportsTheOnesThatAreGoneAsync</code></td>
+      <td>Fact</td>
+      <td>A batch updates every record in one go and reports the ones that are gone.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpdatingAnArchiveRecordThatDoesNotExistThrowsAsync</code></td>
+      <td>Fact</td>
+      <td>Updating an archive record that does not exist throws.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="migrations">Migrations</h2>
+
+<h3 id="abstractioncalculationcoderonlymigrationtests">AbstractionCalculationCoderOnlyMigrationTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Migrations.AbstractionCalculationCoderOnlyMigrationTests</code> — 26 tests. Category: Unit. Collection:
+EvalExpressionRegistry.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EachArithmeticTypeBecomesItsFluentMethod</code></td>
+      <td>Theory</td>
+      <td>Each arithmetic type becomes its fluent method.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SpacesInAnAbstractionNameBecomeUnderscoresAsTheEngineDoes</code></td>
+      <td>Fact</td>
+      <td>Spaces in an abstraction name become underscores as the engine does.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SurroundingWhiteSpaceIsTrimmed</code></td>
+      <td>Fact</td>
+      <td>Surrounding white space is trimmed.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">OnlyTheFourArithmeticTypesAreConverted</code></td>
+      <td>Theory</td>
+      <td>Only the four arithmetic types are converted.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ANameThatCannotBeATokenIsNotConvertedSoNothingCanBeInjected</code></td>
+      <td>Theory</td>
+      <td>A name that cannot be a token is not converted so nothing can be injected.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">APlanConvertsWhatItCanAndKeepsAPlaceholderForWhatItCannot</code></td>
+      <td>Fact</td>
+      <td>A plan converts what it can and keeps a placeholder for what it cannot.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ThePlaceholderRecordsWhatTheCalculationWasSoDroppingTheColumnsLosesNothing</code></td>
+      <td>Theory</td>
+      <td>The placeholder records what the calculation was so dropping the columns loses nothing.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ThePlaceholderIsAlwaysASingleCommentLineSoANameCannotInjectCode</code></td>
+      <td>Fact</td>
+      <td>The placeholder is always a single comment line so a name cannot inject code.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ThePlaceholderCapsVeryLongNames</code></td>
+      <td>Fact</td>
+      <td>The placeholder caps very long names.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">APlaceholderIsNotAValidFunctionSoItCannotBeActivatedByAccident</code></td>
+      <td>Fact</td>
+      <td>A placeholder is not a valid function so it cannot be activated by accident.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">APlanIgnoresRowsThatAreAlreadyCoderOrHaveNoType</code></td>
+      <td>Fact</td>
+      <td>A plan ignores rows that are already coder or have no type.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">APlanOfNothingIsEmpty</code></td>
+      <td>Fact</td>
+      <td>A plan of nothing is empty.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheMigrationCarriesAVersionAndHasNoDownStep</code></td>
+      <td>Fact</td>
+      <td>The migration carries a version and has no down step.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AMigratedCalculationGivesTheSameResultAsTheOldArithmetic</code></td>
+      <td>Theory</td>
+      <td>A migrated calculation gives the same result as the old arithmetic.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ADivisionByZeroStillStoresZeroNotNaNOrInfinity</code></td>
+      <td>Fact</td>
+      <td>A division by zero still stores zero not na n or infinity.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnOverflowStillStoresZero</code></td>
+      <td>Fact</td>
+      <td>An overflow still stores zero.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AMissingAbstractionStillReadsAsZeroRatherThanAnException</code></td>
+      <td>Fact</td>
+      <td>A missing abstraction still reads as zero rather than an exception.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NamesWithSpacesResolveAgainstTheUnderscoredAbstractionKeys</code></td>
+      <td>Fact</td>
+      <td>Names with spaces resolve against the underscored abstraction keys.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AMigratedScriptPassesTheSameParseTheEngineAppliesAtSync</code></td>
+      <td>Fact</td>
+      <td>A migrated script passes the same parse the engine applies at sync.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AMigratedScriptNamingAnAbstractionThatDoesNotExistIsRefusedAtTranslation</code></td>
+      <td>Fact</td>
+      <td>A migrated script naming an abstraction that does not exist is refused at translation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ZeroIfUndefinedKeepsFiniteNumbersAndZeroesTheRest</code></td>
+      <td>Theory</td>
+      <td>Zero if undefined keeps finite numbers and zeroes the rest.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ZeroIfUndefinedCompletesAFluentCalculationSoTheOldStoredZeroIsAChoice</code></td>
+      <td>Fact</td>
+      <td>Zero if undefined completes a fluent calculation so the old stored zero is a choice.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheDtoNoLongerExposesTheArithmeticSurface</code></td>
+      <td>Fact</td>
+      <td>The dto no longer exposes the arithmetic surface.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ThePocoNoLongerMapsTheRemovedColumnsSoLinq2DbNeverSelectsThem</code></td>
+      <td>Fact</td>
+      <td>The poco no longer maps the removed columns so linq2 db never selects them.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MessagePackKeysOfTheRemainingPropertiesAreUnchangedSoTheRemovedSlotsAreReserved</code></td>
+      <td>Fact</td>
+      <td>Message pack keys of the remaining properties are unchanged so the removed slots are reserved.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MessagePackKeysOfTheVersionPocoAreUnchangedSoTheRemovedSlotsAreReserved</code></td>
+      <td>Fact</td>
+      <td>Message pack keys of the version poco are unchanged so the removed slots are reserved.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="listdictionaryvalueuniquenessmigrationtests">ListDictionaryValueUniquenessMigrationTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Migrations.ListDictionaryValueUniquenessMigrationTests</code> — 9 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListValueDuplicatesAreDedupedKeepingNewestWithAuditAndApprovalAsync</code></td>
+      <td>Fact</td>
+      <td>List value duplicates are deduped keeping newest with audit and approval.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListValueThreeOrMoreDuplicatesKeepsOnlyTheNewestAsync</code></td>
+      <td>Fact</td>
+      <td>List value three or more duplicates keeps only the newest.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListValueMultipleDuplicateGroupsInTheSameListAreDedupedIndependentlyAsync</code></td>
+      <td>Fact</td>
+      <td>List value multiple duplicate groups in the same list are deduped independently.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListValueDuplicatesAcrossDifferentListsAreDedupedIndependentlyAsync</code></td>
+      <td>Fact</td>
+      <td>List value duplicates across different lists are deduped independently.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListValueAlreadyDeletedRowSharingTheValueIsLeftUntouchedAsync</code></td>
+      <td>Fact</td>
+      <td>List value already deleted row sharing the value is left untouched.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListValueRunningTheMigrationAgainWithNothingNewToDedupeIsANoOpAsync</code></td>
+      <td>Fact</td>
+      <td>List value running the migration again with nothing new to dedupe is a no op.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListValueKeepsTheNewestNonExpiredDuplicateOverAnExpiredNewerOneAsync</code></td>
+      <td>Fact</td>
+      <td>List value keeps the newest non expired duplicate over an expired newer one.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DictionaryKvpDuplicatesAreDedupedKeepingNewestWithAuditAndApprovalAsync</code></td>
+      <td>Fact</td>
+      <td>Dictionary kvp duplicates are deduped keeping newest with audit and approval.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DictionaryKvpKeepsTheNewestNonExpiredDuplicateOverAnExpiredNewerOneAsync</code></td>
+      <td>Fact</td>
+      <td>Dictionary kvp keeps the newest non expired duplicate over an expired newer one.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pentesthardeningmigrationtests">PenTestHardeningMigrationTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Migrations.PenTestHardeningMigrationTests</code> — 17 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TokensValidFromColumnExistsAsync</code></td>
+      <td>Fact</td>
+      <td>Tokens valid from column exists.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TokensValidFromIsANullableTimestampWithoutTimeZoneAsync</code></td>
+      <td>Fact</td>
+      <td>Tokens valid from is a nullable timestamp without time zone.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryMigrationOfTheBranchIsRecordedAndTheRemovedOnesAreNotAsync</code></td>
+      <td>Fact</td>
+      <td>Every migration of the branch is recorded and the removed ones are not.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UserLogoutHasTheIntendedColumnsTypesAndNullabilityAsync</code></td>
+      <td>Fact</td>
+      <td>User logout has the intended columns types and nullability.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UserLogoutIdIsTheIdentityPrimaryKeyAndInsertsGetAnIdAsync</code></td>
+      <td>Fact</td>
+      <td>User logout id is the identity primary key and inserts get an id.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UserLogoutHasItsTwoIndexesInTheIntendedColumnOrderAsync</code></td>
+      <td>Fact</td>
+      <td>User logout has its two indexes in the intended column order.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AllowSynchronisationExistsAndTheAdministratorRoleHoldsItAsync</code></td>
+      <td>Fact</td>
+      <td>Allow synchronisation exists and the administrator role holds it.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryNameUniqueIndexExistsAsync</code></td>
+      <td>Fact</td>
+      <td>Every name unique index exists.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">VisualisationRegistryNamesAreUniquePerTenantIgnoringCaseAmongLiveRowsAsync</code></td>
+      <td>Fact</td>
+      <td>Visualisation registry names are unique per tenant ignoring case among live rows.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AUniqueViolationIsMappedToTheNameDuplicateValidationOutcomeAsync</code></td>
+      <td>Fact</td>
+      <td>A unique violation is mapped to the name duplicate validation outcome.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">OtherDatabaseErrorsAreNotSwallowedAsync</code></td>
+      <td>Fact</td>
+      <td>Other database errors are not swallowed.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UserRegistryNameUniqueIndexExistsAndEnforcesAcrossTenantsIgnoringCaseAsync</code></td>
+      <td>Fact</td>
+      <td>User registry name unique index exists and enforces across tenants ignoring case.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DuplicateRenamingIsCollisionProofScopedAndIdempotentAsync</code></td>
+      <td>Fact</td>
+      <td>Duplicate renaming is collision proof scoped and idempotent.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DuplicateRenamingWithoutAScopeColumnCoversTheWholeTableAsync</code></td>
+      <td>Fact</td>
+      <td>Duplicate renaming without a scope column covers the whole table.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GrantDuplicatesAreSoftDeletedKeepingTheLowestIdAndTheIndexEnforcesOneLiveGrantAsync</code></td>
+      <td>Fact</td>
+      <td>Grant duplicates are soft deleted keeping the lowest id and the index enforces one live grant.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryGrantTableAndParentColumnTheMigrationNamesExistsAsync</code></td>
+      <td>Fact</td>
+      <td>Every grant table and parent column the migration names exists.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryRoleGrantTableHasItsUniqueIndexAsync</code></td>
+      <td>Fact</td>
+      <td>Every role grant table has its unique index.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="preservation">Preservation</h2>
+
+<h3 id="entityapprovalpreservationtests">EntityApprovalPreservationTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Preservation.EntityApprovalPreservationTests</code> — 6 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ApprovalHistoryRoundTripsVerbatimAgainstPreservedVersionsAsync</code></td>
+      <td>Fact</td>
+      <td>Approval history round trips verbatim against preserved versions.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnExportWithoutAnyApprovalsImportsEverythingStillAwaitingApprovalAsync</code></td>
+      <td>Fact</td>
+      <td>An export without any approvals imports everything still awaiting approval.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AFileWithoutTheApprovalCollectionIsBlanketApprovedIncludingAnalyticsInstancesAsync</code></td>
+      <td>Fact</td>
+      <td>A file without the approval collection is blanket approved including analytics instances.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ReimportingIntoTheSameTenantReplacesTheApprovalHistoryInsteadOfAppendingAsync</code></td>
+      <td>Fact</td>
+      <td>Reimporting into the same tenant replaces the approval history instead of appending.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ASnapshotAlwaysCarriesUnpromotedExhaustiveTrialsForLosslessRollbackAsync</code></td>
+      <td>Fact</td>
+      <td>A snapshot always carries unpromoted exhaustive trials for lossless rollback.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ApprovalLookupsChunkTheEntityIdListInsteadOfSendingOneGiantInClauseAsync</code></td>
+      <td>Fact</td>
+      <td>Approval lookups chunk the entity id list instead of sending one giant in clause.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="advancedanalyticspreservationtests">AdvancedAnalyticsPreservationTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Preservation.AdvancedAnalyticsPreservationTests</code> — 10 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">FullRoundTripIntoFreshTenantReproducesEveryRowWithRemappedKeysAsync</code></td>
+      <td>Fact</td>
+      <td>Full round trip into fresh tenant reproduces every row with remapped keys.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ExportContainsNoTenantIdNoCacheAndOnlyTheCallersRowsAsync</code></td>
+      <td>Fact</td>
+      <td>Export contains no tenant id no cache and only the callers rows.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ImportedActiveVersionIsTheOneTheEngineSyncLoadsAsync</code></td>
+      <td>Fact</td>
+      <td>Imported active version is the one the engine sync loads.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ImportOverAnExistingTenantReplacesItsRowsAndSoftDeletesTheOldOnesAsync</code></td>
+      <td>Fact</td>
+      <td>Import over an existing tenant replaces its rows and soft deletes the old ones.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ExportMadeWithoutTheCollectionsStillImportsAndReplacesExistingRowsLikeTheNeighboursAsync</code></td>
+      <td>Fact</td>
+      <td>Export made without the collections still imports and replaces existing rows like the neighbours.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GenuineLegacyFileWithFourPayloadKeysImportsAndAnOlderReaderReadsTheNewFileAsync</code></td>
+      <td>Fact</td>
+      <td>Genuine legacy file with four payload keys imports and an older reader reads the new file.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TenantIdsAndModelIdsInsideTheFileAreNeverTrustedAsync</code></td>
+      <td>Fact</td>
+      <td>Tenant ids and model ids inside the file are never trusted.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ACorruptOrHostileFileIsRejectedWholeAndLeavesTheTargetUntouchedAsync</code></td>
+      <td>Theory</td>
+      <td>A corrupt or hostile file is rejected whole and leaves the target untouched.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AFailureAfterTheAnalyticsRowsAreInsertedRollsEverythingBackAsync</code></td>
+      <td>Fact</td>
+      <td>A failure after the analytics rows are inserted rolls everything back.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ACancelledImportChangesNothingAsync</code></td>
+      <td>Fact</td>
+      <td>A cancelled import changes nothing.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="exhaustivepreservationtests">ExhaustivePreservationTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Preservation.ExhaustivePreservationTests</code> — 4 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryExhaustiveTableRoundTripsWithEveryColumnAndEveryForeignKeyRemappedAsync</code></td>
+      <td>Fact</td>
+      <td>Every exhaustive table round trips with every column and every foreign key remapped.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PerParentChildrenAreNotMixedAcrossParentsOrLeakedFromOtherTenantsAsync</code></td>
+      <td>Fact</td>
+      <td>Per parent children are not mixed across parents or leaked from other tenants.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnExportMadeBeforeThePrescriptionHistogramWasCarriedStillImportsAsync</code></td>
+      <td>Fact</td>
+      <td>An export made before the prescription histogram was carried still imports.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PeekCarriesTheExhaustiveAndAnalyticsCollectionsAsync</code></td>
+      <td>Fact</td>
+      <td>Peek carries the exhaustive and analytics collections.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pocomessagepackkeysareuniquetests">PocoMessagePackKeysAreUniqueTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Preservation.PocoMessagePackKeysAreUniqueTests</code> — 2 tests.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">KeysAreUniqueAndNonNegativeWithinEveryMessagePackPoco</code></td>
+      <td>Theory</td>
+      <td>Keys are unique and non negative within every message pack poco.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryMappedColumnOfTheExhaustiveAndAdvancedAnalyticsFamiliesHasAKey</code></td>
+      <td>Theory</td>
+      <td>Every mapped column of the exhaustive and advanced analytics families has a key.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="preservationmodeltreecoveragetests">PreservationModelTreeCoverageTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Preservation.PreservationModelTreeCoverageTests</code> — 3 tests. Category: Unit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryModelTreeTableIsCarriedOrExplicitlyExcludedWithAReason</code></td>
+      <td>Fact</td>
+      <td>Every model tree table is carried or explicitly excluded with a reason.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheExclusionsAreRealUncarriedTablesWithReasons</code></td>
+      <td>Fact</td>
+      <td>The exclusions are real uncarried tables with reasons.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryApprovableKindIsCarriedSoItsHistoryCanReplay</code></td>
+      <td>Fact</td>
+      <td>Every approvable kind is carried so its history can replay.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="preservationcoveragetests">PreservationCoverageTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Preservation.PreservationCoverageTests</code> — 8 tests. Category: Convention.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryExhaustiveAndAnalyticsTableIsExportedOrExplicitlyExcludedWithAReason</code></td>
+      <td>Fact</td>
+      <td>Every exhaustive and analytics table is exported or explicitly excluded with a reason.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ExclusionsAreRealFamilyTablesThatAreNotAlsoExportedAndCarryAReason</code></td>
+      <td>Fact</td>
+      <td>Exclusions are real family tables that are not also exported and carry a reason.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheCacheIsExcludedAndTheAnalyticsPayloadCarriesExactlyTheRoundTrippedTables</code></td>
+      <td>Fact</td>
+      <td>The cache is excluded and the analytics payload carries exactly the round tripped tables.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheExhaustiveTreeSpecCoversEveryExportedExhaustiveTable</code></td>
+      <td>Fact</td>
+      <td>The exhaustive tree spec covers every exported exhaustive table.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryMappedMemberHasAUniqueMessagePackKeyOnAMessagePackObject</code></td>
+      <td>Theory</td>
+      <td>Every mapped member has a unique message pack key on a message pack object.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EnumColumnsAreWrittenAsTheirIntegerValue</code></td>
+      <td>Fact</td>
+      <td>Enum columns are written as their integer value.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EveryAnalyticsColumnSurvivesMessagePackWhetherSetOrNull</code></td>
+      <td>Theory</td>
+      <td>Every analytics column survives message pack whether set or null.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">KeysOfTheCoveredTypesNeverRenumberAndNewMembersOnlyAppend</code></td>
+      <td>Fact</td>
+      <td>Keys of the covered types never renumber and new members only append.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="reporting">Reporting</h2>
+
+<h3 id="postgressqlvalidatortests">PostgresSqlValidatorTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Reporting.PostgresSqlValidatorTests</code> — 16 tests. Category: Reporting.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AssertSelectOnlyAllowsAPlainSelect</code></td>
+      <td>Fact</td>
+      <td>Assert select only allows a plain select.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AssertSelectOnlyRejectsAnInsert</code></td>
+      <td>Fact</td>
+      <td>Assert select only rejects an insert.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AssertSelectOnlyRejectsADataModifyingCte</code></td>
+      <td>Fact</td>
+      <td>Assert select only rejects a data modifying cte.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EscapeStringLiteralWrapsInSingleQuotes</code></td>
+      <td>Fact</td>
+      <td>Escape string literal wraps in single quotes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EscapeStringLiteralDoublesEmbeddedSingleQuotes</code></td>
+      <td>Fact</td>
+      <td>Escape string literal doubles embedded single quotes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EscapeStringLiteralNeutralisesAClassicInjectionAttempt</code></td>
+      <td>Fact</td>
+      <td>Escape string literal neutralises a classic injection attempt.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesSubstitutesATopLevelFromReference</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references substitutes a top level from reference.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesFindsATableHiddenInsideAWhereClauseSubquery</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references finds a table hidden inside a where clause subquery.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesLeavesAnExplicitlySafeTableUntouched</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references leaves an explicitly safe table untouched.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesThrowsForAnUnregisteredTopLevelTable</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references throws for an unregistered top level table.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesThrowsForAnUnregisteredTableHiddenInsideASubquery</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references throws for an unregistered table hidden inside a subquery.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesThrowsForAnUnregisteredTableInAJoin</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references throws for an unregistered table in a join.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesThrowsForAnUnregisteredTableInACte</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references throws for an unregistered table in a cte.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesPreservesAnExplicitAliasForColumnQualification</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references preserves an explicit alias for column qualification.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesRejectsANonSelectEvenIfEveryTableIsRegistered</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references rejects a non select even if every table is registered.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RewriteTableReferencesOutputIsItselfReparseableAsAPureSelect</code></td>
+      <td>Fact</td>
+      <td>Rewrite table references output is itself reparseable as a pure select.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="repository">Repository</h2>
+
+<h3 id="deleteasversionrepositorytests">DeleteAsVersionRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.DeleteAsVersionRepositoryTests</code> — 8 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingARequestXPathWritesThePreDeleteRowToTheVersionTableAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting a request x path writes the pre delete row to the version table.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingARequestXPathBumpsTheCoreVersionSoTheDeleteIsItsOwnApprovableVersionAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting a request x path bumps the core version so the delete is its own approvable version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingARequestXPathWhoseVersionIsUnsetTreatsItAsVersionOneAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting a request x path whose version is unset treats it as version one.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingALockedRequestXPathThrowsAndWritesNoVersionRowAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting a locked request x path throws and writes no version row.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingAnAlreadyDeletedRequestXPathThrowsAndDoesNotVersionItTwiceAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting an already deleted request x path throws and does not version it twice.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingAnActivationRuleVersionsItBecauseItIsTheKindTheEngineGatesOnAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting an activation rule versions it because it is the kind the engine gates on.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingAListValueVersionsItThroughTheGrandparentScopedPredicateAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting a list value versions it through the grandparent scoped predicate.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeletingAModelVersionsItThroughTheDirectlyTenantedPredicateAsync</code></td>
+      <td>Fact</td>
+      <td>Deleting a model versions it through the directly tenanted predicate.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="deletetransactiontests">DeleteTransactionTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.DeleteTransactionTests</code> — 2 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ADeleteInsideACallersTransactionIsUndoneWhenThatTransactionRollsBackAsync</code></td>
+      <td>Fact</td>
+      <td>A delete inside a callers transaction is undone when that transaction rolls back.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AStandaloneDeleteCommitsTheRowAndBothVersionRowsTogetherAsync</code></td>
+      <td>Fact</td>
+      <td>A standalone delete commits the row and both version rows together.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dictionaryevalexpressionrepositorytests">DictionaryEvalExpressionRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.DictionaryEvalExpressionRepositoryTests</code> — 6 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncReturnsASeededRowAsync</code></td>
+      <td>Fact</td>
+      <td>Get async returns a seeded row.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncReturnsMultipleSeededRowsAsync</code></td>
+      <td>Fact</td>
+      <td>Get async returns multiple seeded rows.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpdateCompileStatusAsyncMarksARowAsSuccessfullyCompiledAsync</code></td>
+      <td>Fact</td>
+      <td>Update compile status async marks a row as successfully compiled.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpdateCompileStatusAsyncRecordsAFailureAndItsErrorMessageAsync</code></td>
+      <td>Fact</td>
+      <td>Update compile status async records a failure and its error message.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpdateCompileStatusAsyncOverwritesAPreviousCompileErrorOnceFixedAsync</code></td>
+      <td>Fact</td>
+      <td>Update compile status async overwrites a previous compile error once fixed.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpdateCompileStatusAsyncOnlyAffectsTheTargetedRowAsync</code></td>
+      <td>Fact</td>
+      <td>Update compile status async only affects the targeted row.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dictionarykvprevivetests">DictionaryKvpReviveTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.DictionaryKvpReviveTests</code> — 2 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ADeletedKeyValuePairIsReachableByIdAndRevivedByAnUpdateAsync</code></td>
+      <td>Fact</td>
+      <td>A deleted key value pair is reachable by id and revived by an update.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ReviveWritesOnlyTheTwoDeleteArchivesAndNoExtraVersionAsync</code></td>
+      <td>Fact</td>
+      <td>Revive writes only the two delete archives and no extra version.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="enginesnapshotprunetests">EngineSnapshotPruneTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.EngineSnapshotPruneTests</code> — 3 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ASnapshotOfAnInstanceThatStoppedReportingIsRemovedButALiveOneIsKeptAsync</code></td>
+      <td>Fact</td>
+      <td>A snapshot of an instance that stopped reporting is removed but a live one is kept.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheInstanceDoingThePruneIsNeverRemovedEvenWithoutAFreshHeartbeatAsync</code></td>
+      <td>Fact</td>
+      <td>The instance doing the prune is never removed even without a fresh heartbeat.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ASyncRemovesTheNodeRowOfAnInstanceThatStoppedReportingButKeepsLiveOnesAsync</code></td>
+      <td>Fact</td>
+      <td>A sync removes the node row of an instance that stopped reporting but keeps live ones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="entityapprovalresolvertests">EntityApprovalResolverTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.EntityApprovalResolverTests</code> — 25 tests. Category: Unit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnEntityWithNoApprovalAtAllHasNoEffectiveVersion</code></td>
+      <td>Fact</td>
+      <td>An entity with no approval at all has no effective version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheCurrentVersionRunsWhenItIsApproved</code></td>
+      <td>Fact</td>
+      <td>The current version runs when it is approved.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnUnapprovedEditFallsBackToTheLastApprovedVersion</code></td>
+      <td>Fact</td>
+      <td>An unapproved edit falls back to the last approved version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheHighestApprovedVersionWins</code></td>
+      <td>Fact</td>
+      <td>The highest approved version wins.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnApprovalForAVersionAheadOfTheCurrentRowIsIgnored</code></td>
+      <td>Fact</td>
+      <td>An approval for a version ahead of the current row is ignored.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARejectedVersionNeverRuns</code></td>
+      <td>Fact</td>
+      <td>A rejected version never runs.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARejectionOnTheCurrentVersionFallsBackToTheEarlierApprovedOne</code></td>
+      <td>Fact</td>
+      <td>A rejection on the current version falls back to the earlier approved one.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARejectionSittingBetweenTwoApprovalsDoesNotBlockTheLaterOne</code></td>
+      <td>Fact</td>
+      <td>A rejection sitting between two approvals does not block the later one.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARejectionOnAnOtherwiseApprovedVersionWinsOverTheApproval</code></td>
+      <td>Fact</td>
+      <td>A rejection on an otherwise approved version wins over the approval.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">OneApprovalIsNotEnoughWhenTwoAreRequired</code></td>
+      <td>Fact</td>
+      <td>One approval is not enough when two are required.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TwoDistinctApproversSatisfyATwoApproverThreshold</code></td>
+      <td>Fact</td>
+      <td>Two distinct approvers satisfy a two approver threshold.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheSameApproverTwiceDoesNotSatisfyATwoApproverThreshold</code></td>
+      <td>Fact</td>
+      <td>The same approver twice does not satisfy a two approver threshold.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AThresholdBelowOneIsTreatedAsOne</code></td>
+      <td>Fact</td>
+      <td>A threshold below one is treated as one.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">WithTwoRequiredTheResolverFallsBackToAFullyApprovedEarlierVersion</code></td>
+      <td>Fact</td>
+      <td>With two required the resolver falls back to a fully approved earlier version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EffectiveVersionsAreResolvedPerEntity</code></td>
+      <td>Fact</td>
+      <td>Effective versions are resolved per entity.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnEntityWithApprovalsButNoCurrentRowIsNotResolved</code></td>
+      <td>Fact</td>
+      <td>An entity with approvals but no current row is not resolved.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RejectionIsReportedForTheVersionItWasMadeAgainst</code></td>
+      <td>Fact</td>
+      <td>Rejection is reported for the version it was made against.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AVersionWithNoRowsAtAllIsPending</code></td>
+      <td>Fact</td>
+      <td>A version with no rows at all is pending.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnApprovedVersionIsNotPending</code></td>
+      <td>Fact</td>
+      <td>An approved version is not pending.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARejectedVersionIsNotPendingBecauseItNeedsAnEditToStartAgain</code></td>
+      <td>Fact</td>
+      <td>A rejected version is not pending because it needs an edit to start again.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AVersionShortOfItsApproverThresholdIsStillPending</code></td>
+      <td>Fact</td>
+      <td>A version short of its approver threshold is still pending.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">APendingDeleteResolvesToThePreDeleteVersionSoTheEntityKeepsRunning</code></td>
+      <td>Fact</td>
+      <td>A pending delete resolves to the pre delete version so the entity keeps running.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnApprovedDeleteResolvesToTheDeletedVersionSoTheEntityCanBeDropped</code></td>
+      <td>Fact</td>
+      <td>An approved delete resolves to the deleted version so the entity can be dropped.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARejectedDeleteLeavesTheEntityRunningAtThePreDeleteVersion</code></td>
+      <td>Fact</td>
+      <td>A rejected delete leaves the entity running at the pre delete version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ADeleteOfANeverApprovedEntityLeavesNothingToFallBackTo</code></td>
+      <td>Fact</td>
+      <td>A delete of a never approved entity leaves nothing to fall back to.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="getapprovedentityquerymappingtests">GetApprovedEntityQueryMappingTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.GetApprovedEntityQueryMappingTests</code> — 12 tests. Category: Unit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AVersionRowMapsOntoTheEntityItIsAVersionOf</code></td>
+      <td>Fact</td>
+      <td>A version row maps onto the entity it is a version of.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheEntityTakesTheParentIdAndNotTheIdOfTheVersionRow</code></td>
+      <td>Fact</td>
+      <td>The entity takes the parent id and not the id of the version row.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MembersTheVersionTableDoesNotCarryAreLeftUnset</code></td>
+      <td>Fact</td>
+      <td>Members the version table does not carry are left unset.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheVersionNumberIsReadFromTheVersionRow</code></td>
+      <td>Fact</td>
+      <td>The version number is read from the version row.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AVersionRowWithNoVersionNumberNeverMatchesAWantedVersion</code></td>
+      <td>Fact</td>
+      <td>A version row with no version number never matches a wanted version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheParentIdPredicateSelectsOnlyTheRequestedParents</code></td>
+      <td>Fact</td>
+      <td>The parent id predicate selects only the requested parents.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheParentIdPredicateSkipsRowsWhoseNullableParentIsNotSet</code></td>
+      <td>Fact</td>
+      <td>The parent id predicate skips rows whose nullable parent is not set.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AListValueVersionMapsOntoTheValueItIsAVersionOf</code></td>
+      <td>Fact</td>
+      <td>A list value version maps onto the value it is a version of.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ADeletedRowIsRecognisedAsDeletedSoAnApprovedDeleteTakesEffect</code></td>
+      <td>Fact</td>
+      <td>A deleted row is recognised as deleted so an approved delete takes effect.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnUndeletedRowIsNotTreatedAsDeletedWhetherTheFlagIsZeroOrUnset</code></td>
+      <td>Fact</td>
+      <td>An undeleted row is not treated as deleted whether the flag is zero or unset.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheVersionRowBehindAPendingDeleteMapsBackToAnUndeletedEntity</code></td>
+      <td>Fact</td>
+      <td>The version row behind a pending delete maps back to an undeleted entity.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AVersionTypeWithoutTheNamedParentPropertyIsRefusedWhenTheQueryIsBuilt</code></td>
+      <td>Fact</td>
+      <td>A version type without the named parent property is refused when the query is built.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="revivedeletedrepositorytests">ReviveDeletedRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.ReviveDeletedRepositoryTests</code> — 2 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ADeletedRowIsReachableByIdSoItCanBeOpenedAndEditedAsync</code></td>
+      <td>Fact</td>
+      <td>A deleted row is reachable by id so it can be opened and edited.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RevivingADeletedRowMakesItLiveAgainAndArchivesTheDeletedStateOnceAsync</code></td>
+      <td>Fact</td>
+      <td>Reviving a deleted row makes it live again and archives the deleted state once.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="repository-sanctions">Repository sanctions</h2>
+
+<h3 id="sanctionentryimportrepositorytests">SanctionEntryImportRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.Sanctions.SanctionEntryImportRepositoryTests</code> — 5 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">InsertAsyncPersistsAndAssignsAnIdAsync</code></td>
+      <td>Fact</td>
+      <td>Insert async persists and assigns an id.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpdateAsyncPersistsTheCompletionCountsAndOutcomeAsync</code></td>
+      <td>Fact</td>
+      <td>Update async persists the completion counts and outcome.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpdateAsyncPersistsAFailureWithAnErrorMessageAsync</code></td>
+      <td>Fact</td>
+      <td>Update async persists a failure with an error message.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetBySanctionEntrySourceIdAsyncReturnsOnlyImportsForThatSourceAsync</code></td>
+      <td>Fact</td>
+      <td>Get by sanction entry source id async returns only imports for that source.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetByIdAsyncForAMissingIdReturnsNullAsync</code></td>
+      <td>Fact</td>
+      <td>Get by id async for a missing id returns null.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sanctionentryrejectionrepositorytests">SanctionEntryRejectionRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.Sanctions.SanctionEntryRejectionRepositoryTests</code> — 5 tests. Category: Service. Collection:
+Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">InsertAsyncPersistsTheRejectionWithItsReasonAndRawDataAsync</code></td>
+      <td>Fact</td>
+      <td>Insert async persists the rejection with its reason and raw data.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">InsertAsyncRoundTripsEveryRejectionReasonAsync</code></td>
+      <td>Theory</td>
+      <td>Insert async round trips every rejection reason.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetBySanctionEntryImportIdAsyncReturnsAllRejectionsForThatImportInAnyOrderAsync</code></td>
+      <td>Fact</td>
+      <td>Get by sanction entry import id async returns all rejections for that import in any order.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetBySanctionEntryImportIdAsyncForAnImportWithNoRejectionsReturnsEmptyAsync</code></td>
+      <td>Fact</td>
+      <td>Get by sanction entry import id async for an import with no rejections returns empty.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetByIdAsyncForAMissingIdReturnsNullAsync</code></td>
+      <td>Fact</td>
+      <td>Get by id async for a missing id returns null.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sanctionentryrepositorytests">SanctionEntryRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.Sanctions.SanctionEntryRepositoryTests</code> — 9 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpsertAsyncOnANewHashInsertsAndReturnsInsertedOutcomeAsync</code></td>
+      <td>Fact</td>
+      <td>Upsert async on a new hash inserts and returns inserted outcome.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpsertAsyncWithTheSameHashAndSourceASecondTimeIsUnchangedAndDoesNotDuplicateAsync</code></td>
+      <td>Fact</td>
+      <td>Upsert async with the same hash and source a second time is unchanged and does not duplicate.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpsertAsyncWithTheSameHashButADifferentSourceInsertsASeparateRowAsync</code></td>
+      <td>Fact</td>
+      <td>Upsert async with the same hash but a different source inserts a separate row.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DeleteAsyncSoftDeletesAndSetsAuditColumnsAsync</code></td>
+      <td>Fact</td>
+      <td>Delete async soft deletes and sets audit columns.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UpsertAsyncOnAPreviouslyDeletedHashRevivesItAndClearsDeletionColumnsAsync</code></td>
+      <td>Fact</td>
+      <td>Upsert async on a previously deleted hash revives it and clears deletion columns.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncExcludesSoftDeletedRowsButIncludesActiveOnesAsync</code></td>
+      <td>Fact</td>
+      <td>Get async excludes soft deleted rows but includes active ones.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetActiveBySanctionEntrySourceIdAsyncOnlyReturnsRowsForThatSourceAsync</code></td>
+      <td>Fact</td>
+      <td>Get active by sanction entry source id async only returns rows for that source.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetActiveBySanctionEntrySourceIdAsyncExcludesSoftDeletedRowsAsync</code></td>
+      <td>Fact</td>
+      <td>Get active by sanction entry source id async excludes soft deleted rows.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetActiveBySanctionEntrySourceIdAsyncForASourceWithNoRowsReturnsEmptyAsync</code></td>
+      <td>Fact</td>
+      <td>Get active by sanction entry source id async for a source with no rows returns empty.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sanctionentrysourcerepositorytests">SanctionEntrySourceRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.Sanctions.SanctionEntrySourceRepositoryTests</code> — 3 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetByIdAsyncReturnsThePersistedConfigurationAsync</code></td>
+      <td>Fact</td>
+      <td>Get by id async returns the persisted configuration.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetByIdAsyncForAMissingIdReturnsNullAsync</code></td>
+      <td>Fact</td>
+      <td>Get by id async for a missing id returns null.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncIncludesEveryConfiguredSourceIncludingOursAsync</code></td>
+      <td>Fact</td>
+      <td>Get async includes every configured source including ours.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sanctionstoptokenrepositorytests">SanctionStopTokenRepositoryTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Repository.Sanctions.SanctionStopTokenRepositoryTests</code> — 4 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncReturnsTheSeededBaselineHonorificsAndTitlesAsync</code></td>
+      <td>Fact</td>
+      <td>Get async returns the seeded baseline honorifics and titles.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncOnlyReturnsTheTwoDocumentedCategoriesAsync</code></td>
+      <td>Fact</td>
+      <td>Get async only returns the two documented categories.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncTokensAreAllLowercaseAsStoredByTheMigrationAsync</code></td>
+      <td>Fact</td>
+      <td>Get async tokens are all lowercase as stored by the migration.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GetAsyncTokensAreAllUniqueAsync</code></td>
+      <td>Fact</td>
+      <td>Get async tokens are all unique.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="resilient-npgsql">Resilient npgsql</h2>
+
+<h3 id="pgretrybudgettests">PgRetryBudgetTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.ResilientNpgsql.PgRetryBudgetTests</code> — 3 tests. Category: Unit. Collection: PgRetryBudget.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheDefaultMatchesTheDocumentedSetting</code></td>
+      <td>Fact</td>
+      <td>The default matches the documented setting.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AConfiguredBudgetIsWhatTheLayerReads</code></td>
+      <td>Theory</td>
+      <td>A configured budget is what the layer reads.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ANegativeBudgetIsFlooredAtNoRetriesRatherThanThrowing</code></td>
+      <td>Theory</td>
+      <td>A negative budget is floored at no retries rather than throwing.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="poolcleargatetests">PoolClearGateTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.ResilientNpgsql.PoolClearGateTests</code> — 9 tests. Category: Unit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheFirstCallerForAKeyEnters</code></td>
+      <td>Fact</td>
+      <td>The first caller for a key enters.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ASecondCallerInsideTheWindowIsBlocked</code></td>
+      <td>Fact</td>
+      <td>A second caller inside the window is blocked.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ACallerEntersAgainOnceTheWindowHasElapsed</code></td>
+      <td>Fact</td>
+      <td>A caller enters again once the window has elapsed.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheWindowIsMeasuredFromTheLastEntryRatherThanTheFirst</code></td>
+      <td>Fact</td>
+      <td>The window is measured from the last entry rather than the first.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ABlockedAttemptDoesNotExtendTheWindow</code></td>
+      <td>Fact</td>
+      <td>A blocked attempt does not extend the window.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">KeysAreIndependentOfOneAnother</code></td>
+      <td>Fact</td>
+      <td>Keys are independent of one another.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ExactlyOneOfManyConcurrentCallersEntersAsync</code></td>
+      <td>Fact</td>
+      <td>Exactly one of many concurrent callers enters.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AZeroWindowNeverBlocks</code></td>
+      <td>Fact</td>
+      <td>A zero window never blocks.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheSharedGateIsReplacedByConfiguration</code></td>
+      <td>Fact</td>
+      <td>The shared gate is replaced by configuration.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="postgreserrorclassificationtests">PostgresErrorClassificationTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.ResilientNpgsql.PostgresErrorClassificationTests</code> — 15 tests. Category: Unit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARecoverableStateIsRetryable</code></td>
+      <td>Theory</td>
+      <td>A recoverable state is retryable.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnUnrecoverableStateIsNotRetryable</code></td>
+      <td>Theory</td>
+      <td>An unrecoverable state is not retryable.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">APermissionDeniedIsNotRetryableSoThePurgeFailureSurfacesRatherThanLooping</code></td>
+      <td>Fact</td>
+      <td>A permission denied is not retryable so the purge failure surfaces rather than looping.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AStateThatSaysNothingAboutConnectionHealthDoesNotClearThePool</code></td>
+      <td>Theory</td>
+      <td>A state that says nothing about connection health does not clear the pool.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AStaleOrBrokenConnectionClearsThePool</code></td>
+      <td>Theory</td>
+      <td>A stale or broken connection clears the pool.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ANonPostgresFailureClearsThePool</code></td>
+      <td>Fact</td>
+      <td>A non postgres failure clears the pool.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnExhaustedPoolIsRecognisedAsAConnectionAcquisitionTimeout</code></td>
+      <td>Fact</td>
+      <td>An exhausted pool is recognised as a connection acquisition timeout.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RecognisingAnAcquisitionTimeoutNeverReadsTheMessage</code></td>
+      <td>Theory</td>
+      <td>Recognising an acquisition timeout never reads the message.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AServerErrorIsNeverAConnectionAcquisitionTimeout</code></td>
+      <td>Theory</td>
+      <td>A server error is never a connection acquisition timeout.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ABareTimeoutIsNotAConnectionAcquisitionTimeout</code></td>
+      <td>Fact</td>
+      <td>A bare timeout is not a connection acquisition timeout.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AnExhaustedPoolNeitherClearsThePoolNorRecyclesTheConnection</code></td>
+      <td>Fact</td>
+      <td>An exhausted pool neither clears the pool nor recycles the connection.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AStaleOrBrokenConnectionIsRecycled</code></td>
+      <td>Theory</td>
+      <td>A stale or broken connection is recycled.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AHealthyConnectionIsNotRecycled</code></td>
+      <td>Theory</td>
+      <td>A healthy connection is not recycled.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AReadOnlyTransactionIsRetriedRecycledAndClearedTogether</code></td>
+      <td>Fact</td>
+      <td>A read only transaction is retried recycled and cleared together.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TooManyClientsIsRetriedWithoutDisturbingTheConnectionOrThePool</code></td>
+      <td>Fact</td>
+      <td>Too many clients is retried without disturbing the connection or the pool.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="volume">Volume</h2>
+
+<h3 id="backtestvolumetests">BacktestVolumeTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Volume.BacktestVolumeTests</code> — 2 tests. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheBacktestCountsMillionsOfGeneratedRowsExactlyInBoundedMemoryAsync</code></td>
+      <td>Fact</td>
+      <td>The backtest counts millions of generated rows exactly in bounded memory.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TheBacktestReadsTheArchivePageByPageAndCountsExactlyInBoundedMemoryAsync</code></td>
+      <td>Fact</td>
+      <td>The backtest reads the archive page by page and counts exactly in bounded memory.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="reprocessingvolumetests">ReprocessingVolumeTests</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Test.Volume.ReprocessingVolumeTests</code> — 1 test. Category: Service. Collection: Database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Kind</th>
+      <th>Verifies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ReprocessingProcessesEveryArchivedDocumentOnceUpdatesEveryMatchInBoundedMemoryAsync</code></td>
+      <td>Fact</td>
+      <td>Reprocessing processes every archived document once updates every match in bounded memory.</td>
+    </tr>
+  </tbody>
+</table>
+
+    
+  </article>
+</div>
+</div>
+        <footer class="footer sm:footer-horizontal w-full mt-20 border-t border-base-300 py-10 text-sm" data-pagefind-ignore>
+  <nav><h6 class="footer-title mono">Legal</h6><a class="link link-hover" href="https://jube.io/agreements/jtos-version-1-8">Jube Terms of Service (JTOS)</a><a class="link link-hover" href="https://jube.io/jube-agplv3-open-source-compliance">AGPLv3: why only Jooby grazes this patch</a><a class="link link-hover" href="/privacy/">Privacy</a></nav>
+  <aside class="max-w-md flex flex-col gap-2 sm:ml-auto"><h6 class="footer-title mono">The developer</h6><p class="m-0 text-base-content/70 leading-relaxed text-pretty">Written by Richard Churchman, from sunny Paphos, Cyprus. No corporate layers, just direct software engineering. No roadmap theatre: if it's not in Git, it doesn't exist.</p></aside>
+</footer>
+
+      </main>
+      <aside class="not-prose hidden xl:flex flex-col gap-4 py-8 sticky top-16 self-start" data-pagefind-ignore>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="mono text-[11px] uppercase tracking-widest text-base-content/50">Work with Jube</div>
+    <a href="/training/" class="card bg-primary text-primary-content border border-primary no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Training &amp; Integration<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs">60 hours, typically four months.</div><div class="mono text-xs pt-1">$7,500 · fixed</div></div></a>
+    <a href="/support/" class="card bg-base-200 border border-base-300 no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:bg-base-100"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Support<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs text-base-content/70">Flat monthly. No clock, no overage.</div><div class="mono text-xs pt-1">from $350/mo</div></div></a>
+    <a href="/contact/" class="card bg-accent text-accent-content border border-accent no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Talk to the developer<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs opacity-80">Ask anything, any time.</div><div class="mono text-xs pt-1 opacity-80">WhatsApp, email or Meet</div></div></a>
+  </div>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="flex items-center justify-between gap-2"><div class="mono text-[11px] uppercase tracking-widest text-base-content/50">GitHub</div><a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="no-underline" aria-label="Star Jube on GitHub" data-stars="jube-home/aml-fraud-transaction-monitoring"><span class="badge badge-outline badge-sm mono text-xs gap-1 bg-base-100 text-base-content/70">★ <span data-stars-count>Star</span></span></a></div>
+    <div class="text-xs text-base-content/70 text-pretty">Every pull request tested in the open. Live from master.</div>
+    
+    <div class="flex flex-wrap gap-2">
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml/badge.svg?branch=master" alt="Unit tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml/badge.svg?branch=master" alt="End-to-end tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master" alt="CodeQL status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml/badge.svg?branch=master" alt="Trivy status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml/badge.svg?branch=master" alt="OWASP ZAP status" class="h-5 w-auto block"></a>
+    </div>
+  </div>
+</aside>
+
+    </div>
+  </div>
+  <a href="https://wa.me/35797517137" target="_blank" rel="noopener" aria-label="Message Jube on WhatsApp" title="Message us on WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full text-white shadow-lg flex items-center justify-center transition-transform duration-200 hover:scale-105 hover:shadow-xl" style="background-color:#25D366" data-pagefind-ignore><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"></path></svg></a>
+
+  
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>

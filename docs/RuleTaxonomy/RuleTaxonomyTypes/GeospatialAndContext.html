@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme="jube">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
+<title>Geospatial and Context | Jube</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Geospatial and Context" />
+<meta name="author" content="Jube Holdings Limited" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<meta name="twitter:description" property="og:description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<link rel="canonical" href="https://www.jube.io/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" />
+<meta property="og:url" content="https://www.jube.io/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" />
+<meta property="og:site_name" content="Jube" />
+<meta property="og:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta name="twitter:title" content="Geospatial and Context" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Jube Holdings Limited" />
+<meta name="google-site-verification" content="" />
+<meta name="msvalidate.01" content="" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jube Holdings Limited"},"description":"Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee.","headline":"Geospatial and Context","image":"https://www.jube.io/assets/img/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.jube.io/assets/img/jube-logo.png"},"name":"Jube Holdings Limited"},"url":"https://www.jube.io/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <link rel="icon" href="/assets/img/jube-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="min-h-screen bg-base-100 text-base-content antialiased">
+  <a href="/" class="w-full bg-neutral text-neutral-content flex justify-center px-5 no-underline group" data-pagefind-ignore><div class="w-full max-w-7xl py-2 flex items-baseline gap-x-3 gap-y-0.5 flex-wrap"><span class="text-sm font-semibold tracking-tight">Open-source agentic AI for transaction monitoring. <span class="text-primary">Just ask Jooby.</span></span><span class="mono text-[11px] uppercase tracking-widest text-neutral-content/60 group-hover:text-neutral-content">What's Jube? →</span></div></a>
+<header class="w-full border-b border-base-300 flex justify-center px-5 bg-base-100/95 backdrop-blur sticky top-0 z-20">
+  <div class="navbar w-full max-w-7xl px-0 py-2 gap-4 flex-nowrap">
+    <div class="flex-none flex items-center gap-2">
+      <button id="mnav-toggle" class="btn btn-ghost btn-sm btn-square lg:hidden" aria-label="Menu"><span class="text-lg leading-none">☰</span></button>
+      <a href="/" class="flex shrink-0 items-center gap-0.5 text-2xl font-semibold tracking-tight no-underline"><img src="/assets/img/jube-logo.png" alt="" class="h-11 w-auto"><span>jube</span></a>
+    </div>
+    <div id="sx" class="relative hidden md:block flex-1 max-w-md min-w-0" data-pf="/pagefind/pagefind.js" data-pagefind-ignore>
+      <label class="input input-sm w-full bg-base-200 border-base-300 flex items-center gap-2 focus-within:border-primary">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="text-base-content/50 shrink-0" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <input id="sx-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search documentation, training, support…" class="grow min-w-0 text-sm" role="combobox" aria-expanded="false" aria-controls="sx-list" aria-autocomplete="list" aria-label="Search">
+        <span class="flex gap-1 shrink-0"><kbd class="kbd kbd-xs">⌘</kbd><kbd class="kbd kbd-xs">K</kbd></span>
+      </label>
+      <div id="sx-panel" class="absolute left-0 w-[min(38rem,calc(100vw-2.5rem))] top-full mt-2 z-50 rounded-box border border-base-300 bg-base-100 shadow-xl overflow-hidden" hidden>
+        <ul id="sx-list" role="listbox" class="list-none m-0 p-1 max-h-[65vh] overflow-y-auto"></ul>
+        <div id="sx-foot" class="mono text-[11px] text-base-content/50 px-3 py-2 border-t border-base-300 flex gap-3 flex-wrap"></div>
+      </div>
+    </div>
+    <nav class="flex flex-none items-center gap-1 ml-auto text-sm">
+      <a href="https://jube.io/v2JubeDesignBuildHandoff.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm font-medium"><span class="badge badge-accent badge-xs mono">v2</span><span class="hidden sm:inline">Get an early look at Version 2</span><span class="sm:hidden">Early look</span></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="btn btn-ghost btn-sm btn-square" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+    </nav>
+  </div>
+</header>
+<div id="mnav" class="lg:hidden w-full border-b border-base-300 bg-base-100 px-5 py-4 max-h-[70vh] overflow-y-auto" hidden>
+  <ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70 menu-active">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+
+</div>
+
+  <div class="w-full flex justify-center">
+    <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] xl:grid-cols-[auto_minmax(0,1fr)_280px] gap-8 px-5">
+      <aside id="side" class="hidden lg:block py-6 sticky top-16 self-start max-h-[calc(100vh-4rem)] overflow-y-auto transition-[width] duration-200 w-10">
+  <div class="flex pb-2"><button id="side-toggle" class="btn btn-ghost btn-sm btn-square" aria-label="Show menu" title="Show menu"><span class="text-lg leading-none" data-icon>☰</span></button></div>
+  <div id="side-nav" hidden><ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70 menu-active">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+</div>
+</aside>
+
+      <main class="py-8 min-w-0 flex flex-col">
+        <div data-pagefind-body><div class="flex flex-col gap-6">
+  <div class="breadcrumbs text-xs mono p-0 text-base-content/60"><ul><li><a href="/docs/">Documentation</a></li><li>Rule Taxonomy</li><li>Geospatial and Context</li></ul></div>
+  <article class="prose max-w-none prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-pre:bg-neutral prose-pre:text-neutral-content">
+    <h1 id="geospatial-and-context">Geospatial and Context</h1>
+
+<p><strong>Definition:</strong> physical distance, travel, or boundary. Use it for anything location based.</p>
+
+<p><strong>Construction:</strong> <code class="language-plaintext highlighter-rouge">Double</code> geospatial extensions directly on <code class="language-plaintext highlighter-rouge">Payload</code> coordinates for a single comparison, aggregated
+through an Abstraction Rule when comparing against a longer term pattern. See the <a href="../index.html">Rule Taxonomy</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question an analyst asks</th>
+      <th>Rule Taxonomy type that answers it</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Is this payment within 5 km of the customer’s home?</td>
+      <td>Geospatial: <code class="language-plaintext highlighter-rouge">IsWithinRadiusKm</code></td>
+    </tr>
+    <tr>
+      <td>Could the customer physically have travelled between the two events?</td>
+      <td>Geospatial: <code class="language-plaintext highlighter-rouge">ImpliedTravelSpeedKmh</code></td>
+    </tr>
+    <tr>
+      <td>How many different countries in 24 hours?</td>
+      <td>Not this type: <a href="Cardinality.html">Cardinality</a></td>
+    </tr>
+    <tr>
+      <td>Is the transaction at an unusual time of day?</td>
+      <td>Context (below): <code class="language-plaintext highlighter-rouge">DateTime</code> extensions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="geospatial-single-comparison-between-two-points">Geospatial: Single Comparison Between Two Points</h2>
+
+<p>Coordinates are <code class="language-plaintext highlighter-rouge">Double</code> payload values, so the geospatial steps are available on them directly. The value the pipeline
+starts on is the first latitude, and the arguments are the first longitude, the second latitude, the second longitude,
+then the limit, in that order. See the <a href="../RulePipelineReference.html">Rule Pipeline Reference</a>. Further than 500 km
+from a fixed point, such as a branch:</p>
+
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Matched</span> <span class="o">=</span> <span class="n">Payload</span><span class="p">.</span><span class="n">Latitude</span><span class="p">.</span><span class="n">MatchDistanceKmAbove</span><span class="p">(</span><span class="n">Payload</span><span class="p">.</span><span class="n">Longitude</span><span class="p">,</span> <span class="mf">51.5074</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1278</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>A boundary test against a radius, using <code class="language-plaintext highlighter-rouge">OutsideRadiusKm(longitude1, latitude2, longitude2, radiusKm)</code>:</p>
+
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Matched</span> <span class="o">=</span> <span class="n">Payload</span><span class="p">.</span><span class="n">Latitude</span><span class="p">.</span><span class="n">MatchOutsideRadiusKm</span><span class="p">(</span><span class="n">Payload</span><span class="p">.</span><span class="n">Longitude</span><span class="p">,</span> <span class="n">Payload</span><span class="p">.</span><span class="n">HomeLatitude</span><span class="p">,</span> <span class="n">Payload</span><span class="p">.</span><span class="n">HomeLongitude</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">WithinRadiusKm</code> and <code class="language-plaintext highlighter-rouge">DistanceKmBelow</code> are the inverses. Each step has a miles form (<code class="language-plaintext highlighter-rouge">WithinRadiusMiles</code>,
+<code class="language-plaintext highlighter-rouge">OutsideRadiusMiles</code>, <code class="language-plaintext highlighter-rouge">DistanceMilesAbove</code>, <code class="language-plaintext highlighter-rouge">DistanceMilesBelow</code>) taking the same arguments. The distance is great
+circle, and is not a road distance.</p>
+
+<h2 id="geospatial-impossible-travel">Geospatial: Impossible Travel</h2>
+
+<p>Travel between two events needs the earlier event’s coordinates and the elapsed time.
+<code class="language-plaintext highlighter-rouge">ImpliedSpeedAbove(longitude1, latitude2, longitude2, hoursElapsed, kilometersPerHour)</code> tests whether the implied speed
+exceeds a plausible ceiling:</p>
+
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Matched</span> <span class="o">=</span> <span class="n">Payload</span><span class="p">.</span><span class="n">Latitude</span><span class="p">.</span><span class="n">MatchImpliedSpeedAbove</span><span class="p">(</span><span class="n">Payload</span><span class="p">.</span><span class="n">Longitude</span><span class="p">,</span> <span class="n">Payload</span><span class="p">.</span><span class="n">PreviousLatitude</span><span class="p">,</span> <span class="n">Payload</span><span class="p">.</span><span class="n">PreviousLongitude</span><span class="p">,</span> <span class="n">Payload</span><span class="p">.</span><span class="n">ElapsedHours</span><span class="p">,</span> <span class="mi">900</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The previous coordinates and elapsed time must be in the payload, either supplied by the sender, produced by an Inline
+Function, or retrieved from history by an Abstraction Rule using the <code class="language-plaintext highlighter-rouge">Actual Value</code> Function Type with an Offset of
+Last. The Abstraction route is the aggregated form described above: it compares the current event with a longer term
+pattern held in the cache, at the cost of a cache retrieval per Search Key. See
+<a href="../../Configuration/Models/AbstractionRules/index.html">Abstraction Rules</a>. Zero elapsed hours is treated as infinite
+speed, so two events at different places at the same instant match. <code class="language-plaintext highlighter-rouge">ImpliedSpeedBelow</code> is the inverse.</p>
+
+<h2 id="context-time-and-calendar">Context: Time and Calendar</h2>
+
+<p>Context rules use <code class="language-plaintext highlighter-rouge">DateTime</code> steps on payload dates, for example whether an event is at a weekend, outside business
+hours, the end of a month, or older than a number of days. These are cheap, need no cache, and are best consumed as an
+input to another type, for example a large transfer combined with an out of hours event:</p>
+
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Matched</span> <span class="o">=</span> <span class="n">Payload</span><span class="p">.</span><span class="n">TransactionDate</span><span class="p">.</span><span class="n">RequireIsWeekendInZone</span><span class="p">(</span><span class="n">Payload</span><span class="p">.</span><span class="n">CustomerZoneId</span><span class="p">).</span><span class="n">Against</span><span class="p">(</span><span class="n">Payload</span><span class="p">.</span><span class="n">CurrencyAmount</span><span class="p">).</span><span class="n">MatchGreater</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The steps are <code class="language-plaintext highlighter-rouge">IsWeekday</code>, <code class="language-plaintext highlighter-rouge">IsWeekend</code>, <code class="language-plaintext highlighter-rouge">IsMorning</code>, <code class="language-plaintext highlighter-rouge">IsAfternoon</code>, <code class="language-plaintext highlighter-rouge">WithinBusinessHours(startHour, endHour)</code>,
+<code class="language-plaintext highlighter-rouge">OutsideBusinessHours</code>, <code class="language-plaintext highlighter-rouge">IsToday</code>, <code class="language-plaintext highlighter-rouge">IsPast</code>, <code class="language-plaintext highlighter-rouge">IsFuture</code>, <code class="language-plaintext highlighter-rouge">OlderThanDays</code>, <code class="language-plaintext highlighter-rouge">YoungerThanDays</code>, <code class="language-plaintext highlighter-rouge">WithinDaysOf</code>,
+<code class="language-plaintext highlighter-rouge">DayOfWeekIn</code>,
+<code class="language-plaintext highlighter-rouge">IsStartOfMonth</code> and <code class="language-plaintext highlighter-rouge">IsEndOfMonth</code>, with <code class="language-plaintext highlighter-rouge">HourOfDay()</code> and <code class="language-plaintext highlighter-rouge">AgeInDays()</code> as transformers. The plain extension methods
+have different names (for example <code class="language-plaintext highlighter-rouge">IsWeekendDay</code>).</p>
+
+<p>A customer in another timezone experiences a different hour, so a business hours or weekend test should be made in the
+customer’s timezone. The <code class="language-plaintext highlighter-rouge">InZone</code> forms read the value as UTC, convert it to the named time zone (an IANA or Windows
+identifier such as <code class="language-plaintext highlighter-rouge">America/New_York</code>), and then test, and an unknown zone fails the test:</p>
+
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Matched</span> <span class="o">=</span> <span class="n">Payload</span><span class="p">.</span><span class="n">TransactionDate</span><span class="p">.</span><span class="n">MatchOutsideWeekdayBusinessHoursInZone</span><span class="p">(</span><span class="n">Payload</span><span class="p">.</span><span class="n">CustomerZoneId</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">InZone</code> steps are <code class="language-plaintext highlighter-rouge">WithinBusinessHoursInZone</code>, <code class="language-plaintext highlighter-rouge">OutsideBusinessHoursInZone</code>, <code class="language-plaintext highlighter-rouge">WithinWeekdayBusinessHoursInZone</code>,
+<code class="language-plaintext highlighter-rouge">OutsideWeekdayBusinessHoursInZone</code>, <code class="language-plaintext highlighter-rouge">IsWeekdayInZone</code> and <code class="language-plaintext highlighter-rouge">IsWeekendInZone</code>, and the <code class="language-plaintext highlighter-rouge">Weekday</code> forms without a zone use
+the value’s own clock, so a weekend counts as outside hours. <code class="language-plaintext highlighter-rouge">ToZone(zoneId)</code> converts the value and continues the
+pipeline, so that any other <code class="language-plaintext highlighter-rouge">DateTime</code> test can be made in local time:</p>
+
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Matched</span> <span class="o">=</span> <span class="n">Payload</span><span class="p">.</span><span class="n">TransactionDate</span><span class="p">.</span><span class="n">ToZone</span><span class="p">(</span><span class="n">Payload</span><span class="p">.</span><span class="n">CustomerZoneId</span><span class="p">).</span><span class="n">MatchIsMorning</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>The value is read as UTC, so the payload date must be UTC. Without an <code class="language-plaintext highlighter-rouge">InZone</code> form or <code class="language-plaintext highlighter-rouge">ToZone</code>, the test reasons in the
+clock of the value as supplied. Age and tenure derived this way are the cross cutting Identity and Demographic variables
+described in the <a href="../index.html">Rule Taxonomy</a>.</p>
+
+<h2 id="geospatial-and-context-common-faults">Geospatial and Context: Common Faults</h2>
+
+<p>Symptoms of a misbuilt Geospatial or Context rule, with the likely cause.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symptom in a Geospatial or Context rule</th>
+      <th>Likely cause</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Distances are wildly wrong</td>
+      <td>Latitude and longitude arguments are swapped, or the coordinates are in a projection other than decimal degrees.</td>
+    </tr>
+    <tr>
+      <td>The impossible travel rule fires constantly</td>
+      <td>Elapsed time is in the wrong unit (hours are required), or the previous location is stale.</td>
+    </tr>
+    <tr>
+      <td>The business hours rule is wrong for customers</td>
+      <td>The test is not an <code class="language-plaintext highlighter-rouge">InZone</code> form or <code class="language-plaintext highlighter-rouge">ToZone</code>, so it reasons in the supplied clock; or the payload date is not UTC; or the zone identifier is unknown, which fails the test.</td>
+    </tr>
+    <tr>
+      <td>The rule does not match on missing coordinates</td>
+      <td>A null or <code class="language-plaintext highlighter-rouge">NaN</code> coordinate fails the test, so the rule does not match. Decide whether that is the outcome wanted.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="examples-by-sub-class">Examples by Sub-Class</h2>
+
+<blockquote>
+  <p><strong>Validated.</strong> Every fragment in this section is compiled individually through the Jube Parser, with its payload
+fields and its TTL Counter, Abstraction, Calculation, List and Sanction tokens declared, so each extension method and
+argument type is checked against the engine. Compilation does not validate a rule’s logic or its thresholds, which are
+illustrative placeholders to be tuned on data.</p>
+</blockquote>
+
+<h3 id="81-impossible-travel-and-distance">8.1 Impossible travel and distance</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Example</th>
+      <th>Description</th>
+      <th>Jube construction</th>
+      <th>Fragment</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8.1-01</td>
+      <td><strong>Impossible travel between consecutive transactions</strong></td>
+      <td>Distance divided by elapsed time exceeds plausible speed.</td>
+      <td>Two Abstraction Rules keyed on Card, with Function Type Actual Value and Offset Type Last, return the previous latitude and longitude, and an Activation Rule holds the pipeline. HoursSincePrev is an Abstraction Rule with Function Type Since in Hours over the same Card key, giving the elapsed hours back to the prior event, and a minimum-gap Require step should be added so that same-instant pairs do not match.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchImpliedSpeedAbove(Payload.Longitude, Abstraction.PrevLatitude, Abstraction.PrevLongitude, Abstraction.HoursSincePrev, 900)</code></td>
+      <td>Check: 900 km/h is an analyst plausibility threshold, not a regulatory figure; calibrate against airline speeds and the false-positive rate. Tag: Geo · Fraud · Card/Account · consecutive events, speed ≥ 900 km/h</td>
+    </tr>
+    <tr>
+      <td>8.1-02</td>
+      <td><strong>Impossible travel between consecutive logins</strong></td>
+      <td>Same for login geolocations.</td>
+      <td>The same construction as 8.1-01, keyed on Account over login events, with Abstraction Rules returning the previous login coordinates. LoginLatitude and LoginLongitude are placeholder fields for the login payload, and HoursSincePrevLogin is an Abstraction Rule with Function Type Since in Hours keyed on Account.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.LoginLatitude.MatchImpliedSpeedAbove(Payload.LoginLongitude, Abstraction.PrevLoginLatitude, Abstraction.PrevLoginLongitude, Abstraction.HoursSincePrevLogin, 900)</code></td>
+      <td>Check: 900 km/h as 8.1-01. Tag: Geo · Fraud · Account · consecutive logins</td>
+    </tr>
+    <tr>
+      <td>8.1-03</td>
+      <td><strong>Card-present transactions in two countries within hours</strong></td>
+      <td>Physical presence conflict.</td>
+      <td>One Abstraction Rule with Search Key Card, Search Interval of 6 Hours and Function Type Distinct Count over CountryAlpha2 (a placeholder field), limited by its own match condition to card-present events, and an Activation Rule reads the count with the greater-than step. The threshold of 1 is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.CpCountries6h.MatchGreater(1)</code></td>
+      <td>Tag: Geo · Fraud · Card · 6h</td>
+    </tr>
+    <tr>
+      <td>8.1-04</td>
+      <td><strong>Card-present and CNP in distant locations simultaneously</strong></td>
+      <td>CP in one place; CNP from another.</td>
+      <td>Two Abstraction Rules keyed on Card with a 1 Hour Search Interval, Offset Type Last and Function Type Actual Value, limited to card-present events, return the last card-present coordinates. A Require step makes the card-not-present test a gate, and the 50 km distance is an illustrative placeholder; CNP events often carry no coordinates, so the rule is silent without them.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IsCardPresent.RequireIsFalse().Against(Payload.Latitude).MatchDistanceKmAbove(Payload.Longitude, Abstraction.LastCpLatitude, Abstraction.LastCpLongitude, 50)</code></td>
+      <td>Check: None; window and distance are analyst choices. Tag: Geo · Fraud · Card · 1h</td>
+    </tr>
+    <tr>
+      <td>8.1-05</td>
+      <td><strong>ATM withdrawal far from home</strong></td>
+      <td>Distance to home location large.</td>
+      <td>Two Abstraction Rules keyed on Card with a 90 Day Search Interval and Function Type Median, over Latitude and over Longitude, give a crude home centroid, and a Require step on TxnType gates the test to ATM withdrawals. The median misplaces accounts with bimodal travel, the window should exclude the current withdrawal, and the 500 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TxnType.RequireEqual("ATM").Against(Payload.Latitude).MatchDistanceKmAbove(Payload.Longitude, Abstraction.HomeLatitude, Abstraction.HomeLongitude, 500)</code></td>
+      <td>Tag: Geo · Fraud · Card · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-06</td>
+      <td><strong>Transaction far from last transaction</strong></td>
+      <td>Distance to previous location.</td>
+      <td>The rolling form of 8.1-01: Abstraction Rules keyed on Card with Offset Type Last and Function Type Actual Value return the immediately prior coordinates, so there is no window beyond the lookback. The 50 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchDistanceKmAbove(Payload.Longitude, Abstraction.PrevLatitude, Abstraction.PrevLongitude, 50)</code></td>
+      <td>Tag: Geo · Fraud · Card · rolling</td>
+    </tr>
+    <tr>
+      <td>8.1-07</td>
+      <td><strong>Transaction far from device location</strong></td>
+      <td>Mobile GPS versus transaction location.</td>
+      <td>A single Activation Rule compares the device GPS pair with the transaction pair, with DeviceLatitude and DeviceLongitude as placeholder fields that the payload contract does not yet carry. The 1 km distance is an illustrative placeholder, and mobile GPS can itself be spoofed (see 8.3-14).</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.DeviceLatitude.MatchDistanceKmAbove(Payload.DeviceLongitude, Payload.Latitude, Payload.Longitude, 1)</code></td>
+      <td>Tag: Geo · Fraud · Account · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-08</td>
+      <td><strong>Merchant distance from billing address</strong></td>
+      <td>Spend far from home with no prior travel.</td>
+      <td>Distance of the merchant from the billing address. Upstream fields: Payload.MerchantLatitude, Payload.MerchantLongitude, Payload.BillingLatitude and Payload.BillingLongitude, supplied before Jube or by an inline-script hook. Distance 500 km is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.MerchantLatitude.MatchDistanceKmAbove(Payload.MerchantLongitude, Payload.BillingLatitude, Payload.BillingLongitude, 500)</code></td>
+      <td>Tag: Geo · Fraud · Card · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-09</td>
+      <td><strong>IP location far from billing/home address</strong></td>
+      <td>IP geolocation mismatch.</td>
+      <td>Distance of the IP location from the account home centroid. Upstream fields: Payload.IpLatitude, Payload.IpLongitude, Payload.HomeCentroidLatitude and Payload.HomeCentroidLongitude (the home centroid is the 8.1-05 value, supplied as placeholder fields), supplied before Jube or by an inline-script hook. Distance 500 km is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IpLatitude.MatchDistanceKmAbove(Payload.IpLongitude, Payload.HomeCentroidLatitude, Payload.HomeCentroidLongitude, 500)</code></td>
+      <td>Tag: Geo · Fraud · Session · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-10</td>
+      <td><strong>IP location differs from device GPS</strong></td>
+      <td>Spoofed GPS or proxy.</td>
+      <td>Distance between the IP location and the device GPS location. Upstream fields: Payload.IpLatitude, Payload.IpLongitude, Payload.DeviceLatitude and Payload.DeviceLongitude, supplied before Jube or by an inline-script hook. Distance 100 km is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IpLatitude.MatchDistanceKmAbove(Payload.IpLongitude, Payload.DeviceLatitude, Payload.DeviceLongitude, 100)</code></td>
+      <td>Tag: Geo · Fraud · Session · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-11</td>
+      <td><strong>IP country differs from SIM country</strong></td>
+      <td>SIM-network versus IP country.</td>
+      <td>IP country differs from the SIM country already carried in the payload. Upstream field: Payload.IpCountryAlpha2, supplied before Jube or by an inline-script hook. Payload.SimCountryAlpha2 is already on the payload.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IpCountryAlpha2.MatchNotEqual(Payload.SimCountryAlpha2)</code></td>
+      <td>Tag: Geo · Fraud · Session · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-12</td>
+      <td><strong>Time-zone mismatch between device and IP</strong></td>
+      <td>Device clock vs IP region.</td>
+      <td>Difference between the device UTC offset and the IP UTC offset, in hours. Upstream fields: Payload.DeviceUtcOffsetHours and Payload.IpUtcOffsetHours (the IP offset is derived upstream from the IP time zone), supplied before Jube or by an inline-script hook. Tolerance 2 hours is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.DeviceUtcOffsetHours.MatchDifferenceFromAbove(Payload.IpUtcOffsetHours, 2)</code></td>
+      <td>Tag: Geo · Fraud · Session · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-13</td>
+      <td><strong>Language/locale mismatch with geography</strong></td>
+      <td>Device language vs IP location.</td>
+      <td>IP country and device locale are not an expected pair. Upstream field: Payload.LocaleIpCountryKey, built by the hook as the device locale and IP country joined with the String.ConcatWith method, supplied before Jube or by an inline-script hook. List: List.ExpectedLocaleCountryPairs, the allowed locale and country keys.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.LocaleIpCountryKey.MatchNotInList(List.ExpectedLocaleCountryPairs)</code></td>
+      <td>Tag: Geo · Fraud · Session · single event</td>
+    </tr>
+    <tr>
+      <td>8.1-14</td>
+      <td><strong>Pattern of consecutive “teleporting” ATM withdrawals</strong></td>
+      <td>Multiple ATMs too far apart.</td>
+      <td>An Activation Rule holds this pipeline and ticks Increment TTL Counter on AtmTeleports, a Card-keyed counter over a 12 Hours interval with Sum off; a second Activation Rule with Matched = TTLCounter.AtmTeleports.MatchGreater(1) reads it, and the incrementing rule must have the higher Priority. The Abstraction Rules return the latest prior ATM coordinates, the same-instant guard from 8.1-01 applies, and the counter counts flagged ATM pairs rather than transactions.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TxnType.RequireEqual("ATM").Against(Payload.Latitude).MatchImpliedSpeedAbove(Payload.Longitude, Abstraction.PrevAtmLatitude, Abstraction.PrevAtmLongitude, Abstraction.AtmHoursSincePrev, 900)</code></td>
+      <td>Check: 12h and the speed threshold are analyst parameters; the speed threshold has no regulatory basis. Tag: Geo · Fraud · Card · 12h</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="82-boundaries-and-geofences">8.2 Boundaries and geofences</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Example</th>
+      <th>Description</th>
+      <th>Jube construction</th>
+      <th>Fragment</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8.2-01</td>
+      <td><strong>Transaction inside high-risk geofence</strong></td>
+      <td>Within polygons around conflict zones, border crossings, or flagged areas.</td>
+      <td>A List holds each geofence’s vertices as lat,lon strings, and the step is a bounded point-in-polygon test on the transaction coordinates. Circles are covered by the existing radius steps, but a polygon loops over its vertices, so it needs the new method.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchIsInsidePolygon(Payload.Longitude, List.HighRiskGeofenceVertices)</code></td>
+      <td>Check: Geofence boundaries are policy and intelligence data; verify source polygons against an authoritative dataset before use. Tag: Geo · AML · Transaction · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-02</td>
+      <td><strong>Transaction near sanctioned-territory border</strong></td>
+      <td>Proximity to sanctioned regions (diversion risk).</td>
+      <td>Single event. The distance to the nearest border is computed by a geospatial enrichment upstream and supplied as BorderDistanceKm (placeholder). The 50 km cut-off is illustrative.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.BorderDistanceKm.MatchLess(50)</code></td>
+      <td>Check: Border geometry source and proximity distance are policy choices; verify the border dataset. Tag: Geo · AML · Transaction · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-03</td>
+      <td><strong>Activity at known ATM skimming hotspots</strong></td>
+      <td>Cluster of compromised ATMs.</td>
+      <td>A List holds the hotspot centres as lat,lon strings, and the step is true when the point is within the radius of any centre. The single-centre step IsWithinRadiusKm does not cover a set, so the new method loops over the bounded list, and the 1 km radius is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchIsWithinAnyRadiusKm(Payload.Longitude, List.SkimmingHotspotCentres, 1)</code></td>
+      <td>Check: Hotspot coordinates come from fraud intelligence; verify their currency. Tag: Geo · Fraud · Card · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-04</td>
+      <td><strong>Activity at known fraud merchant location cluster</strong></td>
+      <td>Geographic cluster of fraud.</td>
+      <td>An Activation Rule matching Payload.FraudLabelled.MatchIsTrue() ticks Increment TTL Counter on FraudCell, keyed on the geohash-6 cell from Payload.Latitude.ToGeohash(Payload.Longitude, 6) over a 30 Day interval with Sum off. A second Activation Rule reads the counter with the greater-than step, and the threshold of 3 is a placeholder; the counter must accept the derived key, or a Geohash6 payload field must be added.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = TTLCounter.FraudCell.MatchGreater(3)</code></td>
+      <td>Check: None; the 30d window and threshold are analyst choices. Tag: Geo · Fraud · Merchant · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-05</td>
+      <td><strong>Transaction in border town used for cross-border cash smuggling</strong></td>
+      <td>Border locations and cash.</td>
+      <td>A List holds the border towns, the fuzzy similarity step absorbs spelling variation, and a Require step restricts the test to cash transactions. The 0.9 similarity is an illustrative placeholder, and TownName is a placeholder field.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TxnType.RequireEqual("CASH").Against(Payload.TownName).MatchSimilarityAtLeastAnyInList(List.BorderTowns, 0.9)</code></td>
+      <td>Check: Border-town list is an intelligence list; verify its source and currency. Tag: Geo · AML · Transaction · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-06</td>
+      <td><strong>Transaction at port or free-trade-zone</strong></td>
+      <td>FTZ-located counterparties for trade.</td>
+      <td>A single Activation Rule tests the counterparty location code against a List of port and free-zone codes, with UN/LOCODE as the usual key. CounterpartyLocationCode is a placeholder field.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.CounterpartyLocationCode.MatchInList(List.PortAndFreeZoneCodes)</code></td>
+      <td>Check: Verify the UN/LOCODE port and free-zone codes against the current UNECE table. Tag: Geo · AML · Trade · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-07</td>
+      <td><strong>Airport and duty-free spend without travel profile</strong></td>
+      <td>Location inconsistent with history.</td>
+      <td>A List holds the airline and duty-free MCCs, and an Abstraction Rule with Search Key Card, a 365 Day Search Interval, Function Type Count and a home-country exclusion on its own match stands in for a travel profile. The Require step gates on the MCC and the Match step requires no prior foreign activity; MerchantCategoryCode is a placeholder field.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.MerchantCategoryCode.RequireInList(List.AirportAndDutyFreeMccs).Against(Abstraction.ForeignCount365d).MatchEqual(0)</code></td>
+      <td>Check: Verify MCC codes for airlines (4511 and related) and duty-free stores (5309) against the card-scheme MCC table. Tag: Geo · Fraud · Card · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-08</td>
+      <td><strong>Branch geofence mismatch</strong></td>
+      <td>Branch transaction far from account home branch.</td>
+      <td>Two Dictionary definitions, HomeBranchLatitude and HomeBranchLongitude, are both keyed on the account’s HomeBranchCode, since a Dictionary holds one number per key. A Require step restricts the test to branch channel events, and the 1 km distance is an illustrative placeholder; TransactionChannel and HomeBranchCode are placeholder fields.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TransactionChannel.RequireEqual("BRANCH").Against(Dictionary.HomeBranchLatitude).MatchDistanceKmAbove(Dictionary.HomeBranchLongitude, Payload.Latitude, Payload.Longitude, 1)</code></td>
+      <td>Tag: Geo · Both · Account · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-09</td>
+      <td><strong>Outside licensed jurisdiction</strong></td>
+      <td>Activity from a state/country where the product is not licensed.</td>
+      <td>A List holds the licensed country codes, and a single Activation Rule matches sessions outside it. The session country from the channel is the field tested, not the card country, so CountryAlpha2 here is a placeholder for the session country.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.CountryAlpha2.MatchNotInList(List.LicensedJurisdictions)</code></td>
+      <td>Check: Licence scope is regulatory; verify against the current licence schedule. Tag: Geo · Both · Session · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-10</td>
+      <td><strong>Gambling from restricted region</strong></td>
+      <td>Player location in a prohibited jurisdiction.</td>
+      <td>A List holds the prohibited region codes in ISO 3166-2 form, and a single Activation Rule matches players located in one. The operator must supply PlayerRegionCode, a placeholder field, and a geo-IP-derived region needs the external lookup described in 8.1-09.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.PlayerRegionCode.MatchInList(List.ProhibitedRegions)</code></td>
+      <td>Check: Prohibited-region lists are set by each gambling regulator; verify per jurisdiction. Tag: Geo · Both · Session · single event</td>
+    </tr>
+    <tr>
+      <td>8.2-11</td>
+      <td><strong>Self-exclusion location conflicts</strong></td>
+      <td>Venue/location near player’s exclusion.</td>
+      <td>The same method as 8.2-03, with the player’s excluded venues as centres and a 0.5 km radius as an illustrative placeholder. The fragment tests one shared List, so selecting the List by player id before the call is not expressed here.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchIsWithinAnyRadiusKm(Payload.Longitude, List.PlayerExclusionVenueCentres, 0.5)</code></td>
+      <td>Check: Exclusion radius is a policy parameter; verify against the operator’s self-exclusion rules. Tag: Geo · Both · Player · single event</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="83-location-profile-and-context">8.3 Location profile and context</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Example</th>
+      <th>Description</th>
+      <th>Jube construction</th>
+      <th>Fragment</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8.3-01</td>
+      <td><strong>First transaction in a new country</strong></td>
+      <td>New country (also in class 2).</td>
+      <td>An Abstraction Rule keyed on Account over a Search Interval wide enough to cover the account’s history, with Function Type Same Count over CountryAlpha2, returns how many prior events share the current country. The test needs the rule to exclude the current event, otherwise the lowest value is one.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.SameCountryLifetime.MatchEqual(0)</code></td>
+      <td>Tag: Geo · Fraud · Account · lifetime</td>
+    </tr>
+    <tr>
+      <td>8.3-02</td>
+      <td><strong>First transaction in a new city/region</strong></td>
+      <td>New region for the customer.</td>
+      <td>As 8.3-01 on City, using a Same Count over City with an Account key. City names need normalisation or a stable city code, and City is a placeholder field.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.SameCityLifetime.MatchEqual(0)</code></td>
+      <td>Tag: Geo · Fraud · Account · lifetime</td>
+    </tr>
+    <tr>
+      <td>8.3-03</td>
+      <td><strong>Unusual region for customer segment</strong></td>
+      <td>Region atypical for the segment.</td>
+      <td>Two Abstraction Rules keyed on the customer segment rather than an entity, over a 90 Day Search Interval: a Same Count of RegionCode and a Count, whose ratio is tested. The rule must accept a non-entity Search Key, or the test is keyed on the customer against the segment baseline, and the 0.01 ratio is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.SegmentSameRegion90d.MatchRatioOfBelow(Abstraction.SegmentTotal90d, 0.01)</code></td>
+      <td>Check: 1% is an analyst threshold, not a regulatory figure. Tag: Geo · Fraud · Customer · 90d</td>
+    </tr>
+    <tr>
+      <td>8.3-04</td>
+      <td><strong>Travel notification absent</strong></td>
+      <td>Foreign spend without a travel notice.</td>
+      <td>A single Activation Rule with a Require step for an absent travel notice, followed by a not-equal test of the transaction country against the home country. HomeCountryAlpha2 and IsTravelNoticeActive are placeholder account-state fields supplied in the payload.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IsTravelNoticeActive.RequireIsFalse().Against(Payload.CountryAlpha2).MatchNotEqual(Payload.HomeCountryAlpha2)</code></td>
+      <td>Tag: Geo · Fraud · Card · single event</td>
+    </tr>
+    <tr>
+      <td>8.3-06</td>
+      <td><strong>Public holiday/weekend at merchant location</strong></td>
+      <td>Merchant closed yet transaction approved.</td>
+      <td>A List holds public holiday dates in yyyy-MM-dd form, and MerchantLocalDayKey is a placeholder enrichment field carrying the merchant’s local date as a string, since DateTime has no list-membership step. The weekend half is a separate Activation Rule with Matched = Payload.TransactionDate.MatchIsWeekendInZone(Payload.MerchantTimeZoneId), which counts Saturday and Sunday.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.MerchantLocalDayKey.MatchInList(List.PublicHolidayDates)</code></td>
+      <td>Check: Weekend and public-holiday calendars differ by country. Flow.DateTime.MatchIsWeekendInZone uses Saturday-Sunday, so verify per merchant jurisdiction; confirm current holiday calendars. Tag: Geo · Fraud · Merchant · single event</td>
+    </tr>
+    <tr>
+      <td>8.3-07</td>
+      <td><strong>Merchant outside opening hours</strong></td>
+      <td>Transaction at closed business location.</td>
+      <td>Two Dictionary definitions, MerchantOpenHour and MerchantCloseHour, are keyed on MerchantId because a Dictionary holds one number per key. MerchantLocalHourAmount is a placeholder enrichment field holding the local hour as a decimal, and the test does not handle opening hours that run past midnight.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.MerchantLocalHourAmount.MatchOutsideRange(Dictionary.MerchantOpenHour, Dictionary.MerchantCloseHour)</code></td>
+      <td>Tag: Geo · Fraud · Merchant · single event</td>
+    </tr>
+    <tr>
+      <td>8.3-08</td>
+      <td><strong>Merchant location versus declared business location mismatch</strong></td>
+      <td>Terminal geolocation differs from registered address.</td>
+      <td>Two Dictionary definitions keyed on MerchantId hold the registered business location, which is geocoded at onboarding, and the terminal’s reported coordinates are the transaction payload. The 1 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Dictionary.MerchantDeclaredLatitude.MatchDistanceKmAbove(Dictionary.MerchantDeclaredLongitude, Payload.Latitude, Payload.Longitude, 1)</code></td>
+      <td>Tag: Geo · Fraud · Merchant · single event</td>
+    </tr>
+    <tr>
+      <td>8.3-09</td>
+      <td><strong>POS terminal relocation</strong></td>
+      <td>Terminal appears in a new country/region.</td>
+      <td>Abstraction Rules keyed on TerminalId over a 30 Day Search Interval with Offset Type Last and Function Type Actual Value return the terminal’s prior coordinates, and the 5 km distance is an illustrative placeholder. The first event of a terminal has no prior location, so the rule is silent until the second, and the country-change check needs the prior country stored as a numeric code or a TTL Counter flag, since an Abstraction Rule returns numbers.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchDistanceKmAbove(Payload.Longitude, Abstraction.TerminalPrevLatitude, Abstraction.TerminalPrevLongitude, 5)</code></td>
+      <td>Check: Relocation distance is an analyst parameter. Tag: Geo · Fraud · Terminal · 30d</td>
+    </tr>
+    <tr>
+      <td>8.3-10</td>
+      <td><strong>Distance between sender and beneficiary</strong></td>
+      <td>Cross-continent small payments (scam indicator).</td>
+      <td>Four Dictionary definitions hold country centroids: sender latitude and longitude keyed on SenderCountryAlpha2, and beneficiary latitude and longitude keyed on BeneficiaryCountryAlpha2. A Require step gates the test on a small amount, the distance is coarse for large countries so it is a corridor signal only, and the 500 amount and 3,000 km distance are illustrative placeholders.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Amount.RequireLess(500).Against(Dictionary.SenderLatitude).MatchDistanceKmAbove(Dictionary.SenderLongitude, Dictionary.BeneficiaryLatitude, Dictionary.BeneficiaryLongitude, 3000)</code></td>
+      <td>Check: Small-payment and distance thresholds are analyst parameters; the scam-indicator link is a typology claim, not a regulatory fact. Tag: Geo · Fraud · Payment · single event</td>
+    </tr>
+    <tr>
+      <td>8.3-11</td>
+      <td><strong>Distance between home and branch cash deposit</strong></td>
+      <td>Large deposits far away.</td>
+      <td>An Abstraction Rule keyed on Account over a 90 Day Search Interval with Function Type Median over Latitude and over Longitude gives the home centroid, as in 8.1-05, and two Dictionary definitions keyed on BranchCode give the branch coordinates. A Require step gates the test on the cash deposit transaction type, and the 50 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TxnType.RequireEqual("CASH_DEPOSIT").Against(Abstraction.HomeLatitude).MatchDistanceKmAbove(Abstraction.HomeLongitude, Dictionary.BranchLatitude, Dictionary.BranchLongitude, 50)</code></td>
+      <td>Tag: Geo · AML · Account · single event</td>
+    </tr>
+    <tr>
+      <td>8.3-12</td>
+      <td><strong>Many different cities in a day (movement radius)</strong></td>
+      <td>Radius of gyration too large.</td>
+      <td>An Abstraction Rule keyed on Card over a 24 Hour Search Interval with Function Type Distinct Count over City counts distinct cities as a proxy for the movement radius, with the threshold of 3 as an illustrative placeholder. A true radius of gyration needs coordinate geometry, which would be a new method.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.Cities24h.MatchGreater(3)</code></td>
+      <td>Check: cityThreshold is an analyst parameter. Tag: Geo · Fraud · Card · 24h</td>
+    </tr>
+    <tr>
+      <td>8.3-13</td>
+      <td><strong>Stationary device but moving transactions</strong></td>
+      <td>Device reports a fixed location while spend moves.</td>
+      <td>Two Abstraction Rules keyed on Account over 24 Hours with Function Type Standard Deviation, one over DeviceLatitude and one over Latitude. The Require step is the near-zero spread test with the epsilon as a placeholder, and the rule should also use the longitude pair, since latitude alone misses east-west movement.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.DeviceLatSd24h.RequireLess(0.0001).Against(Abstraction.TxnLatSd24h).MatchGreater(0.5)</code></td>
+      <td>Tag: Geo · Fraud · Account · 24h</td>
+    </tr>
+    <tr>
+      <td>8.3-14</td>
+      <td><strong>GPS spoofing / mock-location flag</strong></td>
+      <td>Mock location provider enabled.</td>
+      <td>A single Activation Rule on a Boolean payload field supplied by the device SDK. IsMockLocation is a placeholder field name.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IsMockLocation.MatchIsTrue()</code></td>
+      <td>Tag: Geo · Fraud · Device · per event</td>
+    </tr>
+    <tr>
+      <td>8.3-15</td>
+      <td><strong>Altitude/speed implausible (device sensors)</strong></td>
+      <td>Sensor inconsistency.</td>
+      <td>A single Activation Rule with a range check on the device altitude, with the bounds as placeholders. The sibling speed test, DeviceSpeedKmh greater than a maximum, has the same shape, and a terrain-aware altitude check needs an external elevation lookup, which would make it a C.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.DeviceAltitudeAmount.MatchOutsideRange(-500, 9000)</code></td>
+      <td>Check: The Dead Sea shore is about -430 m and Everest is 8,849 m (2019 survey); the speed maximum is an analyst choice. Verify the bounds. Tag: Geo · Fraud · Device · per event</td>
+    </tr>
+    <tr>
+      <td>8.3-16</td>
+      <td><strong>Wi-Fi/cell-tower location mismatches IP geolocation</strong></td>
+      <td>Network mismatch.</td>
+      <td>Distance between the cell-tower position and the IP position. Upstream fields: Payload.CellLatitude, Payload.CellLongitude, Payload.IpLatitude and Payload.IpLongitude, supplied before Jube or by an inline-script hook. Distance 200 km is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.CellLatitude.MatchDistanceKmAbove(Payload.CellLongitude, Payload.IpLatitude, Payload.IpLongitude, 200)</code></td>
+      <td>Tag: Geo · Fraud · Device · per event</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="84-cross-border-and-corridor-geography">8.4 Cross-border and corridor geography</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Example</th>
+      <th>Description</th>
+      <th>Jube construction</th>
+      <th>Fragment</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8.4-01</td>
+      <td><strong>Payment corridor distance anomalies</strong></td>
+      <td>Unusually distant corridor for a small remitter.</td>
+      <td>The per-event corridor distance must be a payload field, supplied by enrichment from country centroids in a Dictionary pair, because a fragment cannot compute and aggregate in one step. An Abstraction Rule keyed on Remitter over 90 Days with Function Type Median over CorridorDistanceAmount supplies the baseline, which the deviation step takes in place of a mean, and the 300 percent is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.CorridorDistanceAmount.PercentDeviationFromMean(Abstraction.CorridorMedianKm).MatchGreater(300)</code></td>
+      <td>Tag: Geo · AML · Payment · single event</td>
+    </tr>
+    <tr>
+      <td>8.4-02</td>
+      <td><strong>Transit-country routing</strong></td>
+      <td>Payments routed via third countries with no business reason.</td>
+      <td>A single Activation Rule tests the transit country against a List of watched countries. The no-business-reason part needs a purpose field (TransitPurposeCode, a placeholder), since free-text reasons are NLP and outside the fragment.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TransitCountryAlpha2.MatchInList(List.TransitWatchList)</code></td>
+      <td>Check: Verify the transit watch list against current FATF public statements and internal risk policy. Tag: Geo · AML · Payment · single event</td>
+    </tr>
+    <tr>
+      <td>8.4-03</td>
+      <td><strong>Funds returning to origin country via third country</strong></td>
+      <td>Triangular geography.</td>
+      <td>Single-event form: beneficiary country equals origin country while the transit country differs from origin. Upstream fields: Payload.OriginCountryAlpha2, Payload.BeneficiaryCountryAlpha2 and Payload.TransitCountryAlpha2, supplied before Jube or by an inline-script hook. The multi-hop return path across transactions is not covered and stays with the graph route.</td>
+      <td><code class="language-plaintext highlighter-rouge">If (Payload.BeneficiaryCountryAlpha2 = Payload.OriginCountryAlpha2 And Payload.TransitCountryAlpha2 &lt;&gt; Payload.OriginCountryAlpha2) Then Return True</code></td>
+      <td>Tag: Geo · AML · Account · 30d</td>
+    </tr>
+    <tr>
+      <td>8.4-04</td>
+      <td><strong>Goods origin versus payment origin mismatch</strong></td>
+      <td>Goods shipped from country A, paid from country B.</td>
+      <td>A single Activation Rule compares the trade-document origin with the payment origin, both ISO 3166 alpha-2 payload fields that are placeholder names here.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.GoodsOriginCountryAlpha2.MatchNotEqual(Payload.PaymentOriginCountryAlpha2)</code></td>
+      <td>Tag: Geo · AML · Trade · single event</td>
+    </tr>
+    <tr>
+      <td>8.4-05</td>
+      <td><strong>Port-of-call versus declared route mismatch</strong></td>
+      <td>Deviation from the shipment route.</td>
+      <td>A Dictionary holds one number per key, so it cannot return the allowed port list for a route. Enrichment instead builds DeclaredRoutePortKey from the declared route code and the port of call, a placeholder field, and one List holds the allowed route and port pairs, so a match means the port is not allowed on that route.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.DeclaredRoutePortKey.MatchNotInList(List.AllowedRoutePortPairs)</code></td>
+      <td>Tag: Geo · AML · Trade · single event</td>
+    </tr>
+    <tr>
+      <td>8.4-06</td>
+      <td><strong>Cross-border cash declaration thresholds</strong></td>
+      <td>Cash across borders around limits.</td>
+      <td>An Abstraction Rule keyed on Customer over a 24 Hour Search Interval with Function Type Sum over CashAmountReportingCcy, after enrichment converts to one reporting currency, is the aggregate test. The per-event just-below-limit test is the structuring form and is a separate Activation Rule, and the 10000 limit and 10 percent margin are illustrative placeholders.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.CashSum24h.MatchGreater(10000)</code></td>
+      <td>Check: Reporting and declaration thresholds vary by jurisdiction and direction. Verify, e.g., EU Regulation 2018/1672 (EUR 10,000 cash declaration) and US CMIR (USD 10,000); confirm currency and whether the test is per event or aggregate. The 10 percent margin is an analyst choice. Tag: Geo · AML · Customer · event</td>
+    </tr>
+    <tr>
+      <td>8.4-07</td>
+      <td><strong>Multiple border-region ATMs in short sequence</strong></td>
+      <td>Cash taken across the border.</td>
+      <td>An Activation Rule holds this pipeline and ticks Increment TTL Counter on BorderAtm, a Card-keyed counter over a 24 Hours interval with Sum off. A second Activation Rule with Matched = TTLCounter.BorderAtm.MatchGreater(3) reads it, the incrementing rule must have the higher Priority, and the border-region List is reference data.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TxnType.RequireEqual("ATM").Against(Payload.RegionCode).MatchInList(List.BorderRegions)</code></td>
+      <td>Check: The 24h window is an analyst parameter. Tag: Geo · AML · Card · 24h</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="85-sector-specific-geospatial-rules">8.5 Sector-specific geospatial rules</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Example</th>
+      <th>Description</th>
+      <th>Jube construction</th>
+      <th>Fragment</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8.5-01</td>
+      <td><strong>Accident location far from both parties’ addresses (insurance)</strong></td>
+      <td>Staged accident far from home.</td>
+      <td>Four Dictionary definitions keyed on the policy and claimant ids hold the insured and claimant coordinates, each as one number. The Require step tests the distance from the insured address and the Match step tests the distance from the claimant’s address, so both must exceed the threshold, and the 50 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.RequireDistanceKmAbove(Payload.Longitude, Dictionary.InsuredLatitude, Dictionary.InsuredLongitude, 50).MatchDistanceKmAbove(Payload.Longitude, Dictionary.ClaimantLatitude, Dictionary.ClaimantLongitude, 50)</code></td>
+      <td>Check: Distance threshold is an analyst parameter. Tag: Geo · Fraud · Claim · single event</td>
+    </tr>
+    <tr>
+      <td>8.5-02</td>
+      <td><strong>Repeated claims at the same location</strong></td>
+      <td>Location hotspot.</td>
+      <td>An Abstraction Rule keyed on the geohash-6 cell from Payload.Latitude.ToGeohash(Payload.Longitude, 6), with a 730 Day Search Interval and Function Type Count, counts claims at the location, using the same key derivation as 8.2-04. The threshold of 3 is a placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.ClaimsAtCell730d.MatchGreater(3)</code></td>
+      <td>Check: Read as 24 months, approximated as 730 days; confirm the intended unit. Tag: Geo · Fraud · Location · 24m</td>
+    </tr>
+    <tr>
+      <td>8.5-03</td>
+      <td><strong>Claimant GPS/telematics contradicts claim narrative</strong></td>
+      <td>Vehicle not at scene.</td>
+      <td>A single Activation Rule compares the telematics position with the accident coordinates. Only the location part of a contradiction is expressible, since the narrative is text and a free-text contradiction is outside the fragment, and the 1 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TelematicsLatitude.MatchDistanceKmAbove(Payload.TelematicsLongitude, Payload.AccidentLatitude, Payload.AccidentLongitude, 1)</code></td>
+      <td>Tag: Geo · Fraud · Claim · single event</td>
+    </tr>
+    <tr>
+      <td>8.5-04</td>
+      <td><strong>Property insured far from policyholder’s residence cluster</strong></td>
+      <td>Geographic implausibility.</td>
+      <td>Two Dictionary definitions keyed on the policyholder hold the residence coordinates, geocoded at onboarding. A residence cluster with several addresses needs one entry per address and a nearest-address approximation, and the 50 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.PropertyLatitude.MatchDistanceKmAbove(Payload.PropertyLongitude, Dictionary.ResidenceLatitude, Dictionary.ResidenceLongitude, 50)</code></td>
+      <td>Tag: Geo · Fraud · Policy · onboarding</td>
+    </tr>
+    <tr>
+      <td>8.5-05</td>
+      <td><strong>Player location jumps between restricted and allowed regions (gaming)</strong></td>
+      <td>Geo-spoofing to play.</td>
+      <td>Two Abstraction Rules keyed on Player over a 24 Hour Search Interval with Function Type Count: one limited to RegionCode values in a List of restricted regions and one to values outside it. The Require step needs a restricted visit and the Match step an allowed one, which detects both sides within 24 Hours but not their order, so the jump is an approximation and the region must come from the operator (see 8.2-10).</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.RestrictedRegionCount24h.RequireGreater(0).Against(Abstraction.AllowedRegionCount24h).MatchGreater(0)</code></td>
+      <td>Check: The 24h window is an analyst parameter. Tag: Geo · Both · Player · 24h</td>
+    </tr>
+    <tr>
+      <td>8.5-06</td>
+      <td><strong>Multiple players at identical coordinates</strong></td>
+      <td>Same physical location (multi-accounting).</td>
+      <td>An Abstraction Rule keyed on the geohash-9 cell from Payload.Latitude.ToGeohash(Payload.Longitude, 9), over a 24 Hour Search Interval with Function Type Distinct Count over PlayerId, counts distinct players at one place. GPS jitter means identical coordinates appear as the same cell, and the threshold of 5 is a placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.PlayersAtCell24h.MatchGreater(5)</code></td>
+      <td>Check: Geohash-9 cell size (about 5 m) should be verified against the geohash cell table. Tag: Geo · Fraud · Location · 24h</td>
+    </tr>
+    <tr>
+      <td>8.5-07</td>
+      <td><strong>Exchange login countries exceed declared residency (crypto)</strong></td>
+      <td>Residency evasion.</td>
+      <td>The per-login residency test is the Match step. An Abstraction Rule keyed on Account over a 30 Day Search Interval with Function Type Distinct Count over LoginCountryAlpha2 catches roaming across countries and is a separate Activation Rule that matches when the count is greater than one.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.LoginCountryAlpha2.MatchNotEqual(Payload.DeclaredResidencyAlpha2)</code></td>
+      <td>Check: Residency regimes for crypto exchanges are jurisdictional; verify the declared-residency field and the applicable regime. Tag: Geo · AML · Account · 30d</td>
+    </tr>
+    <tr>
+      <td>8.5-08</td>
+      <td><strong>Trading from sanctioned geography despite declared address</strong></td>
+      <td>Geo-IP in sanctioned territory.</td>
+      <td>A List holds the sanctioned CIDR blocks, and the step is true when the IPv4 address falls in any of them. The declared-address half is a separate test of the declared country against a List of sanctioned countries, and IPv6 needs a separate check.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IP.MatchIsInAnyCidr(List.SanctionedCidrBlocks)</code></td>
+      <td>Check: Sanctioned-territory lists change frequently; verify against current OFAC, EU and UK designations at build time. Geo-IP block lists go stale quickly. Tag: Geo · AML · Account · per event</td>
+    </tr>
+    <tr>
+      <td>8.5-09</td>
+      <td><strong>Remittance receiver pick-up location far from stated address</strong></td>
+      <td>Collector pattern.</td>
+      <td>Two Dictionary definitions keyed on ReceiverId hold the stated receiver address, geocoded at onboarding, and the pick-up coordinates come from the agent terminal in the payload. The 10 km distance is illustrative, and PickupLatitude and PickupLongitude are placeholder fields.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.PickupLatitude.MatchDistanceKmAbove(Payload.PickupLongitude, Dictionary.ReceiverLatitude, Dictionary.ReceiverLongitude, 10)</code></td>
+      <td>Tag: Geo · AML · Receiver · 30d</td>
+    </tr>
+    <tr>
+      <td>8.5-10</td>
+      <td><strong>Agent transactions geolocated away from agent’s registered site</strong></td>
+      <td>Mobile-money agent roaming.</td>
+      <td>Two Dictionary definitions keyed on AgentId hold the registered site from agent master data, and the transaction location is the terminal’s reported position. The 1 km distance is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchDistanceKmAbove(Payload.Longitude, Dictionary.RegisteredLatitude, Dictionary.RegisteredLongitude, 1)</code></td>
+      <td>Tag: Geo · AML · Agent · 24h</td>
+    </tr>
+    <tr>
+      <td>8.5-11</td>
+      <td><strong>Cash-in and cash-out at agents on either side of a border</strong></td>
+      <td>Cross-border via mobile money.</td>
+      <td>An Abstraction Rule keyed on Wallet over a 24 Hour Search Interval with Offset Type Last and Function Type Actual Value returns the prior agent coordinates, and the short distance is the border-side approximation. The country-change gate cannot be expressed here because an Abstraction Rule returns numbers, so it needs the prior country stored as a numeric code or a TTL Counter flag, and the 5 km distance is a placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.Latitude.MatchDistanceKmBelow(Payload.Longitude, Abstraction.PrevAgentLatitude, Abstraction.PrevAgentLongitude, 5)</code></td>
+      <td>Check: The short-distance threshold is an analyst parameter. Tag: Geo · AML · Wallet · 24h</td>
+    </tr>
+    <tr>
+      <td>8.5-12</td>
+      <td><strong>Delivery address distance from IP location (e-commerce)</strong></td>
+      <td>Shipping far from buyer.</td>
+      <td>Distance between the delivery address and the IP location. Upstream fields: Payload.DeliveryLatitude, Payload.DeliveryLongitude, Payload.IpLatitude and Payload.IpLongitude, supplied before Jube or by an inline-script hook. Distance 300 km is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.DeliveryLatitude.MatchDistanceKmAbove(Payload.DeliveryLongitude, Payload.IpLatitude, Payload.IpLongitude, 300)</code></td>
+      <td>Tag: Geo · Fraud · Order · single event</td>
+    </tr>
+    <tr>
+      <td>8.5-13</td>
+      <td><strong>Driver GPS trace inconsistent with trip (gig platforms)</strong></td>
+      <td>Fake trips.</td>
+      <td>A Require step tests that the trace start is near the pick-up point, and the Match step tests that the trace distance is below the trip distance, on the assumption that the platform sends trace summary fields. The tolerance multiplier is not expressed, so the comparison is against the trip distance directly, and full trace replay is outside a single fragment.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TraceStartLatitude.RequireDistanceKmAbove(Payload.TraceStartLongitude, Payload.PickupLatitude, Payload.PickupLongitude, 1).Against(Payload.TraceDistanceAmount).MatchLess(Payload.TripDistanceAmount)</code></td>
+      <td>Check: The tolerance is an analyst parameter. Tag: Geo · Fraud · Trip · single event</td>
+    </tr>
+    <tr>
+      <td>8.5-14</td>
+      <td><strong>Branch cash deposit location far from account’s usual cluster</strong></td>
+      <td>Deposit location outlier.</td>
+      <td>Two Abstraction Rules keyed on Account over a 365 Day Search Interval with Function Type Median over the Latitude and Longitude of prior cash deposits give the usual deposit location, as in 8.1-05. The Require step gates the test on a cash deposit, the window must exclude the current deposit, and the 50 km distance is a placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TxnType.RequireEqual("CASH_DEPOSIT").Against(Abstraction.DepositMedianLatitude).MatchDistanceKmAbove(Abstraction.DepositMedianLongitude, Payload.Latitude, Payload.Longitude, 50)</code></td>
+      <td>Tag: Geo · AML · Account · single event</td>
+    </tr>
+    <tr>
+      <td>8.5-15</td>
+      <td><strong>Corporate user approving payments from unexpected country</strong></td>
+      <td>Approver abroad without notice.</td>
+      <td>An Abstraction Rule keyed on User over a 90 Day Search Interval with Function Type Same Count over CountryAlpha2 applies the first-in-country test per approver, and the Require step gates it on no travel notice. IsTravelNoticeActive is a placeholder field.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IsTravelNoticeActive.RequireIsFalse().Against(Abstraction.ApproverSameCountry90d).MatchEqual(0)</code></td>
+      <td>Tag: Geo · Fraud · User · per event</td>
+    </tr>
+    <tr>
+      <td>8.5-16</td>
+      <td><strong>Vendor address geocodes to residential or vacant lot</strong></td>
+      <td>Fake vendor.</td>
+      <td>Vendor address type is residential or vacant. Upstream field: Payload.VendorAddressType, supplied before Jube or by an inline-script hook. List: List.ResidentialOrVacantAddressTypes, containing RESIDENTIAL and VACANT.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.VendorAddressType.MatchInList(List.ResidentialOrVacantAddressTypes)</code></td>
+      <td>Tag: Geo · Fraud · Vendor · onboarding</td>
+    </tr>
+    <tr>
+      <td>8.5-17</td>
+      <td><strong>Many vendors geocoded to one location</strong></td>
+      <td>Vendor cluster.</td>
+      <td>An Abstraction Rule keyed on the geohash-7 cell from Payload.VendorLatitude.ToGeohash(Payload.VendorLongitude, 7), over a lifetime window with Function Type Distinct Count over VendorId, counts distinct vendors at one place, and the threshold of 5 is a placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.VendorsAtCell.MatchGreater(5)</code></td>
+      <td>Check: Geohash-7 cell size (about 150 m) should be verified against the geohash cell table. Tag: Geo · Fraud · Location · lifetime</td>
+    </tr>
+    <tr>
+      <td>8.5-18</td>
+      <td><strong>Charity payments to conflict zones (NPO)</strong></td>
+      <td>Conflict-area proximity.</td>
+      <td>A Require step gates the test on the NPO flag, and a List holds the conflict-zone countries, so the Match step tests the beneficiary country against it. The conflict-zone membership is policy reference data.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IsNpo.RequireIsTrue().Against(Payload.BeneficiaryCountryAlpha2).MatchInList(List.ConflictZoneCountries)</code></td>
+      <td>Check: Conflict-zone lists are policy and change; verify the source (e.g., UN, FATF or internal risk policy). Tag: Geo · AML · NPO · per transaction</td>
+    </tr>
+    <tr>
+      <td>8.5-19</td>
+      <td><strong>Vessel AIS gap near sanctioned ports (trade)</strong></td>
+      <td>Dark activity.</td>
+      <td>A List holds the sanctioned port codes, and the nearest port code comes from the AIS provider, so near means a port match rather than a coordinate test. An Abstraction Rule keyed on Vessel with Function Type Since in Hours gives the hours since the prior AIS report, and the 24 hour gap is an illustrative placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.NearestPortCode.RequireInList(List.SanctionedPorts).Against(Abstraction.AisHoursSincePrev).MatchGreater(24)</code></td>
+      <td>Check: The gap length is an analyst parameter; verify the sanctioned port list against current designations. Tag: Geo · AML · Vessel · voyage</td>
+    </tr>
+    <tr>
+      <td>8.5-20</td>
+      <td><strong>Shipment route deviation through high-risk ports</strong></td>
+      <td>Route anomaly.</td>
+      <td>A List holds the high-risk ports and a Require step gates on them. Deviation is a not-in-list test against a List of allowed route and transit port pairs, since a Dictionary holds only one number per key, and RouteTransitPortKey is a placeholder enrichment field combining the declared route code and the transit port.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.TransitPortCode.RequireInList(List.HighRiskPorts).Against(Payload.RouteTransitPortKey).MatchNotInList(List.DeclaredRouteTransitPairs)</code></td>
+      <td>Check: Verify the high-risk port list against current policy and sanctions sources. Tag: Geo · AML · Shipment · voyage</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="86-device-and-environment-context-rules">8.6 Device and environment context rules</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Example</th>
+      <th>Description</th>
+      <th>Jube construction</th>
+      <th>Fragment</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8.6-01</td>
+      <td><strong>Device battery/charging state implausible for session count</strong></td>
+      <td>Emulator indicator.</td>
+      <td>An Abstraction Rule keyed on DeviceId over 24 Hours with Function Type Standard Deviation over BatteryLevel gates the test on near-constant battery, and a second Abstraction Rule with Function Type Count over the same key counts sessions. Constant battery across many sessions suggests an emulator, and the epsilon and session count are placeholders.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.BatterySd24h.RequireLess(0.01).Against(Abstraction.Sessions24h).MatchGreater(20)</code></td>
+      <td>Tag: Context · Fraud · Device · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-02</td>
+      <td><strong>Device uptime and app install age mismatch</strong></td>
+      <td>Freshly installed app on long-running device patterns.</td>
+      <td>A single Activation Rule compares uptime with app install age. As worded it is weak because uptime resets on reboot, so it should be used only with a reboot count or dropped, and DeviceUptimeSeconds and AppInstallAgeSeconds are placeholder fields.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.DeviceUptimeSeconds.MatchLess(Payload.AppInstallAgeSeconds)</code></td>
+      <td>Check: The implied impossibility in the example is not sound: device uptime resets on reboot, so uptime below install age is ordinary. Tag: Context · Fraud · Device · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-03</td>
+      <td><strong>Screen resolution/user agent inconsistency</strong></td>
+      <td>Spoofed browser.</td>
+      <td>A Dictionary cannot return a set of resolutions, so enrichment combines the user-agent family and the screen resolution into UserAgentResolutionKey, a placeholder field, and one List holds the plausible pairs. The List needs a maintained reference table, since stale tables cause false positives on new devices.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.UserAgentResolutionKey.MatchNotInList(List.PlausibleUserAgentResolutions)</code></td>
+      <td>Tag: Context · Fraud · Session · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-04</td>
+      <td><strong>Accessibility services enabled during payment (overlay risk)</strong></td>
+      <td>Malware abuse vector.</td>
+      <td>A single Activation Rule on a Boolean payload field supplied by the device SDK. The field name is a placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.AccessibilityServiceEnabled.MatchIsTrue()</code></td>
+      <td>Tag: Context · Fraud · Device · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-05</td>
+      <td><strong>Developer mode/USB debugging enabled</strong></td>
+      <td>Compromised device environment.</td>
+      <td>A single Activation Rule on the developer mode Boolean from the device SDK. The USB debugging flag is the sibling Boolean and would be a second Activation Rule, and both field names are placeholders.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.DeveloperModeEnabled.MatchIsTrue()</code></td>
+      <td>Tag: Context · Fraud · Device · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-06</td>
+      <td><strong>Clipboard contains wallet address at payment time</strong></td>
+      <td>Clipper malware or scam instructions.</td>
+      <td>The method recognises well-formed Bitcoin and Ethereum addresses by format and checksum, which is stateless and bounded. Clipboard contents are sensitive device data, so collecting them is a privacy decision as well as a detection choice, and ClipboardText is a placeholder field.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.ClipboardText.MatchIsCryptoWalletAddress()</code></td>
+      <td>Check: Verify the validator against each chain’s address specification (Bitcoin base58check and bech32; Ethereum EIP-55 checksum). Tag: Context · Fraud · Device · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-07</td>
+      <td><strong>Phone call in progress during banking session</strong></td>
+      <td>Call-while-paying (vishing).</td>
+      <td>A single Activation Rule on a Boolean from the device SDK. On Android it needs the phone-state permission.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IsCallInProgress.MatchIsTrue()</code></td>
+      <td>Tag: Context · Fraud · Session · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-08</td>
+      <td><strong>Screen-sharing/screen-recording active</strong></td>
+      <td>RAT or coached session.</td>
+      <td>A single Activation Rule on a Boolean payload field supplied by the device SDK. The field name is a placeholder.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.IsScreenCaptureActive.MatchIsTrue()</code></td>
+      <td>Tag: Context · Fraud · Session · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-09</td>
+      <td><strong>Keyboard type is remote/virtual input</strong></td>
+      <td>Automation.</td>
+      <td>A single Activation Rule on an enum field from the device SDK. The value set depends on the SDK and must be verified, and InputMethodType is a placeholder field name.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Payload.InputMethodType.MatchIn("REMOTE", "VIRTUAL")</code></td>
+      <td>Tag: Context · Fraud · Session · per event</td>
+    </tr>
+    <tr>
+      <td>8.6-10</td>
+      <td><strong>Multiple sessions from same device within seconds across accounts</strong></td>
+      <td>Mule farm.</td>
+      <td>An Abstraction Rule keyed on DeviceId over a one-minute Search Interval with Function Type Distinct Count over AccountId counts accounts sharing the device. The one-minute interval must be supported by the rule, otherwise a TTL Counter with the shortest interval is the fallback.</td>
+      <td><code class="language-plaintext highlighter-rouge">Matched = Abstraction.AccountsPerDevice1m.MatchGreater(1)</code></td>
+      <td>Tag: Context · Fraud · Device · 1m</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    
+  </article>
+</div>
+</div>
+        <footer class="footer sm:footer-horizontal w-full mt-20 border-t border-base-300 py-10 text-sm" data-pagefind-ignore>
+  <nav><h6 class="footer-title mono">Legal</h6><a class="link link-hover" href="https://jube.io/agreements/jtos-version-1-8">Jube Terms of Service (JTOS)</a><a class="link link-hover" href="https://jube.io/jube-agplv3-open-source-compliance">AGPLv3: why only Jooby grazes this patch</a><a class="link link-hover" href="/privacy/">Privacy</a></nav>
+  <aside class="max-w-md flex flex-col gap-2 sm:ml-auto"><h6 class="footer-title mono">The developer</h6><p class="m-0 text-base-content/70 leading-relaxed text-pretty">Written by Richard Churchman, from sunny Paphos, Cyprus. No corporate layers, just direct software engineering. No roadmap theatre: if it's not in Git, it doesn't exist.</p></aside>
+</footer>
+
+      </main>
+      <aside class="not-prose hidden xl:flex flex-col gap-4 py-8 sticky top-16 self-start" data-pagefind-ignore>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="mono text-[11px] uppercase tracking-widest text-base-content/50">Work with Jube</div>
+    <a href="/training/" class="card bg-primary text-primary-content border border-primary no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Training &amp; Integration<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs">60 hours, typically four months.</div><div class="mono text-xs pt-1">$7,500 · fixed</div></div></a>
+    <a href="/support/" class="card bg-base-200 border border-base-300 no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:bg-base-100"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Support<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs text-base-content/70">Flat monthly. No clock, no overage.</div><div class="mono text-xs pt-1">from $350/mo</div></div></a>
+    <a href="/contact/" class="card bg-accent text-accent-content border border-accent no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Talk to the developer<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs opacity-80">Ask anything, any time.</div><div class="mono text-xs pt-1 opacity-80">WhatsApp, email or Meet</div></div></a>
+  </div>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="flex items-center justify-between gap-2"><div class="mono text-[11px] uppercase tracking-widest text-base-content/50">GitHub</div><a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="no-underline" aria-label="Star Jube on GitHub" data-stars="jube-home/aml-fraud-transaction-monitoring"><span class="badge badge-outline badge-sm mono text-xs gap-1 bg-base-100 text-base-content/70">★ <span data-stars-count>Star</span></span></a></div>
+    <div class="text-xs text-base-content/70 text-pretty">Every pull request tested in the open. Live from master.</div>
+    
+    <div class="flex flex-wrap gap-2">
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml/badge.svg?branch=master" alt="Unit tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml/badge.svg?branch=master" alt="End-to-end tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master" alt="CodeQL status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml/badge.svg?branch=master" alt="Trivy status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml/badge.svg?branch=master" alt="OWASP ZAP status" class="h-5 w-auto block"></a>
+    </div>
+  </div>
+</aside>
+
+    </div>
+  </div>
+  <a href="https://wa.me/35797517137" target="_blank" rel="noopener" aria-label="Message Jube on WhatsApp" title="Message us on WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full text-white shadow-lg flex items-center justify-center transition-transform duration-200 hover:scale-105 hover:shadow-xl" style="background-color:#25D366" data-pagefind-ignore><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"></path></svg></a>
+
+  
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>

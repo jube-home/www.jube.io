@@ -1,0 +1,3417 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme="jube">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
+<title>Extensions and Helpers Agent Tools | Jube</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Extensions and Helpers Agent Tools" />
+<meta name="author" content="Jube Holdings Limited" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<meta name="twitter:description" property="og:description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<link rel="canonical" href="https://www.jube.io/docs/Concepts/ServiceLayer/Extensions/" />
+<meta property="og:url" content="https://www.jube.io/docs/Concepts/ServiceLayer/Extensions/" />
+<meta property="og:site_name" content="Jube" />
+<meta property="og:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta name="twitter:title" content="Extensions and Helpers Agent Tools" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Jube Holdings Limited" />
+<meta name="google-site-verification" content="" />
+<meta name="msvalidate.01" content="" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jube Holdings Limited"},"description":"Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee.","headline":"Extensions and Helpers Agent Tools","image":"https://www.jube.io/assets/img/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.jube.io/assets/img/jube-logo.png"},"name":"Jube Holdings Limited"},"url":"https://www.jube.io/docs/Concepts/ServiceLayer/Extensions/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <link rel="icon" href="/assets/img/jube-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="min-h-screen bg-base-100 text-base-content antialiased">
+  <a href="/" class="w-full bg-neutral text-neutral-content flex justify-center px-5 no-underline group" data-pagefind-ignore><div class="w-full max-w-7xl py-2 flex items-baseline gap-x-3 gap-y-0.5 flex-wrap"><span class="text-sm font-semibold tracking-tight">Open-source agentic AI for transaction monitoring. <span class="text-primary">Just ask Jooby.</span></span><span class="mono text-[11px] uppercase tracking-widest text-neutral-content/60 group-hover:text-neutral-content">What's Jube? →</span></div></a>
+<header class="w-full border-b border-base-300 flex justify-center px-5 bg-base-100/95 backdrop-blur sticky top-0 z-20">
+  <div class="navbar w-full max-w-7xl px-0 py-2 gap-4 flex-nowrap">
+    <div class="flex-none flex items-center gap-2">
+      <button id="mnav-toggle" class="btn btn-ghost btn-sm btn-square lg:hidden" aria-label="Menu"><span class="text-lg leading-none">☰</span></button>
+      <a href="/" class="flex shrink-0 items-center gap-0.5 text-2xl font-semibold tracking-tight no-underline"><img src="/assets/img/jube-logo.png" alt="" class="h-11 w-auto"><span>jube</span></a>
+    </div>
+    <div id="sx" class="relative hidden md:block flex-1 max-w-md min-w-0" data-pf="/pagefind/pagefind.js" data-pagefind-ignore>
+      <label class="input input-sm w-full bg-base-200 border-base-300 flex items-center gap-2 focus-within:border-primary">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="text-base-content/50 shrink-0" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <input id="sx-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search documentation, training, support…" class="grow min-w-0 text-sm" role="combobox" aria-expanded="false" aria-controls="sx-list" aria-autocomplete="list" aria-label="Search">
+        <span class="flex gap-1 shrink-0"><kbd class="kbd kbd-xs">⌘</kbd><kbd class="kbd kbd-xs">K</kbd></span>
+      </label>
+      <div id="sx-panel" class="absolute left-0 w-[min(38rem,calc(100vw-2.5rem))] top-full mt-2 z-50 rounded-box border border-base-300 bg-base-100 shadow-xl overflow-hidden" hidden>
+        <ul id="sx-list" role="listbox" class="list-none m-0 p-1 max-h-[65vh] overflow-y-auto"></ul>
+        <div id="sx-foot" class="mono text-[11px] text-base-content/50 px-3 py-2 border-t border-base-300 flex gap-3 flex-wrap"></div>
+      </div>
+    </div>
+    <nav class="flex flex-none items-center gap-1 ml-auto text-sm">
+      <a href="https://jube.io/v2JubeDesignBuildHandoff.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm font-medium"><span class="badge badge-accent badge-xs mono">v2</span><span class="hidden sm:inline">Get an early look at Version 2</span><span class="sm:hidden">Early look</span></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="btn btn-ghost btn-sm btn-square" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+    </nav>
+  </div>
+</header>
+<div id="mnav" class="lg:hidden w-full border-b border-base-300 bg-base-100 px-5 py-4 max-h-[70vh] overflow-y-auto" hidden>
+  <ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details open>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70 menu-active">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+
+</div>
+
+  <div class="w-full flex justify-center">
+    <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] xl:grid-cols-[auto_minmax(0,1fr)_280px] gap-8 px-5">
+      <aside id="side" class="hidden lg:block py-6 sticky top-16 self-start max-h-[calc(100vh-4rem)] overflow-y-auto transition-[width] duration-200 w-10">
+  <div class="flex pb-2"><button id="side-toggle" class="btn btn-ghost btn-sm btn-square" aria-label="Show menu" title="Show menu"><span class="text-lg leading-none" data-icon>☰</span></button></div>
+  <div id="side-nav" hidden><ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details open>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70 menu-active">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+</div>
+</aside>
+
+      <main class="py-8 min-w-0 flex flex-col">
+        <div data-pagefind-body><div class="flex flex-col gap-6">
+  <div class="breadcrumbs text-xs mono p-0 text-base-content/60"><ul><li><a href="/docs/">Documentation</a></li><li>Concepts</li><li>Service Layer & DTO Model</li><li>Extensions and Helpers Agent Tools</li></ul></div>
+  <article class="prose max-w-none prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-pre:bg-neutral prose-pre:text-neutral-content">
+    <p>🚀 Get to pre-production in weeks, not months, with private <a href="https://www.jube.io/jube-training">training</a> direct from
+Jube’s developer — real sovereignty, zero vendor lock-in.</p>
+
+<h1 id="extensions-and-helpers-agent-tools">Extensions and Helpers Agent Tools</h1>
+
+<p>An agent should not work out a weekday, a percentage change, an IBAN checksum or a time zone offset by reasoning,
+because it will sometimes be wrong. The service layer therefore offers 178 small, exact, pure functions as agent tools,
+in 22 groups of 7 to 10. Each group is meant to be handed to one agent. Statistical, numerical and machine-learning
+tools are not here; they are the separate Advanced Analytics tool layer.</p>
+
+<h2 id="where-the-logic-lives">Where the logic lives</h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">Jube.Dictionary.Extensions</code></strong> holds the logic as extension methods, which are also the rule language’s tokens (see
+<a href="../../../Configuration/Models/RuleCompilationAlgorithm/index.html#reference-identifier-and-utility-extensions">Rule Compilation Algorithm</a>).
+A rule and an agent tool therefore run the same code and cannot disagree.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.&lt;Group&gt;</code></strong> is a thin facade over those methods. Each tool adds an LLM-oriented description,
+input limits and plain-English errors, and sometimes combines several extension calls into one small result record,
+such as <code class="language-plaintext highlighter-rouge">ValidateIban</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">Jube.Service.Helpers.&lt;Group&gt;</code></strong> holds the few functions that are not extension methods: reading the clock, creating
+UUIDs, and set operations over lists of text.</li>
+</ul>
+
+<h2 id="contract">Contract</h2>
+
+<ul>
+  <li>Tools are marked <code class="language-plaintext highlighter-rouge">[FunctionToolGroup(name, description)]</code> on the class and <code class="language-plaintext highlighter-rouge">[FunctionTool(name)]</code> with <code class="language-plaintext highlighter-rouge">[Description]</code>
+on each method and parameter. Tests hold the decoration to a standard: descriptions of at least 30 characters (8 for
+parameters), globally unique tool names, a group size of 7 to 20, and a namespace that ends in the group name.
+Discovering the groups and binding them as agent functions is the agent host’s job, beside the existing service tool
+binder, and is not part of this layer.</li>
+  <li><strong>Errors are for the model.</strong> Invalid input, and any result that would be undefined (division by zero, an unknown
+currency, a skipped local time), throws <code class="language-plaintext highlighter-rouge">ArgumentException</code> with the reason and, where useful, the valid options. The
+hosting middleware should return that message to the model as the tool result. Results never contain <code class="language-plaintext highlighter-rouge">NaN</code> or
+infinity.</li>
+  <li><strong>Bounded input.</strong> Text is limited to 100,000 characters (1,000 for names in fuzzy matching and 1,000,000 for JSON/XML
+documents), and lists to 10,000 items. Regular expressions time out after 250 ms, and XML with a DTD is refused.</li>
+  <li><strong>Pure.</strong> A unit test reads the compiled IL of every facade and rule-library type and fails on any reference to file,
+network, process, environment, dynamic loading, <code class="language-plaintext highlighter-rouge">Activator</code>, <code class="language-plaintext highlighter-rouge">Reflection.Emit</code>, native interop or Win32, or on any
+platform invoke. Extension facades are also barred from the clock and from random sources, so they always return the
+same answer for the same input; only <code class="language-plaintext highlighter-rouge">Helpers.ClockAndIdentifiers</code> reads the clock, through an injectable
+<code class="language-plaintext highlighter-rouge">TimeProvider</code>.</li>
+  <li><strong>Host.</strong> Linux containers only. Time zones are IANA ids resolved from the image’s tzdata, and Unicode normalisation
+and international host names use ICU; the runtime image carries both.</li>
+  <li>Every tool is named by at least one test through <code class="language-plaintext highlighter-rouge">[Trait("Covers", "&lt;ToolName&gt;")]</code>, and a catalogue test fails when
+one is not.</li>
+</ul>
+
+<h2 id="extension-groups">Extension groups</h2>
+
+<h3 id="calendarfacts">CalendarFacts</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.CalendarFacts</code> — Calendar facts about a date: weekday, week number, quarter, fiscal period,
+month length, leap years, business hours and the start and end of its day, week, month, quarter or year.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeDate</code></td>
+      <td>Calendar facts about one date in a single call: weekday name, day of year, ISO week number, calendar quarter, days in the month, whether it is a weekend, the last day of its month, and whether its year is a leap year. Use it instead of working out weekdays or week numbers by hand.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PeriodBoundaries</code></td>
+      <td>First and last instant of the day, week, month, quarter or year containing a date; the week can start on any weekday. End is the last tick of the period, so an instant is inside when Start &lt;= instant &lt;= End.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">FiscalPeriod</code></td>
+      <td>Fiscal year and fiscal quarter of a date when the fiscal year starts in a given month. The fiscal year is named after the calendar year in which it ends; with an April start, 2026-08-17 is fiscal 2027 quarter 2.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DaysInMonth</code></td>
+      <td>Number of days in a given month of a given year, allowing for leap years; February 2028 has 29.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsLeapYear</code></td>
+      <td>Whether a year is a Gregorian leap year: divisible by 4, except centuries not divisible by 400; 2000 and 2028 are, 1900 and 2026 are not.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsWithinBusinessHours</code></td>
+      <td>Whether the clock time of a date-time falls in business hours, from startHour inclusive to endHour exclusive, optionally on weekdays only. Convert to the customer’s local time zone first when that matters.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsSameCalendarDay</code></td>
+      <td>Whether two date-times fall on the same calendar date, ignoring the time of day. Convert both to the same time zone first.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="currencyandcountry">CurrencyAndCountry</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.CurrencyAndCountry</code> — ISO 4217 currency and ISO 3166 country reference data with exact
+minor-unit money conversion, from tables embedded in the product.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CurrencyMinorUnitDigits</code></td>
+      <td>Number of decimal places an ISO 4217 currency uses: USD 2, JPY 0, KWD 3, CLF 4. Use it before storing, rounding or comparing money in minor units.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidCurrencyCode</code></td>
+      <td>Whether a three-letter code is an active ISO 4217 currency, case-insensitive. Use it to check payment currency fields.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ToMinorUnits</code></td>
+      <td>Converts a money amount to whole minor units for a currency, exactly and rounding halves away from zero; 19.99 USD is 1999 cents and 1500 JPY is 1500.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">FromMinorUnits</code></td>
+      <td>Converts whole minor units back to a money amount for a currency; 1999 USD cents is 19.99 and 1234 KWD fils is 1.234.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RoundToCurrency</code></td>
+      <td>Rounds a money amount to the precision of its currency, halves away from zero, using exact decimal arithmetic; 1234.5678 JPY is 1235 and in BHD is 1234.568.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ConvertAtExchangeRate</code></td>
+      <td>Multiplies an amount by a supplied exchange rate; 100 at 1.25 is 125. This tool knows no live rates, so the rate must come from the conversation or data.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidCountryCode</code></td>
+      <td>Whether a two-letter code is an ISO 3166-1 alpha-2 country code, case-insensitive; GB is valid and UK is not. Use it to check country fields.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeCountry</code></td>
+      <td>Looks up an ISO 3166-1 country by alpha-2 or alpha-3 code and returns both codes and the English short name; DEU gives DE, DEU, Germany.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="datearithmetic">DateArithmetic</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.DateArithmetic</code> — Adds time to dates and measures the time between them exactly, including
+business days, whole months and years, ages as of a date, and interval overlap.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AddToDate</code></td>
+      <td>Adds (or with a negative amount subtracts) a number of units to a date-time. Months and Years keep the day where possible and clamp to month end, so 2026-01-31 plus 1 month is 2026-02-28.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AddBusinessDays</code></td>
+      <td>Moves a date forward (or backward, if negative) by a number of Monday-to-Friday business days, skipping weekends; Friday plus 1 is Monday. Public holidays are not known and are not skipped.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BusinessDaysBetween</code></td>
+      <td>Number of Monday-to-Friday days after the start date up to and including the end date; negative when the end is earlier. Wednesday to the following Wednesday is 5. Public holidays are not known.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TimeBetween</code></td>
+      <td>Exact elapsed time from a start to an end date-time in several units at once: total days, hours, minutes and seconds (fractional), plus completed whole months and whole years. Values are negative when the end is earlier.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AgeAsOf</code></td>
+      <td>Age in completed years and in days of someone or something born on a date, measured at an as-of date; born 1990-06-15 is 35 on 2026-06-14 and 36 the next day. Use CurrentUtcTime for today’s date.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IntervalsOverlap</code></td>
+      <td>Whether two time intervals overlap. Intervals are half-open (start included, end excluded), so one ending exactly when the other starts does not overlap.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsDateBetween</code></td>
+      <td>Whether a date-time lies within an inclusive range from a start to an end. Use it for effective dates, statement periods and lookback windows.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="encodingandhashing">EncodingAndHashing</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.EncodingAndHashing</code> — Encodes and decodes text (Base64, Base64Url, hex, URL, HTML, XML,
+JavaScript) and computes digests, HMACs and checksums over UTF-8 text.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EncodeText</code></td>
+      <td>Encodes UTF-8 text in a scheme: Base64, Base64Url (URL-safe, no padding), Hex (lowercase), Url (form encoding, spaces as +), Html, XmlEscape or JavaScript (string-literal escaping). Use DecodeText to reverse.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DecodeText</code></td>
+      <td>Decodes text from a scheme back to UTF-8 text: Base64, Base64Url, Hex (an optional 0x prefix is allowed), Url or Html. Malformed input is refused with the reason.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HashText</code></td>
+      <td>Lowercase hex digest of the UTF-8 bytes of a text with Sha256 (default), Sha384, Sha512, Sha1 or Md5. Sha1 and Md5 are for matching legacy values only, never for security. Use it to compare or pseudonymise values without revealing them.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HmacText</code></td>
+      <td>Lowercase hex HMAC of the UTF-8 bytes of a text under a secret key, with Sha256 (default) or Sha512. Use it to verify a signed payload or to pseudonymise with a key. Never put a production secret into a conversation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Crc32Checksum</code></td>
+      <td>CRC-32 (IEEE) checksum of the UTF-8 bytes of a text as eight lowercase hex digits; ‘123456789’ gives cbf43926. For detecting accidental change, not tampering.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HashesMatch</code></td>
+      <td>Whether a text hashes to a given hex digest with an algorithm, comparing case-insensitively. Use it to check a value against a stored fingerprint without ever handling the original.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeUuid</code></td>
+      <td>Whether a text is a UUID (GUID) and, if so, its canonical lowercase form and version number; version 4 is random and version 7 is time-ordered. SWIFT UETRs are version 4 UUIDs.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="financialidentifiers">FinancialIdentifiers</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.FinancialIdentifiers</code> — Validates and dissects payment and securities identifiers: IBAN,
+BIC/SWIFT, card numbers and expiry, Luhn check digits, ABA routing numbers, ISIN, LEI, CUSIP and SEDOL.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ValidateIban</code></td>
+      <td>Checks an IBAN’s structure and ISO 7064 mod-97 check digits (spaces allowed) and, when valid, returns its country, check digits, basic bank account number and print format in groups of four. A valid checksum does not prove the account exists.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ValidateBic</code></td>
+      <td>Checks the format of a BIC (SWIFT code, 8 or 11 characters) and, when valid, splits it into institution, country, location and branch codes; an 8-character BIC is the primary office, branch XXX.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ValidateCardNumber</code></td>
+      <td>Checks a payment card number with the Luhn algorithm (spaces and hyphens allowed) and reports the card network from its prefix, the 6 and 8 digit issuer identification numbers and a masked form showing only the last four digits.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LuhnCheckDigit</code></td>
+      <td>The Luhn check digit that would complete a digit string; 7992739871 needs 3. Use it to generate or explain card, IMEI and account check digits.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsCardExpiryValid</code></td>
+      <td>Whether a card expiry written MM/YY or MM/YYYY is still valid at a given date; a card is valid through the last day of its expiry month. Use CurrentUtcTime for today.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidAbaRoutingNumber</code></td>
+      <td>Whether a nine-digit US ABA routing transit number passes its 3-7-1 weighted checksum; 021000021 does.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidIsin</code></td>
+      <td>Whether a 12-character ISIN (International Securities Identification Number) has a valid country prefix shape and Luhn check digit; US0378331005 does.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidLei</code></td>
+      <td>Whether a 20-character LEI (Legal Entity Identifier) passes its ISO 17442 mod-97 check digits. A valid checksum does not prove the entity is registered.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidCusip</code></td>
+      <td>Whether a nine-character CUSIP (North American security identifier) has a valid check digit; 037833100 does.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidSedol</code></td>
+      <td>Whether a seven-character SEDOL (London Stock Exchange security identifier) has a valid weighted check digit and no vowels; 0263494 does.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="geospatial">Geospatial</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.Geospatial</code> — Great-circle geometry on latitude and longitude: distances, radius checks,
+implied travel speed for impossible-travel analysis, bearings and geohashes.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DistanceBetweenPoints</code></td>
+      <td>Great-circle (haversine) distance between two points given as latitude and longitude in decimal degrees, in both kilometres and miles.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsWithinRadius</code></td>
+      <td>Whether a point lies within a radius in kilometres of a centre point, by great-circle distance. Use it for geofences around a home address or merchant.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ImpliedTravelSpeed</code></td>
+      <td>Speed in km/h someone would need to travel between two locations in the time between two events. Over about 900 km/h (a commercial flight) suggests impossible travel, such as the same card used in two countries an hour apart.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">InitialBearing</code></td>
+      <td>Initial compass bearing in degrees (0 north, 90 east) for the great-circle route from a first point to a second.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EncodeGeohash</code></td>
+      <td>Encodes a latitude and longitude as a geohash of 1 to 12 characters; longer is more precise (6 is about 1.2 km, 9 about 5 m). Points sharing a prefix are near each other, which makes geohashes good grouping keys.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DecodeGeohash</code></td>
+      <td>The centre latitude and longitude of the cell a geohash names.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidCoordinate</code></td>
+      <td>Whether a latitude and longitude pair is in range: latitude -90 to 90 and longitude -180 to 180. Swapped coordinates often fail this check.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="listscreening">ListScreening</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.ListScreening</code> — Screens a name or text against a list, such as a watch list or allow list,
+with configurable fuzzy matching, and reports the best match, its score and how many entries matched.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ScreenAgainstList</code></td>
+      <td>Screens one value against a list with a fuzzy rule and reports whether anything matched, how many entries matched, the best matching entry and its score from 0 to 1. The main tool for checking a name against a watch list or a counterparty against known entities.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsFuzzilyInList</code></td>
+      <td>Whether a value fuzzily equals any entry of a list under a fuzzy rule. Use ScreenAgainstList when the matching entry or score is also wanted.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ContainsFuzzilyAnyInList</code></td>
+      <td>Whether any list entry fuzzily appears inside a longer text, such as a sanctioned name inside a payment narrative. The within modifier is applied automatically.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsExactlyInList</code></td>
+      <td>Whether a value equals any list entry exactly, optionally ignoring case; no fuzziness. Use it for code lists such as country or merchant category codes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">InitialsMatchInList</code></td>
+      <td>Whether a name matches any list entry when initials are allowed to stand for whole words; ‘J R R Tolkien’ matches ‘John Ronald Reuel Tolkien’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SoundsLikeAnyInList</code></td>
+      <td>Whether a name sounds like any list entry word by word under Soundex after case and accent folding. Phonetic only, so pair it with an edit-distance check.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CheckFuzzyOptions</code></td>
+      <td>Checks a fuzzy options string and returns an empty text when it is valid, or the reason it is not. Use it before saving a list-matching rule.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="namesimilarity">NameSimilarity</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.NameSimilarity</code> — Scores how alike two names or references are with edit-distance, phonetic and
+token algorithms, and normalises names for matching; for pairwise comparison rather than screening a list.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CompareNames</code></td>
+      <td>Scores two names with every similarity algorithm at once: Levenshtein and Damerau edit distances, normalised similarity, Jaro-Winkler, Dice bigrams, token-sort, token-set (0 to 1, higher is closer), and whether they sound alike by Soundex. Use it to explain why two parties may or may not be the same.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LevenshteinDistance</code></td>
+      <td>Minimum number of single-character insertions, deletions or substitutions turning one text into another, case-sensitive; ‘kitten’ to ‘sitting’ is 3.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DamerauDistance</code></td>
+      <td>Edit distance that also counts swapping two adjacent characters as one edit, so typing transpositions score 1; ‘abcd’ to ‘abdc’ is 1.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">JaroWinklerSimilarity</code></td>
+      <td>Jaro-Winkler similarity from 0 to 1, rewarding a shared prefix; well suited to short personal names. Case-sensitive; 0.92 and above is a typical match threshold.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SoundexCode</code></td>
+      <td>The four-character American Soundex code of a word, grouping names that sound alike; Robert and Rupert are both R163.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NamesSoundAlike</code></td>
+      <td>Whether two names sound alike word by word under Soundex after case and accent folding; ‘Robert Smith’ and ‘Rupert Smyth’ do.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">InitialsOf</code></td>
+      <td>The initials of a name, one uppercase letter per word; ‘john ronald reuel tolkien’ gives JRRT.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NormaliseNameForMatching</code></td>
+      <td>The canonical form used for name matching: lowercase, accents and punctuation removed, leading titles (Mr, Dr, Frau) and trailing company suffixes (Ltd, GmbH, LLC) dropped; ‘Dr. José Núñez’ gives ‘jose nunez’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NamesMatchWithOptions</code></td>
+      <td>Whether two names match under a configurable fuzzy rule, the same rule language used by list screening, so a pair can be tested before a list rule is written.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="onlineidentifiers">OnlineIdentifiers</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.OnlineIdentifiers</code> — Validates and dissects digital identifiers: email addresses and
+plus-aliases, phone numbers, domain names, URLs, IPv4 and IPv6 addresses and CIDR network ranges. Pure parsing; nothing
+is looked up on the network.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ValidateEmailAddress</code></td>
+      <td>Checks an email address’s syntax and splits it into local part, domain and top-level domain, plus the plus-alias-normalised address (ann+promo@x.com becomes ann@x.com), which exposes one person registering many aliases. Syntax only; no mailbox lookup.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EmailAddressesMatchIgnoringAliases</code></td>
+      <td>Whether two email addresses reach the same mailbox once case and plus-aliases are ignored; ann+1@x.com and ANN@x.com match.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ValidatePhoneNumber</code></td>
+      <td>Reduces a phone number to digits (keeping a leading + and turning a 00 prefix into +) and reports whether that is a valid E.164 international number (+ then up to 15 digits, not starting 0). Format only; no carrier lookup.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeUrl</code></td>
+      <td>Parses an absolute URL and returns its lowercase scheme and host (internationalised hosts in punycode) and its top-level domain; file and network-share URLs are refused. Nothing is fetched.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidDomainName</code></td>
+      <td>Whether a text is a syntactically valid internet domain name of at least two labels, each 1 to 63 letters, digits or hyphens, not starting or ending with a hyphen. No DNS lookup.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeIpAddress</code></td>
+      <td>Parses an IPv4 or IPv6 address and classifies it: canonical form, family, private (RFC 1918, carrier-grade NAT, unique local), loopback, reserved (link-local, multicast, documentation and similar) or public, and the IPv4 address as a number. IPv4-mapped IPv6 addresses are treated as IPv4.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsIpAddressInRange</code></td>
+      <td>Whether an IP address falls inside a CIDR network range such as 10.0.0.0/8 or 2001:db8::/32. Addresses and ranges of different families never match.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeIpRange</code></td>
+      <td>The first and last address and the number of addresses in a CIDR network range; 192.168.1.77/24 spans 192.168.1.0 to 192.168.1.255, 256 addresses.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NumberToIPv4Address</code></td>
+      <td>Writes a number from 0 to 4294967295 as a dotted IPv4 address; 3232235777 is 192.168.1.1. The reverse is in DescribeIpAddress.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="patternmatching">PatternMatching</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.PatternMatching</code> — Regular-expression and wildcard matching with a hard time limit per call:
+test, find, capture, count, replace and escape.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RegexIsMatch</code></td>
+      <td>.NET regular expression test: whether the pattern matches anywhere in the text. Matching is time-limited, so a pattern that would backtrack catastrophically is refused rather than hanging.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RegexFindAll</code></td>
+      <td>Every match of a .NET regular expression in a text, in order, as the matched texts (up to 10000). Matching is time-limited.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RegexCapture</code></td>
+      <td>The text captured by a numbered group of the first match of a .NET regular expression, or empty if there is no match; group 1 of ‘order-([0-9]+)’ in ‘order-12345-x’ is ‘12345’. Group 0 is the whole match.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RegexCountMatches</code></td>
+      <td>Number of non-overlapping matches of a .NET regular expression in a text. Matching is time-limited.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RegexReplaceAll</code></td>
+      <td>Replaces every match of a .NET regular expression; the replacement may use $1, $2 for groups. ‘a1b22’ with [0-9]+ replaced by # is ‘a#b#’. Matching is time-limited.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EscapeForRegex</code></td>
+      <td>Escapes a literal text so it can be placed inside a regular expression and match itself exactly; ‘1.5*2’ becomes ‘1.5*2’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">WildcardIsMatch</code></td>
+      <td>Whether a whole text matches a simple wildcard pattern: * is any run of characters, ? is one character, # is one digit and [abc] or [!abc] is a character set; ‘INV-2026-*’ matches ‘INV-2026-0042’. Case-sensitive.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="percentagesandchanges">PercentagesAndChanges</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.PercentagesAndChanges</code> — Percentages, ratios and growth between two figures, such as the change
+from last month or the share of a total, computed exactly.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PercentOfTotal</code></td>
+      <td>What percent a part is of a total; 25 of 200 is 12.5. Use it for shares such as declined spend as a percent of total spend.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PercentageChange</code></td>
+      <td>Percentage change from a previous value to a current value; 80 to 100 is +25 and 100 to 80 is -20. Use it for period-on-period movement.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PercentDifference</code></td>
+      <td>Symmetric percent difference between two values relative to their average; 90 and 110 differ by 20 percent. Use it when neither value is the baseline.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RatioOfValues</code></td>
+      <td>One value divided by another as a plain ratio; 30 over 120 is 0.25. Use it for velocity ratios, coverage and other quotients.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LogRatio</code></td>
+      <td>Natural log of numerator over denominator, a symmetric measure of relative size: doubling is +0.693 and halving is -0.693. Both values must be positive.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CompoundGrowthRate</code></td>
+      <td>Average compound growth rate per period between a starting and an ending value, as a fraction; 100 growing to 121 over 2 periods is 0.1 (10 percent per period).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AddPercentage</code></td>
+      <td>Increases an amount by a percentage; 100 plus 20 percent is 120. Use it for tax, fees, uplifts and mark-ups.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SubtractPercentage</code></td>
+      <td>Decreases an amount by a percentage; 100 less 20 percent is 80. Use it for discounts, haircuts and deductions.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AmountBeforePercentageAdded</code></td>
+      <td>Recovers the original amount before a percentage was added; 120 including 20 percent was 100 before it. Use it to back tax or fees out of a gross amount.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsWithinPercentOf</code></td>
+      <td>Whether a value lies within a percentage tolerance of a target, inclusive; 104 is within 5 percent of 100. Use it for near-match checks on amounts.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="roundingandpowers">RoundingAndPowers</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.RoundingAndPowers</code> — Exact rounding, clamping, powers, roots and logarithms of single numbers,
+so an answer never depends on mental arithmetic.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RoundNumber</code></td>
+      <td>Rounds a number to a number of decimal places using an explicit rule for halves. Use it whenever a figure must be presented or compared at a fixed precision; AwayFromZero is the everyday rule (2.5 becomes 3), ToEven is banker’s rounding (2.5 becomes 2).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RoundToNearestIncrement</code></td>
+      <td>Rounds a number to the nearest multiple of an increment, halves away from zero; for example 1234 to the nearest 50 is 1250, and 0.125 to the nearest 0.05 is 0.15. Use it for price points, reporting bands and cash denominations.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RoundDownToWholeNumber</code></td>
+      <td>Largest whole number less than or equal to the value (the floor); -2.5 becomes -3. Use it for completed units such as whole days or whole bands.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RoundUpToWholeNumber</code></td>
+      <td>Smallest whole number greater than or equal to the value (the ceiling); 2.1 becomes 3. Use it for counts of units needed to cover an amount.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TruncateToWholeNumber</code></td>
+      <td>Drops the fractional part of a number, moving towards zero; -2.7 becomes -2 and 2.7 becomes 2. Use it when the integer part is wanted regardless of sign.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ClampNumber</code></td>
+      <td>Limits a number to an inclusive range, returning the minimum when below it and the maximum when above it. Use it to cap scores, limits or percentages.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RaiseToPower</code></td>
+      <td>Raises a base to an exponent, including fractional and negative exponents; 2 to the 10 is 1024 and 9 to the 0.5 is 3. Use it for compounding and scale factors.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NthRoot</code></td>
+      <td>The real n-th root of a number; the cube root of 27 is 3 and the cube root of -8 is -2. An even root of a negative number has no real answer and is refused.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Logarithm</code></td>
+      <td>Logarithm of a positive number in any base; base 10 of 1000 is 3, base 2 of 8 is 3, and base e (2.718281828) gives the natural log. Use it to compare orders of magnitude.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="structureddata">StructuredData</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.StructuredData</code> — Reads values out of JSON and XML documents by path without loading them into
+the conversation, and checks that documents are well formed. DTDs and external entities are refused.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidJson</code></td>
+      <td>Whether a text is well-formed JSON (up to 1,000,000 characters and 64 levels deep).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">JsonValueAtPath</code></td>
+      <td>The value at a path in a JSON document as text: strings unquoted, anything else as compact JSON. Paths use dots and brackets with an optional $, such as $.customer.name, customer.tags[0], items[-1] (last) or $[‘odd key’]. Empty when the path is missing.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">JsonNumberAtPath</code></td>
+      <td>The number at a path in a JSON document; refused when the path is missing or not a number. Uses the same paths as JsonValueAtPath.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">JsonArrayLengthAtPath</code></td>
+      <td>Number of elements in the array at a path in a JSON document; -1 when the path is missing or not an array.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">JsonHasPath</code></td>
+      <td>Whether a path exists and is not null in a JSON document; the same paths as JsonValueAtPath.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MinifyJson</code></td>
+      <td>Removes insignificant whitespace from a JSON document; refused when the text is not valid JSON.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidXml</code></td>
+      <td>Whether a text is a well-formed XML document without a DTD (up to 1,000,000 characters). Documents declaring a DTD or entities are refused for safety.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">XmlValueAtXPath</code></td>
+      <td>Text content of the first node selected by an XPath 1.0 expression, such as /Document/GrpHdr/MsgId or //Nm, in an XML document such as an ISO 20022 payment message; empty when nothing is selected. Namespaced documents need local-name(), for example //*[local-name()=’MsgId’].</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="textcleaning">TextCleaning</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.TextCleaning</code> — Cleans and normalises text before comparison or storage: accents, whitespace,
+control characters, Unicode forms, keeping or removing letters and digits, and URL slugs.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RemoveAccents</code></td>
+      <td>Removes accents and other combining marks while keeping the base letters; ‘Crème Brûlée’ becomes ‘Creme Brulee’. Use it before comparing names from different systems.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CollapseWhitespace</code></td>
+      <td>Trims the text and replaces every run of spaces, tabs and line breaks with a single space.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RemoveControlCharacters</code></td>
+      <td>Removes invisible control characters such as NUL and BEL, keeping tabs and line breaks. Use it on data pasted from other systems before display or matching.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NormaliseUnicode</code></td>
+      <td>Applies a Unicode normalisation form: NFC composes accents (the usual storage form), NFD decomposes them, NFKC and NFKD also fold compatibility characters such as the ‘fi’ ligature and full-width letters to their plain forms, which defeats look-alike tricks.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">KeepOnlyDigits</code></td>
+      <td>Keeps only the numeric characters of a text, dropping everything else; ‘+44 (0) 7911-123456’ gives ‘4407911123456’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">KeepOnlyLetters</code></td>
+      <td>Keeps only the letters of a text, in any alphabet, dropping digits, spaces and punctuation; ‘AB-12 cd’ gives ‘ABcd’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RemoveDigits</code></td>
+      <td>Removes every numeric character from a text, keeping letters, spaces and punctuation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RemoveLetters</code></td>
+      <td>Removes every letter from a text, keeping digits, spaces and punctuation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ToSlug</code></td>
+      <td>Turns text into a lowercase ASCII slug of letters and digits joined by hyphens; ‘Crème Brûlée &amp; Co.!’ becomes ‘creme-brulee-co’. Useful for stable keys and file-safe names.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="textediting">TextEditing</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.TextEditing</code> — Edits text exactly: case, reversing, repeating, truncating, taking the left or
+right characters, masking and replacing the first or last occurrence.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ToTitleCase</code></td>
+      <td>Capitalises the first letter of each word and lowercases the rest, except words already all in capitals, which are kept as acronyms; ‘john SMITH-jones’ becomes ‘John SMITH-Jones’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ReverseText</code></td>
+      <td>Reverses the order of the characters in a text; ‘abc’ becomes ‘cba’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RepeatText</code></td>
+      <td>Repeats a text a number of times end to end; ‘ab’ three times is ‘ababab’. The result is limited to 100000 characters.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TruncateText</code></td>
+      <td>Shortens a text to at most a maximum length, ending with a suffix (default …) when it was cut; texts already short enough are returned unchanged.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TakeFirstCharacters</code></td>
+      <td>The first n characters of a text, or the whole text if it is shorter; the first 4 of ‘GB82WEST’ is ‘GB82’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TakeLastCharacters</code></td>
+      <td>The last n characters of a text, or the whole text if it is shorter; the last 4 of ‘4111111111111111’ is ‘1111’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MaskAllButLast</code></td>
+      <td>Replaces all but the last few characters with a mask character, for safe display of card numbers, accounts and phone numbers; ‘4111111111111111’ with 4 visible is ‘<strong>**</strong><strong>**</strong>1111’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ReplaceFirstOccurrence</code></td>
+      <td>Replaces only the first case-sensitive occurrence of a substring; texts without it are returned unchanged.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ReplaceLastOccurrence</code></td>
+      <td>Replaces only the last case-sensitive occurrence of a substring; texts without it are returned unchanged.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="textextraction">TextExtraction</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.TextExtraction</code> — Pulls pieces out of text: the part before, after or between markers, the n-th
+token, all tokens, and numbers written inside free text.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TextAfter</code></td>
+      <td>The part of a text after the first occurrence of a marker, or empty if the marker is absent; after ‘@’ in ‘ann@example.com’ is ‘example.com’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TextBefore</code></td>
+      <td>The part of a text before the first occurrence of a marker, or empty if the marker is absent; before ‘@’ in ‘ann@example.com’ is ‘ann’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TextBetween</code></td>
+      <td>The text between the first occurrence of a start marker and the next end marker after it, or empty if either is missing; between ‘ref:’ and ‘;’ in ‘x ref:AB12; y’ is ‘AB12’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TokenAt</code></td>
+      <td>The token at a zero-based position after splitting on a separator; a negative position counts from the end, so -1 is the last. Out-of-range positions give empty text.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SplitText</code></td>
+      <td>Splits a text on a separator into a list, optionally trimming each part and dropping empty parts. Returns at most 10000 parts.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ExtractNumbers</code></td>
+      <td>Every decimal number written in a free text, in order, reading ‘.’ as the decimal point and a leading ‘-‘ as negative; ‘paid 12.50 then -3 twice’ gives 12.5, -3. Thousands separators split numbers, so remove them first.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ExtractWholeNumbers</code></td>
+      <td>Every whole number written in a free text, in order, with a leading ‘-‘ read as negative; ‘invoices 1001 and 1002’ gives 1001, 1002. Digit runs too long for a 64-bit integer are refused.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">QueryStringValue</code></td>
+      <td>The decoded value of a named parameter in a URL or query string, or empty if absent; name in ‘https://x.test/p?name=J%C3%BCbe+Ltd’ is ‘Jübe Ltd’.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="textinspection">TextInspection</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.TextInspection</code> — Counts and tests on text: words, lines, letters, digits, character variety,
+entropy, repeated or sequential characters, palindromes, anagrams and containment.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeText</code></td>
+      <td>Measures a text in one call: characters, words, lines, letters, digits, distinct characters, longest run of one repeated character, Shannon entropy in bits per character, and whether it is all ASCII letters, all ASCII digits, or one repeated character. Low entropy or long runs suggest synthetic or keyboard-mashed identifiers.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CountOccurrences</code></td>
+      <td>Counts non-overlapping, case-sensitive occurrences of a substring in a text; ‘aba’ occurs twice in ‘abababa’.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HasSequentialDigits</code></td>
+      <td>Whether a text contains a run of consecutive ascending or descending digits of at least a given length, such as 1234 or 9876. Common in weak PINs, test card numbers and fabricated identifiers.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsPalindrome</code></td>
+      <td>Whether a text reads the same backwards, ignoring case, spaces and punctuation; ‘A man, a plan, a canal: Panama’ is a palindrome.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AreAnagrams</code></td>
+      <td>Whether two texts use exactly the same characters the same number of times, case-sensitive and counting spaces; ‘listen’ and ‘silent’ are anagrams. Normalise case first if case should not matter.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">EqualsIgnoringCase</code></td>
+      <td>Whether two texts are equal when upper and lower case are ignored (ordinal, culture-independent comparison).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ContainsAllOf</code></td>
+      <td>Whether a text contains every one of several substrings, optionally ignoring case. Use it for keyword checks in narratives and references.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ContainsAnyOf</code></td>
+      <td>Whether a text contains at least one of several substrings, optionally ignoring case. Use it for keyword or watch-word checks.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="thresholdsandlimits">ThresholdsAndLimits</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.ThresholdsAndLimits</code> — Amount-against-limit arithmetic for structuring, smurfing and limit
+monitoring: distance and headroom to a threshold, excess and shortfall, round amounts and position in a range.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DistanceToThreshold</code></td>
+      <td>Absolute distance between an amount and a threshold, whichever side it is on; 9600 and 10400 are both 400 from 10000. Use it to see how close a payment came to a reporting limit.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PercentBelowThreshold</code></td>
+      <td>How far an amount is below a threshold as a percent of the threshold; 9500 against 10000 is 5. Use it to express near-threshold behaviour on a common scale.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsJustBelowThreshold</code></td>
+      <td>Whether an amount sits under a threshold but within a margin of it, the classic structuring pattern; 9600 is just below 10000 with a 5 percent margin.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HeadroomToLimit</code></td>
+      <td>Remaining room under a limit (limit minus used), negative once the limit is breached; 700 used against 1000 leaves 300 and 1200 used leaves -200. Use it for available balance or remaining allowance.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ExcessOverLimit</code></td>
+      <td>How much an amount exceeds a limit, never negative; 1200 against a 1000 limit is 200 over. Use it to size a breach.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ShortfallBelowMinimum</code></td>
+      <td>How much an amount falls short of a required minimum, never negative; 80 against a minimum of 100 is 20 short. Use it for minimum balances and floors.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsRoundAmount</code></td>
+      <td>Whether an amount is an exact multiple of a round unit such as 100 or 1000. Round amounts are a common money-laundering indicator when frequent.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LeadingSignificantDigit</code></td>
+      <td>The first non-zero digit of an amount (1 to 9), or 0 for zero; 4567 gives 4 and 0.0456 gives 4. Collect these across many amounts to compare with the first-digit law.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PositionInRange</code></td>
+      <td>Where a value sits inside a range as a percent from minimum (0) to maximum (100); 75 in 50 to 150 is 25. Values outside the range give below 0 or above 100.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="timezonesandformats">TimeZonesAndFormats</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.TimeZonesAndFormats</code> — Converts date-times between UTC and IANA time zones, reports offsets and
+daylight saving, and converts to and from Unix epoch and standard text formats.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ConvertUtcToTimeZone</code></td>
+      <td>Converts a UTC date-time to the local wall-clock time in an IANA time zone such as Europe/London or Asia/Kolkata, allowing for daylight saving. The result has no zone marker.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ConvertTimeZoneToUtc</code></td>
+      <td>Converts a local wall-clock date-time in an IANA time zone to UTC, allowing for daylight saving. A local time skipped by a clock change is refused.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ConvertBetweenTimeZones</code></td>
+      <td>Converts a local wall-clock date-time in one IANA time zone to the wall-clock time in another; 09:00 in Europe/London in July is 04:00 in America/New_York.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DescribeTimeZoneAt</code></td>
+      <td>Offset from UTC in hours and whether daylight saving is in force for an IANA time zone at a given UTC instant; Europe/London is +1 with daylight saving in July.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsValidTimeZoneId</code></td>
+      <td>Whether a text is a time zone id known to this system, such as Europe/Paris. Use it before converting times with a zone taken from data.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ToUnixEpoch</code></td>
+      <td>Converts a UTC date-time to Unix epoch time, returning both seconds and milliseconds since 1970-01-01T00:00:00Z.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">FromUnixEpoch</code></td>
+      <td>Converts a Unix epoch value to a UTC date-time. Values above 100000000000 are usually milliseconds; say which unit the value is in.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">FormatDateTime</code></td>
+      <td>Writes a date-time in a standard text format: Iso8601 (2026-09-23T12:00:00.0000000Z for UTC), Rfc1123 (Wed, 23 Sep 2026 12:00:00 GMT), Sortable (2026-09-23T12:00:00) or UniversalSortable (2026-09-23 12:00:00Z).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ParseDateTimeWithFormat</code></td>
+      <td>Reads a date-time from text using an exact .NET format pattern such as dd/MM/yyyy HH:mm, treating it as UTC. Use it for unambiguous parsing of data where day and month order matter.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="unitsandnumerals">UnitsAndNumerals</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Extensions.UnitsAndNumerals</code> — Converts measurements between units and whole numbers between Roman
+numerals and other bases, plus simple whole-number facts.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ConvertUnits</code></td>
+      <td>Converts a measurement between units of the same kind. Length: m km cm mm mi yd ft in nmi. Mass: kg g mg t lb oz st ozt. Area: m2 km2 ha acre ft2 mi2. Volume: l ml m3 gal ukgal qt pt floz. Speed: m/s km/h mph kn. Time: s ms min h d wk. Data: b kb mb gb tb kib mib gib tib. Temperature: c f k.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IntegerToRomanNumerals</code></td>
+      <td>Writes a whole number from 1 to 3999 as Roman numerals; 1994 is MCMXCIV.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RomanNumeralsToInteger</code></td>
+      <td>Reads canonical Roman numerals as a whole number, case-insensitive; MCMXCIV is 1994. Non-canonical forms such as IIII are refused.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IntegerToBase</code></td>
+      <td>Writes a whole number in another base from 2 to 36 using lowercase digits; 255 in base 16 is ff and -10 in base 2 is -1010.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BaseToInteger</code></td>
+      <td>Reads a whole number written in a base from 2 to 36, case-insensitive, with an optional leading minus; ff in base 16 is 255.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IsPrimeNumber</code></td>
+      <td>Whether a whole number is prime (divisible only by 1 and itself); 1 and negative numbers are not prime.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DigitSum</code></td>
+      <td>Sum of the decimal digits of a whole number, ignoring the sign; 9999 gives 36. Useful for check-digit reasoning and digit patterns.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="helper-groups">Helper groups</h2>
+
+<h3 id="clockandidentifiers">ClockAndIdentifiers</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Helpers.ClockAndIdentifiers</code> — The current date and time in UTC or any time zone, the list of time zone
+ids, and fresh random or time-ordered UUIDs; the only tools here that are not repeatable, because they read the clock or
+a random source.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CurrentUtcTime</code></td>
+      <td>The current date and time in UTC from the server clock, with today’s UTC date. Call it whenever a question depends on now or today; never assume the current date.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CurrentTimeInZone</code></td>
+      <td>The current local date and time, today’s local date and the UTC offset in an IANA time zone such as Europe/London. Use it for questions about local business hours or the local date.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ListTimeZoneIds</code></td>
+      <td>Time zone ids known to this system whose id contains a filter, case-insensitive, sorted; filter by city or region such as London, America or Kolkata. At most 100 are returned.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NewRandomUuid</code></td>
+      <td>One or more new random (version 4) UUIDs in canonical lowercase form, for correlation ids or test data. Up to 100 at once.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NewTimeOrderedUuid</code></td>
+      <td>One or more new time-ordered (version 7) UUIDs, which sort by creation time and suit database keys. Up to 100 at once.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UuidVersion7Timestamp</code></td>
+      <td>The UTC creation time embedded in a version 7 UUID, to the millisecond. Refused for other UUID versions, which carry no time.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TimeSince</code></td>
+      <td>Exact time elapsed from a past date-time until now, in total days, hours and minutes and as completed whole years; negative for a future date-time. Use it for questions such as how long ago an account was opened.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="textlists">TextLists</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Jube.Service.Helpers.TextLists</code> — Exact set operations on lists of text values: distinct values, union, intersection,
+difference, symmetric difference, joining and comparing lists, optionally ignoring case. Numeric sorting and frequency
+tables are analytics tools.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DistinctValues</code></td>
+      <td>The list with duplicates removed, keeping the first occurrence of each value in its original order, optionally ignoring case and surrounding spaces.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">UnionOfLists</code></td>
+      <td>Every distinct value that appears in either list, first list order then new values from the second.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">IntersectionOfLists</code></td>
+      <td>The distinct values that appear in both lists, in first-list order. Use it to find shared devices, addresses or counterparties.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DifferenceOfLists</code></td>
+      <td>The distinct values in the first list that are not in the second, in first-list order; for example new counterparties this month compared with last month.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CompareLists</code></td>
+      <td>Compares two lists in one call: values only in the first, only in the second, in both, and whether they hold the same set of distinct values.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CountDistinctValues</code></td>
+      <td>How many different values a list holds, optionally ignoring case; the list a, A, b has 3 distinct values, or 2 ignoring case.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">JoinValues</code></td>
+      <td>Joins a list into one text with a separator, such as a comma and a space, for display or for building a rule’s list literal.</td>
+    </tr>
+  </tbody>
+</table>
+
+    
+  </article>
+</div>
+</div>
+        <footer class="footer sm:footer-horizontal w-full mt-20 border-t border-base-300 py-10 text-sm" data-pagefind-ignore>
+  <nav><h6 class="footer-title mono">Legal</h6><a class="link link-hover" href="https://jube.io/agreements/jtos-version-1-8">Jube Terms of Service (JTOS)</a><a class="link link-hover" href="https://jube.io/jube-agplv3-open-source-compliance">AGPLv3: why only Jooby grazes this patch</a><a class="link link-hover" href="/privacy/">Privacy</a></nav>
+  <aside class="max-w-md flex flex-col gap-2 sm:ml-auto"><h6 class="footer-title mono">The developer</h6><p class="m-0 text-base-content/70 leading-relaxed text-pretty">Written by Richard Churchman, from sunny Paphos, Cyprus. No corporate layers, just direct software engineering. No roadmap theatre: if it's not in Git, it doesn't exist.</p></aside>
+</footer>
+
+      </main>
+      <aside class="not-prose hidden xl:flex flex-col gap-4 py-8 sticky top-16 self-start" data-pagefind-ignore>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="mono text-[11px] uppercase tracking-widest text-base-content/50">Work with Jube</div>
+    <a href="/training/" class="card bg-primary text-primary-content border border-primary no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Training &amp; Integration<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs">60 hours, typically four months.</div><div class="mono text-xs pt-1">$7,500 · fixed</div></div></a>
+    <a href="/support/" class="card bg-base-200 border border-base-300 no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:bg-base-100"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Support<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs text-base-content/70">Flat monthly. No clock, no overage.</div><div class="mono text-xs pt-1">from $350/mo</div></div></a>
+    <a href="/contact/" class="card bg-accent text-accent-content border border-accent no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Talk to the developer<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs opacity-80">Ask anything, any time.</div><div class="mono text-xs pt-1 opacity-80">WhatsApp, email or Meet</div></div></a>
+  </div>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="flex items-center justify-between gap-2"><div class="mono text-[11px] uppercase tracking-widest text-base-content/50">GitHub</div><a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="no-underline" aria-label="Star Jube on GitHub" data-stars="jube-home/aml-fraud-transaction-monitoring"><span class="badge badge-outline badge-sm mono text-xs gap-1 bg-base-100 text-base-content/70">★ <span data-stars-count>Star</span></span></a></div>
+    <div class="text-xs text-base-content/70 text-pretty">Every pull request tested in the open. Live from master.</div>
+    
+    <div class="flex flex-wrap gap-2">
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml/badge.svg?branch=master" alt="Unit tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml/badge.svg?branch=master" alt="End-to-end tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master" alt="CodeQL status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml/badge.svg?branch=master" alt="Trivy status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml/badge.svg?branch=master" alt="OWASP ZAP status" class="h-5 w-auto block"></a>
+    </div>
+  </div>
+</aside>
+
+    </div>
+  </div>
+  <a href="https://wa.me/35797517137" target="_blank" rel="noopener" aria-label="Message Jube on WhatsApp" title="Message us on WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full text-white shadow-lg flex items-center justify-center transition-transform duration-200 hover:scale-105 hover:shadow-xl" style="background-color:#25D366" data-pagefind-ignore><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"></path></svg></a>
+
+  
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>

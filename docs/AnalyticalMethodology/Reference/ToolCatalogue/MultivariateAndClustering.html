@@ -1,0 +1,2822 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme="jube">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
+<title>Multivariate and Clustering Tool Catalogue | Jube</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Multivariate and Clustering Tool Catalogue" />
+<meta name="author" content="Jube Holdings Limited" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<meta name="twitter:description" property="og:description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<link rel="canonical" href="https://www.jube.io/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" />
+<meta property="og:url" content="https://www.jube.io/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" />
+<meta property="og:site_name" content="Jube" />
+<meta property="og:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta name="twitter:title" content="Multivariate and Clustering Tool Catalogue" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Jube Holdings Limited" />
+<meta name="google-site-verification" content="" />
+<meta name="msvalidate.01" content="" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jube Holdings Limited"},"description":"Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee.","headline":"Multivariate and Clustering Tool Catalogue","image":"https://www.jube.io/assets/img/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.jube.io/assets/img/jube-logo.png"},"name":"Jube Holdings Limited"},"url":"https://www.jube.io/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <link rel="icon" href="/assets/img/jube-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="min-h-screen bg-base-100 text-base-content antialiased">
+  <a href="/" class="w-full bg-neutral text-neutral-content flex justify-center px-5 no-underline group" data-pagefind-ignore><div class="w-full max-w-7xl py-2 flex items-baseline gap-x-3 gap-y-0.5 flex-wrap"><span class="text-sm font-semibold tracking-tight">Open-source agentic AI for transaction monitoring. <span class="text-primary">Just ask Jooby.</span></span><span class="mono text-[11px] uppercase tracking-widest text-neutral-content/60 group-hover:text-neutral-content">What's Jube? →</span></div></a>
+<header class="w-full border-b border-base-300 flex justify-center px-5 bg-base-100/95 backdrop-blur sticky top-0 z-20">
+  <div class="navbar w-full max-w-7xl px-0 py-2 gap-4 flex-nowrap">
+    <div class="flex-none flex items-center gap-2">
+      <button id="mnav-toggle" class="btn btn-ghost btn-sm btn-square lg:hidden" aria-label="Menu"><span class="text-lg leading-none">☰</span></button>
+      <a href="/" class="flex shrink-0 items-center gap-0.5 text-2xl font-semibold tracking-tight no-underline"><img src="/assets/img/jube-logo.png" alt="" class="h-11 w-auto"><span>jube</span></a>
+    </div>
+    <div id="sx" class="relative hidden md:block flex-1 max-w-md min-w-0" data-pf="/pagefind/pagefind.js" data-pagefind-ignore>
+      <label class="input input-sm w-full bg-base-200 border-base-300 flex items-center gap-2 focus-within:border-primary">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="text-base-content/50 shrink-0" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <input id="sx-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search documentation, training, support…" class="grow min-w-0 text-sm" role="combobox" aria-expanded="false" aria-controls="sx-list" aria-autocomplete="list" aria-label="Search">
+        <span class="flex gap-1 shrink-0"><kbd class="kbd kbd-xs">⌘</kbd><kbd class="kbd kbd-xs">K</kbd></span>
+      </label>
+      <div id="sx-panel" class="absolute left-0 w-[min(38rem,calc(100vw-2.5rem))] top-full mt-2 z-50 rounded-box border border-base-300 bg-base-100 shadow-xl overflow-hidden" hidden>
+        <ul id="sx-list" role="listbox" class="list-none m-0 p-1 max-h-[65vh] overflow-y-auto"></ul>
+        <div id="sx-foot" class="mono text-[11px] text-base-content/50 px-3 py-2 border-t border-base-300 flex gap-3 flex-wrap"></div>
+      </div>
+    </div>
+    <nav class="flex flex-none items-center gap-1 ml-auto text-sm">
+      <a href="https://jube.io/v2JubeDesignBuildHandoff.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm font-medium"><span class="badge badge-accent badge-xs mono">v2</span><span class="hidden sm:inline">Get an early look at Version 2</span><span class="sm:hidden">Early look</span></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="btn btn-ghost btn-sm btn-square" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+    </nav>
+  </div>
+</header>
+<div id="mnav" class="lg:hidden w-full border-b border-base-300 bg-base-100 px-5 py-4 max-h-[70vh] overflow-y-auto" hidden>
+  <ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details open>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70 menu-active">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+
+</div>
+
+  <div class="w-full flex justify-center">
+    <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] xl:grid-cols-[auto_minmax(0,1fr)_280px] gap-8 px-5">
+      <aside id="side" class="hidden lg:block py-6 sticky top-16 self-start max-h-[calc(100vh-4rem)] overflow-y-auto transition-[width] duration-200 w-10">
+  <div class="flex pb-2"><button id="side-toggle" class="btn btn-ghost btn-sm btn-square" aria-label="Show menu" title="Show menu"><span class="text-lg leading-none" data-icon>☰</span></button></div>
+  <div id="side-nav" hidden><ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details open>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70 menu-active">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+</div>
+</aside>
+
+      <main class="py-8 min-w-0 flex flex-col">
+        <div data-pagefind-body><div class="flex flex-col gap-6">
+  <div class="breadcrumbs text-xs mono p-0 text-base-content/60"><ul><li><a href="/docs/">Documentation</a></li><li>Analytical Methodology</li><li>Reference</li><li>Multivariate and Clustering Tool Catalogue</li></ul></div>
+  <article class="prose max-w-none prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-pre:bg-neutral prose-pre:text-neutral-content">
+    <h1 id="multivariate-and-clustering-tool-catalogue">Multivariate and clustering tool catalogue</h1>
+
+<p>The product’s semantic tool layer for grouping rows, comparing cases and reducing dimensionality:
+<code class="language-plaintext highlighter-rouge">Jube.Service.Agent.AdvancedAnalyticsTools.MultivariateAndClustering</code> carries 52 tools across six classes, covering
+clustering algorithms, the measures used to evaluate and use a clustering, discriminant analysis and multivariate
+outlier detection, distance and kernel functions (including string and set similarity), nearest neighbour search and
+association rule mining, and principal/independent component analysis. AskJooby’s validator agent (Jadek) only
+confirms a claim against prose indexed from <code class="language-plaintext highlighter-rouge">docs/</code>, and none of these 52 tool names appears anywhere else in the
+documentation tree, so this page is the only place a claim about what one of them does or returns can be confirmed.</p>
+
+<h2 id="clustering-algorithms">Clustering algorithms</h2>
+
+<p>These eleven tools, all on <code class="language-plaintext highlighter-rouge">ClusteringTools</code>, partition rows into groups by different rules. Every one of them
+accepts rows as <code class="language-plaintext highlighter-rouge">double[][]</code> (or, for k-modes, <code class="language-plaintext highlighter-rouge">int[][]</code> category codes) and, unless noted, standardises each column
+to zero mean and unit variance before clustering when <code class="language-plaintext highlighter-rouge">standardise</code> is true (the default), so that a column measured
+in large units does not dominate the distance calculation; centroids and cluster profiles are always reported back in
+the original units regardless. A shared result shape underlies most of them: a cluster label per row (0 to k minus
+1), the centroids in original units, a profile per cluster (size, share of rows, per-column mean and standard
+deviation, within-cluster sum of squares, and mean/maximum distance of members to the centroid), the total inertia
+(summed squared distance to centroids, which always falls as k rises), and the mean silhouette score (between -1 and
+1, <code class="language-plaintext highlighter-rouge">NaN</code> above 5,000 rows or with a single cluster, because the silhouette needs every pairwise distance). A cluster
+left empty by a run has size 0 and <code class="language-plaintext highlighter-rouge">NaN</code> centroid values.</p>
+
+<p><strong>“RunKMeansClustering”</strong> runs ordinary k-means: starting centres are chosen either by k-means++ (which spreads them
+apart) or <code class="language-plaintext highlighter-rouge">Uniform</code> (random rows), each row is assigned to its nearest centre under the chosen distance (Euclidean by
+default; Manhattan, Chebyshev and Cosine are common alternatives), and centres are re-estimated as cluster means until
+assignments stop changing or <code class="language-plaintext highlighter-rouge">maximumIterations</code> (default 100, capped at 1,000) is reached. It is bounded to 100,000
+rows and 200 clusters. <code class="language-plaintext highlighter-rouge">Converged</code> is false when the iteration cap was hit before assignments stabilised. Because the
+result depends on the starting points, the <code class="language-plaintext highlighter-rouge">seed</code> parameter (default 1) should be varied and compared across runs
+before a solution is trusted.</p>
+
+<p><strong>“RunMiniBatchKMeansClustering”</strong> is a faster k-means variant for large row counts: instead of updating centres from
+every row each iteration it updates from a random <code class="language-plaintext highlighter-rouge">batchSize</code> (default 100, capped at the row count) sample per
+iteration. Results are close to, but not identical with, ordinary k-means, and depend on both the seed and the batch
+size. Bounds match plain k-means (100,000 rows, 200 clusters, 1,000 iterations).</p>
+
+<p><strong>“RunBinarySplitClustering”</strong> builds k clusters by repeatedly splitting the current set of clusters in two — the
+splitting stage of the LBG vector quantisation algorithm. Given the same seed it is deterministic, and because it
+grows by splitting it produces a hierarchy-like nested partition as k increases. Bounds and return shape match plain
+k-means.</p>
+
+<p><strong>“RunBalancedKMeansClustering”</strong> constrains cluster assignment so that no cluster absorbs a disproportionate share of
+the rows, trading some tightness (inertia is usually higher than plain k-means) for roughly equal cluster sizes. It
+is useful for splitting a portfolio into evenly sized review workloads. Because the constrained assignment step is
+quadratic in the row count it is bounded to 5,000 rows rather than 100,000, keeping the 200-cluster and 1,000-iteration
+caps.</p>
+
+<p><strong>“RunKMedoidsClustering”</strong> clusters around medoids — actual rows of the data chosen as cluster centres — rather than
+computed means, so each cluster has a real, explainable representative case, and the method tolerates outliers and
+non-Euclidean distances (the default metric is Manhattan rather than Euclidean) better than k-means. Its result
+differs from the shared shape: alongside the label per row it returns the row number and values of each medoid, a
+profile per cluster, the total distance of rows to their medoids under the chosen metric (lower is tighter), and the
+silhouette under that same metric (<code class="language-plaintext highlighter-rouge">NaN</code> for a single cluster). <code class="language-plaintext highlighter-rouge">seeding</code> can be <code class="language-plaintext highlighter-rouge">PamBuild</code> (the default, a greedy
+deterministic build), <code class="language-plaintext highlighter-rouge">KMeansPlusPlus</code> or <code class="language-plaintext highlighter-rouge">Uniform</code>; only the latter two consume the random seed. Because the
+assignment cost grows with the square of the row count, it is capped at 5,000 rows.</p>
+
+<p><strong>“RunKModesClustering”</strong> clusters rows of integer category codes — merchant category, channel, country and other
+attributes that should be encoded to integer codes before calling it — using k-modes: each cluster is represented by
+its mode (the most frequent category per column) and rows are assigned by Hamming distance (the count of mismatched
+columns) to the nearest mode. It returns the label per row, each cluster’s mode, cluster sizes, the total mismatch
+count across all rows (lower is tighter) and whether the run converged. Bounded to 100,000 rows, 200 clusters, 500
+columns and 1,000 iterations.</p>
+
+<p><strong>“RunMeanShiftClustering”</strong> finds clusters as the peaks (modes) of the data’s density rather than choosing a cluster
+count up front: every row climbs uphill through a smoothed density estimate until it settles near a peak, and rows
+that reach the same peak form a cluster, so the number of clusters is discovered, not chosen. The only setting that
+really matters is <code class="language-plaintext highlighter-rouge">bandwidth</code> (the smoothing radius, default 1): small values yield many small clusters, large values
+merge everything; with <code class="language-plaintext highlighter-rouge">standardise</code> true the bandwidth is in standard deviations, making 0.5–2 a sensible search
+range. The smoothing <code class="language-plaintext highlighter-rouge">kernel</code> can be <code class="language-plaintext highlighter-rouge">Gaussian</code> (default), <code class="language-plaintext highlighter-rouge">Uniform</code> (a flat window) or <code class="language-plaintext highlighter-rouge">Epanechnikov</code> (a parabolic
+window). It returns the label per row, the mode found for each cluster, cluster sizes and a profile per cluster.
+Because every row is compared with every other row, it is bounded to 5,000 rows and 1,000 iterations.</p>
+
+<p><strong>“RunGaussianMixtureClustering”</strong> fits a Gaussian mixture by expectation maximisation, modelling the data as a
+weighted blend of <code class="language-plaintext highlighter-rouge">components</code> bell-shaped groups, each with its own mean and covariance. Unlike k-means this gives
+soft clusters (a probability of membership per component rather than a hard boundary) and can represent elongated or
+differently sized groups. It returns, per row, the most likely component and (optionally, via <code class="language-plaintext highlighter-rouge">returnResponsibilities</code>,
+default true) the full probability vector across components, which sums to 1; per component the weight (share of the
+data), mean and covariance matrix; and model-selection statistics — the log-likelihood (higher fits better), the
+parameter count, AIC and BIC (lower is better for both; BIC’s stronger complexity penalty makes it the usual choice
+for picking a component count). <code class="language-plaintext highlighter-rouge">covariance</code> can be <code class="language-plaintext highlighter-rouge">Full</code> (a complete covariance matrix per component) or
+<code class="language-plaintext highlighter-rouge">Diagonal</code> (variances only, far cheaper with many columns). <code class="language-plaintext highlighter-rouge">regularization</code> (default 1e-6) is added to the
+covariance diagonal to stop a component from collapsing onto a tiny or exactly repeated cluster. Bounded to 50,000
+rows, 100 columns, 50 components and 1,000 iterations, and needs at least twice as many rows as components.</p>
+
+<p><strong>“SelectGaussianMixtureComponentsByBic”</strong> answers the model-selection question that <code class="language-plaintext highlighter-rouge">RunGaussianMixtureClustering</code>
+leaves open: it fits mixtures for every component count from <code class="language-plaintext highlighter-rouge">minComponents</code> to <code class="language-plaintext highlighter-rouge">maxComponents</code> (at most 15 values
+tried) and tabulates the log-likelihood, parameter count, AIC and BIC, and convergence flag for each, then reports
+<code class="language-plaintext highlighter-rouge">BestComponentsByBic</code> and <code class="language-plaintext highlighter-rouge">BestComponentsByAic</code>. BIC’s stronger penalty on extra components usually gives the more
+conservative answer. It is a natural tool to run before <code class="language-plaintext highlighter-rouge">RunGaussianMixtureClustering</code> to choose <code class="language-plaintext highlighter-rouge">components</code>, or to
+estimate how many distinct populations (customer segments, transaction types) likely exist in a data set.</p>
+
+<p><strong>“DetectAnomaliesWithGaussianMixture”</strong> uses a Gaussian mixture as an anomaly detector: it fits the mixture to
+<code class="language-plaintext highlighter-rouge">referenceData</code> only, then scores <code class="language-plaintext highlighter-rouge">newData</code> (or, if omitted, the reference rows themselves) by log probability
+density under that mixture — lower density means more unusual. The flagging <code class="language-plaintext highlighter-rouge">threshold</code> is the log density below
+which the lowest <code class="language-plaintext highlighter-rouge">contamination</code> share (default 0.01, i.e. 1 percent) of the <em>reference</em> rows themselves fall, so the
+contamination parameter calibrates the cutoff against the reference population’s own tail rather than an arbitrary
+constant. Because a mixture can represent several legitimate sub-populations at once, it can flag a row that fits
+none of several known-good groups — something a single-centre Mahalanobis distance cannot express. Bounded to 50,000
+reference rows, 100 columns and 50 components.</p>
+
+<p><strong>“SelectKMeansPlusPlusSeeds”</strong> exposes the k-means++ seeding rule as a standalone tool: it draws <code class="language-plaintext highlighter-rouge">seeds</code> rows, the
+first uniformly at random and each subsequent one with probability proportional to its squared distance from the
+nearest already-chosen row, so the chosen rows are spread apart rather than clustered together. It returns the row
+numbers and values of the chosen rows. Beyond initialising other clustering methods, this is useful on its own for
+picking a diverse set of representative cases for manual review, since the same seed always reproduces the same
+selection. Bounded to 100,000 rows and 200 seeds.</p>
+
+<h2 id="evaluating-and-using-a-clustering">Evaluating and using a clustering</h2>
+
+<p>These nine tools, all on <code class="language-plaintext highlighter-rouge">ClusterEvaluationTools</code>, take an existing labelling — from any of the clustering tools
+above, or from elsewhere — as <code class="language-plaintext highlighter-rouge">double[][] data</code> plus <code class="language-plaintext highlighter-rouge">int[] labels</code> (any integers; rows sharing a label form a
+cluster) and answer questions about its quality, its meaning, or how to apply it to new data. <code class="language-plaintext highlighter-rouge">labels</code> is validated
+and remapped to a contiguous 0-based range internally, so arbitrary label values are accepted.</p>
+
+<p><strong>“ComputeSilhouetteScores”</strong> computes, for every row, the standard silhouette: <code class="language-plaintext highlighter-rouge">a</code> is its mean distance to the other
+rows of its own cluster, <code class="language-plaintext highlighter-rouge">b</code> is its mean distance to the rows of the nearest other cluster, and the score is
+<code class="language-plaintext highlighter-rouge">(b − a) / max(a, b)</code>, bounded between -1 and 1. A score near 1 means the row sits firmly inside its cluster, near 0
+means it sits on a border between two clusters, and negative means it likely belongs to a different cluster than the
+one it was assigned to; a row that is alone in its own cluster scores 0 by convention. It returns every row’s score,
+each cluster’s mean score, and the overall mean — the single number usually quoted as cluster quality, where above
+roughly 0.5 indicates clear structure and below roughly 0.25 indicates weak structure. Because every pair of rows is
+compared, it needs at least 2 clusters and is capped at 5,000 rows.</p>
+
+<p><strong>“ComputeDaviesBouldinIndex”</strong> computes the Davies-Bouldin index: for each cluster it finds the most similar other
+cluster (similarity being the sum of the two clusters’ mean distances to their own centres, divided by the distance
+between the two centres) and averages those worst-case ratios across clusters. Lower is better, 0 is the unreachable
+ideal of infinitely tight and far-apart clusters, and values above roughly 1 indicate real overlap. It always uses
+Euclidean distance to the cluster means regardless of what distance produced the labelling, needs at least 2
+clusters, and is capped at 100,000 rows. It is only meaningful for comparing different clusterings of the <em>same</em>
+data, never across data sets.</p>
+
+<p><strong>“ComputeCalinskiHarabaszIndex”</strong> computes the Calinski-Harabasz index (the variance ratio criterion): the
+between-cluster sum of squares divided by (k − 1), over the within-cluster sum of squares divided by (n − k). Higher
+is better, growing as clusters become more compact and more separated. It is infinite in the degenerate case where
+every row sits exactly on its centroid, and <code class="language-plaintext highlighter-rouge">NaN</code> when there is only one cluster or as many clusters as rows. Like
+Davies-Bouldin, it is intended for comparing different values of k on the same data set, not across data sets, and
+needs at least 2 clusters and at most 100,000 rows.</p>
+
+<p><strong>“EvaluateClusteringQuality”</strong> bundles the standard internal quality measures into one call for a clustering
+produced by any method, including one made outside these tools: inertia (within-cluster sum of squared distances to
+the means, lower is tighter), the between-cluster sum of squares, the mean silhouette (<code class="language-plaintext highlighter-rouge">NaN</code> above 5,000 rows),
+Davies-Bouldin (lower is better) and Calinski-Harabasz (higher is better). It is the tool to reach for to compare
+candidate clusterings of the same data without calling each measure separately. Needs at least 2 clusters and at
+most 100,000 rows; the <code class="language-plaintext highlighter-rouge">distance</code> parameter only affects the silhouette, since the other three measures are always
+Euclidean.</p>
+
+<p><strong>“ComputeKMeansElbowTable”</strong> helps choose a cluster count by running k-means for every k from <code class="language-plaintext highlighter-rouge">minClusters</code> to
+<code class="language-plaintext highlighter-rouge">maxClusters</code> (at most 30 values, using the same seed throughout for comparability) and tabulating, per k, the
+inertia (which always falls as k rises), mean silhouette, Davies-Bouldin and Calinski-Harabasz. <code class="language-plaintext highlighter-rouge">ElbowClusters</code> is
+the k at the sharpest bend in the inertia curve (the point furthest below the straight line joining the first and
+last points of the curve); <code class="language-plaintext highlighter-rouge">BestClustersBySilhouette</code>, <code class="language-plaintext highlighter-rouge">...ByDaviesBouldin</code> and <code class="language-plaintext highlighter-rouge">...ByCalinskiHarabasz</code> name the k
+each individual measure prefers. These measures routinely disagree with each other, so the guidance is to look for a
+k that several of them support rather than trusting any single one. Measures are computed on standardised data when
+<code class="language-plaintext highlighter-rouge">standardise</code> is true (the default). Bounded to 20,000 rows and 30 values of k; the silhouette column is <code class="language-plaintext highlighter-rouge">NaN</code> above
+5,000 rows regardless of the overall row cap.</p>
+
+<p><strong>“ComputeKMeansGapStatistic”</strong> chooses a cluster count with Tibshirani’s gap statistic: for each k it compares the
+log of the real data’s k-means within-cluster dispersion against the average of that same quantity over
+<code class="language-plaintext highlighter-rouge">referenceSets</code> (default 10, capped at 20) synthetic data sets drawn uniformly at random inside the bounding box of
+the real data — so a large gap means the real data clusters far more tightly than random noise of the same shape
+would. The output table carries, per k, the observed log dispersion, the expected log dispersion under the reference,
+the gap, and its standard error; <code class="language-plaintext highlighter-rouge">BestClusters</code> applies Tibshirani’s one-standard-error rule (the smallest k whose
+gap is at least the next k’s gap minus that next k’s standard error), falling back to the largest k tried if no k
+qualifies. The reference sets are drawn using <code class="language-plaintext highlighter-rouge">seed</code>, so results repeat for a fixed seed. Because it fits many k-means
+models (one real plus <code class="language-plaintext highlighter-rouge">referenceSets</code> reference fits, per candidate k), it is tightly bounded: at most 5,000 rows, 15
+values of k, and 20 reference sets.</p>
+
+<p><strong>“ProfileClusters”</strong> describes each cluster of an existing labelling in plain numbers so it can be interpreted
+without staring at raw centroids: size and share of rows, the centroid (mean per variable), the standard deviation
+per variable, the within-cluster sum of squares, the mean and maximum Euclidean distance of members to the centroid,
+and a ranked list of the variables that most distinguish the cluster. <code class="language-plaintext highlighter-rouge">DistinguishingVariables</code> lists, for the
+<code class="language-plaintext highlighter-rouge">topVariables</code> (default 3) variables with the largest effect, the standardised difference — (cluster mean − overall
+mean) / overall standard deviation — so +1.5 means the cluster averages 1.5 standard deviations above the rest of the
+population on that variable; a variable that is constant across all rows has effect exactly 0 rather than dividing by
+zero. It accepts labels from any clustering method, not just this tool group’s own output. A cluster containing only
+one row has <code class="language-plaintext highlighter-rouge">NaN</code> standard deviations, since a spread cannot be computed from a single point. Capped at 100,000 rows.</p>
+
+<p><strong>“AssignRowsToNearestCentroid”</strong> assigns new rows to the nearest of a supplied set of centroids — typically centroids
+returned by one of the clustering tools above — under a chosen distance metric (Euclidean by default; <code class="language-plaintext highlighter-rouge">minkowskiOrder</code>,
+default 3, configures the Minkowski metric). For each new row it returns the index of the nearest centroid (its
+position in the supplied centroid array, 0-based), the distance to that centroid, and the distances to <em>every</em>
+centroid, so that borderline rows can be spotted — a small gap between the two smallest distances flags an ambiguous
+assignment. It is the caller’s responsibility to keep the new rows on the same scale as the clustering: if the
+original clustering standardised its input, the new rows must be standardised the same way before being passed in.
+Bounded to 20,000 new rows and 200 centroids.</p>
+
+<p><strong>“CompareClusterAssignments”</strong> measures how much two independent clusterings of the same rows agree, independent of
+how each one happens to number its clusters, using pair counting over every pair of rows. <code class="language-plaintext highlighter-rouge">RandIndex</code> is the share of
+all row pairs on which the two clusterings agree (both together or both apart), between 0 and 1. <code class="language-plaintext highlighter-rouge">AdjustedRandIndex</code>
+corrects the Rand index for the agreement expected by chance alone, so 1 means the two partitions are identical,
+roughly 0 means no better than chance, and a negative value means worse than chance — this is the number to quote
+when stability or reproducibility is the question, for example comparing a clustering across random seeds, methods,
+or samples. <code class="language-plaintext highlighter-rouge">PairJaccard</code> is the share of pairs that are together in <em>either</em> clustering that are together in <em>both</em>.
+Two clusterings that are each a single cluster, or each all singletons, trivially score 1 on all three measures.
+Bounded between 2 and 1,000,000 rows, and <code class="language-plaintext highlighter-rouge">labelsA</code>/<code class="language-plaintext highlighter-rouge">labelsB</code> must be the same length.</p>
+
+<h2 id="discriminant-analysis-embeddings-and-mahalanobis-distance">Discriminant analysis, embeddings and Mahalanobis distance</h2>
+
+<p>These six tools live on <code class="language-plaintext highlighter-rouge">DiscriminantAndEmbeddingTools</code> and cover supervised class separation, nonlinear embedding
+for visualisation, and multivariate outlier detection by Mahalanobis distance.</p>
+
+<p><strong>“RunLinearDiscriminantAnalysis”</strong> finds the directions along which known classes are best separated — large spread
+between class means relative to spread within each class — and returns them together with every row’s coordinates in
+that space. There are at most (number of classes − 1) useful directions, and <code class="language-plaintext highlighter-rouge">components</code> (0 by default, meaning
+“use the maximum”) selects how many to keep. It reports class sizes, prevalence, and means; each direction’s
+eigenvalue (bigger means more separation, with between-class scatter weighted equally per class); each direction’s
+share of total separation and the running cumulative total; the direction vectors themselves; the class means
+projected into the new space; the projected coordinates of every row (when <code class="language-plaintext highlighter-rouge">returnScores</code> is true, the default); and
+a training accuracy figure from assigning every row to its nearest projected class mean. That accuracy is measured on
+the same rows used to fit the model, so it is optimistic and should be read as a measure of separability rather than
+of predictive performance. It needs at least 2 classes with at least 2 rows each, more rows in total than classes,
+and columns that are not perfectly collinear within any one class — a singular or perfectly separable within-class
+scatter is rejected with an explanation pointing at collinear or constant columns. Capped at 20,000 rows.</p>
+
+<p><strong>“RunKernelDiscriminantAnalysis”</strong> is the same idea carried out in the feature space of a kernel, so that classes
+separated by a curved rather than a straight boundary can still be pulled apart. It shares the kernel parameter set
+used throughout this tool group (<code class="language-plaintext highlighter-rouge">kernel</code>, <code class="language-plaintext highlighter-rouge">kernelSigma</code>, <code class="language-plaintext highlighter-rouge">kernelGamma</code>, <code class="language-plaintext highlighter-rouge">kernelConstant</code>, <code class="language-plaintext highlighter-rouge">kernelDegree</code>,
+<code class="language-plaintext highlighter-rouge">kernelAlpha</code>, <code class="language-plaintext highlighter-rouge">kernelBeta</code> — see the kernel reference under Distances and kernels, below) and returns eigenvalues,
+separation shares, the projected coordinates of every row, the classes’ projected means, and training accuracy as
+above; because class means and direction vectors live in the kernel’s implicit feature space rather than the
+original variables, those two fields come back empty. <code class="language-plaintext highlighter-rouge">regularization</code> (default 1e-4) is added to the within-class
+matrix to keep it invertible; a <code class="language-plaintext highlighter-rouge">SingularMatrixException</code> from the underlying library is caught and re-raised as an
+<code class="language-plaintext highlighter-rouge">ArgumentException</code> suggesting the caller raise <code class="language-plaintext highlighter-rouge">regularization</code> (for example to 0.01) or change the kernel
+parameters. Because the kernel matrix has (rows)² cells, it is capped at 1,000 rows rather than 20,000.</p>
+
+<p><strong>“ClassifyWithLinearDiscriminant”</strong> learns a linear discriminant model from labelled training rows and immediately
+assigns each row of <code class="language-plaintext highlighter-rouge">newData</code> to whichever class’s projected mean is nearest, without saving the fitted model
+anywhere. It returns the predicted label per new row and, per row, one score per class in the order of <code class="language-plaintext highlighter-rouge">ClassLabels</code>
+— the negative squared distance to that class’s mean in the discriminant space, so a larger (less negative) score
+means a better fit. It is offered as a quick, interpretable baseline classifier, or as a way to place new cases
+relative to known groups without the overhead of a full model lifecycle. Training needs at least 2 classes with at
+least 2 rows each, exactly as for <code class="language-plaintext highlighter-rouge">RunLinearDiscriminantAnalysis</code>.</p>
+
+<p><strong>“DetectMultivariateOutliersMahalanobis”</strong> flags rows that are unusual as a <em>combination</em> of variables, using the
+Mahalanobis distance: the number of standard deviations a row lies from the centre once the correlations between
+variables are accounted for, so a row can be flagged because two normally-correlated variables disagree with each
+other even if neither variable alone looks extreme. For each row it returns the distance, the squared distance, and a
+chi-square p-value with one degree of freedom per independent dimension found in the data (<code class="language-plaintext highlighter-rouge">Rank</code>); the cutoff is the
+distance whose chi-square tail probability equals <code class="language-plaintext highlighter-rouge">significance</code> (default 0.001, i.e. the 99.9th percentile), and
+rows beyond it are flagged. The centre and covariance are estimated from the <em>same</em> rows being tested — the classical
+rather than a robust estimator — so several genuinely extreme rows can inflate the covariance estimate and mask each
+other, and small samples make the chi-square approximation loose; these are real limitations to keep in mind when
+reading the result. When columns are perfectly collinear the implementation falls back to a pseudo-inverse of the
+covariance matrix, and <code class="language-plaintext highlighter-rouge">Rank</code> comes back lower than the column count to reflect that; a reference set with literally
+no variation in any column (rank 0) is rejected outright, since distances would be undefined. Needs at least 3 rows,
+capped at 20,000.</p>
+
+<p><strong>“ScoreMahalanobisDistanceAgainstReference”</strong> is the same Mahalanobis calculation but deliberately avoids the masking
+problem above: the centre and covariance are learned from <code class="language-plaintext highlighter-rouge">referenceData</code> only, and <code class="language-plaintext highlighter-rouge">newData</code> is scored against that
+fixed reference, so extreme rows in the test set can never contaminate the population they are being measured
+against. This is the version to reach for when testing new transactions or customers against clean history, rather
+than detecting outliers within a single pooled set. Both data sets must share the same column count; the reference
+set needs at least 3 rows, and both are capped at 20,000 rows.</p>
+
+<p><strong>“EmbedWithTsne”</strong> embeds high-dimensional rows into 2 or 3 dimensions with t-SNE so that cluster structure can be
+seen on a scatter plot: points that are near each other in the original space stay near each other in the embedding,
+but distances between far-apart groups and the apparent size of a cluster in the embedding carry no meaning and
+should never be read as distances or densities. <code class="language-plaintext highlighter-rouge">perplexity</code> (default 30) is roughly the number of neighbours each
+point considers and must stay below one third of (rows − 1); the tool automatically reduces it to fit small samples,
+and a request with fewer than 10 rows is rejected outright as too few for a meaningful embedding. <code class="language-plaintext highlighter-rouge">theta</code> (default
+0.5) trades speed for accuracy in the Barnes-Hut approximation, where 0 is exact but slow and 0.5 is the usual
+practical choice. The optimisation always runs 1,000 iterations from a random start controlled by <code class="language-plaintext highlighter-rouge">seed</code>, so the same
+seed reproduces the same coordinates, but different seeds give different, <em>equally valid</em> layouts of the same
+structure — comparisons across runs should be about the shapes found, never the raw coordinates. Bounded to 2,000
+rows and 500 columns.</p>
+
+<h2 id="distances-kernels-and-string-similarity">Distances, kernels and string similarity</h2>
+
+<p>These thirteen tools live on <code class="language-plaintext highlighter-rouge">DistanceAndKernelTools</code> and expose the numeric distance/kernel machinery used
+throughout this tool group as first-class, directly callable primitives, plus a matching set of tools for comparing
+text and token sequences.</p>
+
+<p><strong>“ComputeVectorDistance”</strong> computes a single distance between two equal-length numeric vectors under one named
+metric: <code class="language-plaintext highlighter-rouge">Euclidean</code>, <code class="language-plaintext highlighter-rouge">SquaredEuclidean</code>, <code class="language-plaintext highlighter-rouge">Manhattan</code>, <code class="language-plaintext highlighter-rouge">Chebyshev</code>, <code class="language-plaintext highlighter-rouge">Minkowski</code> (order set by <code class="language-plaintext highlighter-rouge">minkowskiOrder</code>, default
+3; order 1 is Manhattan and order 2 is Euclidean), <code class="language-plaintext highlighter-rouge">Cosine</code> (1 minus cosine similarity), <code class="language-plaintext highlighter-rouge">Angular</code> (an angle in
+radians), <code class="language-plaintext highlighter-rouge">Canberra</code>, <code class="language-plaintext highlighter-rouge">BrayCurtis</code>, <code class="language-plaintext highlighter-rouge">Hellinger</code> (intended for non-negative probability-like vectors),
+<code class="language-plaintext highlighter-rouge">PearsonCorrelation</code> (1 minus correlation), and the binary family <code class="language-plaintext highlighter-rouge">Hamming</code>, <code class="language-plaintext highlighter-rouge">Jaccard</code>, <code class="language-plaintext highlighter-rouge">Dice</code>, <code class="language-plaintext highlighter-rouge">Matching</code>,
+<code class="language-plaintext highlighter-rouge">Kulczynski</code>, <code class="language-plaintext highlighter-rouge">RogersTanimoto</code>, <code class="language-plaintext highlighter-rouge">RusselRao</code>, <code class="language-plaintext highlighter-rouge">SokalMichener</code>, <code class="language-plaintext highlighter-rouge">SokalSneath</code> and <code class="language-plaintext highlighter-rouge">Yule</code>, all of which treat any non-zero
+value as “true”. Zero always means identical vectors, and larger values always mean more different, except that for
+<code class="language-plaintext highlighter-rouge">Cosine</code>, <code class="language-plaintext highlighter-rouge">Jaccard</code> and <code class="language-plaintext highlighter-rouge">Dice</code> the corresponding <em>similarity</em> is one minus the returned distance. <code class="language-plaintext highlighter-rouge">weights</code> supplies
+one non-negative weight per dimension and is only consulted for the <code class="language-plaintext highlighter-rouge">WeightedEuclidean</code> and
+<code class="language-plaintext highlighter-rouge">WeightedSquaredEuclidean</code> metrics. Non-finite inputs or mismatched vector lengths are rejected with an explanatory
+message rather than propagating <code class="language-plaintext highlighter-rouge">NaN</code>.</p>
+
+<p><strong>“ComputeDistanceMatrixWithinSet”</strong> computes the full symmetric pairwise distance matrix for one data set under any
+of the metrics above: cell <code class="language-plaintext highlighter-rouge">[i][j]</code> is the distance from row i to row j, the diagonal is exactly zero, and the matrix
+is symmetric. It is the building block for inspecting similarity structure, feeding a clustering algorithm, or
+finding near-duplicate rows. Because the result has (rows)² cells, it is capped at 2,000 rows; the summary carries the
+smallest, largest, and mean off-diagonal distance.</p>
+
+<p><strong>“ComputeDistanceMatrixBetweenSets”</strong> is the rectangular equivalent for two different data sets: cell <code class="language-plaintext highlighter-rouge">[i][j]</code>
+compares row i of <code class="language-plaintext highlighter-rouge">setA</code> with row j of <code class="language-plaintext highlighter-rouge">setB</code>, so the matrix need not be square and has no meaningful diagonal. Each
+set is independently capped at 2,000 rows, and both sets must share the same column count. Use it to compare a batch
+of new cases against a fixed reference population without computing the within-set distances for either side.</p>
+
+<p><strong>“ComputeKernelValue”</strong> evaluates a single named kernel function between two vectors, returning one similarity
+number where larger means more alike (the inverse sense of a distance). The kernel family is shared across every
+kernel-consuming tool in this group: <code class="language-plaintext highlighter-rouge">Linear</code>, <code class="language-plaintext highlighter-rouge">Polynomial</code> and <code class="language-plaintext highlighter-rouge">Sigmoid</code> are dot-product kernels; <code class="language-plaintext highlighter-rouge">Gaussian</code>,
+<code class="language-plaintext highlighter-rouge">Laplacian</code>, <code class="language-plaintext highlighter-rouge">Cauchy</code>, <code class="language-plaintext highlighter-rouge">Spherical</code>, <code class="language-plaintext highlighter-rouge">Circular</code>, <code class="language-plaintext highlighter-rouge">Wave</code> and <code class="language-plaintext highlighter-rouge">ThinPlateSpline</code> are distance kernels controlled by
+<code class="language-plaintext highlighter-rouge">kernelSigma</code>; <code class="language-plaintext highlighter-rouge">Hypersecant</code>, <code class="language-plaintext highlighter-rouge">SquaredSinc</code> and <code class="language-plaintext highlighter-rouge">SymmetricTriangle</code> use <code class="language-plaintext highlighter-rouge">kernelGamma</code>; <code class="language-plaintext highlighter-rouge">Power</code>, <code class="language-plaintext highlighter-rouge">Log</code>, <code class="language-plaintext highlighter-rouge">TStudent</code>,
+<code class="language-plaintext highlighter-rouge">BSpline</code> and <code class="language-plaintext highlighter-rouge">Bessel</code> use <code class="language-plaintext highlighter-rouge">kernelDegree</code>; and <code class="language-plaintext highlighter-rouge">ChiSquare</code>, <code class="language-plaintext highlighter-rouge">Hellinger</code> and <code class="language-plaintext highlighter-rouge">HistogramIntersection</code> are intended for
+non-negative, histogram-shaped data. <code class="language-plaintext highlighter-rouge">kernelConstant</code> supplies the additive constant used by the dot-product kernels
+(defaulting to 0 for <code class="language-plaintext highlighter-rouge">Linear</code>, i.e. a plain dot product, and 1 for the others), <code class="language-plaintext highlighter-rouge">kernelAlpha</code> is the sigmoid slope /
+Pearson omega / HistogramIntersection exponent, and <code class="language-plaintext highlighter-rouge">kernelBeta</code> is the HistogramIntersection beta exponent. This
+tool is the place to sanity-check a kernel and its parameters on one pair of cases before committing to it inside
+kernel PCA or kernel discriminant analysis.</p>
+
+<p><strong>“ComputeKernelGramMatrix”</strong> computes the full kernel (Gram) matrix for one data set: cell <code class="language-plaintext highlighter-rouge">[i][j]</code> is the kernel
+similarity between row i and row j, so the matrix is symmetric and the diagonal holds each row’s self-similarity.
+With <code class="language-plaintext highlighter-rouge">normalise</code> true (default false) every cell is divided by the square root of the product of its two diagonal
+entries — a cosine-style normalisation that forces the diagonal to exactly 1 and makes magnitudes comparable across
+different kernel choices. Capped at 1,000 rows because the matrix has (rows)² cells.</p>
+
+<p><strong>“ComputeKernelCrossMatrix”</strong> is the rectangular cross-kernel equivalent: cell <code class="language-plaintext highlighter-rouge">[i][j]</code> compares row i of <code class="language-plaintext highlighter-rouge">setA</code> with
+row j of <code class="language-plaintext highlighter-rouge">setB</code> under the chosen kernel, each set capped at 1,000 rows and both needing the same column count. Since
+the matrix is not square, its <code class="language-plaintext highlighter-rouge">Diagonal</code> field in the result comes back empty rather than meaningless.</p>
+
+<p><strong>“CompareHistogramsBhattacharyya”</strong> measures how much two discrete distributions overlap, each given as an array of
+non-negative counts or proportions over the same categories or bins in the same order; both arrays are first rescaled
+to sum to 1 internally. It returns the Bhattacharyya coefficient (1 for identical distributions, 0 for no overlap
+whatsoever), the Bhattacharyya distance (minus the natural log of the coefficient — 0 for identical, infinite for no
+overlap), and the Hellinger distance (the square root of one minus the coefficient, bounded between 0 and 1). The
+intended use is comparing a current distribution against a baseline, for example transaction amount bands this month
+against last month. At least one entry in each histogram must be above zero; a mismatched bin count or a negative
+entry is rejected.</p>
+
+<p><strong>“CompareSamplesBhattacharyyaGaussian”</strong> is the continuous, multivariate analogue: it fits a Gaussian (mean and
+covariance) to each of two samples and returns the Bhattacharyya distance between the two fitted Gaussians, a single
+number that grows with both the separation of the two means and the difference between the two covariances — 0 means
+the fitted Gaussians coincide exactly, and for two Gaussians sharing an identity covariance it reduces to one eighth
+of the squared distance between the means. It is intended to quantify drift between a baseline population and a
+current one across several variables at once. Each sample needs at least 3 rows, and the two must share the same
+column count.</p>
+
+<p><strong>“ComputeStringDistance”</strong> computes the edit distance between two strings under one of three named algorithms:
+<code class="language-plaintext highlighter-rouge">Levenshtein</code> (the minimum count of single-character insertions, deletions and substitutions turning one string into
+the other — the default), <code class="language-plaintext highlighter-rouge">NormalisedLevenshtein</code> (the same distance divided by the longer string’s length, so 0 is
+identical and 1 is completely different regardless of length), or <code class="language-plaintext highlighter-rouge">Hamming</code> (the count of differing positions,
+requiring both strings be the same length). <code class="language-plaintext highlighter-rouge">ignoreCase</code> (default true) lowercases both strings before comparing.
+Strings over 2,000 characters are rejected. The returned <code class="language-plaintext highlighter-rouge">Similarity</code> is always 1 minus the normalised distance,
+bounded between 0 and 1, which is the natural field to threshold when fuzzy-matching names, references or account
+descriptions that may carry typing errors.</p>
+
+<p><strong>“FindClosestStringMatches”</strong> ranks a list of <code class="language-plaintext highlighter-rouge">candidates</code> against one <code class="language-plaintext highlighter-rouge">query</code> string and returns the <code class="language-plaintext highlighter-rouge">top</code> (default
+5) closest, nearest first, under the same three edit-distance algorithms as <code class="language-plaintext highlighter-rouge">ComputeStringDistance</code>. Similarity is 1
+minus the distance divided by the longer of the two lengths being compared, so an exact match scores 1; <code class="language-plaintext highlighter-rouge">Hamming</code>
+candidates whose length differs from the query are silently skipped rather than erroring, since Hamming distance is
+undefined between strings of different lengths. Ties in distance preserve the original candidate order. Bounded to
+5,000 candidates of at most 2,000 characters each, and <code class="language-plaintext highlighter-rouge">top</code> is capped at 1,000.</p>
+
+<p><strong>“ComputeStringDistanceMatrix”</strong> computes the full pairwise edit-distance matrix across one list of strings,
+symmetric with a zero diagonal, under any of the three algorithms above; for <code class="language-plaintext highlighter-rouge">Hamming</code>, every string in the list must
+share the same length. It is intended for finding near-duplicate names or references in bulk, or as a preparatory
+step before clustering text values. Capped at 500 strings of at most 2,000 characters each.</p>
+
+<p><strong>“ComputeTokenSequenceEditDistance”</strong> computes the edit distance between two <em>ordered</em> sequences of tokens — the
+sequence of actions in two user sessions, or the sequence of merchant categories in two customers’ histories — as the
+minimum number of single-token insertions, deletions and substitutions turning one sequence into the other, with
+order mattering throughout (unlike <code class="language-plaintext highlighter-rouge">ComputeTokenSetSimilarity</code>, below). It returns the raw distance and a similarity
+between 0 and 1 (1 minus the distance divided by the longer sequence’s length; two empty sequences score a similarity
+of 1 by convention). Each sequence is capped at 2,000 tokens, and <code class="language-plaintext highlighter-rouge">ignoreCase</code> (default true) applies to token text.</p>
+
+<p><strong>“ComputeTokenSetSimilarity”</strong> compares two lists of tokens — words, merchant categories, device identifiers, or any
+other strings — as unordered sets, collapsing duplicates and ignoring order entirely. It returns the size of each
+input set after deduplication, the intersection and union sizes, the Jaccard similarity (intersection over union), the
+Dice similarity (twice the intersection over the sum of the two set sizes), and the overlap coefficient (intersection
+over the smaller set size). All three similarity measures lie between 0 and 1, are 1 for identical sets, and are
+defined as 1 for two empty sets by convention (rather than the 0/0 that would otherwise result). Each token list is
+capped at 100,000 entries; <code class="language-plaintext highlighter-rouge">ignoreCase</code> (default true) folds case before comparing.</p>
+
+<h2 id="nearest-neighbours-and-association-rules">Nearest neighbours and association rules</h2>
+
+<p>These five tools live on <code class="language-plaintext highlighter-rouge">NeighbourAndRuleTools</code>. The first four share search machinery across three index choices —
+<code class="language-plaintext highlighter-rouge">KdTree</code> (the default, efficient for low-dimensional data), <code class="language-plaintext highlighter-rouge">VpTree</code> (works in any dimension, including non-Euclidean
+metrics) and <code class="language-plaintext highlighter-rouge">BruteForce</code> (a plain scan, giving identical results to the indexed searches and useful mainly as a
+cross-check) — and a metric choice of <code class="language-plaintext highlighter-rouge">Euclidean</code> (default), <code class="language-plaintext highlighter-rouge">Manhattan</code>, <code class="language-plaintext highlighter-rouge">Chebyshev</code> or <code class="language-plaintext highlighter-rouge">Minkowski</code> (order set by
+<code class="language-plaintext highlighter-rouge">minkowskiOrder</code>, default 3). Every one of them supports a “self-query” mode, triggered by leaving <code class="language-plaintext highlighter-rouge">queryData</code> null,
+in which every reference row queries against the rest of the reference set and is never returned as its own nearest
+neighbour.</p>
+
+<p><strong>“FindKNearestNeighbours”</strong> finds, for each query row, the <code class="language-plaintext highlighter-rouge">neighbours</code> (default 5) closest reference rows and their
+distances, nearest first. It is intended for finding look-alike customers, similar past cases, or near-duplicates.
+Scaling is the caller’s responsibility: columns on very different units should be standardised before calling, since
+all four metrics treat every dimension equally. Rows tied at exactly the same distance may be returned in either
+order, and which tied row is kept right at the cutoff is unspecified behaviour rather than a documented guarantee.
+Bounded to 100,000 reference rows, 5,000 query rows (5,000 self-queries when <code class="language-plaintext highlighter-rouge">queryData</code> is omitted), and 1,000
+neighbours per query.</p>
+
+<p><strong>“FindNeighboursWithinRadius”</strong> is the radius-search sibling: for each query row it finds <em>every</em> reference row
+within <code class="language-plaintext highlighter-rouge">radius</code> (strictly, in the chosen metric’s own units) rather than a fixed count, using a KD-tree internally
+regardless of the <code class="language-plaintext highlighter-rouge">index</code> parameter’s value for the paired nearest-neighbour tool. It is suited to counting or
+listing cases inside a fixed similarity threshold, for example accounts within a small distance of a known suspicious
+profile. <code class="language-plaintext highlighter-rouge">maxPerQuery</code> (default 100) caps the list returned per query, keeping the nearest if the radius match count
+exceeds it. Bounded the same as <code class="language-plaintext highlighter-rouge">FindKNearestNeighbours</code>.</p>
+
+<p><strong>“ClassifyByNearestNeighbours”</strong> classifies each row of <code class="language-plaintext highlighter-rouge">newData</code> by a majority vote among its <code class="language-plaintext highlighter-rouge">neighbours</code> (default
+5) nearest labelled training rows, with nothing about the model persisted anywhere. It returns the predicted label per
+new row (the plurality class among the neighbours, with ties broken in favour of the closer neighbours); per row, the
+share of the k neighbours voting for each class in the order of <code class="language-plaintext highlighter-rouge">ClassLabels</code> (a value of 0.6 means 6 of 10
+neighbours belong to that class); and per row a distance-weighted share, where each neighbour contributes <code class="language-plaintext highlighter-rouge">1 / (1 +
+distance)</code> so that nearer neighbours count for more than farther ones. It is offered as a transparent baseline
+classifier, and the per-class vote shares are also useful on their own as a measure of how mixed or unambiguous a
+case’s neighbourhood is. Training labels can be any integers; scaling is again the caller’s responsibility. Bounded
+to 100,000 training rows, 5,000 rows to classify, and 1,000 neighbours.</p>
+
+<p><strong>“DetectOutliersByNearestNeighbourDistance”</strong> is a density-based outlier check: for every row it computes the
+distance to its own k-th nearest other row (<code class="language-plaintext highlighter-rouge">neighbours</code>, default 5) and the mean distance to its k nearest, then
+flags rows whose k-th-neighbour distance exceeds the upper quartile of all such distances by more than
+<code class="language-plaintext highlighter-rouge">iqrMultiplier</code> (default 1.5) interquartile ranges — the familiar box-plot rule, applied to local neighbour distance
+rather than to the raw variable. Isolated rows naturally have large neighbour distances and get flagged; a tight
+cluster of several similar anomalies can mask itself if <code class="language-plaintext highlighter-rouge">neighbours</code> is not set larger than the group’s own size, so
+<code class="language-plaintext highlighter-rouge">neighbours</code> should be chosen above the size of the smallest anomalous group of interest. Scaling across columns is
+the caller’s responsibility. Needs at least 3 rows, and is capped at 5,000 rows and 1,000 neighbours.</p>
+
+<p><strong>“MineAssociationRules”</strong> finds items that frequently occur together across transactions — market-basket analysis —
+using the Apriori algorithm, and turns the frequent combinations into if-then rules. Each transaction is an array of
+item names (merchant categories, products, alert types, or any other categorical tag seen together for one customer
+or basket); repeated items within one transaction are collapsed. It returns the frequent itemsets — item groups
+present in at least <code class="language-plaintext highlighter-rouge">minSupport</code> (default 0.1, i.e. 10 percent) share of all transactions — and rules of the form
+“antecedent implies consequent” carrying support (the share of transactions containing both sides), confidence (the
+share of antecedent-containing transactions that also contain the consequent), lift (confidence divided by the
+consequent’s own support — above 1 means the two sides occur together more than chance would predict, exactly 1 means
+statistical independence), and leverage (support minus the product of the two sides’ individual supports). Rules are
+ordered by lift, then confidence. The bounds are deliberately tight to prevent combinatorial blow-up: at most 20,000
+transactions, 12 distinct items within any one transaction, 200 distinct items overall, a <code class="language-plaintext highlighter-rouge">minSupport</code> floor of 0.001,
+and at most 5,000 itemsets and 1,000 rules returned (<code class="language-plaintext highlighter-rouge">maxItemsets</code> and <code class="language-plaintext highlighter-rouge">maxRules</code>, both independently settable within
+those ceilings).</p>
+
+<h2 id="principal-component-and-independent-component-analysis">Principal component and independent component analysis</h2>
+
+<p>These eight tools live on <code class="language-plaintext highlighter-rouge">ProjectionTools</code> and cover linear and kernel dimensionality reduction. <code class="language-plaintext highlighter-rouge">basis</code> is shared
+across the PCA-family tools: <code class="language-plaintext highlighter-rouge">Correlation</code> (the default) standardises every variable before extracting components,
+appropriate when variables are on different scales or units, while <code class="language-plaintext highlighter-rouge">Covariance</code> only centres the data and works
+directly in the original units, appropriate when the variables already share a common scale.</p>
+
+<p><strong>“RunPrincipalComponentAnalysis”</strong> finds the orthogonal directions that capture the most variance in the data and
+returns the eigenvalues (variance captured per component), the explained-variance ratios and their running
+cumulative total, the loadings (each component’s unit-length direction expressed in terms of the original variables),
+and — when <code class="language-plaintext highlighter-rouge">returnScores</code> is true (the default) — every row’s coordinates on the components. Scaled loadings (loading
+times the square root of the eigenvalue) are also returned; under the <code class="language-plaintext highlighter-rouge">Correlation</code> basis these equal each variable’s
+correlation with each component, and the accompanying communalities report the share of each variable’s own variance
+that the returned components explain. <code class="language-plaintext highlighter-rouge">ComponentsForNPercent</code> reports how many leading components are needed to reach
+given cumulative-variance thresholds, and <code class="language-plaintext highlighter-rouge">KaiserComponentCount</code> applies the Kaiser rule (components whose eigenvalue
+exceeds the mean eigenvalue — equivalently, exceeds 1 under the <code class="language-plaintext highlighter-rouge">Correlation</code> basis). Every loading vector’s sign is
+normalised so its largest-magnitude entry is positive, removing the otherwise arbitrary sign ambiguity of PCA. Needs
+at least 2 rows; constant columns are rejected outright under the <code class="language-plaintext highlighter-rouge">Correlation</code> basis, since a constant column cannot
+be standardised. With more columns than rows, only <code class="language-plaintext highlighter-rouge">min(rows, columns)</code> components exist. Capped at 20,000 rows and
+500 columns.</p>
+
+<p><strong>“InterpretPrincipalComponents”</strong> turns the raw output of PCA into words: for the leading <code class="language-plaintext highlighter-rouge">components</code> (default 3)
+components it lists the <code class="language-plaintext highlighter-rouge">topVariables</code> (default 5) original variables with the largest absolute loadings on each,
+plus every variable’s communality. A component with large positive loadings on “amount” and “count”, for instance,
+reads as a volume component. <code class="language-plaintext highlighter-rouge">Loading</code> is the raw eigenvector weight (unit length per component), and
+<code class="language-plaintext highlighter-rouge">SquaredLoadingShare</code> is its square — the share of that component’s total direction a single variable accounts for.
+Variable names default to <code class="language-plaintext highlighter-rouge">V0</code>, <code class="language-plaintext highlighter-rouge">V1</code>, and so on if <code class="language-plaintext highlighter-rouge">variableNames</code> is omitted. This is meant to be run immediately
+after <code class="language-plaintext highlighter-rouge">RunPrincipalComponentAnalysis</code> to narrate what each retained component actually represents.</p>
+
+<p><strong>“ProjectOntoPrincipalComponents”</strong> learns principal components from <code class="language-plaintext highlighter-rouge">referenceData</code> and projects a separate
+<code class="language-plaintext highlighter-rouge">newData</code> set onto them, returning one score vector per new row. New rows are centred — and, under the <code class="language-plaintext highlighter-rouge">Correlation</code>
+basis, scaled — using the reference set’s own means and standard deviations, so the resulting scores are directly
+comparable with the reference rows’ own scores rather than being computed on a different footing. This is the tool
+for placing new cases into a component space that was learned from historical data. The reference set needs at least
+2 rows, and both sets must share the same column count.</p>
+
+<p><strong>“WhitenDataWithPca”</strong> decorrelates and rescales data so the returned columns are mutually uncorrelated and each has
+variance exactly 1 — the classical PCA whitening transform, used as a preprocessing step for methods that assume
+roughly spherical input. Rows are projected onto the principal components and each resulting score column is divided
+by the square root of its own eigenvalue. Components whose eigenvalue falls below <code class="language-plaintext highlighter-rouge">1e-12</code> of the largest eigenvalue
+are silently dropped, since dividing by a near-zero eigenvalue would amplify noise rather than signal; as a result,
+for strongly collinear data the number of returned columns can be smaller than the number of input variables even
+when <code class="language-plaintext highlighter-rouge">components</code> requests more. <code class="language-plaintext highlighter-rouge">ColumnStandardDeviations</code> is returned specifically to let the caller confirm each
+retained column really does come back with variance 1. If every column turns out to have zero variance (nothing left
+to whiten), the call is rejected with an explanation rather than returning degenerate output.</p>
+
+<p><strong>“ComputePrincipalComponentDiagnostics”</strong> scores how unusual each row is relative to a PCA model learned from
+<code class="language-plaintext highlighter-rouge">referenceData</code>, using the two standard multivariate process-control statistics. <code class="language-plaintext highlighter-rouge">HotellingT2</code> sums each retained
+component’s score squared and divided by its own eigenvalue — large when a row is extreme along the dominant patterns
+the model has retained. <code class="language-plaintext highlighter-rouge">SquaredPredictionError</code> is the squared distance, in centred (and, under <code class="language-plaintext highlighter-rouge">Correlation</code>,
+scaled) units, between a row and its reconstruction from only the retained components — large when a row breaks the
+correlation pattern the model assumes, regardless of where it sits along the retained directions. <code class="language-plaintext highlighter-rouge">HotellingT2Cutoff</code>
+is a chi-square critical value (a large-sample approximation) with one degree of freedom per retained component at
+the chosen <code class="language-plaintext highlighter-rouge">significance</code> (default 0.01); <code class="language-plaintext highlighter-rouge">IsAbnormalT2</code> flags rows exceeding it. Test rows default to the reference
+rows themselves when <code class="language-plaintext highlighter-rouge">testData</code> is omitted, which is useful for diagnosing the reference population before scoring
+anything new against it.</p>
+
+<p><strong>“ReconstructFromPrincipalComponents”</strong> compresses rows onto the leading <code class="language-plaintext highlighter-rouge">components</code> (default 1) principal
+components learned from <code class="language-plaintext highlighter-rouge">referenceData</code> and maps them straight back to the original variables, returning both the
+reconstructed rows and, per row, a <code class="language-plaintext highlighter-rouge">SquaredError</code> — the squared distance between the original row and its
+reconstruction in the original units. Because rows that do not follow the dominant correlation pattern reconstruct
+poorly, <code class="language-plaintext highlighter-rouge">SquaredError</code> doubles directly as an interpretable anomaly score, distinct from but related to
+<code class="language-plaintext highlighter-rouge">SquaredPredictionError</code> above. <code class="language-plaintext highlighter-rouge">RetainedVarianceRatio</code> reports the share of the reference set’s total variance the
+kept components carry, useful for judging whether the chosen <code class="language-plaintext highlighter-rouge">components</code> count is actually enough. Test rows default
+to the reference rows when <code class="language-plaintext highlighter-rouge">testData</code> is omitted.</p>
+
+<p><strong>“RunKernelPrincipalComponentAnalysis”</strong> carries out PCA in the implicit feature space of a kernel rather than
+directly on the original variables, which lets it unfold curved or clustered structure — the canonical example being
+concentric rings, which a Gaussian kernel can separate but ordinary linear PCA cannot. It returns the eigenvalues of
+the centred kernel matrix, their explained-variance ratios (relative to however many components the analysis can
+extract, which is capped by the number of input variables), and the score of every row on the requested <code class="language-plaintext highlighter-rouge">components</code>
+(default 2). Because the kernel matrix has (rows)² cells, it is capped at 1,000 rows. <code class="language-plaintext highlighter-rouge">kernelSigma</code> for a Gaussian
+kernel should be chosen near the typical distance between neighbouring points in the data; as with ordinary PCA, the
+sign of each component’s scores is arbitrary (though repeatable for a fixed input) and carries no meaning on its own.</p>
+
+<p><strong>“RunIndependentComponentAnalysis”</strong> performs blind source separation: it looks for statistically independent,
+non-Gaussian source signals whose linear mixture would explain the observed columns — for example, separating
+overlapping underlying behaviours out of combined activity measurements. It returns the estimated source values (one
+column per extracted component, for every row), the mixing matrix (how the sources combine to produce the observed
+variables) and the demixing matrix (its inverse, mapping observations back to sources). <code class="language-plaintext highlighter-rouge">algorithm</code> can be <code class="language-plaintext highlighter-rouge">Parallel</code>
+(the default, estimating all components together) or <code class="language-plaintext highlighter-rouge">Deflation</code> (extracting them one at a time). As with any ICA
+method, the order, sign and scale of the recovered sources are arbitrary — a known, expected property rather than a
+defect — so results should be read for their shapes and relationships, never their raw magnitudes or which output
+column number corresponds to which real-world source. The optimisation starts from a random point controlled by
+<code class="language-plaintext highlighter-rouge">seed</code> (default 1), so a fixed seed reproduces a fixed result. It needs at least as many rows as columns and at least
+2 columns, and is capped at 20,000 rows.</p>
+
+<h2 id="coverage-note">Coverage note</h2>
+
+<p>All 52 <code class="language-plaintext highlighter-rouge">[AdvancedAnalyticsTool]</code> names under
+<code class="language-plaintext highlighter-rouge">Jube.Service/Agent/AdvancedAnalyticsTools/MultivariateAndClustering</code> are documented above. None of these tools’
+exact, quoted names appears anywhere else under <code class="language-plaintext highlighter-rouge">docs/</code>, including in <code class="language-plaintext highlighter-rouge">docs/AnalyticalMethodology/OtherModelTypes/</code>
+(which documents <code class="language-plaintext highlighter-rouge">KMeansClusterer</code>, <code class="language-plaintext highlighter-rouge">GaussianMixtureClusterer</code>, <code class="language-plaintext highlighter-rouge">PrincipalComponent</code>, <code class="language-plaintext highlighter-rouge">KNearestNeighboursClassifier</code>
+and similar pages): those pages describe the standalone trained <em>model</em> feature of the same name and never cite the
+literal tool names captured here, which belong to a separate semantic tool layer that an agent calls directly.</p>
+
+    
+  </article>
+</div>
+</div>
+        <footer class="footer sm:footer-horizontal w-full mt-20 border-t border-base-300 py-10 text-sm" data-pagefind-ignore>
+  <nav><h6 class="footer-title mono">Legal</h6><a class="link link-hover" href="https://jube.io/agreements/jtos-version-1-8">Jube Terms of Service (JTOS)</a><a class="link link-hover" href="https://jube.io/jube-agplv3-open-source-compliance">AGPLv3: why only Jooby grazes this patch</a><a class="link link-hover" href="/privacy/">Privacy</a></nav>
+  <aside class="max-w-md flex flex-col gap-2 sm:ml-auto"><h6 class="footer-title mono">The developer</h6><p class="m-0 text-base-content/70 leading-relaxed text-pretty">Written by Richard Churchman, from sunny Paphos, Cyprus. No corporate layers, just direct software engineering. No roadmap theatre: if it's not in Git, it doesn't exist.</p></aside>
+</footer>
+
+      </main>
+      <aside class="not-prose hidden xl:flex flex-col gap-4 py-8 sticky top-16 self-start" data-pagefind-ignore>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="mono text-[11px] uppercase tracking-widest text-base-content/50">Work with Jube</div>
+    <a href="/training/" class="card bg-primary text-primary-content border border-primary no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Training &amp; Integration<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs">60 hours, typically four months.</div><div class="mono text-xs pt-1">$7,500 · fixed</div></div></a>
+    <a href="/support/" class="card bg-base-200 border border-base-300 no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:bg-base-100"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Support<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs text-base-content/70">Flat monthly. No clock, no overage.</div><div class="mono text-xs pt-1">from $350/mo</div></div></a>
+    <a href="/contact/" class="card bg-accent text-accent-content border border-accent no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Talk to the developer<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs opacity-80">Ask anything, any time.</div><div class="mono text-xs pt-1 opacity-80">WhatsApp, email or Meet</div></div></a>
+  </div>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="flex items-center justify-between gap-2"><div class="mono text-[11px] uppercase tracking-widest text-base-content/50">GitHub</div><a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="no-underline" aria-label="Star Jube on GitHub" data-stars="jube-home/aml-fraud-transaction-monitoring"><span class="badge badge-outline badge-sm mono text-xs gap-1 bg-base-100 text-base-content/70">★ <span data-stars-count>Star</span></span></a></div>
+    <div class="text-xs text-base-content/70 text-pretty">Every pull request tested in the open. Live from master.</div>
+    
+    <div class="flex flex-wrap gap-2">
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml/badge.svg?branch=master" alt="Unit tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml/badge.svg?branch=master" alt="End-to-end tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master" alt="CodeQL status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml/badge.svg?branch=master" alt="Trivy status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml/badge.svg?branch=master" alt="OWASP ZAP status" class="h-5 w-auto block"></a>
+    </div>
+  </div>
+</aside>
+
+    </div>
+  </div>
+  <a href="https://wa.me/35797517137" target="_blank" rel="noopener" aria-label="Message Jube on WhatsApp" title="Message us on WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full text-white shadow-lg flex items-center justify-center transition-transform duration-200 hover:scale-105 hover:shadow-xl" style="background-color:#25D366" data-pagefind-ignore><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"></path></svg></a>
+
+  
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>

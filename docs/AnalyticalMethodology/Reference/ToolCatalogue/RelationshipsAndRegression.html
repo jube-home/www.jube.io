@@ -1,0 +1,2763 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme="jube">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
+<title>Relationships and Regression Tool Catalogue | Jube</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Relationships and Regression Tool Catalogue" />
+<meta name="author" content="Jube Holdings Limited" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<meta name="twitter:description" property="og:description" content="Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee." />
+<link rel="canonical" href="https://www.jube.io/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" />
+<meta property="og:url" content="https://www.jube.io/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" />
+<meta property="og:site_name" content="Jube" />
+<meta property="og:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.jube.io/assets/img/og-image.png" />
+<meta name="twitter:title" content="Relationships and Regression Tool Catalogue" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Jube Holdings Limited" />
+<meta name="google-site-verification" content="" />
+<meta name="msvalidate.01" content="" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jube Holdings Limited"},"description":"Open-source, real-time AML and fraud transaction monitoring, run by agentic AI, with outcomes a regulator can follow. Self-hosted, AGPLv3, no licence fee.","headline":"Relationships and Regression Tool Catalogue","image":"https://www.jube.io/assets/img/og-image.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.jube.io/assets/img/jube-logo.png"},"name":"Jube Holdings Limited"},"url":"https://www.jube.io/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <link rel="icon" href="/assets/img/jube-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="min-h-screen bg-base-100 text-base-content antialiased">
+  <a href="/" class="w-full bg-neutral text-neutral-content flex justify-center px-5 no-underline group" data-pagefind-ignore><div class="w-full max-w-7xl py-2 flex items-baseline gap-x-3 gap-y-0.5 flex-wrap"><span class="text-sm font-semibold tracking-tight">Open-source agentic AI for transaction monitoring. <span class="text-primary">Just ask Jooby.</span></span><span class="mono text-[11px] uppercase tracking-widest text-neutral-content/60 group-hover:text-neutral-content">What's Jube? →</span></div></a>
+<header class="w-full border-b border-base-300 flex justify-center px-5 bg-base-100/95 backdrop-blur sticky top-0 z-20">
+  <div class="navbar w-full max-w-7xl px-0 py-2 gap-4 flex-nowrap">
+    <div class="flex-none flex items-center gap-2">
+      <button id="mnav-toggle" class="btn btn-ghost btn-sm btn-square lg:hidden" aria-label="Menu"><span class="text-lg leading-none">☰</span></button>
+      <a href="/" class="flex shrink-0 items-center gap-0.5 text-2xl font-semibold tracking-tight no-underline"><img src="/assets/img/jube-logo.png" alt="" class="h-11 w-auto"><span>jube</span></a>
+    </div>
+    <div id="sx" class="relative hidden md:block flex-1 max-w-md min-w-0" data-pf="/pagefind/pagefind.js" data-pagefind-ignore>
+      <label class="input input-sm w-full bg-base-200 border-base-300 flex items-center gap-2 focus-within:border-primary">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="text-base-content/50 shrink-0" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <input id="sx-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search documentation, training, support…" class="grow min-w-0 text-sm" role="combobox" aria-expanded="false" aria-controls="sx-list" aria-autocomplete="list" aria-label="Search">
+        <span class="flex gap-1 shrink-0"><kbd class="kbd kbd-xs">⌘</kbd><kbd class="kbd kbd-xs">K</kbd></span>
+      </label>
+      <div id="sx-panel" class="absolute left-0 w-[min(38rem,calc(100vw-2.5rem))] top-full mt-2 z-50 rounded-box border border-base-300 bg-base-100 shadow-xl overflow-hidden" hidden>
+        <ul id="sx-list" role="listbox" class="list-none m-0 p-1 max-h-[65vh] overflow-y-auto"></ul>
+        <div id="sx-foot" class="mono text-[11px] text-base-content/50 px-3 py-2 border-t border-base-300 flex gap-3 flex-wrap"></div>
+      </div>
+    </div>
+    <nav class="flex flex-none items-center gap-1 ml-auto text-sm">
+      <a href="https://jube.io/v2JubeDesignBuildHandoff.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm font-medium"><span class="badge badge-accent badge-xs mono">v2</span><span class="hidden sm:inline">Get an early look at Version 2</span><span class="sm:hidden">Early look</span></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="btn btn-ghost btn-sm btn-square" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+    </nav>
+  </div>
+</header>
+<div id="mnav" class="lg:hidden w-full border-b border-base-300 bg-base-100 px-5 py-4 max-h-[70vh] overflow-y-auto" hidden>
+  <ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details open>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70 menu-active">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+
+</div>
+
+  <div class="w-full flex justify-center">
+    <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] xl:grid-cols-[auto_minmax(0,1fr)_280px] gap-8 px-5">
+      <aside id="side" class="hidden lg:block py-6 sticky top-16 self-start max-h-[calc(100vh-4rem)] overflow-y-auto transition-[width] duration-200 w-10">
+  <div class="flex pb-2"><button id="side-toggle" class="btn btn-ghost btn-sm btn-square" aria-label="Show menu" title="Show menu"><span class="text-lg leading-none" data-icon>☰</span></button></div>
+  <div id="side-nav" hidden><ul class="menu menu-sm w-full p-0 gap-0.5">
+  <li class="menu-title mono text-[11px] uppercase tracking-widest">Jube</li>
+  
+  <li><a href="/" class="">Welcome</a></li>
+  
+  <li><a href="/training/" class="">Training & Integration</a></li>
+  
+  <li><a href="/support/" class="">Support</a></li>
+  
+  <li><a href="/contact/" class="">Talk to the developer</a></li>
+  
+  <li class="menu-title mono text-[11px] uppercase tracking-widest pt-4">Documentation</li>
+</ul>
+
+
+
+<ul class="menu menu-sm w-full p-0 gap-0.5">
+
+  
+  <li>
+  
+    <a href="/docs/" class="text-base-content/70">Welcome</a>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Getting Started<span class="badge badge-ghost badge-xs mono ml-auto">2</span></summary>
+      <ul>
+        <li><a href="/docs/GettingStarted/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/GettingStarted/DeployingWithDocker/" class="text-base-content/70">Deploying with Docker</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Deploying with Jube Cluster</summary>
+              <ul>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/GettingStarted/DeployingWithJubeCluster/DeploymentRunbook/" class="text-base-content/70">Deployment Runbook</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/SoftwareInventory/" class="text-base-content/70">Software Inventory</a></li><li><a href="/docs/GettingStarted/DeployingWithJubeCluster/MonitoringReference/" class="text-base-content/70">Monitoring Reference</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Concepts<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/Concepts/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Architecture/" class="text-base-content/70">Architecture</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Authentication/" class="text-base-content/70">Authentication Concepts</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Cache</summary>
+              <ul>
+                <li><a href="/docs/Concepts/Cache/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/Cache/CacheSchema/" class="text-base-content/70">Redis Schema</a></li><li><a href="/docs/Concepts/Cache/LocalLruCache/" class="text-base-content/70">Local Least Recently Used (LRU) Cache</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/EnvironmentVariables/" class="text-base-content/70">Environment Variables</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">API</summary>
+              <ul>
+                <li><a href="/docs/Concepts/API/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/API/HTTPAPIConcepts/" class="text-base-content/70">HTTP API Concepts</a></li><li><a href="/docs/Concepts/API/HTTPAsynchronousModelInvocation/" class="text-base-content/70">HTTP API Asynchronous Model Invocation</a></li><li><a href="/docs/Concepts/API/AMQP/" class="text-base-content/70">AMQP Queue Ingestion and Exchange Publishing</a></li><li><a href="/docs/Concepts/API/PerformanceTrace/" class="text-base-content/70">HTTP API Performance Trace</a></li><li><a href="/docs/Concepts/API/InvocationTraceLog/" class="text-base-content/70">HTTP API Invocation Trace Log</a></li><li><a href="/docs/Concepts/API/ApplicationLogEntry/" class="text-base-content/70">Application Log Entry</a></li><li><a href="/docs/Concepts/API/InfrastructureHealthMetrics/" class="text-base-content/70">Infrastructure Health Metrics</a></li><li><a href="/docs/Concepts/API/PostgresDatabaseStatistics/" class="text-base-content/70">Postgres Database Statistics</a></li><li><a href="/docs/Concepts/API/OpenTelemetryLogCounter/" class="text-base-content/70">OpenTelemetry Log Counter</a></li><li><a href="/docs/Concepts/API/OpenTelemetryExclude/" class="text-base-content/70">OpenTelemetry Exclude</a></li><li><a href="/docs/Concepts/API/OtlpDispatchCounter/" class="text-base-content/70">OTLP Dispatch Counter</a></li><li><a href="/docs/Concepts/API/BackgroundProcessingPerformance/" class="text-base-content/70">Background Processing Performance</a></li><li><a href="/docs/Concepts/API/WafAttack/" class="text-base-content/70">Waf Attack Log</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Logging/" class="text-base-content/70">Logging</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Multi Tenancy</summary>
+              <ul>
+                <li><a href="/docs/Concepts/MultiTenancy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/MultiTenancy/MultiTenancyConcepts/" class="text-base-content/70">Multi Tenancy Concepts</a></li><li><a href="/docs/Concepts/MultiTenancy/EnablingMultiTenancyAndSwitching/" class="text-base-content/70">Enabling Multi Tenancy And Switching</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">CLI</summary>
+              <ul>
+                <li><a href="/docs/Concepts/CLI/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/CLI/Concepts/" class="text-base-content/70">CLI Concepts</a></li><li><a href="/docs/Concepts/CLI/PasswordReset/" class="text-base-content/70">CLI Password Reset</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/Orchestration/" class="text-base-content/70">Orchestration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/SoftwareValidations/" class="text-base-content/70">Validation Patterns</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/FieldEncryption/" class="text-base-content/70">Field Level Encryption</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Service Layer & DTO Model</summary>
+              <ul>
+                <li><a href="/docs/Concepts/ServiceLayer/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Concepts/ServiceLayer/Extensions/" class="text-base-content/70">Extensions and Helpers Agent Tools</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/WebApplicationFirewall/" class="text-base-content/70">Web Application Firewall</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Concepts/MakerChecker/" class="text-base-content/70">Maker Checker</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Navigation<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Navigation/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/Authentication/" class="text-base-content/70">Authentication</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/MainMenuNavigation/" class="text-base-content/70">Main Menu Navigation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ParentObjects/" class="text-base-content/70">Parent Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ChildObjects/" class="text-base-content/70">Child Objects</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/LockedAndActive/" class="text-base-content/70">Locked and Active</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ResponsePayload/" class="text-base-content/70">Response Payload</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/ReportTable/" class="text-base-content/70">Report Table</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Navigation/RuleBuilderAndCoder/" class="text-base-content/70">Rule and Code Builder</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Configuration<span class="badge badge-ghost badge-xs mono ml-auto">8</span></summary>
+      <ul>
+        <li><a href="/docs/Configuration/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Models</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Models/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Models/Models/" class="text-base-content/70">Model Configuration</a></li><li><a href="/docs/Configuration/Models/RequestXPath/" class="text-base-content/70">Request XPath</a></li><li><a href="/docs/Configuration/Models/InlineFunctions/" class="text-base-content/70">Inline Functions</a></li><li><a href="/docs/Configuration/Models/InlineScripts/" class="text-base-content/70">Inline Scripts</a></li><li><a href="/docs/Configuration/Models/Lists/" class="text-base-content/70">Lists</a></li><li><a href="/docs/Configuration/Models/Dictionaries/" class="text-base-content/70">Dictionary</a></li><li><a href="/docs/Configuration/Models/GatewayRules/" class="text-base-content/70">Gateway Rules</a></li><li><a href="/docs/Configuration/Models/Tags/" class="text-base-content/70">Tags</a></li><li><a href="/docs/Configuration/Models/TTLCounters/" class="text-base-content/70">TTL Counters</a></li><li><a href="/docs/Configuration/Models/AbstractionRules/" class="text-base-content/70">Abstraction Rules</a></li><li><a href="/docs/Configuration/Models/AbstractionCalculations/" class="text-base-content/70">Abstraction Calculations</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptation/" class="text-base-content/70">HTTP Adaptation</a></li><li><a href="/docs/Configuration/Models/BasicActivationRules/" class="text-base-content/70">Basic Activation Rules</a></li><li><a href="/docs/Configuration/Models/ResponseElevation/" class="text-base-content/70">Activation Rules with Response Elevation</a></li><li><a href="/docs/Configuration/Models/TTLCounterActivationRuleIncrementation/" class="text-base-content/70">TTL Counter Activation Rule Incrementation</a></li><li><a href="/docs/Configuration/Models/ActivationWatcher/" class="text-base-content/70">Activation Watcher</a></li><li><a href="/docs/Configuration/Models/ActivationRuleNotifications/" class="text-base-content/70">Activation Rule Notifications</a></li><li><a href="/docs/Configuration/Models/ActivationRulesOverride/" class="text-base-content/70">Activation Rules Override</a></li><li><a href="/docs/Configuration/Models/RuleCompilationAlgorithm/" class="text-base-content/70">Rule Compilation Tokens and Extensions</a></li><li><a href="/docs/Configuration/Models/HTTPAdaptationProtocol/" class="text-base-content/70">HTTP Adaptation Protocol</a></li><li><a href="/docs/Configuration/Models/Sampling/" class="text-base-content/70">Sampling</a></li><li><a href="/docs/Configuration/Models/CuratedDynamicExpressions/" class="text-base-content/70">Curated Dynamic Expressions</a></li><li><a href="/docs/Configuration/Models/ModelIntegrity/" class="text-base-content/70">Model Integrity</a></li><li><a href="/docs/Configuration/Models/Backtest/" class="text-base-content/70">Backtest</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Case Management</summary>
+              <ul>
+                <li><a href="/docs/Configuration/CaseManagement/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflows/" class="text-base-content/70">Creating Case Workflows</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowStatus/" class="text-base-content/70">Cases Workflow Status</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowFilter/" class="text-base-content/70">Case Workflow Filter</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithActivationRule/" class="text-base-content/70">Creating Case Entry With Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowXPath/" class="text-base-content/70">Case Workflow XPath</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowForm/" class="text-base-content/70">Case Workflow Form</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowAction/" class="text-base-content/70">Case Workflow Action</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowDisplay/" class="text-base-content/70">Case Workflow Display</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseWorkflowMacro/" class="text-base-content/70">Case Workflow Macro</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingCaseEntryWithDeferActivationRule/" class="text-base-content/70">Creating Case Entry With Defer Activation Rule</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingStatusElevation/" class="text-base-content/70">Creating Status Elevation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingSkimLockNext/" class="text-base-content/70">Working Skim, Lock and Next</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingLockAllocationUnlock/" class="text-base-content/70">Working, Lock, Allocation and Unlock</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingClosedDiarySuspend/" class="text-base-content/70">Working Closed, Diary Date and Suspend</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseStatus/" class="text-base-content/70">Working Case Status</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseRating/" class="text-base-content/70">Working Case Rating</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingActivations/" class="text-base-content/70">Working Activations</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseKeyJournal/" class="text-base-content/70">Working Case Key Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseJournal/" class="text-base-content/70">Working Case Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseNote/" class="text-base-content/70">Working Case Note</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseEventJournal/" class="text-base-content/70">Working Case Event Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingCaseFormJournal/" class="text-base-content/70">Working Case Form Journal</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingUploadingRecallingFiles/" class="text-base-content/70">Working Uploading and Recalling Files</a></li><li><a href="/docs/Configuration/CaseManagement/SecurityPolicy/" class="text-base-content/70">Case Management Security Policy</a></li><li><a href="/docs/Configuration/CaseManagement/CreatingAutomation/" class="text-base-content/70">Creating Automation</a></li><li><a href="/docs/Configuration/CaseManagement/WorkingNavigatingCaseRecord/" class="text-base-content/70">Navigating Case Record</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Reprocessing</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Reprocessing/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Reprocessing/ReprocessingEligibility/" class="text-base-content/70">Reprocessing Eligibility</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingFilters/" class="text-base-content/70">Reprocessing Filters</a></li><li><a href="/docs/Configuration/Reprocessing/ReprocessingInstances/" class="text-base-content/70">Reprocessing Instance</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Exhaustive Adaptation</summary>
+              <ul>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/ExhaustiveAdaptation/Concepts/" class="text-base-content/70">Exhaustive Adaptation Concepts</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingConfiguration/" class="text-base-content/70">Exhaustive Adaptation Training Configuration</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingVariableStatistics/" class="text-base-content/70">Exhaustive Adaptation Training Variable Statistics</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelPerformance/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Model Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/TrainingPromotedModelTesting/" class="text-base-content/70">Exhaustive Adaptation Training Promoted Models Performance</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Stopping/" class="text-base-content/70">Stopping Training</a></li><li><a href="/docs/Configuration/ExhaustiveAdaptation/Recall/" class="text-base-content/70">Exhaustive Adaptation Recall</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveDataSources.html" class="text-base-content/70">Exhaustive Data Sources</a></li><li><a href="/docs/AdvancedAnalytics/ExhaustiveJsonDatasets.html" class="text-base-content/70">Exhaustive Uploaded Datasets</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Sanctions</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Sanctions/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Sanctions/SanctionsLoader/" class="text-base-content/70">Sanctions Loader</a></li><li><a href="/docs/Configuration/Sanctions/SanctionSearching/" class="text-base-content/70">Sanction Searching</a></li><li><a href="/docs/Configuration/Sanctions/SanctionModelInvocation/" class="text-base-content/70">Sanction Model Invocation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Visualisations</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Visualisations/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Visualisations/Recall/" class="text-base-content/70">Visualisation Recall</a></li><li><a href="/docs/Configuration/Visualisations/Registry/" class="text-base-content/70">Visualisation Registry</a></li><li><a href="/docs/Configuration/Visualisations/Parameters/" class="text-base-content/70">Visualisation Parameters</a></li><li><a href="/docs/Configuration/Visualisations/EmbedSQLGenerateGridInDatasource/" class="text-base-content/70">Embed SQL and Generate Grid in Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateChartInDatasource/" class="text-base-content/70">Generate Chart in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateMapInDatasource/" class="text-base-content/70">Generate Map in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/GenerateHTMLInDatasource/" class="text-base-content/70">Generate HTML in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/Logging/" class="text-base-content/70">Logging in Visualisation Datasource</a></li><li><a href="/docs/Configuration/Visualisations/SecurityPolicy/" class="text-base-content/70">Visualisations Security Policy</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Administration</summary>
+              <ul>
+                <li><a href="/docs/Configuration/Administration/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/Configuration/Administration/PerformanceCounterBalance/" class="text-base-content/70">Performance Counter Balance</a></li><li><a href="/docs/Configuration/Administration/Roles/" class="text-base-content/70">Roles</a></li><li><a href="/docs/Configuration/Administration/Permissions/" class="text-base-content/70">Permissions</a></li><li><a href="/docs/Configuration/Administration/Users/" class="text-base-content/70">Users</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Configuration/Preservation/" class="text-base-content/70">Preservation</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details open>
+      <summary class="font-medium">Analytical Methodology<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/AnalyticalMethodology/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/MethodologyAndTaxonomy.html" class="text-base-content/70">Methodology and Taxonomy</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Introduction.html" class="text-base-content/70">Introduction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GettingStartedWithR.html" class="text-base-content/70">Getting Started with R</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/RServer/" class="text-base-content/70">R Server</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataStructures.html" class="text-base-content/70">Data Structures</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LoadingShapingMerging.html" class="text-base-content/70">Loading, Shaping and Merging Data</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DataFramesVsAccordArrays.html" class="text-base-content/70">Data Frames vs the Packed Array</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DplyrGapAnalysis.html" class="text-base-content/70">dplyr Gap Analysis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/SummaryStatistics.html" class="text-base-content/70">Summary Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/VariableTransformations.html" class="text-base-content/70">Variable Transformations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/AbstractionHarmonised.html" class="text-base-content/70">Abstraction</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/Charting.html" class="text-base-content/70">Charting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LinearRegression.html" class="text-base-content/70">Linear Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/LogisticRegression.html" class="text-base-content/70">Logistic Regression</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/DecisionTreesAndBoosting.html" class="text-base-content/70">Decision Trees and Boosting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NaiveBayes.html" class="text-base-content/70">Naive Bayes</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/NeuralNetworks.html" class="text-base-content/70">Neural Networks</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/BayesianAnalysisWithBnlearn.html" class="text-base-content/70">Bayesian Analysis with bnlearn</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Bayesian Networks</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/BayesianNetworks/GraphicalModelsFoundations.html" class="text-base-content/70">Graphical Models Foundations</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ConstraintBasedStructureLearning.html" class="text-base-content/70">Constraint-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html" class="text-base-content/70">Score-Based Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/HybridStructureLearning.html" class="text-base-content/70">Hybrid Structure Learning</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html" class="text-base-content/70">Parameter Learning and CPTs</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExactAndApproximateInference.html" class="text-base-content/70">Exact and Approximate Inference</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/NetworkValidationAveragingAndCausality.html" class="text-base-content/70">Network Validation, Averaging and Causality</a></li><li><a href="/docs/AnalyticalMethodology/BayesianNetworks/ExplanatoryRoleInsideAdvancedAnalytics.html" class="text-base-content/70">Explanatory Role Inside AdvancedAnalytics</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Other Model Types</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestClassifier.html" class="text-base-content/70">Random Forest Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/RandomForestRegressor.html" class="text-base-content/70">Random Forest Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BaggingClassifier.html" class="text-base-content/70">Bagging Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/AdaBoostClassifier.html" class="text-base-content/70">AdaBoost Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursClassifier.html" class="text-base-content/70">K-Nearest-Neighbours Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KNearestNeighboursRegressor.html" class="text-base-content/70">K-Nearest-Neighbours Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/LinearSupportVectorClassifier.html" class="text-base-content/70">Linear Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelSupportVectorClassifier.html" class="text-base-content/70">Kernel Support Vector Classifier</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KernelRidgeRegressor.html" class="text-base-content/70">Kernel Ridge Regressor</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMeansClusterer.html" class="text-base-content/70">K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KMedoidsClusterer.html" class="text-base-content/70">K-Medoids Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/KModesClusterer.html" class="text-base-content/70">K-Modes Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MiniBatchKMeansClusterer.html" class="text-base-content/70">Mini-Batch K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BalancedKMeansClusterer.html" class="text-base-content/70">Balanced K-Means Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/BinarySplitClusterer.html" class="text-base-content/70">Binary Split Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureClusterer.html" class="text-base-content/70">Gaussian Mixture Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MeanShiftClusterer.html" class="text-base-content/70">Mean Shift Clusterer</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/IsolationForestAnomaly.html" class="text-base-content/70">Isolation Forest Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/OneClassSupportVectorAnomaly.html" class="text-base-content/70">One-Class Support Vector Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/MahalanobisAnomaly.html" class="text-base-content/70">Mahalanobis Anomaly</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/GaussianMixtureDensity.html" class="text-base-content/70">Gaussian Mixture Density</a></li><li><a href="/docs/AnalyticalMethodology/OtherModelTypes/PrincipalComponent.html" class="text-base-content/70">Principal Component</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Prescriptive Analytics</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/PrescriptiveAnalytics/MonteCarloSimulation.html" class="text-base-content/70">Monte Carlo Simulation</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AnalyticalMethodology/GovernanceKpisAndModelValidation.html" class="text-base-content/70">Governance, KPIs and Model Validation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <details open>
+              <summary class="text-base-content/80">Reference</summary>
+              <ul>
+                <li><a href="/docs/AnalyticalMethodology/Reference/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AnalyticalMethodology/Reference/FoundationData.html" class="text-base-content/70">Numeric Data Representation</a></li><li><a href="/docs/AnalyticalMethodology/Reference/FoundationAnalytics.html" class="text-base-content/70">Shared Statistical Primitives</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ModelCatalogue.html" class="text-base-content/70">Model Catalogue Decisions</a></li><li><a href="/docs/AnalyticalMethodology/Reference/HypothesisTestsToolLayer.html" class="text-base-content/70">Hypothesis Tests Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/MethodologySpec.html" class="text-base-content/70">Exhaustive Methodology</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ExhaustiveCalibration.html" class="text-base-content/70">Exhaustive Calibration</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DataPreparationAndResampling.html" class="text-base-content/70">Data Preparation and Resampling Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DescriptiveStatistics.html" class="text-base-content/70">Descriptive Statistics Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/DistributionsAndHistograms.html" class="text-base-content/70">Distributions and Histograms Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/HypothesisTests.html" class="text-base-content/70">Hypothesis Tests Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/RelationshipsAndRegression.html" class="text-base-content/70 menu-active">Relationships and Regression Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/CategoricalAndSurvival.html" class="text-base-content/70">Categorical and Survival Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/MultivariateAndClustering.html" class="text-base-content/70">Multivariate and Clustering Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TimeSeriesAndSignal.html" class="text-base-content/70">Time Series and Signal Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/NumericsAndOptimisation.html" class="text-base-content/70">Numerics and Optimisation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/ModelEvaluation.html" class="text-base-content/70">Model Evaluation Tool Catalogue</a></li><li><a href="/docs/AnalyticalMethodology/Reference/ToolCatalogue/TrainingRunLifecycleVariants.html" class="text-base-content/70">Training Run Lifecycle Variants</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Rule Taxonomy<span class="badge badge-ghost badge-xs mono ml-auto">15</span></summary>
+      <ul>
+        <li><a href="/docs/RuleTaxonomy/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleAuthoringMethodology.html" class="text-base-content/70">Rule Authoring Methodology</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RulePipelineReference.html" class="text-base-content/70">Rule Pipeline Reference</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/VelocityAndVolume.html" class="text-base-content/70">Velocity and Volume</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/Cardinality.html" class="text-base-content/70">Cardinality</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/LinkAndNetwork.html" class="text-base-content/70">Link and Network</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/BehavioralBaselineAndRatio.html" class="text-base-content/70">Behavioral Baseline and Ratio</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/EventSequencing.html" class="text-base-content/70">Event Sequencing</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StaticAndMatchScreening.html" class="text-base-content/70">Static and Match Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/UnstructuredTextScreening.html" class="text-base-content/70">Unstructured Text Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/GeospatialAndContext.html" class="text-base-content/70">Geospatial and Context</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleTaxonomyTypes/StructuringOrThresholdAvoidance.html" class="text-base-content/70">Structuring or Threshold Avoidance</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GeneralisationAdaptationAndModelThresholds.html" class="text-base-content/70">Generalisation, Adaptation and Model Thresholds</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GraphDirectedWorkflows.html" class="text-base-content/70">Graph Directed Workflows</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/GlossaryOfFraudAndAmlTerms.html" class="text-base-content/70">Glossary of Fraud and AML Terms</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/RuleTaxonomy/RuleExtensionTools.html" class="text-base-content/70">Rule Extension Tools</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">FAQ<span class="badge badge-ghost badge-xs mono ml-auto">14</span></summary>
+      <ul>
+        <li><a href="/docs/FAQ/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/ModelsPayloadAndConfiguration.html" class="text-base-content/70">Models, Payload and Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CacheMemoryAndState.html" class="text-base-content/70">Cache, Memory and State</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/RulesAndActivation.html" class="text-base-content/70">Rules and Activation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SanctionsScreening.html" class="text-base-content/70">Sanctions Screening</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/MachineLearningAndAnalytics.html" class="text-base-content/70">Machine Learning and Analytics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/CaseManagement.html" class="text-base-content/70">Case Management FAQ</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/DatabaseAndReporting.html" class="text-base-content/70">Database and Reporting</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/SecurityAndUsers.html" class="text-base-content/70">Security and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/IntegrationAndApi.html" class="text-base-content/70">Integration and API</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/Extensibility.html" class="text-base-content/70">Extensibility</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/InfrastructureAndHighAvailability.html" class="text-base-content/70">Infrastructure and High Availability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/LoggingMonitoringAndObservability.html" class="text-base-content/70">Logging, Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/AiAndAgentFeatures.html" class="text-base-content/70">AI and Agent Features</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/FAQ/BackupPreservationAndSupport.html" class="text-base-content/70">Backup, Preservation and Support</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Testing<span class="badge badge-ghost badge-xs mono ml-auto">23</span></summary>
+      <ul>
+        <li><a href="/docs/Testing/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AskJooby.html" class="text-base-content/70">Ask Jooby Agent</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsStatistics.html" class="text-base-content/70">Advanced Analytics Statistics</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsSlices.html" class="text-base-content/70">Advanced Analytics Slices</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AdvancedAnalyticsEngineAndServices.html" class="text-base-content/70">Advanced Analytics Engine and Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Exhaustive.html" class="text-base-content/70">Exhaustive Machine Learning</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Analytics.html" class="text-base-content/70">Analytics Foundations</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ChartingAndDiagrams.html" class="text-base-content/70">Charting and Model Diagrams</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Dictionary.html" class="text-base-content/70">Dictionary and Fuzzy Matching</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DictionaryExtensions.html" class="text-base-content/70">Dictionary Rule Extensions</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Engine.html" class="text-base-content/70">Real-Time Engine</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/RuleParser.html" class="text-base-content/70">Rule Parsing and Compilation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/Cache.html" class="text-base-content/70">Cache and Redis</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceRepositories.html" class="text-base-content/70">Service Repositories</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceQueries.html" class="text-base-content/70">Service Queries</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceModelConfiguration.html" class="text-base-content/70">Service Model Configuration</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceExhaustiveAndScaffolding.html" class="text-base-content/70">Service Exhaustive and Scaffolding</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceAuthenticationAndUsers.html" class="text-base-content/70">Service Authentication and Users</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceMonitoringAndObservability.html" class="text-base-content/70">Service Monitoring and Observability</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/ServiceOther.html" class="text-base-content/70">Other Services</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecurityAccessIsolation.html" class="text-base-content/70">Security Access Isolation</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/SecuritySurfaceAndPenTest.html" class="text-base-content/70">Security Surface and Penetration Tests</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/DataAccessAndMigrations.html" class="text-base-content/70">Data Access, Migrations and Archive</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/Testing/AppAndInfrastructure.html" class="text-base-content/70">Application and Infrastructure</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <details>
+      <summary class="font-medium">Ask Jooby<span class="badge badge-ghost badge-xs mono ml-auto">12</span></summary>
+      <ul>
+        <li><a href="/docs/AskJooby/" class="text-base-content/70">Overview</a></li>
+        
+          
+          <li>
+          
+            <details>
+              <summary class="text-base-content/80">Agent Hierarchy</summary>
+              <ul>
+                <li><a href="/docs/AgentHierarchy/" class="text-base-content/70">Overview</a></li>
+                <li><a href="/docs/AgentHierarchy/orchestration.html" class="text-base-content/70">Orchestration Runtime</a></li><li><a href="/docs/AgentHierarchy/tool-inventory.html" class="text-base-content/70">Tool Inventory</a></li>
+              </ul>
+            </details>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OrchestrationTools.html" class="text-base-content/70">Orchestration Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ResearchAndMemoryTools.html" class="text-base-content/70">Research and Memory Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/SqlQueryTools.html" class="text-base-content/70">SQL Query Tools</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DataPointerCache.html" class="text-base-content/70">Data Pointer Cache</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RenderChart.html" class="text-base-content/70">Render Chart</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RunScriptTool.html" class="text-base-content/70">Run Script Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/DiffTool.html" class="text-base-content/70">Diff Tool</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/OpenCorporates.html" class="text-base-content/70">OpenCorporates</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/RagIndexingPipeline.html" class="text-base-content/70">RAG Indexing Pipeline</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/AgentGuard.html" class="text-base-content/70">AgentGuard</a>
+          
+          </li>
+        
+          
+          <li>
+          
+            <a href="/docs/AskJooby/ToolIcons.html" class="text-base-content/70">Tool Icons</a>
+          
+          </li>
+        
+      </ul>
+    </details>
+  
+  </li>
+
+  
+  <li>
+  
+    <a href="/docs/PackageDependencyAppendix.html" class="text-base-content/70">Package Dependency Appendix</a>
+  
+  </li>
+
+</ul>
+
+</div>
+</aside>
+
+      <main class="py-8 min-w-0 flex flex-col">
+        <div data-pagefind-body><div class="flex flex-col gap-6">
+  <div class="breadcrumbs text-xs mono p-0 text-base-content/60"><ul><li><a href="/docs/">Documentation</a></li><li>Analytical Methodology</li><li>Reference</li><li>Relationships and Regression Tool Catalogue</li></ul></div>
+  <article class="prose max-w-none prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-pre:bg-neutral prose-pre:text-neutral-content">
+    <h1 id="relationships-and-regression-tool-catalogue">Relationships and regression tool catalogue</h1>
+
+<p>Per-tool index for every one of the 55 literal <code class="language-plaintext highlighter-rouge">[AdvancedAnalyticsTool("...")]</code> identifiers under
+<code class="language-plaintext highlighter-rouge">Jube.Service/Agent/AdvancedAnalyticsTools/RelationshipsAndRegression</code>, so that a claim naming one of these tools
+by its exact callable name can be checked against a real entry. Unlike the hypothesis tests family, this group had
+partial coverage already: <a href="/docs/AnalyticalMethodology/LinearRegression.html">LinearRegression.md</a> walks a worked R-versus-AdvancedAnalytics
+course that names several of these tools with real behavioural detail, and
+<a href="/docs/AnalyticalMethodology/LogisticRegression.html">LogisticRegression.md</a>, the Bayesian networks
+<a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html">score-based structure learning</a> and
+<a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html">parameter learning</a> pages each name one more in passing. Those
+ten tools are listed below with a citation instead of being re-described; every other tool gets its own entry here.
+All tools live in <code class="language-plaintext highlighter-rouge">Jube.Service.Agent.AdvancedAnalyticsTools.RelationshipsAndRegression</code> and require the
+<code class="language-plaintext highlighter-rouge">Analytics</code> permission. Several share a common input convention: <code class="language-plaintext highlighter-rouge">inputs</code> is one row (array) per observation with
+one entry per predictor column, <code class="language-plaintext highlighter-rouge">outputs</code> is the matching outcome array, <code class="language-plaintext highlighter-rouge">variableNames</code> optionally labels the
+predictor columns (<code class="language-plaintext highlighter-rouge">x1</code>, <code class="language-plaintext highlighter-rouge">x2</code>, … otherwise), <code class="language-plaintext highlighter-rouge">includeIntercept</code> defaults to true, <code class="language-plaintext highlighter-rouge">confidenceLevel</code> defaults to
+0.95, and <code class="language-plaintext highlighter-rouge">dropIncompleteRows</code> defaults to false (rejecting any row containing NaN rather than silently dropping
+it) — these are described once here rather than repeated in every entry below.</p>
+
+<h2 id="already-covered-elsewhere">Already covered elsewhere</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">PearsonCorrelation</code></strong> and <strong><code class="language-plaintext highlighter-rouge">SpearmanRankCorrelation</code></strong> — described in
+<a href="/docs/AnalyticalMethodology/LinearRegression.html#procedure-3-create-a-correlation-matrix-using-spearman-and-pearson">LinearRegression.md, Procedure 3</a>:
+the Fisher z confidence interval each adds beyond base R’s <code class="language-plaintext highlighter-rouge">cor()</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CorrelationMatrix</code></strong> — described in the same procedure: every pairwise correlation with a matching p-value
+matrix, pair counts, and the strongest pairs pre-ranked with Benjamini-Hochberg adjusted p-values.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">RankPredictorsByCorrelation</code></strong> — described in
+<a href="/docs/AnalyticalMethodology/LinearRegression.html#procedure-4-ranking-correlation-by-absolute-strength">LinearRegression.md, Procedure 4</a>:
+screens every column against one target, ranked by absolute strength with a p-value and adjusted p-value per
+column.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitSimpleLinearRegression</code></strong> — described in
+<a href="/docs/AnalyticalMethodology/LinearRegression.html#procedure-6-creating-a-one-way-linear-regression-model">LinearRegression.md, Procedure 6</a>:
+the coefficient table plus R squared, adjusted R squared, the F test, AIC/AICc/BIC and Durbin-Watson that
+<code class="language-plaintext highlighter-rouge">summary.lm()</code> does not print.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">PredictWithLinearRegression</code></strong> — described in
+<a href="/docs/AnalyticalMethodology/LinearRegression.html#procedure-8-using-the-predict--function-for-a-one-way-linear-regression">LinearRegression.md, Procedure 8</a>:
+fits and predicts in one call, with a confidence interval for the mean response, a wider prediction interval for a
+single new observation, leverage, and an <code class="language-plaintext highlighter-rouge">ExtrapolatedRows</code> count.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitMultipleLinearRegression</code></strong> — described in
+<a href="/docs/AnalyticalMethodology/LinearRegression.html#procedure-9-identifying-confidence-intervals">LinearRegression.md, Procedure 9</a>
+(confidence interval on every coefficient at the caller’s <code class="language-plaintext highlighter-rouge">confidenceLevel</code>) and in
+<a href="/docs/AnalyticalMethodology/BayesianNetworks/ParameterLearningAndCPTs.html">ParameterLearningAndCPTs.md</a> (a flat multiple regression as the
+nearest single-node analogue of a continuous Bayesian network node, with no notion of a second node’s own
+conditional distribution feeding into it).</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">StepwiseLinearRegression</code></strong> — described in
+<a href="/docs/AnalyticalMethodology/LinearRegression.html#procedure-10-create-a-stepwise-linear-regression-model">LinearRegression.md, Procedure 10</a>
+(Forward/Backward/Both selection by AIC, BIC or p-value entry/exit, every step recorded, with a warning that
+stepwise p-values are optimistic) and named again in
+<a href="/docs/AnalyticalMethodology/LogisticRegression.html">LogisticRegression.md</a> as OLS-only, not applicable to a binomial model.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CompareModelsByInformationCriteria</code></strong> — described in
+<a href="/docs/AnalyticalMethodology/BayesianNetworks/ScoreBasedStructureLearning.html">ScoreBasedStructureLearning.md</a>: AIC, its small-sample
+correction AICc, and BIC computed from supplied log-likelihoods and parameter counts, with Akaike and BIC weights
+for relative support across candidate models.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">ApplyLinkFunction</code></strong> — described in <a href="/docs/AnalyticalMethodology/LogisticRegression.html">LogisticRegression.md</a>: applies a link
+(Logit with <code class="language-plaintext highlighter-rouge">inverse: true</code> is the logistic function) generally for any link, reporting out-of-domain values
+through <code class="language-plaintext highlighter-rouge">InvalidCount</code> instead of silently returning <code class="language-plaintext highlighter-rouge">NaN</code>.</p>
+
+<h2 id="correlation-and-association-correlationtools">Correlation and association (<code class="language-plaintext highlighter-rouge">CorrelationTools</code>)</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">KendallTauCorrelation</code></strong> measures ordinal association as the surplus of concordant pairs over discordant pairs,
+scaled to -1..+1. All three variants are always returned — <code class="language-plaintext highlighter-rouge">TauA</code> (ignores ties), <code class="language-plaintext highlighter-rouge">TauB</code> (the tested default,
+corrects for ties) and <code class="language-plaintext highlighter-rouge">TauC</code> (adjusts for rectangular tables with different numbers of distinct values) — with
+<code class="language-plaintext highlighter-rouge">variant</code> choosing which one populates <code class="language-plaintext highlighter-rouge">Tau</code> and the confidence interval. The z statistic and p-value use the
+tie-corrected null variance of the concordance surplus; the interval is the Fisher-type interval on the chosen
+variant. Cost grows with the square of the row count, so at most 30000 pairs are accepted; <code class="language-plaintext highlighter-rouge">ignoreMissing</code>
+controls whether incomplete pairs are dropped (reporting the count) or rejected.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">PointBiserialCorrelation</code></strong> measures how strongly a numeric variable differs between two groups defined by a
+0/1 <code class="language-plaintext highlighter-rouge">group</code> flag (for example amount for fraud=1 versus fraud=0) as the Pearson correlation between the flag and
+the numbers; its p-value is identical to the pooled two-sample t-test p-value. It returns the coefficient, t
+statistic, Fisher confidence interval, each group’s mean and size, and the pooled standard deviation. Both groups
+need at least one row and the flag must contain only 0 and 1; a constant numeric variable gives <code class="language-plaintext highlighter-rouge">NaN</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">BiserialCorrelation</code></strong> estimates the correlation between a numeric variable and a 0/1 flag that is really a
+dichotomised normal latent variable (for example pass/fail from an underlying score), using the biserial
+coefficient (M1-M0)/s * p*q/y, where y is the standard normal density at the split. It is always larger in
+magnitude than the point-biserial coefficient and can exceed 1 in absolute value when the latent-normal assumption
+fails; <code class="language-plaintext highlighter-rouge">TStatistic</code> holds a z statistic against zero, <code class="language-plaintext highlighter-rouge">DegreesOfFreedom</code> is <code class="language-plaintext highlighter-rouge">NaN</code>, and no confidence interval is
+produced. Use <code class="language-plaintext highlighter-rouge">PointBiserialCorrelation</code> instead when the flag is a genuine two-valued measurement rather than a
+dichotomised continuum.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CovarianceMatrix</code></strong> computes the sample covariance matrix of several numeric columns, plus column means,
+variances, standard deviations, the total variance (trace) and the generalised variance (determinant).
+<code class="language-plaintext highlighter-rouge">Covariance[i][j]</code> is in the product of columns i and j’s units, so it is not comparable across pairs — use
+<code class="language-plaintext highlighter-rouge">CorrelationMatrix</code> for a unit-free view. <code class="language-plaintext highlighter-rouge">unbiased</code> (default true) divides by n-1 rather than n; with
+<code class="language-plaintext highlighter-rouge">ignoreMissing</code> true, rows containing NaN are dropped whole (listwise) to keep the matrix positive semi-definite,
+otherwise they are rejected. A determinant near zero signals the columns are nearly linearly dependent.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">PartialCorrelation</code></strong> measures the relationship between <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> after removing the linear influence of one
+or more <code class="language-plaintext highlighter-rouge">controls</code> from both — the correlation of the two sets of regression residuals — to ask whether x and y
+are still related once confounders are held constant. It returns the coefficient, a t statistic with
+n-2-k degrees of freedom (k controls), a two-sided p-value and a Fisher interval with standard error
+1/sqrt(n-3-k), alongside <code class="language-plaintext highlighter-rouge">ZeroOrderCorrelation</code>, the raw (uncontrolled) correlation for comparison. <code class="language-plaintext highlighter-rouge">method</code> is
+<code class="language-plaintext highlighter-rouge">Pearson</code> or <code class="language-plaintext highlighter-rouge">Spearman</code> (which ranks every variable first, a rank-based approximation); <code class="language-plaintext highlighter-rouge">Kendall</code> is not
+supported here.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">SemiPartialCorrelation</code></strong> measures <code class="language-plaintext highlighter-rouge">x</code>’s unique contribution to <code class="language-plaintext highlighter-rouge">y</code>: the correlation between <code class="language-plaintext highlighter-rouge">y</code> itself and the
+part of <code class="language-plaintext highlighter-rouge">x</code> left over after regressing <code class="language-plaintext highlighter-rouge">x</code> on the <code class="language-plaintext highlighter-rouge">controls</code> (only <code class="language-plaintext highlighter-rouge">x</code>’s side is residualised, unlike
+<code class="language-plaintext highlighter-rouge">PartialCorrelation</code>, which residualises both). Its square is the increase in R squared when <code class="language-plaintext highlighter-rouge">x</code> is added to a
+regression of <code class="language-plaintext highlighter-rouge">y</code> on the controls alone. The t statistic and p-value are those of <code class="language-plaintext highlighter-rouge">x</code>’s own coefficient in a
+regression of <code class="language-plaintext highlighter-rouge">y</code> on <code class="language-plaintext highlighter-rouge">x</code> plus the controls, with n-k-2 degrees of freedom; no confidence interval is produced
+(fields are <code class="language-plaintext highlighter-rouge">NaN</code>). <code class="language-plaintext highlighter-rouge">method</code> is <code class="language-plaintext highlighter-rouge">Pearson</code> or <code class="language-plaintext highlighter-rouge">Spearman</code>; <code class="language-plaintext highlighter-rouge">Kendall</code> is not supported.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">PartialCorrelationMatrix</code></strong> computes the partial correlation of every pair of columns (at least 3) controlling
+for every other column at once, derived from the inverse of the Pearson correlation matrix. A raw correlation that
+collapses once the other columns are controlled for was being driven by them. P-values use n-p degrees of freedom
+(p = column count). Perfectly collinear columns make the correlation matrix non-invertible and are rejected with
+a pointer to <code class="language-plaintext highlighter-rouge">VarianceInflationFactors</code> to find them first.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">MutualInformationEstimate</code></strong> estimates how much knowing one numeric variable reduces uncertainty about
+another, catching any dependence including non-monotone and non-linear shapes that correlation misses. Both
+variables are cut into <code class="language-plaintext highlighter-rouge">bins</code> (equal width by default, or <code class="language-plaintext highlighter-rouge">EqualFrequency</code> for skewed data; 0 chooses
+floor(sqrt(n/5)) clamped to 2..20 automatically) and the plug-in estimate MI = H(X) + H(Y) - H(X,Y) is returned in
+nats and bits, plus a normalised score MI/sqrt(H(X)H(Y)) in 0..1. <code class="language-plaintext highlighter-rouge">GStatistic</code> = 2n*MI (natural log) is referred
+to chi-square with (bins-1)(bins-1) degrees of freedom for a p-value against independence; <code class="language-plaintext highlighter-rouge">biasCorrect</code> (default
+false) subtracts the Miller-Madow correction for the estimator’s small-sample upward bias (the G test itself
+always uses the raw, uncorrected value). Needs at least 4 complete pairs; estimates depend on the chosen binning
+and are biased upward when bins are many relative to n.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">RankPredictorsByMutualInformation</code></strong> screens many numeric columns against one <code class="language-plaintext highlighter-rouge">target</code> by binned mutual
+information and ranks them, so non-linear and non-monotone predictors are not missed the way correlation misses
+them. Each column returns MI in bits, the normalised MI, the G test’s chi-square p-value and a
+Benjamini-Hochberg adjusted p-value across the columns, sorted strongest first with <code class="language-plaintext highlighter-rouge">Rank</code> 1 best; each column
+uses only the rows where both it and the target exist, and binning follows <code class="language-plaintext highlighter-rouge">MutualInformationEstimate</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CorrelationRatio</code></strong> measures how strongly a categorical <code class="language-plaintext highlighter-rouge">groups</code> code explains a numeric <code class="language-plaintext highlighter-rouge">values</code> variable with
+the correlation ratio eta (square root of between-group variance over total variance, 0 to 1) and eta squared.
+Unlike Pearson correlation it detects any pattern of group means, not just a linear trend across group codes. Also
+returned: the bias-lowered <code class="language-plaintext highlighter-rouge">AdjustedEtaSquared</code> (epsilon squared), the one-way ANOVA F statistic with its degrees
+of freedom and p-value, and each group’s label, size and mean. Needs at least 2 distinct groups and more rows than
+groups; a numeric variable with no variation gives <code class="language-plaintext highlighter-rouge">NaN</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CompareIndependentCorrelations</code></strong> tests whether a correlation observed in one sample differs from a correlation
+in a separate, independent sample (for example the same two variables in two customer segments), using the Fisher
+z transformation: z = (z1-z2)/sqrt(1/(n1-3)+1/(n2-3)), always two-sided, with a confidence interval for the
+difference in Fisher z units. Each sample size must be at least 4 and each correlation strictly between -1 and 1;
+it must not be used for correlations sharing a variable or measured on the same rows.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CorrelationSummaryInterval</code></strong> turns a correlation already known, plus its sample size, into a significance test
+and confidence interval without needing the raw data: the t statistic and two-sided p-value against a true
+correlation of 0 (n-2 degrees of freedom), the Fisher z value and its standard error 1/sqrt(n-3), the confidence
+interval for the true correlation, and the smallest absolute correlation that would be significant at the
+complementary level — a quick read of what a given n can detect. The correlation must be strictly between -1 and
+1 and n at least 4.</p>
+
+<h2 id="linear-regression-linearregressiontools">Linear regression (<code class="language-plaintext highlighter-rouge">LinearRegressionTools</code>)</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitWeightedLinearRegression</code></strong> fits a weighted least squares regression, minimising the weighted sum of squared
+residuals so rows with larger <code class="language-plaintext highlighter-rouge">weights</code> pull the line harder; use it for rows of unequal reliability (for example
+weight = 1/variance) or to down-weight suspect rows. Weights are treated as precision weights — they do not
+change the row count used for degrees of freedom — and every weight must be strictly positive. The result has the
+same layout as <code class="language-plaintext highlighter-rouge">FitMultipleLinearRegression</code> (coefficient table, R squared, F test, AIC/BIC, Durbin-Watson), all
+computed on the weighted scale; fitted values and residuals are reported on the original scale.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitPolynomialRegression</code></strong> fits <code class="language-plaintext highlighter-rouge">y</code> as a polynomial of <code class="language-plaintext highlighter-rouge">x</code> of the chosen <code class="language-plaintext highlighter-rouge">degree</code> (1 to 12) by least squares,
+for curved but smooth single-predictor relationships. With <code class="language-plaintext highlighter-rouge">centreX</code> true (the default) the terms are powers of
+(x - mean(x)), which avoids numerical trouble when x is large (for example a year) without affecting predictions;
+coefficients are then expressed in the centred variable. The result matches <code class="language-plaintext highlighter-rouge">FitSimpleLinearRegression</code>
+(coefficient table, R squared, F test, AIC/BIC, Durbin-Watson) and accepts <code class="language-plaintext highlighter-rouge">predictAt</code> for fitted values with mean
+and prediction intervals. High degrees overfit and extrapolate wildly — use <code class="language-plaintext highlighter-rouge">SelectPolynomialDegree</code> to choose the
+degree, keeping it well below the number of distinct x values.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">SelectPolynomialDegree</code></strong> helps choose the polynomial degree for <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> by fitting every degree from 1 up
+to <code class="language-plaintext highlighter-rouge">maxDegree</code> (2 to 12, default 6) and scoring each on R squared, adjusted R squared, residual standard error,
+AIC, BIC, the exact leave-one-out cross-validated RMSE (computed from the hat matrix, so no refitting is needed)
+and the p-value of the incremental F test against the previous degree. <code class="language-plaintext highlighter-rouge">BestByAic</code>, <code class="language-plaintext highlighter-rouge">BestByBic</code>,
+<code class="language-plaintext highlighter-rouge">BestByAdjustedRSquared</code> and <code class="language-plaintext highlighter-rouge">BestByLeaveOneOut</code> each name the degree that criterion prefers;
+<code class="language-plaintext highlighter-rouge">BestBySequentialFTest</code> is the degree reached by adding terms while each addition stays significant at 5 percent.
+When the criteria disagree, the simpler degree favoured by BIC or leave-one-out error is the safer choice. A
+degree that cannot be fitted (too few rows, or collinear powers) is marked <code class="language-plaintext highlighter-rouge">Fitted: false</code> rather than causing the
+whole call to fail.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CompareNestedLinearModels</code></strong> tests whether a named group of predictors adds explanatory power, by comparing the
+full regression against a reduced regression with <code class="language-plaintext highlighter-rouge">dropVariables</code> removed (the partial F test) — the test for
+several coefficients jointly, which individual t tests in the coefficient table cannot do (for example a set of
+dummy variables for one categorical factor). It returns the F statistic with its degrees of freedom and p-value, the
+residual sum of squares, R squared, AIC and BIC of both models, and a plain-language conclusion. <code class="language-plaintext highlighter-rouge">dropVariables</code>
+must name at least one existing predictor and leave at least one predictor (or an intercept-only reduced model
+when an intercept is included).</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitMultivariateLinearRegression</code></strong> fits the same predictors to several numeric <code class="language-plaintext highlighter-rouge">outputs</code> columns at once
+(multivariate multiple regression), returning one complete <code class="language-plaintext highlighter-rouge">FitMultipleLinearRegression</code>-shaped entry per outcome
+in <code class="language-plaintext highlighter-rouge">Models</code> — coefficient table, R squared, F test, AIC/BIC and Durbin-Watson for that outcome alone. The
+estimates are identical to fitting each outcome separately (the least squares solution does not couple the
+outcomes), so this is a convenience for seeing how one set of drivers affects several measures together, not a
+true multivariate (seemingly-unrelated-regressions) model. Outcomes are named via <code class="language-plaintext highlighter-rouge">outputNames</code> (<code class="language-plaintext highlighter-rouge">y1</code>, <code class="language-plaintext highlighter-rouge">y2</code>, …
+otherwise); rows with NaN in any outcome or predictor are rejected unless <code class="language-plaintext highlighter-rouge">dropIncompleteRows</code> is true.</p>
+
+<h2 id="generalised-linear-models-generalisedlinearmodeltools">Generalised linear models (<code class="language-plaintext highlighter-rouge">GeneralisedLinearModelTools</code>)</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitGeneralisedLinearModel</code></strong> fits a generalised linear model by iteratively reweighted least squares (Fisher
+scoring), extending regression to counts, positive skewed amounts, binary outcomes or Gaussian data in one call.
+<code class="language-plaintext highlighter-rouge">family</code> sets the outcome distribution (<code class="language-plaintext highlighter-rouge">Gaussian</code>, <code class="language-plaintext highlighter-rouge">Poisson</code> for counts, <code class="language-plaintext highlighter-rouge">Binomial</code> for 0/1, <code class="language-plaintext highlighter-rouge">Gamma</code> or
+<code class="language-plaintext highlighter-rouge">InverseGaussian</code> for positive skewed amounts) and <code class="language-plaintext highlighter-rouge">link</code> connects the mean to the linear predictor (<code class="language-plaintext highlighter-rouge">Identity</code>,
+<code class="language-plaintext highlighter-rouge">Log</code>, <code class="language-plaintext highlighter-rouge">Logit</code>, <code class="language-plaintext highlighter-rouge">Probit</code>, <code class="language-plaintext highlighter-rouge">ComplementaryLogLog</code>, <code class="language-plaintext highlighter-rouge">Cauchit</code>, <code class="language-plaintext highlighter-rouge">Inverse</code>); leaving <code class="language-plaintext highlighter-rouge">link</code> empty uses the family
+default (Gaussian→Identity, Poisson→Log, Binomial→Logit, Gamma and InverseGaussian→Log). The coefficient table has
+the estimate on the link scale, standard error, Wald z or t statistic, p-value, confidence interval, and the
+exponentiated estimate with its own interval (a rate ratio for Poisson/Log, an odds ratio for Binomial/Logit, a
+multiplicative effect for Gamma/Log). Model-level fields: deviance, null deviance, the deviance-based pseudo R
+squared (1 - deviance/null deviance), the Pearson dispersion (1 means the fixed-variance families fit well; well
+above 1 signals overdispersion), log-likelihood, AIC, BIC, a likelihood-ratio test against intercept-only,
+<code class="language-plaintext highlighter-rouge">Converged</code> and <code class="language-plaintext highlighter-rouge">Warnings</code>. Poisson and Binomial have dispersion fixed at 1 unless <code class="language-plaintext highlighter-rouge">estimateDispersion</code> is true
+(quasi-likelihood, scaling standard errors by the Pearson dispersion); the other families always estimate
+dispersion and use t statistics. An <code class="language-plaintext highlighter-rouge">offset</code> (for example the natural log of exposure time, for modelling a rate)
+is added to the linear predictor with its coefficient fixed at 1; <code class="language-plaintext highlighter-rouge">weights</code> supplies an optional prior weight per
+row. An intercept is always fitted.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitPoissonRegression</code></strong> is <code class="language-plaintext highlighter-rouge">FitGeneralisedLinearModel</code> fixed to the Poisson family with a Log link for a count
+outcome (events per customer, alerts per day, claims per policy), reporting each predictor’s effect directly as a
+rate ratio (<code class="language-plaintext highlighter-rouge">ExponentiatedEstimate</code>: 1.10 means 10 percent more events per unit increase, others held fixed).
+<code class="language-plaintext highlighter-rouge">exposure</code> (time at risk, population size, opportunity count; every value must exceed 0) adds its natural log as
+an offset so the model describes a rate rather than a raw count. The Pearson dispersion (chi-square over residual
+degrees of freedom) well above 1 signals overdispersion, meaning the standard errors are too small; refit with
+<code class="language-plaintext highlighter-rouge">estimateDispersion: true</code> (quasi-Poisson) in that case.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitGammaRegression</code></strong> is <code class="language-plaintext highlighter-rouge">FitGeneralisedLinearModel</code> fixed to the Gamma family for a strictly positive,
+right-skewed outcome whose spread grows with its mean (claim or transaction amounts, durations, costs) — the
+standard deviation is assumed proportional to the mean. With the default <code class="language-plaintext highlighter-rouge">Log</code> link, <code class="language-plaintext highlighter-rouge">ExponentiatedEstimate</code> is
+the multiplicative change in the expected outcome per unit increase; <code class="language-plaintext highlighter-rouge">Inverse</code> is the Gamma family’s canonical
+link (mean = 1/linear predictor); <code class="language-plaintext highlighter-rouge">Identity</code> models additive effects but can produce a non-positive fitted mean,
+which stops the fit. Dispersion (equal to the squared coefficient of variation) is always estimated, using t
+statistics. Every outcome value must be strictly positive.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitProbitRegression</code></strong> is <code class="language-plaintext highlighter-rouge">FitGeneralisedLinearModel</code> fixed to Binomial with a <code class="language-plaintext highlighter-rouge">Probit</code> link: P(y=1) =
+Phi(linear predictor), the standard normal distribution function. Coefficients are on the probit (z-score) scale
+and are roughly 0.55 times the corresponding logistic coefficients; the result carries the same coefficient table
+and model-level fields as <code class="language-plaintext highlighter-rouge">FitGeneralisedLinearModel</code>, including warnings if the classes are perfectly separated.
+Probit and logit rarely differ materially in fit; choose probit when a latent-normal-threshold interpretation is
+wanted. No held-out evaluation or calibration is performed — for a scored, evaluated logistic model use
+<code class="language-plaintext highlighter-rouge">TrainLogisticRegression</code> instead.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitComplementaryLogLogRegression</code></strong> is <code class="language-plaintext highlighter-rouge">FitGeneralisedLinearModel</code> fixed to Binomial with a
+<code class="language-plaintext highlighter-rouge">ComplementaryLogLog</code> link: P(y=1) = 1 - exp(-exp(linear predictor)). Unlike logit and probit the curve is
+asymmetric, approaching 1 more slowly than it leaves 0, which suits rare events and discrete-time hazard or
+“at least one event occurred” data. Coefficients are on the log-log scale; exp(coefficient) is a hazard ratio for
+the event over the observation window. Compare its AIC against <code class="language-plaintext highlighter-rouge">FitProbitRegression</code> and <code class="language-plaintext highlighter-rouge">TrainLogisticRegression</code>
+when the appropriate link is unclear.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">PredictWithGeneralisedLinearModel</code></strong> fits a GLM to the training rows (same <code class="language-plaintext highlighter-rouge">family</code>/<code class="language-plaintext highlighter-rouge">link</code>/<code class="language-plaintext highlighter-rouge">weights</code>/<code class="language-plaintext highlighter-rouge">offset</code>/
+<code class="language-plaintext highlighter-rouge">estimateDispersion</code> semantics as <code class="language-plaintext highlighter-rouge">FitGeneralisedLinearModel</code>) and immediately predicts for <code class="language-plaintext highlighter-rouge">newInputs</code>. Each
+returned row carries the linear predictor and its standard error, the predicted mean on the outcome scale
+(expected count, amount or probability) and a confidence interval for that mean obtained by transforming the
+link-scale interval through the inverse link — which keeps probabilities within 0 and 1 and counts positive. The
+interval is for the mean response only, not for an individual future outcome. <code class="language-plaintext highlighter-rouge">newOffset</code> is required, on the same
+scale as <code class="language-plaintext highlighter-rouge">offset</code>, whenever the model was fitted with one. The model is refitted on every call; nothing is stored.</p>
+
+<h2 id="model-diagnostics-regressiondiagnosticstools">Model diagnostics (<code class="language-plaintext highlighter-rouge">RegressionDiagnosticsTools</code>)</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">RegressionInfluenceDiagnostics</code></strong> finds the rows with an outsized effect on an ordinary least squares fit,
+using the standard influence measures per row: <code class="language-plaintext highlighter-rouge">Leverage</code> (hat value, how unusual the predictor values are;
+average is k/n), <code class="language-plaintext highlighter-rouge">StandardisedResidual</code> and <code class="language-plaintext highlighter-rouge">StudentisedResidual</code> (the latter computed with that row left out, so
+an outlier cannot mask itself — beyond about 3 in size is an outlier), <code class="language-plaintext highlighter-rouge">CooksDistance</code> (how far every fitted value
+moves if the row is deleted; above 4/n is influential, above 1 severe), <code class="language-plaintext highlighter-rouge">Dffits</code> (change in that row’s own fitted
+value, in standard errors), <code class="language-plaintext highlighter-rouge">CovarianceRatio</code> and <code class="language-plaintext highlighter-rouge">Dfbetas</code> (change in each coefficient, in standard errors, if
+the row is deleted). <code class="language-plaintext highlighter-rouge">Flags</code> names which thresholds a row crosses (<code class="language-plaintext highlighter-rouge">HighLeverage</code> above 2k/n, <code class="language-plaintext highlighter-rouge">Outlier</code> at
+|studentised| above 3, <code class="language-plaintext highlighter-rouge">Influential</code> at Cook above 4/n, <code class="language-plaintext highlighter-rouge">HighDffits</code> above 2*sqrt(k/n), <code class="language-plaintext highlighter-rouge">HighDfbetas</code> above
+2/sqrt(n)). By default only flagged rows appear in <code class="language-plaintext highlighter-rouge">Rows</code> (up to <code class="language-plaintext highlighter-rouge">maximumRows</code>, worst Cook first); set
+<code class="language-plaintext highlighter-rouge">returnAllRows</code> to get every row. <code class="language-plaintext highlighter-rouge">MostInfluential</code> always lists the top <code class="language-plaintext highlighter-rouge">topCount</code> rows by Cook’s distance
+regardless of flags. Also returned: <code class="language-plaintext highlighter-rouge">PressStatistic</code> (sum of squared leave-one-out prediction errors) and the
+leave-one-out RMSE. <code class="language-plaintext highlighter-rouge">KeptRowIndices</code> maps returned row positions back to the original input rows when incomplete
+rows were dropped.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">DurbinWatsonRegressionTest</code></strong> checks whether a linear regression’s residuals correlate with the residual of the
+row immediately before (serial correlation), computed on the rows in the order supplied — sort by time first.
+<code class="language-plaintext highlighter-rouge">DurbinWatson</code> runs 0 to 4: about 2 means no first-order autocorrelation, below about 1.5 positive
+autocorrelation (residuals tend to repeat sign, understating standard errors), above about 2.5 negative.
+<code class="language-plaintext highlighter-rouge">FirstOrderAutocorrelation</code> is the lag-1 residual correlation (roughly 1 - DW/2); <code class="language-plaintext highlighter-rouge">ApproximateZ</code> and
+<code class="language-plaintext highlighter-rouge">ApproximatePValue</code> use the large-sample normal approximation sqrt(n) times that autocorrelation rather than exact
+Durbin-Watson bound tables, so the p-value is only a guide above about n=30. See <code class="language-plaintext highlighter-rouge">BreuschGodfreySerialCorrelationTest</code>
+for higher-order serial correlation.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">BreuschGodfreySerialCorrelationTest</code></strong> tests for serial correlation of any order with the Breusch-Godfrey
+Lagrange multiplier test: residuals are regressed on the original predictors plus their own lags up to <code class="language-plaintext highlighter-rouge">order</code>
+(1 to 20, missing initial lags set to 0), and LM = n * R squared of that auxiliary regression is compared with
+chi-square at <code class="language-plaintext highlighter-rouge">order</code> degrees of freedom. Unlike <code class="language-plaintext highlighter-rouge">DurbinWatsonRegressionTest</code> it is valid with lagged outcomes as
+predictors and tests several lags jointly; rows must be in time order.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">BreuschPaganHeteroscedasticityTest</code></strong> tests whether residual spread changes with the predictors
+(heteroscedasticity) by regressing squared residuals on the predictors; LM = n * R squared of that auxiliary
+regression against chi-square with one degree of freedom per predictor. <code class="language-plaintext highlighter-rouge">variant</code> is <code class="language-plaintext highlighter-rouge">Studentised</code> (the Koenker
+variant, default, robust to non-normal errors) or <code class="language-plaintext highlighter-rouge">Classical</code> (the original Breusch-Pagan, assumes normal errors,
+divides the explained sum of squares by 2*sigma^4). A small p-value means ordinary standard errors are unreliable;
+consider an outcome transformation, weighted least squares or robust standard errors. See
+<code class="language-plaintext highlighter-rouge">WhiteHeteroscedasticityTest</code> for non-linear forms of variance change.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">WhiteHeteroscedasticityTest</code></strong> tests for heteroscedasticity of unknown form: squared residuals are regressed on
+the predictors, their squares and every pairwise product, with LM = n * R squared of that auxiliary regression
+against chi-square with one degree of freedom per auxiliary term. It catches variance that changes non-linearly
+or through interactions that <code class="language-plaintext highlighter-rouge">BreuschPaganHeteroscedasticityTest</code> can miss, at the cost of lower power in small
+samples from the larger number of auxiliary terms; it also reacts to some kinds of model misspecification more
+generally. At most 10 predictors are accepted, and constant, duplicated or collinear auxiliary terms (for example
+the square of a 0/1 dummy) are rejected with a message naming the problem.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">GoldfeldQuandtTest</code></strong> tests whether residual variance differs between the low and high end of one chosen
+predictor (<code class="language-plaintext highlighter-rouge">sortVariable</code>): rows are sorted by that predictor, a central <code class="language-plaintext highlighter-rouge">fractionOmitted</code> (0 to 0.6, default 0.2)
+is left out, the regression is refitted separately on the lower and upper groups, and the ratio of their residual
+variances (<code class="language-plaintext highlighter-rouge">Estimate2</code>/<code class="language-plaintext highlighter-rouge">Estimate1</code>, upper over lower) is compared with an F distribution. The default one-sided
+test (<code class="language-plaintext highlighter-rouge">twoSided: false</code>) only flags variance rising with the predictor; <code class="language-plaintext highlighter-rouge">twoSided: true</code> also flags variance
+falling. Omitting about 20 percent of the central rows increases power, and each group needs more rows than
+coefficients; the test assumes normal errors.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">ResidualNormalityTests</code></strong> summarises whether a linear regression’s residuals look normal, which matters for the
+exactness of t tests, F tests and prediction intervals in small samples. It returns the residual mean, standard
+deviation, skewness, excess kurtosis, the Jarque-Bera statistic and its chi-square (2 df) p-value, the
+Shapiro-Wilk statistic and p-value (only when 4 to 5000 residuals are available and they are not all identical,
+otherwise <code class="language-plaintext highlighter-rouge">NaN</code>), the extremes, and the fractions of residuals beyond 2 and 3 standard deviations (about 0.046 and
+0.003 under normality). With many rows the tests flag trivial departures while coefficient inference stays
+approximately valid by the central limit theorem; with few rows heavy tails or skew matter more.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">RamseyResetTest</code></strong> tests for omitted curvature or non-linear terms: powers 2 up to <code class="language-plaintext highlighter-rouge">power</code> (2 to 5, default 3)
+of the fitted values are added as extra predictors, and an F test checks whether they jointly improve the fit. A
+small p-value means the linear specification is inadequate — curved relationship, or an omitted variable or
+interaction — without saying which; <code class="language-plaintext highlighter-rouge">Estimate1</code>/<code class="language-plaintext highlighter-rouge">Estimate2</code> are the R squared of the original and augmented
+models. A model that already fits the outcome exactly, or whose augmented powers are collinear with the existing
+predictors, is rejected as undefined.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">ChowStructuralBreakTest</code></strong> tests whether a regression relationship changes at a known point in the row order
+(for example before/after a policy change): the model is fitted separately before and from <code class="language-plaintext highlighter-rouge">breakIndex</code> (the
+zero-based first row of the second period) and an F test compares the separate fits against the single pooled
+fit, F = ((RSS_pooled - RSS1 - RSS2)/k) / ((RSS1+RSS2)/(n-2k)). <code class="language-plaintext highlighter-rouge">Estimate1</code>/<code class="language-plaintext highlighter-rouge">Estimate2</code> hold the two periods’
+residual sums of squares; each period needs more rows than coefficients, and rows must already be ordered so the
+break genuinely splits the two regimes.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">VarianceInflationFactors</code></strong> is the main per-predictor multicollinearity check: for each column it returns
+VIF = 1/(1 - R squared of that column regressed on every other column), <code class="language-plaintext highlighter-rouge">Tolerance</code> (1/VIF), <code class="language-plaintext highlighter-rouge">RSquaredOnOthers</code>,
+<code class="language-plaintext highlighter-rouge">StandardErrorInflation</code> (sqrt(VIF), how many times larger that coefficient’s standard error is than with
+uncorrelated predictors) and a <code class="language-plaintext highlighter-rouge">Severity</code> label (<code class="language-plaintext highlighter-rouge">Low</code> below 5, <code class="language-plaintext highlighter-rouge">Moderate</code> 5 to 10, <code class="language-plaintext highlighter-rouge">High</code> above 10). A column
+that is an exact linear combination of the others gets VIF infinity; with a single column VIF is always 1.
+Outcome values are not needed — only <code class="language-plaintext highlighter-rouge">inputs</code>. High VIFs are fixed by dropping or combining predictors, or by
+switching to <code class="language-plaintext highlighter-rouge">FitRidgeRegression</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">MulticollinearityConditionDiagnostics</code></strong> diagnoses collinearity with the Belsley-Kuh-Welsch method: predictor
+columns (plus the intercept column, when <code class="language-plaintext highlighter-rouge">includeIntercept</code> is true, the Belsley-recommended default) are scaled
+to unit length and their singular values examined. Each row of <code class="language-plaintext highlighter-rouge">Rows</code> is one singular value with its
+<code class="language-plaintext highlighter-rouge">ConditionIndex</code> (largest singular value divided by this one — above about 10 moderate, above 30 severe) and
+<code class="language-plaintext highlighter-rouge">VarianceProportions</code>, the share of each coefficient’s variance attributable to that component; a collinearity
+problem shows up as a high condition index with variance proportions above about 0.5 for two or more variables,
+which are then the variables involved in the near-dependency. Also returned: the overall <code class="language-plaintext highlighter-rouge">ConditionNumber</code> of the
+scaled design, the condition number and determinant of the predictor correlation matrix (near-zero determinant
+means near-singular), and the numerical rank. Outcome values are not needed. Use <code class="language-plaintext highlighter-rouge">VarianceInflationFactors</code>
+instead for a simpler per-variable summary.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">AddedVariablePlotData</code></strong> produces the data for an added-variable (partial regression) plot, showing one named
+<code class="language-plaintext highlighter-rouge">variable</code>’s effect after every other predictor has been accounted for: the outcome and the chosen predictor are
+each regressed on the remaining predictors, and the two residual sets are returned as paired points. By the
+Frisch-Waugh-Lovell theorem, the slope of a line through those points equals the predictor’s coefficient in the
+full multiple regression, and their correlation is the partial correlation — useful for seeing whether a
+coefficient is driven by a few points or is genuinely linear. Needs at least two predictors so there is something
+to control for; <code class="language-plaintext highlighter-rouge">KeptRowIndices</code> maps the residual pairs back to the original rows.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CheckLinearRegressionAssumptions</code></strong> runs the standard OLS assumption checks in one call, each reported as
+passed or failed at the 5 percent level with a plain-language comment: Linearity (<code class="language-plaintext highlighter-rouge">RamseyResetTest</code>, p-value ≥
+0.05 passes), Independence (<code class="language-plaintext highlighter-rouge">BreuschGodfreySerialCorrelationTest</code> order 1, plus Durbin-Watson between 1.5 and
+2.5 — only meaningful when rows are in time order), Constant variance (studentised Breusch-Pagan), Normality of
+residuals (Jarque-Bera, and Shapiro-Wilk when available), Multicollinearity (largest VIF below 10) and Influence
+(no row with Cook’s distance above 1, and fewer than 5 percent of rows above 4/n). A failed check’s comment points
+to the specific tool to run next (<code class="language-plaintext highlighter-rouge">RegressionInfluenceDiagnostics</code>, <code class="language-plaintext highlighter-rouge">VarianceInflationFactors</code>,
+<code class="language-plaintext highlighter-rouge">ResidualNormalityTests</code>, or the individual diagnostic tool); a check that cannot be computed at all (too few
+rows, collinear terms) is reported as not passed, with a comment explaining why rather than failing the whole
+call.</p>
+
+<h2 id="model-selection-regressionmodelselectiontools">Model selection (<code class="language-plaintext highlighter-rouge">RegressionModelSelectionTools</code>)</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">BestSubsetLinearRegression</code></strong> searches every combination of predictors (exhaustive, not greedy) and ranks the
+resulting regressions. <code class="language-plaintext highlighter-rouge">criterion</code> is <code class="language-plaintext highlighter-rouge">Aic</code> or <code class="language-plaintext highlighter-rouge">Bic</code> (lower better), <code class="language-plaintext highlighter-rouge">AdjustedRSquared</code> (higher better) or
+<code class="language-plaintext highlighter-rouge">MallowsCp</code> (lower better; a good model has Cp close to its own parameter count, computed against the full
+model’s residual variance). It returns <code class="language-plaintext highlighter-rouge">TopModels</code> overall plus <code class="language-plaintext highlighter-rouge">BestPerSize</code>, the single best model for each
+predictor count, showing how much each extra predictor actually buys. Every subset reports R squared, adjusted R
+squared, AIC, BIC, Cp and residual standard error. The search cost doubles with each predictor, so at most 15
+predictors are accepted (<code class="language-plaintext highlighter-rouge">maximumSubsetSize</code>, default uncapped, can additionally restrict the largest subset
+tried); collinear subsets are skipped and counted rather than causing an error.</p>
+
+<h2 id="regularised-and-robust-regression-regularisedandrobustregressiontools">Regularised and robust regression (<code class="language-plaintext highlighter-rouge">RegularisedAndRobustRegressionTools</code>)</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitRidgeRegression</code></strong> fits an L2-penalised (ridge) regression, shrinking coefficients toward zero to stabilise
+estimates when predictors are collinear or numerous relative to the row count. Predictors are standardised to unit
+sample variance and the outcome centred, then the sum of squared residuals plus <code class="language-plaintext highlighter-rouge">lambda</code> times the sum of squared
+standardised coefficients is minimised; <code class="language-plaintext highlighter-rouge">lambda</code> 0 reproduces ordinary least squares, larger values shrink harder.
+It returns coefficients on both the original and standardised scale (the latter comparable across predictors),
+the intercept, the effective degrees of freedom excluding the intercept, R squared, the residual standard error,
+the generalised cross-validation score n*RSS/(n-1-EffectiveDegreesOfFreedom)^2 (lower is better, used to compare
+lambdas) and approximate standard errors that ignore shrinkage bias — no p-values are given, because shrunken
+estimates are biased. At most 500 predictor columns are accepted. Use <code class="language-plaintext highlighter-rouge">TraceRidgeRegularisationPath</code> to choose
+lambda rather than guessing it.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">TraceRidgeRegularisationPath</code></strong> fits ridge regression across a whole range of penalty strengths so the
+coefficient shrinkage can be seen and lambda chosen with evidence. For every <code class="language-plaintext highlighter-rouge">lambda</code> it returns the coefficients
+(both scales), intercept, effective degrees of freedom, R squared and the generalised cross-validation score;
+<code class="language-plaintext highlighter-rouge">BestLambdaByGcv</code> and <code class="language-plaintext highlighter-rouge">BestIndex</code> name the lambda with the lowest GCV, a sensible default balancing fit against
+complexity. Supplying <code class="language-plaintext highlighter-rouge">lambdas</code> uses exactly those values (up to 500); leaving it empty generates <code class="language-plaintext highlighter-rouge">pathLength</code>
+(3 to 200, default 25) values spaced geometrically from 1e-4 to 1e2 times n-1, plus lambda 0. Coefficients that
+change sign or swing wildly at small lambda mark collinear predictors.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitNonNegativeLeastSquares</code></strong> fits a linear model with no intercept in which every coefficient is constrained
+to zero or positive (Lawson-Hanson NNLS) — for mixing proportions, additive cost components, or attributing a
+total to non-negative drivers where a negative contribution would be meaningless. Coefficients pushed to exactly
+0 are the drivers the data does not support; <code class="language-plaintext highlighter-rouge">ActiveVariables</code> lists those left with a positive coefficient. It
+returns the coefficients, residual sum of squares, RMSE and the uncentred R squared (1 - RSS/sum of squares of y,
+because there is no intercept to absorb the mean). No standard errors or p-values are produced, because the
+non-negativity constraint invalidates ordinary least-squares inference.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitRansacLinearRegression</code></strong> fits a linear regression that resists gross outliers using RANSAC: it repeatedly
+fits the model to a random minimal subset of rows, counts the rows within <code class="language-plaintext highlighter-rouge">inlierThreshold</code> of that fit, keeps
+the fit with the most inliers, then refits by ordinary least squares on those inliers alone. Use it when a
+minority of rows are corrupted (wrongly entered amounts, sensor glitches) and an ordinary fit is dragged off by
+them. It returns <code class="language-plaintext highlighter-rouge">InlierModel</code> (the full coefficient table and statistics fitted only on inliers), <code class="language-plaintext highlighter-rouge">OrdinaryModel</code>
+(the plain fit on every row, for comparison), the inlier and outlier row indices, the inlier fraction, the
+threshold actually used, the trials performed and the <code class="language-plaintext highlighter-rouge">seed</code>. Leaving <code class="language-plaintext highlighter-rouge">inlierThreshold</code> empty uses 2.5 times the
+robust scale (1.4826 x median absolute deviation) of the ordinary fit’s residuals; results are reproducible for a
+given seed. Because the inlier set itself was chosen by the data, the inlier model’s p-values should be treated
+as optimistic — the selection step is not accounted for in its inference.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitMultivariateRegressionByPartialLeastSquares</code></strong> fits a partial least squares (PLS, SIMPLS algorithm on
+standardised predictors) regression of one numeric outcome on many, possibly collinear, predictors by extracting
+<code class="language-plaintext highlighter-rouge">components</code> latent factors that maximise covariance with the outcome — useful when predictors outnumber or
+nearly equal the rows, or are highly correlated, where ordinary least squares breaks down. It returns the
+coefficients on the original scale and the intercept for the chosen component count, R squared, residual standard
+error, the share of predictor and response variance each component explains (with cumulative shares showing how
+many components are worth keeping), and the Variable Importance in Projection per predictor (values above about 1
+mark influential predictors). With as many components as predictors the result equals ordinary least squares;
+fewer components is how this tool regularises.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CrossValidateLinearRegression</code></strong> estimates how well a linear regression will predict unseen rows, by <code class="language-plaintext highlighter-rouge">folds</code>
+-fold cross-validation with a seeded shuffle (<code class="language-plaintext highlighter-rouge">seed</code>), alongside the exact leave-one-out figures computed directly
+from the hat matrix (no refitting needed for those). It returns per-fold RMSE, MAE and R squared, the pooled
+cross-validated RMSE, MAE and R squared (a large gap against the in-sample RMSE/R squared signals overfitting),
+the leave-one-out RMSE, the PRESS statistic (sum of squared leave-one-out prediction errors) and the predicted R
+squared = 1 - PRESS/total sum of squares. Every fold refits on its training rows only; <code class="language-plaintext highlighter-rouge">folds</code> must be between 2
+and the row count, and every fold’s training set must have more rows than coefficients.</p>
+
+<h2 id="non-linear-curves-nonlinearcurvetools">Non-linear curves (<code class="language-plaintext highlighter-rouge">NonlinearCurveTools</code>)</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">FitNonlinearCurve</code></strong> fits a named non-linear curve y = f(x) by non-linear least squares (Levenberg-Marquardt)
+and reports parameter estimates with inference. <code class="language-plaintext highlighter-rouge">family</code> selects the shape: <code class="language-plaintext highlighter-rouge">Exponential</code> (growth/decay,
+scale<em>exp(rate</em>x)), <code class="language-plaintext highlighter-rouge">AsymptoticExponential</code> (approach to a ceiling or floor, asymptote - amplitude<em>exp(-rate</em>x)),
+<code class="language-plaintext highlighter-rouge">SaturatingExponential</code> (maximum<em>(1-exp(-rate</em>x)), through the origin), <code class="language-plaintext highlighter-rouge">Power</code> (scale<em>x^exponent, x &gt; 0),
+<code class="language-plaintext highlighter-rouge">Logarithmic</code> (intercept + slope</em>ln x), <code class="language-plaintext highlighter-rouge">Logistic3</code> (S-curve from 0 to a maximum, with steepness and midpoint),
+<code class="language-plaintext highlighter-rouge">Logistic4</code> (S-curve between a lower and upper level), <code class="language-plaintext highlighter-rouge">Gompertz</code> (asymmetric S-curve), <code class="language-plaintext highlighter-rouge">MichaelisMenten</code>
+(saturating hyperbola maximumRate<em>x/(halfSaturation+x)), <code class="language-plaintext highlighter-rouge">Hill</code> (steeper saturating curve with a coefficient),
+<code class="language-plaintext highlighter-rouge">GaussianPeak</code> (bell-shaped peak) or <code class="language-plaintext highlighter-rouge">Reciprocal</code> (1/(intercept+slope</em>x)); the result’s <code class="language-plaintext highlighter-rouge">Formula</code> field states the
+exact equation used. Each parameter row has the estimate, standard error, t statistic, p-value and confidence
+interval from the Gauss-Newton covariance sigma^2 (J’J)^-1 — an approximation that is poor in small or strongly
+curved samples. Model-level fields: residual sum of squares, residual standard error, R squared, adjusted R
+squared, Gaussian AIC and BIC, <code class="language-plaintext highlighter-rouge">Converged</code> and <code class="language-plaintext highlighter-rouge">Warnings</code>. Starting values are found automatically; supply
+<code class="language-plaintext highlighter-rouge">startValues</code> (in the order of the parameter names shown in <code class="language-plaintext highlighter-rouge">Formula</code>) when the automatic fit fails or lands on a
+poor local minimum, since non-linear fits can have several. <code class="language-plaintext highlighter-rouge">predictAt</code> returns predictions with delta-method
+intervals.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">CompareNonlinearCurveFamilies</code></strong> fits several named curve families to the same <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> (or, with <code class="language-plaintext highlighter-rouge">families</code>
+left empty, all twelve families that the data’s domain allows) and ranks them to find which shape fits best. For
+each family it returns whether it could be fitted at all (with a reason when not — for example x must be above 0
+for <code class="language-plaintext highlighter-rouge">Power</code> and <code class="language-plaintext highlighter-rouge">Hill</code>), R squared, residual standard error, AIC, BIC, the Akaike weight (relative support among
+the fitted families, summing to 1) and the fitted parameters; <code class="language-plaintext highlighter-rouge">Rank</code> 1 is the lowest AIC. <code class="language-plaintext highlighter-rouge">BestByAic</code> and
+<code class="language-plaintext highlighter-rouge">BestByBic</code> name the winners by each criterion; a difference in AIC under about 2 means the families are
+practically indistinguishable, favouring the simpler or more domain-plausible one. Automatic starting values are
+used for every family here, so a family may fail or land on a local minimum — refit the finalists directly with
+<code class="language-plaintext highlighter-rouge">FitNonlinearCurve</code> and explicit <code class="language-plaintext highlighter-rouge">startValues</code> before relying on the result.</p>
+
+    
+  </article>
+</div>
+</div>
+        <footer class="footer sm:footer-horizontal w-full mt-20 border-t border-base-300 py-10 text-sm" data-pagefind-ignore>
+  <nav><h6 class="footer-title mono">Legal</h6><a class="link link-hover" href="https://jube.io/agreements/jtos-version-1-8">Jube Terms of Service (JTOS)</a><a class="link link-hover" href="https://jube.io/jube-agplv3-open-source-compliance">AGPLv3: why only Jooby grazes this patch</a><a class="link link-hover" href="/privacy/">Privacy</a></nav>
+  <aside class="max-w-md flex flex-col gap-2 sm:ml-auto"><h6 class="footer-title mono">The developer</h6><p class="m-0 text-base-content/70 leading-relaxed text-pretty">Written by Richard Churchman, from sunny Paphos, Cyprus. No corporate layers, just direct software engineering. No roadmap theatre: if it's not in Git, it doesn't exist.</p></aside>
+</footer>
+
+      </main>
+      <aside class="not-prose hidden xl:flex flex-col gap-4 py-8 sticky top-16 self-start" data-pagefind-ignore>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="mono text-[11px] uppercase tracking-widest text-base-content/50">Work with Jube</div>
+    <a href="/training/" class="card bg-primary text-primary-content border border-primary no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Training &amp; Integration<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs">60 hours, typically four months.</div><div class="mono text-xs pt-1">$7,500 · fixed</div></div></a>
+    <a href="/support/" class="card bg-base-200 border border-base-300 no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:bg-base-100"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Support<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs text-base-content/70">Flat monthly. No clock, no overage.</div><div class="mono text-xs pt-1">from $350/mo</div></div></a>
+    <a href="/contact/" class="card bg-accent text-accent-content border border-accent no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg group hover:brightness-95"><div class="card-body p-4 gap-1"><div class="font-semibold text-sm flex items-center justify-between">Talk to the developer<span class="transition-transform duration-200 group-hover:translate-x-1">→</span></div><div class="text-xs opacity-80">Ask anything, any time.</div><div class="mono text-xs pt-1 opacity-80">WhatsApp, email or Meet</div></div></a>
+  </div>
+  <div class="rounded-box border border-base-300 p-4 flex flex-col gap-3">
+    <div class="flex items-center justify-between gap-2"><div class="mono text-[11px] uppercase tracking-widest text-base-content/50">GitHub</div><a href="https://github.com/jube-home/aml-fraud-transaction-monitoring" target="_blank" rel="noopener" class="no-underline" aria-label="Star Jube on GitHub" data-stars="jube-home/aml-fraud-transaction-monitoring"><span class="badge badge-outline badge-sm mono text-xs gap-1 bg-base-100 text-base-content/70">★ <span data-stars-count>Star</span></span></a></div>
+    <div class="text-xs text-base-content/70 text-pretty">Every pull request tested in the open. Live from master.</div>
+    
+    <div class="flex flex-wrap gap-2">
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-unit-tests.yml/badge.svg?branch=master" alt="Unit tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/jube-build-end-to-end-tests.yml/badge.svg?branch=master" alt="End-to-end tests status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master" alt="CodeQL status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/trivy.yml/badge.svg?branch=master" alt="Trivy status" class="h-5 w-auto block"></a>
+      <a href="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml" target="_blank" rel="noopener" class="no-underline"><img src="https://github.com/jube-home/aml-fraud-transaction-monitoring/actions/workflows/zap.yml/badge.svg?branch=master" alt="OWASP ZAP status" class="h-5 w-auto block"></a>
+    </div>
+  </div>
+</aside>
+
+    </div>
+  </div>
+  <a href="https://wa.me/35797517137" target="_blank" rel="noopener" aria-label="Message Jube on WhatsApp" title="Message us on WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full text-white shadow-lg flex items-center justify-center transition-transform duration-200 hover:scale-105 hover:shadow-xl" style="background-color:#25D366" data-pagefind-ignore><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"></path></svg></a>
+
+  
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>
