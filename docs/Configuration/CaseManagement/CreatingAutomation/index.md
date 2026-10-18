@@ -1,0 +1,1105 @@
+---
+layout: default
+title: Creating Automation
+nav_order: 25
+parent: Case Management
+grand_parent: Configuration
+---
+
+🚀 Get to pre-production in weeks, not months, with private [training](https://www.jube.io/jube-training) direct from Jube's developer — real sovereignty, zero vendor lock-in.
+
+# Creating Automation
+
+The case management module supports basic automation and integration using Notifications and HTTP Endpoint hooks in the
+following cases workflow configuration items:
+
+* Cases Workflow Status.
+* Cases Workflow Form.
+* Cases Workflow Action.
+* Cases Workflow Macro.
+
+Navigate Models >> Cases Workflows >> Cases Workflow Status, adding a new entry:
+
+![Image](EmptyStatusCodeConfiguration.png)
+
+Note the check boxes Enable HTTP Endpoint and Notification.
+
+The purpose of both HTTP Endpoints and Notifications is to provide a means to integrate to external system and business
+processes within the context of the action being taken in the Case page.
+
+For the purposes of tokenization, the parameters available will be, at a minimum, the values displayed in the default
+section of the case:
+
+![Image](CasePayloadExample.png)
+
+Furthermore, the Case Key and Case Key Value will always be embedded in the payload values made available to
+Notification or HTTP Endpoint functionality:
+
+![Image](CaseKeyValue.png)
+
+By way of example, upon the invocation of either a Notification or HTTP Endpoint where the above data is available, the
+string "AccountID: [@AccountID@]" would be replaced to become "AccountID: Test1".
+
+# HTTP Endpoint Introduction
+
+HTTP Endpoint functionality brings together parameters and makes a POST or GET to a HTTP endpoint. The construction of
+the URL fully supports tokenization for the purposes of crafting querystring parameters.
+
+Locate the HTTP Endpoint in the Cases Workflows Status configuration:
+
+![Image](LocationOfHttpEndpointSwitch.png)
+
+Expand on the HTTP Endpoint switch:
+
+![Image](ExpandedHTTPEndpoint.png)
+
+A HTTP Endpoint will upon invocation (in this example the submission of the form that was created in previous training
+procedures) compile all values into a JSON document \ message and submit to a remote HTTP endpoint.
+
+In this example the Toptal Post Bin service will be used (https://www.toptal.com/developers/postbin/) and the following
+bin has been created:
+
+[https://www.toptal.com/developers/postbin/1665212514812-5780224471818](https://www.toptal.com/developers/postbin/1665212514812-5780224471818)
+
+The above HTTP endpoint will promiscuously accept the posts emitted synchronously from the case management functions.
+
+The HTTP endpoint functionality is intended for the purposes of performing complex integrations and automations for
+which a bridge \ middleware must usually be created for that specific purpose.
+
+The page accepts the following parameters for HTTP Endpoint (which is common across all cases workflow entries that
+process HTTP endpoints):
+
+| Value              | Description                                                                                                                                                                                                                                 | Example |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| HTTP Endpoint Type | The type of HTTP endpoint request.  If POST then the values will be compiled in a JSON document and submitted in the POST body.  If GET only the URL will be used in the HTTP request (although keep in mind that the URL is tokenization). | POST    |
+| HTTP Endpoint      | https://www.toptal.com/developers/postbin/1665212514812-5780224471818                                                                                                                                                                       | True    |
+
+To start, perform a POST by completing the form as above and below:
+
+![Image](SendingPOSTToToilet.png)
+
+Scroll down the page, click to update to create a version of the Cases Workflows Status:
+
+![Image](VersionOfCasesWorkflowsStatusWithHTTPEndpoint.png)
+
+Navigate to a case:
+
+![Image](CaseReadyToBeGivenNewStatus.png)
+
+Notice the Case Status Bar, specifically the Status:
+
+![Image](LocationOfCaseStatusInCase.png)
+
+![Image](CaseStatusReadyToBeChangedForHTTPEndpoint.png)
+
+Change Case Status to the newly created status:
+
+![Image](ChangeStatus.png)
+
+On selection of the status, there will be no obvious sign that a HTTP Endpoint integration has taken place from the form
+submission response, instead for the purposes of evidence the logs will be inspected to understand the interchange
+between the HTTP endpoint:
+
+![Image](UpdatedStatus.png)
+
+On refresh of the post bin endpoint however, it can be seen that the data has been posted and received:
+
+![Image](PostBinResult.png)
+
+In the case of GET, the Post body would not be available, instead, data would be transposed to the query. For this
+reason, the querystring fully supports tokenization.
+
+Navigate to the Cases Workflow Status:
+
+![Image](CasesWorkflowStatusToBeUpdatedToGet.png)
+
+Locate the HTTP Endpoint type set:
+
+![Image](CurrentHTTPTypeIsPost.png)
+
+Update the HTTP Endpoint Type to GET and alter the HTTP Endpoint to include a resource as follows:
+
+[https://www.toptal.com/developers/postbin/1665212514812-5780224471818?Example=[@AccountId@](https://www.toptal.com/developers/postbin/1665212514812-5780224471818?Example=[@AccountId@])
+
+![Image](UpdatedToGet.png)
+
+Scroll down and click update to create a version of the Cases Workflows Status:
+
+![Image](UpdatedVersionOfCasesWorkflowStatusForHTTPGet.png)
+
+Navigate to a case, changing status back to something else need be:
+
+![Image](CaseReadyForHTTPGet.png)
+
+Change the status to that updated:
+
+![Image](UpdatedCaseForSendingGetHTTP.png)
+
+On inspection of the Post Bin, the GET can be observed with the query string values properly tokenized:
+
+![Image](POSTBinHasGotTokenisedData.png)
+
+Notifications are the sending of Email or SMS messages as a consequence of an event being raised in the Case page. The
+notification functionality fully supports Tokenization in the Body, Subject and Destination fields which will replace
+tokenized values with the values in the parameters from the triggering event. From the Cases Workflows Status:
+
+![Image](CasesWorkflowStatusReadyForNotification.png)
+
+Locate the switch for Notification:
+
+![Image](LocationOfNotification.png)
+
+Switch Notification to expose properties:
+
+![Image](ExpandedNotificationProperties.png)
+
+Complete a notification using tokenization on the AccountId (keep in mind that all fields support tokenization):
+
+![Image](UpdatedNotificationForEmailTokens.png)
+
+Scroll down and click Update to create a version of the Cases Workflows Status:
+
+![Image](UpdatedVersionForANotification.png)
+
+The process to change to this status is as laid out above, however in addition to a HTTP GET (or POST) being made, an
+email (or SMS if that Notification Type has been selected) will be dispatched having been appropriately tokenized:
+
+![Image](EmailRecieved.png)
+
+The Notification Type SMS expects a destination or telephone number, using the + country code designation, and subject
+will be ignored.
+
+As both the email and SMS notifications are on the basis of being straight through and synchronous, nothing needs to be
+enabled in the engine. However, the following values need to be considered as Environment Variables:
+
+```text
+SMTPHost=email.emailhost.com
+SMTPPort=587
+SMTPUser=UsernameExample
+SMTPPassword=PasswordExample
+SMTPFrom=richard.churchman@jube.io
+```
+
+| Value        | Description                                              |
+|--------------|----------------------------------------------------------|
+| SMTPHost     | The SMTP host name.                                      |
+| SMTPPort     | The SMTP port name.                                      |
+| SMTPUser     | The SMTP user name for authentication.                   |
+| SMTPPassword | The SMTP password for authentication.                    |
+| SMTPFrom     | The email address where the email will be received from. |
+
+Likewise the Clickatell gateway in the case of SMS, using the values in the using a value set Environment Variable as:
+
+```text
+ClickatellAPIKey=APIKeyFromClickatell
+```
+
+| Value            | Description                         |
+|------------------|-------------------------------------|
+| ClickatellAPIKey | The API Key provided by Clickatell. |
+
+# POST Body Context
+
+HTTP POST's can be made in the following parts of the case management system:
+
+| Event                | Description                                                                                                  | Context                                                                                                                                                                               |
+|----------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Case Workflow Action | Creation of a Case Note by the end user alongside a Case Workflow Action.                                    | Case Note including Case Workflow Action name, context of Case including Case Workflow Status Name and context of full Archive payload on case creation.                              |
+| Case Workflow Status | On allocation of a status in Activation Rule Case Creation, Elevation or updates being made by the end user. | Case including Case Workflow Status Name and context of full Archive payload on case creation.                                                                                        |
+| Case Workflow Macro  | Invocation of the Case Workflow macro by the end user                                                        | Case Workflow Macro definition including Case Workflow Form name, context of Case entry including Case Workflow Status Name and context of full Archive payload on case creation.     |
+| Case Workflow Form   | On submission of a Case Workflow Form.                                                                       | Case Workflow Form deinition including Case Workflow Form name and payload, context of Case including Case Workflow Status Name and context of full Archive payload on case creation. |
+
+Case Workflow Action:
+
+```json
+{
+  "id": 1,
+  "note": "Hello",
+  "actionId": 3,
+  "priorityId": 1,
+  "createdDate": "0001-01-01T00:00:00",
+  "caseKey": "AccountId",
+  "caseKeyValue": "Test20",
+  "caseId": 1,
+  "caseWorkflowActionName": "Escalation",
+  "case": {
+    "id": 1,
+    "entityAnalysisModelInstanceEntryGuid": "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+    "diaryDate": "2026-02-20T09:19:46.5265",
+    "caseWorkflowGuid": "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+    "caseWorkflowStatusGuid": "faf5c83a-5c3e-4a62-b224-aea9e2e1efa6",
+    "createdDate": "2026-02-20T09:19:46.526214",
+    "locked": 0,
+    "closedStatusId": 0,
+    "caseKey": "AccountId",
+    "diary": 0,
+    "rating": 0,
+    "caseKeyValue": "Test20",
+    "caseWorkflowStatus": "First Line Review",
+    "payload": {
+      "payload": {
+        "IP": "Test",
+        "OS": "Lollypop",
+        "MAC": "94:23:44f:2:d3",
+        "OTP": "466923",
+        "Is3D": "False",
+        "Brand": "ZTE",
+        "Email": "please@hash.me",
+        "IsAPM": "True",
+        "Model": "Barby",
+        "TxnId": "0987654321",
+        "BankId": "57",
+        "System": "Android",
+        "OrderId": "10607324128",
+        "Storage": "True",
+        "Currency": "826",
+        "DeviceId": "OlaRoseGoldPhone3",
+        "IsRebill": "False",
+        "AccountId": "Test20",
+        "AmountEUR": "100",
+        "AmountGBP": "86.5866",
+        "AmountUSD": "113.055",
+        "ChannelId": "1",
+        "Jailbreak": "True",
+        "ActionDate": "2019-04-17T04:18:15.0000000+03:00",
+        "BillingZip": "123456",
+        "IsCascaded": "False",
+        "IsCredited": "False",
+        "IsModified": "False",
+        "JoinedName": "Robert Mugabe",
+        "Resolution": "720*1280",
+        "BillingCity": "Address Line 2",
+        "ServiceCode": "DID",
+        "ToAccountId": "MTN",
+        "TwoFATypeId": "SMS",
+        "TxnDateTime": "2024-12-01T21:41:37.2480000+02:00",
+        "APMAccountId": "",
+        "BillingPhone": "1234567890",
+        "BillingState": "",
+        "ResponseCode": "0",
+        "AmountEURRate": "1",
+        "AmountGBPRate": "0.8658658602",
+        "AmountUSDRate": "1.1305502954",
+        "BusinessModel": "Sports betting",
+        "AppVersionCode": "12.34",
+        "BillingAddress": "Address Line 1",
+        "BillingCountry": "DE",
+        "CreditCardHash": "0xDA39A3EE5E6B4B0JJJ1890AFD80709",
+        "CurrencyAmount": "123.45",
+        "IsModification": "False",
+        "OriginalAmount": "100",
+        "AccountCurrency": "566",
+        "AccountLatitude": "5.3536",
+        "BillingLastName": "Mugabe",
+        "FingerprintHash": "jhjkhjkhsjh2hjhjkhj2k",
+        "TwoFAResponseId": "1",
+        "AccountLongitude": "36.1408",
+        "AcquirerBankName": "Caixa",
+        "BillingFirstName": "Robert",
+        "DebuggerAttached": "True",
+        "OriginalCurrency": "EUR",
+        "SettlementAmount": "100000",
+        "SimulatorAttached": "True",
+        "TransactionTypeId": "False",
+        "IsCurrencyConverted": "False",
+        "TransactionResultId": "1006",
+        "ToAccountExternalRef": "ChurchmanR",
+        "TransactionExternalResponseId": "0"
+      },
+      "responseElevation": {
+        "value": 2.0,
+        "redirect": "https://www.jube.io",
+        "foreColor": "#fb0707",
+        "backColor": "#f5f2cb",
+        "content": "Declined for \"VolumeThresholdByAccountId\"",
+        "createdDate": "2026-02-20T09:19:46.0658815+02:00"
+      },
+      "r": 0.0,
+      "createdDate": "2026-02-20T09:19:46.0732995+02:00",
+      "entityAnalysisModelGuid": "90c425fd-101a-420b-91d1-cb7a24a969cc",
+      "entityAnalysisModelName": "Detailed_Account_Financial_Transactions",
+      "entityAnalysisModelInstanceGuid": "00000000-0000-0000-0000-000000000000",
+      "entityAnalysisModelInstanceEntryGuid": "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+      "entityInstanceEntryId": "0987654321",
+      "responseElevationLimit": 10.0,
+      "referenceDate": "2024-12-01T21:41:37.248",
+      "archiveEnqueueDate": "2026-02-20T09:19:46.4475738+02:00",
+      "matchedGatewayRule": true,
+      "prevailingEntityAnalysisModelActivationRuleId": 5,
+      "entityAnalysisModelActivationRuleCount": 2,
+      "dictionary": {
+        "VolumeThresholdByAccountId": 0.0
+      },
+      "ttlCounter": {
+        "TtlCounterAll": 0
+      },
+      "sanction": {
+        "FuzzyMatchDistance2JoinedName": 0.0
+      },
+      "abstraction": {
+        "ResponseCodeEqual0Volume": 1111.0500000000002,
+        "NotResponseCodeEqual0Volume": 0.0
+      },
+      "abstractionCalculation": {
+        "ResponseCodeVolumeRatio": 0.0
+      },
+      "httpAdaptation": {},
+      "exhaustiveAdaptation": {},
+      "activation": {
+        "VolumeThresholdByAccountId": {
+          "visible": true
+        },
+        "ThresholdSanctionsDistance": {
+          "visible": true
+        },
+        "IncrementTtlCounterAll": {
+          "visible": false
+        }
+      },
+      "createCase": {
+        "caseWorkflowGuid": "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+        "caseWorkflowStatusGuid": "faf5c83a-5c3e-4a62-b224-aea9e2e1efa6",
+        "caseKeyValue": "Test20",
+        "caseKey": "AccountId",
+        "suspendBypass": false,
+        "suspendBypassDate": "2026-02-20T09:19:46.3793539+02:00"
+      },
+      "tag": {},
+      "logs": {
+        "anchorDate": "2026-02-20T09:19:46.3793539+02:00",
+        "entries": [
+          { "elapsedMicroseconds": 612, "sinceLastEntryMicroseconds": 612, "capturedByInfoSampling": true, "capturedByWarnThreshold": false, "threadId": 1, "message": "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has started the invocation timer and will now update the reference date." },
+          { "elapsedMicroseconds": 117393, "sinceLastEntryMicroseconds": 116781, "capturedByInfoSampling": true, "capturedByWarnThreshold": false, "threadId": 1, "message": "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has completed Sanction Check Name with a matched score." }
+        ]
+      },
+      "responseTimePipeline": {
+        "entries": [
+          { "stage": "Parse", "elapsedMicroseconds": 1200, "durationMicroseconds": 40, "allocatedBytes": 512, "threadId": 1 },
+          { "stage": "CheckIntegrityAndUpsert", "elapsedMicroseconds": 1245, "durationMicroseconds": 40, "allocatedBytes": 576, "threadId": 1 },
+          { "stage": "InlineFunctions", "elapsedMicroseconds": 1290, "durationMicroseconds": 40, "allocatedBytes": 640, "threadId": 1 },
+          { "stage": "InlineScripts", "elapsedMicroseconds": 1335, "durationMicroseconds": 40, "allocatedBytes": 704, "threadId": 1 },
+          { "stage": "Gateway", "elapsedMicroseconds": 1380, "durationMicroseconds": 40, "allocatedBytes": 768, "threadId": 1 },
+          { "stage": "CacheDbStorage", "elapsedMicroseconds": 1425, "durationMicroseconds": 40, "allocatedBytes": 832, "threadId": 1 },
+          { "stage": "JoinReadTasks", "elapsedMicroseconds": 1470, "durationMicroseconds": 40, "allocatedBytes": 896, "threadId": 1 },
+          { "stage": "AbstractionRulesWithoutSearchKeys", "elapsedMicroseconds": 1515, "durationMicroseconds": 40, "allocatedBytes": 960, "threadId": 1 },
+          { "stage": "AbstractionCalculations", "elapsedMicroseconds": 1560, "durationMicroseconds": 40, "allocatedBytes": 1024, "threadId": 1 },
+          { "stage": "ExhaustiveAdaptation", "elapsedMicroseconds": 1605, "durationMicroseconds": 40, "allocatedBytes": 1088, "threadId": 1 },
+          { "stage": "HttpAdaptation", "elapsedMicroseconds": 1650, "durationMicroseconds": 40, "allocatedBytes": 1152, "threadId": 1 },
+          { "stage": "Activation", "elapsedMicroseconds": 1695, "durationMicroseconds": 40, "allocatedBytes": 1216, "threadId": 1 },
+          { "stage": "JoinWriteTasks", "elapsedMicroseconds": 1740, "durationMicroseconds": 40, "allocatedBytes": 1280, "threadId": 1 },
+          { "stage": "WriteResponse", "elapsedMicroseconds": 1785, "durationMicroseconds": 40, "allocatedBytes": 1344, "threadId": 1 },
+          { "stage": "BuildArchivePayload", "elapsedMicroseconds": 1830, "durationMicroseconds": 40, "allocatedBytes": 1408, "threadId": 1 }
+        ]
+      },
+      "invokeTaskPerformance": {
+        "totalDurationMicroseconds": 1298477,
+        "memory": 8860472,
+        "taskWrapperStats": {
+          "read": {
+            "sanctionsAsync": { "computeTimeMicroseconds": 11839960, "memory": 27349 },
+            "ttlCountersAsync": { "computeTimeMicroseconds": 2603136, "memory": 29327 },
+            "abstractionRulesWithSearchKeysAsync": { "computeTimeMicroseconds": 83912, "memory": 96653 }
+          },
+          "write": {
+            "cachePayloadLatestUpsertAsync": { "computeTimeMicroseconds": 20680, "memory": 34383 },
+            "cachePayloadInsertAsync": { "computeTimeMicroseconds": 9480, "memory": 11739 },
+            "cacheTtlCounterEntryUpsertAsync": { "computeTimeMicroseconds": 688, "memory": 2816 },
+            "cacheTtlCounterEntryIncrementAsync": { "computeTimeMicroseconds": 656, "memory": 2800 },
+            "upsertReferenceDateAsync": { "computeTimeMicroseconds": 412, "memory": 960 }
+          }
+        },
+        "stages": {
+          "parse": { "durationMicroseconds": 48 },
+          "checkIntegrityAndUpsert": { "durationMicroseconds": 1 },
+          "inlineFunctions": { "durationMicroseconds": 30, "items": { "SetRiskScore": { "computeTimeMicroseconds": 2140, "memory": 512 } } },
+          "inlineScripts": { "durationMicroseconds": 7, "items": { "EnrichPayload": { "computeTimeMicroseconds": 7102, "memory": 2048 } } },
+          "gateway": { "durationMicroseconds": 1, "items": { "AllTransactions": { "computeTimeMicroseconds": 1840, "memory": 64 } } },
+          "cacheDbStorage": { "durationMicroseconds": 1 },
+          "sanctions": { "durationMicroseconds": 117, "items": { "SanctionCheckName": { "computeTimeMicroseconds": 117200, "memory": 4096 } } },
+          "ttlCounters": { "durationMicroseconds": 117, "items": { "TxnCountLast24Hours": { "computeTimeMicroseconds": 2603136, "memory": 29327 } } },
+          "abstractionRulesWithSearchKeys": { "durationMicroseconds": 186, "items": { "AverageSpend": { "computeTimeMicroseconds": 83912, "memory": 96653 } } },
+          "joinReadTasks": { "durationMicroseconds": 1 },
+          "abstractionRulesWithoutSearchKeys": { "durationMicroseconds": 1, "items": { "IsFirstTransaction": { "computeTimeMicroseconds": 1650, "memory": 128 } } },
+          "abstractionCalculations": { "durationMicroseconds": 2, "items": { "RiskWeightedSpend": { "computeTimeMicroseconds": 2800, "memory": 96 } } },
+          "exhaustiveAdaptation": { "durationMicroseconds": 1, "items": { "FraudScoreModel": { "computeTimeMicroseconds": 1050, "memory": 512 } } },
+          "httpAdaptation": { "durationMicroseconds": 2, "items": { "BayesianNetworkBootstrapStrength": { "computeTimeMicroseconds": 2419, "memory": 256 } } },
+          "activation": { "durationMicroseconds": 129, "items": { "HighRiskTransaction": { "rule": { "computeTimeMicroseconds": 1240, "memory": 192 }, "abstractionRuleOverrideInlineScripts": {}, "notification": { "computeTimeMicroseconds": 890, "memory": 64 }, "caseCreation": { "computeTimeMicroseconds": 126800, "memory": 8192 }, "activationWatcher": { "computeTimeMicroseconds": 142, "memory": 32 }, "responseElevation": { "computeTimeMicroseconds": 55, "memory": 0 } } } },
+          "joinWriteTasks": { "durationMicroseconds": 2 },
+          "writeResponse": { "durationMicroseconds": 1 },
+          "buildArchivePayload": { "durationMicroseconds": 1 }
+        }
+      },
+      "isSampled": true,
+      "implicitAsyncTimedOut": false
+    }
+  }
+}
+```
+
+Case Workflow Macro:
+
+```json
+{
+  "caseId": 1,
+  "caseWorkflowMacroId": 1,
+  "caseWorkflowMacroName": "ExampleMacro",
+  "case": {
+    "id": 1,
+    "entityAnalysisModelInstanceEntryGuid": "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+    "diaryDate": "2026-02-20T09:19:46.5265",
+    "caseWorkflowGuid": "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+    "caseWorkflowStatusGuid": "faf5c83a-5c3e-4a62-b224-aea9e2e1efa6",
+    "createdDate": "2026-02-20T09:19:46.526214",
+    "locked": 0,
+    "closedStatusId": 0,
+    "caseKey": "AccountId",
+    "diary": 0,
+    "rating": 0,
+    "caseKeyValue": "Test20",
+    "caseWorkflowStatus": "First Line Review",
+    "payload": {
+      "payload": {
+        "IP": "Test",
+        "OS": "Lollypop",
+        "MAC": "94:23:44f:2:d3",
+        "OTP": "466923",
+        "Is3D": "False",
+        "Brand": "ZTE",
+        "Email": "please@hash.me",
+        "IsAPM": "True",
+        "Model": "Barby",
+        "TxnId": "0987654321",
+        "BankId": "57",
+        "System": "Android",
+        "OrderId": "10607324128",
+        "Storage": "True",
+        "Currency": "826",
+        "DeviceId": "OlaRoseGoldPhone3",
+        "IsRebill": "False",
+        "AccountId": "Test20",
+        "AmountEUR": "100",
+        "AmountGBP": "86.5866",
+        "AmountUSD": "113.055",
+        "ChannelId": "1",
+        "Jailbreak": "True",
+        "ActionDate": "2019-04-17T04:18:15.0000000+03:00",
+        "BillingZip": "123456",
+        "IsCascaded": "False",
+        "IsCredited": "False",
+        "IsModified": "False",
+        "JoinedName": "Robert Mugabe",
+        "Resolution": "720*1280",
+        "BillingCity": "Address Line 2",
+        "ServiceCode": "DID",
+        "ToAccountId": "MTN",
+        "TwoFATypeId": "SMS",
+        "TxnDateTime": "2024-12-01T21:41:37.2480000+02:00",
+        "APMAccountId": "",
+        "BillingPhone": "1234567890",
+        "BillingState": "",
+        "ResponseCode": "0",
+        "AmountEURRate": "1",
+        "AmountGBPRate": "0.8658658602",
+        "AmountUSDRate": "1.1305502954",
+        "BusinessModel": "Sports betting",
+        "AppVersionCode": "12.34",
+        "BillingAddress": "Address Line 1",
+        "BillingCountry": "DE",
+        "CreditCardHash": "0xDA39A3EE5E6B4B0JJJ1890AFD80709",
+        "CurrencyAmount": "123.45",
+        "IsModification": "False",
+        "OriginalAmount": "100",
+        "AccountCurrency": "566",
+        "AccountLatitude": "5.3536",
+        "BillingLastName": "Mugabe",
+        "FingerprintHash": "jhjkhjkhsjh2hjhjkhj2k",
+        "TwoFAResponseId": "1",
+        "AccountLongitude": "36.1408",
+        "AcquirerBankName": "Caixa",
+        "BillingFirstName": "Robert",
+        "DebuggerAttached": "True",
+        "OriginalCurrency": "EUR",
+        "SettlementAmount": "100000",
+        "SimulatorAttached": "True",
+        "TransactionTypeId": "False",
+        "IsCurrencyConverted": "False",
+        "TransactionResultId": "1006",
+        "ToAccountExternalRef": "ChurchmanR",
+        "TransactionExternalResponseId": "0"
+      },
+      "responseElevation": {
+        "value": 2.0,
+        "redirect": "https://www.jube.io",
+        "foreColor": "#fb0707",
+        "backColor": "#f5f2cb",
+        "content": "Declined for \"VolumeThresholdByAccountId\"",
+        "createdDate": "2026-02-20T09:19:46.0658815+02:00"
+      },
+      "r": 0.0,
+      "createdDate": "2026-02-20T09:19:46.0732995+02:00",
+      "entityAnalysisModelGuid": "90c425fd-101a-420b-91d1-cb7a24a969cc",
+      "entityAnalysisModelName": "Detailed_Account_Financial_Transactions",
+      "entityAnalysisModelInstanceGuid": "00000000-0000-0000-0000-000000000000",
+      "entityAnalysisModelInstanceEntryGuid": "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+      "entityInstanceEntryId": "0987654321",
+      "responseElevationLimit": 10.0,
+      "referenceDate": "2024-12-01T21:41:37.248",
+      "archiveEnqueueDate": "2026-02-20T09:19:46.4475738+02:00",
+      "matchedGatewayRule": true,
+      "prevailingEntityAnalysisModelActivationRuleId": 5,
+      "entityAnalysisModelActivationRuleCount": 2,
+      "dictionary": {
+        "VolumeThresholdByAccountId": 0.0
+      },
+      "ttlCounter": {
+        "TtlCounterAll": 0
+      },
+      "sanction": {
+        "FuzzyMatchDistance2JoinedName": 0.0
+      },
+      "abstraction": {
+        "NotResponseCodeEqual0Volume": 0.0,
+        "ResponseCodeEqual0Volume": 1111.0500000000002
+      },
+      "abstractionCalculation": {
+        "ResponseCodeVolumeRatio": 0.0
+      },
+      "httpAdaptation": {},
+      "exhaustiveAdaptation": {},
+      "activation": {
+        "VolumeThresholdByAccountId": {
+          "visible": true
+        },
+        "ThresholdSanctionsDistance": {
+          "visible": true
+        },
+        "IncrementTtlCounterAll": {
+          "visible": false
+        }
+      },
+      "createCase": {
+        "caseWorkflowGuid": "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+        "caseWorkflowStatusGuid": "faf5c83a-5c3e-4a62-b224-aea9e2e1efa6",
+        "caseKeyValue": "Test20",
+        "caseKey": "AccountId",
+        "suspendBypass": false,
+        "suspendBypassDate": "2026-02-20T09:19:46.3793539+02:00"
+      },
+      "tag": {},
+      "logs": {
+        "anchorDate": "2026-02-20T09:19:46.3793539+02:00",
+        "entries": [
+          { "elapsedMicroseconds": 612, "sinceLastEntryMicroseconds": 612, "capturedByInfoSampling": true, "capturedByWarnThreshold": false, "threadId": 1, "message": "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has started the invocation timer and will now update the reference date." },
+          { "elapsedMicroseconds": 117393, "sinceLastEntryMicroseconds": 116781, "capturedByInfoSampling": true, "capturedByWarnThreshold": false, "threadId": 1, "message": "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has completed Sanction Check Name with a matched score." }
+        ]
+      },
+      "responseTimePipeline": {
+        "entries": [
+          { "stage": "Parse", "elapsedMicroseconds": 1200, "durationMicroseconds": 40, "allocatedBytes": 512, "threadId": 1 },
+          { "stage": "CheckIntegrityAndUpsert", "elapsedMicroseconds": 1245, "durationMicroseconds": 40, "allocatedBytes": 576, "threadId": 1 },
+          { "stage": "InlineFunctions", "elapsedMicroseconds": 1290, "durationMicroseconds": 40, "allocatedBytes": 640, "threadId": 1 },
+          { "stage": "InlineScripts", "elapsedMicroseconds": 1335, "durationMicroseconds": 40, "allocatedBytes": 704, "threadId": 1 },
+          { "stage": "Gateway", "elapsedMicroseconds": 1380, "durationMicroseconds": 40, "allocatedBytes": 768, "threadId": 1 },
+          { "stage": "CacheDbStorage", "elapsedMicroseconds": 1425, "durationMicroseconds": 40, "allocatedBytes": 832, "threadId": 1 },
+          { "stage": "JoinReadTasks", "elapsedMicroseconds": 1470, "durationMicroseconds": 40, "allocatedBytes": 896, "threadId": 1 },
+          { "stage": "AbstractionRulesWithoutSearchKeys", "elapsedMicroseconds": 1515, "durationMicroseconds": 40, "allocatedBytes": 960, "threadId": 1 },
+          { "stage": "AbstractionCalculations", "elapsedMicroseconds": 1560, "durationMicroseconds": 40, "allocatedBytes": 1024, "threadId": 1 },
+          { "stage": "ExhaustiveAdaptation", "elapsedMicroseconds": 1605, "durationMicroseconds": 40, "allocatedBytes": 1088, "threadId": 1 },
+          { "stage": "HttpAdaptation", "elapsedMicroseconds": 1650, "durationMicroseconds": 40, "allocatedBytes": 1152, "threadId": 1 },
+          { "stage": "Activation", "elapsedMicroseconds": 1695, "durationMicroseconds": 40, "allocatedBytes": 1216, "threadId": 1 },
+          { "stage": "JoinWriteTasks", "elapsedMicroseconds": 1740, "durationMicroseconds": 40, "allocatedBytes": 1280, "threadId": 1 },
+          { "stage": "WriteResponse", "elapsedMicroseconds": 1785, "durationMicroseconds": 40, "allocatedBytes": 1344, "threadId": 1 },
+          { "stage": "BuildArchivePayload", "elapsedMicroseconds": 1830, "durationMicroseconds": 40, "allocatedBytes": 1408, "threadId": 1 }
+        ]
+      },
+      "invokeTaskPerformance": {
+        "totalDurationMicroseconds": 1298477,
+        "memory": 8860472,
+        "taskWrapperStats": {
+          "read": {
+            "sanctionsAsync": { "computeTimeMicroseconds": 11839960, "memory": 27349 },
+            "ttlCountersAsync": { "computeTimeMicroseconds": 2603136, "memory": 29327 },
+            "abstractionRulesWithSearchKeysAsync": { "computeTimeMicroseconds": 83912, "memory": 96653 }
+          },
+          "write": {
+            "cachePayloadLatestUpsertAsync": { "computeTimeMicroseconds": 20680, "memory": 34383 },
+            "cachePayloadInsertAsync": { "computeTimeMicroseconds": 9480, "memory": 11739 },
+            "cacheTtlCounterEntryUpsertAsync": { "computeTimeMicroseconds": 688, "memory": 2816 },
+            "cacheTtlCounterEntryIncrementAsync": { "computeTimeMicroseconds": 656, "memory": 2800 },
+            "upsertReferenceDateAsync": { "computeTimeMicroseconds": 412, "memory": 960 }
+          }
+        },
+        "stages": {
+          "parse": { "durationMicroseconds": 48 },
+          "checkIntegrityAndUpsert": { "durationMicroseconds": 1 },
+          "inlineFunctions": { "durationMicroseconds": 30, "items": { "SetRiskScore": { "computeTimeMicroseconds": 2140, "memory": 512 } } },
+          "inlineScripts": { "durationMicroseconds": 7, "items": { "EnrichPayload": { "computeTimeMicroseconds": 7102, "memory": 2048 } } },
+          "gateway": { "durationMicroseconds": 1, "items": { "AllTransactions": { "computeTimeMicroseconds": 1840, "memory": 64 } } },
+          "cacheDbStorage": { "durationMicroseconds": 1 },
+          "sanctions": { "durationMicroseconds": 117, "items": { "SanctionCheckName": { "computeTimeMicroseconds": 117200, "memory": 4096 } } },
+          "ttlCounters": { "durationMicroseconds": 117, "items": { "TxnCountLast24Hours": { "computeTimeMicroseconds": 2603136, "memory": 29327 } } },
+          "abstractionRulesWithSearchKeys": { "durationMicroseconds": 186, "items": { "AverageSpend": { "computeTimeMicroseconds": 83912, "memory": 96653 } } },
+          "joinReadTasks": { "durationMicroseconds": 1 },
+          "abstractionRulesWithoutSearchKeys": { "durationMicroseconds": 1, "items": { "IsFirstTransaction": { "computeTimeMicroseconds": 1650, "memory": 128 } } },
+          "abstractionCalculations": { "durationMicroseconds": 2, "items": { "RiskWeightedSpend": { "computeTimeMicroseconds": 2800, "memory": 96 } } },
+          "exhaustiveAdaptation": { "durationMicroseconds": 1, "items": { "FraudScoreModel": { "computeTimeMicroseconds": 1050, "memory": 512 } } },
+          "httpAdaptation": { "durationMicroseconds": 2, "items": { "BayesianNetworkBootstrapStrength": { "computeTimeMicroseconds": 2419, "memory": 256 } } },
+          "activation": { "durationMicroseconds": 129, "items": { "HighRiskTransaction": { "rule": { "computeTimeMicroseconds": 1240, "memory": 192 }, "abstractionRuleOverrideInlineScripts": {}, "notification": { "computeTimeMicroseconds": 890, "memory": 64 }, "caseCreation": { "computeTimeMicroseconds": 126800, "memory": 8192 }, "activationWatcher": { "computeTimeMicroseconds": 142, "memory": 32 }, "responseElevation": { "computeTimeMicroseconds": 55, "memory": 0 } } } },
+          "joinWriteTasks": { "durationMicroseconds": 2 },
+          "writeResponse": { "durationMicroseconds": 1 },
+          "buildArchivePayload": { "durationMicroseconds": 1 }
+        }
+      },
+      "isSampled": true,
+      "implicitAsyncTimedOut": false
+    }
+  }
+}
+```
+
+Case Workflow Status:
+
+```json
+{
+  "id": 1,
+  "entityAnalysisModelInstanceEntryGuid": "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+  "diaryDate": "2026-02-20T05:19:46Z",
+  "caseWorkflowGuid": "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+  "caseWorkflowStatusGuid": "3ff54c93-ad25-46e7-a1aa-9efa488f928e",
+  "createdDate": "2026-02-20T09:19:46.526214",
+  "locked": 0,
+  "lockedUser": "",
+  "closedStatusId": 0,
+  "caseKey": "AccountId",
+  "diary": 0,
+  "rating": 1,
+  "caseKeyValue": "Test20",
+  "caseWorkflowStatusName": "Fraudulent",
+  "payload": {
+    "payload": {
+      "IP": "Test",
+      "OS": "Lollypop",
+      "MAC": "94:23:44f:2:d3",
+      "OTP": "466923",
+      "Is3D": "False",
+      "Brand": "ZTE",
+      "Email": "please@hash.me",
+      "IsAPM": "True",
+      "Model": "Barby",
+      "TxnId": "0987654321",
+      "BankId": "57",
+      "System": "Android",
+      "OrderId": "10607324128",
+      "Storage": "True",
+      "Currency": "826",
+      "DeviceId": "OlaRoseGoldPhone3",
+      "IsRebill": "False",
+      "AccountId": "Test20",
+      "AmountEUR": "100",
+      "AmountGBP": "86.5866",
+      "AmountUSD": "113.055",
+      "ChannelId": "1",
+      "Jailbreak": "True",
+      "ActionDate": "2019-04-17T04:18:15.0000000+03:00",
+      "BillingZip": "123456",
+      "IsCascaded": "False",
+      "IsCredited": "False",
+      "IsModified": "False",
+      "JoinedName": "Robert Mugabe",
+      "Resolution": "720*1280",
+      "BillingCity": "Address Line 2",
+      "ServiceCode": "DID",
+      "ToAccountId": "MTN",
+      "TwoFATypeId": "SMS",
+      "TxnDateTime": "2024-12-01T21:41:37.2480000+02:00",
+      "APMAccountId": "",
+      "BillingPhone": "1234567890",
+      "BillingState": "",
+      "ResponseCode": "0",
+      "AmountEURRate": "1",
+      "AmountGBPRate": "0.8658658602",
+      "AmountUSDRate": "1.1305502954",
+      "BusinessModel": "Sports betting",
+      "AppVersionCode": "12.34",
+      "BillingAddress": "Address Line 1",
+      "BillingCountry": "DE",
+      "CreditCardHash": "0xDA39A3EE5E6B4B0JJJ1890AFD80709",
+      "CurrencyAmount": "123.45",
+      "IsModification": "False",
+      "OriginalAmount": "100",
+      "AccountCurrency": "566",
+      "AccountLatitude": "5.3536",
+      "BillingLastName": "Mugabe",
+      "FingerprintHash": "jhjkhjkhsjh2hjhjkhj2k",
+      "TwoFAResponseId": "1",
+      "AccountLongitude": "36.1408",
+      "AcquirerBankName": "Caixa",
+      "BillingFirstName": "Robert",
+      "DebuggerAttached": "True",
+      "OriginalCurrency": "EUR",
+      "SettlementAmount": "100000",
+      "SimulatorAttached": "True",
+      "TransactionTypeId": "False",
+      "IsCurrencyConverted": "False",
+      "TransactionResultId": "1006",
+      "ToAccountExternalRef": "ChurchmanR",
+      "TransactionExternalResponseId": "0"
+    },
+    "responseElevation": {
+      "value": 2.0,
+      "redirect": "https://www.jube.io",
+      "foreColor": "#fb0707",
+      "backColor": "#f5f2cb",
+      "content": "Declined for \"VolumeThresholdByAccountId\"",
+      "createdDate": "2026-02-20T09:19:46.0658815+02:00"
+    },
+    "r": 0.0,
+    "createdDate": "2026-02-20T09:19:46.0732995+02:00",
+    "entityAnalysisModelGuid": "90c425fd-101a-420b-91d1-cb7a24a969cc",
+    "entityAnalysisModelName": "Detailed_Account_Financial_Transactions",
+    "entityAnalysisModelInstanceGuid": "00000000-0000-0000-0000-000000000000",
+    "entityAnalysisModelInstanceEntryGuid": "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+    "entityInstanceEntryId": "0987654321",
+    "responseElevationLimit": 10.0,
+    "referenceDate": "2024-12-01T21:41:37.248",
+    "archiveEnqueueDate": "2026-02-20T09:19:46.4475738+02:00",
+    "matchedGatewayRule": true,
+    "prevailingEntityAnalysisModelActivationRuleId": 5,
+    "entityAnalysisModelActivationRuleCount": 2,
+    "dictionary": {
+      "VolumeThresholdByAccountId": 0.0
+    },
+    "ttlCounter": {
+      "TtlCounterAll": 0
+    },
+    "sanction": {
+      "FuzzyMatchDistance2JoinedName": 0.0
+    },
+    "abstraction": {
+      "ResponseCodeEqual0Volume": 1111.0500000000002,
+      "NotResponseCodeEqual0Volume": 0.0
+    },
+    "abstractionCalculation": {
+      "ResponseCodeVolumeRatio": 0.0
+    },
+    "httpAdaptation": {},
+    "exhaustiveAdaptation": {},
+    "activation": {
+      "ThresholdSanctionsDistance": {
+        "visible": true
+      },
+      "VolumeThresholdByAccountId": {
+        "visible": true
+      },
+      "IncrementTtlCounterAll": {
+        "visible": false
+      }
+    },
+    "createCase": {
+      "caseWorkflowGuid": "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+      "caseWorkflowStatusGuid": "faf5c83a-5c3e-4a62-b224-aea9e2e1efa6",
+      "caseKeyValue": "Test20",
+      "caseKey": "AccountId",
+      "suspendBypass": false,
+      "suspendBypassDate": "2026-02-20T09:19:46.3793539+02:00"
+    },
+    "tag": {},
+    "logs": {
+      "anchorDate": "2026-02-20T09:19:46.3793539+02:00",
+      "entries": [
+        { "elapsedMicroseconds": 612, "sinceLastEntryMicroseconds": 612, "capturedByInfoSampling": true, "capturedByWarnThreshold": false, "threadId": 1, "message": "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has started the invocation timer and will now update the reference date." },
+        { "elapsedMicroseconds": 117393, "sinceLastEntryMicroseconds": 116781, "capturedByInfoSampling": true, "capturedByWarnThreshold": false, "threadId": 1, "message": "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has completed Sanction Check Name with a matched score." }
+      ]
+    },
+    "responseTimePipeline": {
+      "entries": [
+        { "stage": "Parse", "elapsedMicroseconds": 1200, "durationMicroseconds": 40, "allocatedBytes": 512, "threadId": 1 },
+        { "stage": "CheckIntegrityAndUpsert", "elapsedMicroseconds": 1245, "durationMicroseconds": 40, "allocatedBytes": 576, "threadId": 1 },
+        { "stage": "InlineFunctions", "elapsedMicroseconds": 1290, "durationMicroseconds": 40, "allocatedBytes": 640, "threadId": 1 },
+        { "stage": "InlineScripts", "elapsedMicroseconds": 1335, "durationMicroseconds": 40, "allocatedBytes": 704, "threadId": 1 },
+        { "stage": "Gateway", "elapsedMicroseconds": 1380, "durationMicroseconds": 40, "allocatedBytes": 768, "threadId": 1 },
+        { "stage": "CacheDbStorage", "elapsedMicroseconds": 1425, "durationMicroseconds": 40, "allocatedBytes": 832, "threadId": 1 },
+        { "stage": "JoinReadTasks", "elapsedMicroseconds": 1470, "durationMicroseconds": 40, "allocatedBytes": 896, "threadId": 1 },
+        { "stage": "AbstractionRulesWithoutSearchKeys", "elapsedMicroseconds": 1515, "durationMicroseconds": 40, "allocatedBytes": 960, "threadId": 1 },
+        { "stage": "AbstractionCalculations", "elapsedMicroseconds": 1560, "durationMicroseconds": 40, "allocatedBytes": 1024, "threadId": 1 },
+        { "stage": "ExhaustiveAdaptation", "elapsedMicroseconds": 1605, "durationMicroseconds": 40, "allocatedBytes": 1088, "threadId": 1 },
+        { "stage": "HttpAdaptation", "elapsedMicroseconds": 1650, "durationMicroseconds": 40, "allocatedBytes": 1152, "threadId": 1 },
+        { "stage": "Activation", "elapsedMicroseconds": 1695, "durationMicroseconds": 40, "allocatedBytes": 1216, "threadId": 1 },
+        { "stage": "JoinWriteTasks", "elapsedMicroseconds": 1740, "durationMicroseconds": 40, "allocatedBytes": 1280, "threadId": 1 },
+        { "stage": "WriteResponse", "elapsedMicroseconds": 1785, "durationMicroseconds": 40, "allocatedBytes": 1344, "threadId": 1 },
+        { "stage": "BuildArchivePayload", "elapsedMicroseconds": 1830, "durationMicroseconds": 40, "allocatedBytes": 1408, "threadId": 1 }
+      ]
+    },
+    "invokeTaskPerformance": {
+      "totalDurationMicroseconds": 1298477,
+      "memory": 8860472,
+      "taskWrapperStats": {
+        "read": {
+          "sanctionsAsync": { "computeTimeMicroseconds": 11839960, "memory": 27349 },
+          "ttlCountersAsync": { "computeTimeMicroseconds": 2603136, "memory": 29327 },
+          "abstractionRulesWithSearchKeysAsync": { "computeTimeMicroseconds": 83912, "memory": 96653 }
+        },
+        "write": {
+          "cachePayloadLatestUpsertAsync": { "computeTimeMicroseconds": 20680, "memory": 34383 },
+          "cachePayloadInsertAsync": { "computeTimeMicroseconds": 9480, "memory": 11739 },
+          "cacheTtlCounterEntryUpsertAsync": { "computeTimeMicroseconds": 688, "memory": 2816 },
+          "cacheTtlCounterEntryIncrementAsync": { "computeTimeMicroseconds": 656, "memory": 2800 },
+          "upsertReferenceDateAsync": { "computeTimeMicroseconds": 412, "memory": 960 }
+        }
+      },
+      "stages": {
+        "parse": { "durationMicroseconds": 48 },
+        "checkIntegrityAndUpsert": { "durationMicroseconds": 1 },
+        "inlineFunctions": { "durationMicroseconds": 30, "items": { "SetRiskScore": { "computeTimeMicroseconds": 2140, "memory": 512 } } },
+        "inlineScripts": { "durationMicroseconds": 7, "items": { "EnrichPayload": { "computeTimeMicroseconds": 7102, "memory": 2048 } } },
+        "gateway": { "durationMicroseconds": 1, "items": { "AllTransactions": { "computeTimeMicroseconds": 1840, "memory": 64 } } },
+        "cacheDbStorage": { "durationMicroseconds": 1 },
+        "sanctions": { "durationMicroseconds": 117, "items": { "SanctionCheckName": { "computeTimeMicroseconds": 117200, "memory": 4096 } } },
+        "ttlCounters": { "durationMicroseconds": 117, "items": { "TxnCountLast24Hours": { "computeTimeMicroseconds": 2603136, "memory": 29327 } } },
+        "abstractionRulesWithSearchKeys": { "durationMicroseconds": 186, "items": { "AverageSpend": { "computeTimeMicroseconds": 83912, "memory": 96653 } } },
+        "joinReadTasks": { "durationMicroseconds": 1 },
+        "abstractionRulesWithoutSearchKeys": { "durationMicroseconds": 1, "items": { "IsFirstTransaction": { "computeTimeMicroseconds": 1650, "memory": 128 } } },
+        "abstractionCalculations": { "durationMicroseconds": 2, "items": { "RiskWeightedSpend": { "computeTimeMicroseconds": 2800, "memory": 96 } } },
+        "exhaustiveAdaptation": { "durationMicroseconds": 1, "items": { "FraudScoreModel": { "computeTimeMicroseconds": 1050, "memory": 512 } } },
+        "httpAdaptation": { "durationMicroseconds": 2, "items": { "BayesianNetworkBootstrapStrength": { "computeTimeMicroseconds": 2419, "memory": 256 } } },
+        "activation": { "durationMicroseconds": 129, "items": { "HighRiskTransaction": { "rule": { "computeTimeMicroseconds": 1240, "memory": 192 }, "abstractionRuleOverrideInlineScripts": {}, "notification": { "computeTimeMicroseconds": 890, "memory": 64 }, "caseCreation": { "computeTimeMicroseconds": 126800, "memory": 8192 }, "activationWatcher": { "computeTimeMicroseconds": 142, "memory": 32 }, "responseElevation": { "computeTimeMicroseconds": 55, "memory": 0 } } } },
+        "joinWriteTasks": { "durationMicroseconds": 2 },
+        "writeResponse": { "durationMicroseconds": 1 },
+        "buildArchivePayload": { "durationMicroseconds": 1 }
+      }
+    },
+    "isSampled": true,
+    "implicitAsyncTimedOut": false
+  }
+}
+```
+
+Case Workflow Form:
+
+```json
+{
+  "id" : 11,
+  "createdDate" : "2026-02-20T15:57:53.703344+02:00",
+  "createdUser" : "Administrator",
+  "caseKey" : "AccountId",
+  "caseId" : 1,
+  "caseWorkflowFormId" : 1,
+  "caseKeyValue" : "Test20",
+  "payload" : {
+    "ExampleTextboxElement" : "Test"
+  },
+  "caseWorkflowFormName" : "ExampleForm",
+  "case" : {
+    "id" : 1,
+    "entityAnalysisModelInstanceEntryGuid" : "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+    "diaryDate" : "2026-02-20T07:19:46",
+    "caseWorkflowGuid" : "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+    "caseWorkflowStatusGuid" : "3ff54c93-ad25-46e7-a1aa-9efa488f928e",
+    "createdDate" : "2026-02-20T09:19:46.526214",
+    "locked" : 0,
+    "lockedUser" : "",
+    "closedStatusId" : 0,
+    "caseKey" : "AccountId",
+    "diary" : 0,
+    "rating" : 1,
+    "caseKeyValue" : "Test20",
+    "caseWorkflowStatus" : "Fraudulent",
+    "payload" : {
+      "payload" : {
+        "IP" : "Test",
+        "OS" : "Lollypop",
+        "MAC" : "94:23:44f:2:d3",
+        "OTP" : "466923",
+        "Is3D" : "False",
+        "Brand" : "ZTE",
+        "Email" : "please@hash.me",
+        "IsAPM" : "True",
+        "Model" : "Barby",
+        "TxnId" : "0987654321",
+        "BankId" : "57",
+        "System" : "Android",
+        "OrderId" : "10607324128",
+        "Storage" : "True",
+        "Currency" : "826",
+        "DeviceId" : "OlaRoseGoldPhone3",
+        "IsRebill" : "False",
+        "AccountId" : "Test20",
+        "AmountEUR" : "100",
+        "AmountGBP" : "86.5866",
+        "AmountUSD" : "113.055",
+        "ChannelId" : "1",
+        "Jailbreak" : "True",
+        "ActionDate" : "2019-04-17T04:18:15.0000000+03:00",
+        "BillingZip" : "123456",
+        "IsCascaded" : "False",
+        "IsCredited" : "False",
+        "IsModified" : "False",
+        "JoinedName" : "Robert Mugabe",
+        "Resolution" : "720*1280",
+        "BillingCity" : "Address Line 2",
+        "ServiceCode" : "DID",
+        "ToAccountId" : "MTN",
+        "TwoFATypeId" : "SMS",
+        "TxnDateTime" : "2024-12-01T21:41:37.2480000+02:00",
+        "APMAccountId" : "",
+        "BillingPhone" : "1234567890",
+        "BillingState" : "",
+        "ResponseCode" : "0",
+        "AmountEURRate" : "1",
+        "AmountGBPRate" : "0.8658658602",
+        "AmountUSDRate" : "1.1305502954",
+        "BusinessModel" : "Sports betting",
+        "AppVersionCode" : "12.34",
+        "BillingAddress" : "Address Line 1",
+        "BillingCountry" : "DE",
+        "CreditCardHash" : "0xDA39A3EE5E6B4B0JJJ1890AFD80709",
+        "CurrencyAmount" : "123.45",
+        "IsModification" : "False",
+        "OriginalAmount" : "100",
+        "AccountCurrency" : "566",
+        "AccountLatitude" : "5.3536",
+        "BillingLastName" : "Mugabe",
+        "FingerprintHash" : "jhjkhjkhsjh2hjhjkhj2k",
+        "TwoFAResponseId" : "1",
+        "AccountLongitude" : "36.1408",
+        "AcquirerBankName" : "Caixa",
+        "BillingFirstName" : "Robert",
+        "DebuggerAttached" : "True",
+        "OriginalCurrency" : "EUR",
+        "SettlementAmount" : "100000",
+        "SimulatorAttached" : "True",
+        "TransactionTypeId" : "False",
+        "IsCurrencyConverted" : "False",
+        "TransactionResultId" : "1006",
+        "ToAccountExternalRef" : "ChurchmanR",
+        "TransactionExternalResponseId" : "0"
+      },
+      "responseElevation" : {
+        "value" : 2.0,
+        "redirect" : "https://www.jube.io",
+        "foreColor" : "#fb0707",
+        "backColor" : "#f5f2cb",
+        "content" : "Declined for \"VolumeThresholdByAccountId\"",
+        "createdDate" : "2026-02-20T09:19:46.0658815+02:00"
+      },
+      "r" : 0.0,
+      "createdDate" : "2026-02-20T09:19:46.0732995+02:00",
+      "entityAnalysisModelGuid" : "90c425fd-101a-420b-91d1-cb7a24a969cc",
+      "entityAnalysisModelName" : "Detailed_Account_Financial_Transactions",
+      "entityAnalysisModelInstanceGuid" : "00000000-0000-0000-0000-000000000000",
+      "entityAnalysisModelInstanceEntryGuid" : "909c1cac-de56-4f02-ab55-f514df3c1f6d",
+      "entityInstanceEntryId" : "0987654321",
+      "responseElevationLimit" : 10.0,
+      "referenceDate" : "2024-12-01T21:41:37.248",
+      "archiveEnqueueDate" : "2026-02-20T09:19:46.4475738+02:00",
+      "matchedGatewayRule" : true,
+      "prevailingEntityAnalysisModelActivationRuleId" : 5,
+      "entityAnalysisModelActivationRuleCount" : 2,
+      "dictionary" : {
+        "VolumeThresholdByAccountId" : 0.0
+      },
+      "ttlCounter" : {
+        "TtlCounterAll" : 0
+      },
+      "sanction" : {
+        "FuzzyMatchDistance2JoinedName" : 0.0
+      },
+      "abstraction" : {
+        "ResponseCodeEqual0Volume" : 1111.0500000000002,
+        "NotResponseCodeEqual0Volume" : 0.0
+      },
+      "abstractionCalculation" : {
+        "ResponseCodeVolumeRatio" : 0.0
+      },
+      "httpAdaptation" : { },
+      "exhaustiveAdaptation" : { },
+      "activation" : {
+        "IncrementTtlCounterAll" : {
+          "visible" : false
+        },
+        "VolumeThresholdByAccountId" : {
+          "visible" : true
+        },
+        "ThresholdSanctionsDistance" : {
+          "visible" : true
+        }
+      },
+      "createCase" : {
+        "caseWorkflowGuid" : "957c6ab0-ef2b-4d06-a7a5-e923762dd917",
+        "caseWorkflowStatusGuid" : "faf5c83a-5c3e-4a62-b224-aea9e2e1efa6",
+        "caseKeyValue" : "Test20",
+        "caseKey" : "AccountId",
+        "suspendBypass" : false,
+        "suspendBypassDate" : "2026-02-20T09:19:46.3793539+02:00"
+      },
+      "tag" : { },
+      "logs" : {
+        "anchorDate" : "2026-02-20T09:19:46.3793539+02:00",
+        "entries" : [
+          { "elapsedMicroseconds" : 612, "sinceLastEntryMicroseconds" : 612, "capturedByInfoSampling" : true, "capturedByWarnThreshold" : false, "threadId" : 1, "message" : "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has started the invocation timer and will now update the reference date." },
+          { "elapsedMicroseconds" : 117393, "sinceLastEntryMicroseconds" : 116781, "capturedByInfoSampling" : true, "capturedByWarnThreshold" : false, "threadId" : 1, "message" : "Entity Invoke: GUID 90c425fd-101a-420b-91d1-cb7a24a969cc and model 1 has completed Sanction Check Name with a matched score." }
+        ]
+      },
+      "responseTimePipeline" : {
+        "entries" : [
+          { "stage" : "Parse", "elapsedMicroseconds" : 1200, "durationMicroseconds" : 40, "allocatedBytes" : 512, "threadId" : 1 },
+          { "stage" : "CheckIntegrityAndUpsert", "elapsedMicroseconds" : 1245, "durationMicroseconds" : 40, "allocatedBytes" : 576, "threadId" : 1 },
+          { "stage" : "InlineFunctions", "elapsedMicroseconds" : 1290, "durationMicroseconds" : 40, "allocatedBytes" : 640, "threadId" : 1 },
+          { "stage" : "InlineScripts", "elapsedMicroseconds" : 1335, "durationMicroseconds" : 40, "allocatedBytes" : 704, "threadId" : 1 },
+          { "stage" : "Gateway", "elapsedMicroseconds" : 1380, "durationMicroseconds" : 40, "allocatedBytes" : 768, "threadId" : 1 },
+          { "stage" : "CacheDbStorage", "elapsedMicroseconds" : 1425, "durationMicroseconds" : 40, "allocatedBytes" : 832, "threadId" : 1 },
+          { "stage" : "JoinReadTasks", "elapsedMicroseconds" : 1470, "durationMicroseconds" : 40, "allocatedBytes" : 896, "threadId" : 1 },
+          { "stage" : "AbstractionRulesWithoutSearchKeys", "elapsedMicroseconds" : 1515, "durationMicroseconds" : 40, "allocatedBytes" : 960, "threadId" : 1 },
+          { "stage" : "AbstractionCalculations", "elapsedMicroseconds" : 1560, "durationMicroseconds" : 40, "allocatedBytes" : 1024, "threadId" : 1 },
+          { "stage" : "ExhaustiveAdaptation", "elapsedMicroseconds" : 1605, "durationMicroseconds" : 40, "allocatedBytes" : 1088, "threadId" : 1 },
+          { "stage" : "HttpAdaptation", "elapsedMicroseconds" : 1650, "durationMicroseconds" : 40, "allocatedBytes" : 1152, "threadId" : 1 },
+          { "stage" : "Activation", "elapsedMicroseconds" : 1695, "durationMicroseconds" : 40, "allocatedBytes" : 1216, "threadId" : 1 },
+          { "stage" : "JoinWriteTasks", "elapsedMicroseconds" : 1740, "durationMicroseconds" : 40, "allocatedBytes" : 1280, "threadId" : 1 },
+          { "stage" : "WriteResponse", "elapsedMicroseconds" : 1785, "durationMicroseconds" : 40, "allocatedBytes" : 1344, "threadId" : 1 },
+          { "stage" : "BuildArchivePayload", "elapsedMicroseconds" : 1830, "durationMicroseconds" : 40, "allocatedBytes" : 1408, "threadId" : 1 }
+        ]
+      },
+      "invokeTaskPerformance" : {
+        "totalDurationMicroseconds" : 1298477,
+        "memory" : 8860472,
+        "taskWrapperStats" : {
+          "read" : {
+            "sanctionsAsync" : { "computeTimeMicroseconds" : 11839960, "memory" : 27349 },
+            "ttlCountersAsync" : { "computeTimeMicroseconds" : 2603136, "memory" : 29327 },
+            "abstractionRulesWithSearchKeysAsync" : { "computeTimeMicroseconds" : 83912, "memory" : 96653 }
+          },
+          "write" : {
+            "cachePayloadLatestUpsertAsync" : { "computeTimeMicroseconds" : 20680, "memory" : 34383 },
+            "cachePayloadInsertAsync" : { "computeTimeMicroseconds" : 9480, "memory" : 11739 },
+            "cacheTtlCounterEntryUpsertAsync" : { "computeTimeMicroseconds" : 688, "memory" : 2816 },
+            "cacheTtlCounterEntryIncrementAsync" : { "computeTimeMicroseconds" : 656, "memory" : 2800 },
+            "upsertReferenceDateAsync" : { "computeTimeMicroseconds" : 412, "memory" : 960 }
+          }
+        },
+        "stages" : {
+          "parse" : { "durationMicroseconds" : 48 },
+          "checkIntegrityAndUpsert" : { "durationMicroseconds" : 1 },
+          "inlineFunctions" : { "durationMicroseconds" : 30, "items" : { "SetRiskScore" : { "computeTimeMicroseconds" : 2140, "memory" : 512 } } },
+          "inlineScripts" : { "durationMicroseconds" : 7, "items" : { "EnrichPayload" : { "computeTimeMicroseconds" : 7102, "memory" : 2048 } } },
+          "gateway" : { "durationMicroseconds" : 1, "items" : { "AllTransactions" : { "computeTimeMicroseconds" : 1840, "memory" : 64 } } },
+          "cacheDbStorage" : { "durationMicroseconds" : 1 },
+          "sanctions" : { "durationMicroseconds" : 117, "items" : { "SanctionCheckName" : { "computeTimeMicroseconds" : 117200, "memory" : 4096 } } },
+          "ttlCounters" : { "durationMicroseconds" : 117, "items" : { "TxnCountLast24Hours" : { "computeTimeMicroseconds" : 2603136, "memory" : 29327 } } },
+          "abstractionRulesWithSearchKeys" : { "durationMicroseconds" : 186, "items" : { "AverageSpend" : { "computeTimeMicroseconds" : 83912, "memory" : 96653 } } },
+          "joinReadTasks" : { "durationMicroseconds" : 1 },
+          "abstractionRulesWithoutSearchKeys" : { "durationMicroseconds" : 1, "items" : { "IsFirstTransaction" : { "computeTimeMicroseconds" : 1650, "memory" : 128 } } },
+          "abstractionCalculations" : { "durationMicroseconds" : 2, "items" : { "RiskWeightedSpend" : { "computeTimeMicroseconds" : 2800, "memory" : 96 } } },
+          "exhaustiveAdaptation" : { "durationMicroseconds" : 1, "items" : { "FraudScoreModel" : { "computeTimeMicroseconds" : 1050, "memory" : 512 } } },
+          "httpAdaptation" : { "durationMicroseconds" : 2, "items" : { "BayesianNetworkBootstrapStrength" : { "computeTimeMicroseconds" : 2419, "memory" : 256 } } },
+          "activation" : { "durationMicroseconds" : 129, "items" : { "HighRiskTransaction" : { "rule" : { "computeTimeMicroseconds" : 1240, "memory" : 192 }, "abstractionRuleOverrideInlineScripts" : {}, "notification" : { "computeTimeMicroseconds" : 890, "memory" : 64 }, "caseCreation" : { "computeTimeMicroseconds" : 126800, "memory" : 8192 }, "activationWatcher" : { "computeTimeMicroseconds" : 142, "memory" : 32 }, "responseElevation" : { "computeTimeMicroseconds" : 55, "memory" : 0 } } } },
+          "joinWriteTasks" : { "durationMicroseconds" : 2 },
+          "writeResponse" : { "durationMicroseconds" : 1 },
+          "buildArchivePayload" : { "durationMicroseconds" : 1 }
+        }
+      },
+      "isSampled": true,
+      "implicitAsyncTimedOut": false
+    }
+  }
+}
+```

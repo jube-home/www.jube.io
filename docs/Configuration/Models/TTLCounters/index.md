@@ -1,0 +1,116 @@
+---
+layout: default
+title: TTL Counters
+nav_order: 9
+parent: Models
+grand_parent: Configuration
+---
+
+🚀 Get to pre-production in weeks, not months, with private [training](https://www.jube.io/jube-training) direct from Jube's developer — real sovereignty, zero vendor lock-in.
+
+# TTL Counters
+
+Time to Live Counters (TTL Counters) are an alternative way to create model memory without needing to store the full
+transaction or event data in the cache tables. TTL Counters are incremented as the result of an Activation Rule matching
+and are set to live for only a prescribed amount of time after entry increment creation, after which they will
+decrement.
+
+TTL Counters allow for a condition only counter, storing a lightweight counter entry as opposed to the entire
+transaction or event picture that would otherwise be in the cache. It follows that the storage of TTL Counters is
+substantially less burdensome than maintaining the full transaction picture in cache.
+
+The storage required to maintain a TTL Counter is substantially less than that required to keep a full history in the
+cache, it is therefore a useful tool when dealing with ultra-high volumes requiring retention of historic events for a
+very long period of time. Instead of storing the full picture of an event in the Cache, a very lightweight counter entry
+can be stored, thus can retain for a substantially longer period of time as it takes up so much less space. For basic
+count type rules, it is advisable to use TTL Counters instead of Abstraction Rules.
+
+For TTL Counters to be enabled, the Enable Ttl Counter flag must be set at the model level. The Enable Ttl Counter flag
+must be active for the process to continue. In the event that the Enable Ttl Counter flag is not active, the routine
+will be stepped over, with an INFO message being written out that this has occurred. In the event that the Enable Ttl
+Counter flag is not enabled, the performance timer is still written out.
+
+TTL Counters are created and stored in their own collection such that they can be referenced separately in Activation
+and Abstraction Rules.
+
+The TTL Counter process relies on the Cache Database aggregating all TTL Counter entries and returning the count for
+each TTL Counter, achieved in a single request of the Cache Database.
+
+There are two types of TTL Counter, Online Aggregation and Offline Aggregation.
+
+Upon a TTL Counter definition having been created, it will be available in the Activation Rules page such that it can be
+incremented as a consequence of an Activation Rule matching.
+
+The page is available by navigating through the menu as Models >> Abstraction >> TTL Counters:
+
+![Image](TopOfTreeTTLCounters.png)
+
+Click on the model tree entry towards the left hand side to add a new TTL Counter:
+
+![Image](EmptyTTLCounterEntry.png)
+
+The fields in the construction of TTL Counters are described as follows:
+
+| Value                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Example             |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| Online Aggregation         | A flag that indicates if the TTL counter entries should be counted up in real time on each event,  which is computationally expensive and places load on the Cache,  but reduces the need for the upsert of the TTL Counter counters cache on match and in the real-time recall of a model. Online aggregation only stores the instance or entry of a TTL Counter being incremented and does not update a summary value which is faster and less computationally expensive at this stage, but far more expensive in retrieval. In the event that neither Online nor cache aggregation returns records during processing, the TTL Counter value is added to the collection,  albeit with a value of 0 alongside the TTL Counter Name.  If a record is returned,  the TTL Counter Value is simply extracted from the results set,  with that value being added to the collection alongside the TTL Counter name.  Online Aggregation targets the transactions Reference Date otherwise it is the transactions Created \ System date of insert.                                                                                                                                                                                                                                                                                                                                                                                                                              | False (Recommended) |
+| Live Forever               | A flag that indicates if the TTL counter should ever be decremented. In the event that the Live forever flag is specified,   the TTL counter cache will be updated but no TTL counter entry will be created to wind back that counter entry, or rather Cached Aggregation. The concept of Cached Aggregation is that the TTL Counters are incremented in real-time for the grouping key, so the pre aggregated counter can be recalled more rapidly in real-time from the cache.  The Cached Aggregation moves some computational and processing expense to the real-time processing, as it requires two trips to the cache database,  one of which increments a value,  rather than just an insert in online aggregation. A background process is responsible for decrementing Cached Aggregation,  henceforth,  it is possible that Cached Aggregations will be slightly latent and inaccurate.  If an absolute real-time picture and immediate decrementing of TTL Counters is required, then Online Aggregation would be the most appropriate choice. A background process is responsible for decrementing Cached Aggregation,  henceforth,  it is possible that Cached Aggregations will be latent and inaccurate.  If an absolute real-time picture and immediate decrementing of TTL Counters is required, then Online Aggregation would be the most appropriate choice.  Live forever would mean that there is no record made available for background decrement. | False (Recommended) |
+| TTL Counter Interval Type  | The amount of time before the TTL Counter is to be decremented after a counter entry has been created and incremented the counter.  The TTL Counter Interval Type is taken together with the TTL Counter Interval Value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Day                 |
+| TTL Counter Interval Value | The amount of time before the TTL Counter is to be decremented after a counter entry has been created and incremented the counter.  The TTL Counter Interval Type is taken together with the TTL Counter Interval Value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 1                   |
+| TTL Counter Data Name      | The key to be extracted from the data payload that will be used for the purposes of grouping the TTL Counter (e.g. Account ID).  This value allows counts to be maintained on different keys.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | IP                  |
+| Sum                        | A flag to indicate if a Float or Integer value extracted from the invocation payload should be used to increment the TTL Counter and its TTL Counter Entry for deprecation, otherwise incremented by one.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | False               |
+| TTL Counter Data Value     | The Integer or Float value from the payload to increment the TTL Counter value by, extracted form the invocation payload during invocation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | None                |
+| Resolution Interval        | The truncation of the Reference Date for the purpose of deprecation, stored as TTL Counter Entries in cache.  TTL Counter Entries are used to decrement the TTL Counter on expiration of it by a background task.  The resolution allows for pragmatic storage of the TTL Counter Values in the cache, given that TTL Counter exist for the purpose of maintaining very long term state, and their deprecation might not be time senistive.  For example,  suppose that the resolution is Day,  it implies that a single TTL Counter Entry will be made for a given day truncated, with the value being incremented on new increments of the TTL Counter, only spilling into a new TTL Counter Entry when the actual truncated day lapses, whereby the implication is that the TTL Counter is decremented daily.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+Complete the page fields as set forth in the table above:
+
+![Image](TTLCounterValues.png)
+
+Click the add button to create a version of this TTL Counter:
+
+![Image](TTLCounterAddedForIP.png)
+
+Mindful that a TTL Counter must be incremented by an Activation Rule match, when recalled at this time, it would return
+zero in the response body, synchronise the model via Entity >> Synchronisation and repeat the HTTP POST to
+endpoint [https://localhost:5001/api/invoke/EntityAnalysisModel/90c425fd-101a-420b-91d1-cb7a24a969cc](https://localhost:5001/api/invoke/EntityAnalysisModel/90c425fd-101a-420b-91d1-cb7a24a969cc)
+for response as follows:
+
+![Image](TTLCounterResponse.png)
+
+It can be seen that TTL Counters are being recalled in their aggregated state, albeit, given no incrementation by
+Activation Rule, returned as 0 for IP. Values are available for Activation Rules subsequently, as an alternative to
+Abstraction Rules.
+
+Where the background thread is relied upon to decrement TTL counters, the eligibility for TTL lapse is based on the
+model's own Reference Date tracking (the most recent transaction Reference Date seen for that model, advanced on
+every invocation) - not wall-clock system time, and not the date the counter entry was created. A model that stops
+receiving transactions stops advancing this Reference Date, so its TTL Counters stop ageing out too, however much
+real time passes; the background thread only ever compares against the last Reference Date it has on record for
+that model.
+
+If TTL Counter Interval Type is ever something other than the six values in Validation below - a malformed or
+legacy row - the background decrement thread falls back to treating it as Days, rather than leaving the counter's
+threshold unchanged. This differs from the read-time online-aggregation window, which leaves the Reference Date
+unchanged for an unrecognised interval. In practice this divergence should not be reachable: the value is
+validated to one of the six units below at save time.
+
+The window a TTL Counter covers depends on its type. An Online Aggregation counter counts the increments whose
+Reference Date falls in the window ending at the Reference Date of the transaction being processed, both ends
+included, so its value is exact for that transaction. Months and years are calendar months and years, so a one month
+window ending on 31 March starts on 28 or 29 February. Any other counter keeps a running count, and each increment is
+taken off by the background thread once it is older than the interval (in steps of the Resolution Interval), so the
+count covers about the window rather than exactly. A counter that lives forever has no window and is never taken off.
+
+When TTL Counters are disabled for the model, no counter is incremented or read and rules see 0 for every counter;
+[Model Integrity](../ModelIntegrity/index.html) reports this when the model has active counters.
+
+## Validation
+
+The following constraints are enforced when a TTL Counter is created or updated:
+
+* Name is required, must be 256 characters or fewer, and must be unique within the Model (case-insensitive).
+* TTL Counter Data Name is required, regardless of whether Live Forever is enabled.
+* TTL Counter Interval Type must be one of Seconds, Minutes, Hours, Days, Months or Years.
+* TTL Counter Interval Value cannot be negative.
+* Resolution Interval must be one of Minutes, Hours or Days.
+* TTL Counter Data Value is required when Sum is enabled.

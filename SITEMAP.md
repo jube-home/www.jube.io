@@ -36,7 +36,7 @@ What gets built, where each page comes from, and how navigation is wired.
 - **Header**: `_includes/header.html`: logo, search button, GitHub.
 - **Footer**: `_includes/footer.html`: Privacy, terms, company line.
 - **Right column (lg+)**: `_includes/work-cards.html`: Training and Support cards, hidden on docs pages' narrow widths.
-- **Floating**: `_includes/whatsapp.html`.
+- **Floating**: none (the WhatsApp corner bubble was removed).
 
 ## Shared data (`_data/`)
 

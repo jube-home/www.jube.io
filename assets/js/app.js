@@ -138,6 +138,58 @@
     });
   }
 
+  // Contents list for long pages: built from the h2 headings of the article (or any [data-toc-scope]), hidden when there are fewer than four
+  var toc = document.getElementById('toc');
+  if (toc) {
+    var scope = document.querySelector('[data-toc-scope]') || document.querySelector('article');
+    var heads = scope ? scope.querySelectorAll('h2') : [];
+    if (heads.length >= 4) {
+      var tl = document.getElementById('toc-list');
+      var used = {};
+      heads.forEach(function (h) {
+        if (!h.id) {
+          var base = h.textContent.toLowerCase().replace(/[^a-z0-9 -]/g, '').trim().replace(/\s+/g, '-') || 'section';
+          var id = base, n = 2;
+          while (used[id] || document.getElementById(id)) id = base + '-' + n++;
+          h.id = id;
+        }
+        used[h.id] = true;
+        var li = document.createElement('li'), a = document.createElement('a');
+        a.href = '#' + h.id; a.textContent = h.textContent;
+        li.appendChild(a); tl.appendChild(li);
+      });
+      toc.hidden = false;
+    }
+  }
+
+  // Analytics opt-out on the privacy page: the choice lives in local storage and is read before Google Analytics loads
+  var anBtn = document.querySelector('[data-analytics-toggle]');
+  if (anBtn) {
+    var anState = document.querySelector('[data-analytics-state]');
+    var anOff = function () { try { return localStorage.getItem('jube-analytics') === 'off'; } catch (e) { return false; } };
+    var anPaint = function () {
+      var off = anOff() || navigator.globalPrivacyControl === true;
+      anBtn.textContent = anOff() ? 'Turn analytics on' : 'Turn analytics off';
+      anState.textContent = off ? 'Analytics is off in this browser.' : 'Analytics is on in this browser.';
+    };
+    anBtn.addEventListener('click', function () {
+      var turnOff = !anOff();
+      try { if (turnOff) localStorage.setItem('jube-analytics', 'off'); else localStorage.removeItem('jube-analytics'); } catch (e) {}
+      if (turnOff) {
+        var host = location.hostname.split('.'), domains = ['', location.hostname];
+        if (host.length > 2) domains.push(host.slice(-2).join('.'));
+        document.cookie.split(';').forEach(function (c) {
+          var n = c.split('=')[0].trim();
+          if (/^_ga(_|$)/.test(n)) domains.forEach(function (d) {
+            document.cookie = n + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + (d ? '; domain=' + d : '');
+          });
+        });
+      }
+      anPaint();
+    });
+    anPaint();
+  }
+
   // GitHub star count, fetched straight from GitHub and cached for an hour; the link keeps working if the fetch fails
   var starEl = document.querySelector('[data-stars]');
   if (starEl) {
