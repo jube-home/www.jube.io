@@ -18,8 +18,12 @@
     return { d: 'M' + x1 + ' ' + y1 + ' C' + ((x1 + x2) / 2) + ' ' + y1 + ' ' + ((x1 + x2) / 2) + ' ' + y2 + ' ' + x2 + ' ' + y2, c: c, w: w, o: o };
   }
   function hInfo(h) { return { t: h.n, k: 'Herd · Tier 2', m: h.g.filter(function (g) { return !g[2]; }).length + ' Gaze Gatherers · ' + cnt(h) + ' Joobriks', d: h.d }; }
-  function gInfo(g) { return { t: g[0], k: (g[2] ? 'Straight through · Tier 3' : 'Gaze Gatherer · Tier 3'), m: g[1].length + ' Joobrik' + (g[1].length > 1 ? 's' : ''), d: g[2] ? 'No Gaze Gatherer needed. The Herd hands the question straight to the Joobrik that owns the job.' : 'Holds no tools. Routes to the right Joobrik within this slice.' }; }
+  function gInfo(g) { return { t: g[0], k: (g[2] ? 'Straight through · Tier 3' : 'Gaze Gatherer · Tier 3'), m: g[1].length + ' Joobrik' + (g[1].length > 1 ? 's' : ''), d: g[2] ? 'No Gaze Gatherer needed. The Herd hands the question straight to the Joobrik that owns the job.' : 'Holds no tools of its own. Routes each question to the right Joobrik: ' + g[1].map(function (l) { return l[0].replace(/^Entity Analysis Model /, ''); }).join(', ') + '.' }; }
   function lInfo(l) { return { t: l[0].replace(/^Entity Analysis Model /, ''), k: 'Joobrik · Tier 4 · ' + (l[3] ? 'write' : 'read-only'), m: l[2] + ' tool' + (l[2] > 1 ? 's' : ''), d: l[1] }; }
+  function dflt(h, g, li) {
+    if (g && g[1][li]) return lInfo(g[1][li]);
+    return g ? gInfo(g) : hInfo(h);
+  }
   function toolInfo(n) {
     var o = (JT.ops && JT.ops[n]) || ['R', '', ''], p = o[1] || '', ll = /landlord/.test(p);
     var ids = p.replace(/landlord,?\s*/, '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
@@ -94,7 +98,7 @@
     tl.forEach(function (n, k) { paths.push(curve(1300, lcy, 1370, ttop + k * tp + 17, T, 1.5, 0.8)); });
 
     var sel = G ? gInfo(G) : hInfo(H);
-    var tI = state.hv || (G ? Object.assign({}, gInfo(G), { d: gInfo(G).d + ' Hover a box for detail.' }) : hInfo(H));
+    var tI = state.hv || dflt(H, G, li);
 
     var svg = '<svg width="1690" height="' + tH + '" viewBox="0 0 1690 ' + tH + '" style="position:absolute;left:0;top:0;pointer-events:none">' +
       paths.map(function (p) { return '<path d="' + p.d + '" style="fill:none;stroke:' + p.c + ';stroke-width:' + p.w + ';opacity:' + p.o + '"></path>'; }).join('') + '</svg>';
@@ -161,7 +165,7 @@
     var panel = root.querySelector('[data-info]');
     if (!panel) return;
     var G = state.gats[Math.min(state.tg, state.gats.length - 1)], H = TR[state.th];
-    var t = info || (G ? Object.assign({}, gInfo(G), { d: gInfo(G).d + ' Hover a box for detail.' }) : hInfo(H));
+    var t = info || dflt(H, G, Math.min(state.tl || 0, Math.max(0, G ? G[1].length - 1 : 0)));
     panel.innerHTML = infoHtml(t);
   }
 
