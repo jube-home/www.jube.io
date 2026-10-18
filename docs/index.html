@@ -2321,8 +2321,10 @@ login.</li>
 OpenAI-compatible endpoint. Put $20 in a prepaid DigitalOcean account, paste in your inference key, set
 <code class="language-plaintext highlighter-rouge">DockerComposeEnableAskJooby=True</code>, and Ask Jooby is alive.</p>
 
-<p>Evaluation only. For production, see
-the <a href="/docs/GettingStarted/DeployingWithJubeCluster/">deployment guide</a>.</p>
+<p><strong>Ready for production?</strong> The single-node stack is for evaluation; <a href="/docs/GettingStarted/DeployingWithJubeCluster/">Jube Cluster</a> takes the same platform to
+scale. It is a highly available, quorum-based Docker Swarm cluster: multiple Jube instances behind HAProxy,
+PostgreSQL under Patroni and Redis under Sentinel, failing over automatically. Add capacity as volume grows, update
+online one member at a time, and recover to any point in time from continuous WAL archiving.</p>
 
 <h2 id="licence">Licence</h2>
 
