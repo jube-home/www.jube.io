@@ -210,3 +210,30 @@
     }
   }
 })();
+
+/* Copy button: copies a block's command lines, without the "$" prompts */
+(function () {
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest ? e.target.closest('[data-copy]') : null;
+    if (!btn) return;
+    var box = document.querySelector(btn.getAttribute('data-copy'));
+    if (!box) return;
+    var text = Array.prototype.map.call(box.children, function (row) {
+      return row.children.length > 1 ? row.lastElementChild.textContent : row.textContent;
+    }).join('\n');
+    function done(ok) {
+      btn.textContent = ok ? 'Copied ✓' : 'Press Ctrl+C';
+      setTimeout(function () { btn.textContent = 'Copy'; }, 1800);
+    }
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.cssText = 'position:fixed;opacity:0';
+      document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (x) { }
+      ta.remove(); done(ok);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+    else fallback();
+  });
+})();
