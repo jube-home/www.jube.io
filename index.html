@@ -88,7 +88,7 @@
   <div class="navbar w-full max-w-7xl px-0 py-2 gap-4 flex-nowrap">
     <div class="flex-none flex items-center gap-2">
       <button id="mnav-toggle" class="btn btn-ghost btn-sm btn-square lg:hidden" aria-label="Menu"><span class="text-lg leading-none">☰</span></button>
-      <a href="/" class="flex shrink-0 items-center gap-0.5 text-2xl font-semibold tracking-tight no-underline"><img src="/assets/img/jube-logo.png" alt="" class="h-11 w-auto"><span>jube</span></a>
+      <a href="/" class="flex shrink-0 items-center no-underline" aria-label="Jube"><span role="img" aria-label="Jube" class="block" style="height:1.75rem;aspect-ratio:1640/616;background:var(--color-primary);-webkit-mask:url(/assets/img/jube-wordmark.png) center/contain no-repeat;mask:url(/assets/img/jube-wordmark.png) center/contain no-repeat"></span></a>
     </div>
     <div id="sx" class="relative hidden md:block flex-1 max-w-md min-w-0" data-pf="/pagefind/pagefind.js" data-pagefind-ignore>
       <label class="input input-sm w-full bg-base-200 border-base-300 flex items-center gap-2 focus-within:border-primary">
@@ -2331,9 +2331,12 @@
 
   <section class="w-full pt-12 flex flex-col gap-4">
     <h2 class="m-0 mono text-xs font-medium uppercase tracking-widest text-base-content/60">01 · Ask Jooby</h2>
-    <div class="flex flex-col gap-4 py-4 max-w-3xl">
-      <div class="flex flex-wrap items-baseline gap-x-[0.25em] gap-y-1 text-3xl sm:text-4xl font-semibold leading-tight tracking-tighter"><span><span class="text-base-content/30 2xl:-ml-[0.4em]">"</span>Just ask</span><span class="text-primary">Jooby.<span class="text-base-content/30">"</span></span></div>
-      <p class="m-0 text-lg text-base-content/70 text-pretty">Jooby is the natural-language layer on top of Jube, there to lift the cognitive load of running a platform this big. No menu to learn, no query language, no ticket to raise. Type the question the way you'd ask a colleague, and the Joobriks do the legwork, showing every step.</p>
+    <div class="flex flex-col sm:flex-row sm:items-center gap-6 justify-between">
+      <div class="flex flex-col gap-4 py-4 max-w-3xl flex-1 min-w-0">
+        <div class="flex flex-wrap items-baseline gap-x-[0.25em] gap-y-1 text-3xl sm:text-4xl font-semibold leading-tight tracking-tighter"><span><span class="text-base-content/30 2xl:-ml-[0.4em]">"</span>Just ask</span><span class="text-primary">Jooby.<span class="text-base-content/30">"</span></span></div>
+        <p class="m-0 text-lg text-base-content/70 text-pretty">Jooby is the natural-language layer on top of Jube, there to lift the cognitive load of running a platform this big. No menu to learn, no query language, no ticket to raise. Type the question the way you'd ask a colleague, and the Joobriks do the legwork, showing every step.</p>
+      </div>
+      <img src="/assets/img/jube-logo.png" alt="Jooby, the Jube buffalo" class="shrink-0 self-center" style="height:11rem;width:auto" loading="lazy">
     </div>
     <div class="rounded-box bg-base-200 border border-base-300 p-4 sm:p-9 flex flex-col gap-7">
       <div class="stats stats-vertical sm:stats-horizontal bg-base-100 w-full border border-base-300">
